@@ -2,7 +2,7 @@
 
 **112 problems with open targets:** 42 open and 70 partially resolved. **105 other retained entries**, excluded from the open count.
 
-**Resolution evidence:** 48 solved (published or independently audited); 57 solved with Lean verification.
+**Resolution evidence:** 47 solved (published or independently audited); 58 solved with Lean verification.
 
 Each entry records its own literature-check date. Literature checks are bounded; ratings are editorial. “Impact” uses the canonical `Importance` field.
 
@@ -257,7 +257,7 @@ Retained entries outside the open count:
 | [MI-24](matrix-inequalities-and-norms/MI-24/README.md) | Schatten norm complement involving Lin's positive definite quantity | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](matrix-inequalities-and-norms/MI-24/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-24/problem.tex) |
 | [MI-26](matrix-inequalities-and-norms/MI-26/README.md) | Concave unitary-orbit subadditivity without monotonicity | **🏆 LEAN VERIFIED** | challenging | interesting to the community | [PDF](matrix-inequalities-and-norms/MI-26/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-26/problem.tex) |
 | [MI-27](matrix-inequalities-and-norms/MI-27/README.md) | Constant one in the logarithmic commutator inequality | **✅ SOLVED** | challenging | broadly interesting | [PDF](matrix-inequalities-and-norms/MI-27/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-27/problem.tex) |
-| [MI-28](matrix-inequalities-and-norms/MI-28/README.md) | Ghabries's determinant comparison for arbitrary nonnegative base powers | **✅ SOLVED** | challenging | interesting to specialist | [PDF](matrix-inequalities-and-norms/MI-28/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-28/problem.tex) |
+| [MI-28](matrix-inequalities-and-norms/MI-28/README.md) | Ghabries's determinant comparison for arbitrary nonnegative base powers | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](matrix-inequalities-and-norms/MI-28/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-28/problem.tex) |
 | [MI-29](matrix-inequalities-and-norms/MI-29/README.md) | Modulus-order determinant comparison with an arbitrary base power | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](matrix-inequalities-and-norms/MI-29/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-29/problem.tex) |
 | [MI-32](matrix-inequalities-and-norms/MI-32/README.md) | Spectral norms of independent entries with regular moment growth | **🏆 LEAN VERIFIED** | challenging | interesting to the community | [PDF](matrix-inequalities-and-norms/MI-32/problem.pdf) · [TeX](matrix-inequalities-and-norms/MI-32/problem.tex) |
 

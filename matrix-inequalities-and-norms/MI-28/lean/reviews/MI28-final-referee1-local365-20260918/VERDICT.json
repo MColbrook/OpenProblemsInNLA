@@ -1,0 +1,23 @@
+{
+  "reviewer": "/root/mi28_final_referee1",
+  "nonauthor": true,
+  "problem": "MI-28",
+  "source_verdict": "PASS",
+  "complete_original_target": true,
+  "selected_contracts": 20,
+  "source_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "mathematical_blockers": [],
+  "publication_only_requirements": [
+    "Label immutable draft comments/plans historical and describe current completion separately.",
+    "Set publication default build target to Solution and reconcile top-level project name.",
+    "Provide truthful co-located formalization.yaml and separately review publication metadata.",
+    "Run genuine final non-root Linux Comparator/kernel/sandbox/negative controls tied to published source."
+  ],
+  "compiler_rerun_by_reviewer": false,
+  "Comparator_run_by_reviewer": false,
+  "official_TauCeti_engine_run": false,
+  "human_peer_review": false,
+  "count_change": 0,
+  "local_evidence_authentication": "PASS; see BYTE-CHECK.json",
+  "reuse_scope": "18 unchanged MI24 modules; no Git authenticity check rerun; exact retained snapshots and root-recorded publication pin authenticated."
+}

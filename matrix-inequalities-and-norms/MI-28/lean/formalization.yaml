@@ -1,0 +1,600 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "MI-28: determinant comparison for every nonnegative base power",
+    "description": "For every complex positive definite pair A,B in every dimension n\u22651, every real k\u22650 and 0\u2264p\u22642, det(A^k+|AB|^p)\u2265det(A^k+A^pB^p), with determinant reality/positivity and stronger normalized log-majorization proved.",
+    "authors": [
+      "George Stepaniants"
+    ],
+    "responsible_maintainers": [
+      "George Stepaniants"
+    ],
+    "license": "Apache-2.0",
+    "affiliation": "Department of Computing and Mathematical Sciences, California Institute of Technology",
+    "contribution_note": "Substantial ChatGPT/Codex assistance; exact prior mathematical/code authorship and distinct agent roles are in SOURCE-ATTRIBUTION.json."
+  },
+  "repository": {
+    "role": "substantive-development"
+  },
+  "sources": [
+    {
+      "title": "MI-28 \u2014 Ghabries\u2019s determinant comparison for arbitrary nonnegative base powers",
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/9342b3d80c207d3e0bfd61251334d027935c387c/matrix-inequalities-and-norms/MI-28/README.md",
+      "type": "canonical problem record",
+      "relationship": "formalizes",
+      "location": "Complete unchanged positive-definite problem statement",
+      "author_endorsement": "n/a",
+      "note": "Already Solved upstream. Snapshot matches the fresh recorded README bytes."
+    },
+    {
+      "title": "MI-28: a determinant inequality for all nonnegative base powers",
+      "authors": [
+        "George Stepaniants"
+      ],
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/85",
+      "type": "solution note",
+      "location": "11 September 2026; Theorem 1, Lemmas 2\u20135 and Corollary 6",
+      "relationship": "formalizes",
+      "author_endorsement": "participated",
+      "note": "Exact reviewed text is source-inputs/canonical/solution.md; its historical verification footer predates this Lean development."
+    },
+    {
+      "title": "Contributions to Matrix Inequalities and Some Applications",
+      "authors": [
+        "M. M. Ghabries"
+      ],
+      "id": "https://www.researchgate.net/publication/361793582_Contributions_to_Matrix_Inequalities_and_Some_Applications",
+      "type": "PhD thesis",
+      "location": "2022, \u00a72.5 and final Open Problems, Problem 1, pp. 109\u2013110",
+      "relationship": "background",
+      "author_endorsement": "not-contacted"
+    },
+    {
+      "title": "New determinantal inequalities concerning Hermitian and positive semi-definite matrices",
+      "authors": [
+        "H. Abbas",
+        "M. M. Ghabries",
+        "B. Mourad"
+      ],
+      "id": "https://files.ele-math.com/articles/oam-15-07.pdf",
+      "type": "article",
+      "location": "Operators and Matrices 15 (2021), 105\u2013116, \u00a74 Conjecture 2",
+      "relationship": "background",
+      "author_endorsement": "not-contacted"
+    },
+    {
+      "title": "A proof of a conjectured determinantal inequality",
+      "authors": [
+        "M. M. Ghabries",
+        "H. Abbas",
+        "B. Mourad",
+        "A. Assi"
+      ],
+      "id": "doi:10.1016/j.laa.2020.07.013",
+      "type": "article",
+      "location": "Linear Algebra and its Applications 605 (2020), 21\u201328; Lemma 2.5 and Theorem 1.1",
+      "relationship": "independently-proves",
+      "author_endorsement": "not-contacted",
+      "note": "Credit for the known large-base range is preserved. C12 proves the necessary norm comparison internally with positive-product order; the paper is not a Lean axiom."
+    },
+    {
+      "title": "Furuta inequality (original 1987 theorem)",
+      "authors": [
+        "T. Furuta"
+      ],
+      "id": "Proceedings of the American Mathematical Society 101 (1987), 85\u201388",
+      "type": "article",
+      "relationship": "adapts",
+      "author_endorsement": "not-contacted",
+      "note": "The required boundary and admissible variants are proved in the imported and new Lean sources."
+    },
+    {
+      "title": "Furuta inequality and its related topics",
+      "authors": [
+        "Masatoshi Fujii"
+      ],
+      "id": "Annals of Functional Analysis 1 (2010), no. 2, 28\u201345",
+      "type": "article",
+      "location": "Theorem 1.3, printed page 30",
+      "relationship": "adapts",
+      "author_endorsement": "not-contacted",
+      "note": "Route for the bounded base and symbolic extension to every nonnegative sandwich parameter."
+    },
+    {
+      "title": "The Furuta inequality with negative powers",
+      "authors": [
+        "K. Tanahashi"
+      ],
+      "id": "doi:10.1090/S0002-9939-99-04705-X",
+      "type": "article",
+      "location": "Proceedings of the American Mathematical Society 127 (1999), 1683\u20131692; Propositions 1\u20132 and Theorem 3",
+      "relationship": "background",
+      "author_endorsement": "not-contacted",
+      "note": "The needed specialization is proved internally using power order and polar identities; no negative-Furuta axiom."
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/sgstepaniants/OpenProblemsInNLA/tree/194c94929159b78758fd8b9d281f973c261dfabf/matrix-inequalities-and-norms/MI-24/lean",
+      "relationship": "builds-on",
+      "note": "18 unchanged required MI24 modules; complete hashes, original credits and minimal transitive closure in REUSE-MI24-FURUTA.json."
+    },
+    {
+      "id": "https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62",
+      "relationship": "adapts",
+      "note": "Separate trusted challenge and exact numerical-target documentation pattern; no imported theorem."
+    },
+    {
+      "id": "https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1",
+      "relationship": "adapts",
+      "note": "Challenge separation pattern; no imported theorem."
+    },
+    {
+      "id": "https://github.com/sgstepaniants/OpenProblemsInNLA/tree/1b9f12661b90f40561e255293e11b2a08d79351e",
+      "relationship": "adapts",
+      "note": "Kernel-mode numerical proof idiom by George Stepaniants. Its separate Matthew J. Colbrook neighborhood argument is not reused."
+    }
+  ],
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "framework": "OpenAI Codex",
+        "tool_setup": "Statement-first independent review and frozen Challenge/Definitions; pinned Mathlib and kernel-mode LeanCert; root alone ran one local Lean process with --threads=1 --memory=4096. Fresh nonauthor proof reviewers read all sources and authenticated saved evidence without compiling. Actual non-root Linux run 35374928604 separately passed Comparator/default-kernel/sandbox checks and rejection controls at proof commit aae2941f9a7f1e28b8010f5216574d93bdc72181.",
+        "prompting_notes": "Preserve the original complex target and all real parameter endpoints, minimize computation, preserve authorship, and distinguish actual local compilation from final Linux Comparator."
+      }
+    ],
+    "notes": "This documentation task ran only filesystem reads/writes and read-only Python validation. No model-version, total-runtime or cost estimate is invented."
+  },
+  "status": {
+    "scope": "Complete original MI28 target; actual local and non-root Linux immutable proof verification passed",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "deliberate_challenge_placeholders": 20,
+    "main_results": [
+      {
+        "declaration": "NLA.MI28.half_exponent_interval",
+        "file": "NLA/MI28/Numerical.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C01",
+        "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.product_modulus_square",
+        "file": "NLA/MI28/ModulusPowers.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C02",
+        "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.swapped_modulus",
+        "file": "NLA/MI28/SwappedModulus.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C03",
+        "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.normalized_posdef",
+        "file": "NLA/MI28/NormalizedPositivity.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C04",
+        "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.furuta_boundary",
+        "file": "NLA/MI28/FurutaBoundary.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C05",
+        "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.furuta_admissible",
+        "file": "NLA/MI28/FurutaAdmissible.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C06",
+        "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.lower_power_implication",
+        "file": "NLA/MI28/LowerPowerImplication.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C07",
+        "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.higher_power_implication",
+        "file": "NLA/MI28/HigherPowerImplication.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C08",
+        "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.swap_implication",
+        "file": "NLA/MI28/SwapImplication.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C09",
+        "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.small_base_implication",
+        "file": "NLA/MI28/SmallBaseImplication.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C10",
+        "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.small_base_norm",
+        "file": "NLA/MI28/SmallBaseNorm.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C11",
+        "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.large_base_norm",
+        "file": "NLA/MI28/LargeBaseNorm.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C12",
+        "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.normalized_homogeneity",
+        "file": "NLA/MI28/NormalizedHomogeneity.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C13",
+        "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.normalized_norm_continuous",
+        "file": "NLA/MI28/NormalizedContinuity.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C14",
+        "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.full_log_majorization",
+        "file": "NLA/MI28/FullLogMajorization.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C15",
+        "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.log_one_add_tangent",
+        "file": "NLA/MI28/LogOneAddTangent.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C16",
+        "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.product_one_add_le",
+        "file": "NLA/MI28/ProductOneAdd.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C17",
+        "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.determinant_normalization",
+        "file": "NLA/MI28/DeterminantNormalization.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C18",
+        "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.determinant_reality_positive",
+        "file": "NLA/MI28/DeterminantReality.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C19",
+        "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      },
+      {
+        "declaration": "NLA.MI28.determinant_comparison",
+        "file": "NLA/MI28/DeterminantComparison.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": [],
+        "contract": "C20",
+        "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
+      }
+    ],
+    "local_proof": {
+      "run": "development-365",
+      "scope": "MI28 closure only; the mixed batch also records unrelated MF14 failures.",
+      "platform": "macOS",
+      "compiler_owner": "/root",
+      "max_processes": 1,
+      "threads": 1,
+      "memory_cap_mib": 4096,
+      "closure_modules": 52,
+      "fresh_modules": 8,
+      "source_matched_reused_modules": 44,
+      "selected_contracts": 20,
+      "proof_and_kernel_trust": "PASS",
+      "complete_record": "verification/local365/LOCAL-COMPLETE.json",
+      "complete_record_sha256": "94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "assembly_sha256": "5a30b4e23b8eb323f03a2a3b8f369c1aa1f1784faabd4fc1898539624d4b8edc",
+      "standalone_Lake_build": "NOT RUN",
+      "origin_scope": "52 actual source-matched successful command/log origins, including authenticated historical reuse. Receipt-reading is not another Lean run."
+    },
+    "local_type_diagnostic": {
+      "run": "development-366",
+      "record": "verification/type-diagnostics-366/COMPARISON.json",
+      "record_sha256": "54cbbfe2497939fe78fbff9dd499b99c961316f6a22e36a98ba0fa7cc0256d45",
+      "receipt_sha256": "ba5933e02e764279e90d26d8eb8f4d5ecb8c2964792eb09452593e4810cc11d3",
+      "matched_contracts": 20,
+      "types_and_universes": "PASS; binder names erased only, separately elaborated environments",
+      "actual_body_graph_nodes": 176,
+      "certificate_consumption": "PASS; actual final body reaches C01 and both generated strict-bound integer-check certificates.",
+      "Comparator": "NOT RUN"
+    },
+    "final_Linux_status": "PASS at immutable proof commit; later publication checks pending",
+    "accepted_count_change": 0,
+    "whole_problem_verified": true,
+    "completed_original_targets": 1
+  },
+  "fidelity": {
+    "divergences": "The complete canonical positive-definite target and all parameter ranges are unchanged. Literal complex matrices, CFC powers/modulus, Euclidean operator norms and decreasing eigenvalues are used. The large-base range is proved internally through positive-product order instead of assuming the cited Ghabries et al. comparison; unbounded Furuta is proved by symbolic induction. At k=0, continuity of each compound norm replaces informal ordered-eigenvalue continuity. Weighted AM\u2013GM and finite prefix summation prove the scalar determinant comparison instead of invoking a general majorization characterization. The optional positive-semidefinite extension in the analytic remark is outside the canonical positive-definite target. No literature axiom or unproved implication is a final premise. Frozen draft comments are preserved as historical bytes; current status is in STATE.json."
+  },
+  "review": {
+    "status": "agent-reviewed complete source and package; actual immutable proof-commit Linux verification passed",
+    "reviewers": [
+      "/root/mi28_final_referee1 \u2014 independent nonauthor final proof reviewer",
+      "/root/mi28_final_referee2 \u2014 independent nonauthor final proof reviewer"
+    ],
+    "notes": "Both fresh agents read the canonical target and entire 52-module closure and approved all 20 frozen contracts. These apply pinned Tau Ceti rubrics, not official engine execution or external human peer review. They did not rerun Lean/Comparator. The earlier statement reviewer /root/mi24_full_referee1 subsequently authored the proof and these docs, so is not a final independent proof reviewer. The separate independent package review has passed; its scope and exact seal are in verification.independent_package_review. See REVIEW-INDEX.json."
+  },
+  "alignment": {
+    "canonical_problem": "MI-28",
+    "current_readme_revision": "9342b3d80c207d3e0bfd61251334d027935c387c",
+    "canonical_path": "matrix-inequalities-and-norms/MI-28/README.md",
+    "contracts": "IMPLEMENTATION-MAP.json",
+    "frozen_statement": "STATEMENT-FREEZE.json",
+    "numerical_targets": "NUMERICAL_TARGETS.md",
+    "formal_target": "NLA.MI28.DeterminantComparison",
+    "formal_proof": "NLA.MI28.determinant_comparison",
+    "stronger_result": "NLA.MI28.full_log_majorization",
+    "extra_substantive_hypotheses": false,
+    "status": "All 20 exact contracts matched by actual Linux Comparator at the immutable proof revision"
+  },
+  "acknowledgements": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology. Preserve the original problem and prior results of Ghabries, Abbas, Mourad and Assi; Furuta, Fujii and Tanahashi background; all unchanged MI24/MI22/MF06 source credits; the separate MF05 numerical idiom; and Mathlib/LeanCert authorship. Schiffer and Forsythe supply workflow patterns, not mathematical premises.",
+  "verification": {
+    "local_Lean": {
+      "run": "development-365",
+      "scope": "MI28 closure only; the mixed batch also records unrelated MF14 failures.",
+      "platform": "macOS",
+      "compiler_owner": "/root",
+      "max_processes": 1,
+      "threads": 1,
+      "memory_cap_mib": 4096,
+      "closure_modules": 52,
+      "fresh_modules": 8,
+      "source_matched_reused_modules": 44,
+      "selected_contracts": 20,
+      "proof_and_kernel_trust": "PASS",
+      "complete_record": "verification/local365/LOCAL-COMPLETE.json",
+      "complete_record_sha256": "94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "assembly_sha256": "5a30b4e23b8eb323f03a2a3b8f369c1aa1f1784faabd4fc1898539624d4b8edc",
+      "standalone_Lake_build": "NOT RUN",
+      "origin_scope": "52 actual source-matched successful command/log origins, including authenticated historical reuse. Receipt-reading is not another Lean run."
+    },
+    "local_diagnostic": {
+      "run": "development-366",
+      "record": "verification/type-diagnostics-366/COMPARISON.json",
+      "record_sha256": "54cbbfe2497939fe78fbff9dd499b99c961316f6a22e36a98ba0fa7cc0256d45",
+      "receipt_sha256": "ba5933e02e764279e90d26d8eb8f4d5ecb8c2964792eb09452593e4810cc11d3",
+      "matched_contracts": 20,
+      "types_and_universes": "PASS; binder names erased only, separately elaborated environments",
+      "actual_body_graph_nodes": 176,
+      "certificate_consumption": "PASS; actual final body reaches C01 and both generated strict-bound integer-check certificates.",
+      "Comparator": "NOT RUN"
+    },
+    "independent_reviews": {
+      "statement": 2,
+      "final": 2,
+      "record": "reviews/INDEX.json"
+    },
+    "GitHub_Comparator": {
+      "status": "passed",
+      "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+      "run": 35374928604,
+      "job": 105697400237,
+      "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+      "input_count": 282,
+      "exports": 20,
+      "evidence": "verification/linux-2026-09-18/README.md",
+      "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+      "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+      "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
+    },
+    "count_change": 0,
+    "package_preflight": {
+      "result": "PASS",
+      "record": "verification/MI28-ROOT-PACKAGE-PREFLIGHT.json",
+      "checks": 2131,
+      "scope": "Coordinator package/schema/identity/privacy checks; not an independent mathematical referee."
+    },
+    "independent_package_review": {
+      "result": "PASS",
+      "reviewer": "/root/mi28_final_referee2",
+      "record": "reviews/package-referee2/MANIFEST.json",
+      "manifest_sha256": "aa162b74002e60643ae3660079d26bb3047ce423dd740e05f386fcdbed4ecd4a",
+      "scope": "Independent nonauthor package/metadata audit of the exact reviewed package; not another Lean or Comparator execution."
+    },
+    "canonical_local_entrypoint": {
+      "result": "PASS",
+      "record": "verification/canonical-local/RECEIPT.json",
+      "receipt_sha256": "2147c47e8765c34f6c9d1d55caef19d4579c33fa1add28a5361ecf7cd313de43",
+      "scope": "Fresh direct Lean compilation of canonical Solution.lean;51 authenticated source/output-matched dependencies reused.",
+      "fresh_modules": 1,
+      "reused_modules": 51,
+      "standalone_Lake_build": false,
+      "Comparator": false,
+      "matched_selected_axiom_reports": 20
+    },
+    "publication_status": "Immutable full proof verified; publication and PR checks pending"
+  }
+}

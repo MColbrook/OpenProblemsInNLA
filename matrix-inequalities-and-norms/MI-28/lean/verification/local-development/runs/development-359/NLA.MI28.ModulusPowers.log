@@ -1,0 +1,1 @@
+'NLA.MI28.product_modulus_square' depends on axioms: [propext, Classical.choice, Quot.sound]

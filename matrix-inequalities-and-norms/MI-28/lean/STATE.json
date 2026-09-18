@@ -1,0 +1,99 @@
+{
+  "as_of_utc": "2026-09-18T17:51:30.167583+00:00",
+  "problem": "MI-28",
+  "original_math_status": "Solved before this formalization",
+  "purpose": "New formalization of the existing complete original target; no new mathematical resolution.",
+  "upstream_main_observed": "9342b3d80c207d3e0bfd61251334d027935c387c",
+  "statement_first_gate": "PASS local350, immutable three-file boundary and 20 headers",
+  "source_snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "local_compilation": {
+    "run": "development-365",
+    "scope": "MI28 closure only; the mixed batch also records unrelated MF14 failures.",
+    "platform": "macOS",
+    "compiler_owner": "/root",
+    "max_processes": 1,
+    "threads": 1,
+    "memory_cap_mib": 4096,
+    "closure_modules": 52,
+    "fresh_modules": 8,
+    "source_matched_reused_modules": 44,
+    "selected_contracts": 20,
+    "proof_and_kernel_trust": "PASS",
+    "complete_record": "verification/local365/LOCAL-COMPLETE.json",
+    "complete_record_sha256": "94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39",
+    "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+    "assembly_sha256": "5a30b4e23b8eb323f03a2a3b8f369c1aa1f1784faabd4fc1898539624d4b8edc",
+    "standalone_Lake_build": "NOT RUN",
+    "origin_scope": "52 actual source-matched successful command/log origins, including authenticated historical reuse. Receipt-reading is not another Lean run."
+  },
+  "local_type_and_body_diagnostics": {
+    "run": "development-366",
+    "record": "verification/type-diagnostics-366/COMPARISON.json",
+    "record_sha256": "54cbbfe2497939fe78fbff9dd499b99c961316f6a22e36a98ba0fa7cc0256d45",
+    "receipt_sha256": "ba5933e02e764279e90d26d8eb8f4d5ecb8c2964792eb09452593e4810cc11d3",
+    "matched_contracts": 20,
+    "types_and_universes": "PASS; binder names erased only, separately elaborated environments",
+    "actual_body_graph_nodes": 176,
+    "certificate_consumption": "PASS; actual final body reaches C01 and both generated strict-bound integer-check certificates.",
+    "Comparator": "NOT RUN"
+  },
+  "final_source_reviews": [
+    {
+      "reviewer": "/root/mi28_final_referee1",
+      "verdict": "PASS",
+      "manifest_sha256": "f3fef1bb2dbba9b252c11cc23b950bbd1230f36494299c0c14f9ed164b5f4af0"
+    },
+    {
+      "reviewer": "/root/mi28_final_referee2",
+      "verdict": "APPROVE",
+      "manifest_sha256": "4e6aa1e1489b13394222cf85f11f3f81fa7a7d275fe08f97651cb2527062b188"
+    }
+  ],
+  "publication_documentation": "Independent package review PASS and coordinator preflight PASS; unchanged mathematical source.",
+  "standalone_Lake_execution": "NOT RUN",
+  "GitHub_Comparator": {
+    "status": "passed",
+    "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+    "run": 35374928604,
+    "job": 105697400237,
+    "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+    "input_count": 282,
+    "exports": 20,
+    "evidence": "verification/linux-2026-09-18/README.md",
+    "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+    "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+    "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+    "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
+  },
+  "GitHub_default_kernel_sandbox_negative_controls": "PASS at aae2941f9a7f1e28b8010f5216574d93bdc72181, run 35374928604",
+  "publication": "Immutable proof verified; publication and PR checks pending",
+  "accepted_Lean_verification_count_change": 0,
+  "new_mathematical_resolution_count_change": 0,
+  "historical_labels": "Frozen source draft comments and archived plans record the pre-implementation stage; they do not describe current proof status.",
+  "prepared_at": "2026-09-18T10:40:17.743399+00:00",
+  "canonical_local_entrypoint": {
+    "result": "PASS",
+    "record": "verification/canonical-local/RECEIPT.json",
+    "receipt_sha256": "2147c47e8765c34f6c9d1d55caef19d4579c33fa1add28a5361ecf7cd313de43",
+    "scope": "Fresh direct Lean compilation of canonical Solution.lean;51 authenticated source/output-matched dependencies reused.",
+    "fresh_modules": 1,
+    "reused_modules": 51,
+    "standalone_Lake_build": false,
+    "Comparator": false,
+    "matched_selected_axiom_reports": 20
+  },
+  "independent_package_review": {
+    "result": "PASS",
+    "reviewer": "/root/mi28_final_referee2",
+    "record": "reviews/package-referee2/MANIFEST.json",
+    "manifest_sha256": "aa162b74002e60643ae3660079d26bb3047ce423dd740e05f386fcdbed4ecd4a",
+    "scope": "Independent nonauthor package/metadata audit of the exact reviewed package; not another Lean or Comparator execution."
+  },
+  "canonical_status": "Lean verified",
+  "remaining_gates": [
+    "Permanent-ID and catalog checks",
+    "Rendered PDF visual review",
+    "Final publication commit Linux run",
+    "Upstream PR and merge-checkout Linux run"
+  ]
+}

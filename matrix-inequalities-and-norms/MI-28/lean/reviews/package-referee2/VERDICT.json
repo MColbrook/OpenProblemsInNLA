@@ -1,0 +1,12 @@
+{
+  "verdict": "APPROVE",
+  "required_defects": [],
+  "scope": "Publication metadata and integration for the exact sealed package; no compiler or Comparator rerun",
+  "docs_manifest_sha256": "3f35c783a327e8e5b67165558dcb9fd557d0a8e3de4d1ea8324f73bfed06b31d",
+  "package_manifest_sha256": "5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5",
+  "pending": [
+    "Root canonical entrypoint/integration execution",
+    "Final real GitHub Linux Comparator/kernel/sandbox/negative controls on exact publication commit"
+  ],
+  "count_change": 0
+}

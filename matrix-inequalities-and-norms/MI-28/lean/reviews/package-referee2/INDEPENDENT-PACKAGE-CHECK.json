@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent nonauthor read-only canonical package integrity/schema/relocation review; no Lean, Lake, kernel, Comparator, Git or network run.",
+  "package_manifest_sha256": "5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5",
+  "payload_files": 264,
+  "proof_modules_unchanged": 52,
+  "reachable_proof_import_closure": 52,
+  "frozen_contracts_unchanged": 20,
+  "source_relocations_authenticated": 251,
+  "retained_local365_original_evidence_files": 92,
+  "archive_packets_authenticated_in_memory": 7,
+  "archived_members_authenticated": 164,
+  "derived_metadata_files": [
+    "README.md",
+    "formalization.yaml",
+    "STATE.json"
+  ],
+  "derived_public_refresh": "Exact retained-field projection authenticated; raw record not represented as co-located.",
+  "current_markdown_links_resolved": 17,
+  "email_scan": "No email-shaped identifier in plain, gzip-decoded or archived public payloads",
+  "compiler_and_Comparator_executions": 0,
+  "proof_mutations": 0,
+  "count_change": 0,
+  "pending": [
+    "Root canonical entrypoint execution",
+    "Final GitHub Linux Comparator/kernel/sandbox/negative controls and exact commit/run binding"
+  ],
+  "files_hashed": 587
+}

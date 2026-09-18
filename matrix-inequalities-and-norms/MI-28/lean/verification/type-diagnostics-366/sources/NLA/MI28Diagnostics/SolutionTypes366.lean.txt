@@ -1,0 +1,47 @@
+import NLA.MI28.Solution
+import Lean
+
+private def diagnosticEraseBinderNames : Lean.Expr → Lean.Expr
+  | .forallE _ t b info => .forallE .anonymous (diagnosticEraseBinderNames t) (diagnosticEraseBinderNames b) info
+  | .lam _ t b info => .lam .anonymous (diagnosticEraseBinderNames t) (diagnosticEraseBinderNames b) info
+  | .letE _ t v b nd => .letE .anonymous (diagnosticEraseBinderNames t) (diagnosticEraseBinderNames v) (diagnosticEraseBinderNames b) nd
+  | .app f a => .app (diagnosticEraseBinderNames f) (diagnosticEraseBinderNames a)
+  | .mdata m b => .mdata m (diagnosticEraseBinderNames b)
+  | .proj n i b => .proj n i (diagnosticEraseBinderNames b)
+  | e => e
+open Lean in
+run_cmd do
+  let mut rows : Array Json := #[]
+  for name in #[`NLA.MI28.half_exponent_interval, `NLA.MI28.product_modulus_square, `NLA.MI28.swapped_modulus, `NLA.MI28.normalized_posdef, `NLA.MI28.furuta_boundary, `NLA.MI28.furuta_admissible, `NLA.MI28.lower_power_implication, `NLA.MI28.higher_power_implication, `NLA.MI28.swap_implication, `NLA.MI28.small_base_implication, `NLA.MI28.small_base_norm, `NLA.MI28.large_base_norm, `NLA.MI28.normalized_homogeneity, `NLA.MI28.normalized_norm_continuous, `NLA.MI28.full_log_majorization, `NLA.MI28.log_one_add_tangent, `NLA.MI28.product_one_add_le, `NLA.MI28.determinant_normalization, `NLA.MI28.determinant_reality_positive, `NLA.MI28.determinant_comparison] do
+    let ci ← getConstInfo name
+    rows := rows.push <| Json.mkObj [
+      ("name", toJson name.toString),
+      ("levelParams", toJson (ci.levelParams.map Name.toString)),
+      ("type", toJson (reprStr ci.type)),
+      ("binderNormalizedType", toJson (reprStr (diagnosticEraseBinderNames ci.type)))]
+  IO.FS.writeFile "/private/tmp/nla-lean-next-20260915/MI28-type-diagnostics-366/solution-types.json" (Json.compress (toJson rows))
+
+open Lean in
+run_cmd do
+  let mut rows : Array Json := #[]
+  let mut pending : Array Name := #[`NLA.MI28.half_exponent_interval, `NLA.MI28.product_modulus_square, `NLA.MI28.swapped_modulus, `NLA.MI28.normalized_posdef, `NLA.MI28.furuta_boundary, `NLA.MI28.furuta_admissible, `NLA.MI28.lower_power_implication, `NLA.MI28.higher_power_implication, `NLA.MI28.swap_implication, `NLA.MI28.small_base_implication, `NLA.MI28.small_base_norm, `NLA.MI28.large_base_norm, `NLA.MI28.normalized_homogeneity, `NLA.MI28.normalized_norm_continuous, `NLA.MI28.full_log_majorization, `NLA.MI28.log_one_add_tangent, `NLA.MI28.product_one_add_le, `NLA.MI28.determinant_normalization, `NLA.MI28.determinant_reality_positive, `NLA.MI28.determinant_comparison]
+  let mut seen : Array Name := #[]
+  while !pending.isEmpty do
+    let name := pending.back!
+    pending := pending.pop
+    if seen.contains name then continue
+    seen := seen.push name
+    let ci ← getConstInfo name
+    match ci.value? (allowOpaque := true) with
+    | none => rows := rows.push <| Json.mkObj [
+        ("name", toJson name.toString), ("hasBody", toJson false),
+        ("bodyConstants", toJson (#[] : Array String))]
+    | some body =>
+      let cs := body.getUsedConstants
+      rows := rows.push <| Json.mkObj [
+        ("name", toJson name.toString), ("hasBody", toJson true),
+        ("bodyConstants", toJson (cs.map Name.toString))]
+      for c in cs do
+        if c.toString.startsWith "NLA.MI28." || c.toString.startsWith "_private.NLA.MI28." || c.toString.startsWith "NLA.MI24." || c.toString.startsWith "_private.NLA.MI24." then
+          if !seen.contains c then pending := pending.push c
+  IO.FS.writeFile "/private/tmp/nla-lean-next-20260915/MI28-type-diagnostics-366/certificate-body-route.json" (Json.compress (toJson rows))

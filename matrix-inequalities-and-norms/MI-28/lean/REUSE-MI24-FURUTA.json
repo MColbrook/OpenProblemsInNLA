@@ -1,0 +1,165 @@
+{
+  "schema": "source-reuse-v1",
+  "purpose": "Unchanged pinned MI24 FurutaBase, PowerScaling, CompoundNorm and ScalarLogMajorization closures for MI28 real order, homogeneity, all-degree compound norms and finite weighted prefix summation.",
+  "source_snapshot": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot",
+  "source_snapshot_manifest_sha256": "eb766a3dee52c2a694b0bb9d006619295fee4271ee7aa925dc9895e4998562f3",
+  "coordinator_designated_published_revision": "194c94929159b78758fd8b9d281f973c261dfabf",
+  "revision_evidence_scope": "Published revision supplied by root; this author independently checks the listed snapshot hashes and identical copied bytes, and does not run Git or claim an independent publication check.",
+  "copied_module_count": 18,
+  "files": [
+    {
+      "path": "NLA/MI24/Definitions.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/Definitions.lean",
+      "sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+      "bytes": 4802
+    },
+    {
+      "path": "NLA/MI24/SpectralPowers.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/SpectralPowers.lean",
+      "sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+      "bytes": 3524
+    },
+    {
+      "path": "NLA/MI24/MeanPositivity.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/MeanPositivity.lean",
+      "sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+      "bytes": 4211
+    },
+    {
+      "path": "NLA/MI24/GeometricCongruence.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/GeometricCongruence.lean",
+      "sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+      "bytes": 6005
+    },
+    {
+      "path": "NLA/MI24/PolarPowers.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/PolarPowers.lean",
+      "sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+      "bytes": 5682
+    },
+    {
+      "path": "NLA/MI24/OrderPowers.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/OrderPowers.lean",
+      "sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+      "bytes": 2872
+    },
+    {
+      "path": "NLA/MI24/FurutaBase.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FurutaBase.lean",
+      "sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+      "bytes": 5724
+    },
+    {
+      "path": "NLA/MI24/TraceSpectral.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/TraceSpectral.lean",
+      "sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+      "bytes": 3162
+    },
+    {
+      "path": "NLA/MI24/PowerScaling.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/PowerScaling.lean",
+      "sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+      "bytes": 3716
+    },
+    {
+      "path": "NLA/MI24/CompoundAlgebra.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundAlgebra.lean",
+      "sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+      "bytes": 7636
+    },
+    {
+      "path": "NLA/MI24/DiagonalPowers.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/DiagonalPowers.lean",
+      "sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+      "bytes": 3998
+    },
+    {
+      "path": "NLA/MI24/FurutaHalfPower.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FurutaHalfPower.lean",
+      "sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+      "bytes": 5953
+    },
+    {
+      "path": "NLA/MI24/HeronOrder.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronOrder.lean",
+      "sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+      "bytes": 6169
+    },
+    {
+      "path": "NLA/MI24/OperatorNorm.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/OperatorNorm.lean",
+      "sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+      "bytes": 4865
+    },
+    {
+      "path": "NLA/MI24/HeronNorm.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronNorm.lean",
+      "sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "bytes": 3179
+    },
+    {
+      "path": "NLA/MI24/CompoundSpectral.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundSpectral.lean",
+      "sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+      "bytes": 6199
+    },
+    {
+      "path": "NLA/MI24/CompoundNorm.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundNorm.lean",
+      "sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+      "bytes": 8790
+    },
+    {
+      "path": "NLA/MI24/ScalarLogMajorization.lean",
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/ScalarLogMajorization.lean",
+      "sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+      "bytes": 3944
+    }
+  ],
+  "attribution": {
+    "copyright_author": "George Stepaniants",
+    "affiliation": "Department of Computing and Mathematical Sciences, California Institute of Technology",
+    "prior_ai_code_author": "Codex agent /root/nm04_final_referee1 for matrix modules and /root for ScalarLogMajorization; all original per-file credits retained unchanged.",
+    "mathematical_source": "Masatoshi Fujii, Furuta inequality and its related topics, Annals of Functional Analysis 1 (2010), no. 2, 28–45; Theorem 1.3, printed page 30.",
+    "new_extension_author": "Codex agent /root/mi24_full_referee1; MI28 proof author, not a final independent MI28 proof referee."
+  },
+  "trust_scope": {
+    "compiler_invoked_by_this_author": false,
+    "copied_modules_changed": false,
+    "mi28_frozen_files_changed": false,
+    "C01_kernel_certificate_consumer_status": "Numerical passed actual root local356; ModulusPowers C02 and SwappedModulus C03 passed actual root local359 including kernel trust. Final complete-target proof-body diagnostics remain pending. This author has invoked no compiler.",
+    "C01_root_execution_receipt": {
+      "path": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b",
+      "numerical_log_path": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/NLA.MI28.Numerical.log",
+      "numerical_log_sha256": "0250ba864e70725248739c14e23937a25d5fd89d96e5759ab8ab3223275b852a"
+    }
+  },
+  "attributed_patterns": [
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MF05-canonical-package-local141/NLA/MF05/Numerical.lean",
+      "source_sha256": "62c4363848f529e48d064c875d8897d55cb6959037af8df517c88287758e55ff",
+      "target_path": "NLA/MI28/Numerical.lean",
+      "scope": "Kernel-trust setup and interval_decide proof of a single fixed half constant; the MF05 mathematical neighborhood argument is not reused."
+    },
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FiniteSemantics.lean",
+      "source_sha256": "3963765613dc9ca6beb64056596ba739859f99932e9bb2632f6dc7726bb27550",
+      "target_path": "NLA/MI28/ModulusPowers.lean",
+      "scope": "Concrete modulus/Gram CFC power-composition method. The new C02 proof supplies the half-exponent domain hypothesis from selected C01, then the general power bridge consumes selected C02. The MI24 module itself is not copied or changed."
+    },
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronNorm.lean",
+      "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "target_path": "NLA/MI28/NormComparison.lean",
+      "scope": "Positive scalar order-to-Euclidean-norm normalization method. The new shared proof uses MI28 frozen C04/C13 and exact normalized order equivalences, without invoking Heron-specific theorems. HeronNorm is later copied unchanged only as a transitive import required by CompoundSpectral."
+    }
+  ],
+  "entry_modules": [
+    "NLA.MI24.FurutaBase",
+    "NLA.MI24.PowerScaling",
+    "NLA.MI24.CompoundNorm",
+    "NLA.MI24.ScalarLogMajorization"
+  ],
+  "transitive_scope_note": "CompoundSpectral is a pre-existing combined module that also imports MI24 HeronNorm. Its unchanged import closure includes HeronNorm, HeronOrder and FurutaHalfPower. MI28 uses the general compound algebra/spectral/norm declarations and does not invoke the Heron-specific comparison theorems. No unrelated MI24 modules are copied."
+}

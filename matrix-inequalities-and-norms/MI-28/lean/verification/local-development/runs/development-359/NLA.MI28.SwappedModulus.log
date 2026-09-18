@@ -1,0 +1,1 @@
+'NLA.MI28.swapped_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]

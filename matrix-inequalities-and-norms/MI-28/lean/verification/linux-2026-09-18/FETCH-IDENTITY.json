@@ -1,0 +1,30 @@
+{
+  "run": 35374928604,
+  "commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+  "conclusion": "success",
+  "archives": [
+    {
+      "id": 10560206578,
+      "name": "lean-MI-28",
+      "sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 105697267943,
+      "name": "select",
+      "conclusion": "success"
+    },
+    {
+      "id": 105697400237,
+      "name": "verify (MI-28, matrix-inequalities-and-norms/MI-28/lean)",
+      "conclusion": "success"
+    },
+    {
+      "id": 105697401798,
+      "name": "checker-controls",
+      "conclusion": "skipped"
+    }
+  ],
+  "scope": "GitHub metadata/raw log/artifact identity only; proof acceptance needs actual log inspection."
+}

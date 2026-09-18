@@ -1,0 +1,225 @@
+"""Assemble unchanged reviewed MI28 sources and authentic evidence; no Linux claim."""
+from pathlib import Path
+import datetime, gzip, hashlib, io, json, re, tarfile
+
+B = Path('/private/tmp/nla-lean-next-20260915')
+L = Path('/private/tmp/nla-lean-local-shared-20260916')
+S = B / 'MI28-local365-source-snapshot'
+N = S / 'candidate'
+D = B / 'MI28-publication-docs-draft'
+P = B / 'MI28-canonical-package-local365'
+sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+load = lambda p: json.loads(Path(p).read_text())
+assert not P.exists()
+assert sha(S / 'MANIFEST.json') == '7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089'
+docs_manifest = load(D / 'MANIFEST.json')
+assert sha(D / 'MANIFEST.json') == '3f35c783a327e8e5b67165558dcb9fd557d0a8e3de4d1ea8324f73bfed06b31d'
+local = load(B / 'MI28-LOCAL-COMPLETE-365.json')
+assert sha(B / 'MI28-LOCAL-COMPLETE-365.json') == '94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39'
+assert len(local['sources']) == 52 and local['exact_contracts'] == 20
+P.mkdir()
+retained = {}
+
+def copy(src, rel, compress=False):
+    src = Path(src)
+    assert src.is_file() and not src.is_symlink(), src
+    data = src.read_bytes()
+    raw_sha = hashlib.sha256(data).hexdigest()
+    encoding = 'identity'
+    if compress and len(data) > 50000:
+        rel += '.gz'
+        data = gzip.compress(data, mtime=0)
+        encoding = 'gzip'
+    dst = P / rel
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.exists():
+        assert dst.read_bytes() == data, dst
+    else:
+        dst.write_bytes(data)
+    retained[str(src)] = {'source': str(src), 'source_sha256': raw_sha, 'destination': rel,
+        'sha256': sha(dst), 'encoding': encoding, 'decoded_sha256': raw_sha}
+    return rel
+
+def write(rel, obj):
+    p = P / rel
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(obj, indent=2) + '\n')
+
+def archive(src, rel):
+    src = Path(src)
+    dst = P / rel
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    inventory = {}
+    with dst.open('wb') as raw, gzip.GzipFile(fileobj=raw, mode='wb', mtime=0) as gz, tarfile.open(fileobj=gz, mode='w') as tar:
+        for f in sorted(src.rglob('*')):
+            assert not f.is_symlink(), f
+            if not f.is_file():
+                continue
+            assert f.suffix not in {'.pdf', '.olean', '.ilean', '.o', '.so', '.a', '.zip'}, f
+            data = f.read_bytes()
+            name = str(f.relative_to(src))
+            info = tarfile.TarInfo(name)
+            info.size, info.mode = len(data), 0o644
+            tar.addfile(info, io.BytesIO(data))
+            inventory[name] = hashlib.sha256(data).hexdigest()
+    return {'source_directory': str(src), 'archive': rel,
+        'archive_sha256': sha(dst), 'payload_sha256': inventory}
+
+for rel, h in local['sources'].items():
+    assert sha(N / rel) == h
+    copy(N / rel, rel)
+freeze = load(B / 'MI28-STATEMENT-FREEZE-local350.json')
+for rel, h in freeze['frozen_files'].items():
+    assert sha(N / rel) == h
+    copy(N / rel, rel)
+for name in ['LICENSE', 'HEADERS.json', 'REUSE-MI24-FURUTA.json']:
+    copy(N / name, name)
+integration = load(D / 'INTEGRATION-REQUIREMENTS.json')
+for name in integration['docs_to_copy'] + ['INTEGRATION-REQUIREMENTS.json', 'DOCUMENT-SCOPE.json']:
+    src = D / name
+    if src.is_dir():
+        for f in sorted(src.rglob('*')):
+            if f.is_file():
+                copy(f, str(f.relative_to(D)))
+    else:
+        copy(src, name)
+for row in integration['archive_historical_records']:
+    assert sha(N / row['source']) == row['sha256']
+    copy(N / row['source'], row['destination'])
+copy(B / 'MI28-STATEMENT-FREEZE-local350.json', 'STATEMENT-FREEZE.json')
+copy(B / 'MI28-LOCAL-COMPLETE-365.json', 'verification/local365/LOCAL-COMPLETE.json')
+copy(S / 'evidence/MI28-ROOT-REUSE-CHECK-local363.json', 'verification/reuse/MI28-ROOT-REUSE-CHECK-local363.json')
+
+receipts = set()
+for src, h in local['retained_original_evidence'].items():
+    assert sha(src) == h
+    copy(src, 'verification/local-development/' + str(Path(src).relative_to(L)), True)
+    if Path(src).name == 'RECEIPT.json':
+        receipts.add(Path(src))
+for receipt in sorted(receipts):
+    n = receipt.parent.name.removeprefix('development-')
+    copy(L / f'ASSEMBLY-{n}.json', f'verification/local-development/ASSEMBLY-{n}.json', True)
+for name in ['LOCAL-ENVIRONMENT.json', 'serial_compile_v3.py']:
+    copy(L / name, 'verification/local-development/' + name + ('.txt' if name.endswith('.py') else ''), True)
+diag = B / 'MI28-type-diagnostics-366'
+assert sha(diag / 'COMPARISON.json') == '54cbbfe2497939fe78fbff9dd499b99c961316f6a22e36a98ba0fa7cc0256d45'
+comparison = load(diag / 'COMPARISON.json')
+assert not comparison['Comparator_executed']
+for f in sorted(diag.rglob('*')):
+    if f.is_file():
+        copy(f, 'verification/type-diagnostics-366/' + str(f.relative_to(diag)) + ('.txt' if f.suffix == '.lean' else ''), True)
+for name in ['ASSEMBLY-366.json', 'runs/development-366/RECEIPT.json']:
+    copy(L / name, 'verification/local-development/' + name, True)
+for cmd in comparison['diagnostic_commands']:
+    f = L / 'runs/development-366' / (cmd['module'] + '.log')
+    assert sha(f) == cmd['log_sha256']
+    copy(f, 'verification/local-development/runs/development-366/' + f.name, True)
+for name in ['capture_mi28_local_completion.py', 'diagnose_mi28_types.py',
+             'compare_mi28_diagnostics.py', 'prepare_mi28_local365_package.py']:
+    copy(B / name, 'verification/packaging/' + name + '.txt')
+
+reviews = []
+index = load(D / 'REVIEW-INDEX.json')
+for stage in ['statement_reviews', 'final_source_reviews']:
+    for row in index[stage]:
+        src = Path(row['origin_manifest']).parent
+        assert sha(src / 'MANIFEST.json') == row['manifest_sha256']
+        item = archive(src, 'reviews/' + src.name + '-packet.tar.gz')
+        item.update(stage=stage, reviewer=row['reviewer'], manifest_sha256=row['manifest_sha256'])
+        for name in ['REVIEW.md', 'REPORT.md', 'VERDICT.json', 'MANIFEST.json', 'CHECK.json', 'INTEGRITY.json']:
+            if (src / name).is_file():
+                copy(src / name, 'reviews/' + src.name + '/' + name)
+        reviews.append(item)
+write('reviews/INDEX.json', reviews)
+for name in ['MI28-final-referee1-local365-20260918-verify.py',
+             'MI28-referee1-ROOT-REPLAY-20260918.json', 'MI28-referee2-ROOT-REPLAY-20260918.json']:
+    copy(B / 'reviews' / name, 'reviews/' + name + ('.txt' if name.endswith('.py') else ''))
+history = []
+for src, label in [(S, 'reviewed-local365-snapshot'),
+                   (B / 'MI28-full-statements-local350', 'statement-first-local350'),
+                   (D, 'publication-documentation-original-draft')]:
+    history.append(archive(src, 'verification/history/' + label + '.tar.gz'))
+write('verification/history/INDEX.json', history)
+for name in ['AUDIT.json', 'REPOSITORIES.json', 'FRESH-BRANCH-HEADS.json']:
+    copy(B / 'MI28-current-public-audit-v2-20260918' / name, 'verification/public-scope/' + name, True)
+copy(B / 'MI28-public-audit-classification-20260918.json', 'verification/public-scope/CLASSIFICATION.json')
+fresh_path = B / 'MI28-PREPUBLICATION-REFRESH-20260918.json'
+fresh = load(fresh_path)
+write('verification/public-scope/PREPUBLICATION-REFRESH.json', {
+    'time': fresh['time'], 'original_record_sha256': sha(fresh_path),
+    'main': json.loads(fresh['observations'][0]['stdout'])['sha'],
+    'canonical_blob': json.loads(fresh['observations'][1]['stdout'])['sha'],
+    'target_PRs': json.loads(fresh['observations'][2]['stdout']),
+    'head_PRs': json.loads(fresh['observations'][3]['stdout']),
+    'commands': [{'argv': o['argv'], 'exit_code': o['exit_code']} for o in fresh['observations']],
+    'scope': 'Exact main/canonical/PR observations; unrelated commit metadata and redundant canonical bytes omitted.'})
+
+state = load(P / 'STATE.json')
+state['prepared_at'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+state['publication_documentation'] = 'Assembled from sealed documentation and unchanged reviewed sources; independent package/metadata review pending.'
+state['publication'] = 'Only an empty CI-skipped seed branch is pushed; no proof publication or Linux run.'
+write('STATE.json', state)
+meta = load(P / 'formalization.yaml')
+meta['status'].update(whole_problem_verified=False, completed_original_targets=0)
+meta['verification'] = {'local_Lean': meta['status']['local_proof'],
+    'local_diagnostic': meta['status']['local_type_diagnostic'],
+    'independent_reviews': {'statement': 2, 'final': 2, 'record': 'reviews/INDEX.json'},
+    'GitHub_Comparator': {'status': 'not run for MI28'}, 'count_change': 0}
+write('formalization.yaml', meta)
+readme = (P / 'README.md').read_text()
+start = readme.index('This directory is initially a compact documentation draft;')
+end = readme.index('\n## Attribution and public scope', start)
+readme = readme[:start] + '''This directory contains the unchanged reviewed proof sources and retained
+execution evidence. The original documentation draft and its environment-bound
+integrity checker are preserved in `verification/history/`; that checker is
+historical provenance, not a portable Lean command. See
+[verification/README.md](verification/README.md) for the retained commands,
+source hashes, local diagnostic records and review scopes.
+''' + readme[end:]
+(P / 'README.md').write_text(readme)
+(P / 'verification/README.md').write_text('''# Retained verification evidence
+
+`local365/LOCAL-COMPLETE.json` binds 52 proof sources and all20 exports to actual
+successful compiler commands, logs and source/dependency-matched reuse chains.
+Local365 compiled8 modules freshly and reused44 verified outputs; unrelated
+MF14 failures in that mixed batch do not support this proof's success claim.
+`local-development` preserves the original receipts and successful origin logs.
+
+`type-diagnostics-366` records all20 separately elaborated types/universes and
+the actual176-node proof-body graph reaching the kernel LeanCert certificate.
+This macOS diagnostic is not Comparator. Reviewers inspected the source and
+authenticated saved receipts; their Python replays were not compiler reruns.
+
+`RETAINED-PATHS.json` maps campaign paths to retained files, preserving both
+encoded and decoded hashes. Large JSON/dump files use gzip compression. Original
+absolute paths identify historical commands, not portable reproduction commands.
+Use `lake build Solution` from this project for the ordinary proof build.
+
+The history archives preserve the statement-first checkpoint, exact reviewed
+source snapshot and sealed documentation draft. No compiled outputs, dependency
+caches, bulk tree archives or primary-paper PDFs are embedded. Compact public
+audit records retain external immutable tree hashes and their limited scope.
+Final real Linux Comparator/default-kernel/sandbox/negative controls are pending.
+''')
+write('ACTIVE-SOURCE-MANIFEST.json', {'source_sha256': local['sources'],
+    'local_run': 365, 'contracts': 20, 'frozen_boundary_sha256': sha(P / 'STATEMENT-FREEZE.json'),
+    'Linux_Comparator': 'not run'})
+# Current-status edits are explicitly derived from the sealed docs, so their
+# source-copy entries are updated to distinguish source and destination hashes.
+for item in retained.values():
+    dst = P / item['destination']
+    if sha(dst) != item['sha256']:
+        item['derived_current_status_update'] = True
+        item['original_destination_sha256'] = item['sha256']
+        item['sha256'] = sha(dst)
+        item['decoded_sha256'] = sha(dst)
+write('verification/RETAINED-PATHS.json', list(retained.values()))
+assert len(list(P.rglob('*.lean'))) == 53
+manifest = {'stage': 'Reviewed complete local proof; package preflight and Linux pending',
+    'docs_manifest_sha256': sha(D / 'MANIFEST.json'),
+    'files': {str(f.relative_to(P)): sha(f) for f in sorted(P.rglob('*'))
+              if f.is_file() and f != P / 'PACKAGE-MANIFEST.json'}}
+write('PACKAGE-MANIFEST.json', manifest)
+print(json.dumps({'package': str(P), 'manifest_sha256': sha(P / 'PACKAGE-MANIFEST.json'),
+    'payload_files': len(manifest['files']), 'bytes': sum(f.stat().st_size for f in P.rglob('*') if f.is_file()),
+    'local_complete': True, 'Linux_Comparator': 'not run', 'count_change': 0}, indent=2))

@@ -1,0 +1,23 @@
+{
+  "reviewer": "/root/mi28_final_referee2",
+  "time": "2026-09-18T09:55:43.008585+00:00",
+  "role": "Independent nonauthor full mathematical and code referee",
+  "proof_source_verdict": "APPROVE",
+  "publication_metadata_verdict": "Pending required default target, root package name and historical-status labeling corrections; final formalization metadata and Linux checks remain separate gates",
+  "required_mathematical_corrections": [],
+  "scope": "All 52 proof-side Lean modules and 20 frozen contracts, original canonical target, selected pinned Tau Ceti criteria, independent audit of saved local evidence",
+  "snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "compiler_invoked_by_referee": false,
+  "Comparator_invoked_by_referee": false,
+  "consulted_other_final_referee_verdict": false,
+  "edited_candidate_sources": false,
+  "publication_operations_performed": false,
+  "count_change": 0,
+  "files": {
+    "INTEGRITY.json": "b3e186090d2c75a8606f167e5593ce17518ba4ab3b88d0c0442df2c2631bf823",
+    "REPORT.md": "133e235b595ce69e7bb43570db4a841f632185450b74d7b50f88f97681a82416",
+    "REUSE-SEARCH.json": "68a4151e65862140299c5391e93941811fc90cfd5599a3ea304426d63a2ebf42",
+    "SOURCE_READS.json": "621f8a6a5589afd6312c4788a74eccef713351bf4fd8d426e00ed59cd6650cba",
+    "verify_integrity.py": "2c408134dd52ea6d5b1e0123b155e0dc56846778f1383c3fcad3594e7c520e91"
+  }
+}

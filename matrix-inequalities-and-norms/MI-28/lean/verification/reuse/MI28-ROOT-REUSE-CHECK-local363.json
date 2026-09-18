@@ -1,0 +1,96 @@
+{
+  "published_commit": "194c94929159b78758fd8b9d281f973c261dfabf",
+  "files": [
+    {
+      "module": "NLA/MI24/CompoundAlgebra.lean",
+      "sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/CompoundNorm.lean",
+      "sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/CompoundSpectral.lean",
+      "sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/Definitions.lean",
+      "sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/DiagonalPowers.lean",
+      "sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/FurutaBase.lean",
+      "sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/FurutaHalfPower.lean",
+      "sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/GeometricCongruence.lean",
+      "sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/HeronNorm.lean",
+      "sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/HeronOrder.lean",
+      "sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/MeanPositivity.lean",
+      "sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/OperatorNorm.lean",
+      "sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/OrderPowers.lean",
+      "sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/PolarPowers.lean",
+      "sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/PowerScaling.lean",
+      "sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/ScalarLogMajorization.lean",
+      "sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/SpectralPowers.lean",
+      "sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+      "active_assembly_matches": true
+    },
+    {
+      "module": "NLA/MI24/TraceSpectral.lean",
+      "sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+      "active_assembly_matches": true
+    }
+  ],
+  "scope": "actual Git-object/source/assembly identity check; no new Lean execution"
+}
