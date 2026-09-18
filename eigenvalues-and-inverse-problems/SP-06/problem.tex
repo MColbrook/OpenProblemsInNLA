@@ -34,7 +34,7 @@ spectra},pdfauthor={Open Problems in Numerical Linear Algebra}}
 \fancyhf{}
 \fancyhead[L]{\sffamily\footnotesize\color{muted}OPEN PROBLEMS IN NUMERICAL LINEAR ALGEBRA}
 \fancyhead[R]{\sffamily\bfseries\footnotesize\color{accent}SP-06}
-\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Literature check: 2026-09-13}}
+\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Literature check: 2026-09-18}}
 \fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule height \headrulewidth\hfill}}
@@ -60,6 +60,9 @@ to the community\par}
 \textbf{Rating rationale:} Challenging reflects recovering a spectral
 implication after a gap in its original analytic proof; community impact
 is a structural criterion for real spectra of banded Toeplitz sections.
+
+\textbf{Note:} The limiting-spectrum form of the same implication also
+fails; see the strengthening below.
 
 \subsection{Resolution --- 2026-09-11}\label{resolution-2026-09-11}
 
@@ -140,6 +143,45 @@ retained. Two statement reviews preceded proof implementation, and two
 independent final mathematical reviews passed. AI assistance and agent
 review are disclosed; no human peer review or Tau Ceti endorsement is
 claimed.
+
+\subsection{Strengthening --- the limiting-spectrum implication also
+fails,
+2026-09-18}\label{strengthening-the-limiting-spectrum-implication-also-fails-2026-09-18}
+
+\textbf{Strengthening of the negative resolution, by Fabian Rohner and
+Clemens Thalhammer}, Seminar for Applied Mathematics, ETH Zurich.
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/eigenvalues-and-inverse-problems/SP-06/references/rohner-thalhammer-2026-09-18/paper.pdf}{PDF}
+·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/eigenvalues-and-inverse-problems/SP-06/references/rohner-thalhammer-2026-09-18/paper.tex}{LaTeX}.
+\textbf{Theorem 1.3 and Proposition 4.1.}
+
+The resolution above refutes the displayed target for finite sections
+and notes that the distinct limiting-spectrum statement is untouched.
+That weaker statement also fails. The integer-coefficient Laurent
+polynomial \(b=h^2\), \(h(z)=z^{2}+97z+103-10201/z\), is real-valued on
+a rigorously constructed real-analytic Jordan curve with winding number
+one about the origin, on which \(b\) takes values in \([-4000000,0]\).
+Near \(\lambda_0=(20192/97)^2\) the Schmidt--Spitzer set \(\Lambda(b)\)
+is a regular real-analytic arc crossing the real axis transversely, so
+\(\Lambda(b)\not\subset\mathbb R\). Proposition 4.1 gives a
+four-diagonal symbol with the explicit nonreal point
+\((20192/97)\mathrm{i}\in\Lambda(a)\). Since real spectra of all finite
+sections would force a real limiting set, this implication is weaker
+than the one refuted on 2026-09-11, and its failure subsumes that
+result.
+
+\textbf{Verification status.} Author-verified preprint, with an
+independent Codex-agent mathematical \textbf{PASS} on 18 September 2026;
+the
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/eigenvalues-and-inverse-problems/SP-06/references/rohner-thalhammer-2026-09-18/audit-2026-09-18.md}{audit
+report} records the scope, source hashes and publication corrections. No
+external human peer review or Lean verification of this strengthening is
+claimed. The counterexamples and a first draft were produced by GPT-6
+Astra Pro (OpenAI) in sessions directed by F. Rohner; Opus 5 (Anthropic)
+produced the figures. This remains a claimed strengthening at the
+\textit{Solution claimed} evidence level and does not alter the entry's
+\textit{Lean verified} status, which refers to the finite-section
+target.
 
 \subsection{Problem statement}\label{problem-statement}
 
