@@ -1,0 +1,50 @@
+{
+  "proof_source_changes": [],
+  "frozen_file_changes": [],
+  "configuration_changes": [
+    {
+      "file": "lakefile.toml",
+      "before_sha256": "519fc687f4e9b6bf2cf7a99cda6c0d844db1c52bf946525d8dc46dd48b7830f1",
+      "after_sha256": "33e32e2e45bc3fdbc909ef9826c82e474ee5a34859263f8469c9627d655a590e",
+      "change": "Default target Challenge to Solution"
+    },
+    {
+      "file": "lake-manifest.json",
+      "before_sha256": "71e8401646a361d36b841337a9e08cbe0633fbbbce8e5ce9b5db0e10dfefbb5c",
+      "after_sha256": "aa771f2bb585baf6b71dcf76c9420e611357bfac08b4d78968e63b3465391d37",
+      "change": "Root package name NLAMI22 to NLAMI28"
+    }
+  ],
+  "archive_without_editing": [
+    {
+      "source": "IMPLEMENTATION-PLAN.md",
+      "destination": "history/statement-draft/IMPLEMENTATION-PLAN.md",
+      "sha256": "158276f4d044a405e39cd1a3a695b8008d5518d14f4ec5eff388d2ce72731287"
+    },
+    {
+      "source": "NUMERICAL_TARGETS.md",
+      "destination": "history/statement-draft/NUMERICAL_TARGETS.md",
+      "sha256": "264b9a374dba9eaaeebb1ce243e9851b663d7969ad8e514f60625f9592e0b852"
+    },
+    {
+      "source": "lakefile.toml",
+      "destination": "history/statement-draft/lakefile.toml",
+      "sha256": "519fc687f4e9b6bf2cf7a99cda6c0d844db1c52bf946525d8dc46dd48b7830f1"
+    },
+    {
+      "source": "lake-manifest.json",
+      "destination": "history/statement-draft/lake-manifest.json",
+      "sha256": "71e8401646a361d36b841337a9e08cbe0633fbbbce8e5ce9b5db0e10dfefbb5c"
+    }
+  ],
+  "replace_current_documentation": [
+    "README.md",
+    "NUMERICAL_TARGETS.md",
+    "IMPLEMENTATION-MAP.json",
+    "PROOF-REVIEWER-MAP.md",
+    "formalization.yaml",
+    "STATE.json"
+  ],
+  "frozen_comment_policy": "Keep the UNELABORATED/no-proof draft comments in Challenge/Definitions byte-for-byte. The README and current maps explicitly identify them as historical.",
+  "independent_review_required": "Root must review the integrated docs and metadata separately from the two existing proof-source verdicts."
+}

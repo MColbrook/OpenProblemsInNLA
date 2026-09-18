@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent nonauthor read-only metadata/schema/hash audit; not Lean, Lake, kernel, Comparator, Git or network execution.",
+  "docs_manifest_sha256": "3f35c783a327e8e5b67165558dcb9fd557d0a8e3de4d1ea8324f73bfed06b31d",
+  "source_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "draft_payload_files": 22,
+  "snapshot_payload_files": 83,
+  "proof_modules_authenticated": 52,
+  "frozen_headers_and_metadata_bindings": 20,
+  "unchanged_dependency_objects": 10,
+  "only_config_changes": [
+    "defaultTargets Challenge to Solution",
+    "manifest root name NLAMI22 to NLAMI28"
+  ],
+  "historical_labels_and_archives": "PASS",
+  "author_department_university_and_no_email": "PASS",
+  "status_and_pending_checks": "PASS",
+  "proof_source_mutations": 0,
+  "compiler_executions": 0,
+  "count_change": 0,
+  "canonical_package_audit": "Separate and pending exact root package seal",
+  "read_files": 107
+}

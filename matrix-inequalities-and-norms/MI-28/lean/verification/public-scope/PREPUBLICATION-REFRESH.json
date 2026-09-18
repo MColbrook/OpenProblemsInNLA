@@ -1,0 +1,124 @@
+{
+  "time": "2026-09-18T09:46:45.343823+00:00",
+  "original_record_sha256": "1cd4cdb7acbfc5a8d0fed9424d93ee434b059b116886b939f46dd46d21f88d34",
+  "main": "9342b3d80c207d3e0bfd61251334d027935c387c",
+  "canonical_blob": "7d089f64d6a96b004f4fef1851076b7b4f3320f6",
+  "target_PRs": [
+    {
+      "headRefName": "codex/stepaniants-mi28-determinant",
+      "headRepositoryOwner": {
+        "id": "MDQ6VXNlcjE1NzA3ODQ3",
+        "name": "George Stepaniants",
+        "login": "sgstepaniants"
+      },
+      "isDraft": false,
+      "mergedAt": "2026-09-11T23:58:03Z",
+      "number": 85,
+      "state": "MERGED",
+      "title": "Resolve MI-28: determinant inequality for all nonnegative base powers",
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/85"
+    },
+    {
+      "headRefName": "codex/literature-conjectures-2026-09-11",
+      "headRepositoryOwner": {
+        "id": "MDQ6VXNlcjE4MTQwNjM=",
+        "name": "Alex Townsend ",
+        "login": "ajt60gaibb"
+      },
+      "isDraft": false,
+      "mergedAt": "2026-09-12T00:11:40Z",
+      "number": 111,
+      "state": "MERGED",
+      "title": "Add 14 audited literature entries and record the RA-20 counterexample",
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/111"
+    },
+    {
+      "headRefName": "codex/audit-prs-172-182",
+      "headRepositoryOwner": {
+        "id": "MDQ6VXNlcjE4MTQwNjM=",
+        "name": "Alex Townsend ",
+        "login": "ajt60gaibb"
+      },
+      "isDraft": false,
+      "mergedAt": "2026-09-12T22:49:03Z",
+      "number": 184,
+      "state": "MERGED",
+      "title": "Add four audited Lean verifications, two solutions and partial results",
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/184"
+    },
+    {
+      "headRefName": "codex/audit-prs-235-244",
+      "headRepositoryOwner": {
+        "id": "MDQ6VXNlcjE4MTQwNjM=",
+        "name": "Alex Townsend ",
+        "login": "ajt60gaibb"
+      },
+      "isDraft": false,
+      "mergedAt": "2026-09-13T18:51:29Z",
+      "number": 245,
+      "state": "MERGED",
+      "title": "Integrate eight audited contributions and verify SP-06 and IS-02 in Lean",
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/245"
+    }
+  ],
+  "head_PRs": [],
+  "commands": [
+    {
+      "argv": [
+        "/tmp/nla-submission-tools/gh_2.100.0_macOS_arm64/bin/gh",
+        "api",
+        "repos/ajt60gaibb/OpenProblemsInNLA/commits/main",
+        "--jq",
+        "{sha:.sha,date:.commit.committer.date}"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/tmp/nla-submission-tools/gh_2.100.0_macOS_arm64/bin/gh",
+        "api",
+        "repos/ajt60gaibb/OpenProblemsInNLA/contents/matrix-inequalities-and-norms/MI-28/README.md?ref=main",
+        "--jq",
+        "{sha:.sha,encoding:.encoding,content:.content,path:.path}"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/tmp/nla-submission-tools/gh_2.100.0_macOS_arm64/bin/gh",
+        "pr",
+        "list",
+        "--repo",
+        "ajt60gaibb/OpenProblemsInNLA",
+        "--state",
+        "all",
+        "--limit",
+        "100",
+        "--search",
+        "MI-28",
+        "--json",
+        "number,title,state,url,headRefName,headRepositoryOwner,mergedAt,isDraft"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/tmp/nla-submission-tools/gh_2.100.0_macOS_arm64/bin/gh",
+        "pr",
+        "list",
+        "--repo",
+        "ajt60gaibb/OpenProblemsInNLA",
+        "--state",
+        "all",
+        "--limit",
+        "100",
+        "--head",
+        "sgstepaniants:codex/lean-mi28-verification",
+        "--json",
+        "number,title,state,url,headRefName,mergedAt"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scope": "Exact main/canonical/PR observations; unrelated commit metadata and redundant canonical bytes omitted."
+}

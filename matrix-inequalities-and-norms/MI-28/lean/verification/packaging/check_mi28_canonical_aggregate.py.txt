@@ -1,0 +1,82 @@
+"""Fresh canonical Solution compilation with authenticated shared dependencies.
+
+This is a direct local Lean invocation, not a standalone Lake build, Comparator,
+or a second full clean compilation of the 51 dependency modules.
+"""
+from pathlib import Path
+import datetime, fcntl, hashlib, json, os, re, resource, subprocess, time
+
+B = Path('/private/tmp/nla-lean-next-20260915')
+L = Path('/private/tmp/nla-lean-local-shared-20260916')
+P = B / 'MI28-canonical-package-local365'
+R = B / 'MI28-canonical-local-check-20260918'
+sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+load = lambda p: json.loads(Path(p).read_text())
+now = lambda: datetime.datetime.now(datetime.timezone.utc).isoformat()
+lock = (L / '.compiler.lock').open('w')
+fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+for p in (L / 'runs').glob('development-*/RECEIPT.json'):
+    assert 'end' in load(p), p
+assert sha(P / 'PACKAGE-MANIFEST.json') == '5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5'
+preflight = load(B / 'MI28-ROOT-PACKAGE-PREFLIGHT.json')
+assert preflight['schema']['exit_code'] == 0 and preflight['checks'] == 2131
+complete = load(B / 'MI28-LOCAL-COMPLETE-365.json')
+assert sha(B / 'MI28-LOCAL-COMPLETE-365.json') == '94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39'
+environment = load(L / 'LOCAL-ENVIRONMENT.json')
+origins = {r['canonical_source_path']: r for r in complete['commands_and_successful_origins']}
+dependencies = []
+for rel, h in complete['sources'].items():
+    assert sha(P / rel) == h
+    if rel == 'Solution.lean':
+        continue
+    row = origins[rel]
+    assert row['source_sha256'] == h and row['command']['exit_code'] == 0
+    assert sha(row['success_origin_receipt']) == row['receipt_sha256']
+    assert sha(L / rel) == h
+    output = L / '.lake/build/lib/lean' / (rel[:-5] + '.olean')
+    assert sha(output) == row['command']['output_sha256']
+    dependencies.append({'source': rel, 'source_sha256': h, 'output': str(output),
+        'output_sha256': sha(output), 'successful_receipt': row['success_origin_receipt'],
+        'receipt_sha256': row['receipt_sha256']})
+assert len(dependencies) == 51
+pins = {p['name']: p['rev'] for p in load(P / 'lake-manifest.json')['packages']}
+pin_observations = []
+for dep in environment['dependencies']:
+    path = Path(environment['shared_dependency_source']) / '.lake/packages' / dep['package']
+    argv = ['git', '-C', str(path), 'rev-parse', 'HEAD']
+    actual = subprocess.check_output(argv, text=True).strip()
+    assert pins[dep['package']] == dep['commit'] == actual
+    pin_observations.append({'argv': argv, 'exit_code': 0, 'stdout': actual})
+R.mkdir(exist_ok=False)
+argv = [environment['compiler'], '--threads=1', '--memory=4096', '-o', str(R / 'Solution.olean'), 'Solution.lean']
+record = {'scope': __doc__.strip(), 'start': now(), 'source_sha256': sha(P / 'Solution.lean'),
+    'package_manifest_sha256': sha(P / 'PACKAGE-MANIFEST.json'), 'runner_sha256': sha(__file__),
+    'compiler_sha256': sha(environment['compiler']), 'argv': argv, 'cwd': str(P),
+    'LEAN_PATH': environment['lean_path'], 'max_compiler_processes': 1,
+    'threads': 1, 'memory_cap_mib': 4096, 'reused_project_dependencies': dependencies,
+    'dependency_pin_observations': pin_observations, 'count_change': 0,
+    'standalone_Lake_build': False, 'Comparator_executed': False}
+out = R / 'RECEIPT.json'
+out.write_text(json.dumps(record, indent=2) + '\n')
+env = dict(os.environ, LEAN_PATH=environment['lean_path'], LEAN_NUM_THREADS='1')
+start = time.monotonic()
+with (R / 'Solution.log').open('w') as stream:
+    try:
+        result = subprocess.run(argv, cwd=P, env=env, stdout=stream, stderr=subprocess.STDOUT, timeout=180)
+        code = result.returncode
+    except subprocess.TimeoutExpired:
+        code = 'timeout_180_seconds'
+record.update(end=now(), exit_code=code, elapsed_seconds=time.monotonic()-start,
+    log_sha256=sha(R / 'Solution.log'),
+    maxrss_bytes_macos_cumulative=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
+    output_sha256=sha(R / 'Solution.olean') if (R / 'Solution.olean').exists() else None)
+log = (R / 'Solution.log').read_text()
+observed = {name: [a.strip() for a in raw.split(',')]
+    for name, raw in re.findall(r"'(NLA\.MI28\.[^']+)' depends on axioms: \[([^\]]*)\]", log)}
+record['observed_axioms'] = observed
+record['all20_axioms_match'] = observed == complete['observed_axioms']
+record['sources_unchanged'] = all(sha(P / rel) == h for rel, h in complete['sources'].items())
+record['dependencies_unchanged'] = all(sha(r['output']) == r['output_sha256'] and sha(L / r['source']) == r['source_sha256'] for r in dependencies)
+out.write_text(json.dumps(record, indent=2) + '\n')
+print(json.dumps({k: record[k] for k in ['exit_code', 'elapsed_seconds', 'all20_axioms_match', 'sources_unchanged', 'dependencies_unchanged', 'standalone_Lake_build', 'Comparator_executed', 'count_change']}, indent=2))
+assert code == 0 and record['all20_axioms_match'] and record['sources_unchanged'] and record['dependencies_unchanged'], log

@@ -1,0 +1,52 @@
+{
+  "reviewer": "/root/mi28_final_referee2",
+  "review_type": "Independent nonauthor publication metadata and source integration review",
+  "prior_source_review_manifest_sha256": "4e6aa1e1489b13394222cf85f11f3f81fa7a7d275fe08f97651cb2527062b188",
+  "manually_read_draft_documents": [
+    "MANIFEST.json",
+    "README.md",
+    "NUMERICAL_TARGETS.md",
+    "REVIEW-INDEX.md",
+    "REVIEW-INDEX.json",
+    "lakefile.toml",
+    "formalization.yaml",
+    "STATE.json",
+    "LAKE-CONFIGURATION.json",
+    "PACKAGING-CHANGES.json",
+    "INTEGRATION-REQUIREMENTS.json",
+    "PROOF-REVIEWER-MAP.md",
+    "PUBLIC-SCOPE.json",
+    "SOURCE-ATTRIBUTION.json",
+    "DOCUMENT-SCOPE.json",
+    "verify_documents.py"
+  ],
+  "structurally_inspected_draft_documents": [
+    "IMPLEMENTATION-MAP.json",
+    "lake-manifest.json"
+  ],
+  "manually_read_canonical_changes": [
+    "README.md",
+    "verification/README.md",
+    "verification/packaging/prepare_mi28_local365_package.py.txt",
+    "verification/public-scope/PREPUBLICATION-REFRESH.json",
+    "PUBLIC-SCOPE.json",
+    "REVIEW-INDEX.json",
+    "formalization.yaml semantic delta",
+    "STATE.json semantic delta"
+  ],
+  "structurally_inspected_canonical_records": [
+    "PACKAGE-MANIFEST.json",
+    "ACTIVE-SOURCE-MANIFEST.json",
+    "verification/RETAINED-PATHS.json",
+    "reviews/INDEX.json",
+    "verification/history/INDEX.json"
+  ],
+  "proof_read_scope": "Prior full 52-module mathematical/code review; follow-up authenticates unchanged bytes and bindings, not a claim to have freshly reread all proofs.",
+  "archive_read_scope": "All members hashed and privacy-scanned in memory; historical source bytes already covered by the previous source review where applicable.",
+  "author_checker_replay": "Actual execution; not relied on alone. Independently authored read-only checks also executed.",
+  "compiler_executions": 0,
+  "network_operations": 0,
+  "Git_operations": 0,
+  "proof_source_mutations": 0,
+  "count_change": 0
+}

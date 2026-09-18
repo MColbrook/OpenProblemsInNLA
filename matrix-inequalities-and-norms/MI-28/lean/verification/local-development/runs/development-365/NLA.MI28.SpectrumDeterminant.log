@@ -1,0 +1,14 @@
+NLA/MI28/SpectrumDeterminant.lean:71:15: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.one_apply, d, Complex.ofReal_add, Complex.ofReal_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MI28/SpectrumDeterminant.lean:71:29: warning: This simp argument is unused:
+  Pi.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, d, Complex.ofReal_add, Complex.ofReal_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

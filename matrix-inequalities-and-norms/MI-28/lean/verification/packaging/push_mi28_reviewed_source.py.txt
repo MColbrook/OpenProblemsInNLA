@@ -1,0 +1,181 @@
+"""Publish exact reviewed/local-compiled MI28 sources for final Linux checks."""
+from pathlib import Path, PurePosixPath
+import datetime, gzip, hashlib, importlib.util, io, json, os, re, shutil, subprocess, tarfile
+
+B = Path('/private/tmp/nla-lean-next-20260915')
+W = Path('/private/tmp/nla-lean-next-mi28-worktree')
+P = B / 'MI28-canonical-package-local365'
+REL = 'matrix-inequalities-and-norms/MI-28/lean'
+D = W / REL
+SEED = '92eabc30d4553521689e451af9c2a9796282355d'
+BASE = '9342b3d80c207d3e0bfd61251334d027935c387c'
+REVIEW = B / 'reviews/MI28-package-referee2-20260918'
+REVIEW_SHA = 'aa162b74002e60643ae3660079d26bb3047ce423dd740e05f386fcdbed4ecd4a'
+sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+load = lambda p: json.loads(Path(p).read_text())
+git = lambda *a: subprocess.check_output(['git', *a], cwd=W)
+assert git('rev-parse', 'HEAD').decode().strip() == SEED
+assert not git('status', '--porcelain').strip() and not D.exists()
+preflight = load(B / 'MI28-ROOT-PACKAGE-PREFLIGHT.json')
+assert preflight['package_manifest_sha256'] == sha(P / 'PACKAGE-MANIFEST.json') == '5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5'
+assert preflight['checks'] == 2131 and preflight['schema']['exit_code'] == 0
+assert sha(REVIEW / 'MANIFEST.json') == REVIEW_SHA
+reviewcheck = load(REVIEW / 'INDEPENDENT-PACKAGE-CHECK.json')
+assert reviewcheck['verdict'] == 'PASS' and reviewcheck['package_manifest_sha256'] == preflight['package_manifest_sha256']
+canonical = B / 'MI28-canonical-local-check-20260918'
+assert sha(canonical / 'RECEIPT.json') == '2147c47e8765c34f6c9d1d55caef19d4579c33fa1add28a5361ecf7cd313de43'
+local = load(canonical / 'RECEIPT.json')
+assert local['exit_code'] == 0 and local['all20_axioms_match'] and local['sources_unchanged'] and local['dependencies_unchanged']
+assert not local['standalone_Lake_build'] and not local['Comparator_executed']
+assert sha(canonical / 'Solution.log') == local['log_sha256']
+original = load(P / 'PACKAGE-MANIFEST.json')['files']
+for rel, h in original.items():
+    assert sha(P / rel) == h, rel
+assert len(load(P / 'reviews/INDEX.json')) == 4
+shutil.copytree(P, D)
+
+def copy(src, rel):
+    dst = D / rel
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+
+def write(rel, obj):
+    (D / rel).write_text(json.dumps(obj, indent=2) + '\n')
+
+for name in ['MI28-ROOT-PACKAGE-PREFLIGHT.json', 'MI28-publication-docs-ROOT-REPLAY-20260918.json']:
+    copy(B / name, 'verification/' + name)
+for name in ['preflight_mi28_package.py', 'check_mi28_canonical_aggregate.py', 'push_mi28_reviewed_source.py']:
+    copy(B / name, 'verification/packaging/' + name + '.txt')
+for name in ['RECEIPT.json', 'Solution.log']:
+    copy(canonical / name, 'verification/canonical-local/' + name)
+for f in sorted(REVIEW.rglob('*')):
+    assert not f.is_symlink()
+    if f.is_file():
+        assert f.suffix not in {'.olean', '.ilean', '.pdf', '.o', '.zip'}
+        copy(f, 'reviews/package-referee2/' + str(f.relative_to(REVIEW)))
+copy(D / 'PACKAGE-MANIFEST.json', 'verification/packaging/reviewed365-PACKAGE-MANIFEST.json')
+package_review = {'result': 'PASS', 'reviewer': '/root/mi28_final_referee2',
+    'record': 'reviews/package-referee2/MANIFEST.json', 'manifest_sha256': REVIEW_SHA,
+    'scope': 'Independent nonauthor package/metadata audit of the exact reviewed package; not another Lean or Comparator execution.'}
+canonical_check = {'result': 'PASS', 'record': 'verification/canonical-local/RECEIPT.json',
+    'receipt_sha256': sha(canonical / 'RECEIPT.json'),
+    'scope': 'Fresh direct Lean compilation of canonical Solution.lean;51 authenticated source/output-matched dependencies reused.',
+    'fresh_modules': 1, 'reused_modules': 51, 'standalone_Lake_build': False,
+    'Comparator': False, 'matched_selected_axiom_reports': 20}
+meta = load(D / 'formalization.yaml')
+assert meta['status']['whole_problem_verified'] is False
+meta['verification']['package_preflight'] = {'result': 'PASS',
+    'record': 'verification/MI28-ROOT-PACKAGE-PREFLIGHT.json', 'checks': 2131,
+    'scope': 'Coordinator package/schema/identity/privacy checks; not an independent mathematical referee.'}
+meta['verification']['independent_package_review'] = package_review
+meta['verification']['canonical_local_entrypoint'] = canonical_check
+meta['status']['scope'] = 'Complete original MI28 proof source, canonical direct Lean entrypoint and independent package review passed; final Linux acceptance pending.'
+meta['review']['status'] = 'agent-reviewed (complete proof-source and package scopes; Linux pending)'
+meta['review']['notes'] = meta['review']['notes'].replace('Metadata/package review remains separate and pending.', 'The separate independent package review has passed; its scope and exact seal are in verification.independent_package_review.')
+write('formalization.yaml', meta)
+state = load(D / 'STATE.json')
+state.update(as_of_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    publication_documentation='Independent package review PASS and coordinator preflight PASS; unchanged mathematical source.',
+    canonical_local_entrypoint=canonical_check, independent_package_review=package_review,
+    publication='Proof source package prepared for push and actual Linux checks; no accepted verification claim.')
+write('STATE.json', state)
+index = load(D / 'REVIEW-INDEX.json')
+index['independent_metadata_review'] = package_review
+index['scope'] = 'Two independent final mathematical/source reviews and a separately scoped independent package review.'
+write('REVIEW-INDEX.json', index)
+lake = load(D / 'LAKE-CONFIGURATION.json')
+lake['canonical_direct_Lean_entrypoint'] = canonical_check
+write('LAKE-CONFIGURATION.json', lake)
+readme = (D / 'README.md').read_text()
+old = '''- **Standalone Lake build, independent publication-metadata review and final
+  non-root Linux GitHub Comparator/default-kernel/sandbox/negative controls:
+  pending.** The GitHub checks are **NOT RUN**. No accepted verification count
+  or new mathematical-resolution count is increased here.'''
+assert readme.count(old) == 1
+readme = readme.replace(old, '''- **Fresh canonical entrypoint: PASS.** Direct local Lean compilation of
+  `Solution.lean` passed with all20 axiom/trust reports. It reused51 authenticated
+  dependency outputs under the same one-thread/4096 MiB limits; this was not a
+  standalone Lake build. See the [actual receipt](verification/canonical-local/RECEIPT.json).
+- **Independent publication-metadata review: PASS.** The nonauthor reviewer
+  authenticated the exact package, evidence relocations, schema, links and
+  privacy. The [review](reviews/package-referee2/MANIFEST.json) is separate
+  from both full proof-source reviews and from Lean execution.
+- **Standalone Lake build and final non-root Linux GitHub
+  Comparator/default-kernel/sandbox/negative controls: pending.** The GitHub
+  checks are **NOT RUN**. Neither accepted count is increased here.''')
+readme += '\nThe [coordinator publication preflight](verification/MI28-ROOT-PACKAGE-PREFLIGHT.json) passed2131 package/schema/identity/privacy checks. All mathematical source, frozen statement and dependency-pin bytes remain unchanged.\n'
+(D / 'README.md').write_text(readme)
+mutable = {'README.md', 'formalization.yaml', 'STATE.json', 'REVIEW-INDEX.json', 'LAKE-CONFIGURATION.json', 'verification/RETAINED-PATHS.json'}
+for rel, h in original.items():
+    if rel not in mutable:
+        assert sha(D / rel) == h, rel
+for rel, h in load(D / 'verification/local365/LOCAL-COMPLETE.json')['sources'].items():
+    assert sha(D / rel) == h
+retained = load(D / 'verification/RETAINED-PATHS.json')
+for row in retained:
+    f = D / row['destination']
+    if sha(f) != row['sha256']:
+        assert row['destination'] in mutable and row['encoding'] == 'identity'
+        row.setdefault('original_destination_sha256', row['sha256'])
+        row['derived_current_status_update'] = True
+        row['sha256'] = row['decoded_sha256'] = sha(f)
+write('verification/RETAINED-PATHS.json', retained)
+
+def privacy(data, name):
+    if name.endswith('.tar.gz'):
+        with tarfile.open(fileobj=io.BytesIO(data), mode='r:gz') as tar:
+            for m in tar.getmembers():
+                assert m.isfile() and not PurePosixPath(m.name).is_absolute() and '..' not in PurePosixPath(m.name).parts
+                privacy(tar.extractfile(m).read(), m.name)
+    elif name.endswith('.gz'):
+        privacy(gzip.decompress(data), name[:-3])
+    else:
+        assert not re.search(rb'[A-Za-z0-9_.+%\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}', data), name
+
+for f in D.rglob('*'):
+    if f.is_file():
+        privacy(f.read_bytes(), f.name)
+manifest = {'stage': 'Complete local365 proof with canonical direct Lean and independent source/package approvals; actual Linux verification pending',
+    'reviewed_package_manifest_sha256': preflight['package_manifest_sha256'],
+    'files': {str(f.relative_to(D)): sha(f) for f in sorted(D.rglob('*')) if f.is_file() and f != D / 'PACKAGE-MANIFEST.json'}}
+write('PACKAGE-MANIFEST.json', manifest)
+env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONPATH='/tmp/nla-publication-python-20260917',
+    GIT_AUTHOR_NAME='George Stepaniants', GIT_AUTHOR_EMAIL='', GIT_COMMITTER_NAME='George Stepaniants', GIT_COMMITTER_EMAIL='')
+record = {'time': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'seed': SEED,
+    'base': BASE, 'project': REL, 'source_matches_local365': True,
+    'canonical_local_entrypoint': canonical_check, 'independent_package_review': package_review,
+    'two_independent_full_source_approvals': True, 'GitHub_Comparator_run': False,
+    'canonical_status': 'Solved', 'count_change': 0, 'commands': []}
+out = B / 'MI28-PROOF-PUSH-20260918.json'
+assert not out.exists()
+
+def run(argv):
+    r = subprocess.run(argv, cwd=W, env=env, capture_output=True, text=True)
+    record['commands'].append({'argv': argv, 'exit_code': r.returncode, 'stdout': r.stdout, 'stderr': r.stderr})
+    out.write_text(json.dumps(record, indent=2) + '\n')
+    assert r.returncode == 0, (argv, r.stdout, r.stderr)
+    return r.stdout
+
+run(['/Users/georgestepaniants/miniforge3/bin/python3', 'tools/lean/validate_manifest.py', REL])
+run(['git', 'add', '--force', '--', REL])
+run(['git', '-c', 'commit.gpgsign=false', 'commit', '-m', 'Formalize MI-28 determinant comparison for all nonnegative base powers'])
+commit = git('rev-parse', 'HEAD').decode().strip()
+assert git('show', '-s', '--format=%ae|%ce', 'HEAD') == b'|\n'
+changed = git('diff', '--name-only', '--no-renames', SEED, commit).decode().splitlines()
+assert set(changed) == {REL + '/' + str(f.relative_to(D)) for f in D.rglob('*') if f.is_file()}
+spec = importlib.util.spec_from_file_location('mi28_selection', W / 'tools/lean/projects.py')
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+projects = module.discover_at_ref(W, commit)
+module.require_retained_projects(projects, module.discover_at_ref(W, SEED))
+selected = module.select(projects, changed)
+assert selected == [{'id': 'MI-28', 'project': REL}], selected
+assert git('diff', 'ff6abf718126ceb23f933cf4f627f95104461fe8', commit, '--', 'tools/lean', '.github/workflows/lean-verification.yml') == b''
+record.update(proof_commit=commit, tracked_project_files=len(changed), selection=selected,
+    selection_scope='Actual committed Git trees and unchanged selector', tools_changed=False,
+    package_manifest_sha256=sha(D / 'PACKAGE-MANIFEST.json'))
+out.write_text(json.dumps(record, indent=2) + '\n')
+run(['git', 'push', 'origin', 'HEAD:refs/heads/codex/lean-mi28-verification'])
+record['pushed'] = True
+out.write_text(json.dumps(record, indent=2) + '\n')
+print(json.dumps({k: record[k] for k in ['proof_commit', 'tracked_project_files', 'selection', 'tools_changed', 'pushed', 'count_change']}, indent=2))

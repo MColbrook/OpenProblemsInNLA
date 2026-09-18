@@ -1,0 +1,435 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent file/evidence audit; no Lean or Comparator executed by referee2",
+  "snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "snapshot_files": 83,
+  "proof_modules_read_and_hash_checked": 52,
+  "trusted_challenge_placeholders": 20,
+  "proof_placeholder_or_execution_hook_hits": [],
+  "actual_local_success_origins_reconciled": 52,
+  "retained_evidence_hashes_reconciled": 92,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "frozen_types_and_universes_matching": 20,
+  "certificate_routes_checked": {
+    "final_to_frozen_certificate": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval"
+    ],
+    "final_to_LeanCert_strict_checked_bound": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "LeanCert.Validity.verify_strict_upper_bound_dyadic_checked"
+    ],
+    "final_to_closed_certificate_7": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "NLA.MI28.half_exponent_interval._proof_1_7"
+    ],
+    "closed_certificate_7_to_integer_check": [
+      "NLA.MI28.half_exponent_interval._proof_1_7",
+      "LeanCert.Validity.checkStrictUpperBoundDyadicChecked"
+    ],
+    "final_to_closed_certificate_15": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "NLA.MI28.half_exponent_interval._proof_1_15"
+    ],
+    "closed_certificate_15_to_integer_check": [
+      "NLA.MI28.half_exponent_interval._proof_1_15",
+      "LeanCert.Validity.checkStrictUpperBoundDyadicChecked"
+    ]
+  },
+  "reuse_source_files_equal": 18,
+  "root_complete_record_sha256": "94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39",
+  "root_type_comparison_sha256": "54cbbfe2497939fe78fbff9dd499b99c961316f6a22e36a98ba0fa7cc0256d45",
+  "verifier_sha256": "2c408134dd52ea6d5b1e0123b155e0dc56846778f1383c3fcad3594e7c520e91",
+  "compiler_invoked": false,
+  "Comparator_invoked": false,
+  "count_change": 0,
+  "origins": [
+    {
+      "module": "NLA.MI24.CompoundAlgebra",
+      "source_sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "070a2f989d2e43c04c1c9c67834dadab8233f1254f580ee33221364c5fc9f198"
+    },
+    {
+      "module": "NLA.MI24.CompoundNorm",
+      "source_sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "fbcb18884a0784efc7f208309eb1f000d4864fa4186bd256b5bc23b3a0daa258"
+    },
+    {
+      "module": "NLA.MI24.CompoundSpectral",
+      "source_sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "30fb5cd1636e9e60092ec13f59417be7bad8aafbe388be2fe0b4856e7504c953"
+    },
+    {
+      "module": "NLA.MI24.Definitions",
+      "source_sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d"
+    },
+    {
+      "module": "NLA.MI24.DiagonalPowers",
+      "source_sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "a1e6916cfd42c014a38aa8e2ea1e8608894a0e92693d8161d5c6ce81c3e5d8e6",
+      "output_sha256": "66925c4e47bf8e870841ce104bd3a4524fb093647d09a2379b2499cd381d175d"
+    },
+    {
+      "module": "NLA.MI24.FurutaBase",
+      "source_sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "16fb2dafcf0cdc8a5ffbdf984d5988935d8afc32ec007daf10d3ff9a76354a5e"
+    },
+    {
+      "module": "NLA.MI24.FurutaHalfPower",
+      "source_sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "eef9e2c6d5d045d68d4d09785fee0f63cfbdc4e670dda901fab1a289c38045e2",
+      "output_sha256": "1d3a96bd9626bef1bd8fcdfb00b9bacda0466d120ffd5e5a51764e28650a3175"
+    },
+    {
+      "module": "NLA.MI24.GeometricCongruence",
+      "source_sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "17c3337a452f17f57fe192840b123df4ece64928bbec4dc7f39ff49e96f4a420"
+    },
+    {
+      "module": "NLA.MI24.HeronNorm",
+      "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "13c77ef948952fe4e00ef8ed2450785206eed8e48bc42a3023d70074e5e2c26b"
+    },
+    {
+      "module": "NLA.MI24.HeronOrder",
+      "source_sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "29629217a5c465805302063a9f65e5ff02153514f9bf268cc29a77fccf5d082b"
+    },
+    {
+      "module": "NLA.MI24.MeanPositivity",
+      "source_sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+      "log_sha256": "18bfe42b896c7cfc66cc57448031731fe485d8269bbcadd073e157afe81b13bd",
+      "output_sha256": "23a84c38a80797c2d8c35c835866bd8c84a365129ddb21f11b5881050406617a"
+    },
+    {
+      "module": "NLA.MI24.OperatorNorm",
+      "source_sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "7301ef9201bb7420c3b70a0a59b3029e8390a9315d9ed4f5a686b3ce63973a8e",
+      "output_sha256": "f04dd2e134a713b86f73424962bdf33f173e2499cdce00ca0c68534c8f77e983"
+    },
+    {
+      "module": "NLA.MI24.OrderPowers",
+      "source_sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+    },
+    {
+      "module": "NLA.MI24.PolarPowers",
+      "source_sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "2dbd22a09cd857f8c5242bd1e9d6fa3a5437b3f11fccdeca1ad4aa9543369cda"
+    },
+    {
+      "module": "NLA.MI24.PowerScaling",
+      "source_sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "5217b32d6a1e092d67a09231a4152b0f68929454ad7eac2c7c3f37ce77b2377f",
+      "output_sha256": "ec88b21bb463636ac073d19ff66683f2103670eb62533c0239945a98707893ca"
+    },
+    {
+      "module": "NLA.MI24.ScalarLogMajorization",
+      "source_sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+      "log_sha256": "5a8fb97a693132a8a723b7df5409245262d8b79dee35eb844c3e85ee0b83fc3f",
+      "output_sha256": "0585f227d0cda26f61bd11e32b3d581c0460c26073d82bef25bfcd8079d1fb6f"
+    },
+    {
+      "module": "NLA.MI24.SpectralPowers",
+      "source_sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json",
+      "log_sha256": "6d53bd26ce02acb26eaaae350f5c55989b58e7e75d5a947b206f2e40bab9bb65",
+      "output_sha256": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+    },
+    {
+      "module": "NLA.MI24.TraceSpectral",
+      "source_sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040"
+    },
+    {
+      "module": "NLA.MI28.CompoundTransport",
+      "source_sha256": "e372ff421cdd82bfcf152d196ba245589d23f5d604629c6f22c1f1568b705cdc",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "acee399bd33cc98bfd28ce28f0efe5f2ac52df62123076504e6de7518b1b8323"
+    },
+    {
+      "module": "NLA.MI28.Definitions",
+      "source_sha256": "a1631b27cdfff3db08db131e4fa18cc3e608cb1ffcf96a043ac6725d77970d50",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627"
+    },
+    {
+      "module": "NLA.MI28.DeterminantComparison",
+      "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "bc02bd40dd63065a16f2ccb72a2dea5ed591c6360e07841ff72384fef3b50854",
+      "output_sha256": "6143f0783371b956cdcbf624eeaa09931774028453a8605a99ee6139562d89d5"
+    },
+    {
+      "module": "NLA.MI28.DeterminantNormalization",
+      "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "032653ebd45b33293556c2460a1bf0ce22aade35d43c9770fb26c8a6e3e5b383",
+      "output_sha256": "7ab2e8c4022f27a4d68db954b32468a7d26ae63226e9f3c49f3acc32b5eeb7a9"
+    },
+    {
+      "module": "NLA.MI28.DeterminantReality",
+      "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "a25e892c1066538450af52eaa2291293aa0211ea7d85cb93ab47a26a0d6bdd82"
+    },
+    {
+      "module": "NLA.MI28.FullLogMajorization",
+      "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "1606ce5d6339ff6f6e50e39c0dccc184c43ee0e0342d9e008769e12666bf1638"
+    },
+    {
+      "module": "NLA.MI28.FullNorm",
+      "source_sha256": "57e81c7a94df65bbc9191e134487ddf94d9d812cd0e1249a9e8a2729abc29aa0",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "093b973a6910cfc6ec6287be53c191004478936072b636d1d5b2a6b562fc3967"
+    },
+    {
+      "module": "NLA.MI28.FurutaAdmissible",
+      "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "log_sha256": "7229ab6549575ae67c4a92f91ef597f2bdc8e4e337c1067a9233cd6a1b1632ce",
+      "output_sha256": "4bed256ab69fbca25cf7395a30f5e42f904a596e28780b62ad8e65668504ef94"
+    },
+    {
+      "module": "NLA.MI28.FurutaBoundary",
+      "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "log_sha256": "67fcf0517031aec81924d07a178b0d478fd8093d0a71aec9f82dc399985e1514",
+      "output_sha256": "7813aefc681946cf66ed14486e5eedc0204f1e4c0e9a183c2f966de0f7634bd5"
+    },
+    {
+      "module": "NLA.MI28.FurutaSubstitution",
+      "source_sha256": "b85a4c83c2f230a0f4bed2ca1b8783213b2e45901c413b5fbe45f2661843055a",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "log_sha256": "944e73242900d8c7610cacc3bdfdfbdf2d7ea4cc25457f431695b8b2fc7c42ee",
+      "output_sha256": "956f817acfd3adb17895409bbd483820d55a0a87f7075e8afb5527b036861817"
+    },
+    {
+      "module": "NLA.MI28.HigherPowerImplication",
+      "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "log_sha256": "30f49a0a704ed496286bc77a2d53c96cf14894b2490eedfcbe0bf9c03eab9250",
+      "output_sha256": "68543f583eda41ef5cf92424205ba555ccb704cbb08af5a6172aa73a26b037cb"
+    },
+    {
+      "module": "NLA.MI28.HigherPowerOrder",
+      "source_sha256": "63a263ef010cd9c95cc3b2ce2d689a19a61c9730551faf243ed1c8b83ab9dc27",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "log_sha256": "d1cec633abe90c0ad85c8224b4858981dc23bcf1c2bc94e562a9bd84f4e4b06f",
+      "output_sha256": "e48cc4b4d92ff4ce98b830658f92615bf5c108d51be7863cb7feeedc5a6549dd"
+    },
+    {
+      "module": "NLA.MI28.InverseSandwich",
+      "source_sha256": "6b600c6b0fee8c4e247bb35b496fbe46061dd91afb07b1ef272c4250662a5f65",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "67939480c438753155369cac87ab9322a7cd8674195faa53a841452fb44b557f"
+    },
+    {
+      "module": "NLA.MI28.LargeBaseImplication",
+      "source_sha256": "acafb9c308c4fefb6f91b90ee3867f12050e8ba2af0e5905a2dcc3be1c47427c",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "93e5940523cf406f4525e407048a70ea2b5699d8d6100fb239a72fbc733b51e7"
+    },
+    {
+      "module": "NLA.MI28.LargeBaseNorm",
+      "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "49b0185f78e3f448ff7ebcfce1270a98b36844bdff274fee23cdf1cd28232212"
+    },
+    {
+      "module": "NLA.MI28.LargeBaseOrder",
+      "source_sha256": "123e42beb28860e5e53a46b6260c19f1447de1f04d6d79256f27993377b93811",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "log_sha256": "be4c377bb5cb80755c053f11e4023aa79f02e2f2949d6b05c220350ded07faae",
+      "output_sha256": "2266899e800b7180e69b6e08ec507e170687469ad47b9819f215f061ab4af4fa"
+    },
+    {
+      "module": "NLA.MI28.LogOneAddTangent",
+      "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "log_sha256": "f7e1023e42fac8adecd262ca032acf22445250556d2720336a6d8345e70e7ff5",
+      "output_sha256": "c1dca1db855b99a6163bd860155fe63277eda804aee865e063c87c1c9991eea1"
+    },
+    {
+      "module": "NLA.MI28.LowerPowerImplication",
+      "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "log_sha256": "2f70fa24836cc768b3672a380aaf28a3f5267037d70ae534caa5102ceef63c6c",
+      "output_sha256": "2d95895248ef5951383d223d06763c581c1fb662e8cb3a68e892f18812608cd0"
+    },
+    {
+      "module": "NLA.MI28.ModulusPowers",
+      "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "log_sha256": "8aef62f60f904d71e57fa812aad6688462120eb15f21fd9861f44977ec162b36",
+      "output_sha256": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1"
+    },
+    {
+      "module": "NLA.MI28.NormComparison",
+      "source_sha256": "3289bc4928760c2097e858ed02b1ab06a37063642010d305af18037db7078332",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "4bd9ec7e5d5fd01ce21bc5b2c3c69c626ba7ead4ca65d029bb4325934ab73bc1"
+    },
+    {
+      "module": "NLA.MI28.NormalizedContinuity",
+      "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "log_sha256": "18205d4c0a52535457fddffa27c153908f4f4a116de934e6d73397ec76cfe45e",
+      "output_sha256": "9d46dcf1f306f080b8f2332c637a29f37cb08b8c5422bf4325ffa39b76c155e3"
+    },
+    {
+      "module": "NLA.MI28.NormalizedDeterminant",
+      "source_sha256": "1fa0b94dc082ad10d63c4446f925e883b8be622760402b2fbaff1e200325e0c5",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "91cbc2ea560030cb94d158c2980a0deb49ed2ff79498c6d2a5ef6b9601368953"
+    },
+    {
+      "module": "NLA.MI28.NormalizedHomogeneity",
+      "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "log_sha256": "4ed5fde10b736e579b82963aa9cd7296276d5f68c0f33922a974eae12d8b110b",
+      "output_sha256": "9bf66de9160f4f4013271062187fb987215e763896ab0648b194f578ba6afb4c"
+    },
+    {
+      "module": "NLA.MI28.NormalizedOrder",
+      "source_sha256": "61e2555f8e958092f50e05b6dbbc7ca6b7676f99d81e1aaf9608b4d76ac009b0",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "a3f0f6350d835ee3c4f8195004ac9dc33e36a1312881beba716fe20060e5a441"
+    },
+    {
+      "module": "NLA.MI28.NormalizedPositivity",
+      "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a"
+    },
+    {
+      "module": "NLA.MI28.Numerical",
+      "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "log_sha256": "0250ba864e70725248739c14e23937a25d5fd89d96e5759ab8ab3223275b852a",
+      "output_sha256": "00aae921ad2ea982622375efb05d59259c4eccc60ffa18ba290de256d2617a43"
+    },
+    {
+      "module": "NLA.MI28.PositiveProductOrder",
+      "source_sha256": "27fe415c4b5de7daa6656697b582b976f8368ba4d4f572c19f6e350ae5911033",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+      "log_sha256": "3cbd0254878ec24cf29a6a29173ba46befa265cb1de2699ba3ebb4ba4218be6a",
+      "output_sha256": "b80cab066c1a4ad06d2777b13c602553a6a7604abd6924a1e3f8d9e632f84200"
+    },
+    {
+      "module": "NLA.MI28.ProductOneAdd",
+      "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "83fbeebcbc30e608a0e5847af2be6b343001126867895754463e8a54b655c183"
+    },
+    {
+      "module": "NLA.MI28.SmallBaseImplication",
+      "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "1b300b2cd5635df518f6afcc8076fee05a38a019bb4ccfebe8e10bbbdc9e64fb"
+    },
+    {
+      "module": "NLA.MI28.SmallBaseNorm",
+      "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "45f077a51d9b48d5c3379c951b329841c1d3d864935df1e606aeee5b7a49f428"
+    },
+    {
+      "module": "NLA.MI28.Solution",
+      "source_sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "d78796d62587a07bd3f35d81cf7309a7d569f795316b2f154849a24acf2412f9",
+      "output_sha256": "a39db26c96419d6b2724862b59306b3b08c01892d279603848107b48e09b18a5"
+    },
+    {
+      "module": "NLA.MI28.SpectrumDeterminant",
+      "source_sha256": "07f82ef66631810b9751a280c23fe1ffc464efc29a42f8baa737a664330bf634",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "log_sha256": "10d4014e6bea102bad8ce6ccb2b5c90b6ab970ee211c0e46d9d2b17b60a06f83",
+      "output_sha256": "4b98facf919d26fe6b18b6522730c93a138ab75c27ce1b56d5aa8b5b2d7e9c69"
+    },
+    {
+      "module": "NLA.MI28.SwapImplication",
+      "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "dd071767ddcf2066fe424074bdbdc4a9dde48076d0671bc6e6ddeaa8531c5a9c"
+    },
+    {
+      "module": "NLA.MI28.SwappedModulus",
+      "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+      "origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "log_sha256": "cf198d4baf21a33e5fd1033d6c4a58513c3a312f9fcf1994537807417c25926d",
+      "output_sha256": "9ee9d84dad9770fee0e869d04436c1eccdce573545278413f3265f5c81bd3c59"
+    }
+  ]
+}

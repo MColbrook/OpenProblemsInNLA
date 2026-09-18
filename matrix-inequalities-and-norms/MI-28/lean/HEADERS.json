@@ -1,0 +1,82 @@
+{
+  "NLA.MI28.half_exponent_interval": {
+    "header": "theorem half_exponent_interval : (0 : \u211d) < 1 / 2 \u2227 (1 / 2 : \u211d) < 1",
+    "sha256": "3d2dfe2cb47cdd95d935da83b6c6de86fff3106178f3ee2824f7618eb4dcbf76"
+  },
+  "NLA.MI28.product_modulus_square": {
+    "header": "theorem product_modulus_square {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) :\n    spectralPower (matrixModulus (A * B)) 2 = B * spectralPower A 2 * B",
+    "sha256": "e59a7ac525dc63df96237304e1a879c112535821692fb5e559a17cc23936a3ae"
+  },
+  "NLA.MI28.swapped_modulus": {
+    "header": "theorem swapped_modulus {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) :\n    matrixModulus (spectralPower (matrixModulus (A * B)) (-1) * B) =\n      spectralPower A (-1)",
+    "sha256": "b53c7a1cdd2d108cc3420a6c7163254384f72de7a4330396081d191b638a0eff"
+  },
+  "NLA.MI28.normalized_posdef": {
+    "header": "theorem normalized_posdef {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p : \u211d) :\n    (normalizedH A B k p).PosDef \u2227 (normalizedZ A B k p).PosDef",
+    "sha256": "1311b4688a3e90464da77ce4608e93ad2ed3b23d8b306436894180fa36bfb0e1"
+  },
+  "NLA.MI28.furuta_boundary": {
+    "header": "theorem furuta_boundary {n : \u2115} (X Y : Mat n)\n    (hX : X.PosDef) (hY : Y.PosDef) (hYX : Y \u2264 X)\n    (a r : \u211d) (ha : 1 \u2264 a) (hr : 0 \u2264 r) :\n    spectralPower (spectralPower X (r / 2) * spectralPower Y a *\n      spectralPower X (r / 2)) ((1 + r) / (a + r)) \u2264\n        spectralPower X (1 + r)",
+    "sha256": "5084bc1748a40234d95d54b4dccd1a5590d9d29f3d2661a30b4c61f26dddefda"
+  },
+  "NLA.MI28.furuta_admissible": {
+    "header": "theorem furuta_admissible {n : \u2115} (X Y : Mat n)\n    (hX : X.PosDef) (hY : Y.PosDef) (hYX : Y \u2264 X)\n    (a r q : \u211d) (ha : 1 \u2264 a) (hr : 0 \u2264 r) (hq : 1 \u2264 q)\n    (hadm : a + r \u2264 (1 + r) * q) :\n    spectralPower (spectralPower X (r / 2) * spectralPower Y a *\n      spectralPower X (r / 2)) (1 / q) \u2264\n        spectralPower X ((a + r) / q)",
+    "sha256": "74da9458dabc197dc7b5cfc0a609412f10c6d9aee6990c41eb646dbcbed8d1e2"
+  },
+  "NLA.MI28.lower_power_implication": {
+    "header": "theorem lower_power_implication (k p : \u211d) (hk : 0 < k)\n    (hp0 : 0 < p) (hpl : k / (k + 1) \u2264 p) (hpu : p \u2264 1) :\n    OrderImplication k p",
+    "sha256": "9c54334e6942cde1603e0b75fde1dd75de08ba79a5fc80d592ad76a2fb22a885"
+  },
+  "NLA.MI28.higher_power_implication": {
+    "header": "theorem higher_power_implication (k p : \u211d) (hk : 0 < k)\n    (hp1 : 1 \u2264 p) (hp2 : p \u2264 2) : OrderImplication k p",
+    "sha256": "677ec75838908ef8e43cfd07b8a7b94aa75f3905a404b917fcc1bb76016e4439"
+  },
+  "NLA.MI28.swap_implication": {
+    "header": "theorem swap_implication (k p : \u211d) (hp : 0 < p) (hpk : p \u2264 k)\n    (hswap : OrderImplication p k) : OrderImplication k p",
+    "sha256": "ab5c26825c82aa6912f3c76a146ea70b01e54840c493dc0b3332feb007fda276"
+  },
+  "NLA.MI28.small_base_implication": {
+    "header": "theorem small_base_implication (k p : \u211d) (hk0 : 0 < k) (hk2 : k \u2264 2)\n    (hp0 : 0 < p) (hp2 : p \u2264 2) : OrderImplication k p",
+    "sha256": "4233648122bf0d6560d1f1fb4f97dec66601297d147bdf75010ae63293f55809"
+  },
+  "NLA.MI28.small_base_norm": {
+    "header": "theorem small_base_norm {n : \u2115} (hn : 1 \u2264 n) (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p : \u211d)\n    (hk0 : 0 < k) (hk2 : k \u2264 2) (hp0 : 0 < p) (hp2 : p \u2264 2) :\n    operatorNorm (normalizedH A B k p) \u2264 operatorNorm (normalizedZ A B k p)",
+    "sha256": "676faa80b67126a5fa6b4446eeb6742860e1dccb82f6570d52c532749e6a8da0"
+  },
+  "NLA.MI28.large_base_norm": {
+    "header": "theorem large_base_norm {n : \u2115} (hn : 1 \u2264 n) (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p : \u211d)\n    (hk : 2 \u2264 k) (hp0 : 0 < p) (hp2 : p \u2264 2) :\n    operatorNorm (normalizedH A B k p) \u2264 operatorNorm (normalizedZ A B k p)",
+    "sha256": "65d12375e7f696bfe04250ed54ce4ff47051703d1cb4b1197e400b437834559d"
+  },
+  "NLA.MI28.normalized_homogeneity": {
+    "header": "theorem normalized_homogeneity {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p c : \u211d) (hc : 0 < c) :\n    normalizedH A ((c : \u2102) \u2022 B) k p = (Real.rpow c p : \u2102) \u2022 normalizedH A B k p \u2227\n    normalizedZ A ((c : \u2102) \u2022 B) k p = (Real.rpow c p : \u2102) \u2022 normalizedZ A B k p",
+    "sha256": "bb8e901ecbe846ae2134404a3640c1d53cdf553ea0e96facf89d1a7e3737dbd7"
+  },
+  "NLA.MI28.normalized_norm_continuous": {
+    "header": "theorem normalized_norm_continuous {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (p : \u211d) :\n    Continuous (fun k : \u211d => operatorNorm (normalizedH A B k p)) \u2227\n    Continuous (fun k : \u211d => operatorNorm (normalizedZ A B k p))",
+    "sha256": "74e42b50733737da849e5a3a49718e7faa831b90a5299df6ea1b4a1a4f306ab2"
+  },
+  "NLA.MI28.full_log_majorization": {
+    "header": "theorem full_log_majorization : FullLogMajorization",
+    "sha256": "800485b02efcf767cd9695943b718b8b16cb0ef1830de7dbe259be40c86b0b1d"
+  },
+  "NLA.MI28.log_one_add_tangent": {
+    "header": "theorem log_one_add_tangent (a b : \u211d) (ha : 0 < a) (hb : 0 < b) :\n    Real.log (1 + a) - Real.log (1 + b) \u2264\n      a / (1 + a) * (Real.log a - Real.log b)",
+    "sha256": "39a2061295f025080105dfb9831a4a7a853492d0f0bed585380c2a9e1ce347ea"
+  },
+  "NLA.MI28.product_one_add_le": {
+    "header": "theorem product_one_add_le {n : \u2115} (a b : Fin n \u2192 \u211d)\n    (ha : \u2200 i, 0 < a i) (hb : \u2200 i, 0 < b i) (hsort : Antitone a)\n    (hprefix : WeakLogMajorized a b) :\n    (\u220f i : Fin n, (1 + a i)) \u2264 \u220f i : Fin n, (1 + b i)",
+    "sha256": "3ec5ee30cf0a514ec78ad6370c8c8fc1b2f7ed673b4394887b7b482feae50caf"
+  },
+  "NLA.MI28.determinant_normalization": {
+    "header": "theorem determinant_normalization {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p : \u211d) :\n    determinantRight A B k p =\n      Matrix.det (spectralPower A k) * Matrix.det (1 + normalizedH A B k p) \u2227\n    determinantLeft A B k p =\n      Matrix.det (spectralPower A k) * Matrix.det (1 + normalizedZ A B k p)",
+    "sha256": "b3504397366e7c7ad0907c651b8c6ad05b2b4ac7475b422917a91b93a4c7ca5e"
+  },
+  "NLA.MI28.determinant_reality_positive": {
+    "header": "theorem determinant_reality_positive {n : \u2115} (A B : Mat n)\n    (hA : A.PosDef) (hB : B.PosDef) (k p : \u211d) :\n    (determinantLeft A B k p).im = 0 \u2227 (determinantRight A B k p).im = 0 \u2227\n    0 < (determinantLeft A B k p).re \u2227 0 < (determinantRight A B k p).re",
+    "sha256": "c54f44b801f6d4277b28c21afbf2c681c79b87fd950f07a5f1641d33989f22dc"
+  },
+  "NLA.MI28.determinant_comparison": {
+    "header": "theorem determinant_comparison : DeterminantComparison",
+    "sha256": "5be5c7c5c4b273adcbc0619bf8ef383009d539ee1ad7885d1e1f7798f81f1d25"
+  }
+}

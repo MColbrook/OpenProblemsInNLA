@@ -1,0 +1,31 @@
+{
+  "scope": "Independent MI28 exact-source statement-first review; root elaboration and freeze pending",
+  "created_at_utc": "2026-09-18T06:33:53.060600+00:00",
+  "files": [
+    {
+      "path": "BINDINGS.json",
+      "sha256": "997537b9d6ed002830271b82f5c6fa58cf39ec7cebb470d771085e38c9dee5d3",
+      "bytes": 20960
+    },
+    {
+      "path": "PRIMARY-SOURCE-CHECK.json",
+      "sha256": "fdd6e0f9a19e422e53c38c89dbca61a8b3213e101e542c851a3c498929dfdc4f",
+      "bytes": 1954
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "c676e9e9f3ae44830bef54fc310ef270d82c778a797c3fa38da729cd51da7b3b",
+      "bytes": 11855
+    },
+    {
+      "path": "VERDICT.json",
+      "sha256": "a51ace58851daf7ae905a7327ce7a39099a065010b44c74e584092f6e2e623d4",
+      "bytes": 2179
+    },
+    {
+      "path": "verify_review.py",
+      "sha256": "ac0ac61f6c359e9cac4aa3dca76cbebc1d541db802b6c3cc8503afbf3115bf71",
+      "bytes": 11983
+    }
+  ]
+}

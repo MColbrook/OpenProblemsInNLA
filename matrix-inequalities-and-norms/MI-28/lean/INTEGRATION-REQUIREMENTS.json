@@ -1,0 +1,136 @@
+{
+  "scope": "This compact draft is documentation/configuration only, not a duplicate standalone proof package. Root separately assembles the source and evidence.",
+  "canonical_publication_directory": "matrix-inequalities-and-norms/MI-28/lean",
+  "source_snapshot": "/private/tmp/nla-lean-next-20260915/MI28-local365-source-snapshot",
+  "source_snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "preserve": "All 52 reviewed proof source bytes, all three frozen files, all 20 headers, LICENSE, and the unchanged REUSE-MI24-FURUTA.json.",
+  "canonical_aggregate_mapping": {
+    "local": "NLA/MI28/Solution.lean",
+    "canonical": "Solution.lean",
+    "sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef"
+  },
+  "configuration": "Copy the three supplied Lake files; only two approved metadata fields differ from the reviewed snapshot. Dependency objects and toolchain are identical. No standalone Lake execution is claimed.",
+  "docs_to_copy": [
+    "README.md",
+    "formalization.yaml",
+    "NUMERICAL_TARGETS.md",
+    "IMPLEMENTATION-MAP.json",
+    "PROOF-REVIEWER-MAP.md",
+    "SOURCE-ATTRIBUTION.json",
+    "REVIEW-INDEX.json",
+    "REVIEW-INDEX.md",
+    "STATE.json",
+    "PUBLIC-SCOPE.json",
+    "LAKE-CONFIGURATION.json",
+    "PACKAGING-CHANGES.json",
+    "lakefile.toml",
+    "lake-manifest.json",
+    "lean-toolchain",
+    "source-inputs"
+  ],
+  "archive_historical_records": [
+    {
+      "source": "IMPLEMENTATION-PLAN.md",
+      "destination": "history/statement-draft/IMPLEMENTATION-PLAN.md",
+      "sha256": "158276f4d044a405e39cd1a3a695b8008d5518d14f4ec5eff388d2ce72731287"
+    },
+    {
+      "source": "NUMERICAL_TARGETS.md",
+      "destination": "history/statement-draft/NUMERICAL_TARGETS.md",
+      "sha256": "264b9a374dba9eaaeebb1ce243e9851b663d7969ad8e514f60625f9592e0b852"
+    },
+    {
+      "source": "lakefile.toml",
+      "destination": "history/statement-draft/lakefile.toml",
+      "sha256": "519fc687f4e9b6bf2cf7a99cda6c0d844db1c52bf946525d8dc46dd48b7830f1"
+    },
+    {
+      "source": "lake-manifest.json",
+      "destination": "history/statement-draft/lake-manifest.json",
+      "sha256": "71e8401646a361d36b841337a9e08cbe0633fbbbce8e5ce9b5db0e10dfefbb5c"
+    }
+  ],
+  "evidence_destinations": [
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-STATEMENT-FREEZE-local350.json",
+      "destination": "STATEMENT-FREEZE.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-LOCAL-COMPLETE-365.json",
+      "destination": "verification/local365/LOCAL-COMPLETE.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-type-diagnostics-366",
+      "destination": "verification/type-diagnostics-366"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-PREPUBLICATION-REFRESH-20260918.json",
+      "destination": "verification/public-scope/MI28-PREPUBLICATION-REFRESH-20260918.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-local365-source-snapshot/evidence/MI28-ROOT-REUSE-CHECK-local363.json",
+      "destination": "verification/reuse/MI28-ROOT-REUSE-CHECK-local363.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918",
+      "destination": "reviews/MI28-final-referee1-local365-20260918"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee2-local365-20260918",
+      "destination": "reviews/MI28-final-referee2-local365-20260918"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-root-statements-local350",
+      "destination": "reviews/MI28-root-statements-local350"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-statement-referee2-source-20260918",
+      "destination": "reviews/MI28-statement-referee2-source-20260918"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918-verify.py",
+      "destination": "reviews/MI28-final-referee1-local365-20260918-verify.py"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-current-public-audit-v2-20260918/AUDIT.json",
+      "destination": "verification/public-scope/AUDIT.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-current-public-audit-v2-20260918/REPOSITORIES.json",
+      "destination": "verification/public-scope/REPOSITORIES.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-current-public-audit-v2-20260918/FRESH-BRANCH-HEADS.json",
+      "destination": "verification/public-scope/FRESH-BRANCH-HEADS.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/MI28-public-audit-classification-20260918.json",
+      "destination": "verification/public-scope/CLASSIFICATION.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-referee1-ROOT-REPLAY-20260918.json",
+      "destination": "reviews/MI28-referee1-ROOT-REPLAY-20260918.json"
+    },
+    {
+      "original": "/private/tmp/nla-lean-next-20260915/reviews/MI28-referee2-ROOT-REPLAY-20260918.json",
+      "destination": "reviews/MI28-referee2-ROOT-REPLAY-20260918.json"
+    }
+  ],
+  "source_and_command_evidence": "Retain exact source-matched successful origin receipts, commands, logs, assembly hashes and authenticated reuse lineage named by local365; retain local350 statement evidence and local366 actual diagnostic sources/dumps/commands/logs. A relocation map must authenticate bytes; preserve historical absolute paths and do not edit sealed reports. The author handoff already retains the source/origin lineage and need not be duplicated wholesale.",
+  "pending_checks": [
+    "Independent root metadata/package review",
+    "Canonical standalone Lake/configuration integration check by authorized root, with exact execution or explicit non-execution recorded",
+    "Final standalone import/hash closure and co-located schema/privacy checks",
+    "Actual non-root Linux GitHub Comparator, default-kernel, sandbox and negative/rejection controls on the exact publication commit"
+  ],
+  "excluded_bulk_material": [
+    "Primary-paper PDFs or bulk extracted paper text",
+    "Dependency caches",
+    "Compiled outputs",
+    "Bulk recursive Git/API archives"
+  ],
+  "doc_checker_portability": "verify_documents.py authenticates the original local campaign records. Preserve it as draft provenance; root must separately validate the relocated published package and evidence rather than pretending the local absolute paths are portable.",
+  "count_change_authorized_by_this_draft": 0,
+  "post_Linux_status": "Append actual tested commit/run ID/results only after execution. Do not mark NOT RUN checks passed in advance.",
+  "public_audit_storage": "Retain compact audit/heads/repository records and their exact original tree-snapshot hashes. Keep bulky recursive trees as external campaign evidence; do not silently imply that the compact package embeds them."
+}

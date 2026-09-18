@@ -1,0 +1,657 @@
+{
+  "scope": "Fresh canonical Solution compilation with authenticated shared dependencies.\n\nThis is a direct local Lean invocation, not a standalone Lake build, Comparator,\nor a second full clean compilation of the 51 dependency modules.",
+  "start": "2026-09-18T10:44:03.813827+00:00",
+  "source_sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef",
+  "package_manifest_sha256": "5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5",
+  "runner_sha256": "e9bec27daccc9116dca8c110e9384be212644dee206d85ec09e623fdaf0def3f",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "argv": [
+    "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+    "--threads=1",
+    "--memory=4096",
+    "-o",
+    "/private/tmp/nla-lean-next-20260915/MI28-canonical-local-check-20260918/Solution.olean",
+    "Solution.lean"
+  ],
+  "cwd": "/private/tmp/nla-lean-next-20260915/MI28-canonical-package-local365",
+  "LEAN_PATH": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/leancert/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/plausible/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/importGraph/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/aesop/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/Qq/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/batteries/.lake/build/lib/lean:/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/Cli/.lake/build/lib/lean",
+  "max_compiler_processes": 1,
+  "threads": 1,
+  "memory_cap_mib": 4096,
+  "reused_project_dependencies": [
+    {
+      "source": "NLA/MI28/LogOneAddTangent.lean",
+      "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LogOneAddTangent.olean",
+      "output_sha256": "c1dca1db855b99a6163bd860155fe63277eda804aee865e063c87c1c9991eea1",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+    },
+    {
+      "source": "NLA/MI24/CompoundNorm.lean",
+      "source_sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundNorm.olean",
+      "output_sha256": "fbcb18884a0784efc7f208309eb1f000d4864fa4186bd256b5bc23b3a0daa258",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "receipt_sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+    },
+    {
+      "source": "NLA/MI28/NormalizedOrder.lean",
+      "source_sha256": "61e2555f8e958092f50e05b6dbbc7ca6b7676f99d81e1aaf9608b4d76ac009b0",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedOrder.olean",
+      "output_sha256": "a3f0f6350d835ee3c4f8195004ac9dc33e36a1312881beba716fe20060e5a441",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "receipt_sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+    },
+    {
+      "source": "NLA/MI24/HeronNorm.lean",
+      "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/HeronNorm.olean",
+      "output_sha256": "13c77ef948952fe4e00ef8ed2450785206eed8e48bc42a3023d70074e5e2c26b",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/SwapImplication.lean",
+      "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SwapImplication.olean",
+      "output_sha256": "dd071767ddcf2066fe424074bdbdc4a9dde48076d0671bc6e6ddeaa8531c5a9c",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+    },
+    {
+      "source": "NLA/MI28/ModulusPowers.lean",
+      "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/ModulusPowers.olean",
+      "output_sha256": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+    },
+    {
+      "source": "NLA/MI28/FurutaBoundary.lean",
+      "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaBoundary.olean",
+      "output_sha256": "7813aefc681946cf66ed14486e5eedc0204f1e4c0e9a183c2f966de0f7634bd5",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "receipt_sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+    },
+    {
+      "source": "NLA/MI28/NormalizedDeterminant.lean",
+      "source_sha256": "1fa0b94dc082ad10d63c4446f925e883b8be622760402b2fbaff1e200325e0c5",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedDeterminant.olean",
+      "output_sha256": "91cbc2ea560030cb94d158c2980a0deb49ed2ff79498c6d2a5ef6b9601368953",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI24/OrderPowers.lean",
+      "source_sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/OrderPowers.olean",
+      "output_sha256": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+      "receipt_sha256": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45"
+    },
+    {
+      "source": "NLA/MI28/NormalizedHomogeneity.lean",
+      "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedHomogeneity.olean",
+      "output_sha256": "9bf66de9160f4f4013271062187fb987215e763896ab0648b194f578ba6afb4c",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+    },
+    {
+      "source": "NLA/MI28/HigherPowerImplication.lean",
+      "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/HigherPowerImplication.olean",
+      "output_sha256": "68543f583eda41ef5cf92424205ba555ccb704cbb08af5a6172aa73a26b037cb",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+    },
+    {
+      "source": "NLA/MI28/NormComparison.lean",
+      "source_sha256": "3289bc4928760c2097e858ed02b1ab06a37063642010d305af18037db7078332",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormComparison.olean",
+      "output_sha256": "4bd9ec7e5d5fd01ce21bc5b2c3c69c626ba7ead4ca65d029bb4325934ab73bc1",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+    },
+    {
+      "source": "NLA/MI24/CompoundAlgebra.lean",
+      "source_sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundAlgebra.olean",
+      "output_sha256": "070a2f989d2e43c04c1c9c67834dadab8233f1254f580ee33221364c5fc9f198",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/InverseSandwich.lean",
+      "source_sha256": "6b600c6b0fee8c4e247bb35b496fbe46061dd91afb07b1ef272c4250662a5f65",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/InverseSandwich.olean",
+      "output_sha256": "67939480c438753155369cac87ab9322a7cd8674195faa53a841452fb44b557f",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+    },
+    {
+      "source": "NLA/MI24/PolarPowers.lean",
+      "source_sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/PolarPowers.olean",
+      "output_sha256": "2dbd22a09cd857f8c5242bd1e9d6fa3a5437b3f11fccdeca1ad4aa9543369cda",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI24/CompoundSpectral.lean",
+      "source_sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundSpectral.olean",
+      "output_sha256": "30fb5cd1636e9e60092ec13f59417be7bad8aafbe388be2fe0b4856e7504c953",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "receipt_sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+    },
+    {
+      "source": "NLA/MI24/FurutaBase.lean",
+      "source_sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/FurutaBase.olean",
+      "output_sha256": "16fb2dafcf0cdc8a5ffbdf984d5988935d8afc32ec007daf10d3ff9a76354a5e",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/SmallBaseImplication.lean",
+      "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SmallBaseImplication.olean",
+      "output_sha256": "1b300b2cd5635df518f6afcc8076fee05a38a019bb4ccfebe8e10bbbdc9e64fb",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+    },
+    {
+      "source": "NLA/MI24/ScalarLogMajorization.lean",
+      "source_sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/ScalarLogMajorization.olean",
+      "output_sha256": "0585f227d0cda26f61bd11e32b3d581c0460c26073d82bef25bfcd8079d1fb6f",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+      "receipt_sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+    },
+    {
+      "source": "NLA/MI28/SmallBaseNorm.lean",
+      "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SmallBaseNorm.olean",
+      "output_sha256": "45f077a51d9b48d5c3379c951b329841c1d3d864935df1e606aeee5b7a49f428",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+    },
+    {
+      "source": "NLA/MI24/SpectralPowers.lean",
+      "source_sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/SpectralPowers.olean",
+      "output_sha256": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json",
+      "receipt_sha256": "fb4dd08611c87f253f7f1f915c35fc164e998dc940e3c15dc3afbb64ca62846f"
+    },
+    {
+      "source": "NLA/MI24/PowerScaling.lean",
+      "source_sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/PowerScaling.olean",
+      "output_sha256": "ec88b21bb463636ac073d19ff66683f2103670eb62533c0239945a98707893ca",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/LargeBaseOrder.lean",
+      "source_sha256": "123e42beb28860e5e53a46b6260c19f1447de1f04d6d79256f27993377b93811",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseOrder.olean",
+      "output_sha256": "2266899e800b7180e69b6e08ec507e170687469ad47b9819f215f061ab4af4fa",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "receipt_sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+    },
+    {
+      "source": "NLA/MI28/NormalizedContinuity.lean",
+      "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedContinuity.olean",
+      "output_sha256": "9d46dcf1f306f080b8f2332c637a29f37cb08b8c5422bf4325ffa39b76c155e3",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+    },
+    {
+      "source": "NLA/MI28/NormalizedPositivity.lean",
+      "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedPositivity.olean",
+      "output_sha256": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "receipt_sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+    },
+    {
+      "source": "NLA/MI28/ProductOneAdd.lean",
+      "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/ProductOneAdd.olean",
+      "output_sha256": "83fbeebcbc30e608a0e5847af2be6b343001126867895754463e8a54b655c183",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+      "receipt_sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+    },
+    {
+      "source": "NLA/MI24/OperatorNorm.lean",
+      "source_sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/OperatorNorm.olean",
+      "output_sha256": "f04dd2e134a713b86f73424962bdf33f173e2499cdce00ca0c68534c8f77e983",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/FurutaAdmissible.lean",
+      "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaAdmissible.olean",
+      "output_sha256": "4bed256ab69fbca25cf7395a30f5e42f904a596e28780b62ad8e65668504ef94",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "receipt_sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+    },
+    {
+      "source": "NLA/MI24/HeronOrder.lean",
+      "source_sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/HeronOrder.olean",
+      "output_sha256": "29629217a5c465805302063a9f65e5ff02153514f9bf268cc29a77fccf5d082b",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/FullNorm.lean",
+      "source_sha256": "57e81c7a94df65bbc9191e134487ddf94d9d812cd0e1249a9e8a2729abc29aa0",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FullNorm.olean",
+      "output_sha256": "093b973a6910cfc6ec6287be53c191004478936072b636d1d5b2a6b562fc3967",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+    },
+    {
+      "source": "NLA/MI28/LowerPowerImplication.lean",
+      "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LowerPowerImplication.olean",
+      "output_sha256": "2d95895248ef5951383d223d06763c581c1fb662e8cb3a68e892f18812608cd0",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+    },
+    {
+      "source": "NLA/MI28/HigherPowerOrder.lean",
+      "source_sha256": "63a263ef010cd9c95cc3b2ce2d689a19a61c9730551faf243ed1c8b83ab9dc27",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/HigherPowerOrder.olean",
+      "output_sha256": "e48cc4b4d92ff4ce98b830658f92615bf5c108d51be7863cb7feeedc5a6549dd",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+    },
+    {
+      "source": "NLA/MI24/FurutaHalfPower.lean",
+      "source_sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/FurutaHalfPower.olean",
+      "output_sha256": "1d3a96bd9626bef1bd8fcdfb00b9bacda0466d120ffd5e5a51764e28650a3175",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/SwappedModulus.lean",
+      "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SwappedModulus.olean",
+      "output_sha256": "9ee9d84dad9770fee0e869d04436c1eccdce573545278413f3265f5c81bd3c59",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+    },
+    {
+      "source": "NLA/MI24/MeanPositivity.lean",
+      "source_sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/MeanPositivity.olean",
+      "output_sha256": "23a84c38a80797c2d8c35c835866bd8c84a365129ddb21f11b5881050406617a",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+      "receipt_sha256": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27"
+    },
+    {
+      "source": "NLA/MI28/Numerical.lean",
+      "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/Numerical.olean",
+      "output_sha256": "00aae921ad2ea982622375efb05d59259c4eccc60ffa18ba290de256d2617a43",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "receipt_sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+    },
+    {
+      "source": "NLA/MI24/TraceSpectral.lean",
+      "source_sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/TraceSpectral.olean",
+      "output_sha256": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI24/GeometricCongruence.lean",
+      "source_sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/GeometricCongruence.olean",
+      "output_sha256": "17c3337a452f17f57fe192840b123df4ece64928bbec4dc7f39ff49e96f4a420",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/FullLogMajorization.lean",
+      "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FullLogMajorization.olean",
+      "output_sha256": "1606ce5d6339ff6f6e50e39c0dccc184c43ee0e0342d9e008769e12666bf1638",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI28/DeterminantReality.lean",
+      "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantReality.olean",
+      "output_sha256": "a25e892c1066538450af52eaa2291293aa0211ea7d85cb93ab47a26a0d6bdd82",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI28/Definitions.lean",
+      "source_sha256": "a1631b27cdfff3db08db131e4fa18cc3e608cb1ffcf96a043ac6725d77970d50",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/Definitions.olean",
+      "output_sha256": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/RECEIPT.json",
+      "receipt_sha256": "352c903490336c5098ea77ea66d7152701b3b966df5ef851202de6be1b61bd46"
+    },
+    {
+      "source": "NLA/MI28/LargeBaseImplication.lean",
+      "source_sha256": "acafb9c308c4fefb6f91b90ee3867f12050e8ba2af0e5905a2dcc3be1c47427c",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseImplication.olean",
+      "output_sha256": "93e5940523cf406f4525e407048a70ea2b5699d8d6100fb239a72fbc733b51e7",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+    },
+    {
+      "source": "NLA/MI28/DeterminantNormalization.lean",
+      "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantNormalization.olean",
+      "output_sha256": "7ab2e8c4022f27a4d68db954b32468a7d26ae63226e9f3c49f3acc32b5eeb7a9",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI28/DeterminantComparison.lean",
+      "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantComparison.olean",
+      "output_sha256": "6143f0783371b956cdcbf624eeaa09931774028453a8605a99ee6139562d89d5",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI28/FurutaSubstitution.lean",
+      "source_sha256": "b85a4c83c2f230a0f4bed2ca1b8783213b2e45901c413b5fbe45f2661843055a",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaSubstitution.olean",
+      "output_sha256": "956f817acfd3adb17895409bbd483820d55a0a87f7075e8afb5527b036861817",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+    },
+    {
+      "source": "NLA/MI28/SpectrumDeterminant.lean",
+      "source_sha256": "07f82ef66631810b9751a280c23fe1ffc464efc29a42f8baa737a664330bf634",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SpectrumDeterminant.olean",
+      "output_sha256": "4b98facf919d26fe6b18b6522730c93a138ab75c27ce1b56d5aa8b5b2d7e9c69",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI24/Definitions.lean",
+      "source_sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/Definitions.olean",
+      "output_sha256": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/RECEIPT.json",
+      "receipt_sha256": "b1df6874421912595a69eba4623e422f9c32e30431a3915fe82e8adac3768134"
+    },
+    {
+      "source": "NLA/MI24/DiagonalPowers.lean",
+      "source_sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/DiagonalPowers.olean",
+      "output_sha256": "66925c4e47bf8e870841ce104bd3a4524fb093647d09a2379b2499cd381d175d",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+    },
+    {
+      "source": "NLA/MI28/PositiveProductOrder.lean",
+      "source_sha256": "27fe415c4b5de7daa6656697b582b976f8368ba4d4f572c19f6e350ae5911033",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/PositiveProductOrder.olean",
+      "output_sha256": "b80cab066c1a4ad06d2777b13c602553a6a7604abd6924a1e3f8d9e632f84200",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+      "receipt_sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+    },
+    {
+      "source": "NLA/MI28/CompoundTransport.lean",
+      "source_sha256": "e372ff421cdd82bfcf152d196ba245589d23f5d604629c6f22c1f1568b705cdc",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/CompoundTransport.olean",
+      "output_sha256": "acee399bd33cc98bfd28ce28f0efe5f2ac52df62123076504e6de7518b1b8323",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+    },
+    {
+      "source": "NLA/MI28/LargeBaseNorm.lean",
+      "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
+      "output": "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseNorm.olean",
+      "output_sha256": "49b0185f78e3f448ff7ebcfce1270a98b36844bdff274fee23cdf1cd28232212",
+      "successful_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+    }
+  ],
+  "dependency_pin_observations": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/leancert",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "621a43d7cf21f87872392a01e874f2f1dbddc926"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "5f4d51b81cbd3f6b32b156bfad9056621a040404"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "16f02aa7642864af59f1ff0e384a015994db9118"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "92c15be17b7caf78c2ad767ec40f89052d908d81"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "6130a47896ce867c6a4a55373441e59e565bad0f"
+    }
+  ],
+  "count_change": 0,
+  "standalone_Lake_build": false,
+  "Comparator_executed": false,
+  "end": "2026-09-18T10:44:27.669534+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 23.854406083002687,
+  "log_sha256": "d78796d62587a07bd3f35d81cf7309a7d569f795316b2f154849a24acf2412f9",
+  "maxrss_bytes_macos_cumulative": 3623452672,
+  "output_sha256": "480d702c26582aa1479194b621af24cb87189f81f2190eff59655164c27dc8ca",
+  "observed_axioms": {
+    "NLA.MI28.half_exponent_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.product_modulus_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.swapped_modulus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_posdef": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.furuta_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.furuta_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.lower_power_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.higher_power_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.swap_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.small_base_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.small_base_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.large_base_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_homogeneity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_norm_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.full_log_majorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.log_one_add_tangent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.product_one_add_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_reality_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all20_axioms_match": true,
+  "sources_unchanged": true,
+  "dependencies_unchanged": true
+}

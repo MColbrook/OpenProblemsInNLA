@@ -1,0 +1,16 @@
+{
+  "time": "2026-09-18T06:37:48.150421+00:00",
+  "reviewer": "/root",
+  "statement_author": "/root/nm04_final_referee1",
+  "overall": "approve statements and exact-byte local350 elaboration",
+  "packet_manifest_sha256": "f34964a178d08ded6e9f7d729f70da606c9edac8475d344e7a5d2c00e1c1f1fd",
+  "contracts": 20,
+  "local_statement_run": 350,
+  "local_receipt_sha256": "352c903490336c5098ea77ea66d7152701b3b966df5ef851202de6be1b61bd46",
+  "assembly_sha256": "ff80567070ad454a88c82c1acc13a9b4d456b7be163c86d465393000c031a7e8",
+  "all_original_quantifiers_preserved": true,
+  "requested_changes": [],
+  "proof_implementation_present": false,
+  "Comparator_executed": false,
+  "count_change": 0
+}

@@ -1,0 +1,32 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MI28.half_exponent_interval",
+    "NLA.MI28.product_modulus_square",
+    "NLA.MI28.swapped_modulus",
+    "NLA.MI28.normalized_posdef",
+    "NLA.MI28.furuta_boundary",
+    "NLA.MI28.furuta_admissible",
+    "NLA.MI28.lower_power_implication",
+    "NLA.MI28.higher_power_implication",
+    "NLA.MI28.swap_implication",
+    "NLA.MI28.small_base_implication",
+    "NLA.MI28.small_base_norm",
+    "NLA.MI28.large_base_norm",
+    "NLA.MI28.normalized_homogeneity",
+    "NLA.MI28.normalized_norm_continuous",
+    "NLA.MI28.full_log_majorization",
+    "NLA.MI28.log_one_add_tangent",
+    "NLA.MI28.product_one_add_le",
+    "NLA.MI28.determinant_normalization",
+    "NLA.MI28.determinant_reality_positive",
+    "NLA.MI28.determinant_comparison"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

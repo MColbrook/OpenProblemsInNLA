@@ -1,0 +1,93 @@
+{
+  "scope": "Two independent final mathematical/source reviews and a separately scoped independent package review.",
+  "source_snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "statement_reviews": [
+    {
+      "reviewer": "/root",
+      "manifest": "reviews/MI28-root-statements-local350/MANIFEST.json",
+      "origin_manifest": "/private/tmp/nla-lean-next-20260915/reviews/MI28-root-statements-local350/MANIFEST.json",
+      "manifest_sha256": "455bbf970019aaa4af2273d001f208b7f6261da1703b9938f8c3fde564827ed8",
+      "scope": "Independent of statement author before implementation; actual root statement350 evidence is separately recorded.",
+      "later_role": "Coordinator and sole local compiler."
+    },
+    {
+      "reviewer": "/root/mi24_full_referee1",
+      "manifest": "reviews/MI28-statement-referee2-source-20260918/MANIFEST.json",
+      "origin_manifest": "/private/tmp/nla-lean-next-20260915/reviews/MI28-statement-referee2-source-20260918/MANIFEST.json",
+      "manifest_sha256": "f9d6c12fff977b07675ef482229f79f042d69f24218d8bd337afbd99b8135779",
+      "scope": "Independent of statement author before implementation; actual root statement350 evidence is separately recorded.",
+      "later_role": "Proof and documentation author; not an independent final proof reviewer."
+    }
+  ],
+  "final_source_reviews": [
+    {
+      "reviewer": "/root/mi28_final_referee1",
+      "nonauthor_of_statements_and_proof": true,
+      "verdict": "PASS",
+      "scope": "Complete unchanged original target, all 20 frozen contracts and all 52 project proof modules; authenticated saved local evidence.",
+      "origin_manifest": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918/MANIFEST.json",
+      "manifest": "reviews/MI28-final-referee1-local365-20260918/MANIFEST.json",
+      "manifest_sha256": "f3fef1bb2dbba9b252c11cc23b950bbd1230f36494299c0c14f9ed164b5f4af0",
+      "report": "reviews/MI28-final-referee1-local365-20260918/REVIEW.md",
+      "Lean_Lake_Comparator_rerun": false,
+      "official_TauCeti_engine": false,
+      "human_peer_review": false,
+      "publication_metadata_approval": "outside this source verdict"
+    },
+    {
+      "reviewer": "/root/mi28_final_referee2",
+      "nonauthor_of_statements_and_proof": true,
+      "verdict": "APPROVE",
+      "scope": "Complete unchanged original target, all 20 frozen contracts and all 52 project proof modules; authenticated saved local evidence.",
+      "origin_manifest": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee2-local365-20260918/MANIFEST.json",
+      "manifest": "reviews/MI28-final-referee2-local365-20260918/MANIFEST.json",
+      "manifest_sha256": "4e6aa1e1489b13394222cf85f11f3f81fa7a7d275fe08f97651cb2527062b188",
+      "report": "reviews/MI28-final-referee2-local365-20260918/REPORT.md",
+      "Lean_Lake_Comparator_rerun": false,
+      "official_TauCeti_engine": false,
+      "human_peer_review": false,
+      "publication_metadata_approval": "outside this source verdict"
+    }
+  ],
+  "guidance": {
+    "project": "TauCetiProject/TauCetiReview",
+    "revision": "afb424eda89e8ac96d9eb69f6a88972055a4cd1b",
+    "criteria": [
+      "correctness",
+      "generality",
+      "proof-quality",
+      "reuse",
+      "attribution"
+    ],
+    "scope": "Manually applied AI-agent criteria; not official engine execution, human review or an exhaustive Tau Ceti theorem-corpus search."
+  },
+  "author_handoff": {
+    "origin": "/private/tmp/nla-lean-next-20260915/MI28-source-author-handoff-local365/MANIFEST.json",
+    "sha256": "f91b227133a4aec326e05859884cbacc7f80320d6a6dd497d5f552637061a53d",
+    "scope": "Author-provided execution/source handoff, not independent review."
+  },
+  "metadata_author": "/root/mi24_full_referee1",
+  "independent_metadata_review": {
+    "result": "PASS",
+    "reviewer": "/root/mi28_final_referee2",
+    "record": "reviews/package-referee2/MANIFEST.json",
+    "manifest_sha256": "aa162b74002e60643ae3660079d26bb3047ce423dd740e05f386fcdbed4ecd4a",
+    "scope": "Independent nonauthor package/metadata audit of the exact reviewed package; not another Lean or Comparator execution."
+  },
+  "Linux_Comparator": "NOT RUN",
+  "accepted_count_change": 0,
+  "root_integrity_replays": [
+    {
+      "origin": "/private/tmp/nla-lean-next-20260915/reviews/MI28-referee1-ROOT-REPLAY-20260918.json",
+      "sha256": "f00cb091da7ee3a3d4546609054e18b7b0d8dcc7940b2f135b5bf0fc0689ccfe",
+      "executor": "/root",
+      "scope": "Actual read-only replay of the reviewer integrity script; not Lean or Comparator."
+    },
+    {
+      "origin": "/private/tmp/nla-lean-next-20260915/reviews/MI28-referee2-ROOT-REPLAY-20260918.json",
+      "sha256": "ed2a694e2b0005dfa4b9f4f34190269092805bf5475b7bbc3a6ea83cadcfc1eb",
+      "executor": "/root",
+      "scope": "Actual read-only replay of the reviewer integrity script; not Lean or Comparator."
+    }
+  ]
+}

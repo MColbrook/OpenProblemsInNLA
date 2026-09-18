@@ -1,0 +1,19 @@
+{
+  "reviewer": "/root/mi28_final_referee1",
+  "time": "2026-09-18T09:55:36.952473+00:00",
+  "scope": "Independent complete nonauthor mathematical and source review, plus retained local evidence byte audit. No proof changes or checker reruns.",
+  "input_snapshot_manifest_sha256": "7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089",
+  "external_verifier": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918-verify.py",
+  "external_verifier_sha256": "fb7e8e32017622712a873f5b05cb60a17e78fd8bf5dc519887ba9072a9d57e0c",
+  "files": {
+    "BYTE-CHECK.json": "d0ba288924f4e46696eafc15d6455b17b92f7101fd8f5ddc7a1a3726f474c381",
+    "READ-SCOPE.json": "0339e77b63ab6b5d3e1292cc70e20eab3a3fa84aed3a0f11481e4c0f2caaff39",
+    "REUSE-SEARCHES.json": "e7294dca2a07cbe0c8dcdbab570b83ff41d218e013b696556e11b011ffb0b16e",
+    "REVIEW.md": "2b95c2c185e8c588ebb84d51035b51d63a3e8ef86c5ffd108f039b283915ccde",
+    "VERDICT.json": "0ff712ddbb33d421ad08c4a959d5808f0158d0b731784dd2e0439a6270b0c599",
+    "all-new-declaration-names.txt": "9ef8ef4d96d1b34852fb9a4c923ca035c9bf51779498f0a3181380d874c4c847",
+    "core-library-api.txt": "53ee8c51c12e3d45c92eb642db863b8d65be187743d408d8d2b7c56f1079b2bd",
+    "long-proof-plumbing.txt": "8d1c6bb402b895f5e439c8bd903a9b39255c2429f9bd54f554a47ac9727f6496",
+    "matrix-inequality-content.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

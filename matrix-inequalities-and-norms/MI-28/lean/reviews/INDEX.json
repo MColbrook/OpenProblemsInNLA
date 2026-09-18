@@ -1,0 +1,67 @@
+[
+  {
+    "source_directory": "/private/tmp/nla-lean-next-20260915/reviews/MI28-root-statements-local350",
+    "archive": "reviews/MI28-root-statements-local350-packet.tar.gz",
+    "archive_sha256": "43e7bb9b1b3b428f77b20a7b0cb6667d4af2b1fc953b142596a448b21c424bc7",
+    "payload_sha256": {
+      "MANIFEST.json": "455bbf970019aaa4af2273d001f208b7f6261da1703b9938f8c3fde564827ed8",
+      "REVIEW.md": "5cb8dac3f96d632c58ddcc7ee7afbf1aceee2d5fbf179e3c4c432048cee779c8",
+      "VERDICT.json": "9173d4a202a2e60153ab7ccc470a9e0510d9ee64f71d3560c0b5090028a7bc2c"
+    },
+    "stage": "statement_reviews",
+    "reviewer": "/root",
+    "manifest_sha256": "455bbf970019aaa4af2273d001f208b7f6261da1703b9938f8c3fde564827ed8"
+  },
+  {
+    "source_directory": "/private/tmp/nla-lean-next-20260915/reviews/MI28-statement-referee2-source-20260918",
+    "archive": "reviews/MI28-statement-referee2-source-20260918-packet.tar.gz",
+    "archive_sha256": "d5b88bb38b27b0cf4a77cb03a3e770a1545a84045c8eb8f110b844fad322ef17",
+    "payload_sha256": {
+      "BINDINGS.json": "997537b9d6ed002830271b82f5c6fa58cf39ec7cebb470d771085e38c9dee5d3",
+      "MANIFEST.json": "f9d6c12fff977b07675ef482229f79f042d69f24218d8bd337afbd99b8135779",
+      "PRIMARY-SOURCE-CHECK.json": "fdd6e0f9a19e422e53c38c89dbca61a8b3213e101e542c851a3c498929dfdc4f",
+      "REVIEW.md": "c676e9e9f3ae44830bef54fc310ef270d82c778a797c3fa38da729cd51da7b3b",
+      "VERDICT.json": "a51ace58851daf7ae905a7327ce7a39099a065010b44c74e584092f6e2e623d4",
+      "verify_review.py": "ac0ac61f6c359e9cac4aa3dca76cbebc1d541db802b6c3cc8503afbf3115bf71"
+    },
+    "stage": "statement_reviews",
+    "reviewer": "/root/mi24_full_referee1",
+    "manifest_sha256": "f9d6c12fff977b07675ef482229f79f042d69f24218d8bd337afbd99b8135779"
+  },
+  {
+    "source_directory": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918",
+    "archive": "reviews/MI28-final-referee1-local365-20260918-packet.tar.gz",
+    "archive_sha256": "d1689f1c64c694b6676e407fa3656be3905c687841fbb7bf5d475dca70912b4a",
+    "payload_sha256": {
+      "BYTE-CHECK.json": "d0ba288924f4e46696eafc15d6455b17b92f7101fd8f5ddc7a1a3726f474c381",
+      "MANIFEST.json": "f3fef1bb2dbba9b252c11cc23b950bbd1230f36494299c0c14f9ed164b5f4af0",
+      "READ-SCOPE.json": "0339e77b63ab6b5d3e1292cc70e20eab3a3fa84aed3a0f11481e4c0f2caaff39",
+      "REUSE-SEARCHES.json": "e7294dca2a07cbe0c8dcdbab570b83ff41d218e013b696556e11b011ffb0b16e",
+      "REVIEW.md": "2b95c2c185e8c588ebb84d51035b51d63a3e8ef86c5ffd108f039b283915ccde",
+      "VERDICT.json": "0ff712ddbb33d421ad08c4a959d5808f0158d0b731784dd2e0439a6270b0c599",
+      "all-new-declaration-names.txt": "9ef8ef4d96d1b34852fb9a4c923ca035c9bf51779498f0a3181380d874c4c847",
+      "core-library-api.txt": "53ee8c51c12e3d45c92eb642db863b8d65be187743d408d8d2b7c56f1079b2bd",
+      "long-proof-plumbing.txt": "8d1c6bb402b895f5e439c8bd903a9b39255c2429f9bd54f554a47ac9727f6496",
+      "matrix-inequality-content.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stage": "final_source_reviews",
+    "reviewer": "/root/mi28_final_referee1",
+    "manifest_sha256": "f3fef1bb2dbba9b252c11cc23b950bbd1230f36494299c0c14f9ed164b5f4af0"
+  },
+  {
+    "source_directory": "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee2-local365-20260918",
+    "archive": "reviews/MI28-final-referee2-local365-20260918-packet.tar.gz",
+    "archive_sha256": "355cbecfece96c278eb71d9c42c7bf854494f8a03efa8047c10e9a3f020355ba",
+    "payload_sha256": {
+      "INTEGRITY.json": "b3e186090d2c75a8606f167e5593ce17518ba4ab3b88d0c0442df2c2631bf823",
+      "MANIFEST.json": "4e6aa1e1489b13394222cf85f11f3f81fa7a7d275fe08f97651cb2527062b188",
+      "REPORT.md": "133e235b595ce69e7bb43570db4a841f632185450b74d7b50f88f97681a82416",
+      "REUSE-SEARCH.json": "68a4151e65862140299c5391e93941811fc90cfd5599a3ea304426d63a2ebf42",
+      "SOURCE_READS.json": "621f8a6a5589afd6312c4788a74eccef713351bf4fd8d426e00ed59cd6650cba",
+      "verify_integrity.py": "2c408134dd52ea6d5b1e0123b155e0dc56846778f1383c3fcad3594e7c520e91"
+    },
+    "stage": "final_source_reviews",
+    "reviewer": "/root/mi28_final_referee2",
+    "manifest_sha256": "4e6aa1e1489b13394222cf85f11f3f81fa7a7d275fe08f97651cb2527062b188"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "time": "2026-09-18T10:41:46.690133+00:00",
+  "reviewer": "/root",
+  "scope": "Coordinator package integrity, metadata, source, privacy and checker-configuration validation; not an independent source review or Lean/Comparator run",
+  "package_manifest_sha256": "5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5",
+  "checks": 2131,
+  "payload_files": 264,
+  "archived_files_privacy_checked": 164,
+  "all52_proof_sources_exact365": true,
+  "all20_contracts_unchanged": true,
+  "two_independent_full_source_approvals": true,
+  "schema": {
+    "argv": [
+      "/Users/georgestepaniants/miniforge3/bin/python3",
+      "/private/tmp/nla-lean-next-mi28-worktree/tools/lean/validate_manifest.py",
+      "/private/tmp/nla-lean-next-20260915/MI28-canonical-package-local365"
+    ],
+    "exit_code": 0,
+    "stdout": "Manifest schema and comparator coverage: PASS (20 declarations)\n",
+    "stderr": ""
+  },
+  "Linux_Comparator": "not run",
+  "count_change": 0
+}
