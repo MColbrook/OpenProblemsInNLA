@@ -4,7 +4,7 @@
 **Difficulty:** challenging  
 **Importance:** interesting to the community  
 **Status:** Lean verified  
-**Last checked:** 2026-09-18 
+**Last checked:** 2026-09-18
 
 **Rating rationale:** Challenging reflects recovering a spectral implication after a gap in its original analytic proof; community impact is a structural criterion for real spectra of banded Toeplitz sections.
 
@@ -31,13 +31,12 @@ The [immutable complete proof](https://github.com/sgstepaniants/OpenProblemsInNL
 The repository ran [successful Ubuntu verification](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/34765629739/job/103745998196) on the pinned proof revision. All twenty Comparator statements, the permitted axiom closure and Lean's default kernel passed, together with sandbox and rejection controls. Only `propext`, `Classical.choice` and `Quot.sound` are permitted; the [per-export axiom report](lean/verification/local-2026-09-13/types-axioms.log) and [raw Linux evidence, independent audit and reproduction commands](lean/verification/linux-2026-09-13/README.md) are retained. Two statement reviews preceded proof implementation, and two independent final mathematical reviews passed. AI assistance and agent review are disclosed; no human peer review or Tau Ceti endorsement is claimed.
 
 ## Strengthening — the limiting-spectrum implication also fails, 2026-09-18
-**Strengthening of the negative resolution, by Fabian Rohner and Clemens Thalhammer**, Seminar for Applied Mathematics, ETH Zurich. [PDF](../../references/rohner-thalhammer-2026-09-18/paper.pdf) · [LaTeX](../../references/rohner-thalhammer-2026-09-18/paper.tex). **Theorem 1.3 and Proposition 4.1.**
+
+**Strengthening of the negative resolution, by Fabian Rohner and Clemens Thalhammer**, Seminar for Applied Mathematics, ETH Zurich. [PDF](references/rohner-thalhammer-2026-09-18/paper.pdf) · [LaTeX](references/rohner-thalhammer-2026-09-18/paper.tex). **Theorem 1.3 and Proposition 4.1.**
 
 The resolution above refutes the displayed target for finite sections and notes that the distinct limiting-spectrum statement is untouched. That weaker statement also fails. The integer-coefficient Laurent polynomial $`b=h^2`$, $`h(z)=z^{2}+97z+103-10201/z`$, is real-valued on a rigorously constructed real-analytic Jordan curve with winding number one about the origin, on which $`b`$ takes values in $`[-4000000,0]`$. Near $`\lambda_0=(20192/97)^2`$ the Schmidt–Spitzer set $`\Lambda(b)`$ is a regular real-analytic arc crossing the real axis transversely, so $`\Lambda(b)\not\subset\mathbb R`$. Proposition 4.1 gives a four-diagonal symbol with the explicit nonreal point $`(20192/97)\mathrm{i}\in\Lambda(a)`$. Since real spectra of all finite sections would force a real limiting set, this implication is weaker than the one refuted on 2026-09-11, and its failure subsumes that result.
 
-**Verification status.** Author-verified preprint; no external peer review, no independent agent audit recorded here, and no Lean verification of this statement. The counterexamples and a first draft were produced by GPT-6 Astra Pro (OpenAI) in sessions directed by F. Rohner; Opus 5 (Anthropic) produced the figures. This is a claimed strengthening at the `Solution claimed` evidence level and does not alter the entry's `Lean verified` status, which refers to the finite-section target.
-
-
+**Verification status.** Author-verified preprint, with an independent Codex-agent mathematical **PASS** on 18 September 2026; the [audit report](references/rohner-thalhammer-2026-09-18/audit-2026-09-18.md) records the scope, source hashes and publication corrections. No external human peer review or Lean verification of this strengthening is claimed. The counterexamples and a first draft were produced by GPT-6 Astra Pro (OpenAI) in sessions directed by F. Rohner; Opus 5 (Anthropic) produced the figures. This remains a claimed strengthening at the `Solution claimed` evidence level and does not alter the entry's `Lean verified` status, which refers to the finite-section target.
 
 ## Problem statement
 

@@ -17,6 +17,7 @@
     natbib=true,
     backend=biber,
     sortcites]{biblatex}
+\usepackage{xurl}
 \usepackage{todonotes}
 \usepackage{xcolor}
 \newcommand{\fr}[1]{{\color{red} #1}}
@@ -82,7 +83,7 @@ be a Laurent polynomial, and let
 \]
 be its finite Toeplitz sections. We are interested in the limiting spectrum
 \begin{equation}
- \Lambda(b)=\{\lambda \in \C: \lim_{n\rightarrow\infty}\operatorname{dist}(\lambda, T_n(b))=0\}.
+ \Lambda(b)=\{\lambda \in \C: \lim_{n\rightarrow\infty}\operatorname{dist}(\lambda, \spec(T_n(b)))=0\}.
  \label{eq:limiting-spectrum}
 \end{equation}
 For each \(\lambda\in\C\), denote the roots of
@@ -99,8 +100,8 @@ The following characterisation of the limiting spectrum is classical \cite{schmi
     Let $b$ be a Laurent polynomial as defined in \ref{eq:symbol}. Then it holds that
     \begin{equation}
         \begin{aligned}
-            \Lambda(b) &=\bigcap_{r>0}\sigma(T(b(rz))\\
-            &=\{\lambda \in \C: \lvert z_r(\lambda)\lvert=\rvert z_{r+1}(\lambda)\lvert\}
+            \Lambda(b) &=\bigcap_{R>0}\sigma(T(b(Rz)))\\
+            &=\{\lambda \in \C: \lvert z_r(\lambda)\rvert=\lvert z_{r+1}(\lambda)\rvert\}
         \end{aligned}
     \end{equation}
 \end{theorem}
@@ -118,7 +119,7 @@ An important question is when the limiting spectrum is real-valued. While this i
 
 The above conjecture was first asserted as a Theorem in \cite{shapiro2019non}, unfortunately the proof was later discovered to be erroneous \cite{Shapiro2023} and remains the subject of active research \cite{de2026mathematical,townsend2026openproblemsnla}. The implication $\eqref{conj: Reality1}\implies\eqref{conj: Reality2}$ remains proven as it was unaffected by the error and is also known to hold in the case of matrix-valued symbols \cite{giandinoto2024reality}. Common belief was that the implication $\eqref{conj: Reality2}\implies\eqref{conj: Reality3}$, or at least the weaker result $\eqref{conj: Reality2}\implies\eqref{conj: Reality1}$ would still hold. The former has recently been disproven in \cite{colbrook2026sp06}, but the later direction remained open until now.
 
-In this paper, we provide two surprisingly simple counterexamples to $\eqref{conj: Reality2}\implies\eqref{conj: Reality1}$ (and consequently also the stronger claim $\eqref{conj: Reality2}\implies\eqref{conj: Reality3}$). The main result, Theorem \ref{thm:main}, shows that the open part Conjecture \ref{conj: Reality} is false, even when restricting to symbols with real-valued coefficients. 
+In this paper, we provide two surprisingly simple counterexamples to $\eqref{conj: Reality2}\implies\eqref{conj: Reality1}$ (and consequently also the stronger claim $\eqref{conj: Reality2}\implies\eqref{conj: Reality3}$). The main result, Theorem \ref{thm:main}, shows that the open part Conjecture \ref{conj: Reality} is false, even when restricting to symbols with real-valued coefficients.
 
 
 \begin{theorem}
@@ -166,7 +167,7 @@ Consequently, \(\Lambda(b)\not\subset\R\).
      \begin{subfigure}[b]{0.45\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/fig_limiting_spectrum.png}
-         
+
          \caption{Limiting spectrum}
          \label{fig:Main2}
      \end{subfigure}
@@ -180,7 +181,7 @@ Consequently, \(\Lambda(b)\not\subset\R\).
          \caption{Finite section spectra}
          \label{fig:single_resonator_linear3}
      \end{subfigure}
-     
+
      \caption{Preimage of $\R$ and Limiting Spectrum for $b$ as in Theorem \ref{thm:main}}
      \label{fig:Main}
 \end{figure}
@@ -298,7 +299,7 @@ Each extended branch is injective. For example, equality \(\alpha(t_1)=\alpha(t_
 An intersection between the two branches likewise forces equality of the parameters. At an interior parameter the two roots are distinct, so the branches have only their two endpoints in common. Their union is therefore a Jordan curve, and Lemma~\ref{lem:rouche} shows that this union is exactly \eqref{eq:gamma}.
 
 Away from the two endpoints, the curve is real-analytic by the implicit
-function theorem, since $h'\neq0$ there. To examine an endpoint, \fix one of the two signs and set $c = 1\pm10\ii$, so that $h(c) = \pm 2000\ii$. As $c$ is a simple critical point,
+function theorem, since $h'\neq0$ there. To examine an endpoint, fix one of the two signs and set $c = 1\pm10\ii$, so that $h(c) = \pm 2000\ii$. As $c$ is a simple critical point,
 \[
   h(z)-h(c )=(z-c)^2 g(z)
 \]
@@ -315,10 +316,10 @@ In the \(\zeta\)-coordinate, this preimage is the straight-line segment
     e^{\mp\mathrm i\pi/4} \bigl(-\sqrt{\varepsilon},\sqrt{\varepsilon}\bigr),
 \]
 symmetric about $0$, whose two halves correspond to the two root branches that coalesce at $c$.
-%a segment of $h(c)\mp i[0,4000]$ symmetric around $h(c)$. 
+%a segment of $h(c)\mp i[0,4000]$ symmetric around $h(c)$.
 % Under $\zeta\mapsto h(c)+\zeta^2$ this segment has as preimage a segment of straight line
 % $e^{\mp i\pi/4}\,\mathbb{R}$ symmetric around $0$, the two half-lines corresponding to the two root
-% branches that coalesce at $c$. 
+% branches that coalesce at $c$.
 The curve near $c$ is therefore the image of a
 straight line under the conformal map $\zeta^{-1}$, hence a regular
 real-analytic arc through $c$.
@@ -500,7 +501,7 @@ Its roots are \(\ii\rho,-\ii\rho,-97\ii\). They are distinct, and \(\rho<97\). S
      \begin{subfigure}[b]{0.45\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/fig_limiting_spectrum_a.png}
-         
+
          \caption{Limiting spectrum}
          \label{fig:Second2}
      \end{subfigure}
@@ -514,7 +515,7 @@ Its roots are \(\ii\rho,-\ii\rho,-97\ii\). They are distinct, and \(\rho<97\). S
          \caption{Finite section spectra}
          \label{fig:Second3}
      \end{subfigure}
-     
+
      \caption{Preimage of $\R$ and Limiting Spectrum for $a$ as in Proposition \ref{prop:complex}}
      \label{fig:Second}
 \end{figure}
@@ -619,6 +620,9 @@ The counterexamples and a first draft of this paper were
 produced by GPT-6 Astra Pro (OpenAI) in sessions directed by F. Rohner. C. Thalhammer used Opus 5 (Anthropic) to produce Figures \ref{fig:Main} and \ref{fig:Second}. All mathematical content has been
 verified independently by the authors, and the authors take full
 responsibility for the content.
+\begingroup
+\setlength{\emergencystretch}{2em}
 \printbibliography
+\endgroup
 
 \end{document}
