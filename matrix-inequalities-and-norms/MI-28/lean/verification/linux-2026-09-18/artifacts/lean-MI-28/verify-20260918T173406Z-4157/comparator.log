@@ -1,0 +1,424 @@
+$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-fresh-proof-boeo7eig/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json
+Building Challenge
+✔ [2708/2710] Built NLA.MI28.Definitions (2.5s)
+⚠ [2709/2710] Built Challenge (2.2s)
+warning: Challenge.lean:15:8: declaration uses `sorry`
+warning: Challenge.lean:18:8: declaration uses `sorry`
+warning: Challenge.lean:23:8: declaration uses `sorry`
+warning: Challenge.lean:29:8: declaration uses `sorry`
+warning: Challenge.lean:34:8: declaration uses `sorry`
+warning: Challenge.lean:42:8: declaration uses `sorry`
+warning: Challenge.lean:51:8: declaration uses `sorry`
+warning: Challenge.lean:56:8: declaration uses `sorry`
+warning: Challenge.lean:60:8: declaration uses `sorry`
+warning: Challenge.lean:64:8: declaration uses `sorry`
+warning: Challenge.lean:68:8: declaration uses `sorry`
+warning: Challenge.lean:74:8: declaration uses `sorry`
+warning: Challenge.lean:80:8: declaration uses `sorry`
+warning: Challenge.lean:86:8: declaration uses `sorry`
+warning: Challenge.lean:92:8: declaration uses `sorry`
+warning: Challenge.lean:95:8: declaration uses `sorry`
+warning: Challenge.lean:100:8: declaration uses `sorry`
+warning: Challenge.lean:106:8: declaration uses `sorry`
+warning: Challenge.lean:114:8: declaration uses `sorry`
+warning: Challenge.lean:120:8: declaration uses `sorry`
+Build completed successfully (2710 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MI28.half_exponent_interval, NLA.MI28.product_modulus_square, NLA.MI28.swapped_modulus, NLA.MI28.normalized_posdef, NLA.MI28.furuta_boundary, NLA.MI28.furuta_admissible, NLA.MI28.lower_power_implication, NLA.MI28.higher_power_implication, NLA.MI28.swap_implication, NLA.MI28.small_base_implication, NLA.MI28.small_base_norm, NLA.MI28.large_base_norm, NLA.MI28.normalized_homogeneity, NLA.MI28.normalized_norm_continuous, NLA.MI28.full_log_majorization, NLA.MI28.log_one_add_tangent, NLA.MI28.product_one_add_le, NLA.MI28.determinant_normalization, NLA.MI28.determinant_reality_positive, NLA.MI28.determinant_comparison, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [3009/3042] Built LeanCert.Core.Interval (4.7s)
+✔ [3010/3042] Built LeanCert.Core.DerivativeIntervals (4.7s)
+✔ [3011/3049] Built LeanCert.Contrib.Sinc (7.2s)
+✔ [3012/3049] Built LeanCert.Core.Expr (8.1s)
+✔ [3013/3053] Built LeanCert.Core.Dyadic (6.7s)
+✔ [3014/3053] Built LeanCert.Tactic.Verification (7.5s)
+✔ [3015/3053] Built LeanCert.Core.Taylor (12s)
+✔ [3016/3053] Built LeanCert.Core.IntervalRat.Basic (13s)
+✔ [3017/3053] Built LeanCert.Core.Support (5.1s)
+✔ [3018/3053] Built LeanCert.Core.IntervalRat.LogReduction (7.0s)
+✔ [3019/3053] Built LeanCert.Tactic.LeanCert.Bridge.Environment (3.6s)
+✔ [3020/3053] Built LeanCert.Meta.Numeral (5.3s)
+✔ [3021/3054] Built LeanCert.Engine.Eval.Result (3.5s)
+✔ [3022/3054] Built LeanCert.Core.TrigReduction (4.1s)
+✔ [3023/3054] Built LeanCert.Tactic.IntervalAuto.Types (4.7s)
+✔ [3024/3054] Built LeanCert.Core.IntervalRat.Transcendental (6.1s)
+✔ [3025/3054] Built LeanCert.Tactic.NumericalRefinement (937ms)
+✔ [3026/3079] Built LeanCert.Tactic.IntervalAuto.Extract (4.5s)
+✔ [3078/3158] Built LeanCert.Tactic.VecUtil (5.3s)
+✔ [3080/3159] Built LeanCert.Tactic.IntervalAuto.Norm (6.8s)
+✔ [3081/3163] Built LeanCert.Meta.ToExpr (9.6s)
+✔ [3082/3163] Built LeanCert.Tactic.FinSumExpand (4.2s)
+✔ [3083/3163] Built LeanCert.Tactic.FinsetParse (5.9s)
+✔ [3084/3249] Built LeanCert.Tactic.BridgeNative (2.8s)
+✔ [3268/3461] Built LeanCert.Tactic.LeanCert.Normalize (5.4s)
+✔ [3612/3695] Built LeanCert.Tactic.IntervalAuto.Parse (8.5s)
+✔ [3613/3697] Built LeanCert.Tactic.LeanCert.Semantic.Domain (1.0s)
+✔ [3614/3700] Built LeanCert.Validity.Eventual (3.5s)
+✔ [3615/3700] Built LeanCert.Tactic.IntervalAuto.Diagnostic (3.8s)
+✔ [3616/3700] Built LeanCert.Tactic.LeanCert.Semantic.Goal (2.7s)
+✔ [3617/3704] Built LeanCert.Core.IntervalRat.Taylor (26s)
+✔ [3618/3704] Built LeanCert.Tactic.VecSimp (2.1s)
+✔ [3619/3704] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (1.7s)
+✔ [3620/3705] Built LeanCert.Core.IntervalReal (2.8s)
+✔ [3621/3705] Built LeanCert.Core.IntervalRat.TrigReduced (3.5s)
+✔ [3622/3705] Built LeanCert.Tactic.EventualBound (6.2s)
+✔ [3623/3705] Built LeanCert.Tactic.Extension.Protocol (3.8s)
+✔ [3624/3705] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (3.9s)
+✔ [3625/3707] Built LeanCert.Core.IntervalRealEndpoints (6.6s)
+✔ [3626/3708] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (6.5s)
+✔ [3627/3708] Built LeanCert.Engine.Affine.Basic (9.9s)
+✔ [3628/3708] Built LeanCert.Core.IntervalDyadic (11s)
+✔ [3629/3708] Built LeanCert.Tactic.Extension.Registry (4.9s)
+✔ [3630/3712] Built LeanCert.Tactic.LeanCert.Config (2.2s)
+✔ [3632/3713] Built LeanCert.Engine.Algebra.QPoly (7.5s)
+✔ [3633/3713] Built LeanCert.Core.DyadicCell (8.1s)
+✔ [3634/3721] Built LeanCert.Engine.Affine.Nonlinear (8.0s)
+✔ [3635/3727] Built LeanCert.Engine.Eval.Core (11s)
+✔ [3636/3727] Built LeanCert.Engine.FloatEval (3.1s)
+✔ [3637/3736] Built LeanCert.Core.DyadicFrontier (3.5s)
+✔ [3641/3781] Built LeanCert.Engine.Algebra.QPolyIntegral (4.2s)
+✔ [3711/3844] Built LeanCert.Engine.Eval.Extended (5.6s)
+✔ [3712/3844] Built LeanCert.Tactic.Extension.Command (3.3s)
+✔ [3714/3849] Built NLA.MI24.Definitions (3.0s)
+⚠ [3715/3849] Built NLA.MI28.LogOneAddTangent (4.3s)
+warning: NLA/MI28/LogOneAddTangent.lean:33:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/LogOneAddTangent.lean:33:47: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [3716/3849] Built NLA.MI24.ScalarLogMajorization (3.1s)
+info: NLA/MI24/ScalarLogMajorization.lean:89:0: 'NLA.MI24.sum_le_sum_of_prefix_prod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3717/3849] Built LeanCert.Engine.Bounds.Lemmas (3.6s)
+✔ [3718/3849] Built LeanCert.Tactic.Extension (2.0s)
+⚠ [3719/3849] Built NLA.MI24.SpectralPowers (4.2s)
+warning: NLA/MI24/SpectralPowers.lean:58:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3720/3849] Built NLA.MI28.ProductOneAdd (3.0s)
+✔ [3721/3849] Built NLA.MI24.CompoundAlgebra (5.3s)
+⚠ [3722/3849] Built NLA.MI24.OperatorNorm (6.7s)
+warning: NLA/MI24/OperatorNorm.lean:42:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI24/OperatorNorm.lean:43:25: Variable name `hV` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hV
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3723/3849] Built LeanCert.Engine.IntervalEval (2.0s)
+✔ [3724/3849] Built NLA.MI24.TraceSpectral (3.3s)
+✔ [3725/3849] Built NLA.MI24.OrderPowers (3.6s)
+⚠ [3726/3849] Built NLA.MI24.DiagonalPowers (4.4s)
+warning: NLA/MI24/DiagonalPowers.lean:39:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI24/DiagonalPowers.lean:41:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3727/3849] Built NLA.MI24.MeanPositivity (3.7s)
+warning: NLA/MI24/MeanPositivity.lean:64:37: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI24/MeanPositivity.lean:79:35: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3728/3849] Built LeanCert.Validity.Bounds.Checked (3.0s)
+✔ [3729/3849] Built LeanCert.Engine.Affine.Transcendental (5.3s)
+✔ [3730/3849] Built LeanCert.Validity.Bounds.Core (4.9s)
+✔ [3731/3849] Built LeanCert.Engine.IntervalEvalDyadic (8.7s)
+✔ [3732/3849] Built LeanCert.Engine.Optimization.Box (4.4s)
+✔ [3733/3849] Built LeanCert.Engine.RootFinding.Basic (6.7s)
+✔ [3734/3849] Built LeanCert.Engine.AD.Basic (4.7s)
+✔ [3735/3849] Built LeanCert.Engine.Integrate (8.9s)
+⚠ [3736/3849] Built NLA.MI28.NormalizedContinuity (5.1s)
+warning: NLA/MI28/NormalizedContinuity.lean:42:21: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3737/3849] Built NLA.MI24.PowerScaling (5.4s)
+warning: NLA/MI24/PowerScaling.lean:68:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3738/3849] Built LeanCert.Engine.TaylorModel.Core (12s)
+✔ [3739/3849] Built NLA.MI28.NormalizedOrder (4.5s)
+⚠ [3740/3849] Built NLA.MI28.PositiveProductOrder (5.2s)
+warning: NLA/MI28/PositiveProductOrder.lean:77:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3741/3849] Built NLA.MI28.InverseSandwich (3.9s)
+✔ [3742/3849] Built NLA.MI24.GeometricCongruence (3.6s)
+✔ [3743/3849] Built LeanCert.Validity.DyadicBounds (4.6s)
+✔ [3744/3849] Built LeanCert.Engine.FinSumDyadic (5.0s)
+✔ [3745/3849] Built LeanCert.Engine.IntervalEvalAffine (7.3s)
+✔ [3746/3849] Built LeanCert.Engine.Search.Heuristic (4.6s)
+⚠ [3747/3849] Built NLA.MI28.NormalizedHomogeneity (3.8s)
+warning: NLA/MI28/NormalizedHomogeneity.lean:23:5: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3748/3849] Built LeanCert.Engine.AD.Transcendental (5.7s)
+✔ [3749/3849] Built LeanCert.Engine.TaylorModel.Integral (4.7s)
+✔ [3750/3849] Built LeanCert.Engine.RootFinding.Bisection (6.4s)
+✔ [3751/3849] Built LeanCert.Engine.TaylorModel.Special (3.7s)
+⚠ [3752/3849] Built NLA.MI28.LargeBaseOrder (9.4s)
+warning: NLA/MI28/LargeBaseOrder.lean:81:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/LargeBaseOrder.lean:81:34: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3753/3849] Built LeanCert.Engine.TaylorModel.ExpLog (12s)
+✔ [3754/3849] Built LeanCert.Engine.TaylorModel.Trig (16s)
+✔ [3755/3849] Built NLA.MI24.PolarPowers (5.0s)
+✔ [3756/3849] Built LeanCert.Engine.WitnessSum (4.9s)
+✔ [3757/3849] Built LeanCert.Engine.TaylorModel.Hyperbolic (18s)
+✔ [3758/3849] Built LeanCert.Engine.AD.Eval (3.4s)
+✔ [3759/3849] Built LeanCert.Engine.Affine.Environment (5.1s)
+✔ [3760/3849] Built NLA.MI28.NormalizedPositivity (3.2s)
+✔ [3761/3849] Built NLA.MI24.FurutaBase (4.4s)
+✔ [3762/3849] Built LeanCert.Engine.TaylorModel.Functions (3.1s)
+✔ [3763/3849] Built NLA.MI28.NormComparison (3.9s)
+✔ [3764/3849] Built LeanCert.Engine.AD.Correctness (4.7s)
+⚠ [3765/3849] Built NLA.MI28.FurutaBoundary (5.1s)
+warning: NLA/MI28/FurutaBoundary.lean:71:54: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/FurutaBoundary.lean:77:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/FurutaBoundary.lean:98:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI28/FurutaBoundary.lean:103:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI28/FurutaBoundary.lean:71:54: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI28/FurutaBoundary.lean:77:36: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3766/3849] Built NLA.MI24.FurutaHalfPower (4.8s)
+warning: NLA/MI24/FurutaHalfPower.lean:91:35: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3767/3849] Built LeanCert.Engine.AD.Computable (5.5s)
+⚠ [3768/3849] Built NLA.MI28.FurutaAdmissible (5.2s)
+warning: NLA/MI28/FurutaAdmissible.lean:54:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/FurutaAdmissible.lean:57:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/FurutaAdmissible.lean:54:66: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI28/FurutaAdmissible.lean:57:50: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3769/3849] Built LeanCert.Engine.TaylorModel.Expr (7.4s)
+✔ [3770/3849] Built LeanCert.Engine.TaylorModel (3.0s)
+✔ [3771/3849] Built NLA.MI24.HeronOrder (4.3s)
+✔ [3772/3849] Built LeanCert.Engine.AD.PartialCorrectness (9.2s)
+✔ [3773/3849] Built LeanCert.Engine.AD.DomainChecked (4.1s)
+✔ [3774/3849] Built NLA.MI24.HeronNorm (2.6s)
+✔ [3775/3849] Built LeanCert.Engine.AD.Dyadic (3.7s)
+✔ [3776/3849] Built NLA.MI24.CompoundSpectral (2.8s)
+✔ [3777/3849] Built LeanCert.Engine.AD (1.0s)
+✔ [3778/3849] Built NLA.MI24.CompoundNorm (3.2s)
+✔ [3779/3849] Built LeanCert.Validity.Bounds.Smart (4.6s)
+✔ [3780/3849] Built LeanCert.Meta.ProveSupported (5.0s)
+✔ [3781/3849] Built LeanCert.Engine.IntervalEvalRefined (5.1s)
+⚠ [3782/3849] Built NLA.MI28.SpectrumDeterminant (3.9s)
+warning: NLA/MI28/SpectrumDeterminant.lean:71:15: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.one_apply, d, Complex.ofReal_add, Complex.ofReal_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI28/SpectrumDeterminant.lean:71:29: This simp argument is unused:
+  Pi.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, d, Complex.ofReal_add, Complex.ofReal_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3783/3849] Built LeanCert.Validity.Bounds.Bridge (4.6s)
+✔ [3784/3849] Built LeanCert.Engine.Optimize (8.2s)
+✔ [3785/3849] Built LeanCert.Meta.ProveContinuous (5.9s)
+✔ [3786/3849] Built LeanCert.Validity.Bounds.Basic (2.0s)
+✔ [3787/3849] Built LeanCert.Tactic.IntervalAuto.ProveCommon (7.5s)
+✔ [3788/3849] Built LeanCert.Engine.RootFinding.Newton (6.9s)
+✔ [3789/3849] Built LeanCert.Engine.Optimization.Gradient (8.2s)
+✔ [3790/3849] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (4.6s)
+✔ [3791/3849] Built LeanCert.Validity.Integration (8.6s)
+✔ [3792/3849] Built LeanCert.Tactic.IntervalAuto.Basic (4.1s)
+✔ [3793/3849] Built LeanCert.Engine.RootFinding.MVTBounds (12s)
+✔ [3794/3849] Built LeanCert.Engine.RootFinding.Krawczyk (10s)
+✔ [3795/3849] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (10s)
+✔ [3796/3849] Built LeanCert.Engine.RootFinding.KrawczykCandidate (6.6s)
+✔ [3797/3849] Built LeanCert.Engine.RootFinding.Contraction (11s)
+✔ [3798/3849] Built LeanCert.Tactic.LeanCert.Integral (12s)
+✔ [3799/3849] Built LeanCert.Validity.Krawczyk (4.9s)
+✔ [3800/3849] Built LeanCert.Engine.RootFinding.Main (3.7s)
+✔ [3801/3849] Built LeanCert.Tactic.LeanCert.Solver.Protocol (7.2s)
+✔ [3802/3849] Built LeanCert.Tactic.Extension.Execute (8.3s)
+✔ [3803/3849] Built LeanCert.Engine.Optimization.Global (32s)
+✔ [3804/3849] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (4.5s)
+✔ [3805/3849] Built LeanCert.Tactic.Enclosure (3.7s)
+✔ [3806/3849] Built LeanCert.Validity.Types (3.8s)
+✔ [3807/3849] Built LeanCert.Engine.Optimization.Guided (4.7s)
+✔ [3808/3849] Built LeanCert.Engine.Search.CounterExample (4.8s)
+✔ [3809/3849] Built LeanCert.Engine.Optimization.BoundVerify (4.2s)
+✔ [3810/3849] Built LeanCert.Validity.Bounds (8.4s)
+✔ [3811/3849] Built LeanCert.Discovery.Find (4.2s)
+✔ [3812/3849] Built LeanCert.Tactic.IntervalAuto.OptBound (5.0s)
+✔ [3813/3849] Built LeanCert.Tactic.IntervalAuto.Multivariate (7.2s)
+✔ [3814/3849] Built LeanCert.Tactic.IntervalAuto.RootBound (4.3s)
+✔ [3815/3849] Built LeanCert.Tactic.IntervalAuto.Bound (17s)
+✔ [3816/3849] Built LeanCert.Tactic.IntervalAuto.Subdiv (4.9s)
+✔ [3817/3849] Built LeanCert.Tactic.IntervalAuto.Adaptive (7.9s)
+✔ [3818/3849] Built LeanCert.Tactic.IntervalAuto.PointIneq (10s)
+✔ [3819/3849] Built LeanCert.Tactic.IntervalAuto (2.5s)
+✔ [3820/3849] Built LeanCert.Tactic.Refute (3.6s)
+✔ [3821/3849] Built LeanCert.Tactic.FinSumWitness (5.9s)
+✔ [3822/3849] Built LeanCert.Tactic.FinSumBound (4.6s)
+✔ [3823/3849] Built LeanCert.Tactic.LeanCert.Semantic.Parse (3.4s)
+✔ [3824/3849] Built LeanCert.Tactic.Discovery (15s)
+✔ [3825/3849] Built LeanCert.Tactic.Krawczyk (3.5s)
+✔ [3826/3849] Built LeanCert.Tactic.LeanCert.Router (8.4s)
+✔ [3827/3849] Built LeanCert.Tactic.LeanCert (2.5s)
+✔ [3828/3849] Built LeanCert.Tactic (2.6s)
+ℹ [3829/3849] Built NLA.MI28.Numerical (2.9s)
+info: NLA/MI28/Numerical.lean:28:0: 'NLA.MI28.half_exponent_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3830/3849] Built NLA.MI28.ModulusPowers (3.1s)
+info: NLA/MI28/ModulusPowers.lean:68:0: 'NLA.MI28.product_modulus_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3831/3849] Built NLA.MI28.LargeBaseImplication (4.3s)
+ℹ [3832/3849] Built NLA.MI28.SwappedModulus (4.9s)
+info: NLA/MI28/SwappedModulus.lean:82:0: 'NLA.MI28.swapped_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3833/3849] Built NLA.MI28.NormalizedDeterminant (5.3s)
+⚠ [3834/3849] Built NLA.MI28.FurutaSubstitution (5.4s)
+warning: NLA/MI28/FurutaSubstitution.lean:92:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/FurutaSubstitution.lean:92:60: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3835/3849] Built NLA.MI28.CompoundTransport (4.5s)
+✔ [3836/3849] Built NLA.MI28.LargeBaseNorm (4.2s)
+⚠ [3837/3849] Built NLA.MI28.DeterminantNormalization (4.5s)
+warning: NLA/MI28/DeterminantNormalization.lean:38:21: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3838/3849] Built NLA.MI28.SwapImplication (4.0s)
+⚠ [3839/3849] Built NLA.MI28.LowerPowerImplication (4.0s)
+warning: NLA/MI28/LowerPowerImplication.lean:35:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/LowerPowerImplication.lean:60:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/LowerPowerImplication.lean:35:33: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI28/LowerPowerImplication.lean:60:34: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3840/3849] Built NLA.MI28.DeterminantReality (3.8s)
+⚠ [3841/3849] Built NLA.MI28.HigherPowerOrder (5.6s)
+warning: NLA/MI28/HigherPowerOrder.lean:53:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/HigherPowerOrder.lean:95:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI28/HigherPowerOrder.lean:103:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI28/HigherPowerOrder.lean:53:47: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3842/3849] Built NLA.MI28.HigherPowerImplication (3.3s)
+warning: NLA/MI28/HigherPowerImplication.lean:37:74: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/HigherPowerImplication.lean:45:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI28/HigherPowerImplication.lean:37:74: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI28/HigherPowerImplication.lean:45:61: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3843/3849] Built NLA.MI28.SmallBaseImplication (3.2s)
+✔ [3844/3849] Built NLA.MI28.SmallBaseNorm (2.8s)
+✔ [3845/3849] Built NLA.MI28.FullNorm (2.9s)
+✔ [3846/3849] Built NLA.MI28.FullLogMajorization (2.7s)
+ℹ [3847/3849] Built NLA.MI28.DeterminantComparison (2.8s)
+info: NLA/MI28/DeterminantComparison.lean:42:0: 'NLA.MI28.determinant_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3848/3849] Built Solution (2.7s)
+info: Solution.lean:17:0: 'NLA.MI28.half_exponent_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:19:0: 'NLA.MI28.product_modulus_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:21:0: 'NLA.MI28.swapped_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:23:0: 'NLA.MI28.normalized_posdef' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:25:0: 'NLA.MI28.furuta_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:27:0: 'NLA.MI28.furuta_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:29:0: 'NLA.MI28.lower_power_implication' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:31:0: 'NLA.MI28.higher_power_implication' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:33:0: 'NLA.MI28.swap_implication' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:35:0: 'NLA.MI28.small_base_implication' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:37:0: 'NLA.MI28.small_base_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:39:0: 'NLA.MI28.large_base_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:41:0: 'NLA.MI28.normalized_homogeneity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:43:0: 'NLA.MI28.normalized_norm_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:45:0: 'NLA.MI28.full_log_majorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:47:0: 'NLA.MI28.log_one_add_tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:49:0: 'NLA.MI28.product_one_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:51:0: 'NLA.MI28.determinant_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:53:0: 'NLA.MI28.determinant_reality_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:55:0: 'NLA.MI28.determinant_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3849 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MI28.half_exponent_interval, NLA.MI28.product_modulus_square, NLA.MI28.swapped_modulus, NLA.MI28.normalized_posdef, NLA.MI28.furuta_boundary, NLA.MI28.furuta_admissible, NLA.MI28.lower_power_implication, NLA.MI28.higher_power_implication, NLA.MI28.swap_implication, NLA.MI28.small_base_implication, NLA.MI28.small_base_norm, NLA.MI28.large_base_norm, NLA.MI28.normalized_homogeneity, NLA.MI28.normalized_norm_continuous, NLA.MI28.full_log_majorization, NLA.MI28.log_one_add_tangent, NLA.MI28.product_one_add_le, NLA.MI28.determinant_normalization, NLA.MI28.determinant_reality_positive, NLA.MI28.determinant_comparison, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+
+EXIT_STATUS=0

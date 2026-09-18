@@ -1,0 +1,14 @@
+{
+  "time": "2026-09-18T10:06:01.809367+00:00",
+  "audit_sha256": "23aaf0f03d2267e2295c0871ca05d3295a67d64994813cdd00e411d0c0b2f003",
+  "repositories": 15,
+  "branch_heads": 271,
+  "unique_complete_commits": 225,
+  "matching_commits": 17,
+  "all_matches": "Only unchanged archived canonical MI28 README and its directory inside unrelated MF07 source provenance",
+  "canonical_blob": "7d089f64d6a96b004f4fef1851076b7b4f3320f6",
+  "MI28_Lean_source_or_formalization_yaml_found": false,
+  "scope": "Complete public branch enumeration for upstream and visible direct forks, with authenticated immutable recursive-tree reuse and complete local Git object traversal when the GitHub recursive-tree response is truncated. Target-ID/path formalization scan, not semantic inspection of every unrelated filename, private fork, deleted branch or unpublished work.",
+  "enumeration_time": "2026-09-18T09:56:42.420805+00:00",
+  "count_change": 0
+}

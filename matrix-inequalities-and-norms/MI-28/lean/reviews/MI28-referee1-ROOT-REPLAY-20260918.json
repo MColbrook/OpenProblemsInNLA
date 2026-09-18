@@ -1,0 +1,13 @@
+{
+  "time": "2026-09-18T10:00:49.318075+00:00",
+  "executor": "/root",
+  "scope": "Actual rerun of reviewer byte/integrity verifier; no Lean or Comparator invocation",
+  "argv": [
+    "python3",
+    "/private/tmp/nla-lean-next-20260915/reviews/MI28-final-referee1-local365-20260918-verify.py"
+  ],
+  "script_sha256": "fb7e8e32017622712a873f5b05cb60a17e78fd8bf5dc519887ba9072a9d57e0c",
+  "exit_code": 0,
+  "stdout": "{\n  \"time\": \"2026-09-18T10:00:49.314206+00:00\",\n  \"scope\": \"Independent byte, import, header and retained-local-receipt consistency audit; no Lean/Comparator/kernel rerun\",\n  \"source_manifest_sha256\": \"7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089\",\n  \"source_manifest_files_checked\": 83,\n  \"proof_modules_checked\": 52,\n  \"exact_selected_headers_checked\": 20,\n  \"unchanged_reused_MI24_modules_checked\": 18,\n  \"retained_execution_files_checked\": 92,\n  \"successful_origin_commands_checked\": 52,\n  \"distinct_successful_origin_receipts\": 18,\n  \"normalized_type_pairs_checked\": 20,\n  \"body_routes_checked\": 6,\n  \"proof_source_unsafe_or_placeholder_tokens\": [],\n  \"Lean_executed_by_this_reviewer\": false,\n  \"Comparator_executed_by_this_reviewer\": false,\n  \"verdict\": \"PASS\"\n}\n",
+  "stderr": ""
+}

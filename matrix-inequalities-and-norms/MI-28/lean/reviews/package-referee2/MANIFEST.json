@@ -1,0 +1,17 @@
+{
+  "reviewer": "/root/mi28_final_referee2",
+  "sealed_at_utc": "2026-09-18T10:51:37.253906+00:00",
+  "scope": "Publication metadata and integration for the exact sealed package; no compiler or Comparator rerun",
+  "verdict": "APPROVE",
+  "package_manifest_sha256": "5d0e6ef2afe59b57f0d3185fdf5685343a9db2d59ba5b1a97ecdeab01b160ea5",
+  "files": {
+    "DOC-CHECK.json": "84324d9850ec0e8364ec682dc1ece777ac24ccec41115c646cd14e0fe9254f4e",
+    "INDEPENDENT-DOC-CHECK.json": "b38b0ca67e7ccc65518a2f9a3628989758c7f35225a14cfb0ce382d5d50a50a5",
+    "INDEPENDENT-PACKAGE-CHECK.json": "6af18dd143aabb90a8f408beb3eb95d63f6fc2da6f6bf79fffb786d76a2fa223",
+    "READ-SCOPE.json": "3868941ca55471f211ee63e9ff2208dd36027a118a903ba283b95014d44b0a47",
+    "REPORT.md": "8f32fe1cffce1d8fff1e137233408c4f237b875c204a191ad796903df6a1d777",
+    "VERDICT.json": "eb28d051b86149b8308381a069ec58622ed5b034e43901a742eaba6eda907f43",
+    "verify_metadata.py": "d3c15f17c19195c153922821503be19c9e89693d53da36828c2de926c424b0e5",
+    "verify_package.py": "e75ae75aa46a980daefb0c1ace2618a4da5f422e91df0bb0c67f849bce4b5d4f"
+  }
+}

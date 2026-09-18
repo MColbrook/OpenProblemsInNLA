@@ -1,0 +1,212 @@
+{
+  "time": "2026-09-18T09:42:40.946907+00:00",
+  "scope": "Actual local Lean elaborated-type comparison with binder-name erasure only, and actual proof-body dependency traversal; not Comparator or Linux execution",
+  "source_complete_record": "/private/tmp/nla-lean-next-20260915/MI28-LOCAL-COMPLETE-365.json",
+  "source_complete_record_sha256": "94a60f882bd02a9333db7e92a15b7045404b8ed43222dab744610abe60e01f39",
+  "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-366/RECEIPT.json",
+  "receipt_sha256": "ba5933e02e764279e90d26d8eb8f4d5ecb8c2964792eb09452593e4810cc11d3",
+  "assembly_sha256": "06e3192117d235b8533a9e557c9462d8d94bad79e883a8bb55540fd5bf81c2fc",
+  "challenge_dump_sha256": "0a93965f4f912c4fc1413ad9588e6d4c377c622fc34abb71bae78a5eb6c56571",
+  "solution_dump_sha256": "0a93965f4f912c4fc1413ad9588e6d4c377c622fc34abb71bae78a5eb6c56571",
+  "body_graph_sha256": "a26151db0b9aed6dac61f501483d7340bc873807e9b23df0b46c30763b88c8c4",
+  "body_graph_nodes": 176,
+  "results": [
+    {
+      "name": "NLA.MI28.half_exponent_interval",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.product_modulus_square",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.swapped_modulus",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.normalized_posdef",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.furuta_boundary",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.furuta_admissible",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.lower_power_implication",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.higher_power_implication",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.swap_implication",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.small_base_implication",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.small_base_norm",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.large_base_norm",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.normalized_homogeneity",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.normalized_norm_continuous",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.full_log_majorization",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.log_one_add_tangent",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.product_one_add_le",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.determinant_normalization",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.determinant_reality_positive",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    },
+    {
+      "name": "NLA.MI28.determinant_comparison",
+      "same_universes": true,
+      "same_binder_normalized_type": true
+    }
+  ],
+  "all20_match": true,
+  "actual_elaborated_body_routes": {
+    "final_to_frozen_certificate": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval"
+    ],
+    "final_to_LeanCert_strict_checked_bound": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "LeanCert.Validity.verify_strict_upper_bound_dyadic_checked"
+    ],
+    "final_to_closed_certificate_7": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "NLA.MI28.half_exponent_interval._proof_1_7"
+    ],
+    "closed_certificate_7_to_integer_check": [
+      "NLA.MI28.half_exponent_interval._proof_1_7",
+      "LeanCert.Validity.checkStrictUpperBoundDyadicChecked"
+    ],
+    "final_to_closed_certificate_15": [
+      "NLA.MI28.determinant_comparison",
+      "NLA.MI28.full_log_majorization",
+      "NLA.MI28.normalized_determinants_eq",
+      "NLA.MI28.det_product_modulus_re",
+      "NLA.MI28.product_modulus_square",
+      "NLA.MI28.half_exponent_interval",
+      "NLA.MI28.half_exponent_interval._proof_1_15"
+    ],
+    "closed_certificate_15_to_integer_check": [
+      "NLA.MI28.half_exponent_interval._proof_1_15",
+      "LeanCert.Validity.checkStrictUpperBoundDyadicChecked"
+    ]
+  },
+  "diagnostic_commands": [
+    {
+      "module": "NLA.MI28Diagnostics.ChallengeTypes366",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28Diagnostics/ChallengeTypes366.olean",
+        "NLA/MI28Diagnostics/ChallengeTypes366.lean"
+      ],
+      "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+      "start": "2026-09-18T09:41:18.705662+00:00",
+      "source_sha256": "86c57dbdd32aff75ff0a438f8cf17d69f88267d55d403367f924aaf92aac84c4",
+      "dependency_olean_sha256": {
+        "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627"
+      },
+      "exit_code": 0,
+      "end": "2026-09-18T09:41:39.472441+00:00",
+      "elapsed_seconds": 20.766903874929994,
+      "log_sha256": "903b3ec0223a296766ad1305800243e85c0f23f06704e4561709d435d910791d",
+      "maxrss_bytes_macos_cumulative": 2976202752,
+      "output_sha256": "6cc9d6727654c49a28ded1cb82e4c1a54055c6b4e3fa18ba42b0d53a5729966a"
+    },
+    {
+      "module": "NLA.MI28Diagnostics.SolutionTypes366",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28Diagnostics/SolutionTypes366.olean",
+        "NLA/MI28Diagnostics/SolutionTypes366.lean"
+      ],
+      "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+      "start": "2026-09-18T09:41:39.718577+00:00",
+      "source_sha256": "77ba0f4b4537d497507af27907debf3df1cdc102f74c2edcd58d47d816dfffd6",
+      "dependency_olean_sha256": {
+        "NLA.MI28.Solution": "a39db26c96419d6b2724862b59306b3b08c01892d279603848107b48e09b18a5"
+      },
+      "exit_code": 0,
+      "end": "2026-09-18T09:41:55.542711+00:00",
+      "elapsed_seconds": 15.824270667042583,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 3336683520,
+      "output_sha256": "f5735080a4639da15199a5ada544b3ee473d60f31d86be09abd847008944e44a"
+    }
+  ],
+  "comparison_script_sha256": "9f4190d3776d248e7f513ceb0f3c6f5dbafb72b73465f492bb83f12b516b3f2b",
+  "count_change": 0,
+  "Comparator_executed": false
+}

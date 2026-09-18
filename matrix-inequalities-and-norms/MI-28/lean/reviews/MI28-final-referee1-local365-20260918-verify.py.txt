@@ -1,0 +1,201 @@
+"""Authenticate retained MI28 bytes and receipts; never invokes Lean or Comparator."""
+from pathlib import Path
+from collections import deque
+import datetime
+import hashlib
+import json
+import re
+import sys
+
+B = Path('/private/tmp/nla-lean-next-20260915')
+S = B / 'MI28-local365-source-snapshot'
+P = B / 'reviews/MI28-final-referee1-local365-20260918'
+L = Path('/private/tmp/nla-lean-local-shared-20260916')
+EXPECTED_MANIFEST = '7054f5dd7c6bfcd03916565315495d463ccd3fc39db72fad13d19f81d389c089'
+
+
+def sha(path):
+    h = hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for block in iter(lambda: stream.read(1 << 20), b''):
+            h.update(block)
+    return h.hexdigest()
+
+
+def load(path):
+    return json.loads(Path(path).read_text())
+
+
+def require_hash(path, expected):
+    actual = sha(path)
+    assert actual == expected, (str(path), expected, actual)
+
+
+require_hash(S / 'MANIFEST.json', EXPECTED_MANIFEST)
+manifest = load(S / 'MANIFEST.json')
+for rel, expected in manifest['files'].items():
+    require_hash(S / rel, expected)
+
+complete = load(S / 'evidence/MI28-LOCAL-COMPLETE-365.json')
+comparison = load(S / 'evidence/TYPE-COMPARISON-366.json')
+freeze = load(S / 'evidence/MI28-STATEMENT-FREEZE-local350.json')
+config = load(S / 'candidate/comparator.json')
+names = config['theorem_names']
+assert len(names) == len(set(names)) == 20
+assert names == freeze['contract_names']
+assert config['definition_names'] == []
+assert set(config['permitted_axioms']) == {'propext', 'Classical.choice', 'Quot.sound'}
+for rel, expected in freeze['frozen_files'].items():
+    require_hash(S / 'candidate' / rel, expected)
+
+proof_paths = sorted((S / 'candidate/NLA').rglob('*.lean')) + [S / 'candidate/Solution.lean']
+assert len(proof_paths) == complete['actual_local_closure_modules'] == 52
+assert len(list((S / 'candidate/NLA/MI28').glob('*.lean'))) == 33
+assert len(list((S / 'candidate/NLA/MI24').glob('*.lean'))) == 18
+modules = {str(p.relative_to(S / 'candidate')).removesuffix('.lean').replace('/', '.'): p
+           for p in proof_paths}
+visited = set()
+pending = ['Solution']
+while pending:
+    name = pending.pop()
+    if name in visited:
+        continue
+    visited.add(name)
+    for dep in re.findall(r'^import\s+(\S+)', modules[name].read_text(), re.M):
+        assert 'Challenge' not in dep, (name, dep)
+        if dep.startswith('NLA.'):
+            assert dep in modules, (name, dep)
+            pending.append(dep)
+assert visited == set(modules), (visited ^ set(modules))
+
+headers = load(S / 'candidate/HEADERS.json')
+for fullname, expected in headers.items():
+    short = fullname.rsplit('.', 1)[-1]
+    matches = []
+    for p in proof_paths:
+        m = re.search(r'^theorem\s+' + re.escape(short) + r'\b(.*?)\s*:=\s*by\b', p.read_text(), re.M | re.S)
+        if m:
+            matches.append(('theorem ' + short + m.group(1)).strip())
+    assert matches == [expected['header']], (fullname, matches)
+    assert hashlib.sha256(expected['header'].encode()).hexdigest() == expected['sha256']
+
+# No proof source imports the intentionally sorried challenge. This textual
+# check supplements (and does not replace) the recorded axiom check.
+def without_comments(text):
+    result = []
+    depth = 0
+    i = 0
+    while i < len(text):
+        if text.startswith('/-', i):
+            depth += 1
+            i += 2
+        elif depth and text.startswith('-/', i):
+            depth -= 1
+            i += 2
+        elif depth:
+            i += 1
+        elif text.startswith('--', i):
+            end = text.find('\n', i)
+            i = len(text) if end == -1 else end
+        else:
+            result.append(text[i])
+            i += 1
+    assert depth == 0
+    return ''.join(result)
+
+for p in proof_paths:
+    text = without_comments(p.read_text())
+    assert not re.search(r'\b(sorry|admit|axiom|unsafe|native_decide|run_cmd|run_elab|elab|macro_rules|extern|initialize)\b', text), str(p)
+
+reuse = load(S / 'candidate/REUSE-MI24-FURUTA.json')
+assert reuse['copied_module_count'] == 18
+assert reuse['coordinator_designated_published_revision'] == '194c94929159b78758fd8b9d281f973c261dfabf'
+for row in reuse['files']:
+    require_hash(S / 'candidate' / row['path'], row['sha256'])
+    require_hash(row['source_path'], row['sha256'])
+
+for rel, expected in complete['sources'].items():
+    require_hash(S / 'candidate' / rel, expected)
+for path, expected in complete['retained_original_evidence'].items():
+    require_hash(path, expected)
+require_hash(complete['receipt'], complete['receipt_sha256'])
+require_hash(complete['assembly'], complete['assembly_sha256'])
+assembly = load(complete['assembly'])
+receipt = load(complete['receipt'])
+assert receipt['end']
+assert receipt['max_compiler_processes'] == receipt['threads'] == 1
+assert receipt['memory_cap_mib'] == 4096
+all_modules = set()
+all_origins = set()
+for item in complete['commands_and_successful_origins']:
+    module = item['module']
+    all_modules.add(module)
+    command = item['command']
+    source_rel = item['canonical_source_path']
+    assert command['module'] == module
+    assert command['exit_code'] == 0 and command['end']
+    assert command['source_sha256'] == sha(S / 'candidate' / source_rel)
+    assert '--threads=1' in command['argv'] and '--memory=4096' in command['argv']
+    local_rel = 'NLA/MI28/Solution.lean' if source_rel == 'Solution.lean' else source_rel
+    assert receipt['source_inputs'][local_rel] == command['source_sha256']
+    assert assembly['sources'][local_rel]['sha256'] == command['source_sha256']
+    origin = Path(item['success_origin_receipt'])
+    all_origins.add(str(origin))
+    require_hash(origin, item['receipt_sha256'])
+    actual = next(c for c in load(origin)['commands'] if c['module'] == module)
+    assert actual == command, module
+    require_hash(origin.parent / (module + '.log'), command['log_sha256'])
+    require_hash(command['argv'][command['argv'].index('-o') + 1], command['output_sha256'])
+    for hop in item['reuse_chain']:
+        require_hash(hop['receipt'], hop['sha256'])
+assert len(all_modules) == 52
+for ax in complete['observed_axioms'].values():
+    assert set(ax) <= set(config['permitted_axioms'])
+assert set(complete['observed_axioms']) == set(names)
+assert not comparison['Comparator_executed']
+require_hash(comparison['receipt'], comparison['receipt_sha256'])
+D = B / 'MI28-type-diagnostics-366'
+require_hash(D / 'challenge-types.json', comparison['challenge_dump_sha256'])
+require_hash(D / 'solution-types.json', comparison['solution_dump_sha256'])
+require_hash(D / 'certificate-body-route.json', comparison['body_graph_sha256'])
+challenge = load(D / 'challenge-types.json')
+solution = load(D / 'solution-types.json')
+assert [r['name'] for r in challenge] == [r['name'] for r in solution] == names
+for a, b in zip(challenge, solution):
+    assert a['levelParams'] == b['levelParams']
+    assert a['binderNormalizedType'] == b['binderNormalizedType']
+for command in comparison['diagnostic_commands']:
+    assert command['exit_code'] == 0
+    source_rel = command['argv'][-1]
+    require_hash(D / 'sources' / source_rel, command['source_sha256'])
+    require_hash(Path(comparison['receipt']).parent / (command['module'] + '.log'), command['log_sha256'])
+    require_hash(command['argv'][command['argv'].index('-o') + 1], command['output_sha256'])
+graph = {r['name']: r for r in load(D / 'certificate-body-route.json')}
+for route in comparison['actual_elaborated_body_routes'].values():
+    for a, b in zip(route, route[1:]):
+        assert graph[a]['hasBody'] and b in graph[a]['bodyConstants'], (a, b)
+
+if '--source-only' not in sys.argv:
+    record = load(P / 'MANIFEST.json')
+    require_hash(__file__, record['external_verifier_sha256'])
+    for rel, expected in record['files'].items():
+        require_hash(P / rel, expected)
+
+print(json.dumps({
+    'time': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Independent byte, import, header and retained-local-receipt consistency audit; no Lean/Comparator/kernel rerun',
+    'source_manifest_sha256': EXPECTED_MANIFEST,
+    'source_manifest_files_checked': len(manifest['files']),
+    'proof_modules_checked': len(proof_paths),
+    'exact_selected_headers_checked': len(headers),
+    'unchanged_reused_MI24_modules_checked': len(reuse['files']),
+    'retained_execution_files_checked': len(complete['retained_original_evidence']),
+    'successful_origin_commands_checked': len(all_modules),
+    'distinct_successful_origin_receipts': len(all_origins),
+    'normalized_type_pairs_checked': len(challenge),
+    'body_routes_checked': len(comparison['actual_elaborated_body_routes']),
+    'proof_source_unsafe_or_placeholder_tokens': [],
+    'Lean_executed_by_this_reviewer': False,
+    'Comparator_executed_by_this_reviewer': False,
+    'verdict': 'PASS',
+}, indent=2))

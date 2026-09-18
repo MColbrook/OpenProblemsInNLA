@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "scope": "Documentation schema and read-only byte/evidence audit; no compiler, kernel, Comparator, Git or network execution.",
+  "manifest_sha256": "3f35c783a327e8e5b67165558dcb9fd557d0a8e3de4d1ea8324f73bfed06b31d",
+  "checker_sha256": "b1093402f40081568e1330079e1ecdfbc273f93d467d5d7bc4a3ac7462f0a20d",
+  "payload_files": 22,
+  "payload_bytes_including_manifest": 202003,
+  "external_inputs": 31,
+  "checks": [
+    "Sealed documentation manifest, exact payload membership and <500 KB size",
+    "All external document inputs and all 83 snapshot payload hashes",
+    "Pinned v0.4 schema and conservative current status",
+    "Exact 52-module closure, 3 frozen files, 20 headers and metadata declarations",
+    "All 18 unchanged MI24 files against authenticated original snapshot bytes",
+    "Only default target and root package name changed; full dependency objects identical",
+    "52 successful command/log origins and complete reuse chains; 92 retained evidence hashes; 8 fresh / 44 reused",
+    "20 actual separate normalized type/universe dumps, 2 diagnostic commands/logs and all 6 body paths",
+    "Both complete nonauthor review seals, both earlier statement seals and root integrity-replay receipts",
+    "Recorded public queries, 15 repositories / 271 heads / 225 complete immutable tree hashes and 17 classified matches; no new network/Git queries"
+  ],
+  "proof_source_edits": 0,
+  "Lean_Lake_Comparator_executions": 0,
+  "accepted_count_change": 0
+}

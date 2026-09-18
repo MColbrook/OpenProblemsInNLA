@@ -1,0 +1,3559 @@
+{
+  "time": "2026-09-18T09:41:07.045919+00:00",
+  "scope": "Complete actual macOS serial local Lean proof check; not Linux Comparator, publication or campaign count acceptance",
+  "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+  "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+  "assembly": "/private/tmp/nla-lean-local-shared-20260916/ASSEMBLY-365.json",
+  "assembly_sha256": "5a30b4e23b8eb323f03a2a3b8f369c1aa1f1784faabd4fc1898539624d4b8edc",
+  "actual_local_closure_modules": 52,
+  "exact_contracts": 20,
+  "unrelated_failed_modules_in_mixed_batch": [
+    "NLA.MF14.FullReconstructionChart",
+    "NLA.MF14.IntervalBasis0",
+    "NLA.MF14.IntervalBasis1",
+    "NLA.MF14.IntervalBasis2",
+    "NLA.MF14.IntervalBasis3"
+  ],
+  "unrelated_blocked_modules_in_mixed_batch": [
+    "NLA.MF14.FullContactDerivative"
+  ],
+  "sources": {
+    "NLA/MI28/LogOneAddTangent.lean": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+    "NLA/MI24/CompoundNorm.lean": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+    "NLA/MI28/NormalizedOrder.lean": "61e2555f8e958092f50e05b6dbbc7ca6b7676f99d81e1aaf9608b4d76ac009b0",
+    "NLA/MI24/HeronNorm.lean": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+    "NLA/MI28/SwapImplication.lean": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+    "NLA/MI28/ModulusPowers.lean": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+    "NLA/MI28/FurutaBoundary.lean": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+    "NLA/MI28/NormalizedDeterminant.lean": "1fa0b94dc082ad10d63c4446f925e883b8be622760402b2fbaff1e200325e0c5",
+    "NLA/MI24/OrderPowers.lean": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+    "NLA/MI28/NormalizedHomogeneity.lean": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+    "NLA/MI28/HigherPowerImplication.lean": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+    "NLA/MI28/NormComparison.lean": "3289bc4928760c2097e858ed02b1ab06a37063642010d305af18037db7078332",
+    "NLA/MI24/CompoundAlgebra.lean": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+    "NLA/MI28/InverseSandwich.lean": "6b600c6b0fee8c4e247bb35b496fbe46061dd91afb07b1ef272c4250662a5f65",
+    "NLA/MI24/PolarPowers.lean": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+    "NLA/MI24/CompoundSpectral.lean": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+    "NLA/MI24/FurutaBase.lean": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+    "NLA/MI28/SmallBaseImplication.lean": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+    "NLA/MI24/ScalarLogMajorization.lean": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+    "NLA/MI28/SmallBaseNorm.lean": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+    "NLA/MI24/SpectralPowers.lean": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+    "NLA/MI24/PowerScaling.lean": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+    "Solution.lean": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef",
+    "NLA/MI28/LargeBaseOrder.lean": "123e42beb28860e5e53a46b6260c19f1447de1f04d6d79256f27993377b93811",
+    "NLA/MI28/NormalizedContinuity.lean": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+    "NLA/MI28/NormalizedPositivity.lean": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+    "NLA/MI28/ProductOneAdd.lean": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+    "NLA/MI24/OperatorNorm.lean": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+    "NLA/MI28/FurutaAdmissible.lean": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+    "NLA/MI24/HeronOrder.lean": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+    "NLA/MI28/FullNorm.lean": "57e81c7a94df65bbc9191e134487ddf94d9d812cd0e1249a9e8a2729abc29aa0",
+    "NLA/MI28/LowerPowerImplication.lean": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+    "NLA/MI28/HigherPowerOrder.lean": "63a263ef010cd9c95cc3b2ce2d689a19a61c9730551faf243ed1c8b83ab9dc27",
+    "NLA/MI24/FurutaHalfPower.lean": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+    "NLA/MI28/SwappedModulus.lean": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+    "NLA/MI24/MeanPositivity.lean": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+    "NLA/MI28/Numerical.lean": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+    "NLA/MI24/TraceSpectral.lean": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+    "NLA/MI24/GeometricCongruence.lean": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+    "NLA/MI28/FullLogMajorization.lean": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+    "NLA/MI28/DeterminantReality.lean": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+    "NLA/MI28/Definitions.lean": "a1631b27cdfff3db08db131e4fa18cc3e608cb1ffcf96a043ac6725d77970d50",
+    "NLA/MI28/LargeBaseImplication.lean": "acafb9c308c4fefb6f91b90ee3867f12050e8ba2af0e5905a2dcc3be1c47427c",
+    "NLA/MI28/DeterminantNormalization.lean": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+    "NLA/MI28/DeterminantComparison.lean": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+    "NLA/MI28/FurutaSubstitution.lean": "b85a4c83c2f230a0f4bed2ca1b8783213b2e45901c413b5fbe45f2661843055a",
+    "NLA/MI28/SpectrumDeterminant.lean": "07f82ef66631810b9751a280c23fe1ffc464efc29a42f8baa737a664330bf634",
+    "NLA/MI24/Definitions.lean": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+    "NLA/MI24/DiagonalPowers.lean": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+    "NLA/MI28/PositiveProductOrder.lean": "27fe415c4b5de7daa6656697b582b976f8368ba4d4f572c19f6e350ae5911033",
+    "NLA/MI28/CompoundTransport.lean": "e372ff421cdd82bfcf152d196ba245589d23f5d604629c6f22c1f1568b705cdc",
+    "NLA/MI28/LargeBaseNorm.lean": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7"
+  },
+  "observed_axioms": {
+    "NLA.MI28.half_exponent_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.product_modulus_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.swapped_modulus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_posdef": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.furuta_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.furuta_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.lower_power_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.higher_power_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.swap_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.small_base_implication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.small_base_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.large_base_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_homogeneity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.normalized_norm_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.full_log_majorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.log_one_add_tangent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.product_one_add_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_reality_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI28.determinant_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_filename_mapping": {
+    "local": "NLA/MI28/Solution.lean",
+    "canonical": "Solution.lean",
+    "sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef"
+  },
+  "all_current_sources_match": true,
+  "commands_and_successful_origins": [
+    {
+      "module": "NLA.MI24.CompoundAlgebra",
+      "canonical_source_path": "NLA/MI24/CompoundAlgebra.lean",
+      "source_sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.CompoundAlgebra",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundAlgebra.olean",
+          "NLA/MI24/CompoundAlgebra.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:01.340458+00:00",
+        "source_sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+        "dependency_olean_sha256": {
+          "NLA.MI24.Definitions": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:18.429442+00:00",
+        "elapsed_seconds": 17.088784082909115,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2733735936,
+        "output_sha256": "070a2f989d2e43c04c1c9c67834dadab8233f1254f580ee33221364c5fc9f198"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.CompoundNorm",
+      "canonical_source_path": "NLA/MI24/CompoundNorm.lean",
+      "source_sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "receipt_sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51",
+      "command": {
+        "module": "NLA.MI24.CompoundNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundNorm.olean",
+          "NLA/MI24/CompoundNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T05:00:22.958201+00:00",
+        "source_sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+        "dependency_olean_sha256": {
+          "NLA.MI24.CompoundSpectral": "30fb5cd1636e9e60092ec13f59417be7bad8aafbe388be2fe0b4856e7504c953"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T05:00:26.744910+00:00",
+        "elapsed_seconds": 3.7865538329351693,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2998517760,
+        "output_sha256": "fbcb18884a0784efc7f208309eb1f000d4864fa4186bd256b5bc23b3a0daa258"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI24.CompoundSpectral",
+      "canonical_source_path": "NLA/MI24/CompoundSpectral.lean",
+      "source_sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+      "receipt_sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51",
+      "command": {
+        "module": "NLA.MI24.CompoundSpectral",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/CompoundSpectral.olean",
+          "NLA/MI24/CompoundSpectral.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T05:00:05.243871+00:00",
+        "source_sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+        "dependency_olean_sha256": {
+          "NLA.MI24.CompoundAlgebra": "070a2f989d2e43c04c1c9c67834dadab8233f1254f580ee33221364c5fc9f198",
+          "NLA.MI24.DiagonalPowers": "66925c4e47bf8e870841ce104bd3a4524fb093647d09a2379b2499cd381d175d",
+          "NLA.MI24.TraceSpectral": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040",
+          "NLA.MI24.HeronNorm": "13c77ef948952fe4e00ef8ed2450785206eed8e48bc42a3023d70074e5e2c26b"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T05:00:22.942534+00:00",
+        "elapsed_seconds": 17.698150250012986,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2947743744,
+        "output_sha256": "30fb5cd1636e9e60092ec13f59417be7bad8aafbe388be2fe0b4856e7504c953"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI24.Definitions",
+      "canonical_source_path": "NLA/MI24/Definitions.lean",
+      "source_sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/RECEIPT.json",
+      "receipt_sha256": "b1df6874421912595a69eba4623e422f9c32e30431a3915fe82e8adac3768134",
+      "command": {
+        "module": "NLA.MI24.Definitions",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/Definitions.olean",
+          "NLA/MI24/Definitions.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T02:40:46.553810+00:00",
+        "source_sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+        "dependency_olean_sha256": {},
+        "exit_code": 0,
+        "end": "2026-09-18T02:41:03.759518+00:00",
+        "elapsed_seconds": 17.205658958060667,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2649063424,
+        "output_sha256": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+          "sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json",
+          "sha256": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json",
+          "sha256": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json",
+          "sha256": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json",
+          "sha256": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json",
+          "sha256": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json",
+          "sha256": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-319/RECEIPT.json",
+          "sha256": "a174a14eb7043da039425a1913c939b5c30b50285e3f8bd110ac120c79baa051"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+          "sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-314/RECEIPT.json",
+          "sha256": "1ee81f9e832c82f1378bc4f207a16e05fc6c04067fe9dabe996c518e6c57e92c"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-313/RECEIPT.json",
+          "sha256": "e50952c46c2c03e9dddf5fed40a5da3bc26ecc087f26d40fb5c9fbe0ef9fd6b4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-312/RECEIPT.json",
+          "sha256": "efbd62b0b4ef5802254e19f8be56eec1bfc6263237c044c797f1fd23d390170d"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-311/RECEIPT.json",
+          "sha256": "8a38e00c7cbf5cee5b1cbc5b81d9eaf9e3062d873f002bbdbd1a0001380b5a77"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-310/RECEIPT.json",
+          "sha256": "648ad4d3c51ba64b3b4d8ffd87f9b2a930c03380003ef8e91ff4e16d61b7f8ad"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-309/RECEIPT.json",
+          "sha256": "77cbb0a2a3990e9995ec88924e4dbab35e5bb270c05bad2a813482f721db92c7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-307/RECEIPT.json",
+          "sha256": "c3ee7a1e1d6e34b736bfde88dc88e4d4ccccbaf619a3bdca2d6065ce5c44a697"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-306/RECEIPT.json",
+          "sha256": "71759d6e333248b44bea911abd49312ba4c5f84347e2b15e0883b67e55459d90"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-305/RECEIPT.json",
+          "sha256": "87638241b746e898266ccbea2a3fd6d0a97e7409b6463425138a7bad1cc5dfd0"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-304/RECEIPT.json",
+          "sha256": "3f2260e57cd8483c6154191f9ef05e5ff2ae91e1302fc2d2e81be404dc2ac51b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-303/RECEIPT.json",
+          "sha256": "860da7f528ac812874933b8d738dcf52686e4304e4f63eac77bd8696076b72dd"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+          "sha256": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-300/RECEIPT.json",
+          "sha256": "99d10c4c7b4da2ecf0fcf85474a415ea89757c801c90e6b906d1a4f0dd95d63a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-298/RECEIPT.json",
+          "sha256": "47ebbf10b8dc0e69c2363a2e9b12397efca7a91f3ceb0a53cdf1a25807b2bbc6"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-296/RECEIPT.json",
+          "sha256": "54478dadf0cdce90230127da65138b8ce4e033f1f4cba0e3368b57193a40f935"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+          "sha256": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json",
+          "sha256": "fb4dd08611c87f253f7f1f915c35fc164e998dc940e3c15dc3afbb64ca62846f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/RECEIPT.json",
+          "sha256": "b1df6874421912595a69eba4623e422f9c32e30431a3915fe82e8adac3768134"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 38
+    },
+    {
+      "module": "NLA.MI24.DiagonalPowers",
+      "canonical_source_path": "NLA/MI24/DiagonalPowers.lean",
+      "source_sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.DiagonalPowers",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/DiagonalPowers.olean",
+          "NLA/MI24/DiagonalPowers.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:18.451471+00:00",
+        "source_sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+        "dependency_olean_sha256": {
+          "NLA.MI24.SpectralPowers": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:23.073252+00:00",
+        "elapsed_seconds": 4.62166929198429,
+        "log_sha256": "a1e6916cfd42c014a38aa8e2ea1e8608894a0e92693d8161d5c6ce81c3e5d8e6",
+        "maxrss_bytes_macos_cumulative": 2904604672,
+        "output_sha256": "66925c4e47bf8e870841ce104bd3a4524fb093647d09a2379b2499cd381d175d"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.FurutaBase",
+      "canonical_source_path": "NLA/MI24/FurutaBase.lean",
+      "source_sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.FurutaBase",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/FurutaBase.olean",
+          "NLA/MI24/FurutaBase.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:33.491209+00:00",
+        "source_sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+        "dependency_olean_sha256": {
+          "NLA.MI24.PolarPowers": "2dbd22a09cd857f8c5242bd1e9d6fa3a5437b3f11fccdeca1ad4aa9543369cda",
+          "NLA.MI24.OrderPowers": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:38.362289+00:00",
+        "elapsed_seconds": 4.870818790979683,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2926313472,
+        "output_sha256": "16fb2dafcf0cdc8a5ffbdf984d5988935d8afc32ec007daf10d3ff9a76354a5e"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 8
+    },
+    {
+      "module": "NLA.MI24.FurutaHalfPower",
+      "canonical_source_path": "NLA/MI24/FurutaHalfPower.lean",
+      "source_sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.FurutaHalfPower",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/FurutaHalfPower.olean",
+          "NLA/MI24/FurutaHalfPower.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:38.366974+00:00",
+        "source_sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+        "dependency_olean_sha256": {
+          "NLA.MI24.FurutaBase": "16fb2dafcf0cdc8a5ffbdf984d5988935d8afc32ec007daf10d3ff9a76354a5e"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:42.429113+00:00",
+        "elapsed_seconds": 4.061873333062977,
+        "log_sha256": "eef9e2c6d5d045d68d4d09785fee0f63cfbdc4e670dda901fab1a289c38045e2",
+        "maxrss_bytes_macos_cumulative": 2926313472,
+        "output_sha256": "1d3a96bd9626bef1bd8fcdfb00b9bacda0466d120ffd5e5a51764e28650a3175"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.GeometricCongruence",
+      "canonical_source_path": "NLA/MI24/GeometricCongruence.lean",
+      "source_sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.GeometricCongruence",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/GeometricCongruence.olean",
+          "NLA/MI24/GeometricCongruence.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:26.408814+00:00",
+        "source_sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+        "dependency_olean_sha256": {
+          "NLA.MI24.MeanPositivity": "23a84c38a80797c2d8c35c835866bd8c84a365129ddb21f11b5881050406617a"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:29.810287+00:00",
+        "elapsed_seconds": 3.4013150840764865,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2904604672,
+        "output_sha256": "17c3337a452f17f57fe192840b123df4ece64928bbec4dc7f39ff49e96f4a420"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 10
+    },
+    {
+      "module": "NLA.MI24.HeronNorm",
+      "canonical_source_path": "NLA/MI24/HeronNorm.lean",
+      "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.HeronNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/HeronNorm.olean",
+          "NLA/MI24/HeronNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:51.209854+00:00",
+        "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+        "dependency_olean_sha256": {
+          "NLA.MI24.HeronOrder": "29629217a5c465805302063a9f65e5ff02153514f9bf268cc29a77fccf5d082b",
+          "NLA.MI24.OperatorNorm": "f04dd2e134a713b86f73424962bdf33f173e2499cdce00ca0c68534c8f77e983"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:54.758323+00:00",
+        "elapsed_seconds": 3.547919832984917,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2945056768,
+        "output_sha256": "13c77ef948952fe4e00ef8ed2450785206eed8e48bc42a3023d70074e5e2c26b"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.HeronOrder",
+      "canonical_source_path": "NLA/MI24/HeronOrder.lean",
+      "source_sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.HeronOrder",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/HeronOrder.olean",
+          "NLA/MI24/HeronOrder.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:42.433844+00:00",
+        "source_sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+        "dependency_olean_sha256": {
+          "NLA.MI24.FurutaHalfPower": "1d3a96bd9626bef1bd8fcdfb00b9bacda0466d120ffd5e5a51764e28650a3175"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:46.579958+00:00",
+        "elapsed_seconds": 4.145856249961071,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2945056768,
+        "output_sha256": "29629217a5c465805302063a9f65e5ff02153514f9bf268cc29a77fccf5d082b"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.MeanPositivity",
+      "canonical_source_path": "NLA/MI24/MeanPositivity.lean",
+      "source_sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+      "receipt_sha256": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27",
+      "command": {
+        "module": "NLA.MI24.MeanPositivity",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/MeanPositivity.olean",
+          "NLA/MI24/MeanPositivity.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T03:00:11.177225+00:00",
+        "source_sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+        "dependency_olean_sha256": {
+          "NLA.MI24.SpectralPowers": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T03:00:27.598469+00:00",
+        "elapsed_seconds": 16.421222166973166,
+        "log_sha256": "18bfe42b896c7cfc66cc57448031731fe485d8269bbcadd073e157afe81b13bd",
+        "maxrss_bytes_macos_cumulative": 2711732224,
+        "output_sha256": "23a84c38a80797c2d8c35c835866bd8c84a365129ddb21f11b5881050406617a"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json",
+          "sha256": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json",
+          "sha256": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json",
+          "sha256": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json",
+          "sha256": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json",
+          "sha256": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json",
+          "sha256": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-319/RECEIPT.json",
+          "sha256": "a174a14eb7043da039425a1913c939b5c30b50285e3f8bd110ac120c79baa051"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+          "sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-314/RECEIPT.json",
+          "sha256": "1ee81f9e832c82f1378bc4f207a16e05fc6c04067fe9dabe996c518e6c57e92c"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-310/RECEIPT.json",
+          "sha256": "648ad4d3c51ba64b3b4d8ffd87f9b2a930c03380003ef8e91ff4e16d61b7f8ad"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-309/RECEIPT.json",
+          "sha256": "77cbb0a2a3990e9995ec88924e4dbab35e5bb270c05bad2a813482f721db92c7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-307/RECEIPT.json",
+          "sha256": "c3ee7a1e1d6e34b736bfde88dc88e4d4ccccbaf619a3bdca2d6065ce5c44a697"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-306/RECEIPT.json",
+          "sha256": "71759d6e333248b44bea911abd49312ba4c5f84347e2b15e0883b67e55459d90"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-305/RECEIPT.json",
+          "sha256": "87638241b746e898266ccbea2a3fd6d0a97e7409b6463425138a7bad1cc5dfd0"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-304/RECEIPT.json",
+          "sha256": "3f2260e57cd8483c6154191f9ef05e5ff2ae91e1302fc2d2e81be404dc2ac51b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-303/RECEIPT.json",
+          "sha256": "860da7f528ac812874933b8d738dcf52686e4304e4f63eac77bd8696076b72dd"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-300/RECEIPT.json",
+          "sha256": "99d10c4c7b4da2ecf0fcf85474a415ea89757c801c90e6b906d1a4f0dd95d63a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-298/RECEIPT.json",
+          "sha256": "47ebbf10b8dc0e69c2363a2e9b12397efca7a91f3ceb0a53cdf1a25807b2bbc6"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-296/RECEIPT.json",
+          "sha256": "54478dadf0cdce90230127da65138b8ce4e033f1f4cba0e3368b57193a40f935"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+          "sha256": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 30
+    },
+    {
+      "module": "NLA.MI24.OperatorNorm",
+      "canonical_source_path": "NLA/MI24/OperatorNorm.lean",
+      "source_sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.OperatorNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/OperatorNorm.olean",
+          "NLA/MI24/OperatorNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:46.585075+00:00",
+        "source_sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+        "dependency_olean_sha256": {
+          "NLA.MI24.Definitions": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:51.205772+00:00",
+        "elapsed_seconds": 4.620506250066683,
+        "log_sha256": "7301ef9201bb7420c3b70a0a59b3029e8390a9315d9ed4f5a686b3ce63973a8e",
+        "maxrss_bytes_macos_cumulative": 2945056768,
+        "output_sha256": "f04dd2e134a713b86f73424962bdf33f173e2499cdce00ca0c68534c8f77e983"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI24.OrderPowers",
+      "canonical_source_path": "NLA/MI24/OrderPowers.lean",
+      "source_sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+      "receipt_sha256": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45",
+      "command": {
+        "module": "NLA.MI24.OrderPowers",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/OrderPowers.olean",
+          "NLA/MI24/OrderPowers.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T03:14:04.930143+00:00",
+        "source_sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+        "dependency_olean_sha256": {
+          "NLA.MI24.SpectralPowers": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T03:14:09.345093+00:00",
+        "elapsed_seconds": 4.414868083084002,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3536699392,
+        "output_sha256": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+          "sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json",
+          "sha256": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json",
+          "sha256": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json",
+          "sha256": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json",
+          "sha256": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json",
+          "sha256": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json",
+          "sha256": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-319/RECEIPT.json",
+          "sha256": "a174a14eb7043da039425a1913c939b5c30b50285e3f8bd110ac120c79baa051"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+          "sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-314/RECEIPT.json",
+          "sha256": "1ee81f9e832c82f1378bc4f207a16e05fc6c04067fe9dabe996c518e6c57e92c"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-307/RECEIPT.json",
+          "sha256": "c3ee7a1e1d6e34b736bfde88dc88e4d4ccccbaf619a3bdca2d6065ce5c44a697"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-306/RECEIPT.json",
+          "sha256": "71759d6e333248b44bea911abd49312ba4c5f84347e2b15e0883b67e55459d90"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-305/RECEIPT.json",
+          "sha256": "87638241b746e898266ccbea2a3fd6d0a97e7409b6463425138a7bad1cc5dfd0"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-304/RECEIPT.json",
+          "sha256": "3f2260e57cd8483c6154191f9ef05e5ff2ae91e1302fc2d2e81be404dc2ac51b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-303/RECEIPT.json",
+          "sha256": "860da7f528ac812874933b8d738dcf52686e4304e4f63eac77bd8696076b72dd"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+          "sha256": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 27
+    },
+    {
+      "module": "NLA.MI24.PolarPowers",
+      "canonical_source_path": "NLA/MI24/PolarPowers.lean",
+      "source_sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.PolarPowers",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/PolarPowers.olean",
+          "NLA/MI24/PolarPowers.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:29.815212+00:00",
+        "source_sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+        "dependency_olean_sha256": {
+          "NLA.MI24.GeometricCongruence": "17c3337a452f17f57fe192840b123df4ece64928bbec4dc7f39ff49e96f4a420"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:33.480362+00:00",
+        "elapsed_seconds": 3.6649684999138117,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2904604672,
+        "output_sha256": "2dbd22a09cd857f8c5242bd1e9d6fa3a5437b3f11fccdeca1ad4aa9543369cda"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 10
+    },
+    {
+      "module": "NLA.MI24.PowerScaling",
+      "canonical_source_path": "NLA/MI24/PowerScaling.lean",
+      "source_sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.PowerScaling",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/PowerScaling.olean",
+          "NLA/MI24/PowerScaling.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:56:25.105191+00:00",
+        "source_sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+        "dependency_olean_sha256": {
+          "NLA.MI24.TraceSpectral": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:56:28.748286+00:00",
+        "elapsed_seconds": 3.642957790987566,
+        "log_sha256": "5217b32d6a1e092d67a09231a4152b0f68929454ad7eac2c7c3f37ce77b2377f",
+        "maxrss_bytes_macos_cumulative": 3486531584,
+        "output_sha256": "ec88b21bb463636ac073d19ff66683f2103670eb62533c0239945a98707893ca"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 9
+    },
+    {
+      "module": "NLA.MI24.ScalarLogMajorization",
+      "canonical_source_path": "NLA/MI24/ScalarLogMajorization.lean",
+      "source_sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+      "receipt_sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27",
+      "command": {
+        "module": "NLA.MI24.ScalarLogMajorization",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/ScalarLogMajorization.olean",
+          "NLA/MI24/ScalarLogMajorization.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:13:20.325205+00:00",
+        "source_sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+        "dependency_olean_sha256": {},
+        "exit_code": 0,
+        "end": "2026-09-18T04:13:31.141111+00:00",
+        "elapsed_seconds": 10.815877708024345,
+        "log_sha256": "5a8fb97a693132a8a723b7df5409245262d8b79dee35eb844c3e85ee0b83fc3f",
+        "maxrss_bytes_macos_cumulative": 2175893504,
+        "output_sha256": "0585f227d0cda26f61bd11e32b3d581c0460c26073d82bef25bfcd8079d1fb6f"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json",
+          "sha256": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json",
+          "sha256": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json",
+          "sha256": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json",
+          "sha256": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json",
+          "sha256": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json",
+          "sha256": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+          "sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 12
+    },
+    {
+      "module": "NLA.MI24.SpectralPowers",
+      "canonical_source_path": "NLA/MI24/SpectralPowers.lean",
+      "source_sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json",
+      "receipt_sha256": "fb4dd08611c87f253f7f1f915c35fc164e998dc940e3c15dc3afbb64ca62846f",
+      "command": {
+        "module": "NLA.MI24.SpectralPowers",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/SpectralPowers.olean",
+          "NLA/MI24/SpectralPowers.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T02:58:10.729330+00:00",
+        "source_sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+        "dependency_olean_sha256": {
+          "NLA.MI24.Definitions": "168f7e54864bd58113d101a5028770e8af4d84f2ac6fbd314485d29b5dd31d0d"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T02:58:17.223332+00:00",
+        "elapsed_seconds": 6.493601082940586,
+        "log_sha256": "6d53bd26ce02acb26eaaae350f5c55989b58e7e75d5a947b206f2e40bab9bb65",
+        "maxrss_bytes_macos_cumulative": 3296559104,
+        "output_sha256": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+          "sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json",
+          "sha256": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json",
+          "sha256": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json",
+          "sha256": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json",
+          "sha256": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json",
+          "sha256": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json",
+          "sha256": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-319/RECEIPT.json",
+          "sha256": "a174a14eb7043da039425a1913c939b5c30b50285e3f8bd110ac120c79baa051"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json",
+          "sha256": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-314/RECEIPT.json",
+          "sha256": "1ee81f9e832c82f1378bc4f207a16e05fc6c04067fe9dabe996c518e6c57e92c"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-313/RECEIPT.json",
+          "sha256": "e50952c46c2c03e9dddf5fed40a5da3bc26ecc087f26d40fb5c9fbe0ef9fd6b4"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-312/RECEIPT.json",
+          "sha256": "efbd62b0b4ef5802254e19f8be56eec1bfc6263237c044c797f1fd23d390170d"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-311/RECEIPT.json",
+          "sha256": "8a38e00c7cbf5cee5b1cbc5b81d9eaf9e3062d873f002bbdbd1a0001380b5a77"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-310/RECEIPT.json",
+          "sha256": "648ad4d3c51ba64b3b4d8ffd87f9b2a930c03380003ef8e91ff4e16d61b7f8ad"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-309/RECEIPT.json",
+          "sha256": "77cbb0a2a3990e9995ec88924e4dbab35e5bb270c05bad2a813482f721db92c7"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-307/RECEIPT.json",
+          "sha256": "c3ee7a1e1d6e34b736bfde88dc88e4d4ccccbaf619a3bdca2d6065ce5c44a697"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-306/RECEIPT.json",
+          "sha256": "71759d6e333248b44bea911abd49312ba4c5f84347e2b15e0883b67e55459d90"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-305/RECEIPT.json",
+          "sha256": "87638241b746e898266ccbea2a3fd6d0a97e7409b6463425138a7bad1cc5dfd0"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-304/RECEIPT.json",
+          "sha256": "3f2260e57cd8483c6154191f9ef05e5ff2ae91e1302fc2d2e81be404dc2ac51b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-303/RECEIPT.json",
+          "sha256": "860da7f528ac812874933b8d738dcf52686e4304e4f63eac77bd8696076b72dd"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json",
+          "sha256": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-300/RECEIPT.json",
+          "sha256": "99d10c4c7b4da2ecf0fcf85474a415ea89757c801c90e6b906d1a4f0dd95d63a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-298/RECEIPT.json",
+          "sha256": "47ebbf10b8dc0e69c2363a2e9b12397efca7a91f3ceb0a53cdf1a25807b2bbc6"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-296/RECEIPT.json",
+          "sha256": "54478dadf0cdce90230127da65138b8ce4e033f1f4cba0e3368b57193a40f935"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json",
+          "sha256": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json",
+          "sha256": "fb4dd08611c87f253f7f1f915c35fc164e998dc940e3c15dc3afbb64ca62846f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 37
+    },
+    {
+      "module": "NLA.MI24.TraceSpectral",
+      "canonical_source_path": "NLA/MI24/TraceSpectral.lean",
+      "source_sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+      "receipt_sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+      "command": {
+        "module": "NLA.MI24.TraceSpectral",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI24/TraceSpectral.olean",
+          "NLA/MI24/TraceSpectral.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T04:55:23.077241+00:00",
+        "source_sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+        "dependency_olean_sha256": {
+          "NLA.MI24.SpectralPowers": "08d9f65fc32342af67f4c619320e1127fc84f770f8e1c0b89e56686ba6bfc4f0"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T04:55:26.398911+00:00",
+        "elapsed_seconds": 3.321542999939993,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2904604672,
+        "output_sha256": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json",
+          "sha256": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json",
+          "sha256": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json",
+          "sha256": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 9
+    },
+    {
+      "module": "NLA.MI28.CompoundTransport",
+      "canonical_source_path": "NLA/MI28/CompoundTransport.lean",
+      "source_sha256": "e372ff421cdd82bfcf152d196ba245589d23f5d604629c6f22c1f1568b705cdc",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.CompoundTransport",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/CompoundTransport.olean",
+          "NLA/MI28/CompoundTransport.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:09:56.494288+00:00",
+        "source_sha256": "e372ff421cdd82bfcf152d196ba245589d23f5d604629c6f22c1f1568b705cdc",
+        "dependency_olean_sha256": {
+          "NLA.MI28.ModulusPowers": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1",
+          "NLA.MI28.NormalizedPositivity": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a",
+          "NLA.MI24.CompoundSpectral": "30fb5cd1636e9e60092ec13f59417be7bad8aafbe388be2fe0b4856e7504c953"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:10:20.586161+00:00",
+        "elapsed_seconds": 24.091424916987307,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3670622208,
+        "output_sha256": "acee399bd33cc98bfd28ce28f0efe5f2ac52df62123076504e6de7518b1b8323"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.Definitions",
+      "canonical_source_path": "NLA/MI28/Definitions.lean",
+      "source_sha256": "a1631b27cdfff3db08db131e4fa18cc3e608cb1ffcf96a043ac6725d77970d50",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/RECEIPT.json",
+      "receipt_sha256": "352c903490336c5098ea77ea66d7152701b3b966df5ef851202de6be1b61bd46",
+      "command": {
+        "module": "NLA.MI28.Definitions",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/Definitions.olean",
+          "NLA/MI28/Definitions.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T06:33:50.380367+00:00",
+        "source_sha256": "a1631b27cdfff3db08db131e4fa18cc3e608cb1ffcf96a043ac6725d77970d50",
+        "dependency_olean_sha256": {},
+        "exit_code": 0,
+        "end": "2026-09-18T06:34:06.264083+00:00",
+        "elapsed_seconds": 15.883669540984556,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2658238464,
+        "output_sha256": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+          "sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/RECEIPT.json",
+          "sha256": "352c903490336c5098ea77ea66d7152701b3b966df5ef851202de6be1b61bd46"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 10
+    },
+    {
+      "module": "NLA.MI28.DeterminantComparison",
+      "canonical_source_path": "NLA/MI28/DeterminantComparison.lean",
+      "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.DeterminantComparison",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantComparison.olean",
+          "NLA/MI28/DeterminantComparison.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:11:32.444300+00:00",
+        "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
+        "dependency_olean_sha256": {
+          "NLA.MI28.FullLogMajorization": "1606ce5d6339ff6f6e50e39c0dccc184c43ee0e0342d9e008769e12666bf1638",
+          "NLA.MI28.ProductOneAdd": "83fbeebcbc30e608a0e5847af2be6b343001126867895754463e8a54b655c183",
+          "NLA.MI28.DeterminantReality": "a25e892c1066538450af52eaa2291293aa0211ea7d85cb93ab47a26a0d6bdd82"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:27:34.288545+00:00",
+        "elapsed_seconds": 18.088802292011678,
+        "log_sha256": "bc02bd40dd63065a16f2ccb72a2dea5ed591c6360e07841ff72384fef3b50854",
+        "maxrss_bytes_macos_cumulative": 3709763584,
+        "output_sha256": "6143f0783371b956cdcbf624eeaa09931774028453a8605a99ee6139562d89d5"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.DeterminantNormalization",
+      "canonical_source_path": "NLA/MI28/DeterminantNormalization.lean",
+      "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.DeterminantNormalization",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantNormalization.olean",
+          "NLA/MI28/DeterminantNormalization.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:10:42.492232+00:00",
+        "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
+        "dependency_olean_sha256": {
+          "NLA.MI28.NormalizedDeterminant": "91cbc2ea560030cb94d158c2980a0deb49ed2ff79498c6d2a5ef6b9601368953"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:10:49.579353+00:00",
+        "elapsed_seconds": 7.084612791892141,
+        "log_sha256": "032653ebd45b33293556c2460a1bf0ce22aade35d43c9770fb26c8a6e3e5b383",
+        "maxrss_bytes_macos_cumulative": 3709763584,
+        "output_sha256": "7ab2e8c4022f27a4d68db954b32468a7d26ae63226e9f3c49f3acc32b5eeb7a9"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.DeterminantReality",
+      "canonical_source_path": "NLA/MI28/DeterminantReality.lean",
+      "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.DeterminantReality",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/DeterminantReality.olean",
+          "NLA/MI28/DeterminantReality.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:10:49.610042+00:00",
+        "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
+        "dependency_olean_sha256": {
+          "NLA.MI28.DeterminantNormalization": "7ab2e8c4022f27a4d68db954b32468a7d26ae63226e9f3c49f3acc32b5eeb7a9"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:11:32.416135+00:00",
+        "elapsed_seconds": 37.23586170899216,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3709763584,
+        "output_sha256": "a25e892c1066538450af52eaa2291293aa0211ea7d85cb93ab47a26a0d6bdd82"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.FullLogMajorization",
+      "canonical_source_path": "NLA/MI28/FullLogMajorization.lean",
+      "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.FullLogMajorization",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FullLogMajorization.olean",
+          "NLA/MI28/FullLogMajorization.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:10:36.207396+00:00",
+        "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
+        "dependency_olean_sha256": {
+          "NLA.MI28.CompoundTransport": "acee399bd33cc98bfd28ce28f0efe5f2ac52df62123076504e6de7518b1b8323",
+          "NLA.MI28.FullNorm": "093b973a6910cfc6ec6287be53c191004478936072b636d1d5b2a6b562fc3967",
+          "NLA.MI28.NormalizedDeterminant": "91cbc2ea560030cb94d158c2980a0deb49ed2ff79498c6d2a5ef6b9601368953"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:10:42.444144+00:00",
+        "elapsed_seconds": 6.234064665972255,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3709763584,
+        "output_sha256": "1606ce5d6339ff6f6e50e39c0dccc184c43ee0e0342d9e008769e12666bf1638"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.FullNorm",
+      "canonical_source_path": "NLA/MI28/FullNorm.lean",
+      "source_sha256": "57e81c7a94df65bbc9191e134487ddf94d9d812cd0e1249a9e8a2729abc29aa0",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9",
+      "command": {
+        "module": "NLA.MI28.FullNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FullNorm.olean",
+          "NLA/MI28/FullNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:56:11.545905+00:00",
+        "source_sha256": "57e81c7a94df65bbc9191e134487ddf94d9d812cd0e1249a9e8a2729abc29aa0",
+        "dependency_olean_sha256": {
+          "NLA.MI28.SmallBaseNorm": "45f077a51d9b48d5c3379c951b329841c1d3d864935df1e606aeee5b7a49f428",
+          "NLA.MI28.LargeBaseNorm": "49b0185f78e3f448ff7ebcfce1270a98b36844bdff274fee23cdf1cd28232212",
+          "NLA.MI28.NormalizedContinuity": "9d46dcf1f306f080b8f2332c637a29f37cb08b8c5422bf4325ffa39b76c155e3"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:56:21.794792+00:00",
+        "elapsed_seconds": 10.248762167058885,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3753459712,
+        "output_sha256": "093b973a6910cfc6ec6287be53c191004478936072b636d1d5b2a6b562fc3967"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 2
+    },
+    {
+      "module": "NLA.MI28.FurutaAdmissible",
+      "canonical_source_path": "NLA/MI28/FurutaAdmissible.lean",
+      "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "receipt_sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3",
+      "command": {
+        "module": "NLA.MI28.FurutaAdmissible",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaAdmissible.olean",
+          "NLA/MI28/FurutaAdmissible.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T06:54:45.238421+00:00",
+        "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
+        "dependency_olean_sha256": {
+          "NLA.MI28.FurutaBoundary": "7813aefc681946cf66ed14486e5eedc0204f1e4c0e9a183c2f966de0f7634bd5"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T06:54:48.994875+00:00",
+        "elapsed_seconds": 3.7561563330236822,
+        "log_sha256": "7229ab6549575ae67c4a92f91ef597f2bdc8e4e337c1067a9233cd6a1b1632ce",
+        "maxrss_bytes_macos_cumulative": 3324493824,
+        "output_sha256": "4bed256ab69fbca25cf7395a30f5e42f904a596e28780b62ad8e65668504ef94"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 5
+    },
+    {
+      "module": "NLA.MI28.FurutaBoundary",
+      "canonical_source_path": "NLA/MI28/FurutaBoundary.lean",
+      "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+      "receipt_sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3",
+      "command": {
+        "module": "NLA.MI28.FurutaBoundary",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaBoundary.olean",
+          "NLA/MI28/FurutaBoundary.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T06:54:32.854618+00:00",
+        "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.FurutaBase": "16fb2dafcf0cdc8a5ffbdf984d5988935d8afc32ec007daf10d3ff9a76354a5e"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T06:54:45.219566+00:00",
+        "elapsed_seconds": 12.36465983290691,
+        "log_sha256": "67fcf0517031aec81924d07a178b0d478fd8093d0a71aec9f82dc399985e1514",
+        "maxrss_bytes_macos_cumulative": 3324493824,
+        "output_sha256": "7813aefc681946cf66ed14486e5eedc0204f1e4c0e9a183c2f966de0f7634bd5"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json",
+          "sha256": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 5
+    },
+    {
+      "module": "NLA.MI28.FurutaSubstitution",
+      "canonical_source_path": "NLA/MI28/FurutaSubstitution.lean",
+      "source_sha256": "b85a4c83c2f230a0f4bed2ca1b8783213b2e45901c413b5fbe45f2661843055a",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3",
+      "command": {
+        "module": "NLA.MI28.FurutaSubstitution",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/FurutaSubstitution.olean",
+          "NLA/MI28/FurutaSubstitution.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:36:24.831306+00:00",
+        "source_sha256": "b85a4c83c2f230a0f4bed2ca1b8783213b2e45901c413b5fbe45f2661843055a",
+        "dependency_olean_sha256": {
+          "NLA.MI28.FurutaAdmissible": "4bed256ab69fbca25cf7395a30f5e42f904a596e28780b62ad8e65668504ef94",
+          "NLA.MI28.ModulusPowers": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1",
+          "NLA.MI28.NormalizedPositivity": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:36:32.839313+00:00",
+        "elapsed_seconds": 8.006980459089391,
+        "log_sha256": "944e73242900d8c7610cacc3bdfdfbdf2d7ea4cc25457f431695b8b2fc7c42ee",
+        "maxrss_bytes_macos_cumulative": 3657269248,
+        "output_sha256": "956f817acfd3adb17895409bbd483820d55a0a87f7075e8afb5527b036861817"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI28.HigherPowerImplication",
+      "canonical_source_path": "NLA/MI28/HigherPowerImplication.lean",
+      "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+      "command": {
+        "module": "NLA.MI28.HigherPowerImplication",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/HigherPowerImplication.olean",
+          "NLA/MI28/HigherPowerImplication.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:50:50.986409+00:00",
+        "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
+        "dependency_olean_sha256": {
+          "NLA.MI28.HigherPowerOrder": "e48cc4b4d92ff4ce98b830658f92615bf5c108d51be7863cb7feeedc5a6549dd"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:50:58.319601+00:00",
+        "elapsed_seconds": 7.332830625004135,
+        "log_sha256": "30f49a0a704ed496286bc77a2d53c96cf14894b2490eedfcbe0bf9c03eab9250",
+        "maxrss_bytes_macos_cumulative": 3713040384,
+        "output_sha256": "68543f583eda41ef5cf92424205ba555ccb704cbb08af5a6172aa73a26b037cb"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.HigherPowerOrder",
+      "canonical_source_path": "NLA/MI28/HigherPowerOrder.lean",
+      "source_sha256": "63a263ef010cd9c95cc3b2ce2d689a19a61c9730551faf243ed1c8b83ab9dc27",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+      "command": {
+        "module": "NLA.MI28.HigherPowerOrder",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/HigherPowerOrder.olean",
+          "NLA/MI28/HigherPowerOrder.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:50:31.044378+00:00",
+        "source_sha256": "63a263ef010cd9c95cc3b2ce2d689a19a61c9730551faf243ed1c8b83ab9dc27",
+        "dependency_olean_sha256": {
+          "NLA.MI28.FurutaSubstitution": "956f817acfd3adb17895409bbd483820d55a0a87f7075e8afb5527b036861817"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:50:50.953559+00:00",
+        "elapsed_seconds": 19.90905820799526,
+        "log_sha256": "d1cec633abe90c0ad85c8224b4858981dc23bcf1c2bc94e562a9bd84f4e4b06f",
+        "maxrss_bytes_macos_cumulative": 3713040384,
+        "output_sha256": "e48cc4b4d92ff4ce98b830658f92615bf5c108d51be7863cb7feeedc5a6549dd"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.InverseSandwich",
+      "canonical_source_path": "NLA/MI28/InverseSandwich.lean",
+      "source_sha256": "6b600c6b0fee8c4e247bb35b496fbe46061dd91afb07b1ef272c4250662a5f65",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+      "command": {
+        "module": "NLA.MI28.InverseSandwich",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/InverseSandwich.olean",
+          "NLA/MI28/InverseSandwich.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:31:27.812433+00:00",
+        "source_sha256": "6b600c6b0fee8c4e247bb35b496fbe46061dd91afb07b1ef272c4250662a5f65",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.OrderPowers": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:31:31.435118+00:00",
+        "elapsed_seconds": 3.622530833003111,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3412934656,
+        "output_sha256": "67939480c438753155369cac87ab9322a7cd8674195faa53a841452fb44b557f"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI28.LargeBaseImplication",
+      "canonical_source_path": "NLA/MI28/LargeBaseImplication.lean",
+      "source_sha256": "acafb9c308c4fefb6f91b90ee3867f12050e8ba2af0e5905a2dcc3be1c47427c",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+      "command": {
+        "module": "NLA.MI28.LargeBaseImplication",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseImplication.olean",
+          "NLA/MI28/LargeBaseImplication.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:31:03.580054+00:00",
+        "source_sha256": "acafb9c308c4fefb6f91b90ee3867f12050e8ba2af0e5905a2dcc3be1c47427c",
+        "dependency_olean_sha256": {
+          "NLA.MI28.LargeBaseOrder": "2266899e800b7180e69b6e08ec507e170687469ad47b9819f215f061ab4af4fa",
+          "NLA.MI28.ModulusPowers": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:31:17.649089+00:00",
+        "elapsed_seconds": 14.0654002079973,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3412934656,
+        "output_sha256": "93e5940523cf406f4525e407048a70ea2b5699d8d6100fb239a72fbc733b51e7"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI28.LargeBaseNorm",
+      "canonical_source_path": "NLA/MI28/LargeBaseNorm.lean",
+      "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3",
+      "command": {
+        "module": "NLA.MI28.LargeBaseNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseNorm.olean",
+          "NLA/MI28/LargeBaseNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:36:13.681750+00:00",
+        "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
+        "dependency_olean_sha256": {
+          "NLA.MI28.LargeBaseImplication": "93e5940523cf406f4525e407048a70ea2b5699d8d6100fb239a72fbc733b51e7",
+          "NLA.MI28.NormComparison": "4bd9ec7e5d5fd01ce21bc5b2c3c69c626ba7ead4ca65d029bb4325934ab73bc1"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:36:24.786174+00:00",
+        "elapsed_seconds": 11.104365749983117,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3657269248,
+        "output_sha256": "49b0185f78e3f448ff7ebcfce1270a98b36844bdff274fee23cdf1cd28232212"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.LargeBaseOrder",
+      "canonical_source_path": "NLA/MI28/LargeBaseOrder.lean",
+      "source_sha256": "123e42beb28860e5e53a46b6260c19f1447de1f04d6d79256f27993377b93811",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "receipt_sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b",
+      "command": {
+        "module": "NLA.MI28.LargeBaseOrder",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LargeBaseOrder.olean",
+          "NLA/MI28/LargeBaseOrder.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:11:21.804438+00:00",
+        "source_sha256": "123e42beb28860e5e53a46b6260c19f1447de1f04d6d79256f27993377b93811",
+        "dependency_olean_sha256": {
+          "NLA.MI28.PositiveProductOrder": "b80cab066c1a4ad06d2777b13c602553a6a7604abd6924a1e3f8d9e632f84200"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:11:29.526539+00:00",
+        "elapsed_seconds": 7.7230447080219164,
+        "log_sha256": "be4c377bb5cb80755c053f11e4023aa79f02e2f2949d6b05c220350ded07faae",
+        "maxrss_bytes_macos_cumulative": 3415457792,
+        "output_sha256": "2266899e800b7180e69b6e08ec507e170687469ad47b9819f215f061ab4af4fa"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 6
+    },
+    {
+      "module": "NLA.MI28.LogOneAddTangent",
+      "canonical_source_path": "NLA/MI28/LogOneAddTangent.lean",
+      "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9",
+      "command": {
+        "module": "NLA.MI28.LogOneAddTangent",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LogOneAddTangent.olean",
+          "NLA/MI28/LogOneAddTangent.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:56:21.819995+00:00",
+        "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:56:25.327638+00:00",
+        "elapsed_seconds": 3.5075147080933675,
+        "log_sha256": "f7e1023e42fac8adecd262ca032acf22445250556d2720336a6d8345e70e7ff5",
+        "maxrss_bytes_macos_cumulative": 3753459712,
+        "output_sha256": "c1dca1db855b99a6163bd860155fe63277eda804aee865e063c87c1c9991eea1"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 2
+    },
+    {
+      "module": "NLA.MI28.LowerPowerImplication",
+      "canonical_source_path": "NLA/MI28/LowerPowerImplication.lean",
+      "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3",
+      "command": {
+        "module": "NLA.MI28.LowerPowerImplication",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/LowerPowerImplication.olean",
+          "NLA/MI28/LowerPowerImplication.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:36:32.868561+00:00",
+        "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
+        "dependency_olean_sha256": {
+          "NLA.MI28.FurutaSubstitution": "956f817acfd3adb17895409bbd483820d55a0a87f7075e8afb5527b036861817"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:36:49.385554+00:00",
+        "elapsed_seconds": 16.516906957956962,
+        "log_sha256": "2f70fa24836cc768b3672a380aaf28a3f5267037d70ae534caa5102ceef63c6c",
+        "maxrss_bytes_macos_cumulative": 3657269248,
+        "output_sha256": "2d95895248ef5951383d223d06763c581c1fb662e8cb3a68e892f18812608cd0"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI28.ModulusPowers",
+      "canonical_source_path": "NLA/MI28/ModulusPowers.lean",
+      "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+      "command": {
+        "module": "NLA.MI28.ModulusPowers",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/ModulusPowers.olean",
+          "NLA/MI28/ModulusPowers.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:30:49.468033+00:00",
+        "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Numerical": "00aae921ad2ea982622375efb05d59259c4eccc60ffa18ba290de256d2617a43"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:31:03.557281+00:00",
+        "elapsed_seconds": 14.089301958098076,
+        "log_sha256": "8aef62f60f904d71e57fa812aad6688462120eb15f21fd9861f44977ec162b36",
+        "maxrss_bytes_macos_cumulative": 3412934656,
+        "output_sha256": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 5
+    },
+    {
+      "module": "NLA.MI28.NormComparison",
+      "canonical_source_path": "NLA/MI28/NormComparison.lean",
+      "source_sha256": "3289bc4928760c2097e858ed02b1ab06a37063642010d305af18037db7078332",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+      "receipt_sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3",
+      "command": {
+        "module": "NLA.MI28.NormComparison",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormComparison.olean",
+          "NLA/MI28/NormComparison.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:36:06.745199+00:00",
+        "source_sha256": "3289bc4928760c2097e858ed02b1ab06a37063642010d305af18037db7078332",
+        "dependency_olean_sha256": {
+          "NLA.MI28.NormalizedPositivity": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a",
+          "NLA.MI28.NormalizedHomogeneity": "9bf66de9160f4f4013271062187fb987215e763896ab0648b194f578ba6afb4c",
+          "NLA.MI28.NormalizedOrder": "a3f0f6350d835ee3c4f8195004ac9dc33e36a1312881beba716fe20060e5a441"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:36:13.659044+00:00",
+        "elapsed_seconds": 6.91365662496537,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3320938496,
+        "output_sha256": "4bd9ec7e5d5fd01ce21bc5b2c3c69c626ba7ead4ca65d029bb4325934ab73bc1"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    },
+    {
+      "module": "NLA.MI28.NormalizedContinuity",
+      "canonical_source_path": "NLA/MI28/NormalizedContinuity.lean",
+      "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+      "receipt_sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9",
+      "command": {
+        "module": "NLA.MI28.NormalizedContinuity",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedContinuity.olean",
+          "NLA/MI28/NormalizedContinuity.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:56:06.278892+00:00",
+        "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.TraceSpectral": "d3616d92b0550e11c1b82a27e889080cff979f4ead27ed26190b56daefd10040"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:56:11.522299+00:00",
+        "elapsed_seconds": 5.243216499919072,
+        "log_sha256": "18205d4c0a52535457fddffa27c153908f4f4a116de934e6d73397ec76cfe45e",
+        "maxrss_bytes_macos_cumulative": 3753459712,
+        "output_sha256": "9d46dcf1f306f080b8f2332c637a29f37cb08b8c5422bf4325ffa39b76c155e3"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 2
+    },
+    {
+      "module": "NLA.MI28.NormalizedDeterminant",
+      "canonical_source_path": "NLA/MI28/NormalizedDeterminant.lean",
+      "source_sha256": "1fa0b94dc082ad10d63c4446f925e883b8be622760402b2fbaff1e200325e0c5",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.NormalizedDeterminant",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedDeterminant.olean",
+          "NLA/MI28/NormalizedDeterminant.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:10:26.074558+00:00",
+        "source_sha256": "1fa0b94dc082ad10d63c4446f925e883b8be622760402b2fbaff1e200325e0c5",
+        "dependency_olean_sha256": {
+          "NLA.MI28.SpectrumDeterminant": "4b98facf919d26fe6b18b6522730c93a138ab75c27ce1b56d5aa8b5b2d7e9c69",
+          "NLA.MI28.ModulusPowers": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1",
+          "NLA.MI28.NormalizedPositivity": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:10:36.176514+00:00",
+        "elapsed_seconds": 10.09863987506833,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3670622208,
+        "output_sha256": "91cbc2ea560030cb94d158c2980a0deb49ed2ff79498c6d2a5ef6b9601368953"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.NormalizedHomogeneity",
+      "canonical_source_path": "NLA/MI28/NormalizedHomogeneity.lean",
+      "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+      "command": {
+        "module": "NLA.MI28.NormalizedHomogeneity",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedHomogeneity.olean",
+          "NLA/MI28/NormalizedHomogeneity.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:31:17.691372+00:00",
+        "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.PowerScaling": "ec88b21bb463636ac073d19ff66683f2103670eb62533c0239945a98707893ca"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:31:23.737398+00:00",
+        "elapsed_seconds": 6.045872375019826,
+        "log_sha256": "4ed5fde10b736e579b82963aa9cd7296276d5f68c0f33922a974eae12d8b110b",
+        "maxrss_bytes_macos_cumulative": 3412934656,
+        "output_sha256": "9bf66de9160f4f4013271062187fb987215e763896ab0648b194f578ba6afb4c"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 5
+    },
+    {
+      "module": "NLA.MI28.NormalizedOrder",
+      "canonical_source_path": "NLA/MI28/NormalizedOrder.lean",
+      "source_sha256": "61e2555f8e958092f50e05b6dbbc7ca6b7676f99d81e1aaf9608b4d76ac009b0",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "receipt_sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a",
+      "command": {
+        "module": "NLA.MI28.NormalizedOrder",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedOrder.olean",
+          "NLA/MI28/NormalizedOrder.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:23:11.491020+00:00",
+        "source_sha256": "61e2555f8e958092f50e05b6dbbc7ca6b7676f99d81e1aaf9608b4d76ac009b0",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.OrderPowers": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:23:16.539260+00:00",
+        "elapsed_seconds": 5.045617749914527,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3343187968,
+        "output_sha256": "a3f0f6350d835ee3c4f8195004ac9dc33e36a1312881beba716fe20060e5a441"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 6
+    },
+    {
+      "module": "NLA.MI28.NormalizedPositivity",
+      "canonical_source_path": "NLA/MI28/NormalizedPositivity.lean",
+      "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+      "receipt_sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a",
+      "command": {
+        "module": "NLA.MI28.NormalizedPositivity",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/NormalizedPositivity.olean",
+          "NLA/MI28/NormalizedPositivity.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:22:57.662046+00:00",
+        "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.PolarPowers": "2dbd22a09cd857f8c5242bd1e9d6fa3a5437b3f11fccdeca1ad4aa9543369cda"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:23:07.992797+00:00",
+        "elapsed_seconds": 10.330540541908704,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3343187968,
+        "output_sha256": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 6
+    },
+    {
+      "module": "NLA.MI28.Numerical",
+      "canonical_source_path": "NLA/MI28/Numerical.lean",
+      "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+      "receipt_sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b",
+      "command": {
+        "module": "NLA.MI28.Numerical",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/Numerical.olean",
+          "NLA/MI28/Numerical.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:11:29.547239+00:00",
+        "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:11:38.827771+00:00",
+        "elapsed_seconds": 9.281206875108182,
+        "log_sha256": "0250ba864e70725248739c14e23937a25d5fd89d96e5759ab8ab3223275b852a",
+        "maxrss_bytes_macos_cumulative": 3477913600,
+        "output_sha256": "00aae921ad2ea982622375efb05d59259c4eccc60ffa18ba290de256d2617a43"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 7
+    },
+    {
+      "module": "NLA.MI28.PositiveProductOrder",
+      "canonical_source_path": "NLA/MI28/PositiveProductOrder.lean",
+      "source_sha256": "27fe415c4b5de7daa6656697b582b976f8368ba4d4f572c19f6e350ae5911033",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+      "receipt_sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291",
+      "command": {
+        "module": "NLA.MI28.PositiveProductOrder",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/PositiveProductOrder.olean",
+          "NLA/MI28/PositiveProductOrder.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:04:39.047886+00:00",
+        "source_sha256": "27fe415c4b5de7daa6656697b582b976f8368ba4d4f572c19f6e350ae5911033",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.OrderPowers": "cbea8e02b95209ab21ea4c0e3901cef96487ff22229302c998a3f4aa6dae7417"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:04:44.503115+00:00",
+        "elapsed_seconds": 5.455020957975648,
+        "log_sha256": "3cbd0254878ec24cf29a6a29173ba46befa265cb1de2699ba3ebb4ba4218be6a",
+        "maxrss_bytes_macos_cumulative": 3485958144,
+        "output_sha256": "b80cab066c1a4ad06d2777b13c602553a6a7604abd6924a1e3f8d9e632f84200"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json",
+          "sha256": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json",
+          "sha256": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json",
+          "sha256": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json",
+          "sha256": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 7
+    },
+    {
+      "module": "NLA.MI28.ProductOneAdd",
+      "canonical_source_path": "NLA/MI28/ProductOneAdd.lean",
+      "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+      "receipt_sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649",
+      "command": {
+        "module": "NLA.MI28.ProductOneAdd",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/ProductOneAdd.olean",
+          "NLA/MI28/ProductOneAdd.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:02:38.608561+00:00",
+        "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
+        "dependency_olean_sha256": {
+          "NLA.MI28.LogOneAddTangent": "c1dca1db855b99a6163bd860155fe63277eda804aee865e063c87c1c9991eea1",
+          "NLA.MI24.ScalarLogMajorization": "0585f227d0cda26f61bd11e32b3d581c0460c26073d82bef25bfcd8079d1fb6f"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:02:55.360729+00:00",
+        "elapsed_seconds": 16.75188958295621,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 2716549120,
+        "output_sha256": "83fbeebcbc30e608a0e5847af2be6b343001126867895754463e8a54b655c183"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 1
+    },
+    {
+      "module": "NLA.MI28.SmallBaseImplication",
+      "canonical_source_path": "NLA/MI28/SmallBaseImplication.lean",
+      "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+      "command": {
+        "module": "NLA.MI28.SmallBaseImplication",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SmallBaseImplication.olean",
+          "NLA/MI28/SmallBaseImplication.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:51:04.008475+00:00",
+        "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
+        "dependency_olean_sha256": {
+          "NLA.MI28.LowerPowerImplication": "2d95895248ef5951383d223d06763c581c1fb662e8cb3a68e892f18812608cd0",
+          "NLA.MI28.HigherPowerImplication": "68543f583eda41ef5cf92424205ba555ccb704cbb08af5a6172aa73a26b037cb",
+          "NLA.MI28.SwapImplication": "dd071767ddcf2066fe424074bdbdc4a9dde48076d0671bc6e6ddeaa8531c5a9c"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:51:09.644050+00:00",
+        "elapsed_seconds": 5.632526125060394,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3713040384,
+        "output_sha256": "1b300b2cd5635df518f6afcc8076fee05a38a019bb4ccfebe8e10bbbdc9e64fb"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.SmallBaseNorm",
+      "canonical_source_path": "NLA/MI28/SmallBaseNorm.lean",
+      "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+      "command": {
+        "module": "NLA.MI28.SmallBaseNorm",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SmallBaseNorm.olean",
+          "NLA/MI28/SmallBaseNorm.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:51:09.696389+00:00",
+        "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
+        "dependency_olean_sha256": {
+          "NLA.MI28.SmallBaseImplication": "1b300b2cd5635df518f6afcc8076fee05a38a019bb4ccfebe8e10bbbdc9e64fb",
+          "NLA.MI28.NormComparison": "4bd9ec7e5d5fd01ce21bc5b2c3c69c626ba7ead4ca65d029bb4325934ab73bc1"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:51:15.426623+00:00",
+        "elapsed_seconds": 5.7300732909934595,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3713040384,
+        "output_sha256": "45f077a51d9b48d5c3379c951b329841c1d3d864935df1e606aeee5b7a49f428"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.Solution",
+      "canonical_source_path": "Solution.lean",
+      "source_sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.Solution",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/Solution.olean",
+          "NLA/MI28/Solution.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:27:34.331733+00:00",
+        "source_sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef",
+        "dependency_olean_sha256": {
+          "NLA.MI28.DeterminantComparison": "6143f0783371b956cdcbf624eeaa09931774028453a8605a99ee6139562d89d5"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T09:19:03.458862+00:00",
+        "elapsed_seconds": 40.03733629104681,
+        "log_sha256": "d78796d62587a07bd3f35d81cf7309a7d569f795316b2f154849a24acf2412f9",
+        "maxrss_bytes_macos_cumulative": 3709763584,
+        "output_sha256": "a39db26c96419d6b2724862b59306b3b08c01892d279603848107b48e09b18a5"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.SpectrumDeterminant",
+      "canonical_source_path": "NLA/MI28/SpectrumDeterminant.lean",
+      "source_sha256": "07f82ef66631810b9751a280c23fe1ffc464efc29a42f8baa737a664330bf634",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+      "receipt_sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+      "command": {
+        "module": "NLA.MI28.SpectrumDeterminant",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SpectrumDeterminant.olean",
+          "NLA/MI28/SpectrumDeterminant.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T08:10:20.714282+00:00",
+        "source_sha256": "07f82ef66631810b9751a280c23fe1ffc464efc29a42f8baa737a664330bf634",
+        "dependency_olean_sha256": {
+          "NLA.MI28.Definitions": "3684cd4e16f412f3a788171662d8837fe0dae39fbf1495281824acf531de3627",
+          "NLA.MI24.CompoundNorm": "fbcb18884a0784efc7f208309eb1f000d4864fa4186bd256b5bc23b3a0daa258"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T08:10:26.046712+00:00",
+        "elapsed_seconds": 5.332189042004757,
+        "log_sha256": "10d4014e6bea102bad8ce6ccb2b5c90b6ab970ee211c0e46d9d2b17b60a06f83",
+        "maxrss_bytes_macos_cumulative": 3670622208,
+        "output_sha256": "4b98facf919d26fe6b18b6522730c93a138ab75c27ce1b56d5aa8b5b2d7e9c69"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 0
+    },
+    {
+      "module": "NLA.MI28.SwapImplication",
+      "canonical_source_path": "NLA/MI28/SwapImplication.lean",
+      "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+      "receipt_sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+      "command": {
+        "module": "NLA.MI28.SwapImplication",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SwapImplication.olean",
+          "NLA/MI28/SwapImplication.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:50:58.359447+00:00",
+        "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
+        "dependency_olean_sha256": {
+          "NLA.MI28.SwappedModulus": "9ee9d84dad9770fee0e869d04436c1eccdce573545278413f3265f5c81bd3c59"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:51:03.978533+00:00",
+        "elapsed_seconds": 5.618963624932803,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 3713040384,
+        "output_sha256": "dd071767ddcf2066fe424074bdbdc4a9dde48076d0671bc6e6ddeaa8531c5a9c"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 3
+    },
+    {
+      "module": "NLA.MI28.SwappedModulus",
+      "canonical_source_path": "NLA/MI28/SwappedModulus.lean",
+      "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+      "success_origin_receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+      "receipt_sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+      "command": {
+        "module": "NLA.MI28.SwappedModulus",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/private/tmp/nla-lean-local-shared-20260916/.lake/build/lib/lean/NLA/MI28/SwappedModulus.olean",
+          "NLA/MI28/SwappedModulus.lean"
+        ],
+        "cwd": "/private/tmp/nla-lean-local-shared-20260916",
+        "start": "2026-09-18T07:31:31.441511+00:00",
+        "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
+        "dependency_olean_sha256": {
+          "NLA.MI28.ModulusPowers": "2b55d09bab6ec8557d519dd84a28184834129eb02a74292af6773f28aacec5f1",
+          "NLA.MI28.NormalizedPositivity": "421108bcb55c21cc28f268ff5e7f5a8b88e77afc14b844d0c459b6652723d20a",
+          "NLA.MI28.InverseSandwich": "67939480c438753155369cac87ab9322a7cd8674195faa53a841452fb44b557f"
+        },
+        "exit_code": 0,
+        "end": "2026-09-18T07:31:43.892344+00:00",
+        "elapsed_seconds": 12.447189667029306,
+        "log_sha256": "cf198d4baf21a33e5fd1033d6c4a58513c3a312f9fcf1994537807417c25926d",
+        "maxrss_bytes_macos_cumulative": 3412934656,
+        "output_sha256": "9ee9d84dad9770fee0e869d04436c1eccdce573545278413f3265f5c81bd3c59"
+      },
+      "reuse_chain": [
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json",
+          "sha256": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json",
+          "sha256": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json",
+          "sha256": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json",
+          "sha256": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a"
+        },
+        {
+          "receipt": "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json",
+          "sha256": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f"
+        }
+      ],
+      "historical_reuse_hops_authenticated": 4
+    }
+  ],
+  "retained_original_evidence": {
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/RECEIPT.json": "1dcb9cd7e5dd5a9a78270675d49beccac6232acbc09d8666fed18b629abb200b",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/RECEIPT.json": "8817ec18df9ac68544f914557ad04ac5b46e46ad3cbec4d15e7d7db775d6e649",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-333/RECEIPT.json": "af2bfc71c05b14addebc2b727dd8c3e7f98a5cdad76e8a136e353233f198be9f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/RECEIPT.json": "e4e12118688d2c88029ce4111aed90e4240f2ec42d4734879cb22eb675d27d51",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/RECEIPT.json": "8679289784db7ca9b5d405b4fcc6322096318a2d39f92d8e245bba614554fbe4",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.CompoundAlgebra.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/NLA.MI24.CompoundNorm.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-332/NLA.MI24.CompoundSpectral.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/RECEIPT.json": "a83c4b35241c02bffa7832c129d368e3d71226feb4400d44e7e75b01d1da1eb9",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/RECEIPT.json": "780a84dc6e0b8dd5c95e6ab2e49b39a4e2e4785495a373bde209646058037d7a",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/RECEIPT.json": "07a586da6646ae276492b305bdc4d4395ffd507f5594e047f9478e7bf645e0e3",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/RECEIPT.json": "b5b87cedf5517508ff6376403c3c5b33afe84e8fb65d66d0a8decb35728fdf8f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/RECEIPT.json": "501d2c538fc232dd2b21c2f996054bd340ca49acffbdef860adf30164a98632a",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/RECEIPT.json": "8b523c2cf254a3516f76d0012f6049b6515d73547da7e1f8ae7eee98d521c74b",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/RECEIPT.json": "d34ceb3306df4891fe76d5aaa94fba18d1489a9299b0662f50c380b22f5b1291",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/RECEIPT.json": "f0c79f95a60c084412c6b7f43d875f9f404418a1144f9809c5b2b889c580b8a3",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-326/RECEIPT.json": "9783a50a182a76cd29b1e898217ffcf9ce9010d1c596f9adfe7f39dbaf3cbed2",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-325/RECEIPT.json": "e26b765e678e4715db239beb3c0a18072bf0a108b7c4523ef24c5eb88b83eea7",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-324/RECEIPT.json": "83d473ffd476c46c897976cd1e6d61cfe3416dfc0061d954b48db1702c93e6e4",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-323/RECEIPT.json": "c9360c337ce438a15534a783181aa5943fc9639108d0352e3561557d18624a45",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-322/RECEIPT.json": "6d4f543f67bc44410fbbbc3be46afaef4ae2c2e30c218f064d63586ae94ecdcc",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-321/RECEIPT.json": "e9f4bdc1f40753796a6b000f0d7cf83bf309f4683d0c97cf5da779b52d13e899",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-319/RECEIPT.json": "a174a14eb7043da039425a1913c939b5c30b50285e3f8bd110ac120c79baa051",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/RECEIPT.json": "a2271fe18072629ee6930d9798b9ec89dc3ea18be0447e3f9b28794cf93e7e27",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-314/RECEIPT.json": "1ee81f9e832c82f1378bc4f207a16e05fc6c04067fe9dabe996c518e6c57e92c",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-313/RECEIPT.json": "e50952c46c2c03e9dddf5fed40a5da3bc26ecc087f26d40fb5c9fbe0ef9fd6b4",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-312/RECEIPT.json": "efbd62b0b4ef5802254e19f8be56eec1bfc6263237c044c797f1fd23d390170d",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-311/RECEIPT.json": "8a38e00c7cbf5cee5b1cbc5b81d9eaf9e3062d873f002bbdbd1a0001380b5a77",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-310/RECEIPT.json": "648ad4d3c51ba64b3b4d8ffd87f9b2a930c03380003ef8e91ff4e16d61b7f8ad",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-309/RECEIPT.json": "77cbb0a2a3990e9995ec88924e4dbab35e5bb270c05bad2a813482f721db92c7",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-307/RECEIPT.json": "c3ee7a1e1d6e34b736bfde88dc88e4d4ccccbaf619a3bdca2d6065ce5c44a697",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-306/RECEIPT.json": "71759d6e333248b44bea911abd49312ba4c5f84347e2b15e0883b67e55459d90",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-305/RECEIPT.json": "87638241b746e898266ccbea2a3fd6d0a97e7409b6463425138a7bad1cc5dfd0",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-304/RECEIPT.json": "3f2260e57cd8483c6154191f9ef05e5ff2ae91e1302fc2d2e81be404dc2ac51b",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-303/RECEIPT.json": "860da7f528ac812874933b8d738dcf52686e4304e4f63eac77bd8696076b72dd",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/RECEIPT.json": "f1d822abbda6d03774f9a95f7e9b102d78342f7ca9fdb3aeff759e0fe4a47c45",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-300/RECEIPT.json": "99d10c4c7b4da2ecf0fcf85474a415ea89757c801c90e6b906d1a4f0dd95d63a",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-298/RECEIPT.json": "47ebbf10b8dc0e69c2363a2e9b12397efca7a91f3ceb0a53cdf1a25807b2bbc6",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-296/RECEIPT.json": "54478dadf0cdce90230127da65138b8ce4e033f1f4cba0e3368b57193a40f935",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/RECEIPT.json": "50a9e214dda20915febb49b90d3028a967a1b25d94683789539de09a6ca3cc27",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/RECEIPT.json": "fb4dd08611c87f253f7f1f915c35fc164e998dc940e3c15dc3afbb64ca62846f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/RECEIPT.json": "b1df6874421912595a69eba4623e422f9c32e30431a3915fe82e8adac3768134",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-289/NLA.MI24.Definitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.DiagonalPowers.log": "a1e6916cfd42c014a38aa8e2ea1e8608894a0e92693d8161d5c6ce81c3e5d8e6",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.FurutaBase.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.FurutaHalfPower.log": "eef9e2c6d5d045d68d4d09785fee0f63cfbdc4e670dda901fab1a289c38045e2",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.GeometricCongruence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.HeronNorm.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.HeronOrder.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-294/NLA.MI24.MeanPositivity.log": "18bfe42b896c7cfc66cc57448031731fe485d8269bbcadd073e157afe81b13bd",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.OperatorNorm.log": "7301ef9201bb7420c3b70a0a59b3029e8390a9315d9ed4f5a686b3ce63973a8e",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-302/NLA.MI24.OrderPowers.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.PolarPowers.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.PowerScaling.log": "5217b32d6a1e092d67a09231a4152b0f68929454ad7eac2c7c3f37ce77b2377f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-316/NLA.MI24.ScalarLogMajorization.log": "5a8fb97a693132a8a723b7df5409245262d8b79dee35eb844c3e85ee0b83fc3f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-293/NLA.MI24.SpectralPowers.log": "6d53bd26ce02acb26eaaae350f5c55989b58e7e75d5a947b206f2e40bab9bb65",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-330/NLA.MI24.TraceSpectral.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.CompoundTransport.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/RECEIPT.json": "352c903490336c5098ea77ea66d7152701b3b966df5ef851202de6be1b61bd46",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-350/NLA.MI28.Definitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.DeterminantComparison.log": "bc02bd40dd63065a16f2ccb72a2dea5ed591c6360e07841ff72384fef3b50854",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.DeterminantNormalization.log": "032653ebd45b33293556c2460a1bf0ce22aade35d43c9770fb26c8a6e3e5b383",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.DeterminantReality.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.FullLogMajorization.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/NLA.MI28.FullNorm.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/NLA.MI28.FurutaAdmissible.log": "7229ab6549575ae67c4a92f91ef597f2bdc8e4e337c1067a9233cd6a1b1632ce",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-353/NLA.MI28.FurutaBoundary.log": "67fcf0517031aec81924d07a178b0d478fd8093d0a71aec9f82dc399985e1514",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/NLA.MI28.FurutaSubstitution.log": "944e73242900d8c7610cacc3bdfdfbdf2d7ea4cc25457f431695b8b2fc7c42ee",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/NLA.MI28.HigherPowerImplication.log": "30f49a0a704ed496286bc77a2d53c96cf14894b2490eedfcbe0bf9c03eab9250",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/NLA.MI28.HigherPowerOrder.log": "d1cec633abe90c0ad85c8224b4858981dc23bcf1c2bc94e562a9bd84f4e4b06f",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/NLA.MI28.InverseSandwich.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/NLA.MI28.LargeBaseImplication.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/NLA.MI28.LargeBaseNorm.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/NLA.MI28.LargeBaseOrder.log": "be4c377bb5cb80755c053f11e4023aa79f02e2f2949d6b05c220350ded07faae",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/NLA.MI28.LogOneAddTangent.log": "f7e1023e42fac8adecd262ca032acf22445250556d2720336a6d8345e70e7ff5",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/NLA.MI28.LowerPowerImplication.log": "2f70fa24836cc768b3672a380aaf28a3f5267037d70ae534caa5102ceef63c6c",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/NLA.MI28.ModulusPowers.log": "8aef62f60f904d71e57fa812aad6688462120eb15f21fd9861f44977ec162b36",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-360/NLA.MI28.NormComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-363/NLA.MI28.NormalizedContinuity.log": "18205d4c0a52535457fddffa27c153908f4f4a116de934e6d73397ec76cfe45e",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.NormalizedDeterminant.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/NLA.MI28.NormalizedHomogeneity.log": "4ed5fde10b736e579b82963aa9cd7296276d5f68c0f33922a974eae12d8b110b",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/NLA.MI28.NormalizedOrder.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-358/NLA.MI28.NormalizedPositivity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-356/NLA.MI28.Numerical.log": "0250ba864e70725248739c14e23937a25d5fd89d96e5759ab8ab3223275b852a",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-355/NLA.MI28.PositiveProductOrder.log": "3cbd0254878ec24cf29a6a29173ba46befa265cb1de2699ba3ebb4ba4218be6a",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-364/NLA.MI28.ProductOneAdd.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/NLA.MI28.SmallBaseImplication.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/NLA.MI28.SmallBaseNorm.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.Solution.log": "d78796d62587a07bd3f35d81cf7309a7d569f795316b2f154849a24acf2412f9",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-365/NLA.MI28.SpectrumDeterminant.log": "10d4014e6bea102bad8ce6ccb2b5c90b6ab970ee211c0e46d9d2b17b60a06f83",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-362/NLA.MI28.SwapImplication.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/private/tmp/nla-lean-local-shared-20260916/runs/development-359/NLA.MI28.SwappedModulus.log": "cf198d4baf21a33e5fd1033d6c4a58513c3a312f9fcf1994537807417c25926d"
+  },
+  "full_independent_reviews": "Original reports and later source-bound cleanup continuations are separate gates",
+  "GitHubComparator": "not yet run for these problem sources",
+  "count_change": 0,
+  "audit_script_sha256": "f08a741797663ab34969e31cdcade03ab6aebd9656142329a3f683a209a3b37a"
+}

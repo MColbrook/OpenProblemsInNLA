@@ -1,0 +1,106 @@
+{
+  "project_name": "NLAMI28",
+  "default_target": "Solution",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "source_snapshot_configuration": {
+    "lakefile.toml": "519fc687f4e9b6bf2cf7a99cda6c0d844db1c52bf946525d8dc46dd48b7830f1",
+    "lake-manifest.json": "71e8401646a361d36b841337a9e08cbe0633fbbbce8e5ce9b5db0e10dfefbb5c",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "publication_configuration": {
+    "lakefile.toml": "33e32e2e45bc3fdbc909ef9826c82e474ee5a34859263f8469c9627d655a590e",
+    "lake-manifest.json": "aa771f2bb585baf6b71dcf76c9420e611357bfac08b4d78968e63b3465391d37",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "permitted_changes": {
+    "lakefile.toml": "defaultTargets: Challenge \u2192 Solution only",
+    "lake-manifest.json": "root name: NLAMI22 \u2192 NLAMI28 only"
+  },
+  "entire_dependency_package_objects_unchanged": true,
+  "dependency_pins": [
+    {
+      "name": "leancert",
+      "url": "https://github.com/alerad/leancert",
+      "rev": "621a43d7cf21f87872392a01e874f2f1dbddc926"
+    },
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "rev": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "rev": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "rev": "5f4d51b81cbd3f6b32b156bfad9056621a040404"
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "rev": "16f02aa7642864af59f1ff0e384a015994db9118"
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "rev": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "rev": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "rev": "92c15be17b7caf78c2ad767ec40f89052d908d81"
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "rev": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "rev": "6130a47896ce867c6a4a55373441e59e565bad0f"
+    }
+  ],
+  "actual_campaign_build": "Root direct serial Lean compilation, not a Lake invocation; exact command lines remain in local365/366 evidence.",
+  "canonical_aggregate": {
+    "local": "NLA/MI28/Solution.lean",
+    "canonical": "Solution.lean",
+    "sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef"
+  },
+  "standalone_Lake_build_executed": false,
+  "Linux_Comparator_executed": true,
+  "future_reproduction": "After integration into the standalone project, lake build Solution (or the default lake build) targets the proof. This command is documented, not executed by this task.",
+  "canonical_direct_Lean_entrypoint": {
+    "result": "PASS",
+    "record": "verification/canonical-local/RECEIPT.json",
+    "receipt_sha256": "2147c47e8765c34f6c9d1d55caef19d4579c33fa1add28a5361ecf7cd313de43",
+    "scope": "Fresh direct Lean compilation of canonical Solution.lean;51 authenticated source/output-matched dependencies reused.",
+    "fresh_modules": 1,
+    "reused_modules": 51,
+    "standalone_Lake_build": false,
+    "Comparator": false,
+    "matched_selected_axiom_reports": 20
+  },
+  "Linux_Comparator": {
+    "status": "passed",
+    "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+    "run": 35374928604,
+    "job": 105697400237,
+    "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+    "input_count": 282,
+    "exports": 20,
+    "evidence": "verification/linux-2026-09-18/README.md",
+    "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+    "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+    "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+    "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Root actual read-only documentation integrity replay; no Lean or Comparator execution",
+  "start": "2026-09-18T10:39:54.157250+00:00",
+  "end": "2026-09-18T10:40:01.692813+00:00",
+  "argv": [
+    "/Users/georgestepaniants/miniforge3/bin/python3",
+    "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/verify_documents.py"
+  ],
+  "script_sha256": "b1093402f40081568e1330079e1ecdfbc273f93d467d5d7bc4a3ac7462f0a20d",
+  "exit_code": 0,
+  "stdout": "{\n  \"verdict\": \"PASS\",\n  \"scope\": \"Documentation schema and read-only byte/evidence audit; no compiler, kernel, Comparator, Git or network execution.\",\n  \"manifest_sha256\": \"3f35c783a327e8e5b67165558dcb9fd557d0a8e3de4d1ea8324f73bfed06b31d\",\n  \"checker_sha256\": \"b1093402f40081568e1330079e1ecdfbc273f93d467d5d7bc4a3ac7462f0a20d\",\n  \"payload_files\": 22,\n  \"payload_bytes_including_manifest\": 202003,\n  \"external_inputs\": 31,\n  \"checks\": [\n    \"Sealed documentation manifest, exact payload membership and <500 KB size\",\n    \"All external document inputs and all 83 snapshot payload hashes\",\n    \"Pinned v0.4 schema and conservative current status\",\n    \"Exact 52-module closure, 3 frozen files, 20 headers and metadata declarations\",\n    \"All 18 unchanged MI24 files against authenticated original snapshot bytes\",\n    \"Only default target and root package name changed; full dependency objects identical\",\n    \"52 successful command/log origins and complete reuse chains; 92 retained evidence hashes; 8 fresh / 44 reused\",\n    \"20 actual separate normalized type/universe dumps, 2 diagnostic commands/logs and all 6 body paths\",\n    \"Both complete nonauthor review seals, both earlier statement seals and root integrity-replay receipts\",\n    \"Recorded public queries, 15 repositories / 271 heads / 225 complete immutable tree hashes and 17 classified matches; no new network/Git queries\"\n  ],\n  \"proof_source_edits\": 0,\n  \"Lean_Lake_Comparator_executions\": 0,\n  \"accepted_count_change\": 0\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,300 @@
+{
+  "problem": "MI-28",
+  "George_Stepaniants": {
+    "name": "George Stepaniants",
+    "affiliation": "Department of Computing and Mathematical Sciences, California Institute of Technology",
+    "roles": [
+      "Existing full analytic solution",
+      "Formalization contribution with substantial ChatGPT/Codex assistance"
+    ]
+  },
+  "agent_roles": {
+    "statement_author": "/root/nm04_final_referee1",
+    "MI28_proof_and_docs_author": "/root/mi24_full_referee1",
+    "sole_local_compiler_and_coordinator": "/root",
+    "fresh_final_nonauthor_reviewers": [
+      "/root/mi28_final_referee1",
+      "/root/mi28_final_referee2"
+    ],
+    "MI24_prior_matrix_code": "/root/nm04_final_referee1",
+    "MI24_prior_scalar_prefix_code": "/root"
+  },
+  "mathematical_sources": [
+    {
+      "title": "MI-28 — Ghabries’s determinant comparison for arbitrary nonnegative base powers",
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/9342b3d80c207d3e0bfd61251334d027935c387c/matrix-inequalities-and-norms/MI-28/README.md",
+      "type": "canonical problem record",
+      "relationship": "formalizes",
+      "location": "Complete unchanged positive-definite problem statement",
+      "author_endorsement": "n/a",
+      "note": "Already Solved upstream. Snapshot matches the fresh recorded README bytes."
+    },
+    {
+      "title": "MI-28: a determinant inequality for all nonnegative base powers",
+      "authors": [
+        "George Stepaniants"
+      ],
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/85",
+      "type": "solution note",
+      "location": "11 September 2026; Theorem 1, Lemmas 2–5 and Corollary 6",
+      "relationship": "formalizes",
+      "author_endorsement": "participated",
+      "note": "Exact reviewed text is source-inputs/canonical/solution.md; its historical verification footer predates this Lean development."
+    },
+    {
+      "title": "Contributions to Matrix Inequalities and Some Applications",
+      "authors": [
+        "M. M. Ghabries"
+      ],
+      "id": "https://www.researchgate.net/publication/361793582_Contributions_to_Matrix_Inequalities_and_Some_Applications",
+      "type": "PhD thesis",
+      "location": "2022, §2.5 and final Open Problems, Problem 1, pp. 109–110",
+      "relationship": "background",
+      "author_endorsement": "not-contacted"
+    },
+    {
+      "title": "New determinantal inequalities concerning Hermitian and positive semi-definite matrices",
+      "authors": [
+        "H. Abbas",
+        "M. M. Ghabries",
+        "B. Mourad"
+      ],
+      "id": "https://files.ele-math.com/articles/oam-15-07.pdf",
+      "type": "article",
+      "location": "Operators and Matrices 15 (2021), 105–116, §4 Conjecture 2",
+      "relationship": "background",
+      "author_endorsement": "not-contacted"
+    },
+    {
+      "title": "A proof of a conjectured determinantal inequality",
+      "authors": [
+        "M. M. Ghabries",
+        "H. Abbas",
+        "B. Mourad",
+        "A. Assi"
+      ],
+      "id": "doi:10.1016/j.laa.2020.07.013",
+      "type": "article",
+      "location": "Linear Algebra and its Applications 605 (2020), 21–28; Lemma 2.5 and Theorem 1.1",
+      "relationship": "independently-proves",
+      "author_endorsement": "not-contacted",
+      "note": "Credit for the known large-base range is preserved. C12 proves the necessary norm comparison internally with positive-product order; the paper is not a Lean axiom."
+    },
+    {
+      "title": "Furuta inequality (original 1987 theorem)",
+      "authors": [
+        "T. Furuta"
+      ],
+      "id": "Proceedings of the American Mathematical Society 101 (1987), 85–88",
+      "type": "article",
+      "relationship": "adapts",
+      "author_endorsement": "not-contacted",
+      "note": "The required boundary and admissible variants are proved in the imported and new Lean sources."
+    },
+    {
+      "title": "Furuta inequality and its related topics",
+      "authors": [
+        "Masatoshi Fujii"
+      ],
+      "id": "Annals of Functional Analysis 1 (2010), no. 2, 28–45",
+      "type": "article",
+      "location": "Theorem 1.3, printed page 30",
+      "relationship": "adapts",
+      "author_endorsement": "not-contacted",
+      "note": "Route for the bounded base and symbolic extension to every nonnegative sandwich parameter."
+    },
+    {
+      "title": "The Furuta inequality with negative powers",
+      "authors": [
+        "K. Tanahashi"
+      ],
+      "id": "doi:10.1090/S0002-9939-99-04705-X",
+      "type": "article",
+      "location": "Proceedings of the American Mathematical Society 127 (1999), 1683–1692; Propositions 1–2 and Theorem 3",
+      "relationship": "background",
+      "author_endorsement": "not-contacted",
+      "note": "The needed specialization is proved internally using power order and polar identities; no negative-Furuta axiom."
+    }
+  ],
+  "unchanged_code_reuse": {
+    "record": "REUSE-MI24-FURUTA.json",
+    "sha256": "e5e6c578387563e46aa8c6868cb385edbc5e176a2f46ac95733af33cfe2a4f4b",
+    "published_revision": "194c94929159b78758fd8b9d281f973c261dfabf",
+    "source_snapshot_manifest_sha256": "eb766a3dee52c2a694b0bb9d006619295fee4271ee7aa925dc9895e4998562f3",
+    "files": [
+      {
+        "path": "NLA/MI24/Definitions.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/Definitions.lean",
+        "sha256": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+        "bytes": 4802
+      },
+      {
+        "path": "NLA/MI24/SpectralPowers.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/SpectralPowers.lean",
+        "sha256": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+        "bytes": 3524
+      },
+      {
+        "path": "NLA/MI24/MeanPositivity.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/MeanPositivity.lean",
+        "sha256": "c26b8d10c54e5dd22a28a959a8b131540ae9f901485b86bb88ef31a4892ffef3",
+        "bytes": 4211
+      },
+      {
+        "path": "NLA/MI24/GeometricCongruence.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/GeometricCongruence.lean",
+        "sha256": "c1fcbf72384351a8ac11d4d25c75077e08bf49e33eda6d9eb3875e1f6b12a1f5",
+        "bytes": 6005
+      },
+      {
+        "path": "NLA/MI24/PolarPowers.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/PolarPowers.lean",
+        "sha256": "4070ccee78226db5fc95b7274906f3c532a2c429244741b0d1922b826b7de5e4",
+        "bytes": 5682
+      },
+      {
+        "path": "NLA/MI24/OrderPowers.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/OrderPowers.lean",
+        "sha256": "5271fa66e5d7ad4620f5ec4ac35dc931a37dd910a16a6a9f1db32c37cbaf2e53",
+        "bytes": 2872
+      },
+      {
+        "path": "NLA/MI24/FurutaBase.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FurutaBase.lean",
+        "sha256": "e36b6bff7134df7d88c4824caf0f5e8720a76beb8ab9fd8da366e7159b27740a",
+        "bytes": 5724
+      },
+      {
+        "path": "NLA/MI24/TraceSpectral.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/TraceSpectral.lean",
+        "sha256": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+        "bytes": 3162
+      },
+      {
+        "path": "NLA/MI24/PowerScaling.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/PowerScaling.lean",
+        "sha256": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+        "bytes": 3716
+      },
+      {
+        "path": "NLA/MI24/CompoundAlgebra.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundAlgebra.lean",
+        "sha256": "3f11762b0e86e8bce2d087a824687b26e61098bf464bd320e3cd9cf01ccf1522",
+        "bytes": 7636
+      },
+      {
+        "path": "NLA/MI24/DiagonalPowers.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/DiagonalPowers.lean",
+        "sha256": "dace42e23b9f6ee4512af195790ec966dc8da90e41a4c147b23ecb85ea565a0a",
+        "bytes": 3998
+      },
+      {
+        "path": "NLA/MI24/FurutaHalfPower.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FurutaHalfPower.lean",
+        "sha256": "97a5aaff2b761a0df41fdc11a00a14a710b020fae0bc3076478a542e8161f87b",
+        "bytes": 5953
+      },
+      {
+        "path": "NLA/MI24/HeronOrder.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronOrder.lean",
+        "sha256": "f3e81e8bf3ba9d6817f2195edaa66fc958dbad1950299a144e0363e3c091a793",
+        "bytes": 6169
+      },
+      {
+        "path": "NLA/MI24/OperatorNorm.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/OperatorNorm.lean",
+        "sha256": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+        "bytes": 4865
+      },
+      {
+        "path": "NLA/MI24/HeronNorm.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronNorm.lean",
+        "sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+        "bytes": 3179
+      },
+      {
+        "path": "NLA/MI24/CompoundSpectral.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundSpectral.lean",
+        "sha256": "87e386e944e4c733014d20f0bf2985267f9c68b4f31f7bfdcc617b7f50c40296",
+        "bytes": 6199
+      },
+      {
+        "path": "NLA/MI24/CompoundNorm.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/CompoundNorm.lean",
+        "sha256": "dd915e3edd780efb765241b94a1e9a554c097024443d17ee72cefe2a4ab59161",
+        "bytes": 8790
+      },
+      {
+        "path": "NLA/MI24/ScalarLogMajorization.lean",
+        "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/ScalarLogMajorization.lean",
+        "sha256": "a4f5d003ec94ed8149f16ab7917b4dc97d93dcc20610e3736d7306b1ccbc97b1",
+        "bytes": 3944
+      }
+    ],
+    "scope_note": "CompoundSpectral is a pre-existing combined module that also imports MI24 HeronNorm. Its unchanged import closure includes HeronNorm, HeronOrder and FurutaHalfPower. MI28 uses the general compound algebra/spectral/norm declarations and does not invoke the Heron-specific comparison theorems. No unrelated MI24 modules are copied.",
+    "credit": "All original per-file MI24, MI22 and MF06 provenance/credits remain intact; the imported libraries retain their authorship. This task authenticates stored bytes and root publication evidence, without running Git."
+  },
+  "adapted_code_patterns": [
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MF05-canonical-package-local141/NLA/MF05/Numerical.lean",
+      "source_sha256": "62c4363848f529e48d064c875d8897d55cb6959037af8df517c88287758e55ff",
+      "target_path": "NLA/MI28/Numerical.lean",
+      "scope": "Kernel-trust setup and interval_decide proof of a single fixed half constant; the MF05 mathematical neighborhood argument is not reused."
+    },
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/FiniteSemantics.lean",
+      "source_sha256": "3963765613dc9ca6beb64056596ba739859f99932e9bb2632f6dc7726bb27550",
+      "target_path": "NLA/MI28/ModulusPowers.lean",
+      "scope": "Concrete modulus/Gram CFC power-composition method. The new C02 proof supplies the half-exponent domain hypothesis from selected C01, then the general power bridge consumes selected C02. The MI24 module itself is not copied or changed."
+    },
+    {
+      "source_path": "/private/tmp/nla-lean-next-20260915/MI24-local332-source-snapshot/candidate/NLA/MI24/HeronNorm.lean",
+      "source_sha256": "6687bb92a7d6f1edb69bbd5ff5a3b8635257a744fe61d1afdeabe7b5616d0fc2",
+      "target_path": "NLA/MI28/NormComparison.lean",
+      "scope": "Positive scalar order-to-Euclidean-norm normalization method. The new shared proof uses MI28 frozen C04/C13 and exact normalized order equivalences, without invoking Heron-specific theorems. HeronNorm is later copied unchanged only as a transitive import required by CompoundSpectral."
+    }
+  ],
+  "workflow_patterns": [
+    {
+      "project": "sgstepaniants/Forsythe",
+      "revision": "8d1b0c0545a77b40245e84705aa7d273e6c81e62",
+      "role": "Separate trusted challenge and exact numerical-target documentation pattern; no imported theorem."
+    },
+    {
+      "project": "jaumededios/Schiffer",
+      "revision": "2938e277969c329caf154e48a3d8823f3635c7f1",
+      "role": "Challenge separation pattern; no imported theorem."
+    },
+    {
+      "project": "sgstepaniants/OpenProblemsInNLA",
+      "revision": "1b9f12661b90f40561e255293e11b2a08d79351e",
+      "component": "MF-05",
+      "role": "Kernel-mode numerical proof idiom by George Stepaniants. Its separate Matthew J. Colbrook neighborhood argument is not reused."
+    }
+  ],
+  "pinned_standards": {
+    "TauCetiReview": {
+      "project": "TauCetiProject/TauCetiReview",
+      "revision": "afb424eda89e8ac96d9eb69f6a88972055a4cd1b",
+      "use": "AI-agent review guidance only"
+    },
+    "Comparator": {
+      "project": "leanprover/comparator",
+      "revision": "2312244ac716564a61cc0bf4e107d9abf1757a61",
+      "use": "Frozen challenge/solution comparison contract; final execution NOT RUN"
+    },
+    "formalization_schema": {
+      "project": "mathlib-initiative/formalization.yaml",
+      "revision": "99c678e569c7c4c0772db297c5ddd5e4c9b6322e",
+      "version": "v0.4",
+      "sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce"
+    }
+  },
+  "libraries": {
+    "Mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "LeanCert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "credit": "Mathlib and LeanCert contributors; all proofs use their pinned public interfaces and retain imported authorship."
+  },
+  "source_material_policy": "Small canonical project README/solution and the pinned metadata schema are included. No third-party primary paper PDF or bulk extracted text is copied.",
+  "author_endorsement_note": "Participation by George concerns his own work. No endorsement or contact is asserted for other mathematical authors."
+}

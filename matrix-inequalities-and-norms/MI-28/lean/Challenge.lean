@@ -1,0 +1,122 @@
+/-
+UNELABORATED statement draft; every body is an intentional Comparator placeholder.
+These are proposed obligations, not proved facts or implementation approvals.
+Two independent exact-header approvals and a root statement-only elaboration
+must precede any MI28 proof implementation. No Solution.lean exists.
+-/
+import NLA.MI28.Definitions
+
+set_option autoImplicit false
+open scoped BigOperators Classical ComplexOrder MatrixOrder
+noncomputable section
+namespace NLA.MI28
+
+/-- C01: one exact dyadic constant; kernel LeanCert must supply the final proof. -/
+theorem half_exponent_interval : (0 : ℝ) < 1 / 2 ∧ (1 / 2 : ℝ) < 1 := by sorry
+
+/-- C02: genuine complex modulus square, with noncommuting order preserved. -/
+theorem product_modulus_square {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) :
+    spectralPower (matrixModulus (A * B)) 2 = B * spectralPower A 2 * B := by sorry
+
+/-- C03: exact parameter-interchange identity, all complex PD pairs. -/
+theorem swapped_modulus {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) :
+    matrixModulus (spectralPower (matrixModulus (A * B)) (-1) * B) =
+      spectralPower A (-1) := by sorry
+
+/-- C04: no spectral/sign hypotheses may be substituted for these conclusions. -/
+theorem normalized_posdef {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p : ℝ) :
+    (normalizedH A B k p).PosDef ∧ (normalizedZ A B k p).PosDef := by sorry
+
+/-- C05: broader than MI24: the sandwich parameter has no upper bound. -/
+theorem furuta_boundary {n : ℕ} (X Y : Mat n)
+    (hX : X.PosDef) (hY : Y.PosDef) (hYX : Y ≤ X)
+    (a r : ℝ) (ha : 1 ≤ a) (hr : 0 ≤ r) :
+    spectralPower (spectralPower X (r / 2) * spectralPower Y a *
+      spectralPower X (r / 2)) ((1 + r) / (a + r)) ≤
+        spectralPower X (1 + r) := by sorry
+
+/-- C06: all exponents needed by the canonical proof; no fixed-r truncation. -/
+theorem furuta_admissible {n : ℕ} (X Y : Mat n)
+    (hX : X.PosDef) (hY : Y.PosDef) (hYX : Y ≤ X)
+    (a r q : ℝ) (ha : 1 ≤ a) (hr : 0 ≤ r) (hq : 1 ≤ q)
+    (hadm : a + r ≤ (1 + r) * q) :
+    spectralPower (spectralPower X (r / 2) * spectralPower Y a *
+      spectralPower X (r / 2)) (1 / q) ≤
+        spectralPower X ((a + r) / q) := by sorry
+
+/-- C07: canonical Lemma 2, not restricted to integral k or p. -/
+theorem lower_power_implication (k p : ℝ) (hk : 0 < k)
+    (hp0 : 0 < p) (hpl : k / (k + 1) ≤ p) (hpu : p ≤ 1) :
+    OrderImplication k p := by sorry
+
+/-- C08: canonical Lemma 3, including both closed p endpoints. -/
+theorem higher_power_implication (k p : ℝ) (hk : 0 < k)
+    (hp1 : 1 ≤ p) (hp2 : p ≤ 2) : OrderImplication k p := by sorry
+
+/-- C09: the universally quantified swapped premise is discharged by C07/C08. -/
+theorem swap_implication (k p : ℝ) (hp : 0 < p) (hpk : p ≤ k)
+    (hswap : OrderImplication p k) : OrderImplication k p := by sorry
+
+/-- C10: the complete remaining small-base range in canonical Corollary 6. -/
+theorem small_base_implication (k p : ℝ) (hk0 : 0 < k) (hk2 : k ≤ 2)
+    (hp0 : 0 < p) (hp2 : p ≤ 2) : OrderImplication k p := by sorry
+
+/-- C11: actual Euclidean operator norms, not an assumed norm abstraction. -/
+theorem small_base_norm {n : ℕ} (hn : 1 ≤ n) (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p : ℝ)
+    (hk0 : 0 < k) (hk2 : k ≤ 2) (hp0 : 0 < p) (hp2 : p ≤ 2) :
+    operatorNorm (normalizedH A B k p) ≤ operatorNorm (normalizedZ A B k p) := by sorry
+
+/-- C12: Ghabries et al.'s range must be proved inside Lean, not postulated. -/
+theorem large_base_norm {n : ℕ} (hn : 1 ≤ n) (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p : ℝ)
+    (hk : 2 ≤ k) (hp0 : 0 < p) (hp2 : p ≤ 2) :
+    operatorNorm (normalizedH A B k p) ≤ operatorNorm (normalizedZ A B k p) := by sorry
+
+/-- C13: scaling used for norm normalization, with its exact positive scalar. -/
+theorem normalized_homogeneity {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p c : ℝ) (hc : 0 < c) :
+    normalizedH A ((c : ℂ) • B) k p = (Real.rpow c p : ℂ) • normalizedH A B k p ∧
+    normalizedZ A ((c : ℂ) • B) k p = (Real.rpow c p : ℂ) • normalizedZ A B k p := by sorry
+
+/-- C14: continuity in the exponent closes k=0 without eigenvalue perturbation. -/
+theorem normalized_norm_continuous {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (p : ℝ) :
+    Continuous (fun k : ℝ => operatorNorm (normalizedH A B k p)) ∧
+    Continuous (fun k : ℝ => operatorNorm (normalizedZ A B k p)) := by sorry
+
+/-- C15: full source log-majorization, with endpoints and all prefix lengths. -/
+theorem full_log_majorization : FullLogMajorization := by sorry
+
+/-- C16: tangent inequality for the exact log(1+exp) determinant transfer. -/
+theorem log_one_add_tangent (a b : ℝ) (ha : 0 < a) (hb : 0 < b) :
+    Real.log (1 + a) - Real.log (1 + b) ≤
+      a / (1 + a) * (Real.log a - Real.log b) := by sorry
+
+/-- C17: weak log-majorization already suffices; b need not be sorted. -/
+theorem product_one_add_le {n : ℕ} (a b : Fin n → ℝ)
+    (ha : ∀ i, 0 < a i) (hb : ∀ i, 0 < b i) (hsort : Antitone a)
+    (hprefix : WeakLogMajorized a b) :
+    (∏ i : Fin n, (1 + a i)) ≤ ∏ i : Fin n, (1 + b i) := by sorry
+
+/-- C18: literal complex determinant factorizations; the right sum is not Hermitian. -/
+theorem determinant_normalization {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p : ℝ) :
+    determinantRight A B k p =
+      Matrix.det (spectralPower A k) * Matrix.det (1 + normalizedH A B k p) ∧
+    determinantLeft A B k p =
+      Matrix.det (spectralPower A k) * Matrix.det (1 + normalizedZ A B k p) := by sorry
+
+/-- C19: real and strictly positive determinant semantics for all real exponents. -/
+theorem determinant_reality_positive {n : ℕ} (A B : Mat n)
+    (hA : A.PosDef) (hB : B.PosDef) (k p : ℝ) :
+    (determinantLeft A B k p).im = 0 ∧ (determinantRight A B k p).im = 0 ∧
+    0 < (determinantLeft A B k p).re ∧ 0 < (determinantRight A B k p).re := by sorry
+
+/-- C20: full unchanged original target, with no imported inequality premise. -/
+theorem determinant_comparison : DeterminantComparison := by sorry
+
+end NLA.MI28

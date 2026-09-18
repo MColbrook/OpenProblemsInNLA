@@ -40,7 +40,7 @@
 | [MI-24](MI-24/README.md) | Schatten norm complement involving Lin's positive definite quantity | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](MI-24/problem.pdf) · [TeX](MI-24/problem.tex) |
 | [MI-26](MI-26/README.md) | Concave unitary-orbit subadditivity without monotonicity | **🏆 LEAN VERIFIED** | challenging | interesting to the community | [PDF](MI-26/problem.pdf) · [TeX](MI-26/problem.tex) |
 | [MI-27](MI-27/README.md) | Constant one in the logarithmic commutator inequality | **✅ SOLVED** | challenging | broadly interesting | [PDF](MI-27/problem.pdf) · [TeX](MI-27/problem.tex) |
-| [MI-28](MI-28/README.md) | Ghabries's determinant comparison for arbitrary nonnegative base powers | **✅ SOLVED** | challenging | interesting to specialist | [PDF](MI-28/problem.pdf) · [TeX](MI-28/problem.tex) |
+| [MI-28](MI-28/README.md) | Ghabries's determinant comparison for arbitrary nonnegative base powers | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](MI-28/problem.pdf) · [TeX](MI-28/problem.tex) |
 | [MI-29](MI-29/README.md) | Modulus-order determinant comparison with an arbitrary base power | **🏆 LEAN VERIFIED** | challenging | interesting to specialist | [PDF](MI-29/problem.pdf) · [TeX](MI-29/problem.tex) |
 | [MI-32](MI-32/README.md) | Spectral norms of independent entries with regular moment growth | **🏆 LEAN VERIFIED** | challenging | interesting to the community | [PDF](MI-32/problem.pdf) · [TeX](MI-32/problem.tex) |
 
