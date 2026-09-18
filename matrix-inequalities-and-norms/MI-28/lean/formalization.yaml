@@ -140,14 +140,14 @@
       {
         "method": "agent",
         "framework": "OpenAI Codex",
-        "tool_setup": "Statement-first independent review and frozen Challenge/Definitions; pinned Mathlib and kernel-mode LeanCert; root alone ran one local Lean process with --threads=1 --memory=4096. Fresh nonauthor proof reviewers read all sources and authenticated saved evidence without compiling.",
+        "tool_setup": "Statement-first independent review and frozen Challenge/Definitions; pinned Mathlib and kernel-mode LeanCert; root alone ran one local Lean process with --threads=1 --memory=4096. Fresh nonauthor proof reviewers read all sources and authenticated saved evidence without compiling. Actual non-root Linux run 35374928604 separately passed Comparator/default-kernel/sandbox checks and rejection controls at proof commit aae2941f9a7f1e28b8010f5216574d93bdc72181.",
         "prompting_notes": "Preserve the original complex target and all real parameter endpoints, minimize computation, preserve authorship, and distinguish actual local compilation from final Linux Comparator."
       }
     ],
     "notes": "This documentation task ran only filesystem reads/writes and read-only Python validation. No model-version, total-runtime or cost estimate is invented."
   },
   "status": {
-    "scope": "Complete original MI28 proof source, canonical direct Lean entrypoint and independent package review passed; final Linux acceptance pending.",
+    "scope": "Complete original MI28 target; actual local and non-root Linux immutable proof verification passed",
     "sorry_count": 0,
     "sorry_in_definitions": 0,
     "axioms": [
@@ -170,7 +170,7 @@
         "literature_dependencies": [],
         "contract": "C01",
         "source_sha256": "9791ae34546ebd1f2971a85095b51e45d67d84b6f20d655be2888d59d151878f",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.product_modulus_square",
@@ -185,7 +185,7 @@
         "literature_dependencies": [],
         "contract": "C02",
         "source_sha256": "c97fb33af4c248e35f20c78ccf3cc93998239d6e31cf18328649f1ae0bf230a4",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.swapped_modulus",
@@ -200,7 +200,7 @@
         "literature_dependencies": [],
         "contract": "C03",
         "source_sha256": "cbec34bb644a8984193780b7c775c31493e9a8128b09e6c9662ded31ad342f4a",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.normalized_posdef",
@@ -215,7 +215,7 @@
         "literature_dependencies": [],
         "contract": "C04",
         "source_sha256": "6d9d49c5e8d01cc76e203ce006134c20fd862260a0a853314003da1162ab9af7",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.furuta_boundary",
@@ -230,7 +230,7 @@
         "literature_dependencies": [],
         "contract": "C05",
         "source_sha256": "4da0fc90a44e43bbd6bf019cb7df0da10d347933d68bc8f6a1982d1072bfa273",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.furuta_admissible",
@@ -245,7 +245,7 @@
         "literature_dependencies": [],
         "contract": "C06",
         "source_sha256": "fe24d8d1aeb83764531b32c6f7544567b82aba7198058d34f89dbf38244b9453",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.lower_power_implication",
@@ -260,7 +260,7 @@
         "literature_dependencies": [],
         "contract": "C07",
         "source_sha256": "3a5d245fad5e72c1ddbbeed50aedb1cad0c2de54a3257ce899330d2401a9f962",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.higher_power_implication",
@@ -275,7 +275,7 @@
         "literature_dependencies": [],
         "contract": "C08",
         "source_sha256": "421dbba7d9d02ada62468d9c98cb86a12aa45c4ec0d5eb5bc9ce6da0c4c4d633",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.swap_implication",
@@ -290,7 +290,7 @@
         "literature_dependencies": [],
         "contract": "C09",
         "source_sha256": "f9326a50ff5d72c3e2a037821d1c160040db42463d7a7ebd1983dafd37389d12",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.small_base_implication",
@@ -305,7 +305,7 @@
         "literature_dependencies": [],
         "contract": "C10",
         "source_sha256": "126be652fc59567c09ca20d8272a5123d0da134b8b731adca0222491806a6521",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.small_base_norm",
@@ -320,7 +320,7 @@
         "literature_dependencies": [],
         "contract": "C11",
         "source_sha256": "303984ad5ed7d582bfb76455fc0d47658e0aeee028a582f0e50570a1573ac6f6",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.large_base_norm",
@@ -335,7 +335,7 @@
         "literature_dependencies": [],
         "contract": "C12",
         "source_sha256": "1b70f6bb8f6c73b37e838480c494c1368c20921e65144b6519fb5ded65dbe4b7",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.normalized_homogeneity",
@@ -350,7 +350,7 @@
         "literature_dependencies": [],
         "contract": "C13",
         "source_sha256": "d9f1abc9d40860965ff32a3207536e0184aeb8dc164bfb57da64d0f31f06f5b6",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.normalized_norm_continuous",
@@ -365,7 +365,7 @@
         "literature_dependencies": [],
         "contract": "C14",
         "source_sha256": "e09d08c3d0fb5842cc7fc0b825a4e2ec91b1fceb06f5d20ea407e6cf68be8282",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.full_log_majorization",
@@ -380,7 +380,7 @@
         "literature_dependencies": [],
         "contract": "C15",
         "source_sha256": "848d554c112e0dda23f58f768fad678016e410b49ce16601b2f87f659a5c51c7",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.log_one_add_tangent",
@@ -395,7 +395,7 @@
         "literature_dependencies": [],
         "contract": "C16",
         "source_sha256": "11ea586fe5d5ba3761e97dff2ba5443ebf28b2cf5c3898476c06392985a59913",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.product_one_add_le",
@@ -410,7 +410,7 @@
         "literature_dependencies": [],
         "contract": "C17",
         "source_sha256": "0c545c9b225048fe4def7bd1ed48ddebbe47c8079f988d33e11555a99f253721",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.determinant_normalization",
@@ -425,7 +425,7 @@
         "literature_dependencies": [],
         "contract": "C18",
         "source_sha256": "93731db222e0a0e0100df96fc67ffd4acb8a5f14f9dc645552883c90dccd57b8",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.determinant_reality_positive",
@@ -440,7 +440,7 @@
         "literature_dependencies": [],
         "contract": "C19",
         "source_sha256": "92f4f7dad8218d58534dab289548ee1cdfc33f3e5b24015a6086d54d84682d26",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       },
       {
         "declaration": "NLA.MI28.determinant_comparison",
@@ -455,7 +455,7 @@
         "literature_dependencies": [],
         "contract": "C20",
         "source_sha256": "94f32ed8321bc7558cc31be3e815fef02d7e60b281fced0d122ff1c7358a9bea",
-        "verification_status": "Root local365 proof/trust and local366 type/body diagnostics passed; two nonauthor source reviews approved; GitHub Comparator NOT RUN."
+        "verification_status": "PASS actual Linux run 35374928604 at aae2941f9a7f1e28b8010f5216574d93bdc72181: Comparator, default kernel, standard axioms and per-project controls."
       }
     ],
     "local_proof": {
@@ -489,16 +489,16 @@
       "certificate_consumption": "PASS; actual final body reaches C01 and both generated strict-bound integer-check certificates.",
       "Comparator": "NOT RUN"
     },
-    "final_Linux_status": "NOT RUN",
+    "final_Linux_status": "PASS at immutable proof commit; later publication checks pending",
     "accepted_count_change": 0,
-    "whole_problem_verified": false,
-    "completed_original_targets": 0
+    "whole_problem_verified": true,
+    "completed_original_targets": 1
   },
   "fidelity": {
     "divergences": "The complete canonical positive-definite target and all parameter ranges are unchanged. Literal complex matrices, CFC powers/modulus, Euclidean operator norms and decreasing eigenvalues are used. The large-base range is proved internally through positive-product order instead of assuming the cited Ghabries et al. comparison; unbounded Furuta is proved by symbolic induction. At k=0, continuity of each compound norm replaces informal ordered-eigenvalue continuity. Weighted AM\u2013GM and finite prefix summation prove the scalar determinant comparison instead of invoking a general majorization characterization. The optional positive-semidefinite extension in the analytic remark is outside the canonical positive-definite target. No literature axiom or unproved implication is a final premise. Frozen draft comments are preserved as historical bytes; current status is in STATE.json."
   },
   "review": {
-    "status": "agent-reviewed (complete proof-source and package scopes; Linux pending)",
+    "status": "agent-reviewed complete source and package; actual immutable proof-commit Linux verification passed",
     "reviewers": [
       "/root/mi28_final_referee1 \u2014 independent nonauthor final proof reviewer",
       "/root/mi28_final_referee2 \u2014 independent nonauthor final proof reviewer"
@@ -515,7 +515,8 @@
     "formal_target": "NLA.MI28.DeterminantComparison",
     "formal_proof": "NLA.MI28.determinant_comparison",
     "stronger_result": "NLA.MI28.full_log_majorization",
-    "extra_substantive_hypotheses": false
+    "extra_substantive_hypotheses": false,
+    "status": "All 20 exact contracts matched by actual Linux Comparator at the immutable proof revision"
   },
   "acknowledgements": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology. Preserve the original problem and prior results of Ghabries, Abbas, Mourad and Assi; Furuta, Fujii and Tanahashi background; all unchanged MI24/MI22/MF06 source credits; the separate MF05 numerical idiom; and Mathlib/LeanCert authorship. Schiffer and Forsythe supply workflow patterns, not mathematical premises.",
   "verification": {
@@ -556,7 +557,18 @@
       "record": "reviews/INDEX.json"
     },
     "GitHub_Comparator": {
-      "status": "not run for MI28"
+      "status": "passed",
+      "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+      "run": 35374928604,
+      "job": 105697400237,
+      "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+      "input_count": 282,
+      "exports": 20,
+      "evidence": "verification/linux-2026-09-18/README.md",
+      "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+      "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+      "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
     },
     "count_change": 0,
     "package_preflight": {
@@ -582,6 +594,7 @@
       "standalone_Lake_build": false,
       "Comparator": false,
       "matched_selected_axiom_reports": 20
-    }
+    },
+    "publication_status": "Immutable full proof verified; publication and PR checks pending"
   }
 }

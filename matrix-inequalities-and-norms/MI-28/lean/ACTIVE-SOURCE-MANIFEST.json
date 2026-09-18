@@ -56,5 +56,5 @@
   "local_run": 365,
   "contracts": 20,
   "frozen_boundary_sha256": "17079587bae0da7cff932554052c296ee1b6be3817be973307957dada818eea4",
-  "Linux_Comparator": "not run"
+  "Linux_Comparator": "PASS at immutable proof commit aae2941f9a7f1e28b8010f5216574d93bdc72181, run 35374928604; subsequent documentation checkout separate"
 }

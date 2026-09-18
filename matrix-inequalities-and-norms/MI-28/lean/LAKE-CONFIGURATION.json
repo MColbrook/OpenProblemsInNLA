@@ -76,7 +76,7 @@
     "sha256": "c3d69e746679337f8334f21324eb9c85d2a5cb1de5bc8d9d2dc098eb62616cef"
   },
   "standalone_Lake_build_executed": false,
-  "Linux_Comparator_executed": false,
+  "Linux_Comparator_executed": true,
   "future_reproduction": "After integration into the standalone project, lake build Solution (or the default lake build) targets the proof. This command is documented, not executed by this task.",
   "canonical_direct_Lean_entrypoint": {
     "result": "PASS",
@@ -88,5 +88,19 @@
     "standalone_Lake_build": false,
     "Comparator": false,
     "matched_selected_axiom_reports": 20
+  },
+  "Linux_Comparator": {
+    "status": "passed",
+    "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+    "run": 35374928604,
+    "job": 105697400237,
+    "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+    "input_count": 282,
+    "exports": 20,
+    "evidence": "verification/linux-2026-09-18/README.md",
+    "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+    "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+    "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+    "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
   }
 }

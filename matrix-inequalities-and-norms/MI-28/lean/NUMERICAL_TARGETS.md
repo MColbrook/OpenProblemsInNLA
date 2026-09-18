@@ -49,5 +49,4 @@ the credited MI24 proof pattern and the numerical setup reuses the MF05 idiom.
 
 This is the current execution description. The earlier unimplemented numerical
 plan remains unchanged in `history/statement-draft/NUMERICAL_TARGETS.md`.
-Reading or authenticating these receipts does not rerun Lean. Final GitHub
-Comparator/kernel/sandbox controls remain **NOT RUN**.
+Reading or authenticating these receipts does not rerun Lean. The later actual Linux run 35374928604 passed Comparator/default-kernel/sandbox checks at immutable proof commit `aae2941f9a7f1e28b8010f5216574d93bdc72181`. Its [retained evidence](verification/linux-2026-09-18/README.md) is distinct from local diagnostics and source review.

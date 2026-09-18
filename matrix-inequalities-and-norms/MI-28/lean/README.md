@@ -42,16 +42,19 @@ single fixed half-exponent certificate and its actual consumer.
   replays are receipt checks, not additional Lean runs. See
   [REVIEW-INDEX.md](REVIEW-INDEX.md).
 - **Fresh canonical entrypoint: PASS.** Direct local Lean compilation of
-  `Solution.lean` passed with all20 axiom/trust reports. It reused51 authenticated
+  `Solution.lean` passed with all 20 axiom/trust reports. It reused 51 authenticated
   dependency outputs under the same one-thread/4096 MiB limits; this was not a
   standalone Lake build. See the [actual receipt](verification/canonical-local/RECEIPT.json).
 - **Independent publication-metadata review: PASS.** The nonauthor reviewer
   authenticated the exact package, evidence relocations, schema, links and
   privacy. The [review](reviews/package-referee2/MANIFEST.json) is separate
   from both full proof-source reviews and from Lean execution.
-- **Standalone Lake build and final non-root Linux GitHub
-  Comparator/default-kernel/sandbox/negative controls: pending.** The GitHub
-  checks are **NOT RUN**. Neither accepted count is increased here.
+- **Actual non-root Linux proof verification: PASS.** [Run 35374928604](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237)
+  checked literal proof commit `aae2941f9a7f1e28b8010f5216574d93bdc72181` and all 20 contracts with real
+  Comparator, default-kernel replay, permitted axioms and per-project controls.
+  [Retained evidence](verification/linux-2026-09-18/README.md) binds all 282 inputs.
+  Later publication and PR merge checkouts remain separate acceptance gates.
+  No new mathematical resolution is counted.
 
 Exact hashes, origins and limitations are recorded in [STATE.json](STATE.json)
 and the integrated verification evidence. The metadata is a schema-v0.4
@@ -83,8 +86,7 @@ it is not imported by `Solution`. The frozen challenge, definitions and
 `comparator.json` remain byte-identical to the statement-first local350 gate.
 Comparator must run in its genuine separate non-root Linux environment using
 the pinned comparator contract; an ordinary Lake build or local type dump is
-not that check. Exact tested commit and run details must be added after the
-actual GitHub execution.
+not that check. The immutable proof commit and actual Linux execution are recorded above; later publication and PR merge commits are checked separately.
 
 **Historical records:** the frozen source comments saying “UNELABORATED” or
 that no implementation exists describe the earlier statement draft. They are
@@ -123,4 +125,4 @@ deleted, unpublished or differently named work, nor continuously updated heads.
 See [PUBLIC-SCOPE.json](PUBLIC-SCOPE.json) for scope and the partial-audit
 resumption history. This docs task performed no network or Git operations.
 
-The [coordinator publication preflight](verification/MI28-ROOT-PACKAGE-PREFLIGHT.json) passed2131 package/schema/identity/privacy checks. All mathematical source, frozen statement and dependency-pin bytes remain unchanged.
+The [coordinator publication preflight](verification/MI28-ROOT-PACKAGE-PREFLIGHT.json) passed 2131 package/schema/identity/privacy checks. All mathematical source, frozen statement and dependency-pin bytes remain unchanged.

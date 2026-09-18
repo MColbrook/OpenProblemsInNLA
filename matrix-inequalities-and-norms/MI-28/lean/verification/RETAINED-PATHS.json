@@ -459,9 +459,9 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/README.md",
     "source_sha256": "4c9dfe1d6558e70ca29440644390531445c93e64cfb1a96d93c6a4d83f364fc2",
     "destination": "README.md",
-    "sha256": "c93996f97e3a4ab4398e261fc837590453c4ea7aabc672a9b5ca326dd215fab8",
+    "sha256": "4172b9ae0cb83c2e096c75cc24c398d99ba1588d664eb585b4a3ccc79d4f167f",
     "encoding": "identity",
-    "decoded_sha256": "c93996f97e3a4ab4398e261fc837590453c4ea7aabc672a9b5ca326dd215fab8",
+    "decoded_sha256": "4172b9ae0cb83c2e096c75cc24c398d99ba1588d664eb585b4a3ccc79d4f167f",
     "derived_current_status_update": true,
     "original_destination_sha256": "4c9dfe1d6558e70ca29440644390531445c93e64cfb1a96d93c6a4d83f364fc2"
   },
@@ -469,9 +469,9 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/formalization.yaml",
     "source_sha256": "e15794280b14ed39e70ae45eb9b6f46ce6e23e3056aec780eae5b4b1193facb7",
     "destination": "formalization.yaml",
-    "sha256": "a93cfb451dd01f89695889e481a5bb4a5fd357b86881128961f952d942a7b6c6",
+    "sha256": "af4db411334544ff310b01d08bdd1e3be5fccb3a872bab67b28d228f32328499",
     "encoding": "identity",
-    "decoded_sha256": "a93cfb451dd01f89695889e481a5bb4a5fd357b86881128961f952d942a7b6c6",
+    "decoded_sha256": "af4db411334544ff310b01d08bdd1e3be5fccb3a872bab67b28d228f32328499",
     "derived_current_status_update": true,
     "original_destination_sha256": "e15794280b14ed39e70ae45eb9b6f46ce6e23e3056aec780eae5b4b1193facb7"
   },
@@ -479,9 +479,11 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/NUMERICAL_TARGETS.md",
     "source_sha256": "438f966a7409778a378aaa986c4bee184734cba7158d0eb2d92b952c9236a832",
     "destination": "NUMERICAL_TARGETS.md",
-    "sha256": "438f966a7409778a378aaa986c4bee184734cba7158d0eb2d92b952c9236a832",
+    "sha256": "6d6c4a3442d79f25094b1ca547714dcaf62740b7a4684db9a6de09e68dde224b",
     "encoding": "identity",
-    "decoded_sha256": "438f966a7409778a378aaa986c4bee184734cba7158d0eb2d92b952c9236a832"
+    "decoded_sha256": "6d6c4a3442d79f25094b1ca547714dcaf62740b7a4684db9a6de09e68dde224b",
+    "original_destination_sha256": "438f966a7409778a378aaa986c4bee184734cba7158d0eb2d92b952c9236a832",
+    "derived_current_status_update": true
   },
   {
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/IMPLEMENTATION-MAP.json",
@@ -511,9 +513,9 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/REVIEW-INDEX.json",
     "source_sha256": "70a9c564a203014d985a5c2f0e3de9059437ce46d73558c6b8c68a8347db240d",
     "destination": "REVIEW-INDEX.json",
-    "sha256": "e5865bc105da824edd1c42427e81e0a78c95a7ff660622dfa82a8ed9298b0d6c",
+    "sha256": "cc66eda83cd63ab84631f5b9055d0aeff0d24b8639967b913cd0973073dda062",
     "encoding": "identity",
-    "decoded_sha256": "e5865bc105da824edd1c42427e81e0a78c95a7ff660622dfa82a8ed9298b0d6c",
+    "decoded_sha256": "cc66eda83cd63ab84631f5b9055d0aeff0d24b8639967b913cd0973073dda062",
     "original_destination_sha256": "70a9c564a203014d985a5c2f0e3de9059437ce46d73558c6b8c68a8347db240d",
     "derived_current_status_update": true
   },
@@ -521,17 +523,19 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/REVIEW-INDEX.md",
     "source_sha256": "3e0a2d590c7db3acefa05b3993937e95e9ab753b987b3b6982a90aff08925a16",
     "destination": "REVIEW-INDEX.md",
-    "sha256": "3e0a2d590c7db3acefa05b3993937e95e9ab753b987b3b6982a90aff08925a16",
+    "sha256": "3936fc1f9072f6552e4dd802bd0d04bcba7f0695a9e50f33e74e7e69642af11d",
     "encoding": "identity",
-    "decoded_sha256": "3e0a2d590c7db3acefa05b3993937e95e9ab753b987b3b6982a90aff08925a16"
+    "decoded_sha256": "3936fc1f9072f6552e4dd802bd0d04bcba7f0695a9e50f33e74e7e69642af11d",
+    "original_destination_sha256": "3e0a2d590c7db3acefa05b3993937e95e9ab753b987b3b6982a90aff08925a16",
+    "derived_current_status_update": true
   },
   {
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/STATE.json",
     "source_sha256": "95ac8303f42491fb9265d9d8a66ee85cbca30cca70f68e03d2e5c79fab21c162",
     "destination": "STATE.json",
-    "sha256": "aa7c1e674e31782fb7b24a1f486a4b393aebb164b4a4489842f0fabb88589fc7",
+    "sha256": "33a991e74b6f4e393a9776b1c967a1698fa8422205320bcaedca0ee5be49d612",
     "encoding": "identity",
-    "decoded_sha256": "aa7c1e674e31782fb7b24a1f486a4b393aebb164b4a4489842f0fabb88589fc7",
+    "decoded_sha256": "33a991e74b6f4e393a9776b1c967a1698fa8422205320bcaedca0ee5be49d612",
     "derived_current_status_update": true,
     "original_destination_sha256": "95ac8303f42491fb9265d9d8a66ee85cbca30cca70f68e03d2e5c79fab21c162"
   },
@@ -547,9 +551,9 @@
     "source": "/private/tmp/nla-lean-next-20260915/MI28-publication-docs-draft/LAKE-CONFIGURATION.json",
     "source_sha256": "f490a79c71ac07aa8d5e7a07ec38589f929eb4a3fcffeff560fb9f7a370788d9",
     "destination": "LAKE-CONFIGURATION.json",
-    "sha256": "5a8e62875fb4c3373fe2a16189aa2481cf5492e8ac41d03f00d668b31393b979",
+    "sha256": "5fc8c86dafc8802b7bd9d13d4b0b0eb8ec8a7087b90713b84c7c7115d6492ea4",
     "encoding": "identity",
-    "decoded_sha256": "5a8e62875fb4c3373fe2a16189aa2481cf5492e8ac41d03f00d668b31393b979",
+    "decoded_sha256": "5fc8c86dafc8802b7bd9d13d4b0b0eb8ec8a7087b90713b84c7c7115d6492ea4",
     "original_destination_sha256": "f490a79c71ac07aa8d5e7a07ec38589f929eb4a3fcffeff560fb9f7a370788d9",
     "derived_current_status_update": true
   },

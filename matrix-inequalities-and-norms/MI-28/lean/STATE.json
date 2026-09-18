@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-09-18T17:32:09.778145+00:00",
+  "as_of_utc": "2026-09-18T17:51:30.167583+00:00",
   "problem": "MI-28",
   "original_math_status": "Solved before this formalization",
   "purpose": "New formalization of the existing complete original target; no new mathematical resolution.",
@@ -51,9 +51,22 @@
   ],
   "publication_documentation": "Independent package review PASS and coordinator preflight PASS; unchanged mathematical source.",
   "standalone_Lake_execution": "NOT RUN",
-  "GitHub_Comparator": "NOT RUN",
-  "GitHub_default_kernel_sandbox_negative_controls": "NOT RUN",
-  "publication": "Proof source package prepared for push and actual Linux checks; no accepted verification claim.",
+  "GitHub_Comparator": {
+    "status": "passed",
+    "published_commit": "aae2941f9a7f1e28b8010f5216574d93bdc72181",
+    "run": 35374928604,
+    "job": 105697400237,
+    "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35374928604/job/105697400237",
+    "input_count": 282,
+    "exports": 20,
+    "evidence": "verification/linux-2026-09-18/README.md",
+    "root_audit": "verification/linux-2026-09-18/ROOT-AUDIT.json",
+    "artifact_sha256": "eaea74d157f596d4b50cd659c31cd23614a572313910d50c4f41f8869bf8da27",
+    "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+    "scope": "Actual immutable proof-commit execution; later publication and PR merge checkouts checked separately"
+  },
+  "GitHub_default_kernel_sandbox_negative_controls": "PASS at aae2941f9a7f1e28b8010f5216574d93bdc72181, run 35374928604",
+  "publication": "Immutable proof verified; publication and PR checks pending",
   "accepted_Lean_verification_count_change": 0,
   "new_mathematical_resolution_count_change": 0,
   "historical_labels": "Frozen source draft comments and archived plans record the pre-implementation stage; they do not describe current proof status.",
@@ -75,5 +88,12 @@
     "record": "reviews/package-referee2/MANIFEST.json",
     "manifest_sha256": "aa162b74002e60643ae3660079d26bb3047ce423dd740e05f386fcdbed4ecd4a",
     "scope": "Independent nonauthor package/metadata audit of the exact reviewed package; not another Lean or Comparator execution."
-  }
+  },
+  "canonical_status": "Lean verified",
+  "remaining_gates": [
+    "Permanent-ID and catalog checks",
+    "Rendered PDF visual review",
+    "Final publication commit Linux run",
+    "Upstream PR and merge-checkout Linux run"
+  ]
 }

@@ -20,7 +20,10 @@ author an independent final proof reviewer.
 
 Both final reports require the publication default target `Solution`, the root
 manifest name `NLAMI28`, and clear historical labeling of the frozen draft
-comments and plans. This documentation draft prepares those corrections while
-preserving every proof and frozen statement byte. Independent review of the
-integrated package and metadata remains pending. The final non-root Linux
-Comparator, default-kernel, sandbox and negative-control checks are **NOT RUN**.
+comments and plans. The publication package implements those corrections while
+preserving every proof and frozen statement byte. Its separate independent
+[package review](reviews/package-referee2/REPORT.md) passed, followed by root's
+actual canonical direct-Lean compilation. The [actual non-root Linux run
+35374928604](verification/linux-2026-09-18/README.md) then passed at the immutable proof
+commit. These are distinct scopes and executions. Publication and PR merge
+checkouts are checked separately; agent reviews are not human peer review.
