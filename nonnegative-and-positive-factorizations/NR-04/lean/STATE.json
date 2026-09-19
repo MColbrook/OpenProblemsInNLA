@@ -89,5 +89,12 @@
     "target_branch": "main",
     "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/304",
     "immutable_proof_commit": "f488b0cfe2175e5e50d439c5a4115accc4b07b6d"
+  },
+  "public_metadata_privacy": {
+    "record": "verification/PRIVACY-REDACTIONS.json",
+    "scope": "Public GitHub API metadata replaces the contributor personal-email string. Original authenticated responses remain unpublished locally; the record binds original and public derivative hashes. Proof, contracts and checker are unchanged.",
+    "history_cleanup": "The final publication commit was amended to remove personal-email copies from the PR branch history.",
+    "amended_head": "7ae6b7d26e1f78be351ef274510b66bb5615ff48",
+    "fork_history_check_note": "Fork push workflows 35433856497 and 35433856523 stopped before proof verification because the replaced before-commit was absent in the fresh checkout. A normal follow-up metadata commit restores the ordinary ancestry comparison; these failures do not indicate a Lean or Comparator rejection."
   }
 }
