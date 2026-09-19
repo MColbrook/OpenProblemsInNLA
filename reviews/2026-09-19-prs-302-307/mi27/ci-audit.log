@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS_EXTERNAL_CI_SOURCE_AND_CONTROL_AUDIT",
+  "head": "1f05b398013d44beb7d756cbfbbfd3e875c8deab",
+  "run_id": 35438172834,
+  "artifact_id": 10583511156,
+  "artifact_archive_sha256_from_root": "50394e222707d250e7e1fc58dc80b8f6e59fb475b324a3414fd59f36e045b094",
+  "ci_repository_commit": "f21284e35e8156a9761c1f2ccd49d579f42fb69a",
+  "matched_project_inputs": 284,
+  "all_inputs_matched": true,
+  "matched_theorems": 20,
+  "controls": [
+    "comparator.log",
+    "comparator-controls.log",
+    "kernel-controls.log",
+    "sandbox.log",
+    "negative-sorry.log",
+    "negative-native.log"
+  ],
+  "log_sha256": {
+    "comparator.log": "68ff9610b668373b8d24932689cbb1d8d45075382f88e30eaddbfd9483593c67",
+    "comparator-controls.log": "4b6a9f9a0a81b383a77bc7b84a734cb20e6f43ff75e9b89bfde4f9504b82ec37",
+    "kernel-controls.log": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+    "sandbox.log": "2e2a7b1ed7dfef7423395a22d99f6fd3db38f38d44d3f11a8ae92cb1426b6353",
+    "negative-sorry.log": "de8874197d424ad697fe79bd757b6161d9553393ad925a99ae21bd01c6d946cf",
+    "negative-native.log": "8704e7daf9eee2c8071f62b9c18f19480411bf88ec0f8da1dbdc2cfe306ddc39"
+  },
+  "semantic_review": "Separate source review in REPORT.md; CI does not perform semantic review."
+}

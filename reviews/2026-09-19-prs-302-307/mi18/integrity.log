@@ -1,0 +1,6 @@
+mi18_order4_audited 24 manifest entries PASS
+mi18_order4 7 manifest entries PASS
+All original package files byte-identical in audited package
+Published PDFs byte-identical to audited package
+Recomputed 90 tensor characteristic-polynomial records identical to committed records
+Manifest check includes unchanged tensor_six_block_data.json after rerun

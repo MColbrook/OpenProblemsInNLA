@@ -1,0 +1,25 @@
+PASS: changed_valid_psd_entry rejected by check_certificate.py
+      FAIL: central_positive[0]: polynomial coefficient mismatch
+PASS: changed_valid_psd_entry rejected by audit_verify.py
+      FAIL: central_positive: whole-polynomial identity failed
+PASS: wrong_denominator rejected by check_certificate.py
+      FAIL: central_positive[0]: polynomial coefficient mismatch
+PASS: wrong_denominator rejected by audit_verify.py
+      FAIL: central_positive: whole-polynomial identity failed
+PASS: negative_diagonal rejected by check_certificate.py
+      FAIL: central_positive[0].block[0]: negative exact Schur pivot -1/4
+PASS: negative_diagonal rejected by audit_verify.py
+      FAIL: central_positive/0/0: negative coefficient in det(X*I+M)
+PASS: asymmetric_matrix rejected by check_certificate.py
+      FAIL: central_positive[0].block[0]: not symmetric
+PASS: asymmetric_matrix rejected by audit_verify.py
+      FAIL: central_positive/0/0: matrix is not real symmetric
+PASS: missing_coefficient rejected by check_certificate.py
+      FAIL: Expected six Bernstein coefficients
+PASS: missing_coefficient rejected by audit_verify.py
+      FAIL: wrong coefficient count
+PASS: wrong_interval rejected by check_certificate.py
+      FAIL: Incorrect interval
+PASS: wrong_interval rejected by audit_verify.py
+      FAIL: wrong interval
+ALL 12 CORRUPTION-REJECTION TESTS PASSED.

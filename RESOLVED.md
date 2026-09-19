@@ -38,6 +38,25 @@ The passing scopes include AC-01's small-CW upper bound (also relevant to AC-04)
 
 ## Resolved catalog entries
 
+### ✅ MF-08 — unrestricted static output-feedback stabilization
+
+**Affirmative literature resolution, reviewed 18 September 2026.**
+Johan Löfberg, [Theorem 1.1 of arXiv:2609.16886v1](https://arxiv.org/html/2609.16886v1),
+and Amir Ali Ahmadi, Abraar Chaudhry, Ijay Narang and Yukai Tang,
+[Theorem 1 of arXiv:2609.20636v1](https://arxiv.org/html/2609.20636v1), establish
+NP-hardness on integer subclasses with unrestricted real gains and strict
+Hurwitz stability. Integer inputs embed directly in the original rational-input
+language, settling [MF-08](matrix-functions-and-stability/MF-08/README.md).
+
+The v1 preprints passed a separate informal Codex-agent review of their
+continuous-time arguments and exact target correspondence. No external human
+peer review, journal acceptance or Lean verification is asserted.
+[Reference note and review scope](references/stepaniants-mf08-2026-09-18/README.md).
+**Literature application and curation:** George Stepaniants, Department of
+Computing and Mathematical Sciences, California Institute of Technology.
+The NP-hardness theorems remain credited to the cited paper authors.
+
+
 ### 🏆 MF-24 — a negative resolution of uniform boundedness — Georg Maierhofer
 
 **Solved negatively, 15 September 2026.** Georg Maierhofer (University of Cambridge), [manuscript dated 14 September 2026](references/mf24-counterexample/proof.pdf), **Theorem 1 and equation (15)**, gives super-identical-pseudospectral weighted shifts of order $`(m+1)^2`$ and a common polynomial with norm ratio at least $`(4/5)\sqrt m`$. This refutes the dimension-independent bound in the [retained original target](matrix-functions-and-stability/MF-24/README.md).
@@ -171,8 +190,10 @@ The argument uses the published Frenkel/Hirche–Tomamichel relative-entropy ide
 A [separate informal Codex AI-agent audit](references/holden-mi27-2026-09-12/verification/independent-review.md)
 passed the complete proof; this is not external human peer review or formal verification.
 AI assistance and the earlier partial findings in [PR #186](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/186)
-are disclosed. No Lean check or priority claim is made. All IDs, paths and original targets are preserved.
+are disclosed. That September 12 review did not perform Lean verification; the later formal verification is recorded below. No priority claim is made. All IDs, paths and original targets are preserved.
 
+
+**Lean verified, 19 September 2026.** George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, supplied the [complete twenty-contract formalization](matrix-inequalities-and-norms/MI-27/lean/README.md), with substantial Codex assistance. The unchanged all-dimensions, complex positive definite coefficient-one target uses the actual spectral logarithm and full trace norm; its relative-entropy identity and derivative are proved internally. [Linux run 35438172834](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35438172834) passed Comparator, default-kernel replay, standard-axiom, sandbox and rejection controls at merge checkout `f21284e35e8156a9761c1f2ccd49d579f42fb69a`, with all 284 project inputs identical to immutable PR head `1f05b398013d44beb7d756cbfbbfd3e875c8deab`. Two independent nonauthor source reviews and the [retained execution audit](matrix-inequalities-and-norms/MI-27/lean/verification/linux-2026-09-19/README.md) support promotion. Holden retains mathematical credit; his separate sharpness theorem is outside the formal scope.
 
 ### RA-05 — all-exponent coreset lower bounds — Sidney Holden
 
@@ -221,11 +242,13 @@ The [separate independent Codex AI-agent informal audit](references/holden-ra04-
 The full proof passed a separate [independent Codex AI-agent informal audit](references/holden-pf04-2026-09-13/independent-review.md), and exact auxiliary checks passed on rerun. AI assistance is disclosed; no external human peer review, formal verification or historical priority certification is asserted. No Lean verification was performed. Original ID, path, target and prior-source attribution are preserved.
 
 
-### ✅ PF-03 — rational completely positive boundary factors — Sidney Holden
+### 🏆 PF-03 — rational completely positive boundary factors — Sidney Holden; Lean formalization by George Stepaniants
 
 **Solved negatively, 13 September 2026.** Sidney Holden (Center for Computational Biology, Flatiron Institute, Simons Foundation) constructs an order-444 strictly positive integer completely positive boundary matrix of rank and real cp-rank seven with no rational nonnegative factor of any finite width. [Theorem 1.1 and Sections 2-6](references/holden-pf03-2026-09-13/proof/PF03_counterexample.pdf) settle the full universal target by counterexample, without asserting a minimal order or resolving every smaller fixed order. [Retained original target](nonnegative-and-positive-factorizations/PF-03/README.md) · [Source, certificates, authorship and verified affiliation](references/holden-pf03-2026-09-13/README.md).
 
-The complete proof and exact certificates passed a separate [independent informal Codex AI-agent audit](references/holden-pf03-2026-09-13/independent-review.md), including all 54,264 candidate facet supports, 98,790 matrix entries, 18 unit tests and a reviewer-written arithmetic check. No Lean verification, external human peer review or priority claim is asserted. The original ID, canonical path, statement and historical-source credit remain intact.
+The complete proof and exact certificates passed a separate [independent informal Codex AI-agent audit](references/holden-pf03-2026-09-13/independent-review.md), including all 54,264 candidate facet supports, 98,790 matrix entries, 18 unit tests and a reviewer-written arithmetic check. That informal audit did not assert Lean verification, external human peer review or priority; the separate formal result is recorded below. The original ID, canonical path, statement and historical-source credit remain intact.
+
+**Lean verified — 19 September 2026 (UTC). Formalization: George Stepaniants**, Department of Computing and Mathematical Sciences, California Institute of Technology. The [immutable 25-contract Lean proof](https://github.com/sgstepaniants/OpenProblemsInNLA/tree/9625a76780183040186664100e24e0e90d8fcc7d/nonnegative-and-positive-factorizations/PF-03/lean) negates the complete original universal question, with arbitrary positive finite factor width and boundary in the real symmetric-matrix space. It uses Holden's seed and a proved rational halfspace representation, with five zero rows; the explicit order-444, strict-entry-positivity and minimal cp-rank claims are outside its formal scope. Local serial Lean, two independent nonauthor AI-agent proof reviews, the actual [fork Linux run](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35424055075), and the actual [upstream Linux run](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35424087832) passed. [Scope, reproduction and retained evidence](nonnegative-and-positive-factorizations/PF-03/README.md#lean-proof-and-verification-evidence). This is one formalized existing resolution, with mathematical authorship preserved.
 
 ### PF-01 — further structural partial results — Sidney Holden
 
@@ -904,7 +927,10 @@ These three entries remain in the open count.
 
 **Lean verified, 17 September 2026.** **George Stepaniants**, Department of Computing and Mathematical Sciences, California Institute of Technology, contributed the [complete 35-target formalization](nonnegative-and-positive-factorizations/NM-04/lean/README.md). The [immutable proof](https://github.com/sgstepaniants/OpenProblemsInNLA/blob/21ed3545a8b4784303e9cc0473879eb33ef4d813/nonnegative-and-positive-factorizations/NM-04/lean/Solution.lean) and [actual Linux run 35276203784](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35276203784/job/105387449317) cover every positive rectangular dimension, scaling existence and uniqueness, all four transition signs, and empty or singular minors. Comparator, default-kernel replay, standard transitive axioms and per-project controls passed. Two independent nonauthor final source reviews support the [canonical evidence](nonnegative-and-positive-factorizations/NM-04/README.md#lean-proof-and-verification-evidence). Matthew J. Colbrook retains mathematical solution credit. AI assistance and review scopes are disclosed.
 
-**NR-04 (Solved).** The nine-point matrix $D_{ij}=(i-j)^2$ has nonnegative rank seven, so no exact six-term nonnegative factorization exists. A polygon-contact argument applied to both factors, together with Sylvester's rank inequality, proves the lower bound; an explicit seven-term integer factorization proves the upper bound.  [Complete proof](references/colbrook-factorization-2026-09-11/manuscripts/NR-04_nine_point_distance.pdf), Theorem 1, with Theorem 4 for the lower bound; [review](references/colbrook-factorization-2026-09-11/verification/reviews/NR-04-review.md).
+**NR-04 (Lean verified; formalization by George Stepaniants).** The nine-point matrix $D_{ij}=(i-j)^2$ has nonnegative rank seven, so no exact six-term nonnegative factorization exists. A polygon-contact argument applied to both factors, together with Sylvester's rank inequality, proves the lower bound; an explicit seven-term integer factorization proves the upper bound.  [Complete proof](references/colbrook-factorization-2026-09-11/manuscripts/NR-04_nine_point_distance.pdf), Theorem 1, with Theorem 4 for the lower bound; [review](references/colbrook-factorization-2026-09-11/verification/reviews/NR-04-review.md).
+
+**Lean verified — 19 September 2026 (UTC). Formalization: George Stepaniants**, Department of Computing and Mathematical Sciences, California Institute of Technology. The real nine-point squared distance matrix has nonnegative rank seven, including arbitrary real factors and zero or degenerate factor columns. Local serial Lean, two independent nonauthor final AI-agent reviews, and the actual [sgstepaniants run 35431159955](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431159955) and [ajt60gaibb run 35431201248](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35431201248) passed all 15 contracts, default-kernel/Comparator checks, standard axioms and real sandbox/rejection controls. [Scope, reproduction and retained evidence](nonnegative-and-positive-factorizations/NR-04/README.md#lean-proof-and-verification-evidence). Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge retains mathematical authorship. This formalizes one existing original target.
+
 
 **PF-02 (Solved).** A strictly positive integer $6\times6$ matrix has ordinary rank six and real positive semidefinite rank three, while its minimal-factor congruence quotient is disconnected. A continuous congruence-invariant orientation takes opposite signs on two explicit factorizations, proving actual disconnectedness in the required quotient topology. Further constructions cover every factor size $k\ge3$, including strictly positive rational examples by a nonquantitative perturbation argument.  [Complete proof](references/colbrook-factorization-2026-09-11/manuscripts/PF-02_disconnected_orbits.pdf), Theorem 1; Theorem 4 extends the counterexamples to every factor size; [review](references/colbrook-factorization-2026-09-11/verification/reviews/PF-02-review.md).
 

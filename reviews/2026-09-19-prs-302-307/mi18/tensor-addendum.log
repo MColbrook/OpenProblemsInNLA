@@ -1,0 +1,10 @@
+PASS: symbol merge to (4, 0, 0), fibre size 12, all 24 permutations.
+PASS: symbol merge to (3, 1, 0), fibre size 3, all 24 permutations.
+PASS: symbol merge to (2, 2, 0), fibre size 2, all 24 permutations.
+PASS: k=0, scale=1, det(X I + scale Z_k) = X**9*(X + 4)**2*(X + 20)
+PASS: k=1, scale=10, det(X I + scale Z_k) = X**3*(X + 2)*(X + 4)**2*(X + 12)*(X + 30)**2*(X + 150)*(X**2 + 16*X + 16)
+PASS: k=2, scale=160, det(X I + scale Z_k) = (X + 52)*(X + 104)**2*(X + 312)*(X**2 + 380*X + 4380)**2*(X**2 + 416*X + 10816)*(X**2 + 1780*X + 37980)
+PASS: k=3, scale=160, det(X I + scale Z_k) = (X + 65)*(X + 129)**2*(X + 379)*(X**2 + 320*X + 8475)**2*(X**2 + 508*X + 17641)*(X**2 + 1300*X + 67275)
+PASS: k=4, scale=1280, det(X I + scale Z_k) = (X + 593)*(X + 1159)**2*(X + 3261)*(X**2 + 2290*X + 723135)**2*(X**2 + 4420*X + 1570297)*(X**2 + 7430*X + 4824855)
+PASS: k=5, scale=512, det(X I + scale Z_k) = (X + 261)*(X + 497)**2*(X + 1309)*(X**2 + 862*X + 133721)**2*(X**2 + 1806*X + 320901)*(X**2 + 2054*X + 659393)
+ALL SIX-BLOCK ADDENDUM CHECKS PASSED.
