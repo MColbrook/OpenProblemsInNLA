@@ -20,7 +20,9 @@ No blocking mathematical or proof-trust finding was identified in the recorded
 review scopes. The catalog summaries conflict or silently retain stale totals
 when independent status changes are merged. They were regenerated from the
 canonical pages after permanent-ID validation. All 217 IDs, their paths, and
-their original mathematical targets are preserved.
+their original mathematical targets are preserved. The final independent
+[integration safety audit](integration-safety.md) also binds unchanged proof
+inputs and shared trust infrastructure, and checks every generated index.
 
 MF-08's two versioned arXiv theorems quantify over unrestricted real gains and
 strict Hurwitz stability, with integer input matrices and polynomial-time

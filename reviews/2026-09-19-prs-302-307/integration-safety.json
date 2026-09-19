@@ -1,0 +1,2462 @@
+{
+  "integration_head": "6dacc128cab2b861250a2701d4800a5d3e291324",
+  "base": "7e05bfbf",
+  "git_status": "",
+  "registry_entries": 217,
+  "registry_unchanged": true,
+  "canonical_pages": [
+    {
+      "id": "AA-01",
+      "path": "arithmetic-and-complexity/AA-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "AC-01",
+      "path": "arithmetic-and-complexity/AC-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-02",
+      "path": "arithmetic-and-complexity/AC-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-03",
+      "path": "arithmetic-and-complexity/AC-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-04",
+      "path": "arithmetic-and-complexity/AC-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-05",
+      "path": "arithmetic-and-complexity/AC-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-06",
+      "path": "arithmetic-and-complexity/AC-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-07",
+      "path": "arithmetic-and-complexity/AC-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AC-08",
+      "path": "arithmetic-and-complexity/AC-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AC-09",
+      "path": "arithmetic-and-complexity/AC-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AC-10",
+      "path": "arithmetic-and-complexity/AC-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "AC-11",
+      "path": "arithmetic-and-complexity/AC-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AC-12",
+      "path": "arithmetic-and-complexity/AC-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AC-13",
+      "path": "arithmetic-and-complexity/AC-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "AV-01",
+      "path": "intervals-and-absolute-value-equations/AV-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "AV-02",
+      "path": "intervals-and-absolute-value-equations/AV-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "AV-03",
+      "path": "intervals-and-absolute-value-equations/AV-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-01",
+      "path": "frames-and-matrix-designs/FR-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "FR-02",
+      "path": "frames-and-matrix-designs/FR-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-03",
+      "path": "frames-and-matrix-designs/FR-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "FR-04",
+      "path": "frames-and-matrix-designs/FR-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "FR-05",
+      "path": "frames-and-matrix-designs/FR-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "FR-06",
+      "path": "frames-and-matrix-designs/FR-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "FR-07",
+      "path": "frames-and-matrix-designs/FR-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-08",
+      "path": "frames-and-matrix-designs/FR-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-09",
+      "path": "frames-and-matrix-designs/FR-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-10",
+      "path": "frames-and-matrix-designs/FR-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-11",
+      "path": "frames-and-matrix-designs/FR-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IE-01",
+      "path": "linear-systems-and-elimination/IE-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Original problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-02",
+      "path": "linear-systems-and-elimination/IE-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-03",
+      "path": "linear-systems-and-elimination/IE-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IE-04",
+      "path": "linear-systems-and-elimination/IE-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-05",
+      "path": "linear-systems-and-elimination/IE-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-06",
+      "path": "linear-systems-and-elimination/IE-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IE-07",
+      "path": "eigenvalues-and-inverse-problems/IE-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IE-08",
+      "path": "eigenvalues-and-inverse-problems/IE-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-10",
+      "path": "eigenvalues-and-inverse-problems/IE-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-11",
+      "path": "linear-systems-and-elimination/IE-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IE-12",
+      "path": "linear-systems-and-elimination/IE-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-13",
+      "path": "linear-systems-and-elimination/IE-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-14",
+      "path": "linear-systems-and-elimination/IE-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-15",
+      "path": "linear-systems-and-elimination/IE-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-16",
+      "path": "linear-systems-and-elimination/IE-16/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-17",
+      "path": "linear-systems-and-elimination/IE-17/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-18",
+      "path": "linear-systems-and-elimination/IE-18/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-19",
+      "path": "linear-systems-and-elimination/IE-19/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-20",
+      "path": "linear-systems-and-elimination/IE-20/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IE-21",
+      "path": "linear-systems-and-elimination/IE-21/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-22",
+      "path": "linear-systems-and-elimination/IE-22/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-23",
+      "path": "linear-systems-and-elimination/IE-23/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-24",
+      "path": "linear-systems-and-elimination/IE-24/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IE-25",
+      "path": "linear-systems-and-elimination/IE-25/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IS-01",
+      "path": "eigenvalues-and-inverse-problems/IS-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "IS-02",
+      "path": "eigenvalues-and-inverse-problems/IS-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IS-03",
+      "path": "eigenvalues-and-inverse-problems/IS-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IS-04",
+      "path": "eigenvalues-and-inverse-problems/IS-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IS-05",
+      "path": "eigenvalues-and-inverse-problems/IS-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IV-01",
+      "path": "intervals-and-absolute-value-equations/IV-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IV-02",
+      "path": "intervals-and-absolute-value-equations/IV-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IV-03",
+      "path": "intervals-and-absolute-value-equations/IV-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IV-04",
+      "path": "intervals-and-absolute-value-equations/IV-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IV-05",
+      "path": "intervals-and-absolute-value-equations/IV-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IV-06",
+      "path": "intervals-and-absolute-value-equations/IV-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "KE-01",
+      "path": "linear-systems-and-elimination/KE-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "KE-02",
+      "path": "eigenvalues-and-inverse-problems/KE-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "KE-03",
+      "path": "eigenvalues-and-inverse-problems/KE-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "KE-04",
+      "path": "eigenvalues-and-inverse-problems/KE-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Original problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "KE-05",
+      "path": "randomized-and-low-rank-approximation/KE-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MD-01",
+      "path": "matrix-discrepancy-and-optimization/MD-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MD-02",
+      "path": "matrix-discrepancy-and-optimization/MD-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MD-03",
+      "path": "matrix-discrepancy-and-optimization/MD-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MD-04",
+      "path": "matrix-discrepancy-and-optimization/MD-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MD-05",
+      "path": "matrix-discrepancy-and-optimization/MD-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MD-06",
+      "path": "matrix-discrepancy-and-optimization/MD-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MF-01",
+      "path": "matrix-functions-and-stability/MF-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-02",
+      "path": "matrix-functions-and-stability/MF-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-03",
+      "path": "matrix-functions-and-stability/MF-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MF-04",
+      "path": "matrix-functions-and-stability/MF-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-05",
+      "path": "matrix-functions-and-stability/MF-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-06",
+      "path": "matrix-functions-and-stability/MF-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-07",
+      "path": "matrix-functions-and-stability/MF-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-08",
+      "path": "matrix-functions-and-stability/MF-08/README.md",
+      "unchanged_page": false,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MF-09",
+      "path": "matrix-functions-and-stability/MF-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-10",
+      "path": "matrix-functions-and-stability/MF-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-11",
+      "path": "matrix-functions-and-stability/MF-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-12",
+      "path": "matrix-functions-and-stability/MF-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-13",
+      "path": "matrix-functions-and-stability/MF-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-14",
+      "path": "matrix-functions-and-stability/MF-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-15",
+      "path": "matrix-functions-and-stability/MF-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-16",
+      "path": "matrix-functions-and-stability/MF-16/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-17",
+      "path": "matrix-functions-and-stability/MF-17/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MF-18",
+      "path": "matrix-functions-and-stability/MF-18/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MF-19",
+      "path": "matrix-functions-and-stability/MF-19/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-20",
+      "path": "matrix-functions-and-stability/MF-20/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-21",
+      "path": "matrix-functions-and-stability/MF-21/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MF-22",
+      "path": "matrix-functions-and-stability/MF-22/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-01",
+      "path": "matrix-inequalities-and-norms/MI-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-02",
+      "path": "matrix-inequalities-and-norms/MI-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-03",
+      "path": "matrix-inequalities-and-norms/MI-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-04",
+      "path": "matrix-inequalities-and-norms/MI-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-05",
+      "path": "matrix-inequalities-and-norms/MI-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-06",
+      "path": "matrix-inequalities-and-norms/MI-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-07",
+      "path": "matrix-inequalities-and-norms/MI-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-08",
+      "path": "matrix-inequalities-and-norms/MI-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-09",
+      "path": "matrix-inequalities-and-norms/MI-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-10",
+      "path": "matrix-inequalities-and-norms/MI-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-11",
+      "path": "matrix-inequalities-and-norms/MI-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-12",
+      "path": "matrix-inequalities-and-norms/MI-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-13",
+      "path": "matrix-inequalities-and-norms/MI-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-14",
+      "path": "matrix-inequalities-and-norms/MI-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-15",
+      "path": "matrix-inequalities-and-norms/MI-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-16",
+      "path": "matrix-inequalities-and-norms/MI-16/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "MI-17",
+      "path": "matrix-inequalities-and-norms/MI-17/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-18",
+      "path": "matrix-inequalities-and-norms/MI-18/README.md",
+      "unchanged_page": false,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-19",
+      "path": "matrix-inequalities-and-norms/MI-19/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-20",
+      "path": "matrix-inequalities-and-norms/MI-20/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "MI-21",
+      "path": "matrix-inequalities-and-norms/MI-21/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-22",
+      "path": "matrix-inequalities-and-norms/MI-22/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-23",
+      "path": "matrix-inequalities-and-norms/MI-23/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-24",
+      "path": "matrix-inequalities-and-norms/MI-24/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-25",
+      "path": "matrix-inequalities-and-norms/MI-25/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-26",
+      "path": "matrix-inequalities-and-norms/MI-26/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-27",
+      "path": "matrix-inequalities-and-norms/MI-27/README.md",
+      "unchanged_page": false,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-28",
+      "path": "matrix-inequalities-and-norms/MI-28/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-29",
+      "path": "matrix-inequalities-and-norms/MI-29/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "NM-01",
+      "path": "nonnegative-and-positive-factorizations/NM-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "NM-03",
+      "path": "nonnegative-and-positive-factorizations/NM-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "NM-04",
+      "path": "nonnegative-and-positive-factorizations/NM-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "NR-01",
+      "path": "nonnegative-and-positive-factorizations/NR-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "NR-02",
+      "path": "nonnegative-and-positive-factorizations/NR-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "NR-03",
+      "path": "nonnegative-and-positive-factorizations/NR-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "NR-04",
+      "path": "nonnegative-and-positive-factorizations/NR-04/README.md",
+      "unchanged_page": false,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "PF-01",
+      "path": "nonnegative-and-positive-factorizations/PF-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "PF-02",
+      "path": "nonnegative-and-positive-factorizations/PF-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "PF-03",
+      "path": "nonnegative-and-positive-factorizations/PF-03/README.md",
+      "unchanged_page": false,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "PF-04",
+      "path": "nonnegative-and-positive-factorizations/PF-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "PF-05",
+      "path": "nonnegative-and-positive-factorizations/PF-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-01",
+      "path": "randomized-and-low-rank-approximation/RA-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RA-02",
+      "path": "randomized-and-low-rank-approximation/RA-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-03",
+      "path": "randomized-and-low-rank-approximation/RA-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-04",
+      "path": "randomized-and-low-rank-approximation/RA-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-05",
+      "path": "randomized-and-low-rank-approximation/RA-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-06",
+      "path": "randomized-and-low-rank-approximation/RA-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "RA-07",
+      "path": "randomized-and-low-rank-approximation/RA-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-08",
+      "path": "randomized-and-low-rank-approximation/RA-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-09",
+      "path": "randomized-and-low-rank-approximation/RA-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-10",
+      "path": "randomized-and-low-rank-approximation/RA-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-11",
+      "path": "randomized-and-low-rank-approximation/RA-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RA-12",
+      "path": "randomized-and-low-rank-approximation/RA-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-13",
+      "path": "randomized-and-low-rank-approximation/RA-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-14",
+      "path": "randomized-and-low-rank-approximation/RA-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RA-15",
+      "path": "randomized-and-low-rank-approximation/RA-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RA-16",
+      "path": "randomized-and-low-rank-approximation/RA-16/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "RA-17",
+      "path": "randomized-and-low-rank-approximation/RA-17/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RA-18",
+      "path": "randomized-and-low-rank-approximation/RA-18/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RE-01",
+      "path": "randomized-and-low-rank-approximation/RE-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "RE-02",
+      "path": "randomized-and-low-rank-approximation/RE-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "RE-03",
+      "path": "randomized-and-low-rank-approximation/RE-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "RE-05",
+      "path": "randomized-and-low-rank-approximation/RE-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RE-06",
+      "path": "randomized-and-low-rank-approximation/RE-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "SF-01",
+      "path": "matrix-functions-and-stability/SF-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "SP-01",
+      "path": "eigenvalues-and-inverse-problems/SP-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "SP-02",
+      "path": "eigenvalues-and-inverse-problems/SP-02/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "SP-03",
+      "path": "eigenvalues-and-inverse-problems/SP-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "SP-04",
+      "path": "eigenvalues-and-inverse-problems/SP-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Original problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "SP-05",
+      "path": "eigenvalues-and-inverse-problems/SP-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "SP-06",
+      "path": "eigenvalues-and-inverse-problems/SP-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "SP-07",
+      "path": "eigenvalues-and-inverse-problems/SP-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "SP-08",
+      "path": "eigenvalues-and-inverse-problems/SP-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "SP-09",
+      "path": "eigenvalues-and-inverse-problems/SP-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "SP-10",
+      "path": "eigenvalues-and-inverse-problems/SP-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "SP-11",
+      "path": "eigenvalues-and-inverse-problems/SP-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "SP-12",
+      "path": "eigenvalues-and-inverse-problems/SP-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-01",
+      "path": "randomized-and-low-rank-approximation/TR-01/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "TR-03",
+      "path": "randomized-and-low-rank-approximation/TR-03/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-04",
+      "path": "tensor-computations/TR-04/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-05",
+      "path": "tensor-computations/TR-05/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-06",
+      "path": "tensor-computations/TR-06/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-07",
+      "path": "randomized-and-low-rank-approximation/TR-07/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-08",
+      "path": "randomized-and-low-rank-approximation/TR-08/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-09",
+      "path": "tensor-computations/TR-09/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "TR-10",
+      "path": "tensor-computations/TR-10/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-11",
+      "path": "tensor-computations/TR-11/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-12",
+      "path": "tensor-computations/TR-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-13",
+      "path": "tensor-computations/TR-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-14",
+      "path": "tensor-computations/TR-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-15",
+      "path": "tensor-computations/TR-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "TR-16",
+      "path": "tensor-computations/TR-16/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "TR-17",
+      "path": "tensor-computations/TR-17/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-18",
+      "path": "tensor-computations/TR-18/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-19",
+      "path": "tensor-computations/TR-19/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-20",
+      "path": "tensor-computations/TR-20/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-21",
+      "path": "tensor-computations/TR-21/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-22",
+      "path": "tensor-computations/TR-22/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "TR-23",
+      "path": "tensor-computations/TR-23/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "TR-24",
+      "path": "tensor-computations/TR-24/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Open"
+    },
+    {
+      "id": "TR-25",
+      "path": "tensor-computations/TR-25/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-26",
+      "path": "tensor-computations/TR-26/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-27",
+      "path": "tensor-computations/TR-27/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "TR-28",
+      "path": "tensor-computations/TR-28/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-29",
+      "path": "tensor-computations/TR-29/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-30",
+      "path": "tensor-computations/TR-30/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "TR-31",
+      "path": "tensor-computations/TR-31/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "FR-12",
+      "path": "frames-and-matrix-designs/FR-12/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "IE-26",
+      "path": "linear-systems-and-elimination/IE-26/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "IE-27",
+      "path": "linear-systems-and-elimination/IE-27/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "IE-28",
+      "path": "linear-systems-and-elimination/IE-28/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-23",
+      "path": "matrix-functions-and-stability/MF-23/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MF-24",
+      "path": "matrix-functions-and-stability/MF-24/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "MI-30",
+      "path": "matrix-inequalities-and-norms/MI-30/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-31",
+      "path": "matrix-inequalities-and-norms/MI-31/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "MI-32",
+      "path": "matrix-inequalities-and-norms/MI-32/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "RA-19",
+      "path": "randomized-and-low-rank-approximation/RA-19/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "RA-20",
+      "path": "randomized-and-low-rank-approximation/RA-20/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    },
+    {
+      "id": "SP-13",
+      "path": "eigenvalues-and-inverse-problems/SP-13/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Solved"
+    },
+    {
+      "id": "SP-14",
+      "path": "eigenvalues-and-inverse-problems/SP-14/README.md",
+      "unchanged_page": true,
+      "target_sections": [],
+      "target_unchanged": true,
+      "status": "Partially resolved"
+    },
+    {
+      "id": "SP-15",
+      "path": "eigenvalues-and-inverse-problems/SP-15/README.md",
+      "unchanged_page": true,
+      "target_sections": [
+        "Context and notation",
+        "Problem statement"
+      ],
+      "target_unchanged": true,
+      "status": "Lean verified"
+    }
+  ],
+  "counts": {
+    "Lean verified": 62,
+    "Open": 41,
+    "Partially resolved": 70,
+    "Solved": 44
+  },
+  "open_targets": 111,
+  "proof_projects": [
+    {
+      "id": "PF-03",
+      "pr_ref": "origin/pr-audit-303",
+      "ref_head": "1cb23f48ef0a24cf8316d72c88e1d09a5ca68cdd",
+      "source_contract_pin_file_count": 77,
+      "files_sha256": {
+        "nonnegative-and-positive-factorizations/PF-03/lean/Challenge.lean": "63593ee0937a0ab2a9032646a38630b1a159e721902fc51929b84335110b2d55",
+        "nonnegative-and-positive-factorizations/PF-03/lean/IMPLEMENTATION-MAP.json": "1116f9349cbf3b292a4e8a090125a2eb3285451614e0fae823143e39ebbbe551",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CPBoundary.lean": "6c224e5027ea84b10a3052dfb3371edca02ef21ca8af6cd9daedb6f536c9c32c",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeCoordinates.lean": "bd01f70b7499bdda7449c3dc30cec4292e496096419d964df2a2dce3cc84f742",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeCrossQuadratics.lean": "d3693105e27ea42e4a19ca40e6a73b2c8ef657ee389e6607b251e4620b67d6be",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeFunctional.lean": "948d3a93087c5dd1cb8b929a407b02454f8f21ce9ffe3f5351c4a4c65848757e",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeLocalQuadratics.lean": "8c860d4538548286ff5b9b82adc61be65e15c2aace78baabb5d6bd707209f028",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeNumericalAlgebra.lean": "ec2b1cd1714aca7c3fca6e0ac2b8c830769ce1966176de428fdb28cd6f0c4553",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConePointed.lean": "ec9a803ca1128c68f791724c86bc18abcdc338334721fa66f20f73b8dbb42528",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeQuadraticAlgebra.lean": "46677d9fae0f108c6f6d87e0b9e045e01ba889f38a6839901bc75fbecf6c601f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeQuadraticZeros.lean": "9fe42be6818d6a545a69344d7beb4f6e7a9394bc0c853c515659f50eb0d35680",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/ConeRationalZeros.lean": "1e425069d67c651d2733ea6c905367928bf015b446c1fd7517a6fbf91aa968a8",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/Counterexample.lean": "bff8769121f1ebac22c3591b4192f27a3df6220e6d5e7eefe9a2907bfea0b140",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeCertificate.lean": "e05832d1d453456781a94f04582e9e628dd695f16443225b36c58ebceb013291",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns0.lean": "42fbc0d3767386da47b4eb810e492fbd7d5618b04f3713724e25feb50ad7b510",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns1.lean": "5eed3ac277fb952aca1b3861a5e1f4acfe1a6008ab36c63a244daaaea4649fa8",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns2.lean": "92d65ce461fd36812cd014ba5db8132575893fd5b7aed18641da07ea884056bd",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns3.lean": "195c475b1741031d337dbb0be04e82b2d5aaeb10f5d22317e8846e4741b6e7ae",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns4.lean": "2cbff1154ed26bbd8c366415a88f3f37e6834249909a19f3246323997549cafc",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CrossConeSigns5.lean": "c3219577b228ed4906fcf5e7d80c664ca61c999b54421a2f7411dd392bf26f5f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CubicArithmetic.lean": "5f71a962eafbc5b2b6b22c0f3338e1f057ccd6e2b0b91256ee1e260436da4eb1",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CubicFiniteArithmetic.lean": "25cbd0120d23490c7dcc040bf84fb6565538b4f0b2ccc6e1d6ae23892f8f7eeb",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CubicIndependence.lean": "a86ea26664384dbed86113d6f3125d78db6c682d7ceccd12fe5dbed61f4e2a68",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/CubicLowerBounds.lean": "1115d780514262bdceef0b0ec6f230979762a6922d459500e79d5d22dfd92a82",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/Definitions.lean": "71bee5513dc9fd591dc35d4543471e29e54f95c146e52febd37396438ceccb98",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/FourierMotzkin.lean": "db2d260a6667ddcbae33f8427af02aaf1d815b7a19a59dec510c2738ddac4a21",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/GramTransport.lean": "eebccb5a06bd52d8620c2cb17b79ddd0b6f5aeb47ebac6c5004350c1f06cf3ef",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/LocalQuadraticKernel.lean": "55053cfb4f7891e9f00acdd024d2dd8021f703432020ae6ee52b79190a3ca698",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/NoRationalFactor.lean": "3f19f8769c6c0de23656e2d71a686c98d445bf6d4a15376b8a8dbbca25c434f9",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/PaddedFactor.lean": "6e2e5ba3367d19be7e0ef24c7e9bd1dd8fd87ccefcf584e08f8119bcacb7302f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/PointedHalfspaces.lean": "b71bd7fc4f3f4068c6ccb69f46848fc550ba7a2b666ed8eb5a81808702e4c233",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/PositiveSlice.lean": "b46a0013011564358361c1d6a2505a44743e64b44a40e65a92816f18ea4773c9",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock0.lean": "8a5d65accc178627fa0d4a182f6dc7e3a9da390882421593361c44fa1c47803a",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock1.lean": "54cc386070d6cee22f6af2c324b298c221a8cee695859f5bd510e5bf6d898205",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock2.lean": "c1194bf9ac0e6ab4260a8bc76cc05d990a40f3642d690933dc791a11ae4b147f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock3.lean": "9f270f27e9660575d9903f15f606989e7e5948a910098b720a681dfa3abc9638",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock4.lean": "f0057692b8fefa627a65a3fdd2615fbe7236f0930173c17fc11ecba0200a0693",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock5.lean": "8b50865a489a3379c1457e2fb8ba80d0e56caded80e60823a0ca670c4a848fe7",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorBlock6.lean": "753ebe082026babb40d159e8b7a3f3a2192fc182890db13fa2f97143f57d5013",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorCache.lean": "2606e2642463614397f1f6c9006b0b7282c1a0cd3886320f19ea5a2a24f08fd5",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/QuadraticGeneratorCertificate.lean": "5b63df4b85c439fcc4d92fc598eb1e39e3a952362ba984d2216109bc3fdea431",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/RationalConeHalfspaces.lean": "5d82ff6fd347f117af9f67ddcd0b5231f87b549aabc674c0e57b1cb0dc4882af",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/RationalProjection.lean": "7c26c6fca2abeac5dd498a06ecd64665f1427846b1d660c064a9f6456e879e41",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/RationalRay.lean": "ee1bce52264623a605b24f1ef6ec4f32ff1511d817097d8beaea364b02445b30",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/RawData.lean": "6c2aadd80f167fd15fb28543d1578ca4a64a16a090ab02660d23f46e993ea02d",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/RootCertificate.lean": "59dfa9ab6abb980e037da024b2140089607cfe4c9d57f57c5d441cb82939ee12",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalAlgebra.lean": "8a361e11b019c1774a147cd5dbdfb1c0695c110dace3a13660808fca5fbc0694",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData.lean": "75195319c1320694675d1c652cd84cf5400925d327f3a6100baefb2d909d170f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData0.lean": "d5703c3a6de86558d36ddec5cb3e64322b9bc74cdf9780c4001ce482e88ddb80",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData1.lean": "a75c414f2c1a3034d0e0330190f3ed970b24a2545faab915e26e79ea7bb00dd8",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData2.lean": "1e2a96aeb2c267f0822dbb0a35c412182826529c7c4cb8c51e20abeb748366fa",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData3.lean": "8ade7122e8e90246152db4c2708391bb90b9c6bd822be61e1356bc671e7de1f5",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData4.lean": "fdf1c6f6fb58fa64577fe1731bd8c5e33c2cd44dba50f7d2c32f29f230bad917",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData5.lean": "c1bd7615d115a172a82aeb5d7de87a72866084a6aed4a4f068a9a3b3f19574f5",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedLocalData6.lean": "c20df74cc55994c441f39b3f44f99a5ca53040916f705bb361a708e8558b138e",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedOrthogonal.lean": "3332d3129207581e723c6de464e4e3b0579b6a225d64ddc6c886d34ed58c271b",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedOrthogonalData.lean": "e1edca5a181ac580b38da12661e000110f0b88bc61162ee3a05be2cbb27747b7",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/SeedQuadraticForm.lean": "45e728ba35c8b28a1a0c7dc3e70890b17208647f73ae63e6ed399e8c705a427a",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/TraceObstruction.lean": "9d457b925df6d2d49af838a1f1f275690fd45282298ec8df108d00bf76976d39",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/TriangleCertificate.lean": "9b6e620ae1db8a596968461a860ae8dfad520e87028ddbe15b2dae83ae872ab4",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NLA/PF03/TriangleRationalData.lean": "a9048ef450959c5c84058ca86c9a5b314449fcb3ffe2046875d3d38f3cc3e52f",
+        "nonnegative-and-positive-factorizations/PF-03/lean/NUMERICAL_TARGETS.md": "c81ccd2389dec24a94dce8701c086bad224ce82a3638ef1d8cb25199b1a398d7",
+        "nonnegative-and-positive-factorizations/PF-03/lean/STATEMENT-FREEZE.json": "1b88f2b06b0c7bc0b6609084147c785213a0faa644027141b2f7e72a1b0ae41a",
+        "nonnegative-and-positive-factorizations/PF-03/lean/Solution.lean": "bc6410c59b42efa2a0f0c605a8648e63f426be35546bdb1350a6f36268267917",
+        "nonnegative-and-positive-factorizations/PF-03/lean/comparator.json": "2080ad692abd44a89cbb4f58864490ee42e543e1adeead31023540e1ee057c53",
+        "nonnegative-and-positive-factorizations/PF-03/lean/lake-manifest.json": "b339bf353231c2178924e42e61d31cda4b51571c43caf67d7e66925cb3a60437",
+        "nonnegative-and-positive-factorizations/PF-03/lean/lakefile.toml": "00b02d74a9354908e57b7ffa4a8b63f8b741b46c9228cdb11e50572dc11ffd2d",
+        "nonnegative-and-positive-factorizations/PF-03/lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/Mathlib-Logic-Equiv-Fin-Basic.lean": "c3470797814c2d81c32c21bfeb6e7ce503e28231a7d38aad665931f3f377bc12",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/Challenge.lean": "63593ee0937a0ab2a9032646a38630b1a159e721902fc51929b84335110b2d55",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/NLA/PF03/Definitions.lean": "71bee5513dc9fd591dc35d4543471e29e54f95c146e52febd37396438ceccb98",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/NLA/PF03/RawData.lean": "6c2aadd80f167fd15fb28543d1578ca4a64a16a090ab02660d23f46e993ea02d",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/NUMERICAL_TARGETS.md": "c81ccd2389dec24a94dce8701c086bad224ce82a3638ef1d8cb25199b1a398d7",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/comparator.json": "2080ad692abd44a89cbb4f58864490ee42e543e1adeead31023540e1ee057c53",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/lake-manifest.json": "b339bf353231c2178924e42e61d31cda4b51571c43caf67d7e66925cb3a60437",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/lakefile.toml": "ee1728c7e7023f8828406a484493bd56b86908dfa36b49c00a274bde84304aed",
+        "nonnegative-and-positive-factorizations/PF-03/lean/reviews/statement-referee2/input-snapshot/candidate/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+      },
+      "all_match": true
+    },
+    {
+      "id": "NR-04",
+      "pr_ref": "origin/pr-audit-304",
+      "ref_head": "dfcba11c2e4f6d53e3603d532c799476f84a7113",
+      "source_contract_pin_file_count": 53,
+      "files_sha256": {
+        "nonnegative-and-positive-factorizations/NR-04/lean/Challenge.lean": "42eaddcff4ce84b263fc6530a01e3a43d492c11360917fa0242ebfee7f9210b4",
+        "nonnegative-and-positive-factorizations/NR-04/lean/IMPLEMENTATION-MAP.json": "e69ecca3264c8db3c27f71eece5361775d71a228d25b3e8fb3d9553541e60d57",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/AffinePlaneCoordinates.lean": "471153213fbc84dce7b6c03752496c884f2a71a69df2ed468cb29d35772287d8",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/AffinePlaneDimension.lean": "2a0e45fd11486c37418d2da94f5a38cc1b1b183711f6973353765819568b053e",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ColumnNormalization.lean": "ba0dbfdd6c641071fe64bdfcc10dfbea1301f3cec3ffecbfc1ca8b4ae68e668e",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ColumnPlaneGridObstruction.lean": "2952003001896405fffef7179351450c45fcf9b56c2e4324bf3c85dfb4c7eb87",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/CrossingComparisonParity.lean": "c73a1a2ef3ce4a54541a5716ec5db708b651701ef6d76c0913c68e5d174d372f",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/CrossingRectangles.lean": "69bac9c9eeb0ee5e87241adcad160ab43f5e39bf0a02ac0e8e09b689c04d6bb6",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/Definitions.lean": "d980b0515c5d91c3a1d0c1863974378e78fd7775efeab4dc835fc6e93cbe276c",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ExceptionalHeightBound.lean": "cb0df1f4660c61081896a25bc07d5800c8b860439f7688db149ad34f9d5a00d2",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ExtremeOrientation.lean": "2693e3ab947ae85aa0a59f20b89de88ced7f51e686f874b00220b8ae8c0fa44a",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ExtremeSlopes.lean": "9a437b5be66362427adbd3b44305374a52ea02ef1e3debf2178652363174c014",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/FactorNormalization.lean": "fa6ae3eb742075e9d7529899a67a74b3a265de083b86c9d06344a57965f84815",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/FinalBounds.lean": "933dec5fba362ce1c5c053c1f3dc21580f721d4e00839ffd8e131d7d6a3afa3d",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/FiniteHeightSlice.lean": "ac9c2899996c5df83222ca182525df26aaacb71594f05331e99c23e05e6220c1",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/FiniteSection.lean": "c43ab072c827d784bf1587231be26bf9c6bd8e8469eca84dd2ecaf234a4c4263",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/FourEndpointCrossingParity.lean": "94fe0cac843ce052ebee82952effc3480cfb263dc0118d5e04e4521c33481149",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/GeneralLowerBound.lean": "01dd8caab75a3103d54a08934f0e21cf98db9bc22abe735d20da130855b0a904",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/HeightCandidateCount.lean": "7061a29e33df9e3226e45903badfc42b85de0688685bb62d91ec5598a5402be5",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/HeightCrossingObstruction.lean": "4fb22e51060f212c49299f5b8b03f7b0914d42e09b60267ba02e4b29c5c4f886",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/IncidenceCount.lean": "343acede9e18c6ee409008f63a2016a0d8e45a889c207e79a4370abcb2687ca8",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/LowRankFactorObstruction.lean": "050bd163f36967f8cca9e91c8142c8df2912655906bcf84463c1f23cdacbd02a",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/NineGridKeyObstruction.lean": "6081186cfb6cf5ccec7e720af13fd0ee5356059143fe0589bcef1678203ed647",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/NineGridPlanarObstruction.lean": "2c143132ee2a8ed81b5a5a32b289de694c15bebf9cd2e8ccdbad7eb591452474",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/Numerical.lean": "f7ee24031c7c105ccfd6b8330e6aabfa6b4d8cd0d295703b209b6aa19e955a8f",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/OrdinaryRank.lean": "1819e28c18d7cae3eb5430bb0ef902bf97f764ac99dd901744c4d7537ad58925",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneCrossingOrientation.lean": "5258b3731ef2601e7090d8b55304b4d4ae979574921561154cdde677e3d08760",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneDeterminants.lean": "18738f241c3a06986fbd48e41b96972a43d8d79a03c145c6fb89ce79b53837ab",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneKeyNormalization.lean": "6d26477e51618521387c2c0f498f51857e1d6677db1e98097a74f1edc7e41322",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneKeyOrientationSigns.lean": "5bf04e1ee6ef9e7e3c0c1e116c747d9bdad40659aa5ae5f2d702ba504e3085fb",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneOrderKey.lean": "e6e1d87768a62441772b78e3cb6bedbce43e2a9eae5ffa09bcd5aad418fd37f9",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneSeparation.lean": "4de67fee3936b0eea7a5efd8d8b05a121cb3b4893093fff89a45b6e49939ae09",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/PlaneShear.lean": "2e97a481c1427abda6a6bc382d4244cbb57a12bd1d462594163afa7313fe9fb3",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/RankFourHeight.lean": "7c6c359af9e08d23fa1d6f7e923a2358860a8423d7c17772e428066a91c5c2cd",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/RectangleParity.lean": "6107a19e96cba75ebd3d7cc4fcbddecac24e8640e69613a0e20504010d5ab0be",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/ReflectionCertificate.lean": "b29a61728729770cd3d8995fb4c1cf34d98574cdcafc0eb6fde80f84ce807bff",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SectionContact.lean": "590afdab099a55b34b998571789f2ede88619794913d3d3d3cd86334bcbb4f84",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SectionLinearAlgebra.lean": "5c4e489c4c22c08f10fd4203bc680930176a397e04036f1256bca1f212af7f98",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SliceRecombination.lean": "d0e91f08c0d08b3f57f263297e13163cfc78b399a28623e4385916589dcfbbc3",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SmallSectionBound.lean": "488ba3ad2ffe2f5142f6bb7e9cb125cc98e4a1a1010d2271364a032f008f83d1",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SmallSectionRankThree.lean": "84ee3ffce80cf963c1b98cd512954f38dba599bf30a38ef0b51aa645c2631169",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NLA/NR04/SylvesterRank.lean": "aece05aeeaadcc067bf49d3266388b26d7ffb084548afe3f58d629a0fabe8a8c",
+        "nonnegative-and-positive-factorizations/NR-04/lean/NUMERICAL_TARGETS.md": "5a758137ec0e9350283e66b5462ca12cf3f2fde1cd58b92ed88b1d668a0aa3cd",
+        "nonnegative-and-positive-factorizations/NR-04/lean/STATEMENT-FREEZE.json": "01f7dbe39b02b4fa64c51f8f04b335dce34e858a67c16d0349bd37c300f528c2",
+        "nonnegative-and-positive-factorizations/NR-04/lean/Solution.lean": "392fb7344c2a6de4fa76e5357d80df1f34b685f71e67cb1cab3a37c3034e6568",
+        "nonnegative-and-positive-factorizations/NR-04/lean/comparator.json": "23fffe05b309033b5d7bd9cfad8b6ff9551433a4bd6fb92564b763e67c282e8b",
+        "nonnegative-and-positive-factorizations/NR-04/lean/lake-manifest.json": "8411142436154e4d989ea14826f7543707903c70c899a29bdcc97a0d748d41a0",
+        "nonnegative-and-positive-factorizations/NR-04/lean/lakefile.toml": "ba3d8078c5166e08178330cbec0ee5f7b5899d01a9a67cb83c5fa27832c52ac2",
+        "nonnegative-and-positive-factorizations/NR-04/lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "nonnegative-and-positive-factorizations/NR-04/lean/verification/linux-2026-09-19/reviewed-verifier-inputs/nonnegative-and-positive-factorizations/NR-04/lean/comparator.json": "23fffe05b309033b5d7bd9cfad8b6ff9551433a4bd6fb92564b763e67c282e8b",
+        "nonnegative-and-positive-factorizations/NR-04/lean/verification/linux-2026-09-19/reviewed-verifier-inputs/nonnegative-and-positive-factorizations/NR-04/lean/lake-manifest.json": "8411142436154e4d989ea14826f7543707903c70c899a29bdcc97a0d748d41a0",
+        "nonnegative-and-positive-factorizations/NR-04/lean/verification/linux-2026-09-19/reviewed-verifier-inputs/nonnegative-and-positive-factorizations/NR-04/lean/lakefile.toml": "ba3d8078c5166e08178330cbec0ee5f7b5899d01a9a67cb83c5fa27832c52ac2",
+        "nonnegative-and-positive-factorizations/NR-04/lean/verification/linux-2026-09-19/reviewed-verifier-inputs/nonnegative-and-positive-factorizations/NR-04/lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+      },
+      "all_match": true
+    },
+    {
+      "id": "MI-27",
+      "pr_ref": "origin/pr-audit-306",
+      "ref_head": "1f05b398013d44beb7d756cbfbbfd3e875c8deab",
+      "source_contract_pin_file_count": 68,
+      "files_sha256": {
+        "matrix-inequalities-and-norms/MI-27/lean/Challenge.lean": "1cacb3aa3088860016b9d121904677d56c6c8e6025de9eeaf262957c2bc0d640",
+        "matrix-inequalities-and-norms/MI-27/lean/IMPLEMENTATION-MAP.json": "cc9cac7bc32bbd1fb910ad5d425281290227bb92dafd2e5d9671e01b024d5a0b",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/Definitions.lean": "d96504d2aa26369299dbf4db7351804859d6ba5d677251cba5f42d7f8c5cdf1c",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/OperatorNorm.lean": "b287ac8435fe7ad1fd9da7b4bb9d7c2a4432bc1fe4dbdbf10e08f41f52c32220",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/PowerScaling.lean": "21856cb596910eb276eb96eec53d6022c844b2743b0f865cc3e093c7ec14d553",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/SpectralPowers.lean": "77c494ec04b502fa351bff9c819fbf2a2af769b39651b9c16713a0194e453b00",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/TraceHolder.lean": "b0197afbe382e0c0bd3ec59db242051b208d99673f88d198cfe1eb3f289ad1ca",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/TraceOverlap.lean": "254fe37a3102bc733eda86fb0503c6137ade4f375f688a920d8d2c7c64bee62f",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI24/TraceSpectral.lean": "31d6d6d85f8681995b9db5015d862b762033107e621d63ae00782578961de504",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/Definitions.lean": "9f1fa10a35305a717ae6d7d3fcbf50eb6fc6912175bb997a197cb68b385cee40",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/EntropyDerivative.lean": "c7259f438e404b70f35e70d632b118e46f81c82e9249942f7c5dc0ca3151f8c0",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/EntropyTrajectory.lean": "160d55d7427af53367226dba647775db9a413a5edcc412db936276a48aeaa5ca",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/FiniteHockeyStick.lean": "7a6d22e4ce2400489dd38c4fe5d1f97d3066865e276530b645e00c64e094ab7e",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/HockeyStickChangeVariables.lean": "c8e9a9fcc9458aa3c6c76176650e4f37641988fc32f0efe51dccc6c061bffc80",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/HockeyStickFlow.lean": "04081ee5cb3819e79c9786d821e3607dd1bb23436dcaa98b1bd421db6e457f7b",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/HockeyStickSubstitution.lean": "516cf0e7059b6bb32e4e4f2e0ff1a39b863f552f54e7259f45fe8968efbda27a",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/IdentityShift.lean": "3997b0a8393f4e2dd27a26d3ba5d2765e1191f7bf797876e8b25c6fe19ef9737",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/IdentityShiftFTC.lean": "44e93c9525e7aafacd6ed97de26f00059970e8ff28896ad405461f00ac9651c7",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/IdentityShiftImproper.lean": "532f3d6615b7ccd2b76b6d89af9509adafeac0ff63456523ec0da1111b6877f7",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/IdentityShiftLimit.lean": "19324b97f1d50e51446943a3c5a6e3fbc6d66e2ccf1015944efe040797e4e34f",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/KernelIntegrals.lean": "28b30f10c77d687de9685cacf17ff55806a61602b90ef5d47d02f6b127820d32",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/LogarithmicCommutator.lean": "5653b30213b581b20915a0fcde191e359245f424cb4a2a1b786462c0484f0bbe",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/LogarithmicCommutatorDual.lean": "2664a2968d57458d7cb74a0764b74381088f9ee8014675f6eb4ce8e27e8ca7dd",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/MixtureBasics.lean": "dc00dff8880d576d4130cc2dd99c3954c674a0bc7dda7c091c32a0f5750816e8",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/MixtureChangeVariables.lean": "b4b8dc184626c05e4cf80173035ccc6b70a806c9e652c9ecd3b688e86f602a62",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/MixturePositivePart.lean": "c4c02950730ba2838f77c97f1d2d106f7e8a46eec8f2d445c74f4e5f19935521",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/MixtureRelativeEntropy.lean": "ae9a2b1ca99f5c890fb7376e1e785d1ce0f0731636e35f1062e87a33fd3cd4ea",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/NegativeCount.lean": "4882ae49e95e65293b29c2f2e47281f39de02ce1d045093eca8f6e55867e7713",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/NegativeCountCongruence.lean": "096c2ba3bededdb8aba944d75020b1e9d58642d5f7cff0979283df987e8b5fb7",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/NegativeCountLayerCake.lean": "55b6e086a519d5d3b2b2b490be37f12afbec37dd4df9b93b5205f9bc690c7391",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/NegativeCountMeasurable.lean": "73038376bf764b2debefb40d85c8f90a9859ae38f2a46e54664c2762487fe92a",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/NegativeWeights.lean": "07673367ef62db0a2f0f1f75c80880b11174093bae6b5eddb3cf2c2d6e7b3599",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/Normalization.lean": "27415a0ee420139f76112b70c0382bd584d8f25978ef3568ca2ad69a7540e59b",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/Numerical.lean": "6f1d7b60b724d1f9b501860947390e88d862fb68921b79450eae16069a72a6b3",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilCount.lean": "b95ec6602fcf4b901881408e6fb1123849158ca65cf0eac8477d00671853a268",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilCountBasic.lean": "4bdfc743010acd0b92b7f0042ecbdee54523f9e3b6194e36c1dcfbff54dcdf8f",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilIntegral.lean": "464cb6d980b55ddcdaec9a81dd8899c922fa0625ae656dc3a8f908debd46faa4",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilScalar.lean": "634fbe10bc3dbe909063126319eeaa84d624573887250cba8a5cbde4bcf981e4",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilTraceLog.lean": "a0f072fbde7e35fcb8493975332ab8fe350199cf4ba86d13adf8781646de8cfa",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PencilTraceLogBasic.lean": "83f228dfeb3347ea50d318e8b4549cfcea1fd3d595d9aacc697b937f1eb3915a",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PositiveCommutator.lean": "9efe0cfaad6aa1a3bb3639cab25638caea5c0fddf59f6c3780756914af6e4b97",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PositivePart.lean": "f80d7437bffef68db964e769616506388d98df9cb71aae439395c38bdf28e009",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PositivePartLipschitz.lean": "ff491f043137651b28db6d25e54616a762083d2540aaadddb66bd56e24295c9a",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/PositiveTrace.lean": "09620ea1716273b5a4a0722de8ea8ee552447be46b91c19509bd62c80784f647",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/RelativeEntropyHockeyStick.lean": "43eb1726ecd45936f6ad5a6db55f9d40f974a6e53ee29280ca87e2f4b97c2594",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/SkewRotation.lean": "0acd1dcafb41b0098685580bc9698bdae8dee02cee8a078b48124f7347236038",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/SpectralSemantics.lean": "c8c3f68fc021dec0bde8ac02f83d58fb3caa5b4152f7c4dabb7205c334cbcc95",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/TraceNormWitness.lean": "4972acdb82e972b5c260811ce38e2fff9174e83f3efe4cf11e15d6e93eab7c99",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/TraceTangent.lean": "b93af13381b49fce74332f8f23ca1c6aac320e55009760a6651fad59bcc9dc4c",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/UniformCutoff.lean": "4c98010b95ff32e4c35c936108e1e39bec18d55dfecaaa74fee19f9efc22c1bb",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/UnitaryConjugation.lean": "d4cc666e04d6f873eeb4538008ac7c90777ef29a262eadad855f7a56514ae68b",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/UnitaryFlow.lean": "b671962044229034a7ca73ecaeb1200666ed44a4a29c8afd895c8aa8622ed08d",
+        "matrix-inequalities-and-norms/MI-27/lean/NLA/MI27/WeightedEntropy.lean": "9a2fdadb244c1254b65cd836967d03048101d7dbe47c73ded79536641695b69e",
+        "matrix-inequalities-and-norms/MI-27/lean/NUMERICAL_TARGETS.md": "2e75d5ba3575cb664a0c1df648305de9ab71b2508b9438e951cb4820ecf90720",
+        "matrix-inequalities-and-norms/MI-27/lean/STATEMENT-FREEZE.json": "77d68efc4834c524a74966f1f34679159ba1c905fd52ef8c5aee95d2ea793f6a",
+        "matrix-inequalities-and-norms/MI-27/lean/Solution.lean": "c6a7e59ce49c1e22fe7d02ed1d3c23737ac702f2dd2621ca51041c115b7f840c",
+        "matrix-inequalities-and-norms/MI-27/lean/comparator.json": "cbab29254bfd9b0038535988049b74df3934ebfa68b80bb579f61a5c347ab324",
+        "matrix-inequalities-and-norms/MI-27/lean/lake-manifest.json": "40b2066ba8b1302e6f72e635069265d872adcb70e701a97cc10b83fb10b93f55",
+        "matrix-inequalities-and-norms/MI-27/lean/lakefile.toml": "34bc76fed492c0b44da6c871c2d553c8c863fc988b9837a5b3980d407bd775a4",
+        "matrix-inequalities-and-norms/MI-27/lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "matrix-inequalities-and-norms/MI-27/lean/reviews/final-referee-b/reviewed-publication-metadata/IMPLEMENTATION-MAP.json": "e8182770558f19d5ea0bdc308c7a9057539a9500a99d2f418183c9234aa21208",
+        "matrix-inequalities-and-norms/MI-27/lean/reviews/final-referee-b/reviewed-publication-metadata/lake-manifest.json": "40b2066ba8b1302e6f72e635069265d872adcb70e701a97cc10b83fb10b93f55",
+        "matrix-inequalities-and-norms/MI-27/lean/source-context/author-plans/MI27-inertia-root-v1/STATEMENT-FREEZE.json": "454ff41fccf507671c8d8ab0c6d067c06c2f4bd91b5de4e6294c75b27bfa6949",
+        "matrix-inequalities-and-norms/MI-27/lean/source-context/helper-statement-reviews/MI27-final-referee-b-preliminary-read/EntropyTrajectory.lean": "160d55d7427af53367226dba647775db9a413a5edcc412db936276a48aeaa5ca",
+        "matrix-inequalities-and-norms/MI-27/lean/source-context/helper-statement-reviews/MI27-final-referee-b-preliminary-read/LogarithmicCommutator.lean": "5653b30213b581b20915a0fcde191e359245f424cb4a2a1b786462c0484f0bbe",
+        "matrix-inequalities-and-norms/MI-27/lean/source-context/helper-statement-reviews/MI27-final-referee-b-preliminary-read/LogarithmicCommutatorDual.lean": "2664a2968d57458d7cb74a0764b74381088f9ee8014675f6eb4ce8e27e8ca7dd",
+        "matrix-inequalities-and-norms/MI-27/lean/verification/type-preflight-118/MI27ChallengeTypes118.lean": "861766ec7c0b29920576c1b5160afc5947f2e903fec62bb689b8e5f3621b1cfd",
+        "matrix-inequalities-and-norms/MI-27/lean/verification/type-preflight-118/MI27SolutionTypes118.lean": "c7b3bb637067a0a3fa278b57ecee3b9de379ba1eb4212cc8cdb32d0a8fd2e95f"
+      },
+      "all_match": true
+    }
+  ],
+  "trusted_files_unchanged": [
+    "tools/lean/HARNESS.md",
+    "tools/lean/LICENSE-APACHE-2.0",
+    "tools/lean/LICENSE-LANDRUN-MIT",
+    "tools/lean/NOTICE.md",
+    "tools/lean/bootstrap.sh",
+    "tools/lean/harness.py",
+    "tools/lean/projects.py",
+    "tools/lean/requirements.txt",
+    "tools/lean/selftest.sh",
+    "tools/lean/source-lock.json",
+    "tools/lean/test_harness.py",
+    "tools/lean/validate_manifest.py",
+    "tools/lean/verify.sh",
+    "docs/lean/README.md",
+    "docs/lean/REVIEW.md",
+    "docs/lean/ci-toolchain/lake-manifest.json",
+    "docs/lean/ci-toolchain/lakefile.toml",
+    "docs/lean/ci-toolchain/lean-toolchain",
+    "docs/lean/reviews/ci-probe-referee.json",
+    "docs/lean/reviews/harness-referee.md",
+    "docs/lean/reviews/workflow-metadata-referee.md",
+    "docs/lean/schema/LICENSE",
+    "docs/lean/schema/README.md",
+    "docs/lean/schema/v0.4.schema.json",
+    "docs/lean/verification/2026-09-12/EVIDENCE-MANIFEST.json",
+    "docs/lean/verification/2026-09-12/OPERATIONAL-REVIEW.md",
+    "docs/lean/verification/2026-09-12/PR-DESCRIPTION.md",
+    "docs/lean/verification/2026-09-12/artifact-metadata.json",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/bootstrap/comparator-build.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/bootstrap/elan.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/bootstrap/landrun-build.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/comparator-controls.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/kernel-controls.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/negative-native.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/negative-sorry.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/result.json",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/sandbox.log",
+    "docs/lean/verification/2026-09-12/artifacts/lean-checker-controls/selftest-20260912T154052Z-4184/user-service.log",
+    "docs/lean/verification/2026-09-12/control-verification.json",
+    "docs/lean/verification/2026-09-12/identity-verification.json",
+    "docs/lean/verification/2026-09-12/lean-checker-controls.zip",
+    "docs/lean/verification/2026-09-12/run-metadata.json",
+    "docs/lean/verification/2026-09-12/run.log",
+    "docs/lean/verification/2026-09-12/source/.github/workflows/lean-verification.yml",
+    "docs/lean/verification/2026-09-12/source/docs/lean/README.md",
+    "docs/lean/verification/2026-09-12/source/docs/lean/REVIEW.md",
+    "docs/lean/verification/2026-09-12/source/forsythe/LICENSE",
+    "docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/PinnedReplayProbe.lean",
+    "docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/comparator_regressions.py",
+    "docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/run_replay.sh",
+    "docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/sandbox_probe.py",
+    "docs/lean/verification/2026-09-12/source/forsythe/scripts/strict_landrun.py",
+    "docs/lean/verification/2026-09-12/source/sandbox_probe_ci.py",
+    "docs/lean/verification/2026-09-12/source/tests/test_lean_verification.py",
+    "docs/lean/verification/2026-09-12/source/tools/lean/HARNESS.md",
+    "docs/lean/verification/2026-09-12/source/tools/lean/LICENSE-APACHE-2.0",
+    "docs/lean/verification/2026-09-12/source/tools/lean/NOTICE.md",
+    "docs/lean/verification/2026-09-12/source/tools/lean/harness.py",
+    "docs/lean/verification/2026-09-12/source/tools/lean/projects.py",
+    "docs/lean/verification/2026-09-12/source/tools/lean/source-lock.json",
+    "docs/lean/verification/2026-09-12/source/tools/lean/test_harness.py",
+    "docs/lean/verification/2026-09-12/source/tools/lean/validate_manifest.py",
+    ".github/workflows/lean-verification.yml",
+    ".github/workflows/problem-ids.yml",
+    "tools/validate_problem_ids.py",
+    "tools/update_catalog.py",
+    "problem_ids.json",
+    "AGENTS.md"
+  ],
+  "generated_indexes_exact": [
+    "linear-systems-and-elimination/README.md",
+    "eigenvalues-and-inverse-problems/README.md",
+    "matrix-functions-and-stability/README.md",
+    "randomized-and-low-rank-approximation/README.md",
+    "tensor-computations/README.md",
+    "nonnegative-and-positive-factorizations/README.md",
+    "matrix-inequalities-and-norms/README.md",
+    "frames-and-matrix-designs/README.md",
+    "matrix-discrepancy-and-optimization/README.md",
+    "arithmetic-and-complexity/README.md",
+    "intervals-and-absolute-value-equations/README.md",
+    "CATALOG.md",
+    "README.md"
+  ],
+  "generator_dry_run_log": "Indexed 217 entries: Lean verified=62, Open=41, Partially resolved=70, Solved=44\n",
+  "no_integration_file_writes": true,
+  "scope": "Read-only identity, mathematical target preservation, source/contract/pin correspondence, unchanged trust infrastructure and exact dry-run catalog checks. Separate PR audits establish mathematical and execution correctness.",
+  "documentation_and_generated_sha256": {
+    "CATALOG.md": "31790d308a8c05b8a748def34ab27c987eab5093926ce27d98a83edebe2f44cf",
+    "README.md": "b030c832f4ef4c66e51d556ab08bd58ca966bcc04decf9968ff9f5d632f3ceb6",
+    "RESOLVED.md": "dd51565519eb39fdc1d409621e683a2630346b7bd3337831e8a475b0d467070e",
+    "arithmetic-and-complexity/README.md": "fea138f3d18bba55e2a83762fa2263ec4a21089d535baf6c94bfbdc9b36fc9aa",
+    "eigenvalues-and-inverse-problems/README.md": "f7eb74b359abd0fb9ae9c1621fb54c77918dbc503e2503c582bddcb5ae61329c",
+    "frames-and-matrix-designs/README.md": "da983d603a0732ed50ed84256146ac3374c59a17770b39bd49339d95314f8200",
+    "intervals-and-absolute-value-equations/README.md": "7fb50bce8380daa6134523704fb511af2d3971eec9d87054efdc8f9600d5b8b1",
+    "linear-systems-and-elimination/README.md": "1487ff5280046946804c5699eaa369a8918d6bb462a7c79f8e59c60a0225b762",
+    "matrix-discrepancy-and-optimization/README.md": "58ce8d9014d5210cf120dea51ea5737b437b5b8d959b03f9cdcf1e11178ca0ed",
+    "matrix-functions-and-stability/MF-08/README.md": "f1be500b7a835ccfdaf00db211fe71e27b0fed4108aaf979e4136c95fd656dfe",
+    "matrix-functions-and-stability/MF-08/problem.pdf": "944f904bb3196920b0f15a06898705ce59627d6c32c63a7a642f549d9e113e2e",
+    "matrix-functions-and-stability/MF-08/problem.tex": "6f822d1063935bc56597b6d32ac4cca09b4c557b03dbc981763e0151186f2a56",
+    "matrix-functions-and-stability/README.md": "4c9b96bbb4154d95690a4fe266c9cf536aa2ca48b2507b2fbfe267a032a5eecc",
+    "matrix-inequalities-and-norms/MI-18/README.md": "76ab00935ba495e883ab6dcc55f2c18ac105d1b74aa418467ba35b0cdde15d28",
+    "matrix-inequalities-and-norms/MI-18/problem.pdf": "093437df3e71cca5aa0daea36b0eeeb7ae5faa1e648133dbef8bb7b31646e9c7",
+    "matrix-inequalities-and-norms/MI-18/problem.tex": "b48b60c3f7962e75fe1747903dd3d67a1acac58ef5a1b361be14512522ad54d4",
+    "matrix-inequalities-and-norms/MI-27/README.md": "c4721add658c30ff1b261c786ec4cdf4b391192aff53aecc50a88d2fa5a6452a",
+    "matrix-inequalities-and-norms/MI-27/problem.pdf": "280c1a9c710d304cbea2b18cf4d246242038fc47ed963a5d9841cf8c9aca8142",
+    "matrix-inequalities-and-norms/MI-27/problem.tex": "1d22c2e3a92680a5cff72b1d69a9924d7cb63e525c691f761f039a9716ef3d26",
+    "matrix-inequalities-and-norms/README.md": "3d7e2e7b85389fccab6cd430b865868d5239664e5a4a6f528f0bf73a39f7cb15",
+    "nonnegative-and-positive-factorizations/NR-04/README.md": "719b51c6aa37edfd358d7e112b8a370b88f16b88c75dc40e5768bd05184cd4f7",
+    "nonnegative-and-positive-factorizations/NR-04/problem.pdf": "191f65bb132a7ac04806fa7481e0625c5742708041b1f505e5d32be6110a878e",
+    "nonnegative-and-positive-factorizations/NR-04/problem.tex": "69d0a639b5b278b7acdbd61fa916eff88db80bb8f75a070c81d2a4baaf9f90ec",
+    "nonnegative-and-positive-factorizations/PF-03/README.md": "d9e1284c347810fdbfe713a0299b2b2e3040fd9ac33769b3c930f3a8dc736cf0",
+    "nonnegative-and-positive-factorizations/PF-03/problem.pdf": "e6e8046312b56665d71a4fd97d7f6c80b56a538da6dec10a329f892b5840344a",
+    "nonnegative-and-positive-factorizations/PF-03/problem.tex": "d6adc77a9b22242b85c401bf4fdd3df157ce2a867fc4ba52c9f3039dd2c57504",
+    "nonnegative-and-positive-factorizations/README.md": "1b3d2019e3045a5e7e67d86b7ecf366e4665850b30767ede1321fc09c9be54e6",
+    "randomized-and-low-rank-approximation/README.md": "4f9a610f2801859d317c901f3f7d2b5d3389c5c553b486fe040ce03ada66be74",
+    "tensor-computations/README.md": "10a36de841df65d1373dd6a183975830bd859f6fa320583138d65ea6a9260cf7",
+    "tools/render_problems.py": "a8fa1c68bb4eb54ad0736b9cc12efefd38f8b2b509f1fff8e0db61130256d5ac"
+  }
+}
