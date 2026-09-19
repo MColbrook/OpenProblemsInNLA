@@ -1,8 +1,8 @@
 # PF-03: rational factors on the completely positive boundary
 
-**The complete target passes local Lean checks and two independent source reviews.**
-The published-source Linux Comparator check is pending. The canonical
-status remains Solved until those gates finish. See [STATE.json](STATE.json)
+**The complete original target is Lean verified.**
+Local serial Lean, two independent nonauthor source reviews and two actual
+published-source Linux Comparator/kernel/sandbox runs pass. See [STATE.json](STATE.json)
 and [formalization.yaml](formalization.yaml).
 
 The formalized result is the complete negative answer to the retained
@@ -53,8 +53,10 @@ premise is introduced.
 The project pins Lean 4.33.1, LeanCert
 `621a43d7cf21f87872392a01e874f2f1dbddc926`, and Mathlib
 `0df444a360eaa60ab8c11dca51a86af692955474` in the committed Lake files.
-The standard project build target is `lake build Solution`; this package
-does not yet claim that a standalone Lake build was run. The campaign uses
+From this directory, the standard local reproduction command is `lake build Solution`.
+The recorded macOS development checks used direct serial Lean commands, not a
+standalone Lake build; the Linux Comparator logs separately record fresh
+Challenge and Solution builds. The campaign uses
 one serial local compiler process, one thread and a 4096 MiB limit, with
 source-matched pinned dependency outputs.
 
@@ -72,10 +74,44 @@ and [referee 3](reviews/final-referee3/REVIEW.md). A
 [supplementary review](reviews/final-referee1/REVIEW.md) by an earlier definitions
 author is retained separately and excluded from the two-reviewer independence
 count. These AI-agent reviews inspected source and actual local evidence; they
-did not rerun Lean or Comparator. Published-source GitHub verification remains
-pending.
+did not rerun Lean or Comparator. The separate Linux executions are recorded below.
 
 Final review applies the repository's pinned Tau Ceti guidance manually. This
 does not represent official Tau Ceti service execution. Local Lean checks and
 GitHub Comparator checks are recorded separately. The [consolidation notes](PACKAGING-NEXT-STEPS.md)
-list the evidence still required before promotion or publication.
+are retained as a historical pre-publication checklist; STATE.json records the completed gates.
+
+## Published Linux verification — 19 September 2026 (UTC)
+
+The immutable proof commit is
+[9625a76780183040186664100e24e0e90d8fcc7d](https://github.com/sgstepaniants/OpenProblemsInNLA/tree/9625a76780183040186664100e24e0e90d8fcc7d/nonnegative-and-positive-factorizations/PF-03/lean).
+The [fork push run](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35424055075)
+and [upstream PR run](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35424087832)
+both passed all 25 exact contracts. Each selected only PF-03 and checked all
+234 published project input files against that revision. The upstream run
+used GitHub's synthetic merge commit; its project files matched the proof
+commit exactly. Both runs checked exported proof bodies with the default Lean
+kernel and Comparator, allowed only the three standard axioms, and passed
+the real sandbox and rejection controls. The separately skipped shared-checker
+job did not skip these per-proof controls.
+
+The [summary](verification/linux-2026-09-19/SUMMARY.json), original GitHub
+artifact ZIPs, provenance, actual command logs and source hashes are retained.
+The [root audit](verification/linux-2026-09-19/ROOT-AUDIT.json) and
+[independent operational review](reviews/runtime-referee2/REVIEW.md) inspect
+those executions; neither represents another compiler run. The copied original
+audit script records its original recovery-directory layout, not a portable
+replacement for the repository verifier.
+
+For the full Linux check, follow the non-root isolation setup in the
+[repository workflow](../../../.github/workflows/lean-verification.yml), then,
+from the repository root, run the pinned bootstrap and verifier:
+
+```sh
+tools/lean/bootstrap.sh /tmp/pf03-lean-tools
+tools/lean/verify.sh nonnegative-and-positive-factorizations/PF-03/lean /tmp/pf03-lean-tools
+```
+
+[Upstream pull request #303](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/303)
+requests inclusion in main. This formalizes one previously solved original
+target; it is not an additional mathematical resolution.

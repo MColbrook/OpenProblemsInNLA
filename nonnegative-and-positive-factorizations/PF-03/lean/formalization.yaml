@@ -3,7 +3,7 @@
   "version": "v0.4",
   "project": {
     "name": "PF-03: no rational nonnegative factor for a rational completely positive boundary matrix",
-    "description": "Complete local Lean formalization of the negative answer to the original PF-03 universal question. All factor widths remain arbitrary positive finite integers, and frontier is taken in the real symmetric-matrix subtype. Two independent nonauthor final reviews pass; published-source Linux Comparator gates remain pending.",
+    "description": "Complete Lean formalization of the negative answer to the original PF-03 universal question, with arbitrary positive finite factor widths and frontier in the real symmetric-matrix subtype. Local serial Lean, two independent nonauthor final reviews and two published-source Linux Comparator/kernel/sandbox runs pass.",
     "authors": [
       "George Stepaniants"
     ],
@@ -78,19 +78,19 @@
     "notes": "Substantial AI assistance is disclosed. Root actually ran the serial local compiler; the packaging agent ran source-copy/schema checks. The local archive script authenticated reuse origins and copied real receipts without rerunning Lean. Final independent proof reviewers are nonauthors. No official Tau Ceti service execution, external human peer review, source-author endorsement or unmeasured cost is claimed."
   },
   "status": {
-    "scope": "All 25 exact frozen contracts and the unconditional final negation pass the local serial Lean compiler and kernel-trust assertions. Two independent nonauthor final reviews pass. Canonical promotion awaits the GitHub Linux Comparator/kernel/sandbox gates.",
+    "scope": "All 25 frozen contracts and the unconditional original-target negation pass local serial Lean and two exact published-source Linux Comparator/default-kernel checks. Two independent nonauthor source reviews and a separate operational evidence review pass.",
     "sorry_count": 0,
     "sorry_in_definitions": 0,
     "source_scan_note": "Static scan of the copied 59 implementation modules found no proof placeholders, custom axiom declarations or native_decide. The 25 deliberate Challenge placeholders are excluded and Challenge is not in the Solution import closure. This source scan is not a transitive axiom audit.",
-    "whole_problem_verified": false,
-    "completed_original_targets": 0,
+    "whole_problem_verified": true,
+    "completed_original_targets": 1,
     "main_results": [
       {
         "declaration": "NLA.PF03.alpha_certificate",
         "file": "NLA/PF03/RootCertificate.lean",
         "contract": "C01",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -103,7 +103,7 @@
         "file": "NLA/PF03/CubicArithmetic.lean",
         "contract": "C02",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -116,7 +116,7 @@
         "file": "NLA/PF03/CubicIndependence.lean",
         "contract": "C03",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -129,7 +129,7 @@
         "file": "NLA/PF03/SeedOrthogonal.lean",
         "contract": "C04",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -142,7 +142,7 @@
         "file": "NLA/PF03/SeedQuadraticForm.lean",
         "contract": "C05",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -155,7 +155,7 @@
         "file": "NLA/PF03/SeedLocalData.lean",
         "contract": "C06",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -168,7 +168,7 @@
         "file": "NLA/PF03/LocalQuadraticKernel.lean",
         "contract": "C07",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -181,7 +181,7 @@
         "file": "NLA/PF03/RationalRay.lean",
         "contract": "C08",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -194,7 +194,7 @@
         "file": "NLA/PF03/TriangleCertificate.lean",
         "contract": "C09",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -207,7 +207,7 @@
         "file": "NLA/PF03/CrossConeCertificate.lean",
         "contract": "C10",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -220,7 +220,7 @@
         "file": "NLA/PF03/PositiveSlice.lean",
         "contract": "C11",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -233,7 +233,7 @@
         "file": "NLA/PF03/ConeQuadraticZeros.lean",
         "contract": "C12",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -246,7 +246,7 @@
         "file": "NLA/PF03/ConeRationalZeros.lean",
         "contract": "C13",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -259,7 +259,7 @@
         "file": "NLA/PF03/ConePointed.lean",
         "contract": "C14",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -272,7 +272,7 @@
         "file": "NLA/PF03/FourierMotzkin.lean",
         "contract": "C15",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -285,7 +285,7 @@
         "file": "NLA/PF03/RationalProjection.lean",
         "contract": "C16",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -298,7 +298,7 @@
         "file": "NLA/PF03/RationalConeHalfspaces.lean",
         "contract": "C17",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -311,7 +311,7 @@
         "file": "NLA/PF03/PointedHalfspaces.lean",
         "contract": "C18",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -324,7 +324,7 @@
         "file": "NLA/PF03/GramTransport.lean",
         "contract": "C19",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -337,7 +337,7 @@
         "file": "NLA/PF03/TraceObstruction.lean",
         "contract": "C20",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -350,7 +350,7 @@
         "file": "NLA/PF03/NoRationalFactor.lean",
         "contract": "C21",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -363,7 +363,7 @@
         "file": "NLA/PF03/PaddedFactor.lean",
         "contract": "C22",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -376,7 +376,7 @@
         "file": "NLA/PF03/CPBoundary.lean",
         "contract": "C23",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -389,7 +389,7 @@
         "file": "NLA/PF03/Counterexample.lean",
         "contract": "C24",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -402,7 +402,7 @@
         "file": "NLA/PF03/Counterexample.lean",
         "contract": "C25",
         "comparator_config": "comparator.json",
-        "verification_status": "Local serial Lean and actual transitive standard-axiom audit PASS in recovery-047; two independent final nonauthor reviews PASS; GitHub Comparator pending",
+        "verification_status": "PASS: local serial Lean recovery-047, two independent nonauthor final reviews, fork run35424055075 and upstream PR run35424087832 at immutable proof9625a767; actual standard-axiom/default-kernel/sandbox/rejection checks retained",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -421,7 +421,7 @@
     "divergences": "The original full target, rational field, real nonnegative factors, arbitrary positive finite widths, and symmetric-subtype boundary are unchanged. The source seed and local/cross certificates are checked exactly. Generic rational Fourier\u2013Motzkin projection constructs some finite whole-cone halfspace representation; five zero rows supply a boundary witness. The formal witness need not have order 444, strictly positive entries or certified minimal real cp-rank. These additional source claims are not advertised as formalized. All internal certificate, representation and kernel premises are discharged before the final theorem. Frozen historical draft comments remain unchanged; current phase is in STATE.json."
   },
   "review": {
-    "status": "PASS: two exact-source pre-proof statement approvals and two wholly nonauthor final formalization reviews; Linux checks pending",
+    "status": "PASS: two pre-proof statement approvals, two wholly nonauthor final formalization reviews, and an independent review of the actual Linux execution evidence",
     "reviewers": [
       "/root/pf03_final_referee2",
       "/root/pf03_final_referee3"
@@ -458,8 +458,8 @@
   },
   "verification": {
     "state_record": "STATE.json",
-    "canonical_verification_completed": false,
-    "count_change": 0,
+    "canonical_verification_completed": true,
+    "count_change": 1,
     "local_implementation_observation": {
       "record": "PACKAGING-SOURCE-SNAPSHOT.json",
       "record_sha256": "a3d2af5a28eba0fec34590af35aa755a922ca58e55f044d0285cb99d6c4da8cb",
@@ -493,7 +493,7 @@
       "source": "NLA/PF03/RootCertificate.lean",
       "trust_mode": "kernel",
       "scope": "Three fixed rational endpoint inequalities. Two cubic endpoint bounds use a checked 160-bit enclosure. CubicLowerBounds transports the fixed root enclosure to actual local, barycentric and cross-term signs. No interval variables or subdivision search is introduced.",
-      "final_body_consumption_check": "All 25 actual local kernel-trust assertions and transitive axiom reports pass. Two independent source reviewers confirm that the fixed root enclosure is consumed through the local/cross-cone signs by the final theorem. Linux exported-body check pending."
+      "final_body_consumption_check": "PASS: all25 actual local and Linux standard-axiom/kernel-trust reports. Two independent source reviews trace the root enclosure through the local/cross-cone signs to the final theorem. Real Linux exported-body and default-kernel checks pass in both recorded runs."
     },
     "permitted_axioms": [
       "propext",
@@ -545,18 +545,44 @@
       "publication_evidence_freeze_sha256": "dc090fe6ccba8a12f344cb2392267a8f8ffad3be5cf1b552bb821e40fb0099d1"
     },
     "GitHub_Comparator": {
-      "status": "NOT_RUN_FOR_THIS_PACKAGE",
-      "published_commit": null,
-      "run_id": null,
-      "run_url": null,
+      "status": "PASS",
+      "proof_commit": "9625a76780183040186664100e24e0e90d8fcc7d",
       "contract_count": 25,
-      "required_scope": "Actual pinned non-root Linux Comparator, raw-kernel/exporter checks, sandbox and negative/rejection controls on the exact published proof inputs. Check workflow project selection."
+      "all_project_inputs_matched_per_run": 234,
+      "root_audit": "verification/linux-2026-09-19/ROOT-AUDIT.json",
+      "root_audit_sha256": "31546a30b49f2b5277a876791cbcf07b32bda133347e4e65094364199ed768bd",
+      "runtime_review": "reviews/runtime-referee2/REVIEW.md",
+      "runtime_review_sha256": "d51f522ce1d0751f48268b29ba166be2c575a809206c2e2293d723fb0d8ad953",
+      "runs": [
+        {
+          "repository": "sgstepaniants/OpenProblemsInNLA",
+          "run_id": 35424055075,
+          "job_id": 105846873543,
+          "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35424055075",
+          "checked_repository_commit": "9625a76780183040186664100e24e0e90d8fcc7d",
+          "artifact_id": 10578972769,
+          "artifact_digest": "sha256:17e3898509b3f2f596fe2aeea2cad3186c797c82d7c720583069d6d80144d912",
+          "scope": "Actual non-root Linux Comparator, exported-body/default kernel, standard axioms, sandbox and rejection controls; only PF-03 selected"
+        },
+        {
+          "repository": "ajt60gaibb/OpenProblemsInNLA",
+          "run_id": 35424087832,
+          "job_id": 105846968481,
+          "run_url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35424087832",
+          "checked_repository_commit": "693e92b166d391507dd818687aea0b1ad92f1321",
+          "artifact_id": 10578567081,
+          "artifact_digest": "sha256:9fef1366fd789efa41bcf709fa3159aa822130ce5e9e1e25bcb7a2ad76833b94",
+          "scope": "Actual non-root Linux Comparator, exported-body/default kernel, standard axioms, sandbox and rejection controls; only PF-03 selected"
+        }
+      ],
+      "scope_note": "First immutable proof publication checked twice. This metadata/evidence promotion changes no Lean source, frozen contract, dependency pin or checker. Audit and referee reports inspect existing executions; they are not additional executions."
     },
     "publication": {
-      "status": "LOCAL_REVIEWED_PACKAGE_READY_FOR_INITIAL_PUBLICATION; no push or PR yet",
+      "status": "PUBLISHED_PROOF_VERIFIED; evidence/catalog promotion on the same pull request",
       "target_repository": "ajt60gaibb/OpenProblemsInNLA",
       "target_branch": "main",
-      "pull_request": null
+      "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/303",
+      "immutable_proof_commit": "9625a76780183040186664100e24e0e90d8fcc7d"
     },
     "promotion_rule": "Do not change canonical Lean status or completed-target count until the exact full target, final proof reviews, local evidence and published-source Linux gates are complete and bound to the promoted revision."
   }
