@@ -1,0 +1,9 @@
+PASS: exact Bernstein conversion checked by polynomial expansion.
+PASS: 18 exact contraction polynomial identities (24 coefficients each).
+PASS: every 2-by-2 and 3-by-3 certificate matrix is PSD,
+      by both exact Schur complements and all principal minors.
+PASS: all 90 exact tensor Bernstein blocks are PSD (6 x 15).
+      Largest blocks: 12-by-12; representative ranks: [3, 9, 12, 12, 12, 12]
+ALL EXACT CHECKS PASSED.
+Together with the Gram-vector reduction and strictness argument in proof.md,
+these certificates establish the 4-by-4 case, not the arbitrary-order conjecture.

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "MF-08",
+    "canonical_readme": "matrix-functions-and-stability/MF-08/README.md",
+    "unchanged_sections": [
+      "Problem statement"
+    ]
+  },
+  {
+    "id": "PF-03",
+    "canonical_readme": "nonnegative-and-positive-factorizations/PF-03/README.md",
+    "unchanged_sections": [
+      "Context and notation",
+      "Problem statement"
+    ]
+  },
+  {
+    "id": "NR-04",
+    "canonical_readme": "nonnegative-and-positive-factorizations/NR-04/README.md",
+    "unchanged_sections": [
+      "Context and notation",
+      "Problem statement"
+    ]
+  },
+  {
+    "id": "MI-27",
+    "canonical_readme": "matrix-inequalities-and-norms/MI-27/README.md",
+    "unchanged_sections": [
+      "Problem statement"
+    ]
+  },
+  {
+    "id": "MI-18",
+    "canonical_readme": "matrix-inequalities-and-norms/MI-18/README.md",
+    "unchanged_sections": [
+      "Problem statement"
+    ]
+  }
+]
