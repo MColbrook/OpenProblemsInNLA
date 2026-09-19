@@ -190,8 +190,10 @@ The argument uses the published Frenkel/Hirche–Tomamichel relative-entropy ide
 A [separate informal Codex AI-agent audit](references/holden-mi27-2026-09-12/verification/independent-review.md)
 passed the complete proof; this is not external human peer review or formal verification.
 AI assistance and the earlier partial findings in [PR #186](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/186)
-are disclosed. No Lean check or priority claim is made. All IDs, paths and original targets are preserved.
+are disclosed. That September 12 review did not perform Lean verification; the later formal verification is recorded below. No priority claim is made. All IDs, paths and original targets are preserved.
 
+
+**Lean verified, 19 September 2026.** George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, supplied the [complete twenty-contract formalization](matrix-inequalities-and-norms/MI-27/lean/README.md), with substantial Codex assistance. The unchanged all-dimensions, complex positive definite coefficient-one target uses the actual spectral logarithm and full trace norm; its relative-entropy identity and derivative are proved internally. [Linux run 35438172834](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35438172834) passed Comparator, default-kernel replay, standard-axiom, sandbox and rejection controls at merge checkout `f21284e35e8156a9761c1f2ccd49d579f42fb69a`, with all 284 project inputs identical to immutable PR head `1f05b398013d44beb7d756cbfbbfd3e875c8deab`. Two independent nonauthor source reviews and the [retained execution audit](matrix-inequalities-and-norms/MI-27/lean/verification/linux-2026-09-19/README.md) support promotion. Holden retains mathematical credit; his separate sharpness theorem is outside the formal scope.
 
 ### RA-05 — all-exponent coreset lower bounds — Sidney Holden
 

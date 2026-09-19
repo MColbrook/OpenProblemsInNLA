@@ -1,14 +1,28 @@
 {
-  "phase": "LOCAL_AND_FINAL_SOURCE_REVIEWS_PASS_LINUX_PENDING",
+  "phase": "SOURCE_AND_LINUX_PASS_PUBLICATION_CHECKS_PENDING",
   "date": "2026-09-19T10:38:27.439443+00:00",
   "complete_original_target_locally_proved": true,
-  "canonical_Lean_verified": false,
-  "count_increment": 0,
+  "canonical_Lean_verified": true,
+  "count_increment": 1,
   "contracts": 20,
   "snapshot_sha256": "d9a8bb1b4cf6e228d6c211c57f58cfd79e710f3961dffe65cb06db6c39249790",
   "local_run": "recovery-118",
   "local_type_match": "20 raw types and universe lists byteidentical",
-  "GitHub_Comparator": "NOT_RUN",
+  "GitHub_Comparator": {
+    "status": "PASS",
+    "run_id": 35438172834,
+    "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35438172834",
+    "pr_head": "1f05b398013d44beb7d756cbfbbfd3e875c8deab",
+    "repository_commit": "f21284e35e8156a9761c1f2ccd49d579f42fb69a",
+    "checkout_kind": "PR merge checkout",
+    "matched_project_inputs": 284,
+    "verified_contracts": 20,
+    "artifact_id": 10583511156,
+    "artifact_sha256": "50394e222707d250e7e1fc58dc80b8f6e59fb475b324a3414fd59f36e045b094",
+    "evidence": "verification/linux-2026-09-19/README.md",
+    "source_authentication": "verification/linux-2026-09-19/SOURCE-AUTHENTICATION.json",
+    "scope": "All 284 submitted inputs equal the immutable PR head. This run precedes the later publication/status/evidence edits, which require separate CI; Lean proofs, frozen contracts and pins are unchanged."
+  },
   "historical_draft_comments": "Retained verbatim; datedSTATE.md and actual command receipts supersede them.",
   "approved_independent_nonauthor_reviews": 2
 }

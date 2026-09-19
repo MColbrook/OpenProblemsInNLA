@@ -3,7 +3,7 @@
   "version": "v0.4",
   "project": {
     "name": "MI-27: coefficient one in the logarithmic commutator inequality",
-    "description": "Full original bound for every complex positive definite pair of trace sum one in every positive dimension. All twenty frozen contracts pass local Lean; final reviews and GitHub verification are recorded separately.",
+    "description": "Full original coefficient-one bound for every complex positive definite pair of trace sum one in every positive dimension. All twenty frozen contracts pass local Lean and actual source-matched non-root Linux Comparator/default-kernel verification; two independent nonauthor final reviews pass.",
     "authors": [
       "George Stepaniants"
     ],
@@ -64,18 +64,18 @@
     "notes": "Substantial AI assistance; no human peer review or official Tau Ceti service endorsement claimed."
   },
   "status": {
-    "scope": "Full unchanged original coefficient-one upper bound, with no entropy identity, derivative or dimension restriction added as a final premise. Local proof complete; two independent final reviews pass; Linux gates pending.",
+    "scope": "Full unchanged original coefficient-one upper bound, with no entropy identity, derivative or dimension restriction added as a final premise. Local proof, two independent final source reviews and source-matched Linux gates pass. Separate order-two optimality is outside the advertised formalization.",
     "sorry_count": 0,
     "sorry_in_definitions": 0,
-    "whole_problem_verified": false,
-    "completed_original_targets": 0,
+    "whole_problem_verified": true,
+    "completed_original_targets": 1,
     "main_results": [
       {
         "declaration": "NLA.MI27.half_coefficient_positive",
         "file": "NLA/MI27/Numerical.lean",
         "contract": "C01",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -88,7 +88,7 @@
         "file": "NLA/MI27/SpectralSemantics.lean",
         "contract": "C02",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -101,7 +101,7 @@
         "file": "NLA/MI27/Normalization.lean",
         "contract": "C03",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -114,7 +114,7 @@
         "file": "NLA/MI27/PositiveTrace.lean",
         "contract": "C04",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -127,7 +127,7 @@
         "file": "NLA/MI27/PositiveCommutator.lean",
         "contract": "C05",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -140,7 +140,7 @@
         "file": "NLA/MI27/PositivePart.lean",
         "contract": "C06",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -153,7 +153,7 @@
         "file": "NLA/MI27/PositivePartLipschitz.lean",
         "contract": "C07",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -166,7 +166,7 @@
         "file": "NLA/MI27/UnitaryFlow.lean",
         "contract": "C08",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -179,7 +179,7 @@
         "file": "NLA/MI27/HockeyStickFlow.lean",
         "contract": "C09",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -192,7 +192,7 @@
         "file": "NLA/MI27/UniformCutoff.lean",
         "contract": "C10",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -205,7 +205,7 @@
         "file": "NLA/MI27/RelativeEntropyHockeyStick.lean",
         "contract": "C11",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -218,7 +218,7 @@
         "file": "NLA/MI27/WeightedEntropy.lean",
         "contract": "C12",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -231,7 +231,7 @@
         "file": "NLA/MI27/KernelIntegrals.lean",
         "contract": "C13",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -244,7 +244,7 @@
         "file": "NLA/MI27/KernelIntegrals.lean",
         "contract": "C14",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -257,7 +257,7 @@
         "file": "NLA/MI27/EntropyTrajectory.lean",
         "contract": "C15",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -270,7 +270,7 @@
         "file": "NLA/MI27/EntropyDerivative.lean",
         "contract": "C16",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -283,7 +283,7 @@
         "file": "NLA/MI27/SkewRotation.lean",
         "contract": "C17",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -296,7 +296,7 @@
         "file": "NLA/MI27/TraceNormWitness.lean",
         "contract": "C18",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -309,7 +309,7 @@
         "file": "NLA/MI27/LogarithmicCommutatorDual.lean",
         "contract": "C19",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -322,7 +322,7 @@
         "file": "NLA/MI27/LogarithmicCommutator.lean",
         "contract": "C20",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS actual local recovery-118 aggregate and transitive standard axioms; two independent final source reviews PASS. Real GitHub Linux Comparator pending.",
+        "verification_status": "PASS: actual local recovery-118; two independent nonauthor final source reviews; source-matched non-root Linux run 35438172834 with Comparator/default-kernel, standard axioms, sandbox and rejection controls.",
         "sorry_count": 0,
         "axioms": [
           "propext",
@@ -342,7 +342,7 @@
     "divergences": "No target weakening. Actual CFC natural logarithm, Gram-square-root trace norm and complex trace normalization are used. C10 constructs M=norm(rho)+norm(sigma)+1 and R=1+M/epsilon instead of the numerical plan suggestion R=1+1/epsilon; the frozen existential statement is unchanged. C09 uses endpoint optimizers and a mean-value argument. C11 internally proves the ordinary noncommuting entropy identity with product integrability before Fubini; C12 truncates before substitution. Repeated eigenvalues, zero commutators and degenerate cutoff R=1 are included. Source order-two optimality remains outside the advertised formal target."
   },
   "review": {
-    "status": "PASS: two prebody statement approvals and two wholly nonauthor final source reviews, with independent audits of actual saved local evidence. Real Linux verification pending.",
+    "status": "PASS: two prebody statement approvals and two wholly nonauthor final source reviews, with independent audits of saved local evidence. Actual source-matched Linux verification passed.",
     "reviewers": [
       "/root/nr04_mf14_final_referee_b",
       "/root/new_math_nr01"
@@ -372,8 +372,8 @@
     "manifest": "lake-manifest.json"
   },
   "verification": {
-    "canonical_verification_completed": false,
-    "count_change": 0,
+    "canonical_verification_completed": true,
+    "count_change": 1,
     "local_aggregate": {
       "status": "PASS",
       "run": "recovery-118",
@@ -405,7 +405,19 @@
     ],
     "actual_final_axiom_report": "verification/local-2026-09-19/actual-axioms.json",
     "GitHub_Comparator": {
-      "status": "NOT_RUN"
+      "status": "PASS",
+      "run_id": 35438172834,
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35438172834",
+      "pr_head": "1f05b398013d44beb7d756cbfbbfd3e875c8deab",
+      "repository_commit": "f21284e35e8156a9761c1f2ccd49d579f42fb69a",
+      "checkout_kind": "PR merge checkout",
+      "matched_project_inputs": 284,
+      "verified_contracts": 20,
+      "artifact_id": 10583511156,
+      "artifact_sha256": "50394e222707d250e7e1fc58dc80b8f6e59fb475b324a3414fd59f36e045b094",
+      "evidence": "verification/linux-2026-09-19/README.md",
+      "source_authentication": "verification/linux-2026-09-19/SOURCE-AUTHENTICATION.json",
+      "scope": "All 284 submitted inputs equal the immutable PR head. This run precedes the later publication/status/evidence edits, which require separate CI; Lean proofs, frozen contracts and pins are unchanged."
     },
     "final_independent_reviews": {
       "status": "PASS",
@@ -439,7 +451,7 @@
       }
     },
     "publication": {
-      "status": "NOT_PUBLISHED",
+      "status": "VERIFIED_SOURCE_READY_FOR_MERGE; subsequent publication CI pending",
       "target_repository": "ajt60gaibb/OpenProblemsInNLA",
       "target_branch": "main"
     },

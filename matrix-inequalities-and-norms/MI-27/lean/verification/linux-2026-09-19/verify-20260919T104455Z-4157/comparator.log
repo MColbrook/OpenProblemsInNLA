@@ -1,0 +1,686 @@
+$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-fresh-proof-mjey4f_7/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json
+Building Challenge
+✔ [3040/3049] Built NLA.MI24.Definitions (2.3s)
+⚠ [3041/3049] Built NLA.MI24.SpectralPowers (2.9s)
+warning: NLA/MI24/SpectralPowers.lean:58:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3042/3049] Built NLA.MI24.OperatorNorm (4.2s)
+warning: NLA/MI24/OperatorNorm.lean:42:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI24/OperatorNorm.lean:43:25: Variable name `hV` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hV
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3043/3049] Built NLA.MI24.TraceSpectral (2.2s)
+⚠ [3044/3049] Built NLA.MI24.PowerScaling (2.6s)
+warning: NLA/MI24/PowerScaling.lean:68:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3045/3049] Built NLA.MI24.TraceOverlap (3.9s)
+✔ [3046/3049] Built NLA.MI24.TraceHolder (2.3s)
+✔ [3047/3049] Built NLA.MI27.Definitions (2.3s)
+⚠ [3048/3049] Built Challenge (2.6s)
+warning: Challenge.lean:29:8: declaration uses `sorry`
+warning: Challenge.lean:36:8: declaration uses `sorry`
+warning: Challenge.lean:48:8: declaration uses `sorry`
+warning: Challenge.lean:59:8: declaration uses `sorry`
+warning: Challenge.lean:67:8: declaration uses `sorry`
+warning: Challenge.lean:74:8: declaration uses `sorry`
+warning: Challenge.lean:84:8: declaration uses `sorry`
+warning: Challenge.lean:92:8: declaration uses `sorry`
+warning: Challenge.lean:111:8: declaration uses `sorry`
+warning: Challenge.lean:121:8: declaration uses `sorry`
+warning: Challenge.lean:139:8: declaration uses `sorry`
+warning: Challenge.lean:151:8: declaration uses `sorry`
+warning: Challenge.lean:164:8: declaration uses `sorry`
+warning: Challenge.lean:173:8: declaration uses `sorry`
+warning: Challenge.lean:185:8: declaration uses `sorry`
+warning: Challenge.lean:195:8: declaration uses `sorry`
+warning: Challenge.lean:203:8: declaration uses `sorry`
+warning: Challenge.lean:213:8: declaration uses `sorry`
+warning: Challenge.lean:220:8: declaration uses `sorry`
+warning: Challenge.lean:232:8: declaration uses `sorry`
+Build completed successfully (3049 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MI27.half_coefficient_positive, NLA.MI27.spectral_function_semantics, NLA.MI27.normalize_positive_pair, NLA.MI27.positive_trace_operator_bound, NLA.MI27.positive_commutator_trace_bound, NLA.MI27.positive_part_variational, NLA.MI27.positive_part_trace_lipschitz, NLA.MI27.unitary_flow_semantics, NLA.MI27.hockey_stick_unitary_lipschitz, NLA.MI27.uniform_hockey_stick_cutoff, NLA.MI27.relative_entropy_finite_hockey_stick, NLA.MI27.weighted_entropy_finite_kernel, NLA.MI27.kernel_integrals, NLA.MI27.kernel_entropy_mass_bound, NLA.MI27.entropy_trajectory_lipschitz, NLA.MI27.entropy_unitary_mix_derivative, NLA.MI27.skew_commutator_trace_norm, NLA.MI27.hermitian_trace_norm_witness, NLA.MI27.logarithmic_commutator_dual_bound, NLA.MI27.logarithmic_commutator_bound, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3038/3082] Replayed NLA.MI24.OperatorNorm
+warning: NLA/MI24/OperatorNorm.lean:42:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI24/OperatorNorm.lean:43:25: Variable name `hV` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hV
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3039/3082] Replayed NLA.MI24.SpectralPowers
+warning: NLA/MI24/SpectralPowers.lean:58:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3042/3082] Replayed NLA.MI24.PowerScaling
+warning: NLA/MI24/PowerScaling.lean:68:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3561/3590] Built LeanCert.Tactic.Verification (4.0s)
+⚠ [3562/3593] Built NLA.MI27.PositiveTrace (4.1s)
+warning: NLA/MI27/PositiveTrace.lean:52:47: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/PositiveTrace.lean:66:0: 'NLA.MI27.positive_trace_operator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3563/3593] Built NLA.MI27.SpectralSemantics (4.2s)
+warning: NLA/MI27/SpectralSemantics.lean:35:45: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI27/SpectralSemantics.lean:36:38: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/SpectralSemantics.lean:63:0: 'NLA.MI27.spectral_function_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3564/3593] Built NLA.MI27.UnitaryConjugation (4.6s)
+ℹ [3565/3593] Built NLA.MI27.NegativeWeights (5.3s)
+info: NLA/MI27/NegativeWeights.lean:92:0: 'NLA.MI27.c11_negative_weights_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3566/3593] Built NLA.MI27.HockeyStickChangeVariables (5.5s)
+warning: NLA/MI27/HockeyStickChangeVariables.lean:70:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickChangeVariables.lean:47:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickChangeVariables.lean:70:46: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/HockeyStickChangeVariables.lean:128:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickChangeVariables.lean:101:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickChangeVariables.lean:128:46: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/HockeyStickChangeVariables.lean:152:0: 'NLA.MI27.c11_change_variable_pencil_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/HockeyStickChangeVariables.lean:154:0: 'NLA.MI27.c11_change_variable_pencil_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/HockeyStickChangeVariables.lean:156:0: 'NLA.MI27.c11_integral_Ioi_eq_interval_of_zero_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3567/3609] Built NLA.MI27.PencilScalar (5.0s)
+warning: NLA/MI27/PencilScalar.lean:44:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/PencilScalar.lean:57:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/PencilScalar.lean:107:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/PencilScalar.lean:107:10: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/PencilScalar.lean:141:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/PencilScalar.lean:138:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/PencilScalar.lean:144:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/PencilScalar.lean:141:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/PencilScalar.lean:158:21: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_zero, add_zero, if_neg hnot, Real.log_one, zero_div, sub_zero, integral_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI27/PencilScalar.lean:160:86: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/PencilScalar.lean:160:86: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/PencilScalar.lean:195:0: 'NLA.MI27.c11_pencilWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:197:0: 'NLA.MI27.c11_hasDerivAt_pencilPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:199:0: 'NLA.MI27.c11_tendsto_pencilPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:201:0: 'NLA.MI27.c11_pencilWeight_integral_positive_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:203:0: 'NLA.MI27.c11_pencilWeight_integral_negative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:205:0: 'NLA.MI27.c11_pencilPrimitive_at_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilScalar.lean:207:0: 'NLA.MI27.c11_scalar_pencil_count_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3580/3631] Built NLA.MI27.MixtureChangeVariables (5.8s)
+warning: NLA/MI27/MixtureChangeVariables.lean:63:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/MixtureChangeVariables.lean:64:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/MixtureChangeVariables.lean:89:17: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI27/MixtureChangeVariables.lean:89:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/MixtureChangeVariables.lean:88:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/MixtureChangeVariables.lean:89:37: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/MixtureChangeVariables.lean:101:0: 'NLA.MI27.c12_integral_truncate_zero_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/MixtureChangeVariables.lean:103:0: 'NLA.MI27.c12_change_variable_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/MixtureChangeVariables.lean:105:0: 'NLA.MI27.c12_change_variable_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3597/3632] Built NLA.MI27.PositivePart (4.2s)
+warning: NLA/MI27/PositivePart.lean:97:43: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/PositivePart.lean:119:0: 'NLA.MI27.positive_part_variational' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3598/3632] Built LeanCert.Core.Interval (3.8s)
+⚠ [3599/3633] Built NLA.MI27.TraceTangent (4.8s)
+warning: NLA/MI27/TraceTangent.lean:90:28: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/TraceTangent.lean:90:28: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/TraceTangent.lean:163:0: 'NLA.MI27.c16_entropy_tangent_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3600/3634] Built NLA.MI27.PositivePartLipschitz (3.9s)
+info: NLA/MI27/PositivePartLipschitz.lean:56:0: 'NLA.MI27.positive_part_trace_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3601/3634] Built LeanCert.Core.Expr (6.9s)
+⚠ [3602/3634] Built NLA.MI27.IdentityShift (5.1s)
+warning: NLA/MI27/IdentityShift.lean:94:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/IdentityShift.lean:129:0: 'NLA.MI27.c11_relative_entropy_shift_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShift.lean:130:0: 'NLA.MI27.c11_hasDerivAt_relative_entropy_shift_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3603/3634] Built LeanCert.Core.IntervalRat.Basic (9.1s)
+⚠ [3604/3634] Built NLA.MI27.UniformCutoff (6.4s)
+warning: NLA/MI27/UniformCutoff.lean:81:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI27/UniformCutoff.lean:139:0: 'NLA.MI27.uniform_hockey_stick_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3605/3634] Built LeanCert.Core.IntervalRat.LogReduction (6.7s)
+✔ [3606/3634] Built LeanCert.Core.Support (5.3s)
+✔ [3607/3634] Built LeanCert.Meta.Numeral (4.3s)
+ℹ [3608/3634] Built NLA.MI27.NegativeCount (3.9s)
+info: NLA/MI27/NegativeCount.lean:91:0: 'NLA.MI27.c11_cfc_function_identityShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCount.lean:92:0: 'NLA.MI27.c11_negativeCount_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCount.lean:93:0: 'NLA.MI27.c11_negativeCount_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCount.lean:94:0: 'NLA.MI27.c11_negativeCount_identityShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCount.lean:95:0: 'NLA.MI27.c11_tracePos_neg_identityShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3609/3636] Built NLA.MI27.IdentityShiftLimit (6.1s)
+warning: NLA/MI27/IdentityShiftLimit.lean:40:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/IdentityShiftLimit.lean:48:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/IdentityShiftLimit.lean:136:0: 'NLA.MI27.c11_scalar_shift_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftLimit.lean:138:0: 'NLA.MI27.c11_tendsto_relative_entropy_identityShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftLimit.lean:140:0: 'NLA.MI27.c11_tendsto_density_relative_entropy_identityShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3610/3636] Built LeanCert.Core.IntervalRat.Transcendental (5.0s)
+⚠ [3611/3636] Built NLA.MI27.FiniteHockeyStick (4.1s)
+warning: NLA/MI27/FiniteHockeyStick.lean:28:13: Variable name `hR` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hR
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/FiniteHockeyStick.lean:116:0: 'NLA.MI27.c11_hockey_stick_integral_cutoff_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/FiniteHockeyStick.lean:117:0: 'NLA.MI27.c11_relative_entropy_cutoff_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3612/3636] Built LeanCert.Tactic.IntervalAuto.Types (4.8s)
+✔ [3613/3636] Built LeanCert.Tactic.IntervalAuto.Extract (3.5s)
+ℹ [3614/3636] Built NLA.MI27.NegativeCountLayerCake (3.7s)
+info: NLA/MI27/NegativeCountLayerCake.lean:84:0: 'NLA.MI27.c11_integral_negative_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountLayerCake.lean:85:0: 'NLA.MI27.c11_negativeCount_shift_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3615/3636] Built NLA.MI27.NegativeCountCongruence (4.6s)
+warning: NLA/MI27/NegativeCountCongruence.lean:32:45: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/NegativeCountCongruence.lean:32:45: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/NegativeCountCongruence.lean:88:10: This simp argument is unused:
+  Finset.sum_ite
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI27/NegativeCountCongruence.lean:98:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI27/NegativeCountCongruence.lean:101:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI27/NegativeCountCongruence.lean:108:0: 'NLA.MI27.c11_hermitian_quadratic_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountCongruence.lean:110:0: 'NLA.MI27.c11_negativeCount_congruence_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountCongruence.lean:112:0: 'NLA.MI27.c11_negativeCount_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3617/3636] Built LeanCert.Meta.ToExpr (5.9s)
+⚠ [3618/3636] Built NLA.MI27.NegativeCountMeasurable (4.2s)
+warning: NLA/MI27/NegativeCountMeasurable.lean:48:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/NegativeCountMeasurable.lean:121:0: 'NLA.MI27.c11_scalar_negativeCountApprox_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountMeasurable.lean:122:0: 'NLA.MI27.c11_negativeCountApprox_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountMeasurable.lean:123:0: 'NLA.MI27.c11_tracePos_continuous_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/NegativeCountMeasurable.lean:124:0: 'NLA.MI27.c11_negativeCount_pencil_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3620/3639] Built NLA.MI27.IdentityShiftFTC (4.7s)
+warning: NLA/MI27/IdentityShiftFTC.lean:79:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/IdentityShiftFTC.lean:79:18: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/IdentityShiftFTC.lean:109:0: 'NLA.MI27.c11_shiftKernel_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftFTC.lean:111:0: 'NLA.MI27.c11_shiftKernel_finite_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftFTC.lean:113:0: 'NLA.MI27.c11_tendsto_shiftKernel_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3621/3639] Built LeanCert.Tactic.IntervalAuto.Norm (4.7s)
+⚠ [3622/3656] Built NLA.MI27.MixtureBasics (5.8s)
+warning: NLA/MI27/MixtureBasics.lean:44:5: Variable name `hρ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI27/MixtureBasics.lean:44:28: Variable name `hσ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hσ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/MixtureBasics.lean:97:0: 'NLA.MI27.c12_mixture_strict_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/MixtureBasics.lean:99:0: 'NLA.MI27.c12_chi_relative_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/MixtureBasics.lean:101:0: 'NLA.MI27.c12_mixture_cutoffs' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3633/3657] Built LeanCert.Tactic.IntervalAuto.Parse (6.7s)
+⚠ [3636/3664] Built NLA.MI27.IdentityShiftImproper (5.6s)
+warning: NLA/MI27/IdentityShiftImproper.lean:74:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/IdentityShiftImproper.lean:74:18: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/IdentityShiftImproper.lean:101:0: 'NLA.MI27.c11_scalar_shiftKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftImproper.lean:103:0: 'NLA.MI27.c11_shiftKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftImproper.lean:105:0: 'NLA.MI27.c11_shiftKernel_integral_Ioi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/IdentityShiftImproper.lean:107:0: 'NLA.MI27.c11_density_shiftKernel_integral_Ioi' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3639/3664] Built LeanCert.Core.DerivativeIntervals (4.1s)
+⚠ [3640/3665] Built NLA.MI27.PencilTraceLogBasic (5.3s)
+warning: NLA/MI27/PencilTraceLogBasic.lean:87:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI27/PencilTraceLogBasic.lean:88:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI27/PencilTraceLogBasic.lean:90:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI27/PencilTraceLogBasic.lean:85:5: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/PencilTraceLogBasic.lean:98:0: 'NLA.MI27.c11_identityShift_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLogBasic.lean:100:0: 'NLA.MI27.c11_inv_eq_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLogBasic.lean:102:0: 'NLA.MI27.c11_trR_log_eq_log_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLogBasic.lean:104:0: 'NLA.MI27.c11_trR_log_normalized_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLogBasic.lean:106:0: 'NLA.MI27.c11_trR_congruence_mul_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3642/3667] Built LeanCert.Tactic.IntervalAuto.Diagnostic (3.9s)
+✔ [3644/3673] Built LeanCert.Engine.Eval.Result (3.3s)
+✔ [3646/3679] Built LeanCert.Core.TrigReduction (3.7s)
+ℹ [3647/3683] Built NLA.MI27.PencilTraceLog (5.4s)
+info: NLA/MI27/PencilTraceLog.lean:159:0: 'NLA.MI27.c11_shiftKernel_eq_trace_log_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLog.lean:161:0: 'NLA.MI27.c11_trace_log_resolvent_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilTraceLog.lean:163:0: 'NLA.MI27.c11_normalized_pencil_trace_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3648/3683] Built LeanCert.Core.Dyadic (6.3s)
+✔ [3649/3684] Built LeanCert.Contrib.Sinc (7.7s)
+✔ [3650/3757] Built LeanCert.Tactic.NumericalRefinement (811ms)
+✔ [3673/3759] Built LeanCert.Core.Taylor (10s)
+✔ [3674/3759] Built LeanCert.Tactic.LeanCert.Bridge.Environment (3.6s)
+ℹ [3675/3760] Built NLA.MI27.PencilCountBasic (7.8s)
+info: NLA/MI27/PencilCountBasic.lean:86:0: 'NLA.MI27.c11_posDef_normalizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilCountBasic.lean:88:0: 'NLA.MI27.c11_negativeCount_affine_identity_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilCountBasic.lean:90:0: 'NLA.MI27.c11_normalized_pencil_count_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3676/3763] Built LeanCert.Tactic.VecUtil (3.4s)
+✔ [3677/3763] Built LeanCert.Tactic.LeanCert.Normalize (4.5s)
+✔ [3678/3763] Built LeanCert.Tactic.FinsetParse (4.9s)
+ℹ [3679/3765] Built NLA.MI27.PencilCount (5.0s)
+info: NLA/MI27/PencilCount.lean:70:0: 'NLA.MI27.c11_shifted_pencil_count_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3680/3765] Built LeanCert.Tactic.BridgeNative (3.6s)
+✔ [3681/3767] Built LeanCert.Tactic.FinSumExpand (4.4s)
+✔ [3682/3771] Built LeanCert.Tactic.LeanCert.Semantic.Domain (2.9s)
+✔ [3683/3773] Built LeanCert.Validity.Eventual (5.9s)
+✔ [3684/3774] Built LeanCert.Tactic.LeanCert.Semantic.Goal (3.4s)
+⚠ [3685/3774] Built NLA.MI27.PencilIntegral (7.9s)
+warning: NLA/MI27/PencilIntegral.lean:44:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/PencilIntegral.lean:44:34: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/PencilIntegral.lean:104:0: 'NLA.MI27.c11_pencil_count_integrable_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/PencilIntegral.lean:106:0: 'NLA.MI27.c11_relative_entropy_pencil_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3686/3774] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (1.9s)
+✔ [3687/3774] Built LeanCert.Tactic.VecSimp (2.3s)
+✔ [3688/3778] Built LeanCert.Tactic.EventualBound (6.4s)
+✔ [3689/3779] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (4.7s)
+⚠ [3690/3782] Built NLA.MI27.HockeyStickSubstitution (5.8s)
+warning: NLA/MI27/HockeyStickSubstitution.lean:42:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:46:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:42:37: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:46:62: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:92:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:80:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:88:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:92:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:122:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:109:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:117:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI27/HockeyStickSubstitution.lean:122:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/HockeyStickSubstitution.lean:124:0: 'NLA.MI27.c11_tracePos_smul_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/HockeyStickSubstitution.lean:126:0: 'NLA.MI27.c11_pencil_tracePos_zero_unit_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/HockeyStickSubstitution.lean:128:0: 'NLA.MI27.c11_pencil_integrand_positive_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/HockeyStickSubstitution.lean:130:0: 'NLA.MI27.c11_pencil_integrand_negative_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3691/3782] Built LeanCert.Core.IntervalRat.Taylor (23s)
+✔ [3692/3782] Built LeanCert.Tactic.Extension.Protocol (3.0s)
+✔ [3693/3782] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (3.9s)
+✔ [3694/3782] Built LeanCert.Tactic.LeanCert.Config (2.1s)
+ℹ [3695/3782] Built NLA.MI27.RelativeEntropyHockeyStick (4.9s)
+info: NLA/MI27/RelativeEntropyHockeyStick.lean:106:0: 'NLA.MI27.c11_relative_entropy_hockey_stick_Ioi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/RelativeEntropyHockeyStick.lean:108:0: 'NLA.MI27.relative_entropy_finite_hockey_stick' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3696/3785] Built NLA.MI27.MixturePositivePart (4.7s)
+warning: NLA/MI27/MixturePositivePart.lean:38:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/MixturePositivePart.lean:59:0: 'NLA.MI27.c12_E_mixture_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/MixturePositivePart.lean:61:0: 'NLA.MI27.c12_E_mixture_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3697/3786] Built LeanCert.Core.IntervalReal (2.0s)
+✔ [3698/3786] Built LeanCert.Core.IntervalRat.TrigReduced (3.5s)
+✔ [3699/3786] Built LeanCert.Tactic.Extension.Registry (3.8s)
+⚠ [3700/3786] Built NLA.MI27.MixtureRelativeEntropy (6.3s)
+warning: NLA/MI27/MixtureRelativeEntropy.lean:86:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MI27/MixtureRelativeEntropy.lean:86:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: NLA/MI27/MixtureRelativeEntropy.lean:129:0: 'NLA.MI27.c12_relative_entropy_mixture_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3701/3788] Built LeanCert.Engine.Algebra.QPoly (5.4s)
+✔ [3702/3788] Built LeanCert.Engine.Affine.Basic (9.4s)
+✔ [3703/3788] Built LeanCert.Core.IntervalRealEndpoints (7.6s)
+✔ [3704/3788] Built LeanCert.Core.IntervalDyadic (10s)
+⚠ [3705/3794] Built NLA.MI27.WeightedEntropy (7.9s)
+warning: NLA/MI27/WeightedEntropy.lean:52:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/WeightedEntropy.lean:77:0: 'NLA.MI27.weighted_entropy_finite_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3706/3794] Built LeanCert.Engine.Algebra.QPolyIntegral (5.1s)
+✔ [3707/3799] Built LeanCert.Engine.Affine.Nonlinear (7.3s)
+✔ [3708/3801] Built LeanCert.Core.DyadicCell (6.4s)
+✔ [3709/3801] Built LeanCert.Engine.FloatEval (5.9s)
+✔ [3710/3805] Built LeanCert.Tactic.Extension.Command (3.4s)
+✔ [3711/3808] Built LeanCert.Engine.Eval.Core (10s)
+✔ [3713/3808] Built LeanCert.Core.DyadicFrontier (4.1s)
+⚠ [3714/3810] Built NLA.MI27.SkewRotation (3.9s)
+warning: NLA/MI27/SkewRotation.lean:39:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/MI27/SkewRotation.lean:40:5: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/SkewRotation.lean:54:0: 'NLA.MI27.skew_commutator_trace_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3717/3815] Built LeanCert.Tactic.Extension (2.9s)
+⚠ [3718/3815] Built NLA.MI27.Normalization (3.7s)
+warning: NLA/MI27/Normalization.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI27/Normalization.lean:51:0: 'NLA.MI27.normalize_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3720/3815] Built NLA.MI27.KernelIntegrals (4.7s)
+warning: NLA/MI27/KernelIntegrals.lean:46:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI27/KernelIntegrals.lean:102:0: 'NLA.MI27.kernel_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI27/KernelIntegrals.lean:103:0: 'NLA.MI27.kernel_entropy_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3721/3815] Built LeanCert.Engine.Eval.Extended (5.4s)
+⚠ [3722/3815] Built NLA.MI27.UnitaryFlow (4.7s)
+warning: NLA/MI27/UnitaryFlow.lean:87:40: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/UnitaryFlow.lean:123:0: 'NLA.MI27.unitary_flow_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3723/3815] Built LeanCert.Engine.Bounds.Lemmas (2.7s)
+ℹ [3724/3815] Built NLA.MI27.TraceNormWitness (3.5s)
+info: NLA/MI27/TraceNormWitness.lean:127:0: 'NLA.MI27.hermitian_trace_norm_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3725/3815] Built LeanCert.Engine.IntervalEval (2.1s)
+✔ [3726/3815] Built LeanCert.Validity.Bounds.Checked (3.7s)
+✔ [3727/3815] Built LeanCert.Validity.Bounds.Core (3.8s)
+✔ [3728/3815] Built LeanCert.Engine.Affine.Transcendental (5.5s)
+✔ [3729/3815] Built LeanCert.Engine.IntervalEvalDyadic (8.5s)
+✔ [3730/3815] Built LeanCert.Engine.Optimization.Box (4.9s)
+✔ [3731/3815] Built LeanCert.Engine.RootFinding.Basic (6.7s)
+✔ [3732/3815] Built LeanCert.Engine.AD.Basic (3.7s)
+✔ [3733/3815] Built LeanCert.Engine.Integrate (8.5s)
+✔ [3734/3815] Built LeanCert.Engine.FinSumDyadic (7.3s)
+✔ [3735/3815] Built LeanCert.Engine.IntervalEvalAffine (9.4s)
+✔ [3736/3815] Built LeanCert.Validity.DyadicBounds (5.8s)
+✔ [3737/3815] Built LeanCert.Engine.TaylorModel.Core (12s)
+✔ [3738/3815] Built LeanCert.Engine.Search.Heuristic (4.1s)
+✔ [3739/3815] Built LeanCert.Engine.WitnessSum (4.2s)
+✔ [3740/3815] Built LeanCert.Engine.AD.Transcendental (5.8s)
+✔ [3741/3815] Built LeanCert.Engine.RootFinding.Bisection (6.2s)
+✔ [3742/3815] Built LeanCert.Engine.Affine.Environment (4.0s)
+✔ [3743/3815] Built LeanCert.Engine.TaylorModel.Special (3.4s)
+✔ [3744/3815] Built LeanCert.Engine.TaylorModel.Integral (4.3s)
+✔ [3745/3815] Built LeanCert.Engine.AD.Eval (4.4s)
+✔ [3746/3815] Built LeanCert.Engine.TaylorModel.ExpLog (13s)
+✔ [3747/3815] Built LeanCert.Engine.AD.Correctness (8.2s)
+✔ [3748/3815] Built LeanCert.Engine.TaylorModel.Hyperbolic (18s)
+✔ [3749/3815] Built LeanCert.Engine.TaylorModel.Trig (15s)
+✔ [3750/3815] Built LeanCert.Engine.AD.Computable (4.6s)
+✔ [3751/3815] Built LeanCert.Engine.TaylorModel.Functions (2.0s)
+✔ [3752/3815] Built LeanCert.Engine.AD.PartialCorrectness (7.2s)
+✔ [3753/3815] Built LeanCert.Engine.AD.DomainChecked (3.8s)
+✔ [3754/3815] Built LeanCert.Engine.TaylorModel.Expr (4.6s)
+✔ [3755/3815] Built LeanCert.Engine.TaylorModel (2.4s)
+✔ [3756/3815] Built LeanCert.Engine.AD.Dyadic (4.2s)
+✔ [3757/3815] Built LeanCert.Engine.AD (2.1s)
+✔ [3758/3815] Built LeanCert.Validity.Bounds.Smart (4.4s)
+✔ [3759/3815] Built LeanCert.Meta.ProveSupported (4.8s)
+✔ [3760/3815] Built LeanCert.Engine.IntervalEvalRefined (5.3s)
+✔ [3761/3815] Built LeanCert.Engine.Optimize (8.1s)
+✔ [3762/3815] Built LeanCert.Validity.Bounds.Bridge (4.2s)
+✔ [3763/3815] Built LeanCert.Meta.ProveContinuous (6.4s)
+✔ [3764/3815] Built LeanCert.Tactic.IntervalAuto.ProveCommon (7.1s)
+✔ [3765/3815] Built LeanCert.Validity.Bounds.Basic (3.9s)
+✔ [3766/3815] Built LeanCert.Engine.RootFinding.Newton (6.9s)
+✔ [3767/3815] Built LeanCert.Engine.Optimization.Gradient (8.1s)
+✔ [3768/3815] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (4.4s)
+✔ [3769/3815] Built LeanCert.Tactic.IntervalAuto.Basic (4.3s)
+✔ [3770/3815] Built LeanCert.Validity.Integration (7.9s)
+✔ [3771/3815] Built LeanCert.Engine.RootFinding.MVTBounds (11s)
+✔ [3772/3815] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (7.9s)
+✔ [3773/3815] Built LeanCert.Engine.RootFinding.Krawczyk (10s)
+✔ [3774/3815] Built LeanCert.Engine.RootFinding.Contraction (11s)
+✔ [3775/3815] Built LeanCert.Tactic.LeanCert.Integral (12s)
+✔ [3776/3815] Built LeanCert.Tactic.Extension.Execute (12s)
+✔ [3777/3815] Built LeanCert.Engine.RootFinding.KrawczykCandidate (4.9s)
+✔ [3778/3815] Built LeanCert.Tactic.LeanCert.Solver.Protocol (7.3s)
+✔ [3779/3815] Built LeanCert.Validity.Krawczyk (4.2s)
+✔ [3780/3815] Built LeanCert.Engine.RootFinding.Main (3.4s)
+✔ [3781/3815] Built LeanCert.Engine.Optimization.Global (29s)
+✔ [3782/3815] Built LeanCert.Tactic.Enclosure (4.1s)
+✔ [3783/3815] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (4.5s)
+✔ [3784/3815] Built LeanCert.Validity.Types (3.7s)
+✔ [3785/3815] Built LeanCert.Engine.Optimization.Guided (4.5s)
+✔ [3786/3815] Built LeanCert.Engine.Search.CounterExample (4.2s)
+✔ [3787/3815] Built LeanCert.Engine.Optimization.BoundVerify (4.5s)
+✔ [3788/3815] Built LeanCert.Validity.Bounds (8.2s)
+✔ [3789/3815] Built LeanCert.Discovery.Find (4.1s)
+✔ [3790/3815] Built LeanCert.Tactic.IntervalAuto.OptBound (5.1s)
+✔ [3791/3815] Built LeanCert.Tactic.IntervalAuto.Multivariate (7.5s)
+✔ [3792/3815] Built LeanCert.Tactic.IntervalAuto.RootBound (3.8s)
+✔ [3793/3815] Built LeanCert.Tactic.IntervalAuto.Bound (17s)
+✔ [3794/3815] Built LeanCert.Tactic.IntervalAuto.Subdiv (6.1s)
+✔ [3795/3815] Built LeanCert.Tactic.IntervalAuto.Adaptive (7.8s)
+✔ [3796/3815] Built LeanCert.Tactic.IntervalAuto.PointIneq (9.5s)
+✔ [3797/3815] Built LeanCert.Tactic.IntervalAuto (2.6s)
+✔ [3798/3815] Built LeanCert.Tactic.Refute (4.3s)
+✔ [3799/3815] Built LeanCert.Tactic.FinSumWitness (5.9s)
+✔ [3800/3815] Built LeanCert.Tactic.FinSumBound (4.5s)
+✔ [3801/3815] Built LeanCert.Tactic.Discovery (13s)
+✔ [3802/3815] Built LeanCert.Tactic.LeanCert.Semantic.Parse (3.3s)
+✔ [3803/3815] Built LeanCert.Tactic.Krawczyk (3.5s)
+✔ [3804/3815] Built LeanCert.Tactic.LeanCert.Router (7.9s)
+✔ [3805/3815] Built LeanCert.Tactic.LeanCert (2.7s)
+✔ [3806/3815] Built LeanCert.Tactic (2.8s)
+ℹ [3807/3815] Built NLA.MI27.Numerical (2.0s)
+info: NLA/MI27/Numerical.lean:30:0: 'NLA.MI27.half_coefficient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3808/3815] Built NLA.MI27.PositiveCommutator (3.3s)
+info: NLA/MI27/PositiveCommutator.lean:129:0: 'NLA.MI27.positive_commutator_trace_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3809/3815] Built NLA.MI27.HockeyStickFlow (3.5s)
+warning: NLA/MI27/HockeyStickFlow.lean:196:17: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MI27/HockeyStickFlow.lean:208:0: 'NLA.MI27.hockey_stick_unitary_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3810/3815] Built NLA.MI27.EntropyTrajectory (3.6s)
+info: NLA/MI27/EntropyTrajectory.lean:115:0: 'NLA.MI27.entropy_trajectory_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3811/3815] Built NLA.MI27.EntropyDerivative (3.9s)
+info: NLA/MI27/EntropyDerivative.lean:164:0: 'NLA.MI27.entropy_unitary_mix_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3812/3815] Built NLA.MI27.LogarithmicCommutatorDual (3.2s)
+info: NLA/MI27/LogarithmicCommutatorDual.lean:81:0: 'NLA.MI27.logarithmic_commutator_dual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3813/3815] Built NLA.MI27.LogarithmicCommutator (2.0s)
+info: NLA/MI27/LogarithmicCommutator.lean:49:0: 'NLA.MI27.logarithmic_commutator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3814/3815] Built Solution (2.8s)
+info: Solution.lean:12:0: 'NLA.MI27.half_coefficient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:15:0: 'NLA.MI27.spectral_function_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:18:0: 'NLA.MI27.normalize_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:21:0: 'NLA.MI27.positive_trace_operator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:24:0: 'NLA.MI27.positive_commutator_trace_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:27:0: 'NLA.MI27.positive_part_variational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:30:0: 'NLA.MI27.positive_part_trace_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:33:0: 'NLA.MI27.unitary_flow_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:36:0: 'NLA.MI27.hockey_stick_unitary_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:39:0: 'NLA.MI27.uniform_hockey_stick_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:42:0: 'NLA.MI27.relative_entropy_finite_hockey_stick' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:45:0: 'NLA.MI27.weighted_entropy_finite_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:48:0: 'NLA.MI27.kernel_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:51:0: 'NLA.MI27.kernel_entropy_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:54:0: 'NLA.MI27.entropy_trajectory_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:57:0: 'NLA.MI27.entropy_unitary_mix_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:60:0: 'NLA.MI27.skew_commutator_trace_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:63:0: 'NLA.MI27.hermitian_trace_norm_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:66:0: 'NLA.MI27.logarithmic_commutator_dual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:69:0: 'NLA.MI27.logarithmic_commutator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3815 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MI27.half_coefficient_positive, NLA.MI27.spectral_function_semantics, NLA.MI27.normalize_positive_pair, NLA.MI27.positive_trace_operator_bound, NLA.MI27.positive_commutator_trace_bound, NLA.MI27.positive_part_variational, NLA.MI27.positive_part_trace_lipschitz, NLA.MI27.unitary_flow_semantics, NLA.MI27.hockey_stick_unitary_lipschitz, NLA.MI27.uniform_hockey_stick_cutoff, NLA.MI27.relative_entropy_finite_hockey_stick, NLA.MI27.weighted_entropy_finite_kernel, NLA.MI27.kernel_integrals, NLA.MI27.kernel_entropy_mass_bound, NLA.MI27.entropy_trajectory_lipschitz, NLA.MI27.entropy_unitary_mix_derivative, NLA.MI27.skew_commutator_trace_norm, NLA.MI27.hermitian_trace_norm_witness, NLA.MI27.logarithmic_commutator_dual_bound, NLA.MI27.logarithmic_commutator_bound, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+
+EXIT_STATUS=0
