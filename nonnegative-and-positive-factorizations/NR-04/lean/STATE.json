@@ -1,0 +1,52 @@
+{
+  "status": "LOCAL_FULL_TARGET_AND_TWO_FINAL_REVIEWS_PASS; published Linux checks pending",
+  "updated_utc": "2026-09-19T07:59:57.033125+00:00",
+  "original_target": "The real nine-point squared distance matrix has nonnegative rank7; no six-factor nonnegative real factorization exists.",
+  "whole_problem_verified": false,
+  "count_change": 0,
+  "local_aggregate": {
+    "status": "PASS",
+    "run": "recovery-087",
+    "receipt": "verification/local-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+    "receipt_sha256": "534f556fbc4d28a40e89a6c1d547bc5b0f63223482b2f103a71581988b2e269e",
+    "modules": 41,
+    "actual_command": [
+      "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+      "--threads=1",
+      "--memory=4096",
+      "-o",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Solution.olean",
+      "Solution.lean"
+    ],
+    "standalone_lake_build": "NOT_RUN; exact direct serial Lean commands retained"
+  },
+  "final_independent_reviews": {
+    "status": "PASS",
+    "approved_nonauthor_count": 2,
+    "reports": [
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_a",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-a/REPORT.md",
+        "report_sha256": "736f841a6a833f62e9c1b7e63c4f9a5027c24ddd45c1ef1088ec83cfc4edfcff",
+        "manifest": "reviews/final-referee-a/MANIFEST.json",
+        "manifest_sha256": "6d16e8997fe5cbe4ff991d9c75fccc16b8b21cfd2b50492a5d8f56f7301e38e5",
+        "new_Lean_or_Comparator_run": false
+      },
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_b",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-b/REPORT.md",
+        "report_sha256": "a1b0a9bbea678cfab8faec72301132ef439bb310f34331bccd00692af8b42122",
+        "manifest": "reviews/final-referee-b/MANIFEST.json",
+        "manifest_sha256": "9d2e7d9eb42dcfe57c11966bf8afdf98a1b476f3e186d8a706e8ed396349eee3",
+        "new_Lean_or_Comparator_run": false
+      }
+    ]
+  },
+  "GitHub_Comparator": {
+    "status": "NOT_RUN_FOR_NR04"
+  }
+}
