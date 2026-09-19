@@ -1,0 +1,62 @@
+[
+  {
+    "path": "bootstrap/comparator-build.log",
+    "bytes": 795,
+    "sha256": "43ff8afdc28c1fbf09ed2ec72e1941bc43ccf2cc7a56bb23632519793e9f01fb"
+  },
+  {
+    "path": "bootstrap/landrun-build.log",
+    "bytes": 349,
+    "sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302"
+  },
+  {
+    "path": "bootstrap/elan.log",
+    "bytes": 129,
+    "sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/comparator-controls.log",
+    "bytes": 6680,
+    "sha256": "236f61202893a3960763da8dfabe606f592e7a6e3cc13903877aee5e94469174"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/comparator.log",
+    "bytes": 94675,
+    "sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/dependencies.log",
+    "bytes": 1570,
+    "sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/kernel-controls.log",
+    "bytes": 1322,
+    "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/mathlib-cache.log",
+    "bytes": 8365,
+    "sha256": "11148bfa82f1966bb74a5da980e92b43ddac260962ea6c1f6e69510bf02201ad"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/negative-native.log",
+    "bytes": 2475,
+    "sha256": "865aa982c06fe5eeea37ada327f5a1cf8b97092117e7274c9eff06ebf69fc0c3"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/negative-sorry.log",
+    "bytes": 2499,
+    "sha256": "5ecfa22a61a06273487790e53e9d1f476600ba953db2117d03f595da221b7597"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/sandbox.log",
+    "bytes": 4117,
+    "sha256": "53bad31754b7d79505e2269ddbed09546d894d01b2d8fac4e319fcb199c9d264"
+  },
+  {
+    "path": "verify-20260919T082654Z-4176/user-service.log",
+    "bytes": 1273,
+    "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+  }
+]

@@ -1,0 +1,6 @@
+'NLA.MF14Degree44.product_span_basis_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.product_span_monomial_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.syzygy_basis_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degeneration_E_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.low_part6_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degeneration_in_span' depends on axioms: [propext, Classical.choice, Quot.sound]

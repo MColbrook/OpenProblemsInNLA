@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-instance-continuation-referee-b/authenticate_continuation.py"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+  "exit_code": 0,
+  "stdout_file": "AUDIT.json",
+  "stdout_sha256": "aa577268b3980cab5151e0e5e243ed83bdd13db3ebc921b16f38c5976bfa895c",
+  "compiler_binary_rehashed_without_execution": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "new_compiler_invocation": false,
+  "recorded_utc": "2026-09-19T08:52:54.015414+00:00"
+}

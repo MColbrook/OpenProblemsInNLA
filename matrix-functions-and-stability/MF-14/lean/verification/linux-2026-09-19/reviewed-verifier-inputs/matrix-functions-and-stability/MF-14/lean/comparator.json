@@ -1,0 +1,37 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF14Degree44.canonical_gate_padding",
+    "NLA.MF14Degree44.four_prefix_full_coefficients",
+    "NLA.MF14Degree44.three_product_tuple",
+    "NLA.MF14Degree44.good_border_parameters_eventually",
+    "NLA.MF14Degree44.fourth_span_coordinates",
+    "NLA.MF14Degree44.fourth_map_smooth",
+    "NLA.MF14Degree44.fourth_jacobian_identity",
+    "NLA.MF14Degree44.fourth_minor_identity",
+    "NLA.MF14Degree44.fourth_product_joint_closure",
+    "NLA.MF14Degree44.polynomial_density_of_strict_derivative",
+    "NLA.MF14Degree44.degeneration_identity",
+    "NLA.MF14Degree44.degeneration_at_zero",
+    "NLA.MF14Degree44.degeneration_in_span",
+    "NLA.MF14Degree44.monic_border_joint_closure",
+    "NLA.MF14Degree44.continuation_actual_output",
+    "NLA.MF14Degree44.continuation_degree_bound",
+    "NLA.MF14Degree44.continuation_closure_transfer",
+    "NLA.MF14Degree44.family_image_mem_closure",
+    "NLA.MF14Degree44.family_degree_and_full_vector",
+    "NLA.MF14Degree44.coefficient_map_smooth",
+    "NLA.MF14Degree44.coefficient_jacobian_identity",
+    "NLA.MF14Degree44.integer_jacobian_mod3_inverse",
+    "NLA.MF14Degree44.coefficient_derivative_bijective",
+    "NLA.MF14Degree44.degree44_coverage",
+    "NLA.MF14Degree44.original_equality_false"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

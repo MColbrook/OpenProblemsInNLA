@@ -1,0 +1,9 @@
+'NLA.MF14Degree44.jacobianAt_eq_toMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.jacobianAt_det_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.derivative_equivalence_of_jacobian_det_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NLA.MF14Degree44.derivative_bijective_of_jacobian_det_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NLA.MF14Degree44.polynomial_density_of_smooth_jacobian' depends on axioms: [propext, Classical.choice, Quot.sound]

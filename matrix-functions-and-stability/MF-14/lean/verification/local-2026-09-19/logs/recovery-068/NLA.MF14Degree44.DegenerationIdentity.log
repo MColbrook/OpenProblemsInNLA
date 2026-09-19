@@ -1,0 +1,15 @@
+NLA/MF14Degree44/DegenerationIdentity.lean:26:51: warning: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [syzygyHighPartFor, syzygy_third_factor, syzygy_fourth_factor, syzygyR5, syzygyR6, degenerationZ,
+    map_add, map_mul, map_pow, map_ofNat, map_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/DegenerationIdentity.lean:26:60: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.degeneration_high_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degeneration_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degeneration_low_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degeneration_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

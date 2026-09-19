@@ -1,0 +1,26 @@
+NLA/MF14Degree44/SeedFirstColumns8.lean:25:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns8.lean:25:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_40' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns8.lean:37:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns8.lean:37:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns8.lean:49:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_42' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns8.lean:61:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns8.lean:73:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_44' depends on axioms: [propext, Classical.choice, Quot.sound]

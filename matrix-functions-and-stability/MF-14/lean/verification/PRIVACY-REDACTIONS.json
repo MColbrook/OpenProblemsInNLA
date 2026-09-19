@@ -1,0 +1,37 @@
+{
+  "purpose": "Honor contributor instruction not to publish personal email.",
+  "scope": "Public derivative copies of GitHub API metadata only. Original authenticated responses remain in unpublished local evidence. Original hashes in independent audit records bind those original responses; the mapping below binds their public redacted derivatives.",
+  "mathematical_or_Lean_source_changes": false,
+  "files": [
+    {
+      "file": "verification/linux-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "original_sha256": "8a64b95b6b379a853687f1e6d3401f5325c8ffe70553b72ac780522152d2c2bb",
+      "published_redacted_sha256": "b3ec4961f66b28b5c713feb49669ed69923569f528fc5eb82e467f7d44101fa7",
+      "replacements": 2,
+      "change": "Only the contributor personal-email string was replaced; author name, commit IDs, source trees, commands and all verification results are unchanged."
+    },
+    {
+      "file": "verification/linux-2026-09-19/upstream/official-checked-commit.json",
+      "original_sha256": "e39280a0f59ea091f20901edb5c6e9878ffa1b04b2f07b813d6b12a1bcc1f9e1",
+      "published_redacted_sha256": "e7207d383c7a4567f641a765503fcc80827246eec1ea83adafdc03229a9693d5",
+      "replacements": 2,
+      "change": "Only the contributor personal-email string was replaced; author name, commit IDs, source trees, commands and all verification results are unchanged."
+    },
+    {
+      "file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "original_sha256": "26fa3cf5897916802d7ff7e5da0f538016329bf2dfec8d40acf370bf3c370623",
+      "published_redacted_sha256": "a6c207cb864fb30d5d289d9fdf3fc0fee41e566709beb5e7387deb003b05a479",
+      "replacements": 2,
+      "change": "Only the contributor personal-email string was replaced; author name, commit IDs, source trees, commands and all verification results are unchanged."
+    },
+    {
+      "file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-checked-commit.json",
+      "original_sha256": "a6c014186411272499b804dfe5fd576770cf39ec0e48ab7b2312a1c0b08beebd",
+      "published_redacted_sha256": "a20af732ad33825eae854a37afc793f2b14bb783af996e55ab80755d6ba99d04",
+      "replacements": 2,
+      "change": "Only the contributor personal-email string was replaced; author name, commit IDs, source trees, commands and all verification results are unchanged."
+    }
+  ],
+  "last_checked_utc": "2026-09-19T09:30:31.484908+00:00",
+  "archive_scan": "All current project files and decompressed gzip/zip members scanned for contributor personal-email strings; no remaining matches."
+}

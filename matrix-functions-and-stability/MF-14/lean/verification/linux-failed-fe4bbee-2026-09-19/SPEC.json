@@ -1,0 +1,24 @@
+{
+  "problem": "MF-14",
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "worktree": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14",
+  "evidence": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-linux-20260919",
+  "proof": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+  "base": "71563f17926cd826a892c2bba0e294894ee57a5c",
+  "project": "matrix-functions-and-stability/MF-14/lean",
+  "audit_scope": "Independent nonauthor read-only audit of official GitHub evidence; no additional Lean or Comparator run.",
+  "audit_output": "INDEPENDENT-AUDIT.json",
+  "runs": [
+    {
+      "kind": "fork",
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35431937168
+    },
+    {
+      "kind": "upstream",
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35431941636
+    }
+  ],
+  "expected_conclusion": "failure"
+}

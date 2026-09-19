@@ -1,0 +1,551 @@
+{
+  "phase": "final independent statement and proof review",
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "AI_agent": true,
+  "proof_author": false,
+  "proof_authors_excluded": [
+    "/root",
+    "/root/recover_lean_sources"
+  ],
+  "verdict": "APPROVE",
+  "created_utc": "2026-09-19T08:19:10.657854+00:00",
+  "snapshot": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/final-review-packets/MF14-v1/REVIEW-SNAPSHOT.json",
+  "snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "reviewed_files": {
+    "Challenge.lean": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NLA/MF14/CircuitFoundations.lean": "411343755bad7f24ac27539bb3c3f24ea0c614b893825ac071dfb4ea69315a35",
+    "NLA/MF14/Definitions.lean": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+    "NLA/MF14Degree44/BasisDegreeData.lean": "0d839b69a35aa80646e2ca5fed6320836af841f93508cb3a635009dd0fad805c",
+    "NLA/MF14Degree44/BorderLimit.lean": "a54d22494b8513911e1cf8b56148579a8576c33e90cd886d71e8295e990c441b",
+    "NLA/MF14Degree44/BorderPathContinuity.lean": "f38b3fd78b534af6b968bb65ad96c286be95b445ba655a03d27224bb26945ae4",
+    "NLA/MF14Degree44/CircuitPrefix.lean": "ab0e8c55cd18dfaa276ad4a99020eca686e29cec1f9c05924c55755bbd237898",
+    "NLA/MF14Degree44/CircuitSpanOperations.lean": "e77d78fb38e7564a895078b691a6bc6fbf6df95d9bef63bdf8590518e83088b2",
+    "NLA/MF14Degree44/CoefficientSmooth.lean": "16c1c8c27b578c1c36ecd2951f41a8d704aac211d24b96ffb00228937d5d71dd",
+    "NLA/MF14Degree44/ContinuationCircuit.lean": "adad9b97debaf8c237a7f5374e8aa877112f37def70735e6231e421520a8e09d",
+    "NLA/MF14Degree44/ContinuationClosure.lean": "6fca4fca8f08a259ff3005e5415cbbc01f857d42ca5ed43e8c41ced9737a3366",
+    "NLA/MF14Degree44/ContinuationPolynomialMaps.lean": "024035034cb2821793b07da0a87100ee97e0c45a0c362a3c8f85b03a14b84aeb",
+    "NLA/MF14Degree44/CoverageBridge.lean": "9fe884bd2645c39285d2137837f80f68487a3111c8931c03fc50e4b677ac0ee6",
+    "NLA/MF14Degree44/Definitions.lean": "cb5cb2a374e2bc0a82e4cc0770a3e8e1baf7972f92ce17f51768a2d3ae7ea2f2",
+    "NLA/MF14Degree44/Degeneration.lean": "6b750c44cae01b51029ad6857f39a385cecffa23056d41d6d6357ad398ce0304",
+    "NLA/MF14Degree44/DegenerationAtZero.lean": "23a89d0712d173bf5e5e3f7d270e62204451044628f3cf1b90fedd5319ddf9ee",
+    "NLA/MF14Degree44/DegenerationCoefficientData.lean": "51b82c8a83ff58e56b9ca3386f2fd3191b8d51703a2c3c53ee04b611a3ef2390",
+    "NLA/MF14Degree44/DegenerationIdentity.lean": "2f1508a16f55eedc7ebb1d2f8a0c3db8f0eb146edd414c9afbb0a253107e1b55",
+    "NLA/MF14Degree44/DegreeBounds.lean": "0b7b7cb6491551a49b349c6b0425e416ffdc9906e3d117a3a477ad033a2fff2b",
+    "NLA/MF14Degree44/Family.lean": "89e71dd7b7963f0c74f2782942a13fe237007c6af783d5f5e7e98cfdea7939a5",
+    "NLA/MF14Degree44/FamilyDegreeBounds.lean": "6ff865228d9187feec0e18ca843796037290548131b650e04d548f0287ab5ec9",
+    "NLA/MF14Degree44/FamilyFirstJet.lean": "e3ead83c3df9107b52fb753497e3a6e339fa2c7e66fa1bfa52ddfe7933593a3d",
+    "NLA/MF14Degree44/FamilySmooth.lean": "2e08d0705e708b1e2744a0bfc25f93bd431dea81aca631ff28ccddd8ab1b357d",
+    "NLA/MF14Degree44/FinalClosure.lean": "d7e3f2ff6870c7e55aac1960f706addafbd76c061d152eb014637af021b99200",
+    "NLA/MF14Degree44/FirstDerivatives.lean": "8fa7119f8aa5bc4f894c9f6fab778b724f0c2b91c649c2ab027cba61f7cc1d66",
+    "NLA/MF14Degree44/FourthActualCircuit.lean": "87ca8294613183b4e904b56fa44a9a619651aaae86452bdb15b8aca26530fcaf",
+    "NLA/MF14Degree44/FourthDeterminantBlocks.lean": "0506809193ed92880aed7d18c522924e0c688fd29dba2d763c440d19aac0f36b",
+    "NLA/MF14Degree44/FourthJacobian.lean": "5419d8a7f26a23f4214875dea25a62d30f2f2da15116a7d6121ba52ca443cb64",
+    "NLA/MF14Degree44/FourthJointClosure.lean": "1f93b2f1f5c531618586b337641bed88f54a740444b23d836d29c35f4982a0d4",
+    "NLA/MF14Degree44/FourthMinorBlocks.lean": "caf84af7c4bfd862b3133d10f678d239d2965cf4dd4bcf3a347cf4098a557c48",
+    "NLA/MF14Degree44/FourthMinorCoefficients.lean": "3d29fd745e8117f032d04f71bc667dd0b6c60c99569960aefa390baec0f6dc06",
+    "NLA/MF14Degree44/FourthMinorIdentity.lean": "c7ba6dcc153bda2e7b1678c0f92bf55f7da002cf4b469659ff4201a8d05e02ae",
+    "NLA/MF14Degree44/FourthSmooth.lean": "39f211313d511e9996ccae169424ab3aa2a8ea33267ac323d73bd1e5182dc3ad",
+    "NLA/MF14Degree44/FourthSpanMembership.lean": "cceb40d3d87837c0e3feda87e03fbd9eb1e23313fdf6be7270ce7ab0595b1cca",
+    "NLA/MF14Degree44/GoodParameters.lean": "5a78d56b50bfe6182ac0266a70fca3b7d29a9ff21ca373e96ac4ad7e4c1b53f5",
+    "NLA/MF14Degree44/JacobianEquivalence.lean": "25aa75a2c1a165f8c9a5a156900011e3801261f2ee7568beb10cfa4072712f7b",
+    "NLA/MF14Degree44/JacobianIdentity.lean": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
+    "NLA/MF14Degree44/JacobianNonzero.lean": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
+    "NLA/MF14Degree44/Mod3CastBridge.lean": "d1f34f926b566240e03d7492821eb5233414d0061d01bfd6f860b83ae8190355",
+    "NLA/MF14Degree44/Mod3Certificate.lean": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+    "NLA/MF14Degree44/Mod3Columns0.lean": "412076e819da1251b01e1be21caa9832d3d9c8dfd1560f2869592827ea4af019",
+    "NLA/MF14Degree44/Mod3Columns1.lean": "59cf2b97076e25766960b7e1129a8c4785fd7ef3917041cf91f47bff10f39624",
+    "NLA/MF14Degree44/Mod3Columns2.lean": "04ab23746dc2ee6737fa817f92f843acbe6ae69c8a638a92db1f406fac6fe948",
+    "NLA/MF14Degree44/Mod3Columns3.lean": "87e16cdf33cd04486c57d8c6221a891598b2fd3428515df7454c8ccdd80304b4",
+    "NLA/MF14Degree44/Mod3Columns4.lean": "09e23fc8a4b7956105d088b68a146a3f190301212d729079c6cea7cf70ac5dac",
+    "NLA/MF14Degree44/Mod3Columns5.lean": "91a47f3e773240e449650444ca88dd1e6d965d2553847447adaebc0d83679c63",
+    "NLA/MF14Degree44/Mod3Columns6.lean": "98b0774ea11f58ff0045bc5f4b103af158e665ddd694be9d6ba1bbf68522cb77",
+    "NLA/MF14Degree44/Mod3Columns7.lean": "9aaaba115512415bd0bec6b2687132bc2a72ce163a2d865169e092d030fb8701",
+    "NLA/MF14Degree44/Mod3Columns8.lean": "17b304792342d12d754a8bfedb41b9fa725f846b937a004591b49f42f65c5590",
+    "NLA/MF14Degree44/Mod3Lists.lean": "73ea43a05f51b4687b35067bf051afe642823ea401e81ae3aa7be3c67c008296",
+    "NLA/MF14Degree44/Mod3Rows0.lean": "93396070a20d8efff88e990f8a8e76e679fc4d8087326eb0fefc596d0715377f",
+    "NLA/MF14Degree44/Mod3Rows1.lean": "93d84853656023d6ab06d0667030762013a1147bfe64d2490b99ffc5daa9eba2",
+    "NLA/MF14Degree44/Mod3Rows2.lean": "26eab34b927e908393ee7f98aa45864a54a434835bfb541583fea10d832e8ee7",
+    "NLA/MF14Degree44/Mod3Rows3.lean": "af41eeb01d179aaa16deb43d3745a055448f775bc09dbeffa5d1e97552aabcf6",
+    "NLA/MF14Degree44/Mod3Rows4.lean": "d4a5f2170809b43bc3e4c824f0c349c237f07554bed4584cf8582d153746b681",
+    "NLA/MF14Degree44/Mod3Rows5.lean": "302a1b89ce1df25d90c3e897b6a8bff2bd5ba0917bdc9adfa33cf1db43325cd6",
+    "NLA/MF14Degree44/Mod3Rows6.lean": "e7bb6163a1152f7b4d78d13fa978bf51b76e0dea513c4b07222b49efa079be3f",
+    "NLA/MF14Degree44/Mod3Rows7.lean": "d19cdedac9575a7d73dc972a89be61499644c35def7ed85f5143abe9fbeb19a7",
+    "NLA/MF14Degree44/Mod3Rows8.lean": "405388b498a4660be5a4bdd5cdec056d75bcac63e2286369333d5ef45923ad61",
+    "NLA/MF14Degree44/MonicBorderPath.lean": "71d6f3874ebe55a575d9a1cca3f0bbecc737a3ad41642c7df7bae0fc34879563",
+    "NLA/MF14Degree44/PolynomialDensity.lean": "6edc305d51a2dcad8f26a847fa976de701af73a4d102892bfe3e700932eb1804",
+    "NLA/MF14Degree44/PolynomialMaps.lean": "d19c0cf5deedbfc3390dfc4f85e03648e358c9e956830f405e3bb94fea09b495",
+    "NLA/MF14Degree44/ProductSpan.lean": "66da6016227992f43be35cdc04eb8ed688b29b5723a65058445c65cfd392fbdb",
+    "NLA/MF14Degree44/SeedFirstColumns.lean": "16e92e836c24df19c0321dead5cab01896a2318f0be33cf6f4a59eadf4854ed3",
+    "NLA/MF14Degree44/SeedFirstColumns0.lean": "87bf432622ed507fef2ff26a74afd039adb1461ba0c083abe157f33b6e43aa47",
+    "NLA/MF14Degree44/SeedFirstColumns1.lean": "e89610192e571837d661945d4c7e696a8e5682f5456696c2600a51e101599cc8",
+    "NLA/MF14Degree44/SeedFirstColumns2.lean": "9ae8c7c2dc38c41bfc04e4ba584a7adc4066488bc2ed1e583d6d836baf01d845",
+    "NLA/MF14Degree44/SeedFirstColumns3.lean": "9641071c84bf50c7b2cf12d2a22d55a28e0d76d2caab8764524a53456fb866f5",
+    "NLA/MF14Degree44/SeedFirstColumns4.lean": "c275200cb92820c3b899fa345883ac16dabba9fc95188ec541240708bce1ae74",
+    "NLA/MF14Degree44/SeedFirstColumns5.lean": "8422871cb21784c30a200f7d564628a91d796dd7ca6039c2f6790dcd9163f297",
+    "NLA/MF14Degree44/SeedFirstColumns6.lean": "aa9714ddc2a5d0388799dabffc0ad466b57026aa8b77fd9c5f932d51b7e37d7d",
+    "NLA/MF14Degree44/SeedFirstColumns7.lean": "6ae6f7316fbdd6dac8ffbf8e6576312494a40a2651d779ab3e0c93cc76d56d08",
+    "NLA/MF14Degree44/SeedFirstColumns8.lean": "8c57637f701e1e1e69faeede538caef46c78b6ed472dc2930163ef9729bedd87",
+    "NLA/MF14Degree44/SeedFirstPilot.lean": "965a3a4dc90a34b7b9c9631bf9a78e4880da0a925091aaf711df715036c2769d",
+    "NLA/MF14Degree44/SpanBasisCoordinates.lean": "dc7fa5f5e56abd48402d72a01b9ab2ae1696bcb5df0bf676a23b25e258cde3cd",
+    "NLA/MF14Degree44/SpanCoordinates.lean": "588030d92358106b61caf387f52d8578c2552b574feea77729c7829ee4afd631",
+    "NLA/MF14Degree44/SpanReconstruction.lean": "0dc6bd3bfb3a47c1f4a6e9fee05af2b1526faf4e730a11e843ae95ef86a546a7",
+    "NLA/MF14Degree44/SyzygyExpansion.lean": "657f0fc7082e72f30ba369b4e479661f3ff4db3fe24f90dea9e6b385e9c28943",
+    "NLA/MF14Degree44/SyzygyFactors.lean": "1172e0babc9db39bdf5d9d1bb4b481b540f1eb31fd037dc0d19fd9b6c9c4a5f6",
+    "NLA/MF14Degree44/SyzygyLowPart.lean": "dccc88baa58902d278642a2d9bf4b16a252d911d124f7b7909da8c35dc389d5c",
+    "NLA/MF14Degree44/SyzygyMiddle10.lean": "a1cb7c8abd895bd01d2b2cae941fa874ae4ebe34749f606469d7ab0e01c84438",
+    "NLA/MF14Degree44/SyzygyMiddle7.lean": "c25252ed183a107c704fab1265e149b0675301cb6d79ee159bb2dc01a7daefb1",
+    "NLA/MF14Degree44/SyzygyMiddle8.lean": "17f9c8023e5b4bad65b661acd5017a7729dfeb984fba8879a87c222bb46d0010",
+    "NLA/MF14Degree44/SyzygyMiddle9.lean": "184fac891cbb3b312ef1ba052d3a838790363973cba09c40737dc100a0afa413",
+    "NLA/MF14Degree44/ThirdProductFactorization.lean": "4f4f0bb500a5aa4d4ba1a82a5d31777369e513d7ab6f5cc0e3ea417f0c437873",
+    "NLA/MF14Degree44/ThreeProductTuple.lean": "4ef8ea51a77f99fc51aa8859a1e4024911892e5876fcdae1bdc2cc819d7ebc5e",
+    "NUMERICAL_TARGETS.md": "140df3422111db0561e0819bc1340942ed9f7652c7f041e3af51d06b16a21ae6",
+    "STATEMENT-FREEZE.json": "10d161750ec789b5b8f24e0e82e229a722017b77b4cb7bdce11787dde70d7e3c",
+    "Solution.lean": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+    "comparator.json": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+    "lake-manifest.json": "b339bf353231c2178924e42e61d31cda4b51571c43caf67d7e66925cb3a60437",
+    "lakefile.toml": "efb828b2dff84bf9a528ddf8529b4cf152d06b0f72fdfb7432f3ea842a0a0fab",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "local-evidence/AGGREGATE.log": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+    "local-evidence/AXIOMS.json": "24883ce349eeb2df1c47132194590b3644f44c3c48000effc25ab06627b88d06",
+    "local-evidence/RECOVERY-087.json": "ac4f70fe6f7ccc7e7ff8543b601a123d94eb97968489968b4658b9b578a97c5b",
+    "source-context/CANONICAL-README.md": "e6c56268cac558fd2c816a9d68f39f5eb3703ef8ad2682502f7a98092466888b",
+    "source-context/MATHEMATICAL-SOURCE.tex": "c987a6ac3532b50a8241702612c05d951d2a7d9b467a14aec922ea3c83d3de88",
+    "source-context/REVIEW-PROTOCOL.md": "d967ddce620d4e754e2f9c25548f30cb537f76f4ddcf8ecf2574945bcd332553",
+    "source-context/WORKFLOW.md": "27d1baf38609e50049f077e8004dabe598dc53cadab73acdb8a7a1e1e4a48be6"
+  },
+  "reviewed_Lean_file_count": 87,
+  "source_read_scope": "Complete original canonical README and degree44 source; all substantive proof modules; generated certificate partitions examined with representative complete reads and exhaustive exact arithmetic/source-pattern checks retained below.",
+  "local_compiler_run_by_reviewer": false,
+  "Comparator_run_by_reviewer": false,
+  "first_final_referee_report_relied_upon": false,
+  "count_change": 0,
+  "report_sha256": "324678541771c27834b0c3967dcae81aa3c15083acb2715ca1c1f8f7a2440424",
+  "reviewer_owned_checks": {
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-final-referee-b/independent_certificate_check.py": "1c505e0286703e8beb92467081b173340347fdeb4141c93dfd47ad96e2589e64",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-final-referee-b/authenticate_evidence.py": "f43b7a292dee482fda6dadf2e2d79e2775a34ae21b6916b4da62912344be7812",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-final-referee-b/independent_certificate_check.json": "a4a6188c65dd7e97557988b96e12103fa04e831cb836637c86d2fe1d583c9441",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-final-referee-b/authenticate_evidence.json": "ed45f8973c9d9ffa6a688b4c8787ef968ac98750bb51018a10f52370f36a45db"
+  },
+  "reviewer_owned_check_scope": "Read-only hashing/source-pattern inspection and independent Python exact arithmetic, not Lean/Comparator and never proof assumptions.",
+  "additional_evidence": {
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/LOCAL-REPLAY-AUDIT.json": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/actual-axioms.json": "24883ce349eeb2df1c47132194590b3644f44c3c48000effc25ab06627b88d06",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/LOCAL-ENVIRONMENT.json": "8cdb5a599c3e21081011efd2e7a677a46f433b20e3c61e34a5473bf962374f6f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/serial_compile_recovery.py": "83b20af8ae24401b510932cd1efc5bbcba6a3cdc5ad4684ff202a5b2b8706ee7",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean/formalization.yaml": "786384ee0a3dbbf59d998285fc4fc85147168aa530f59f5654d718728f10096e",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean/README.md": "9ecd79d3060add3779fb414d70b4e03f7d2baf91274a8a526b2b3b4982a16a24",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean/IMPLEMENTATION-MAP.json": "c74739e0ddb87da9a2a19957bdb74f504b8cef2f19e7f2bcdc68e9dd76b844eb",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean/lakefile.toml": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean/lake-manifest.json": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-degree44-publication-metadata-v1/project/formalization.yaml": "4adea7ebc49bd69413011f118b2bd842081a68cc5dbaee1430b9ace0b02eb280",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/REVIEWING.md": "352f1c0482b6880e538e1dc1ad7259c0382b12eb62553dca6ab50cd7a12fb352",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/rubrics/reuse.md": "43325e91f32f5f2e5819012caae8c42b72326dfff86599c1feb1ba498ca14a3b",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/rubrics/attribution.md": "04e2956b91409b5abce91f934db00218fddb0fc5ba7e6776bf748690554c71db",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/rubrics/generality.md": "b793f946b84a7b079626271cb8c81f219b8e21dfebf0263620dc4b091c9a84c7",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/rubrics/proof-quality.md": "346768b1a3445343e5fad4d0f78dcb601f5f633cbc7abd81ba189ac4d15ecb83",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/standards/TauCetiProject/TauCetiReview/rubrics/correctness.md": "24eb3f6504809e7e938b02daeb75179fd7d99338bda63f125f7229a2e4b1ca06",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/patterns/Forsythe-NUMERICAL_TARGETS.md": "2e25ed916080e6405f7b0a39e45641ef6f88389f26a6a142bc3036528dfc4119",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/patterns/Forsythe-Challenge.lean.txt": "bcbc89b32f46f6d9c33bbc919d4b08b0e3e797e8b87745485e1decd059c07a8d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/matrix-functions-and-stability/MF-06/lean/source-inputs/patterns/Schiffer-Challenge.lean.txt": "bc31fcc14f816c2e3b756bdea74c6c791aae2d34fa055ae2a8c6a218b209f267",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/Funext.lean": "cb1821884a139917b692103a0b267115179cd4e7084da5487857ec49abb0cc7e",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/Monad.lean": "0dc16825b3b15b4ff7d60f21b880937e4f181e57ba28dc1997fefa1c9fc409da",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean": "c919ad7c65c0cb58cbcd1fd707e8b60f3c203cef127fec2a160e8cfa67d792a2",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/LinearAlgebra/Span/Basic.lean": "030186742b5758bcfeed49623129d424943c18a58cdce1fae62228309527b70c",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean": "37646a248748fd65e37c20a21b4a20fea11539d4312aae4f277e4faef8ed2b87",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/NonsingularInverse.lean": "1ee785b6ebd213ad2ed971bf3c804afee8cc6ce52be69e63572b4cf1bdb5e880",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/ToLinearEquiv.lean": "7e68e3b13653e7e9891c5e40ce0ef753adee3bcee8702d8649e0a6f2eef8d5bb"
+  },
+  "additional_evidence_scope": "Selected relevant Mathlib API portions/searches and example-code workflow patterns; metadata scope/attribution/status inspection, not a schema-validation or historical-result certification.",
+  "archived_local_evidence_independently_hash_checked": {
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-005.RECEIPT.json.gz": {
+      "compressed_sha256": "4f819900521db5c2238d91c18aadcd98f1c8dbd21abb3a814e7580ccc8a32cf6",
+      "decompressed_sha256": "1d6c619958273e9e4368ed88bee9493f530943340513d428da9d72c3ffc788b3"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-008.RECEIPT.json.gz": {
+      "compressed_sha256": "e7d039dfa8b9385683ae9d8a09fbd86bbe55bc14cbea46e91e23964a90f2881c",
+      "decompressed_sha256": "c7e8c65a32d9631bca260552f89e0a3a24ae6b34a843c8f2f9df9dc70f0e6d11"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-009.RECEIPT.json.gz": {
+      "compressed_sha256": "beefb0859e742de858efaf2b6e70eef53bb425b5b99dd8679092495b40d0aa6d",
+      "decompressed_sha256": "9b9045a51bc24f229bddd4bce54c55975c00c1f25bc8b59aefabc0835b99f0ee"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-014.RECEIPT.json.gz": {
+      "compressed_sha256": "74ff54ff68c5ad323c2e8c36c8283912b62cad7746e8c4af1956af85665c0666",
+      "decompressed_sha256": "33af2c402eb0ee4498db3279bf9c746f8e8ea84a00b45dff6fc876c037c8c184"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-015.RECEIPT.json.gz": {
+      "compressed_sha256": "f5e3e3783c18677438d95cf204f29f3f605d0d5dc628cb75d6de54f2ef646428",
+      "decompressed_sha256": "b6ac5188acdeb08e76ab859ae54dbc7acf970e703bc9a62849f328e472cc5fdb"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-016.RECEIPT.json.gz": {
+      "compressed_sha256": "2e298f3a130beffc165e1c5327a75b1a8abd05269a8e1b4f740c2227b23326b4",
+      "decompressed_sha256": "908ead41cbe6170a5edd995bc2ee9b3538f56d96529f92b8844927e0f030960c"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-017.RECEIPT.json.gz": {
+      "compressed_sha256": "e5cee60338379876ea8870983f4c02040b466534dd96c00527c2b324aef11ab8",
+      "decompressed_sha256": "c6fb9b0854c47759c27ca00acd5bc4cf28069d01d315ef372fa56a1490f5971b"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-018.RECEIPT.json.gz": {
+      "compressed_sha256": "fe95f5a0298a7db9685944569601cd0eeb188466cd3d7dc067fd2fa3f44ce34c",
+      "decompressed_sha256": "699a94e51dac1b49f5cf4b949320c172228c67f01b8e893d97aefe7d74c7f7d7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-020.RECEIPT.json.gz": {
+      "compressed_sha256": "45b704859fc1e9e4b1d7706d85f7a8f7692bc0fcc46590cf7cb635ebdc1cde72",
+      "decompressed_sha256": "1dff9ecd727aae300ef870c0c950ddd0b2c2b76e63d986eaa6d1c1deb7832e07"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-023.RECEIPT.json.gz": {
+      "compressed_sha256": "11046626a844ec21998cffa6fd8fb3bb710f6f6acb948d119778e9759f47b025",
+      "decompressed_sha256": "f43a02abf4229605206e32411daf5a294003ea6943c0cf5c77309838c32cfa29"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-024.RECEIPT.json.gz": {
+      "compressed_sha256": "97bcca786415f19f31bd5444a35d5dc5daf28bc347fa436a4cecf9725a10c10a",
+      "decompressed_sha256": "441dd61b406fa133df8e83f58c90e60eda94ae629ca43e0f4fb761b25c3bec92"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-030.RECEIPT.json.gz": {
+      "compressed_sha256": "75d46dd0e8bf4c18e937da890f39754413ad3aaee4ca1b5ccdf5865c7704548f",
+      "decompressed_sha256": "7f0c53d32ceeca6c5fceea157793e18f2f7afba41ca97d46a5b21ecd9cf7db70"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-031.RECEIPT.json.gz": {
+      "compressed_sha256": "26368bfe38e1ef50e46e83aab9b88fd7da19dd7ffa77b240a5948c89fb55af22",
+      "decompressed_sha256": "fa56494980a81e72607964043d1c7c8f18c0b1fbd9b869351471905ccd15b44b"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-036.RECEIPT.json.gz": {
+      "compressed_sha256": "0763738af1779c8e63b83774f7203a51ac3bce6f4ae12d0f67719115af46ff94",
+      "decompressed_sha256": "101e6abc69c35e97087f678e100b37c7b7c6801f00a1256f3521dc0bab0b947a"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-037.RECEIPT.json.gz": {
+      "compressed_sha256": "025a1025a7614a3593d02b4f680939c8d6b5bffaa9f4363801f79c97d9f9f367",
+      "decompressed_sha256": "1efac1a874b6f4759be021b4ce3c227561de8f6831a1ef7638f0a70a89418dc1"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-045.RECEIPT.json.gz": {
+      "compressed_sha256": "18993e6a116d0d67f78f21f91d947076d5f08486f2e3d04350a204ce6a040528",
+      "decompressed_sha256": "65cdf0e030a9cc1df0850511ee3ee52acd434d843966a5b854a8c3397af48bc7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-046.RECEIPT.json.gz": {
+      "compressed_sha256": "f96ef1f15e8d7b634bb09d43926595f3bcfa112de0c29951155838f05afe7322",
+      "decompressed_sha256": "ec616464e44f984865993e5c8eb06a934746aeae9dfb85840c50044ee6affab0"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-048.RECEIPT.json.gz": {
+      "compressed_sha256": "a2b8c1731a0a183f323262ffa1db96d0930aba9e473f8f208030f9ccfa0757c5",
+      "decompressed_sha256": "f639b453d2837ad5fca9637b5bba320de022ef1937b6f681eff9d5dc108117af"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-049.RECEIPT.json.gz": {
+      "compressed_sha256": "99780874e35b5a3255d61c40c15c3cd7024ae296cd98b91bdc7191c1e6d41f19",
+      "decompressed_sha256": "3973e12b30b28f098de6c91c5d2612e0afc32478310a186a0ec681a1138caa2f"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-050.RECEIPT.json.gz": {
+      "compressed_sha256": "5e5c6226cad25da3345b841720de9d48e2c6fabf243e1350a2f02d8a656baf7c",
+      "decompressed_sha256": "047ab29e46a1f967c6b9ad8e1e47bd248834d55c5c56ab4176d264c20e31656c"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-051.RECEIPT.json.gz": {
+      "compressed_sha256": "12a512e1ed24fb7b8dabde3cf37ec49169e345ab2e3c8e90abd4951250f4a1de",
+      "decompressed_sha256": "2165b70f0f7c3dffbde8d930e0159dd70589f0a9e64e0dc292bb114430dba580"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-052.RECEIPT.json.gz": {
+      "compressed_sha256": "a79dd2781d8e86cdb4499ce0d2049e587b376659a1426b86f3c2e0ccb52dd4cd",
+      "decompressed_sha256": "973088f563c3359f648c11bce5d6368c9e680eb0b87a168653158d6a6dd0ba5a"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-053.RECEIPT.json.gz": {
+      "compressed_sha256": "ef3b52ef7a9991980aab48433ba1a64dc9e2a1b1af5e4707cc3db6458ccd2d41",
+      "decompressed_sha256": "8df16f5f81a4627ce090cca784acdb477cea7ef103335484d9f31abe212eae59"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-056.RECEIPT.json.gz": {
+      "compressed_sha256": "a311b2968aba17e4faa6aa405680b379cd77632098b982d3473b4a06796310af",
+      "decompressed_sha256": "ede337623e71c5f887465502b8089b6453f3cd4a9c80fa338a82d1717d64312d"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-057.RECEIPT.json.gz": {
+      "compressed_sha256": "487b0b7f71efc3fa2d44e4c1ac157dd0d17bd5f8564959bab456e29bdee85adc",
+      "decompressed_sha256": "820ceae2ddc164184dcc45b3253002eca3a4489d730dcc4149352764accbfb5c"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-059.RECEIPT.json.gz": {
+      "compressed_sha256": "dfae1e7f8aec91c25bbd1ee4081ef21b443fc9ae1e2de19093ae3a8e3bf2c5de",
+      "decompressed_sha256": "9f187a428698314cfedffc6f719d8e2a5229b5b9085ed218b18c7c3f1b3a044c"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-060.RECEIPT.json.gz": {
+      "compressed_sha256": "c73213d8b95b878e57b8e7c46ee8b2b269df2a5e6d48d579129ede5efb5d302d",
+      "decompressed_sha256": "b3ba767e4de8aaa130e86294c393e77ee392fbc606adb64421f9ae0bed993cb7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-061.RECEIPT.json.gz": {
+      "compressed_sha256": "e1d422abdcdc05edaedbc489ce684114645c790b0915110cf672bf850695616d",
+      "decompressed_sha256": "d663806a853a6aeb2bdfdb421854f192a8c397644992b2cd3a426b4d59c36353"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-062.RECEIPT.json.gz": {
+      "compressed_sha256": "32e6c0a85ecd6fcf422ec55c4832b74f652812e434d99ad1c36346ca47d0ae35",
+      "decompressed_sha256": "77e57369952b0e7f1a7ed88d09362c107a01565d573fc636dd52a7a6fcb1666e"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-063.RECEIPT.json.gz": {
+      "compressed_sha256": "10f7d64a02a8ea6b36444f955c27f51947af2e6d263db0ee3e27acf18344fb3b",
+      "decompressed_sha256": "372435b035672832a278fa4ab0821586703f9ceeb9c1a5cd6fc112ae492bf3c2"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-064.RECEIPT.json.gz": {
+      "compressed_sha256": "64597220a6f97a15b25ba3e434e773126a99d76f040c6dbff60997c740a92aae",
+      "decompressed_sha256": "8e9567790205a03697e744bc5a0ab7b8836339b8e59a79e2d989b106093fd7cc"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-065.RECEIPT.json.gz": {
+      "compressed_sha256": "c9c82ab47ec229178c243311eb272682b9dbcfe5d116f4ec0c7da6bf033cba09",
+      "decompressed_sha256": "a6d3a6d981f98d04eebad7f43506652fb3fdaeb86a42aa379c32bb27c65a9e86"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-066.RECEIPT.json.gz": {
+      "compressed_sha256": "9b0b6631eabcf4659a867cc061a5572cc9ec64869ae42bebee633351069358ee",
+      "decompressed_sha256": "db2e40dd690c78bc252691d38aefe7f211dc4f61d17d4526ca36c56b8df4eeae"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-067.RECEIPT.json.gz": {
+      "compressed_sha256": "694e2348cfc395073995dbe2dc800fa6b24fe5f394c27e41cc8a245bd74c2732",
+      "decompressed_sha256": "bf9371be97d9b8e06c78038c98c04c2f8764c9c2b55e827820c965504e1c07ba"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-068.RECEIPT.json.gz": {
+      "compressed_sha256": "593c4ef4f658f076ab84a145a849b38727c0ae5297aa85322eef095ee415c4cf",
+      "decompressed_sha256": "122bb652597757d8e3a7b1224592832835dab3a9f005b85fe0f06067e60e9fc7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-069.RECEIPT.json.gz": {
+      "compressed_sha256": "2f6c37e58041b7044eb932010d1bedbaf7bea0c004144fe81ad99aaab0602038",
+      "decompressed_sha256": "45a544db0a4ecddc9bfbcaf4606f64f4fd6f45e09b064cf05984ba4f5d3bf9a7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-070.RECEIPT.json.gz": {
+      "compressed_sha256": "0ebd8e9a5b7ad23dbe58c5a279b76d57d92cf7cbbc109b14338c58a5d72b0250",
+      "decompressed_sha256": "d6192d37566e04c22951e62aa15705b3730afd239d9deebce69750b7635a9a25"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-071.RECEIPT.json.gz": {
+      "compressed_sha256": "0f47b4af883e84d9b025ebd0d19e7b474fd38b313e9aa54366336470004e808b",
+      "decompressed_sha256": "8b0fc50a09068a196456e7f796fa199e95b4f8bb4d73f81052c8204b34316731"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-072.RECEIPT.json.gz": {
+      "compressed_sha256": "d6e9b8f4627de8e8b2f067d36a1b2e37eaf245279ae0166f78f194e867c87fa7",
+      "decompressed_sha256": "c32e75bee3952e00442436626fa73a5c537117fe6154ea2a2d721bfab3bf1ae1"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-073.RECEIPT.json.gz": {
+      "compressed_sha256": "b51bd86a77fb9dab6484f823e41ffdb04994d48ca72c034d3a7b3f533a274abb",
+      "decompressed_sha256": "7cf9cbd9b59470d708e492da93aa1c8a31ba922ed5ea9b49ffd6eb576d9e55d5"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-074.RECEIPT.json.gz": {
+      "compressed_sha256": "8d8e73ba492ae66b154dd881b038391d41ee7a9d779aada74305fe780d1a7b8d",
+      "decompressed_sha256": "d892aec5a2a04d0138557a2686c674be21b8dfa148253e11038e16cd86496e66"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-075.RECEIPT.json.gz": {
+      "compressed_sha256": "ee71ff1477e24ea85f83ea15acddc809dade6d4bbc460078ecca87dcbf11f4c2",
+      "decompressed_sha256": "beab8d0c4cd1f46bc6b49a5c2d3feca88a5142cdfb0d78878a77ac2ba5db4e12"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-076.RECEIPT.json.gz": {
+      "compressed_sha256": "c88a2eaa34657a7617a325d312767b9894798a84893f531ba4f311d6361d2c7f",
+      "decompressed_sha256": "e7faf58ef0ab08b7ae8b83435d88f00c0004c13071a23c550089ec421a48aac7"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-077.RECEIPT.json.gz": {
+      "compressed_sha256": "f1ad7b10105d1ec56e065d794d99ff1633cbb0d1ed04fda64d798b7a496420bb",
+      "decompressed_sha256": "0fd8d6dcc325d641117abccdf7e97120a7e28e4a288c2389fb95a2d389d17a3c"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-078.RECEIPT.json.gz": {
+      "compressed_sha256": "f20e227364e2a8b2eab52793ee836924fe207856ab21c668b4ad843e651cfd3f",
+      "decompressed_sha256": "b1d11e9dd262a93a05ccee11dd0e7d77667606f725aa9693c9bdb2ab42c172d1"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-079.RECEIPT.json.gz": {
+      "compressed_sha256": "9ad54831218cd6016dd02a0a8403b1714b99f02b320e6dccdd42355d5b103e94",
+      "decompressed_sha256": "1cfd35dcaeecec9c56a2940f1eb7868e02fc61cc84947bca33080ae454632cdd"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-080.RECEIPT.json.gz": {
+      "compressed_sha256": "23c681cca228ad030662710142ea901213cc0f1804d56f0da82d14d8e4bbc1c4",
+      "decompressed_sha256": "bea7218df6504d2568fde5683c319340c0ac08c7a20a8c91feb9f71fdcd66f21"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-081.RECEIPT.json.gz": {
+      "compressed_sha256": "424e056c1559f0de564174311206b1221e6fc29f4548adeff57b902c64e718aa",
+      "decompressed_sha256": "cbdd47962f8e11747740db0ad1e1732bf052f37acba1d0fde3a4a9a0e2c264f4"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-082.RECEIPT.json.gz": {
+      "compressed_sha256": "dbeae221037c4cfe198da827a9993fe4915c17400abdd6f232b8c90eedc7ea80",
+      "decompressed_sha256": "633cc17af80bee9cecaef3445715b176e52b4b854db17caccdb7b7a6cd340bb0"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-084.RECEIPT.json.gz": {
+      "compressed_sha256": "2c928f6260c4a7a7f7bdf366a1e50527628532831fb5ddb0b11ac1bd9360decd",
+      "decompressed_sha256": "6f8ec0f7df93c6567dde42bec363a4acf575e447e5a412637fe9c8b33059d97f"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-085.RECEIPT.json.gz": {
+      "compressed_sha256": "c181f583bcd155e5b02b5fc64a21fda3317699113dc50a8eeed8b06fd893e696",
+      "decompressed_sha256": "35adf3f045a0e143834cb0617c6a103462b91ed2579ae826e89cf465e229b6f3"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-086.RECEIPT.json.gz": {
+      "compressed_sha256": "30642c09a53f59f00efe37f2f212b867603854eb56ce7756d51cd8650d54d7e8",
+      "decompressed_sha256": "42a30f25b0e4391d2b3188e7a423c8ca625562bcfed3fb2b1ebb716cc907a83b"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-087.RECEIPT.json.gz": {
+      "compressed_sha256": "9f9116040b70ab414cd6ffdfe6fb3f7bc1f08dc607913c8cd589e57bc339e095",
+      "decompressed_sha256": "ac4f70fe6f7ccc7e7ff8543b601a123d94eb97968489968b4658b9b578a97c5b"
+    },
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/receipts/recovery-088.RECEIPT.json.gz": {
+      "compressed_sha256": "823a40debf9ef78006acb17bab764d7bbe741323e4ddd8d86c9ff05fecd57ed2",
+      "decompressed_sha256": "72478dd92a3bce17b57c7bda2834aaf57052ff35745826e86248e2610448015e"
+    }
+  },
+  "archived_local_logs_independently_hash_checked": {
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-005/NLA.MF14.Definitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-057/NLA.MF14Degree44.Definitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-082/NLA.MF14Degree44.FourthDeterminantBlocks.log": "b65e505f61f8180406b666a39de79ad8b442fcf80eb93ce8443b5032a380c55d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.FourthMinorCoefficients.log": "556ee19a1f53f7ce32644635da43983cc72b6711264e101695ff101d57bb5f81",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.BasisDegreeData.log": "c0054514a95bbe1c1279bde0e4942f98be803be87452acb23ab4498120e26263",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-057/NLA.MF14Degree44.Family.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-063/NLA.MF14.CircuitFoundations.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-064/NLA.MF14Degree44.CircuitPrefix.log": "4e2bd99483d16854ddbf0444e1f61051aa7934ff4ce06237a8140f53b96d62e6",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-069/NLA.MF14Degree44.CircuitSpanOperations.log": "a9643895468ff6afdf455e0bb7f18bb0fcc90f31c19b336881b0b118806d99dd",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.SpanCoordinates.log": "78ab6a6b563cca91980f024d0ee12ac434de8015c4db2553b881f9a4098f6290",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-057/NLA.MF14Degree44.Degeneration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-067/NLA.MF14Degree44.DegenerationCoefficientData.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-067/NLA.MF14Degree44.SyzygyExpansion.log": "2714a02fa9879869cd6966138ff73577638a52b70e9433fc2614e85d16cdb258",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-067/NLA.MF14Degree44.SyzygyFactors.log": "48bee60ed7fcd06eec000a3d1dfa16731216f897453ebdfff6d97586d68dc8bd",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.SyzygyMiddle7.log": "e841a25154e2370e85dada69c0b1d32fb7ed3fc46a2906aaca3f92c36f1f7fa2",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.SyzygyMiddle8.log": "8dfa7827ec114ab1ed94e327f7fdb01f187b320df0997786a7e1006760d06aeb",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.SyzygyMiddle9.log": "71a0ec385dbce01493de6d51633cc95f0885f617248753e6b715c402a7d1d830",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.SyzygyMiddle10.log": "aa6ff3b8f1d1951bf295cdf364bc54f64749db59c82aae492bf59c514ce95d70",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.SyzygyLowPart.log": "f6c36dc765977767d75ec233013983e28ac8604b2292dd94a8dc83c9b6c22a45",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.DegenerationIdentity.log": "6ba12fd4a739a5a7df65d0bbdb880e0b1f585df5732a8bcc93ada2218664c24c",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-074/NLA.MF14Degree44.ProductSpan.log": "e18349bd51d734ba78e0e697d258f08495916df69c645e155fda6b216c89a63b",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-082/NLA.MF14Degree44.FourthSpanMembership.log": "5071b02b3b56c14a67ec32b75f4b17e4abfea7649b6eca37a4d6547531fedb8b",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.SpanBasisCoordinates.log": "1e6b64eed424d753fbd08f0bd46ff43b3aab4c55abbabc2afa2788e74aa12eb4",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-072/NLA.MF14Degree44.PolynomialMaps.log": "a87be9dd496547ef105517798eb55595b5c5947b703c9df34769573efcc523e2",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.SpanReconstruction.log": "02b3bb0c235be9dc2e4753515f70e577eecc2eeec421e9b9ff55c2a1339cac82",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-069/NLA.MF14Degree44.ThirdProductFactorization.log": "0c13e9a55e3e6bcffd6da94b26d00df56025f82db213c3cf83569b5b31c74ae9",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-070/NLA.MF14Degree44.ThreeProductTuple.log": "674bdd0f88b14b9f240b15d633d8ef726ed643bd152d6fbe70f0d5d1c4bba81d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-084/NLA.MF14Degree44.FourthActualCircuit.log": "0543c0c49f17ea2fa648a936480208778a0c2611226d62a10ac0df79c0f8eae4",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-071/NLA.MF14Degree44.CoefficientSmooth.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-071/NLA.MF14Degree44.FourthSmooth.log": "2d0503388f0b08f77f678137b2b16c68549049f596c4c150ab41615c34453213",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-077/NLA.MF14Degree44.FirstDerivatives.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-079/NLA.MF14Degree44.FourthJacobian.log": "8b7a4316ffc4cc17c530212541aab030ba1aee7ab15a9e118e64b73f965e1b99",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-085/NLA.MF14Degree44.FourthMinorBlocks.log": "bb46aa7f1d309a1d4f3e6b18006d105decf6d13ca8da88acc91b5bfbd42832d1",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-085/NLA.MF14Degree44.FourthMinorIdentity.log": "a6e3caac6952c94e3d941fe5afb0655d8db158795590d0e882394629d1e3c74c",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-060/NLA.MF14Degree44.PolynomialDensity.log": "4db8dc56a4a63e119771151c1cae08bf3581e3108e225365e47ec4f30c8c17e1",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-061/NLA.MF14Degree44.JacobianEquivalence.log": "75049ed5d231f182d804367c6eaed0cf7739c9dd5f95c022f8235f9be38ed797",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-085/NLA.MF14Degree44.FourthJointClosure.log": "1f80f6662fadb659c34b3201271957c205df14dc27d7dd3c29db97d9ff7683b6",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.DegenerationAtZero.log": "757edaf6363c1fdb69338fd569e35b6b10b37419e3a24d0cb6ceeff824572470",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-078/NLA.MF14Degree44.MonicBorderPath.log": "4030d88ba399f190af1e7a8d3166f273fa0a4148b61e735c69bdd7d96c9f3447",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.BorderPathContinuity.log": "f342d15f2fe9e1ea2dc534467edb20762fa210be693c22c460a61d6780cba506",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.GoodParameters.log": "a5dfb07abecbf220ea1ff84c32ef8346036dc958aff992ef77a904a2748872f5",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-081/NLA.MF14Degree44.BorderLimit.log": "430e3a95651cffdb5b2518d2cf2a710a924043c18fc32347daedeeb01c3bb08e",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-073/NLA.MF14Degree44.ContinuationPolynomialMaps.log": "34e041676bae02f16b0058d7ca2759a9afb910bd3396c4d7512056f38f7a329f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-070/NLA.MF14Degree44.ContinuationCircuit.log": "668c119263f73fbf2149931b61be56ab622ef99c64f13bb03e36182961612143",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-073/NLA.MF14Degree44.ContinuationClosure.log": "7142cb6345cd5acce0901a2be816c4011fda286dbf90b0cb8a00cbf098c6a812",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-068/NLA.MF14Degree44.DegreeBounds.log": "116cce8bbb1daac163009e9427e19aa4868058ab4888be07044f88837e673e3d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-069/NLA.MF14Degree44.FamilyDegreeBounds.log": "ba2420789c5e18de39279c6935e21e2fcd0a7455254f8c4f8d328c3d4173145c",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-070/NLA.MF14Degree44.CoverageBridge.log": "521e5276328c060e42c5a47ecea50203823d891c18f66fc8d745114fcaeaee8d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-071/NLA.MF14Degree44.FamilySmooth.log": "0dd78e43d49601d371b466172b4821e565b96eab1a89fb3837d74e06352df1ef",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-078/NLA.MF14Degree44.FamilyFirstJet.log": "62d28fe3ed7db7c8b330cf87bfd6b7f6e0d60b97b7f14c6b03ef1a13e36996ab",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-078/NLA.MF14Degree44.SeedFirstPilot.log": "1a859e8420609cafc6a31b4a4a25bf03f81b6951bc71e8f96a23716e91117cb5",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns0.log": "10c1628b5563019ef9b5215bb7939e629ce8db48c999b37cd364729017962c3f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns1.log": "95c7974c4eb2ff1605d15ada90016042f4dbf90bafe6e2887029107b59bb292a",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns2.log": "81b5b3c3def0ec4a2b45e08fef982169b73a0c5c22a1deb9e67fb2c76f0a1cb6",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns3.log": "125c4e74941fa3b8f2af1a52e8460baae7d86a632d681ed2160fb5e2b642658f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns4.log": "e19b1eb1b85c6d3498e0b12b200962d3104bc77b848139c6ec0c457af32a1e12",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns5.log": "1eb6e3991f7b747f53ce59b874a7fc71d9c6eb70920528d2c3eb6e4cc7f74123",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-081/NLA.MF14Degree44.SeedFirstColumns6.log": "4162f0b47bc49d0afd706feaa258ff660ca7cf28224d93ad3dfe146596fe887d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns7.log": "30b76d0cdba3ccff360afcd0231afb57e952b43e64b5d03eac5e4371cef47c36",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-080/NLA.MF14Degree44.SeedFirstColumns8.log": "ce71014338eb2fee66946b3ef00794561b4d6c1d5524bbca1c5130669b85fb6f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-081/NLA.MF14Degree44.SeedFirstColumns.log": "f75ab41b100c93382972b6a3be6094f096746d2a0239e8e6147f4833bdb67281",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-062/NLA.MF14Degree44.Mod3Lists.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-064/NLA.MF14Degree44.Mod3Columns0.log": "fb2311cb0128025dc7ca2aa96f8bad17bf9375613f29f95df59b4e4f67c779d8",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns1.log": "80e893663a0e6c357d45ba8e2e25a895827634104692a550bd59bdca4774a4c0",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns2.log": "4c0146a8187488845cb78b1c1691b6403c4c382d4e94a494e924016669a11075",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns3.log": "e480667745408613159006954b22ef5561f8b2b836e775cf535f5c9e4748e182",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns4.log": "0ae7373e39b8c3fd057e03ad99f16a2c689b767543966275a8b28b87d5a6e3c7",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns5.log": "5539ce033e76f873c3701d2d9318cf42e026a119a3b252ab760e559015b8b06f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns6.log": "fd00e9664c47c12e79eb1883e95057451c760eeff7e70206bf3414e3a2ef0b7f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns7.log": "376245128f88c79c06abae89f2612d589fd7e42f064a42d6f8c950770f255492",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Columns8.log": "d5ef95d8ccc38137087a3641bd16aa48b128859b1cbfd992034868b0336e0955",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-064/NLA.MF14Degree44.Mod3Rows0.log": "5de74f426ba135539aea70a96c5369463dcd02296c1fd342e145469e596717f2",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows1.log": "062200cb8f1c28a407d7627b2db625adf251afbc9433ea7d9bdfb7b3033e4d2a",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows2.log": "9054d486516a0f97ca1f81cf7e958e3377a7fc8f5eafeedaee4fb1392996b869",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows3.log": "0e22ca269cd8017b796a73354c458aeb358e431302ff48a399d70958a349036f",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows4.log": "42c9406d75be8ff1eb6736c2ae46943ba6f6481c8ff4b027939894b0bdee7483",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows5.log": "52cc685aab826be197b71ffa8461e98afa572701ae1bc5e12cb956ea0e319834",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows6.log": "e84dcca2209ed2c58424fa098788f4a45c05b606766720864c8d911486c31516",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows7.log": "09bc5e2da4550925b4308f34497e4ea1c118095374b7f3818e3e587fd516adc3",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Rows8.log": "dcc01c27a87c836f827bcc62310e92c108c5d7912ca187717d2928e8b7708ace",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-064/NLA.MF14Degree44.Mod3CastBridge.log": "fe9f4d8bab91255a27fc1dfd0ebf856a529452a94ede8cb14177c509fc656070",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-065/NLA.MF14Degree44.Mod3Certificate.log": "de6d51f8b5b7494409f64e77de1e37c8fef8c3d55c3d30b582481a06fec3485d",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-076/NLA.MF14Degree44.JacobianNonzero.log": "d788b01339b253a2af69bdc1986caeafb7ddb05ffc930adf4347f3b6eb6394a6",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-081/NLA.MF14Degree44.JacobianIdentity.log": "f75c83e8975015edd7c0a91c4dfc88ba0eaa7e70df2775acd0c27409ceb5e682",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-086/NLA.MF14Degree44.FinalClosure.log": "8e7ac106009d45fb925d50e500a57e145fb1501c0d5ddc311b9ddb01ab71a3f3",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/logs/recovery-088/Solution.log": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336"
+  },
+  "source_analysis": {
+    "scope": "Independent referee hashing and source inspection; no new compiler, Lake or Comparator run",
+    "created_utc": "2026-09-19T08:13:26.622081+00:00",
+    "status": "PASS",
+    "all_snapshot_file_hashes_checked": 101,
+    "Lean_files": 87,
+    "source_and_fresh_log_records_checked": 86,
+    "compressed_and_uncompressed_receipts_checked": 54,
+    "reuse_edges_recursively_authenticated": 662,
+    "all_fresh_dependency_outputs_match_reviewed_source_records": true,
+    "all_reused_transitive_source_hashes_match_reviewed_snapshot": true,
+    "publication_name_Solution_and_separate_Challenge_success_recorded": true,
+    "separate_Challenge_is_only_statement_elaboration_evidence": true,
+    "implementation_forbidden_token_scan": "PASS after nested comment removal",
+    "Solution_imports_Challenge": false,
+    "all_25_contract_signatures_whitespace_normalized_identical": true,
+    "all_25_actual_axiom_reports_and_kernel_assertions_match": true,
+    "contract_implementation_files": {
+      "NLA.MF14Degree44.canonical_gate_padding": "NLA/MF14Degree44/CircuitPrefix.lean",
+      "NLA.MF14Degree44.four_prefix_full_coefficients": "NLA/MF14Degree44/CircuitPrefix.lean",
+      "NLA.MF14Degree44.three_product_tuple": "NLA/MF14Degree44/ThreeProductTuple.lean",
+      "NLA.MF14Degree44.good_border_parameters_eventually": "NLA/MF14Degree44/GoodParameters.lean",
+      "NLA.MF14Degree44.fourth_span_coordinates": "NLA/MF14Degree44/SpanBasisCoordinates.lean",
+      "NLA.MF14Degree44.fourth_map_smooth": "NLA/MF14Degree44/FourthSmooth.lean",
+      "NLA.MF14Degree44.fourth_jacobian_identity": "NLA/MF14Degree44/FourthJacobian.lean",
+      "NLA.MF14Degree44.fourth_minor_identity": "NLA/MF14Degree44/FourthMinorIdentity.lean",
+      "NLA.MF14Degree44.fourth_product_joint_closure": "NLA/MF14Degree44/FourthJointClosure.lean",
+      "NLA.MF14Degree44.polynomial_density_of_strict_derivative": "NLA/MF14Degree44/PolynomialDensity.lean",
+      "NLA.MF14Degree44.degeneration_identity": "NLA/MF14Degree44/DegenerationIdentity.lean",
+      "NLA.MF14Degree44.degeneration_at_zero": "NLA/MF14Degree44/DegenerationAtZero.lean",
+      "NLA.MF14Degree44.degeneration_in_span": "NLA/MF14Degree44/ProductSpan.lean",
+      "NLA.MF14Degree44.monic_border_joint_closure": "NLA/MF14Degree44/FinalClosure.lean",
+      "NLA.MF14Degree44.continuation_actual_output": "NLA/MF14Degree44/ContinuationCircuit.lean",
+      "NLA.MF14Degree44.continuation_degree_bound": "NLA/MF14Degree44/DegreeBounds.lean",
+      "NLA.MF14Degree44.continuation_closure_transfer": "NLA/MF14Degree44/ContinuationClosure.lean",
+      "NLA.MF14Degree44.family_image_mem_closure": "NLA/MF14Degree44/FinalClosure.lean",
+      "NLA.MF14Degree44.family_degree_and_full_vector": "NLA/MF14Degree44/FamilyDegreeBounds.lean",
+      "NLA.MF14Degree44.coefficient_map_smooth": "NLA/MF14Degree44/FamilySmooth.lean",
+      "NLA.MF14Degree44.coefficient_jacobian_identity": "NLA/MF14Degree44/JacobianIdentity.lean",
+      "NLA.MF14Degree44.integer_jacobian_mod3_inverse": "NLA/MF14Degree44/Mod3Certificate.lean",
+      "NLA.MF14Degree44.coefficient_derivative_bijective": "NLA/MF14Degree44/JacobianIdentity.lean",
+      "NLA.MF14Degree44.degree44_coverage": "NLA/MF14Degree44/FinalClosure.lean",
+      "NLA.MF14Degree44.original_equality_false": "NLA/MF14Degree44/FinalClosure.lean"
+    },
+    "snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+    "local_audit_sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+    "script_sha256": "f43b7a292dee482fda6dadf2e2d79e2775a34ae21b6916b4da62912344be7812",
+    "count_increment": 0
+  },
+  "certificate_analysis": {
+    "scope": "Independent referee Python arithmetic and repetitive-source-shape check; not Lean, not Comparator, not proof input",
+    "status": "PASS",
+    "reconstructed_family_directions": 45,
+    "exact_derivative_table_entries_matched": 2025,
+    "modulo_three_product_entries_checked": 2025,
+    "whole_polynomial_column_expansions_and_table_formulas_checked": 45,
+    "kernel_decide_row_source_patterns_checked": 45,
+    "seed_whole_polynomial_direction_source_patterns_checked": 43,
+    "seed_columns_0_and_1": "Read individually in SeedFirstPilot.lean; excluded from repetitive-source pattern check",
+    "high_derivative_coefficients": "Every reconstructed direction has degree at most 44; no truncation needed",
+    "source_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+    "script_sha256": "1c505e0286703e8beb92467081b173340347fdeb4141c93dfd47ad96e2589e64"
+  },
+  "publication_Lean_sources_match_snapshot": true,
+  "publication_Lake_dependency_entries_unchanged": true,
+  "minor_publication_metadata_note": "IMPLEMENTATION-MAP.json final_source_binding still has historical PENDING coordinator completed closure wording; all 25 mapped source hashes match; coordinator notified to refresh during integration.",
+  "reuse_search_scope": {
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "directories": [
+      "Mathlib/Algebra/MvPolynomial",
+      "Mathlib/Analysis",
+      "Mathlib/RingTheory/MvPolynomial",
+      "Mathlib/LinearAlgebra/Span",
+      "Mathlib/LinearAlgebra/Matrix"
+    ],
+    "topics": [
+      "polynomial density and vanishing closure",
+      "inverse function theorem",
+      "coefficient polynomial substitution",
+      "bilinear span membership",
+      "determinant casts and right inverse"
+    ],
+    "result": "Existing suitable APIs are used; no direct unused replacement established by the bounded search."
+  },
+  "remaining_gate": "Real published-source non-root GitHub Linux Comparator/kernel/sandbox and evidence/status integration; no completed verification promoted."
+}

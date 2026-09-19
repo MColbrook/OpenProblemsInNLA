@@ -1,0 +1,26 @@
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/Mod3Columns7.lean:45:13: warning: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_36' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/Mod3Columns7.lean:65:13: warning: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_37' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/Mod3Columns7.lean:85:13: warning: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_38' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_39' depends on axioms: [propext, Classical.choice, Quot.sound]

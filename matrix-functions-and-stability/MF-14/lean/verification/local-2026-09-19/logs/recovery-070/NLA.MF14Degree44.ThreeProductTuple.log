@@ -1,0 +1,1 @@
+'NLA.MF14Degree44.three_product_tuple' depends on axioms: [propext, Classical.choice, Quot.sound]

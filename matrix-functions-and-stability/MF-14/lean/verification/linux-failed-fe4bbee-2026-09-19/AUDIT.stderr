@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-runtime-referee-b/audit_failed_runtime.py", line 79, in <module>
+    assert p.stat().st_size == entry['bytes'] and sha(p) == entry['sha256']
+  File "/Users/georgestepaniants/miniforge3/lib/python3.10/pathlib.py", line 1097, in stat
+    return self._accessor.stat(self, follow_symlinks=follow_symlinks)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/.tools/comparator/Comparator/Axioms.lean'

@@ -1,0 +1,241 @@
+{
+  "purpose": "Independent Python arithmetic and source/evidence identity audit; not Lean or Comparator verification",
+  "reviewer": "/root/nr04_mf14_final_referee_a",
+  "packet_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "registered_files_hash_checked": 101,
+  "lean_files_hash_checked": 87,
+  "semantic_preproof_freeze_files_matched": [
+    "Challenge.lean",
+    "NLA/MF14/Definitions.lean",
+    "NLA/MF14Degree44/Definitions.lean",
+    "NLA/MF14Degree44/Family.lean",
+    "NLA/MF14Degree44/Degeneration.lean",
+    "NUMERICAL_TARGETS.md",
+    "comparator.json",
+    "lean-toolchain"
+  ],
+  "all_contract_headers_match_after_whitespace_normalization": {
+    "NLA.MF14Degree44.canonical_gate_padding": {
+      "implementation_file": "NLA/MF14Degree44/CircuitPrefix.lean",
+      "whitespace_normalized_header_sha256": "0ba43c584c34b25d1c550fb894e4178985ed58150a19d19f4a869e1c007f90e1"
+    },
+    "NLA.MF14Degree44.four_prefix_full_coefficients": {
+      "implementation_file": "NLA/MF14Degree44/CircuitPrefix.lean",
+      "whitespace_normalized_header_sha256": "1a59625d0210fd67c445a1cb34a426968a38d15ec7a855c7c34d2474573b96f0"
+    },
+    "NLA.MF14Degree44.three_product_tuple": {
+      "implementation_file": "NLA/MF14Degree44/ThreeProductTuple.lean",
+      "whitespace_normalized_header_sha256": "a8a5af7e8656cd2900dce768eed256cecbec3652f68f37939045de090b5d8dc8"
+    },
+    "NLA.MF14Degree44.good_border_parameters_eventually": {
+      "implementation_file": "NLA/MF14Degree44/GoodParameters.lean",
+      "whitespace_normalized_header_sha256": "83f5e8c39301195d35819656f287829b677453039a643620579cebb0657ef934"
+    },
+    "NLA.MF14Degree44.fourth_span_coordinates": {
+      "implementation_file": "NLA/MF14Degree44/SpanBasisCoordinates.lean",
+      "whitespace_normalized_header_sha256": "b8d53a91f8c15b5ecb35bd05395874b01fa0347ad7856ea6b30baea2329d91e9"
+    },
+    "NLA.MF14Degree44.fourth_map_smooth": {
+      "implementation_file": "NLA/MF14Degree44/FourthSmooth.lean",
+      "whitespace_normalized_header_sha256": "aef88f63f4466399cf6115a11b9f682b5611db6833d0bdfd27d195012617937b"
+    },
+    "NLA.MF14Degree44.fourth_jacobian_identity": {
+      "implementation_file": "NLA/MF14Degree44/FourthJacobian.lean",
+      "whitespace_normalized_header_sha256": "119d3d8cd165fefb49a389db81c2573be2f7314e26a70eb99bf50a12b394921e"
+    },
+    "NLA.MF14Degree44.fourth_minor_identity": {
+      "implementation_file": "NLA/MF14Degree44/FourthMinorIdentity.lean",
+      "whitespace_normalized_header_sha256": "c8a4bebf3ef8cb3f1169ce1ee7de58aa337dd2fb99c7a793c8e50420be51c1e7"
+    },
+    "NLA.MF14Degree44.fourth_product_joint_closure": {
+      "implementation_file": "NLA/MF14Degree44/FourthJointClosure.lean",
+      "whitespace_normalized_header_sha256": "2f8fd4ee90600fdfe589f899ae4234c7bc352fa5f157f65a163bf6b0be4ba489"
+    },
+    "NLA.MF14Degree44.polynomial_density_of_strict_derivative": {
+      "implementation_file": "NLA/MF14Degree44/PolynomialDensity.lean",
+      "whitespace_normalized_header_sha256": "1988cd057563e1100524102c8be57eeae6c85ef416b78de50d322ed7cea80725"
+    },
+    "NLA.MF14Degree44.degeneration_identity": {
+      "implementation_file": "NLA/MF14Degree44/DegenerationIdentity.lean",
+      "whitespace_normalized_header_sha256": "e4d3915abfdf46730081820459dd46145bde91d95a07f3055cb395f5f79bd89c"
+    },
+    "NLA.MF14Degree44.degeneration_at_zero": {
+      "implementation_file": "NLA/MF14Degree44/DegenerationAtZero.lean",
+      "whitespace_normalized_header_sha256": "1bd546d4af1d5308de5fc022ae008108875927c9460cdb99563107dcf526e0be"
+    },
+    "NLA.MF14Degree44.degeneration_in_span": {
+      "implementation_file": "NLA/MF14Degree44/ProductSpan.lean",
+      "whitespace_normalized_header_sha256": "614a422fe4b36590d8146d4905efbd50df3d77b107a4042d644bc64fb1a54598"
+    },
+    "NLA.MF14Degree44.monic_border_joint_closure": {
+      "implementation_file": "NLA/MF14Degree44/FinalClosure.lean",
+      "whitespace_normalized_header_sha256": "944a7f8cfad780bc5844a313de4aa124f6dee35cd269a7614cceff842860bd51"
+    },
+    "NLA.MF14Degree44.continuation_actual_output": {
+      "implementation_file": "NLA/MF14Degree44/ContinuationCircuit.lean",
+      "whitespace_normalized_header_sha256": "238fb79fffcf9ce1e31b724ab99229f70bc5f13fcde481f0414430330cdf5389"
+    },
+    "NLA.MF14Degree44.continuation_degree_bound": {
+      "implementation_file": "NLA/MF14Degree44/DegreeBounds.lean",
+      "whitespace_normalized_header_sha256": "2fd485ac2faf744018794423d6dcb86a9e015b322c2d0602f90c0205b123a14e"
+    },
+    "NLA.MF14Degree44.continuation_closure_transfer": {
+      "implementation_file": "NLA/MF14Degree44/ContinuationClosure.lean",
+      "whitespace_normalized_header_sha256": "f77d468c591b99c61e6cfd2f40707a71d445980211997357e2f15adfa50d7db8"
+    },
+    "NLA.MF14Degree44.family_image_mem_closure": {
+      "implementation_file": "NLA/MF14Degree44/FinalClosure.lean",
+      "whitespace_normalized_header_sha256": "835a18ff37e232f9ca1f68f02eaf9ae4fd3d127a269cccd67869aabca95464ca"
+    },
+    "NLA.MF14Degree44.family_degree_and_full_vector": {
+      "implementation_file": "NLA/MF14Degree44/FamilyDegreeBounds.lean",
+      "whitespace_normalized_header_sha256": "c76e6603d6e8bbf03065abe4a8dc30e79e4a06d0deecf85a7e761dc7738ea3c3"
+    },
+    "NLA.MF14Degree44.coefficient_map_smooth": {
+      "implementation_file": "NLA/MF14Degree44/FamilySmooth.lean",
+      "whitespace_normalized_header_sha256": "e5d801c6eb4d2774e18b1b16e59f88e1418212af70443f6b20f9b9038e7e2998"
+    },
+    "NLA.MF14Degree44.coefficient_jacobian_identity": {
+      "implementation_file": "NLA/MF14Degree44/JacobianIdentity.lean",
+      "whitespace_normalized_header_sha256": "446a9dc06fac3b52f4be7aefd89d38c586fa692c9b54ddd886502f9cd4810bff"
+    },
+    "NLA.MF14Degree44.integer_jacobian_mod3_inverse": {
+      "implementation_file": "NLA/MF14Degree44/Mod3Certificate.lean",
+      "whitespace_normalized_header_sha256": "228042abfa195d6b5c489e6526636c3634b3a7a69c125cd7205d8b03fbaf9141"
+    },
+    "NLA.MF14Degree44.coefficient_derivative_bijective": {
+      "implementation_file": "NLA/MF14Degree44/JacobianIdentity.lean",
+      "whitespace_normalized_header_sha256": "d45a3b2d7311ddba4b3ca0fbee973bfde5c2ae6c4cf55eadc1c2b41ba74d3bfa"
+    },
+    "NLA.MF14Degree44.degree44_coverage": {
+      "implementation_file": "NLA/MF14Degree44/FinalClosure.lean",
+      "whitespace_normalized_header_sha256": "5196e876fa9bcb35ccb4faf529988d33ff0ca050fb672f73d54042fc047b3e95"
+    },
+    "NLA.MF14Degree44.original_equality_false": {
+      "implementation_file": "NLA/MF14Degree44/FinalClosure.lean",
+      "whitespace_normalized_header_sha256": "39dfcd3a5c2424c99f8940b2127654308f47cc2738f4938dc87e2da93fab37de"
+    }
+  },
+  "forbidden_token_findings": {
+    "Challenge.lean": [
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry",
+      "sorry"
+    ]
+  },
+  "actual_circuit_exact_integer_dual_derivative_entries_matched": 2025,
+  "inverse_mod3_entries_checked": 2025,
+  "integer_determinant_independently_computed": 256,
+  "receipt087_source_matched_current_olean_hashes_checked": [
+    "NLA.MF14.CircuitFoundations",
+    "NLA.MF14.Definitions",
+    "NLA.MF14Degree44.BasisDegreeData",
+    "NLA.MF14Degree44.BorderLimit",
+    "NLA.MF14Degree44.BorderPathContinuity",
+    "NLA.MF14Degree44.CircuitPrefix",
+    "NLA.MF14Degree44.CircuitSpanOperations",
+    "NLA.MF14Degree44.CoefficientSmooth",
+    "NLA.MF14Degree44.ContinuationCircuit",
+    "NLA.MF14Degree44.ContinuationClosure",
+    "NLA.MF14Degree44.ContinuationPolynomialMaps",
+    "NLA.MF14Degree44.CoverageBridge",
+    "NLA.MF14Degree44.Definitions",
+    "NLA.MF14Degree44.Degeneration",
+    "NLA.MF14Degree44.DegenerationAtZero",
+    "NLA.MF14Degree44.DegenerationCoefficientData",
+    "NLA.MF14Degree44.DegenerationIdentity",
+    "NLA.MF14Degree44.DegreeBounds",
+    "NLA.MF14Degree44.Family",
+    "NLA.MF14Degree44.FamilyDegreeBounds",
+    "NLA.MF14Degree44.FamilyFirstJet",
+    "NLA.MF14Degree44.FamilySmooth",
+    "NLA.MF14Degree44.FinalClosure",
+    "NLA.MF14Degree44.FirstDerivatives",
+    "NLA.MF14Degree44.FourthActualCircuit",
+    "NLA.MF14Degree44.FourthDeterminantBlocks",
+    "NLA.MF14Degree44.FourthJacobian",
+    "NLA.MF14Degree44.FourthJointClosure",
+    "NLA.MF14Degree44.FourthMinorBlocks",
+    "NLA.MF14Degree44.FourthMinorCoefficients",
+    "NLA.MF14Degree44.FourthMinorIdentity",
+    "NLA.MF14Degree44.FourthSmooth",
+    "NLA.MF14Degree44.FourthSpanMembership",
+    "NLA.MF14Degree44.GoodParameters",
+    "NLA.MF14Degree44.JacobianEquivalence",
+    "NLA.MF14Degree44.JacobianIdentity",
+    "NLA.MF14Degree44.JacobianNonzero",
+    "NLA.MF14Degree44.Mod3CastBridge",
+    "NLA.MF14Degree44.Mod3Certificate",
+    "NLA.MF14Degree44.Mod3Columns0",
+    "NLA.MF14Degree44.Mod3Columns1",
+    "NLA.MF14Degree44.Mod3Columns2",
+    "NLA.MF14Degree44.Mod3Columns3",
+    "NLA.MF14Degree44.Mod3Columns4",
+    "NLA.MF14Degree44.Mod3Columns5",
+    "NLA.MF14Degree44.Mod3Columns6",
+    "NLA.MF14Degree44.Mod3Columns7",
+    "NLA.MF14Degree44.Mod3Columns8",
+    "NLA.MF14Degree44.Mod3Lists",
+    "NLA.MF14Degree44.Mod3Rows0",
+    "NLA.MF14Degree44.Mod3Rows1",
+    "NLA.MF14Degree44.Mod3Rows2",
+    "NLA.MF14Degree44.Mod3Rows3",
+    "NLA.MF14Degree44.Mod3Rows4",
+    "NLA.MF14Degree44.Mod3Rows5",
+    "NLA.MF14Degree44.Mod3Rows6",
+    "NLA.MF14Degree44.Mod3Rows7",
+    "NLA.MF14Degree44.Mod3Rows8",
+    "NLA.MF14Degree44.MonicBorderPath",
+    "NLA.MF14Degree44.PolynomialDensity",
+    "NLA.MF14Degree44.PolynomialMaps",
+    "NLA.MF14Degree44.ProductSpan",
+    "NLA.MF14Degree44.SeedFirstColumns",
+    "NLA.MF14Degree44.SeedFirstColumns0",
+    "NLA.MF14Degree44.SeedFirstColumns1",
+    "NLA.MF14Degree44.SeedFirstColumns2",
+    "NLA.MF14Degree44.SeedFirstColumns3",
+    "NLA.MF14Degree44.SeedFirstColumns4",
+    "NLA.MF14Degree44.SeedFirstColumns5",
+    "NLA.MF14Degree44.SeedFirstColumns6",
+    "NLA.MF14Degree44.SeedFirstColumns7",
+    "NLA.MF14Degree44.SeedFirstColumns8",
+    "NLA.MF14Degree44.SeedFirstPilot",
+    "NLA.MF14Degree44.SpanBasisCoordinates",
+    "NLA.MF14Degree44.SpanCoordinates",
+    "NLA.MF14Degree44.SpanReconstruction",
+    "NLA.MF14Degree44.SyzygyExpansion",
+    "NLA.MF14Degree44.SyzygyFactors",
+    "NLA.MF14Degree44.SyzygyLowPart",
+    "NLA.MF14Degree44.SyzygyMiddle10",
+    "NLA.MF14Degree44.SyzygyMiddle7",
+    "NLA.MF14Degree44.SyzygyMiddle8",
+    "NLA.MF14Degree44.SyzygyMiddle9",
+    "NLA.MF14Degree44.ThirdProductFactorization",
+    "NLA.MF14Degree44.ThreeProductTuple",
+    "MF14Degree44Solution"
+  ],
+  "lean_run_by_reviewer": false,
+  "comparator_run_by_reviewer": false
+}

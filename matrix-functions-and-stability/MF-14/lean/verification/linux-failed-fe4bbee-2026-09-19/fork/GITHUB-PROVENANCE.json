@@ -1,0 +1,554 @@
+{
+  "repository": "sgstepaniants/OpenProblemsInNLA",
+  "run": {
+    "id": 35431937168,
+    "name": "Lean verification",
+    "node_id": "WFR_kwLOUXJg988AAAAIP-h0kA",
+    "head_branch": "codex/lean-mf14-degree44-20260919",
+    "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+    "path": ".github/workflows/lean-verification.yml",
+    "display_title": "Formalize original MF-14 negative answer via degree 44",
+    "run_number": 213,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 356575240,
+    "check_suite_id": 95955079493,
+    "check_suite_node_id": "CS_kwDOUXJg988AAAAWV15RRQ",
+    "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+    "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/ajt60gaibb/OpenProblemsInNLA/pulls/305",
+        "id": 4576579662,
+        "number": 305,
+        "head": {
+          "ref": "codex/lean-mf14-degree44-20260919",
+          "sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+          "repo": {
+            "id": 1366450423,
+            "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA",
+            "name": "OpenProblemsInNLA"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "71563f17926cd826a892c2bba0e294894ee57a5c",
+          "repo": {
+            "id": 1360959635,
+            "url": "https://api.github.com/repos/ajt60gaibb/OpenProblemsInNLA",
+            "name": "OpenProblemsInNLA"
+          }
+        }
+      }
+    ],
+    "created_at": "2026-09-19T08:25:00Z",
+    "updated_at": "2026-09-19T08:34:13Z",
+    "actor": {
+      "login": "sgstepaniants",
+      "id": 15707847,
+      "node_id": "MDQ6VXNlcjE1NzA3ODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15707847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sgstepaniants",
+      "html_url": "https://github.com/sgstepaniants",
+      "followers_url": "https://api.github.com/users/sgstepaniants/followers",
+      "following_url": "https://api.github.com/users/sgstepaniants/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sgstepaniants/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sgstepaniants/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sgstepaniants/subscriptions",
+      "organizations_url": "https://api.github.com/users/sgstepaniants/orgs",
+      "repos_url": "https://api.github.com/users/sgstepaniants/repos",
+      "events_url": "https://api.github.com/users/sgstepaniants/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sgstepaniants/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2026-09-19T08:25:00Z",
+    "triggering_actor": {
+      "login": "sgstepaniants",
+      "id": 15707847,
+      "node_id": "MDQ6VXNlcjE1NzA3ODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15707847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sgstepaniants",
+      "html_url": "https://github.com/sgstepaniants",
+      "followers_url": "https://api.github.com/users/sgstepaniants/followers",
+      "following_url": "https://api.github.com/users/sgstepaniants/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sgstepaniants/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sgstepaniants/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sgstepaniants/subscriptions",
+      "organizations_url": "https://api.github.com/users/sgstepaniants/orgs",
+      "repos_url": "https://api.github.com/users/sgstepaniants/repos",
+      "events_url": "https://api.github.com/users/sgstepaniants/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sgstepaniants/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/jobs",
+    "logs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/logs",
+    "check_suite_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/check-suites/95955079493",
+    "artifacts_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/artifacts",
+    "cancel_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/cancel",
+    "rerun_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/workflows/356575240",
+    "head_commit": {
+      "id": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+      "tree_id": "c4f7a978eeba4bde051eec9fb262cc91a4d541cd",
+      "message": "Formalize original MF-14 negative answer via degree 44",
+      "timestamp": "2026-09-19T08:24:18Z",
+      "author": {
+        "name": "George Stepaniants",
+        "email": "15707847+sgstepaniants@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "George Stepaniants",
+        "email": "15707847+sgstepaniants@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 1366450423,
+      "node_id": "R_kgDOUXJg9w",
+      "name": "OpenProblemsInNLA",
+      "full_name": "sgstepaniants/OpenProblemsInNLA",
+      "private": false,
+      "owner": {
+        "login": "sgstepaniants",
+        "id": 15707847,
+        "node_id": "MDQ6VXNlcjE1NzA3ODQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15707847?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sgstepaniants",
+        "html_url": "https://github.com/sgstepaniants",
+        "followers_url": "https://api.github.com/users/sgstepaniants/followers",
+        "following_url": "https://api.github.com/users/sgstepaniants/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sgstepaniants/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sgstepaniants/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sgstepaniants/subscriptions",
+        "organizations_url": "https://api.github.com/users/sgstepaniants/orgs",
+        "repos_url": "https://api.github.com/users/sgstepaniants/repos",
+        "events_url": "https://api.github.com/users/sgstepaniants/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sgstepaniants/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA",
+      "description": "200 precisely stated open problems in numerical linear algebra, with references, difficulty and importance ratings, and Markdown, LaTeX and PDF editions.",
+      "fork": true,
+      "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA",
+      "forks_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/forks",
+      "keys_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/teams",
+      "hooks_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/hooks",
+      "issue_events_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/events",
+      "assignees_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/tags",
+      "blobs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/languages",
+      "stargazers_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/stargazers",
+      "contributors_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/contributors",
+      "subscribers_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/subscribers",
+      "subscription_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/subscription",
+      "commits_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/merges",
+      "archive_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/downloads",
+      "issues_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/labels{/name}",
+      "releases_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/deployments"
+    },
+    "head_repository": {
+      "id": 1366450423,
+      "node_id": "R_kgDOUXJg9w",
+      "name": "OpenProblemsInNLA",
+      "full_name": "sgstepaniants/OpenProblemsInNLA",
+      "private": false,
+      "owner": {
+        "login": "sgstepaniants",
+        "id": 15707847,
+        "node_id": "MDQ6VXNlcjE1NzA3ODQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15707847?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sgstepaniants",
+        "html_url": "https://github.com/sgstepaniants",
+        "followers_url": "https://api.github.com/users/sgstepaniants/followers",
+        "following_url": "https://api.github.com/users/sgstepaniants/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sgstepaniants/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sgstepaniants/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sgstepaniants/subscriptions",
+        "organizations_url": "https://api.github.com/users/sgstepaniants/orgs",
+        "repos_url": "https://api.github.com/users/sgstepaniants/repos",
+        "events_url": "https://api.github.com/users/sgstepaniants/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sgstepaniants/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA",
+      "description": "200 precisely stated open problems in numerical linear algebra, with references, difficulty and importance ratings, and Markdown, LaTeX and PDF editions.",
+      "fork": true,
+      "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA",
+      "forks_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/forks",
+      "keys_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/teams",
+      "hooks_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/hooks",
+      "issue_events_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/events",
+      "assignees_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/tags",
+      "blobs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/languages",
+      "stargazers_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/stargazers",
+      "contributors_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/contributors",
+      "subscribers_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/subscribers",
+      "subscription_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/subscription",
+      "commits_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/merges",
+      "archive_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/downloads",
+      "issues_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/labels{/name}",
+      "releases_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/deployments"
+    }
+  },
+  "jobs": {
+    "total_count": 3,
+    "jobs": [
+      {
+        "id": 105867989118,
+        "run_id": 35431937168,
+        "workflow_name": "Lean verification",
+        "head_branch": "codex/lean-mf14-degree44-20260919",
+        "run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUXJg988AAAAYpjlQfg",
+        "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+        "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/jobs/105867989118",
+        "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/job/105867989118",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-09-19T08:25:00Z",
+        "started_at": "2026-09-19T08:25:03Z",
+        "completed_at": "2026-09-19T08:25:22Z",
+        "name": "select",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-09-19T08:25:03Z",
+            "completed_at": "2026-09-19T08:25:04Z"
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-09-19T08:25:04Z",
+            "completed_at": "2026-09-19T08:25:15Z"
+          },
+          {
+            "name": "Install metadata validators",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-09-19T08:25:15Z",
+            "completed_at": "2026-09-19T08:25:17Z"
+          },
+          {
+            "name": "Test project selection and metadata gates",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-09-19T08:25:17Z",
+            "completed_at": "2026-09-19T08:25:19Z"
+          },
+          {
+            "name": "Test pinned harness gates",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-09-19T08:25:19Z",
+            "completed_at": "2026-09-19T08:25:19Z"
+          },
+          {
+            "name": "Select changed projects",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-09-19T08:25:19Z",
+            "completed_at": "2026-09-19T08:25:20Z"
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-09-19T08:25:20Z",
+            "completed_at": "2026-09-19T08:25:20Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-09-19T08:25:20Z",
+            "completed_at": "2026-09-19T08:25:20Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/check-runs/105867989118",
+        "labels": [
+          "ubuntu-24.04"
+        ],
+        "runner_id": 1000001183,
+        "runner_name": "GitHub Actions 1000001183",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      },
+      {
+        "id": 105868030877,
+        "run_id": 35431937168,
+        "workflow_name": "Lean verification",
+        "head_branch": "codex/lean-mf14-degree44-20260919",
+        "run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUXJg988AAAAYpjnznQ",
+        "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+        "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/jobs/105868030877",
+        "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/job/105868030877",
+        "status": "completed",
+        "conclusion": "failure",
+        "created_at": "2026-09-19T08:25:22Z",
+        "started_at": "2026-09-19T08:25:24Z",
+        "completed_at": "2026-09-19T08:34:13Z",
+        "name": "verify (MF-14, matrix-functions-and-stability/MF-14/lean)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-09-19T08:25:25Z",
+            "completed_at": "2026-09-19T08:25:27Z"
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-09-19T08:25:27Z",
+            "completed_at": "2026-09-19T08:25:41Z"
+          },
+          {
+            "name": "Validate formalization manifest",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-09-19T08:25:41Z",
+            "completed_at": "2026-09-19T08:25:47Z"
+          },
+          {
+            "name": "Run actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-09-19T08:25:47Z",
+            "completed_at": "2026-09-19T08:25:57Z"
+          },
+          {
+            "name": "Run leanprover/lean-action@96e06131c0e9943c780388fd166f55d1e2fa0433",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-09-19T08:25:57Z",
+            "completed_at": "2026-09-19T08:26:15Z"
+          },
+          {
+            "name": "Prepare unprivileged Linux isolation",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-09-19T08:26:15Z",
+            "completed_at": "2026-09-19T08:26:28Z"
+          },
+          {
+            "name": "Fresh sandboxed statement, axiom and kernel verification",
+            "status": "completed",
+            "conclusion": "failure",
+            "number": 7,
+            "started_at": "2026-09-19T08:26:28Z",
+            "completed_at": "2026-09-19T08:34:09Z"
+          },
+          {
+            "name": "Retain verification logs",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-09-19T08:34:09Z",
+            "completed_at": "2026-09-19T08:34:10Z"
+          },
+          {
+            "name": "Post Run actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-09-19T08:34:10Z",
+            "completed_at": "2026-09-19T08:34:10Z"
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16,
+            "started_at": "2026-09-19T08:34:10Z",
+            "completed_at": "2026-09-19T08:34:10Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17,
+            "started_at": "2026-09-19T08:34:10Z",
+            "completed_at": "2026-09-19T08:34:10Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/check-runs/105868030877",
+        "labels": [
+          "ubuntu-24.04"
+        ],
+        "runner_id": 1000001184,
+        "runner_name": "GitHub Actions 1000001184",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      },
+      {
+        "id": 105868031550,
+        "run_id": 35431937168,
+        "workflow_name": "Lean verification",
+        "head_branch": "codex/lean-mf14-degree44-20260919",
+        "run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUXJg988AAAAYpjn2Pg",
+        "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+        "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/jobs/105868031550",
+        "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168/job/105868031550",
+        "status": "completed",
+        "conclusion": "skipped",
+        "created_at": "2026-09-19T08:25:22Z",
+        "started_at": "2026-09-19T08:25:22Z",
+        "completed_at": "2026-09-19T08:25:22Z",
+        "name": "checker-controls",
+        "steps": [],
+        "check_run_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/check-runs/105868031550",
+        "labels": [
+          "ubuntu-24.04"
+        ],
+        "runner_id": null,
+        "runner_name": null,
+        "runner_group_id": null,
+        "runner_group_name": null
+      }
+    ]
+  },
+  "artifacts": {
+    "total_count": 1,
+    "artifacts": [
+      {
+        "id": 10581150411,
+        "node_id": "MDg6QXJ0aWZhY3QxMDU4MTE1MDQxMQ==",
+        "name": "lean-MF-14",
+        "size_in_bytes": 18769,
+        "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/artifacts/10581150411",
+        "archive_download_url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/actions/artifacts/10581150411/zip",
+        "expired": false,
+        "digest": "sha256:1a3becd36dd4e17c94bedbc2aac20583a683b598aafa69be84fdeb48691dfd9a",
+        "created_at": "2026-09-19T08:34:10Z",
+        "updated_at": "2026-09-19T08:34:10Z",
+        "expires_at": "2026-12-18T08:25:00Z",
+        "workflow_run": {
+          "id": 35431937168,
+          "repository_id": 1366450423,
+          "head_repository_id": 1366450423,
+          "head_branch": "codex/lean-mf14-degree44-20260919",
+          "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e"
+        }
+      }
+    ]
+  },
+  "checked_commit": {
+    "sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+    "node_id": "C_kwDOUXJg99oAKGZlNGJiZWUyNmNjNzlmMDY1ODdjODAzYzVjOTAyMTY0YzFlMDJlOGU",
+    "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/commits/fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+    "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/commit/fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+    "author": {
+      "name": "George Stepaniants",
+      "email": "15707847+sgstepaniants@users.noreply.github.com",
+      "date": "2026-09-19T08:24:18Z"
+    },
+    "committer": {
+      "name": "George Stepaniants",
+      "email": "15707847+sgstepaniants@users.noreply.github.com",
+      "date": "2026-09-19T08:24:18Z"
+    },
+    "tree": {
+      "sha": "c4f7a978eeba4bde051eec9fb262cc91a4d541cd",
+      "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/trees/c4f7a978eeba4bde051eec9fb262cc91a4d541cd"
+    },
+    "message": "Formalize original MF-14 negative answer via degree 44",
+    "parents": [
+      {
+        "sha": "71563f17926cd826a892c2bba0e294894ee57a5c",
+        "url": "https://api.github.com/repos/sgstepaniants/OpenProblemsInNLA/git/commits/71563f17926cd826a892c2bba0e294894ee57a5c",
+        "html_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/commit/71563f17926cd826a892c2bba0e294894ee57a5c"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "checked_commit_basis": "Official checkout step git log -1 --format=%H; no success receipt exists",
+  "retrieved_by": "/root/nr04_mf14_final_referee_b",
+  "retrieval_scope": "Official GitHub REST responses; see raw saved outputs and command hashes"
+}

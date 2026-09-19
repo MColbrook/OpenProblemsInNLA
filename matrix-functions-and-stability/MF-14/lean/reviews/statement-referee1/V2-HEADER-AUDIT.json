@@ -1,0 +1,271 @@
+{
+  "utc": "2026-09-19T06:19:09.676627+00:00",
+  "reviewer": "/root/pf03_final_referee2",
+  "verdict": "APPROVE exact-v2 statements; no mathematical proof acceptance",
+  "v2_handoff_sha256": "08bf0681f405454e4725e7dfaaaae279a1582abd1c698c2e7bc6e377cc5db3d1",
+  "v2_file_sha256": {
+    "Challenge.lean": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+    "HEADER-CHECK.json": "0b0daa434dffaa6a47fe123a47ac2cef9083e1296b2a4fac5060c66a34ad2eac",
+    "NLA/MF14/Definitions.lean": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+    "NLA/MF14Degree44/Definitions.lean": "cb5cb2a374e2bc0a82e4cc0770a3e8e1baf7972f92ce17f51768a2d3ae7ea2f2",
+    "NLA/MF14Degree44/Degeneration.lean": "6b750c44cae01b51029ad6857f39a385cecffa23056d41d6d6357ad398ce0304",
+    "NLA/MF14Degree44/Family.lean": "89e71dd7b7963f0c74f2782942a13fe237007c6af783d5f5e7e98cfdea7939a5",
+    "NUMERICAL_TARGETS.md": "140df3422111db0561e0819bc1340942ed9f7652c7f041e3af51d06b16a21ae6",
+    "ORIGINAL-V1-STAGING-HANDOFF.json": "54a2da95eeaf2c88d8f79cc5323a1de28ccff643987effd02c3eed66223acc9a",
+    "PENDING-STATEMENT-GATE.json": "924817379502cbeccccc0059ddc1f18b885be48c62043b64f8c193e5aac33b98",
+    "PREPARATION-SCOPE.json": "73dd8084ed56d6884f6411c8700e14d04accad87091f7f042251958770fd2728",
+    "README.md": "2bcc362e1a6a9d88ea54283db413e7f10234ea3b926bf009553fd33afb46d001",
+    "REVIEW-REQUESTS.md": "e83d322e569ab3f4bb4b1ea59a2944b86c959044a6c3e31a46a5589ab211add4",
+    "SOURCE-INPUTS.json": "2971109e4a441db5b83e7c02da9a424218226918247fe9564487d2412676ae0f",
+    "comparator.json": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+    "lakefile.toml": "e1085a3550f60ea05941bd4061ad9a802fcc9e3b901d7d1bb2d484058a55573b",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "v1_to_v2_only_source_delta": "import Mathlib.Analysis.InnerProductSpace.Defs",
+  "header_receipt_sha256": "820ceae2ddc164184dcc45b3253002eca3a4489d730dcc4149352764accbfb5c",
+  "header_check_sha256": "0b0daa434dffaa6a47fe123a47ac2cef9083e1296b2a4fac5060c66a34ad2eac",
+  "actual_commands": [
+    {
+      "module": "NLA.MF14.Definitions",
+      "status": "reused_exact_successful_local_output",
+      "source_sha256": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+      "output_sha256": "5d1820746b89f87ebd02ba7fdd2a653f1f28a9e6147ef80d59016f461b897dcf",
+      "prior_receipt": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-056/RECEIPT.json",
+      "prior_receipt_sha256": "ede337623e71c5f887465502b8089b6453f3cd4a9c80fa338a82d1717d64312d",
+      "transitive_source_hashes": {
+        "NLA/MF14/Definitions.lean": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8"
+      }
+    },
+    {
+      "module": "NLA.MF14Degree44.Definitions",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Definitions.olean",
+        "NLA/MF14Degree44/Definitions.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:25.824404+00:00",
+      "source_sha256": "cb5cb2a374e2bc0a82e4cc0770a3e8e1baf7972f92ce17f51768a2d3ae7ea2f2",
+      "dependency_olean_sha256": {
+        "NLA.MF14.Definitions": "5d1820746b89f87ebd02ba7fdd2a653f1f28a9e6147ef80d59016f461b897dcf"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:29.468604+00:00",
+      "elapsed_seconds": 3.6441154580006696,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2328084480,
+      "output_sha256": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+    },
+    {
+      "module": "NLA.MF14Degree44.Family",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Family.olean",
+        "NLA/MF14Degree44/Family.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:29.499188+00:00",
+      "source_sha256": "89e71dd7b7963f0c74f2782942a13fe237007c6af783d5f5e7e98cfdea7939a5",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Definitions": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:32.572757+00:00",
+      "elapsed_seconds": 3.073432416000287,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2334687232,
+      "output_sha256": "361a26def3c0538aeb9cc06e3ddbe517becb7a843a4d3fb30cd50f1b54d70a58"
+    },
+    {
+      "module": "NLA.MF14Degree44.Degeneration",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Degeneration.olean",
+        "NLA/MF14Degree44/Degeneration.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:32.603018+00:00",
+      "source_sha256": "6b750c44cae01b51029ad6857f39a385cecffa23056d41d6d6357ad398ce0304",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Definitions": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:37.916730+00:00",
+      "elapsed_seconds": 5.313571333001164,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2344173568,
+      "output_sha256": "aaaa1464f18b63c130d4ed8e39ec782f9d3d8fbd4411d7db807738d51621af5b"
+    },
+    {
+      "module": "MF14Degree44Challenge",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/MF14Degree44Challenge.olean",
+        "MF14Degree44Challenge.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:37.948851+00:00",
+      "source_sha256": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Family": "361a26def3c0538aeb9cc06e3ddbe517becb7a843a4d3fb30cd50f1b54d70a58",
+        "NLA.MF14Degree44.Degeneration": "aaaa1464f18b63c130d4ed8e39ec782f9d3d8fbd4411d7db807738d51621af5b"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:40.571360+00:00",
+      "elapsed_seconds": 2.6220602499997767,
+      "log_sha256": "cea56dd6c778401ac1ef2d9415326208d207aa74922037697bc4bd2d65ee957e",
+      "maxrss_bytes_macos_cumulative": 2351546368,
+      "output_sha256": "0616b3521ac56fb7d48a93739bcb9680588689cb8e019aa9c03aa5758a7f0625"
+    }
+  ],
+  "reused_original_definition_actual_origins": [
+    {
+      "receipt": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-005/RECEIPT.json",
+      "receipt_sha256": "1d6c619958273e9e4368ed88bee9493f530943340513d428da9d72c3ffc788b3",
+      "command": {
+        "module": "NLA.MF14.Definitions",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14/Definitions.olean",
+          "NLA/MF14/Definitions.lean"
+        ],
+        "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+        "start": "2026-09-19T02:18:41.563090+00:00",
+        "source_sha256": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+        "dependency_olean_sha256": {},
+        "exit_code": 0,
+        "end": "2026-09-19T02:18:52.997521+00:00",
+        "elapsed_seconds": 11.434191125000098,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "maxrss_bytes_macos_cumulative": 1744945152,
+        "output_sha256": "5d1820746b89f87ebd02ba7fdd2a653f1f28a9e6147ef80d59016f461b897dcf"
+      },
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "new_source_compiler_processes_observed": 4,
+  "shared_exact_source_output_reused": 1,
+  "intentional_challenge_placeholders": 25,
+  "reviewer_compiler_invocations": 0,
+  "api_plan_manifest_sha256": "de61a0f6fe0a5f7a1eedfa34570cdadd405177542cba0d70234b8f29f8b0e57e",
+  "api_plan_file_sha256": {
+    "DENSITY-API-PLAN.md": "fea313a5fc3e7e521a62a70f16692146b8655c7375ec5763b87f968fcd80e30a",
+    "LEAN_CERT_ROLE.md": "310575ac464695e79f6a1c739201aaabb036ea13dc1242f601df592ee6e08b94"
+  },
+  "pinned_source_files_matched": [
+    {
+      "source": "Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "c919ad7c65c0cb58cbcd1fd707e8b60f3c203cef127fec2a160e8cfa67d792a2"
+    },
+    {
+      "source": "Mathlib/Topology/OpenPartialHomeomorph/Defs.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "ad8af0cbcb24679bd44782d3f91751712e4f990aad3601cd37c7425d36cd0bad"
+    },
+    {
+      "source": "Mathlib/Topology/OpenPartialHomeomorph/Basic.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "da4d4334fd4f61fcfc29960fdeefc302e5e40c6302d4d8c09aee1b47e6dd4a01"
+    },
+    {
+      "source": "Mathlib/Topology/Constructions.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "1b2099fa575c72263e2d512bf166ed78cc483fb09100b0e56a923e9b8dc31048"
+    },
+    {
+      "source": "Mathlib/Topology/Neighborhoods.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "5acc297829b67f35cf8f9e14017da23e9dd864be8ac9d92af8198a69c1dff9e5"
+    },
+    {
+      "source": "Mathlib/Topology/Separation/Basic.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "d3932db8d5fae4c6ec691d4ee3ecc39c94d684edef7602f290bbe7c1f174c6f8"
+    },
+    {
+      "source": "Mathlib/Analysis/Normed/Field/Basic.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "26727e95ad0114dc479d15f9361584c70f868da4ded1b13b7a4bb4f40cd7df53"
+    },
+    {
+      "source": "Mathlib/Algebra/MvPolynomial/Funext.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "cb1821884a139917b692103a0b267115179cd4e7084da5487857ec49abb0cc7e"
+    },
+    {
+      "source": "Mathlib/LinearAlgebra/Matrix/ToLin.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "4a7eaa18d2821f36ecf2146f6116703a08223a15c494b66824e94259f98cceaf"
+    },
+    {
+      "source": "Mathlib/LinearAlgebra/Determinant.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "daf96bd2883183ffcbb197293271f0a69ff21b8b0acb91da823efa79aeeb6d53"
+    },
+    {
+      "source": "Mathlib/Topology/Algebra/Module/Determinant.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "fdac51c133618208de12183ceaba5a5a5117c94b5705bf46e395b146bbb2cecd"
+    },
+    {
+      "source": "Mathlib/Topology/Algebra/Module/FiniteDimension.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "4e5ae8beb3a56ca35b98e0c56fc0c80ecf749e8c9107bdb3b4c86ef809e48fe9"
+    },
+    {
+      "source": "Mathlib/Analysis/Normed/Operator/Banach.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "32f57311b073ae8832545b3265c90f5eb4147ceca326e371c77b0ac8dee6a2d7"
+    },
+    {
+      "source": "Mathlib/Analysis/Calculus/ContDiff/RCLike.lean",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "sha256": "2bcf0b6526c5ffb1353a141e73fa3a884439b4eb0cb7bd52e0b3dd93a87fd3e6"
+    },
+    {
+      "source": "LeanCert/Tactic/Verification.lean",
+      "commit": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+      "sha256": "2c576708b528acdde17796b0b715b83079f9cad377182dbd87c248323ff0a58c"
+    },
+    {
+      "source": "LeanCert/Tactic.lean",
+      "commit": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+      "sha256": "344bbe8b88e3238b1e73a010555bcc54969f4e1d33f7996a26a8f9e7d1373cac"
+    },
+    {
+      "source": "README.md",
+      "commit": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+      "sha256": "7a9d3ef7b9bf4d6d11e1a7638f049295b5952b9ba9d0bbe4073b592eec246a8c"
+    }
+  ],
+  "canonical_and_primary_git_binding": [
+    {
+      "path": "matrix-functions-and-stability/MF-14/README.md",
+      "commit": "e7519c46fd249a6a033bfe5d11c66bf47f7f8885",
+      "sha256": "e6c56268cac558fd2c816a9d68f39f5eb3703ef8ad2682502f7a98092466888b"
+    },
+    {
+      "path": "references/webb-mf14-degree44-2026-09-17/proof.tex",
+      "commit": "e7519c46fd249a6a033bfe5d11c66bf47f7f8885",
+      "sha256": "c987a6ac3532b50a8241702612c05d951d2a7d9b467a14aec922ea3c83d3de88"
+    }
+  ],
+  "github_comparator": "NOT_RUN",
+  "count_change": 0
+}

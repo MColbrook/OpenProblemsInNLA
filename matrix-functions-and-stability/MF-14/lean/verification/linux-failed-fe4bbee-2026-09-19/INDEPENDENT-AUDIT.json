@@ -1,0 +1,257 @@
+{
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "phase": "independent nonauthor runtime evidence review",
+  "scope": "Authenticate actual official failed runs; no local Lean/Lake/Comparator execution",
+  "created_utc": "2026-09-19T08:47:04.904461+00:00",
+  "verdict": "BLOCKING: OFFICIAL COMPARATOR STATEMENT MISMATCH",
+  "proof_commit": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+  "base_commit": "71563f17926cd826a892c2bba0e294894ee57a5c",
+  "project": "matrix-functions-and-stability/MF-14/lean",
+  "script_sha256": "4adddb92a8eb4edae7901e8202ebbfd5d7c7f1db8b5629147e63ad3469c30e3c",
+  "spec_sha256": "70650cf697db9156e51db30d2fba071062890d8cbcc3c75f90de8e1f4dc93e57",
+  "proof_tree": "c4f7a978eeba4bde051eec9fb262cc91a4d541cd",
+  "proof_project_input_count": 274,
+  "proof_input_hashes_sha256": "4a3065df820b99a67b659793f274f62b29e32e069813f8b6f9a1c7b37443356f",
+  "frozen_Lean_sources_match_proof_commit": 87,
+  "snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+  "archived_locked_verifier_sources": {
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/scripts/strict_landrun.py": "4d6172274dd6109b1171dc01548512aa1af31f1e8fed88aa40b3c8b831345e1c",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/PinnedReplayProbe.lean": "c2091eef3120a7850b3e73118de3cc787ee28ef5c97c6643e102cbd639c90a31",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/run_replay.sh": "6aba451c334d12438f63e8c14ba2e61bead41214540e2721e0857ed1726222e9",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/comparator_regressions.py": "1c3fcf394f7073a7decbf1be0bc66f18b81ed537a489b9f652911035543c3890",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/PF03/docs/lean/verification/2026-09-12/source/forsythe/reproduction/checks/sandbox_probe.py": "5ea755758af4966d6f3a857529f9da583662a8c7e906dcc0dc7b2a6978daf61e"
+  },
+  "mismatched_contract": "NLA.MF14Degree44.integer_jacobian_mod3_inverse",
+  "literal_source_headers_equal": true,
+  "literal_source_header": "\u2203 B : Matrix (Fin 45) (Fin 45) (ZMod 3), integerJacobianMod3 * B = 1",
+  "elaborated_type_cause": "Not determined by this nonauthor runtime audit; coordinator local diagnosis is separate.",
+  "runs": [
+    {
+      "kind": "fork",
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35431937168,
+      "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+      "verify_job_id": 105868030877,
+      "select_job_id": 105867989118,
+      "official_conclusion": "failure",
+      "failing_step": {
+        "name": "Fresh sandboxed statement, axiom and kernel verification",
+        "status": "completed",
+        "conclusion": "failure",
+        "number": 7,
+        "started_at": "2026-09-19T08:26:28Z",
+        "completed_at": "2026-09-19T08:34:09Z"
+      },
+      "checked_commit": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+      "checked_tree_equals_proof_tree": true,
+      "artifact_id": 10581150411,
+      "artifact_digest": "sha256:1a3becd36dd4e17c94bedbc2aac20583a683b598aafa69be84fdeb48691dfd9a",
+      "artifact_bytes": 18769,
+      "artifact_files": 12,
+      "verify_log_sha256": "0ff19d7d0a3bc0769928a756e51ed489b9395b085dc6523cacacbe7ddc052c1f",
+      "provenance_sha256": "da52fed428d87d1f9535d046d2ebae84cf6b95c4a783d9fe92369fdf6f46b987",
+      "logs": {
+        "user-service.log": {
+          "exit_status": 0,
+          "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+          "command": "$ /usr/bin/timeout --kill-after=5s 45s systemd-run -p RuntimeMaxSec=40 --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp /usr/bin/true"
+        },
+        "dependencies.log": {
+          "exit_status": 0,
+          "sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+          "command": "$ lake env true"
+        },
+        "mathlib-cache.log": {
+          "exit_status": 0,
+          "sha256": "bab2ff1320f00b5ea86c0eb8e7c82afe6c6fe9d9e4d004f9b376a360781957fe",
+          "command": "$ lake exe cache get"
+        },
+        "sandbox.log": {
+          "exit_status": 0,
+          "sha256": "f145e82f7a2c417a15c22cba11d9867b1cd60e9a2ae3f091a96e04905649fd54",
+          "command": "$ python3 /home/runner/work/_temp/nla-lean-tools/reproduction/checks/sandbox_probe_ci.py"
+        },
+        "kernel-controls.log": {
+          "exit_status": 0,
+          "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+          "command": "$ bash /home/runner/work/_temp/nla-lean-tools/reproduction/checks/run_replay.sh"
+        },
+        "comparator-controls.log": {
+          "exit_status": 0,
+          "sha256": "fc65bde696895ccb8b8c35cd473a17f9c3a2f162befa60d9d64e54562abbd4f6",
+          "command": "$ python3 /home/runner/work/_temp/nla-lean-tools/reproduction/checks/comparator_regressions.py"
+        },
+        "negative-sorry.log": {
+          "exit_status": 1,
+          "sha256": "7c6b7a85c113b5068d2bb2e79749952ab7a06586978e32f0f10f3aa902f30c17",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-axiom-iugtp7q5 /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        },
+        "negative-native.log": {
+          "exit_status": 1,
+          "sha256": "d445593f903d0ef99971cafc5d758ee1ec15187760104860bb3907de984bf5e1",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-axiom-0z2kfcu7 /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        },
+        "comparator.log": {
+          "exit_status": 1,
+          "sha256": "7aecab443981cec40587805e7b18d8cc007a86272cfb6c8784b19e257d879c47",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-fresh-proof-tunm94k_/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        }
+      },
+      "actual_solution_axiom_reports": {
+        "NLA.MF14Degree44.canonical_gate_padding": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.four_prefix_full_coefficients": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.three_product_tuple": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.good_border_parameters_eventually": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_span_coordinates": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_map_smooth": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_jacobian_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_minor_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_product_joint_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.polynomial_density_of_strict_derivative": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_at_zero": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_in_span": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.monic_border_joint_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_actual_output": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_degree_bound": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_closure_transfer": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.family_image_mem_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.family_degree_and_full_vector": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_map_smooth": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_jacobian_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.integer_jacobian_mod3_inverse": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_derivative_bijective": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degree44_coverage": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.original_equality_false": "propext, Classical.choice, Quot.sound"
+      },
+      "all_25_contracts_exported_from_both_modules": true,
+      "all_25_statements_accepted": false,
+      "actual_solution_default_kernel_replay_reached": false,
+      "success_receipt_present": false,
+      "sandbox_uids": [
+        1001,
+        1001
+      ],
+      "pinned_dependency_checkouts_matched": 10
+    },
+    {
+      "kind": "upstream",
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35431941636,
+      "run_url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35431941636",
+      "verify_job_id": 105868048984,
+      "select_job_id": 105868000119,
+      "official_conclusion": "failure",
+      "failing_step": {
+        "name": "Fresh sandboxed statement, axiom and kernel verification",
+        "status": "completed",
+        "conclusion": "failure",
+        "number": 7,
+        "started_at": "2026-09-19T08:26:33Z",
+        "completed_at": "2026-09-19T08:37:59Z"
+      },
+      "checked_commit": "512392344c6c47a0feddd3fb8c6d0b6233a68367",
+      "checked_tree_equals_proof_tree": true,
+      "artifact_id": 10580509887,
+      "artifact_digest": "sha256:6cf2591d87b66a17fb98d884496c11616758e4ec93303ee06927f6f35b4c74da",
+      "artifact_bytes": 19652,
+      "artifact_files": 12,
+      "verify_log_sha256": "9ce8e0d5e64bad525ddee183252752fc34c735fda313acb1a46d4fcdf8c13bbd",
+      "provenance_sha256": "26fa3cf5897916802d7ff7e5da0f538016329bf2dfec8d40acf370bf3c370623",
+      "logs": {
+        "user-service.log": {
+          "exit_status": 0,
+          "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+          "command": "$ /usr/bin/timeout --kill-after=5s 45s systemd-run -p RuntimeMaxSec=40 --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp /usr/bin/true"
+        },
+        "dependencies.log": {
+          "exit_status": 0,
+          "sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+          "command": "$ lake env true"
+        },
+        "mathlib-cache.log": {
+          "exit_status": 0,
+          "sha256": "11148bfa82f1966bb74a5da980e92b43ddac260962ea6c1f6e69510bf02201ad",
+          "command": "$ lake exe cache get"
+        },
+        "sandbox.log": {
+          "exit_status": 0,
+          "sha256": "53bad31754b7d79505e2269ddbed09546d894d01b2d8fac4e319fcb199c9d264",
+          "command": "$ python3 /home/runner/work/_temp/nla-lean-tools/reproduction/checks/sandbox_probe_ci.py"
+        },
+        "kernel-controls.log": {
+          "exit_status": 0,
+          "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+          "command": "$ bash /home/runner/work/_temp/nla-lean-tools/reproduction/checks/run_replay.sh"
+        },
+        "comparator-controls.log": {
+          "exit_status": 0,
+          "sha256": "236f61202893a3960763da8dfabe606f592e7a6e3cc13903877aee5e94469174",
+          "command": "$ python3 /home/runner/work/_temp/nla-lean-tools/reproduction/checks/comparator_regressions.py"
+        },
+        "negative-sorry.log": {
+          "exit_status": 1,
+          "sha256": "5ecfa22a61a06273487790e53e9d1f476600ba953db2117d03f595da221b7597",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-axiom-mwv8aidj /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        },
+        "negative-native.log": {
+          "exit_status": 1,
+          "sha256": "865aa982c06fe5eeea37ada327f5a1cf8b97092117e7274c9eff06ebf69fc0c3",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-axiom-u3edb1ft /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        },
+        "comparator.log": {
+          "exit_status": 1,
+          "sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471",
+          "command": "$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-fresh-proof-du0ptw97/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json"
+        }
+      },
+      "actual_solution_axiom_reports": {
+        "NLA.MF14Degree44.canonical_gate_padding": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.four_prefix_full_coefficients": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.three_product_tuple": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.good_border_parameters_eventually": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_span_coordinates": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_map_smooth": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_jacobian_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_minor_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.fourth_product_joint_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.polynomial_density_of_strict_derivative": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_at_zero": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degeneration_in_span": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.monic_border_joint_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_actual_output": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_degree_bound": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.continuation_closure_transfer": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.family_image_mem_closure": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.family_degree_and_full_vector": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_map_smooth": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_jacobian_identity": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.integer_jacobian_mod3_inverse": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.coefficient_derivative_bijective": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.degree44_coverage": "propext, Classical.choice, Quot.sound",
+        "NLA.MF14Degree44.original_equality_false": "propext, Classical.choice, Quot.sound"
+      },
+      "all_25_contracts_exported_from_both_modules": true,
+      "all_25_statements_accepted": false,
+      "actual_solution_default_kernel_replay_reached": false,
+      "success_receipt_present": false,
+      "sandbox_uids": [
+        1001,
+        1001
+      ],
+      "pinned_dependency_checkouts_matched": 10
+    }
+  ],
+  "compiler_or_comparator_run_by_reviewer": false,
+  "proof_workflow_publication_changes_by_reviewer": false,
+  "count_increment": 0,
+  "limits": [
+    "No result.json or bootstrap receipt is included in either failed artifact.",
+    "Per-input and tool-executable runtime hash maps cannot be compared because no success receipt was emitted.",
+    "Input binding rests on authenticated checkout/tree and the unchanged source-only snapshot harness.",
+    "Controls succeeding does not establish acceptance of this proof.",
+    "No new head, repair, or rerun is covered by this report."
+  ]
+}

@@ -1,0 +1,7 @@
+NLA/MF14Degree44/SpanBasisCoordinates.lean:32:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.fourth_rows_strictMono' depends on axioms: [propext]
+'NLA.MF14Degree44.product_basis_matrix_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.product_basis_matrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_span_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]

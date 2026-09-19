@@ -1,0 +1,67 @@
+[
+  {
+    "path": "bootstrap/comparator-build.log",
+    "bytes": 795,
+    "sha256": "1f80012cabff8acc4c6f759697c5e69688de42824fc769a27513d63b6f85e409"
+  },
+  {
+    "path": "bootstrap/elan.log",
+    "bytes": 129,
+    "sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+  },
+  {
+    "path": "bootstrap/landrun-build.log",
+    "bytes": 349,
+    "sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/comparator-controls.log",
+    "bytes": 6680,
+    "sha256": "093061923b6cbea3cbeb0a68f190602d6aa60b0c8cb04477dc2a396571e0af7e"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/comparator.log",
+    "bytes": 94656,
+    "sha256": "0fc41758a6b9d0ebb25341eb195722c3f5b0cdc7b70731968960992d71349ea8"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/dependencies.log",
+    "bytes": 1570,
+    "sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/kernel-controls.log",
+    "bytes": 1322,
+    "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/mathlib-cache.log",
+    "bytes": 5177,
+    "sha256": "008062b27220296a83ff60161b3f1db73cf9c2058e1cb29021108732a66e813e"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/negative-native.log",
+    "bytes": 2475,
+    "sha256": "ddcc086d4276dabc2f5af43a4f9e3a8cc3019bab72cbe4295434f50e9bfe2038"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/negative-sorry.log",
+    "bytes": 2499,
+    "sha256": "b621659141e610bd57dd540edd66fb30b27a130f0fc165d4b3024a17b643b8d4"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/result.json",
+    "bytes": 81024,
+    "sha256": "292bd89f5ac21d86eb4535365038aff8a2bbd15ad6315051fc6ba699514e3474"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/sandbox.log",
+    "bytes": 4117,
+    "sha256": "70200f659bc04c5766f62f656f35c7df93d61b52c419b44e1c9601dead6d3d33"
+  },
+  {
+    "path": "verify-20260919T091038Z-4108/user-service.log",
+    "bytes": 1273,
+    "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+  }
+]

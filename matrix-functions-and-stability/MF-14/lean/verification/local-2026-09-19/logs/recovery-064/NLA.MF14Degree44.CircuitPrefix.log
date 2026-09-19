@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.canonical_gate_padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.prefix_gate_natDegree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.prefix_available_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.four_prefix_full_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]

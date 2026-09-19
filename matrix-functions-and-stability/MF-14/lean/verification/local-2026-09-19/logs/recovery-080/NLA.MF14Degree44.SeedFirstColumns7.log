@@ -1,0 +1,32 @@
+NLA/MF14Degree44/SeedFirstColumns7.lean:25:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns7.lean:37:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns7.lean:37:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_36' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns7.lean:49:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns7.lean:49:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_37' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns7.lean:61:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns7.lean:61:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_38' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns7.lean:73:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/SeedFirstColumns7.lean:73:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'NLA.MF14Degree44.seed_first_column_39' depends on axioms: [propext, Classical.choice, Quot.sound]

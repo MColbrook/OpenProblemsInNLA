@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+  "contract_count": 25,
+  "root_audit": "verification/linux-2026-09-19/ROOT-AUDIT.json",
+  "root_audit_sha256": "2a34b708d845c12150ef91bb03c54d2464de1b79bd0592abe52a2d02e95ed955",
+  "independent_audit": "verification/linux-2026-09-19/INDEPENDENT-AUDIT.json",
+  "independent_audit_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30",
+  "runtime_review": "reviews/runtime-referee-b/REPORT.md",
+  "runtime_review_sha256": "3b5415636ba683fe34e6cdb6b8a049f7936869f1b98f12aa5bf8f3edcb137b96",
+  "runs": [
+    {
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35433896875,
+      "job_id": 105873255308,
+      "artifact_id": 10581683130,
+      "artifact_digest": "sha256:552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+      "checked_repository_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+      "all_project_inputs_match": 536,
+      "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875"
+    },
+    {
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35433898434,
+      "job_id": 105873251674,
+      "artifact_id": 10582237117,
+      "artifact_digest": "sha256:c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+      "checked_repository_commit": "84f2d7bd1f2d7613e8e7812f60ece7800dca429d",
+      "all_project_inputs_match": 536,
+      "run_url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434"
+    }
+  ],
+  "scope": "Actual non-root Linux Comparator, exported-body/default kernel, standard axioms, sandbox and rejection controls; only this problem selected in each run.",
+  "audit_scope": "Root and independent reviewer inspected existing executions. Neither evidence audit is another Lean or Comparator run.",
+  "promotion_scope": "Evidence and documentation changes preserve all Lean sources, frozen contracts, dependency pins and shared verifier code. Exact final publication is rechecked separately."
+}

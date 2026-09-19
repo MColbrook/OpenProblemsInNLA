@@ -1,0 +1,47 @@
+[
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-094/MF14ChallengeTypes093.log",
+    "copy": "evidence/local-lean/runs/recovery-094/MF14ChallengeTypes093.log",
+    "sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-094/MF14SolutionTypes093.log",
+    "copy": "evidence/local-lean/runs/recovery-094/MF14SolutionTypes093.log",
+    "sha256": "c6bd1e4abeea576a82a1e49697159675292b435cf76361bfc8be36124918d067"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-095/MF14SolutionTypes093.log",
+    "copy": "evidence/local-lean/runs/recovery-095/MF14SolutionTypes093.log",
+    "sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-094/Challenge.log",
+    "copy": "evidence/local-lean/runs/recovery-094/Challenge.log",
+    "sha256": "838341ee6cb6575449f0d52152863675d86f539697de429c1e5e96392297bbb0"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-type-diagnostics-093/MF14ChallengeTypes093.lean",
+    "copy": "evidence/development/MF14-type-diagnostics-093/MF14ChallengeTypes093.lean",
+    "sha256": "ab467d3aad16c697f2ab99baf01216df6d706aece4cef54713bc4de736fcb977"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-type-diagnostics-093/MF14SolutionTypes093.lean",
+    "copy": "evidence/development/MF14-type-diagnostics-093/MF14SolutionTypes093.lean",
+    "sha256": "2aa893e97a792dee600f445c0e0c285c03117e1d4fdc8c2deb4a58a9fa31a7ac"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-type-diagnostics-093/RAW-TYPE-COMPARISON.json",
+    "copy": "evidence/development/MF14-type-diagnostics-093/RAW-TYPE-COMPARISON.json",
+    "sha256": "76c2a81b019a41dce1b4cbd94ea7ead72b8fb8bd65c02c4197ee9f74f5c69ab6"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-instance-alignment-095/TYPE-MATCH.json",
+    "copy": "evidence/development/MF14-instance-alignment-095/TYPE-MATCH.json",
+    "sha256": "119a8bb6673de36440525487b7b32e334549fca5ab01be388a7a04fd821de912"
+  },
+  {
+    "source": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/development/MF14-instance-alignment-095/CHANGE-RECORD.json",
+    "copy": "evidence/development/MF14-instance-alignment-095/CHANGE-RECORD.json",
+    "sha256": "7b627082a723bccd8552b348c9974f9bc91f5b480c8dd4bf19d331bf86644a80"
+  }
+]

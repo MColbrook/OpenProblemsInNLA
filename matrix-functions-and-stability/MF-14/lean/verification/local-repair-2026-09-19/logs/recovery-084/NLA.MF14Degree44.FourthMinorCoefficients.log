@@ -1,0 +1,283 @@
+NLA/MF14Degree44/FourthMinorCoefficients.lean:21:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:25:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:30:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:36:49: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:45:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:99:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:123:45: warning: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:148:45: warning: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:173:45: warning: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:198:45: warning: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:223:45: warning: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:120:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:125:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:130:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:135:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:140:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:145:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:150:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:155:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:160:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:165:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:170:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:175:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:180:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:185:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:190:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:195:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:200:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:205:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:210:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:215:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:220:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:225:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:230:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:235:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:240:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:120:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:125:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:130:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:135:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:140:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:145:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:150:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:155:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:160:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:165:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:170:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:175:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:180:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:185:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:190:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:195:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:200:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:205:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:210:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:215:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:220:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:225:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:230:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:235:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:240:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:119:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:124:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:129:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:134:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:139:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:144:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:149:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:154:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:159:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:164:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:169:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:174:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:179:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:184:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:189:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:194:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:199:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:204:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:209:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:214:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:219:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:224:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:229:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:234:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorCoefficients.lean:239:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.fourth_R_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_middle_column_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_tail_column_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_tail_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_core_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]

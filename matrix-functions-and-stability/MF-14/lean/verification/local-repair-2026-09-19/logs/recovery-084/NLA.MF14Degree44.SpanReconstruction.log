@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.span_reconstruct_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.span_reconstruct_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]

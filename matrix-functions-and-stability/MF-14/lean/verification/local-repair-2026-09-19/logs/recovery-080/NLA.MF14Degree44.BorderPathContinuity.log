@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.CoefficientsContinuous.mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degenerationZ_coefficients_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.monic_border_path_coefficients_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.moving_border_path_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]

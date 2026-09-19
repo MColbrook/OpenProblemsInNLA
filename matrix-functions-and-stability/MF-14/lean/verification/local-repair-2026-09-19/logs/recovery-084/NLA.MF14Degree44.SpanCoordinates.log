@@ -1,0 +1,3 @@
+'NLA.MF14Degree44.span_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.basis_coefficient_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.coefficient_span_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]

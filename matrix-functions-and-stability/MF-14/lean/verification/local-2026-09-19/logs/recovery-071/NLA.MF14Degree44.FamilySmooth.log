@@ -1,0 +1,7 @@
+'NLA.MF14Degree44.continuation_basis_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.continuation_polynomial_coefficients_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NLA.MF14Degree44.family_quad_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.family_polynomial_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.coefficient_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]

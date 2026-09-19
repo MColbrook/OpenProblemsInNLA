@@ -1,0 +1,89 @@
+{
+  "reviewer": "/root/nr04_mf14_final_referee_a",
+  "timestamp_utc": "2026-09-19T08:50:07.033914+00:00",
+  "scope": "Static source, receipt and log authentication only; no Lean/Comparator invocation",
+  "v1_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "v2_snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+  "registered_file_hash_checks_each_snapshot": 101,
+  "Lean_files_compared": 87,
+  "changed_Lean_files": [
+    "NLA/MF14Degree44/Mod3Certificate.lean"
+  ],
+  "exact_three_line_addition_verified": true,
+  "changed_source_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+  "replay_audit_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
+  "authenticated_gzip_receipts": 56,
+  "authenticated_module_origins": 86,
+  "authenticated_reuse_links": 807,
+  "fresh095_proof_commands": [
+    {
+      "module": "NLA.MF14Degree44.Mod3Certificate",
+      "source_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+      "exit_code": 0,
+      "elapsed_seconds": 11.019398124997679,
+      "log_sha256": "de6d51f8b5b7494409f64e77de1e37c8fef8c3d55c3d30b582481a06fec3485d",
+      "output_sha256": "e420494e9aa8560e194225b52dd0b979f337646478faa021f680df2ce99cad7f"
+    },
+    {
+      "module": "NLA.MF14Degree44.JacobianNonzero",
+      "source_sha256": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
+      "exit_code": 0,
+      "elapsed_seconds": 4.093697874999634,
+      "log_sha256": "d788b01339b253a2af69bdc1986caeafb7ddb05ffc930adf4347f3b6eb6394a6",
+      "output_sha256": "fceb02ee55f112b98eabb25477fc98617b93575d270828a0d1f12382a7ef08be"
+    },
+    {
+      "module": "NLA.MF14Degree44.JacobianIdentity",
+      "source_sha256": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
+      "exit_code": 0,
+      "elapsed_seconds": 6.471908874998917,
+      "log_sha256": "f75c83e8975015edd7c0a91c4dfc88ba0eaa7e70df2775acd0c27409ceb5e682",
+      "output_sha256": "5f5fb65e49a52bcf4601514e6a31673b7db886a6f988325d77205e4a55f4da9e"
+    },
+    {
+      "module": "NLA.MF14Degree44.FinalClosure",
+      "source_sha256": "d7e3f2ff6870c7e55aac1960f706addafbd76c061d152eb014637af021b99200",
+      "exit_code": 0,
+      "elapsed_seconds": 4.815708083999198,
+      "log_sha256": "8e7ac106009d45fb925d50e500a57e145fb1501c0d5ddc311b9ddb01ab71a3f3",
+      "output_sha256": "cb413593e48b393f6091dc41ea5bc388d593195184b1a842bb15151d7eb9858d"
+    },
+    {
+      "module": "Solution",
+      "source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+      "exit_code": 0,
+      "elapsed_seconds": 4.661225625000952,
+      "log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+      "output_sha256": "444ad1fadb76f93c7bbca6720f1867beb8075fd5d770be56a0c6ecb94cba658a"
+    }
+  ],
+  "raw_type_and_universe_dumps_equal": true,
+  "raw_dump_bytes": 322506,
+  "raw_dump_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+  "contract_count": 25,
+  "permitted_axioms_only": true,
+  "kernel_assertion_count": 25,
+  "proof_sources_scanned_for_holes": 86,
+  "original_failed_Linux_runs_inspected": [
+    {
+      "run_id": 35431937168,
+      "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+      "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+      "conclusion": "failure",
+      "run_metadata_sha256": "6bdb708dc11791c71f76d7e7353a3f08a335d67c0b1d55de7abf41bd5b99f9bb",
+      "comparator_log_sha256": "7aecab443981cec40587805e7b18d8cc007a86272cfb6c8784b19e257d879c47"
+    },
+    {
+      "run_id": 35431941636,
+      "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35431941636",
+      "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+      "conclusion": "failure",
+      "run_metadata_sha256": "58cd050f82e136c13108de54f38a8941cbe847c79a04cc5a09f43aef20a34bde",
+      "comparator_log_sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471"
+    }
+  ],
+  "repaired_Linux_run_inspected": false,
+  "reviewer_Lean_run": false,
+  "reviewer_Comparator_run": false,
+  "count_increment": 0
+}

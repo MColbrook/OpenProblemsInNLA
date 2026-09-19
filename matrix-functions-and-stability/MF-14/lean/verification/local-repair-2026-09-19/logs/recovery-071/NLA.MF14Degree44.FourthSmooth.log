@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.fourth_polynomial_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]

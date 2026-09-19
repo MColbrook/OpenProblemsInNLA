@@ -1,0 +1,17 @@
+{
+  "time": "2026-09-19T09:45:49.389993+00:00",
+  "scope": "Root visually inspected all three rendered PDF pages using view_image after final canonical documentation changes. This record binds that completed visual review to unchanged files.",
+  "verdict": "PASS: readable text, formulas, links and author affiliation; no clipping or overlap; original42 target and degree44 versus exact47 distinction retained.",
+  "render_command": "PANDOC=<pinned recovery pandoc> XELATEX=/Library/TeX/texbin/xelatex python3 tools/render_problems.py MF-14",
+  "canonical_readme_sha256": "2047c6ae967294adc7fbacd27654c47965d461e85e6cc8b93058e1e508a7839c",
+  "pdf_sha256": "9ae8baba02c032350b1e90c6808b2ec2841f61d0bff03af82647268d5394fade",
+  "tex_sha256": "f034fccc4dcc32e76616da7dc3099df4dd1a5a5d01cd8ec2f46d17d252302c6c",
+  "page_images": {
+    "page-1.png": "4a1e7fe27e0241089495ffc0c9ba148be8435935b73b53a7086b0980d18f4470",
+    "page-2.png": "677745b8c6fb5580dd96600ef84cf5fdb2f973581aa5da942f2250aa9418ca8e",
+    "page-3.png": "a027f148637bcb7d58b13b7a11e7199650a40fe68b811df1f1bf7d2ea5b4d282"
+  },
+  "ID_validation": "PASS217IDs against origin/main",
+  "ID_tests": "PASS17",
+  "manifest_validation": "PASS25contracts"
+}

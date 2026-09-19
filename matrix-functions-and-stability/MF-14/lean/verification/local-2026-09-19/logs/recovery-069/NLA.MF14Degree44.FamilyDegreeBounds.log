@@ -1,0 +1,1 @@
+'NLA.MF14Degree44.family_degree_and_full_vector' depends on axioms: [propext, Classical.choice, Quot.sound]

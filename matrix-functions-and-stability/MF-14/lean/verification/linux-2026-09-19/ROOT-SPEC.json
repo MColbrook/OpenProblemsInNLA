@@ -1,0 +1,23 @@
+{
+  "problem": "MF-14",
+  "reviewer": "/root",
+  "worktree": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14",
+  "evidence": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919",
+  "proof": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+  "base": "71563f17926cd826a892c2bba0e294894ee57a5c",
+  "project": "matrix-functions-and-stability/MF-14/lean",
+  "audit_scope": "Coordinator independent inspection of actual repaired published-source Linux evidence; root is a proof author and this is not a nonauthor mathematical review or another execution.",
+  "audit_output": "ROOT-AUDIT.json",
+  "runs": [
+    {
+      "kind": "fork",
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35433896875
+    },
+    {
+      "kind": "upstream",
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35433898434
+    }
+  ]
+}

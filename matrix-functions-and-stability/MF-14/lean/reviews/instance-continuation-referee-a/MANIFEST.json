@@ -1,0 +1,144 @@
+{
+  "verdict": "APPROVE",
+  "phase": "bounded nonauthor final continuation after implementation-instance alignment",
+  "reviewer": "/root/nr04_mf14_final_referee_a",
+  "AI_reviewer": true,
+  "MF14_author": false,
+  "separate_MI27_author": true,
+  "created_utc": "2026-09-19T08:51:20.078900+00:00",
+  "reviewed_input_hashes": {
+    "final-review-packets/MF14-v1/REVIEW-SNAPSHOT.json": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+    "final-review-packets/MF14-v2-instance-alignment/REVIEW-SNAPSHOT.json": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+    "final-review-packets/MF14-v2-instance-alignment/NLA/MF14Degree44/Mod3Certificate.lean": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+    "final-review-packets/MF14-v2-instance-alignment/Challenge.lean": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+    "final-review-packets/MF14-v2-instance-alignment/comparator.json": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+    "reviews/MF14-final-referee-a/REPORT.md": "9487b2edcaa41f6f037f2b3277c2802c24770f21167590b0de376494560f7715",
+    "reviews/MF14-final-referee-a/MANIFEST.json": "feaf03bc1bf6fcc197372a37e395576b5a32a8334a68e84c8ecc454adbd0eb56",
+    "development/MF14-instance-alignment-095/CHANGE-RECORD.json": "7b627082a723bccd8552b348c9974f9bc91f5b480c8dd4bf19d331bf86644a80",
+    "development/MF14-instance-alignment-095/TYPE-MATCH.json": "119a8bb6673de36440525487b7b32e334549fca5ab01be388a7a04fd821de912",
+    "verification/MF14-repair095-local-20260919/LOCAL-REPLAY-AUDIT.json": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
+    "verification/MF14-repair095-local-20260919/actual-axioms.json": "24883ce349eeb2df1c47132194590b3644f44c3c48000effc25ab06627b88d06",
+    "verification/MF14-repair095-local-20260919/LOCAL-ENVIRONMENT.json": "8cdb5a599c3e21081011efd2e7a677a46f433b20e3c61e34a5473bf962374f6f",
+    "local-lean/runs/recovery-094/RECEIPT.json": "0de3bb125ec7477afdf5b1daea6091b3f895ba283783a122d9d1219987480ef6",
+    "local-lean/runs/recovery-095/RECEIPT.json": "46d36589dcfff7a5bc374cb705034771c7448d9033875960cb2fb248e780d335",
+    "local-lean/MF14ChallengeTypes093.lean": "ab467d3aad16c697f2ab99baf01216df6d706aece4cef54713bc4de736fcb977",
+    "local-lean/MF14SolutionTypes093.lean": "2aa893e97a792dee600f445c0e0c285c03117e1d4fdc8c2deb4a58a9fa31a7ac",
+    "local-lean/runs/recovery-094/MF14ChallengeTypes093.log": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+    "local-lean/runs/recovery-095/MF14SolutionTypes093.log": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+    "local-lean/runs/recovery-095/NLA.MF14Degree44.Mod3Certificate.log": "de6d51f8b5b7494409f64e77de1e37c8fef8c3d55c3d30b582481a06fec3485d",
+    "local-lean/runs/recovery-095/NLA.MF14Degree44.JacobianNonzero.log": "d788b01339b253a2af69bdc1986caeafb7ddb05ffc930adf4347f3b6eb6394a6",
+    "local-lean/runs/recovery-095/NLA.MF14Degree44.JacobianIdentity.log": "f75c83e8975015edd7c0a91c4dfc88ba0eaa7e70df2775acd0c27409ceb5e682",
+    "local-lean/runs/recovery-095/NLA.MF14Degree44.FinalClosure.log": "8e7ac106009d45fb925d50e500a57e145fb1501c0d5ddc311b9ddb01ab71a3f3",
+    "local-lean/runs/recovery-095/Solution.log": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336"
+  },
+  "artifacts_sha256": {
+    "REPORT.md": "5242cf0036aa8e536346a81ab319777b2aa693e2ea5e590aed9a0d544b0ed03c",
+    "independent_audit.py": "bbcab02db3236f7ce28d8ed71bc886b7b7ab01506e2206fdcb2c6653ccedc7f2",
+    "INDEPENDENT-AUDIT.json": "d475082a58bd8a02c8f989848011fc818292365becfb3fd9e5b631c3fc7b67ab"
+  },
+  "pinned_Mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "pinned_API_hashes": {
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/Data/ZMod/Defs.lean": "7c3719a4e2c38f9549f5f61a0882fa10e220505dc4b61968186d0a4d30f335f1",
+    "/Users/georgestepaniants/Research/project/lean-verification/.lake/packages/mathlib/Mathlib/Algebra/Field/ZMod.lean": "417e8776440d058896b5f05a65d534041a1b7f0b8adb90c011b75486f3e1de22"
+  },
+  "independent_audit": {
+    "reviewer": "/root/nr04_mf14_final_referee_a",
+    "timestamp_utc": "2026-09-19T08:50:07.033914+00:00",
+    "scope": "Static source, receipt and log authentication only; no Lean/Comparator invocation",
+    "v1_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+    "v2_snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+    "registered_file_hash_checks_each_snapshot": 101,
+    "Lean_files_compared": 87,
+    "changed_Lean_files": [
+      "NLA/MF14Degree44/Mod3Certificate.lean"
+    ],
+    "exact_three_line_addition_verified": true,
+    "changed_source_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+    "replay_audit_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
+    "authenticated_gzip_receipts": 56,
+    "authenticated_module_origins": 86,
+    "authenticated_reuse_links": 807,
+    "fresh095_proof_commands": [
+      {
+        "module": "NLA.MF14Degree44.Mod3Certificate",
+        "source_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+        "exit_code": 0,
+        "elapsed_seconds": 11.019398124997679,
+        "log_sha256": "de6d51f8b5b7494409f64e77de1e37c8fef8c3d55c3d30b582481a06fec3485d",
+        "output_sha256": "e420494e9aa8560e194225b52dd0b979f337646478faa021f680df2ce99cad7f"
+      },
+      {
+        "module": "NLA.MF14Degree44.JacobianNonzero",
+        "source_sha256": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
+        "exit_code": 0,
+        "elapsed_seconds": 4.093697874999634,
+        "log_sha256": "d788b01339b253a2af69bdc1986caeafb7ddb05ffc930adf4347f3b6eb6394a6",
+        "output_sha256": "fceb02ee55f112b98eabb25477fc98617b93575d270828a0d1f12382a7ef08be"
+      },
+      {
+        "module": "NLA.MF14Degree44.JacobianIdentity",
+        "source_sha256": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
+        "exit_code": 0,
+        "elapsed_seconds": 6.471908874998917,
+        "log_sha256": "f75c83e8975015edd7c0a91c4dfc88ba0eaa7e70df2775acd0c27409ceb5e682",
+        "output_sha256": "5f5fb65e49a52bcf4601514e6a31673b7db886a6f988325d77205e4a55f4da9e"
+      },
+      {
+        "module": "NLA.MF14Degree44.FinalClosure",
+        "source_sha256": "d7e3f2ff6870c7e55aac1960f706addafbd76c061d152eb014637af021b99200",
+        "exit_code": 0,
+        "elapsed_seconds": 4.815708083999198,
+        "log_sha256": "8e7ac106009d45fb925d50e500a57e145fb1501c0d5ddc311b9ddb01ab71a3f3",
+        "output_sha256": "cb413593e48b393f6091dc41ea5bc388d593195184b1a842bb15151d7eb9858d"
+      },
+      {
+        "module": "Solution",
+        "source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+        "exit_code": 0,
+        "elapsed_seconds": 4.661225625000952,
+        "log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+        "output_sha256": "444ad1fadb76f93c7bbca6720f1867beb8075fd5d770be56a0c6ecb94cba658a"
+      }
+    ],
+    "raw_type_and_universe_dumps_equal": true,
+    "raw_dump_bytes": 322506,
+    "raw_dump_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+    "contract_count": 25,
+    "permitted_axioms_only": true,
+    "kernel_assertion_count": 25,
+    "proof_sources_scanned_for_holes": 86,
+    "original_failed_Linux_runs_inspected": [
+      {
+        "run_id": 35431937168,
+        "url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35431937168",
+        "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+        "conclusion": "failure",
+        "run_metadata_sha256": "6bdb708dc11791c71f76d7e7353a3f08a335d67c0b1d55de7abf41bd5b99f9bb",
+        "comparator_log_sha256": "7aecab443981cec40587805e7b18d8cc007a86272cfb6c8784b19e257d879c47"
+      },
+      {
+        "run_id": 35431941636,
+        "url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35431941636",
+        "head_sha": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+        "conclusion": "failure",
+        "run_metadata_sha256": "58cd050f82e136c13108de54f38a8941cbe847c79a04cc5a09f43aef20a34bde",
+        "comparator_log_sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471"
+      }
+    ],
+    "repaired_Linux_run_inspected": false,
+    "reviewer_Lean_run": false,
+    "reviewer_Comparator_run": false,
+    "count_increment": 0
+  },
+  "source_mutations_by_reviewer": false,
+  "Lean_execution_by_reviewer": false,
+  "Comparator_execution_by_reviewer": false,
+  "repaired_Linux_success_claim": false,
+  "complete_Lean_verification_count_increment": 0,
+  "new_mathematical_resolution_count_increment": 0,
+  "limitations": [
+    "Bounded continuation; unchanged full proof covered by previous report and exact byte comparison.",
+    "No repaired Linux Comparator run inspected.",
+    "No final publication metadata or new upstream novelty search reviewed."
+  ]
+}

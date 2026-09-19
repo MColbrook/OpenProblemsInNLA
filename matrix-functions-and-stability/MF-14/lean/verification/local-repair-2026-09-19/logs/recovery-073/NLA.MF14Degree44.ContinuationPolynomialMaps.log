@@ -1,0 +1,5 @@
+'NLA.MF14Degree44.continuation_basis_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.continuation_polynomial_coefficient_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NLA.MF14Degree44.continuation_map_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]

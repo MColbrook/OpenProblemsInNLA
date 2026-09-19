@@ -6,10 +6,20 @@
 
 **Rating rationale:** Historical ratings for the original conjecture: challenging because numerical evidence for coefficient-space coverage needs exact algebraic justification; community impact comes from multiplication budgets for practical matrix-function evaluation.
 
-**Last checked:** 2026-09-17
+**Last checked:** 2026-09-19
 
-**Status:** Solved
+**Status:** Lean verified
 
+
+## Lean proof and verification evidence
+
+**Lean verified — 19 September 2026 (UTC). Formalization: George Stepaniants**, Department of Computing and Mathematical Sciences, California Institute of Technology, with substantial AI assistance. Marcus Webb, The University of Manchester retains mathematical construction authorship.
+
+Seven chronological products cover every complex polynomial through degree 44 in the full 129-coefficient closure model, refuting the original equality 42. The later exact maximum 47 is outside this formalization.
+
+All 25 frozen contracts passed actual local serial Lean, two wholly nonauthor final AI-agent source reviews, and the [sgstepaniants run 35433896875](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875) and [ajt60gaibb run 35433898434](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434). The real Comparator, default kernel, standard-axiom checks, sandbox and rejection controls passed on the immutable proof [c89c859a](https://github.com/sgstepaniants/OpenProblemsInNLA/tree/c89c859a6b21c399a99f5e9f5fb2b7f472c96657/matrix-functions-and-stability/MF-14/lean). Two independent statement reviews preceded implementation. Kernel-mode LeanCert audits are retained, with exact computation minimized. An independent operational audit authenticates the execution evidence. No official Tau Ceti service or external human peer review is claimed.
+
+[Proof, reproduction and scope](lean/README.md) · [Exact execution evidence](lean/verification/linux-2026-09-19/SUMMARY.json) · [Formalization metadata](lean/formalization.yaml) · [Upstream PR #305](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/305).
 
 ## Resolution — exact maximum 47, 17 September 2026
 

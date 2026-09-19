@@ -1,0 +1,7 @@
+{
+  "verdict": "BLOCKING: OFFICIAL COMPARATOR STATEMENT MISMATCH",
+  "runs": 2,
+  "proof_project_inputs": 274,
+  "frozen_Lean_sources": 87,
+  "audit_sha256": "0e04a6283ccbd67c283d0d7b60c55b1e86482d18a57ebc5ea0a6aec4ddf075e8"
+}

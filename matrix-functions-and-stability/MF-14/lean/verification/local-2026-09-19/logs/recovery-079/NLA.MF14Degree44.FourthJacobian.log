@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.fourth_first_jet_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_first_jet_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_first_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

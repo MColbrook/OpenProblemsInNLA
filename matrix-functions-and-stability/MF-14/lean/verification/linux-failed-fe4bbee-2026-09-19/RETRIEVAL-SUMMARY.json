@@ -1,0 +1,20 @@
+{
+  "scope": "Independent nonauthor retrieval; no Lean, Comparator, proof edit, publication or promotion",
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "script_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8",
+  "spec_sha256": "70650cf697db9156e51db30d2fba071062890d8cbcc3c75f90de8e1f4dc93e57",
+  "gh_binary_sha256": "aa97dfb4a82f7c56063cdcbfaa39a738b923c1bdca29bd5a041b8e959ca38e04",
+  "commands_sha256": "4b022fc39c11f0817eadd72c6455ea40b93d724f467accdfd1473556f72be2b8",
+  "runs": [
+    {
+      "kind": "fork",
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35431937168
+    },
+    {
+      "kind": "upstream",
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35431941636
+    }
+  ]
+}

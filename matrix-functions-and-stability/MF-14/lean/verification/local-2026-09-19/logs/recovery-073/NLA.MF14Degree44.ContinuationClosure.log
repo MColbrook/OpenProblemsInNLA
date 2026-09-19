@@ -1,0 +1,1 @@
+'NLA.MF14Degree44.continuation_closure_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]

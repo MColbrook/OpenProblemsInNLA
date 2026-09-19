@@ -1,0 +1,4 @@
+NLA/MF14Degree44/SyzygyExpansion.lean:25:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.syzygy_polynomial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]

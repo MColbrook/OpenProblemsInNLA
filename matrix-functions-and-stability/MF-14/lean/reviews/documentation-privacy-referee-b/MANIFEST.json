@@ -1,0 +1,23 @@
+{
+  "verdict": "APPROVE bounded documentation/privacy review",
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "created_utc": "2026-09-19T09:44:37.107723+00:00",
+  "verified_proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+  "reviewed_snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+  "reviewed_metadata_hashes": {
+    "matrix-functions-and-stability/MF-14/README.md": "2047c6ae967294adc7fbacd27654c47965d461e85e6cc8b93058e1e508a7839c",
+    "RESOLVED.md": "07a5cc01d93e99dbad3d6511eabc1f9a81908255f70e59e0a8f1cbfb7542227a",
+    "matrix-functions-and-stability/MF-14/lean/README.md": "1e71caf355d069c57179f0a50020c38de3503e74f7aaa794dffab447c42ff83c",
+    "matrix-functions-and-stability/MF-14/lean/formalization.yaml": "8d9d5ee7577d881d4008603c17b663b8b7aef88d7ceebd99cbab4b6cdea71930",
+    "matrix-functions-and-stability/MF-14/lean/STATE.json": "75d2c6abe7b92a24af5241fadecaaddcad840f63778d0cb8e75c3d6edec7420a",
+    "matrix-functions-and-stability/MF-14/lean/verification/PRIVACY-REDACTIONS.json": "6e329598f102ff28a69f5497c521d386cdb0144c35c385acaa0b311e092efadf",
+    "matrix-functions-and-stability/MF-14/lean/PACKAGING-NEXT-STEPS.md": "5f46b4052482fcac489620f8386ba4f7c43e2e014609657ddc938ac98883856e",
+    "matrix-functions-and-stability/MF-14/lean/IMPLEMENTATION-MAP.json": "5f22050347568b136ba8629cc9abefce252c80cb066e3ba8ebb518f86fff6f0a"
+  },
+  "files": {
+    "AUDIT.json": "6a9bf610398a8de7826c7442a51aeb2130aa9951bf6ad1068255c7334b7cf15d",
+    "REPORT.md": "42b140952d2bdc116f016baf64b09adcbc6aed8013503098dbfa873674c43724",
+    "audit_documentation.py": "c9718b7a5eba4e5109a5d8fb27e93e5c432a3b49ed124f48238b2e047cd083e4"
+  },
+  "scope": "Independent read-only publication documentation, exact Lean/config hashes, public evidence derivative provenance and bounded privacy scan. No compiler, Comparator, proof edits or publication."
+}

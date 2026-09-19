@@ -1,0 +1,177 @@
+{
+  "status": "COMPLETE ORIGINAL TARGET: local Lean, two final source reviews and real published Linux gates PASS",
+  "updated_utc": "2026-09-19T09:30:25.765960+00:00",
+  "original_target": "MF-14: is the largest covered degree exactly 42 in the original complex seven-product full 129-coefficient closure model?",
+  "formalized_scope_intended": [
+    "NLA.MF14.CoversDegree 44",
+    "not IsGreatest NLA.MF14.coveredDegrees 42"
+  ],
+  "degree47_claim_formalized_by_this_route": false,
+  "whole_problem_verified": true,
+  "count_change": 1,
+  "completed_original_targets": 1,
+  "statement_gate": {
+    "status": "APPROVED before substantive implementations",
+    "freeze_sha256": "10d161750ec789b5b8f24e0e82e229a722017b77b4cb7bdce11787dde70d7e3c",
+    "independent_approvals": 2
+  },
+  "local_full_aggregate": {
+    "status": "PASS actual repaired coordinator-owned local Lean",
+    "runs": [
+      "recovery-094",
+      "recovery-095"
+    ],
+    "module": "Solution",
+    "record": "verification/local-repair-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+    "record_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
+    "actual_command": [
+      "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+      "--threads=1",
+      "--memory=4096",
+      "-o",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Solution.olean",
+      "Solution.lean"
+    ],
+    "actual_source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+    "actual_log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+    "modules": 86,
+    "threads": 1,
+    "memory_cap_mib": 4096,
+    "standalone_lake_build": "NOT_RUN; direct serial Lean commands recorded",
+    "publication_name_replay": "PASS recovery-095 Solution; isolated reference Challenge compiled in recovery-094; all 25 raw-type and universe logs are byte-identical"
+  },
+  "final_independent_reviews": {
+    "status": "PASS",
+    "approved_nonauthor_count": 2,
+    "reports": [
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_a",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-a/REPORT.md",
+        "report_sha256": "9487b2edcaa41f6f037f2b3277c2802c24770f21167590b0de376494560f7715",
+        "manifest": "reviews/final-referee-a/MANIFEST.json",
+        "manifest_sha256": "feaf03bc1bf6fcc197372a37e395576b5a32a8334a68e84c8ecc454adbd0eb56",
+        "new_Lean_or_Comparator_run": false
+      },
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_b",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-b/REPORT.md",
+        "report_sha256": "324678541771c27834b0c3967dcae81aa3c15083acb2715ca1c1f8f7a2440424",
+        "manifest": "reviews/final-referee-b/MANIFEST.json",
+        "manifest_sha256": "8df5c6f142ea1e6ffce3cf4910fc8307b6029b4f7cfe5292f723bd8002dd6b05",
+        "new_Lean_or_Comparator_run": false
+      }
+    ],
+    "continuation_status": "PASS two independent nonauthor approvals of the exact repaired snapshot",
+    "continuation_reports": [
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_a",
+        "role": "Independent nonauthor AI-agent continuation referee",
+        "verdict": "APPROVE",
+        "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+        "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+        "report": "reviews/instance-continuation-referee-a/REPORT.md",
+        "report_sha256": "5242cf0036aa8e536346a81ab319777b2aa693e2ea5e590aed9a0d544b0ed03c",
+        "manifest": "reviews/instance-continuation-referee-a/MANIFEST.json",
+        "manifest_sha256": "88c9ce2b42f84021ba11f3656ef5ac059497b7fe08aa21ac568a5ef1b25a22ad",
+        "new_Lean_or_Comparator_run": false
+      },
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_b",
+        "role": "Independent nonauthor AI-agent continuation referee",
+        "verdict": "APPROVE bounded continuation",
+        "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+        "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+        "report": "reviews/instance-continuation-referee-b/REPORT.md",
+        "report_sha256": "4168dfb04db9c0f374524117cd2e493ccd9191e2763f12336ad373257ab09397",
+        "manifest": "reviews/instance-continuation-referee-b/MANIFEST.json",
+        "manifest_sha256": "a5ca02447528cbce4db5aa6cf2c97d809723c72df35870760616ceda85630743",
+        "new_Lean_or_Comparator_run": false
+      }
+    ]
+  },
+  "github_comparator": {
+    "status": "PASS",
+    "proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+    "contract_count": 25,
+    "root_audit": "verification/linux-2026-09-19/ROOT-AUDIT.json",
+    "root_audit_sha256": "2a34b708d845c12150ef91bb03c54d2464de1b79bd0592abe52a2d02e95ed955",
+    "independent_audit": "verification/linux-2026-09-19/INDEPENDENT-AUDIT.json",
+    "independent_audit_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30",
+    "runtime_review": "reviews/runtime-referee-b/REPORT.md",
+    "runtime_review_sha256": "3b5415636ba683fe34e6cdb6b8a049f7936869f1b98f12aa5bf8f3edcb137b96",
+    "runs": [
+      {
+        "repository": "sgstepaniants/OpenProblemsInNLA",
+        "run_id": 35433896875,
+        "job_id": 105873255308,
+        "artifact_id": 10581683130,
+        "artifact_digest": "sha256:552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+        "checked_repository_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+        "all_project_inputs_match": 536,
+        "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875"
+      },
+      {
+        "repository": "ajt60gaibb/OpenProblemsInNLA",
+        "run_id": 35433898434,
+        "job_id": 105873251674,
+        "artifact_id": 10582237117,
+        "artifact_digest": "sha256:c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+        "checked_repository_commit": "84f2d7bd1f2d7613e8e7812f60ece7800dca429d",
+        "all_project_inputs_match": 536,
+        "run_url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434"
+      }
+    ],
+    "scope": "Actual non-root Linux Comparator, exported-body/default kernel, standard axioms, sandbox and rejection controls; only this problem selected in each run.",
+    "audit_scope": "Root and independent reviewer inspected existing executions. Neither evidence audit is another Lean or Comparator run.",
+    "promotion_scope": "Evidence and documentation changes preserve all Lean sources, frozen contracts, dependency pins and shared verifier code. Exact final publication is rechecked separately."
+  },
+  "publication": {
+    "status": "PUBLISHED_PROOF_VERIFIED; evidence and catalog promotion on the same PR",
+    "target_repository": "ajt60gaibb/OpenProblemsInNLA",
+    "target_branch": "main",
+    "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/305",
+    "immutable_proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657"
+  },
+  "metadata_packet_lean_runs": 0,
+  "metadata_packet_comparator_runs": 0,
+  "GitHub_Comparator": {
+    "status": "PASS",
+    "proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+    "contract_count": 25,
+    "root_audit": "verification/linux-2026-09-19/ROOT-AUDIT.json",
+    "root_audit_sha256": "2a34b708d845c12150ef91bb03c54d2464de1b79bd0592abe52a2d02e95ed955",
+    "independent_audit": "verification/linux-2026-09-19/INDEPENDENT-AUDIT.json",
+    "independent_audit_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30",
+    "runtime_review": "reviews/runtime-referee-b/REPORT.md",
+    "runtime_review_sha256": "3b5415636ba683fe34e6cdb6b8a049f7936869f1b98f12aa5bf8f3edcb137b96",
+    "runs": [
+      {
+        "repository": "sgstepaniants/OpenProblemsInNLA",
+        "run_id": 35433896875,
+        "job_id": 105873255308,
+        "artifact_id": 10581683130,
+        "artifact_digest": "sha256:552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+        "checked_repository_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+        "all_project_inputs_match": 536,
+        "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875"
+      },
+      {
+        "repository": "ajt60gaibb/OpenProblemsInNLA",
+        "run_id": 35433898434,
+        "job_id": 105873251674,
+        "artifact_id": 10582237117,
+        "artifact_digest": "sha256:c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+        "checked_repository_commit": "84f2d7bd1f2d7613e8e7812f60ece7800dca429d",
+        "all_project_inputs_match": 536,
+        "run_url": "https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434"
+      }
+    ],
+    "scope": "Actual non-root Linux Comparator, exported-body/default kernel, standard axioms, sandbox and rejection controls; only this problem selected in each run.",
+    "audit_scope": "Root and independent reviewer inspected existing executions. Neither evidence audit is another Lean or Comparator run.",
+    "promotion_scope": "Evidence and documentation changes preserve all Lean sources, frozen contracts, dependency pins and shared verifier code. Exact final publication is rechecked separately."
+  }
+}

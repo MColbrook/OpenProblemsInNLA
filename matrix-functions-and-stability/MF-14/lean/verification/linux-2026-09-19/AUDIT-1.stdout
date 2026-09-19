@@ -1,0 +1,1 @@
+{"verdict": "PASS", "actual_GitHub_runs": 2, "inputs_per_run": 536, "contracts_per_run": 25, "audit_output": "INDEPENDENT-AUDIT.json", "audit_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30"}

@@ -1,0 +1,360 @@
+{
+  "reviewer": "/root/mf14_degree44_statement_referee3",
+  "time_utc": "2026-09-19T06:25:02.470866+00:00",
+  "scope": "Independent byte/header/log audit only; not mathematical proof verification.",
+  "status": "PASS",
+  "lean_invoked_by_reviewer": false,
+  "comparator_invoked_by_reviewer": false,
+  "handoff_sha256": "08bf0681f405454e4725e7dfaaaae279a1582abd1c698c2e7bc6e377cc5db3d1",
+  "receipt_sha256": "820ceae2ddc164184dcc45b3253002eca3a4489d730dcc4149352764accbfb5c",
+  "ordered_theorem_names": [
+    "NLA.MF14Degree44.canonical_gate_padding",
+    "NLA.MF14Degree44.four_prefix_full_coefficients",
+    "NLA.MF14Degree44.three_product_tuple",
+    "NLA.MF14Degree44.good_border_parameters_eventually",
+    "NLA.MF14Degree44.fourth_span_coordinates",
+    "NLA.MF14Degree44.fourth_map_smooth",
+    "NLA.MF14Degree44.fourth_jacobian_identity",
+    "NLA.MF14Degree44.fourth_minor_identity",
+    "NLA.MF14Degree44.fourth_product_joint_closure",
+    "NLA.MF14Degree44.polynomial_density_of_strict_derivative",
+    "NLA.MF14Degree44.degeneration_identity",
+    "NLA.MF14Degree44.degeneration_at_zero",
+    "NLA.MF14Degree44.degeneration_in_span",
+    "NLA.MF14Degree44.monic_border_joint_closure",
+    "NLA.MF14Degree44.continuation_actual_output",
+    "NLA.MF14Degree44.continuation_degree_bound",
+    "NLA.MF14Degree44.continuation_closure_transfer",
+    "NLA.MF14Degree44.family_image_mem_closure",
+    "NLA.MF14Degree44.family_degree_and_full_vector",
+    "NLA.MF14Degree44.coefficient_map_smooth",
+    "NLA.MF14Degree44.coefficient_jacobian_identity",
+    "NLA.MF14Degree44.integer_jacobian_mod3_inverse",
+    "NLA.MF14Degree44.coefficient_derivative_bijective",
+    "NLA.MF14Degree44.degree44_coverage",
+    "NLA.MF14Degree44.original_equality_false"
+  ],
+  "challenge_placeholder_count": 25,
+  "v1_to_v2_lean_diff": {
+    "NLA/MF14Degree44/Definitions.lean": "--- v1\n+++ v2\n@@ -2,6 +2,7 @@\n import Mathlib.Analysis.Calculus.ContDiff.Basic\n import Mathlib.Analysis.Calculus.InverseFunctionTheorem.FDeriv\n import Mathlib.Analysis.Complex.Basic\n+import Mathlib.Analysis.InnerProductSpace.Defs\n import Mathlib.LinearAlgebra.Matrix.Determinant.Basic\n import Mathlib.Data.ZMod.Basic\n \n"
+  },
+  "all_packet_manifest_hashes_match": true,
+  "all_source_input_hashes_match": true,
+  "old_27_contract_gate_and_target_definitions_unchanged": true,
+  "five_syzygy_expressions_literal_source_match": true,
+  "inspected_logs_sha256": {
+    ".local-recovery-20260918/local-lean/runs/recovery-057/NLA.MF14Degree44.Definitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".local-recovery-20260918/local-lean/runs/recovery-057/NLA.MF14Degree44.Family.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".local-recovery-20260918/local-lean/runs/recovery-057/NLA.MF14Degree44.Degeneration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".local-recovery-20260918/local-lean/runs/recovery-057/MF14Degree44Challenge.log": "cea56dd6c778401ac1ef2d9415326208d207aa74922037697bc4bd2d65ee957e"
+  },
+  "recorded_header_commands": [
+    {
+      "module": "NLA.MF14.Definitions",
+      "status": "reused_exact_successful_local_output",
+      "source_sha256": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+      "output_sha256": "5d1820746b89f87ebd02ba7fdd2a653f1f28a9e6147ef80d59016f461b897dcf",
+      "prior_receipt": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-056/RECEIPT.json",
+      "prior_receipt_sha256": "ede337623e71c5f887465502b8089b6453f3cd4a9c80fa338a82d1717d64312d",
+      "transitive_source_hashes": {
+        "NLA/MF14/Definitions.lean": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8"
+      }
+    },
+    {
+      "module": "NLA.MF14Degree44.Definitions",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Definitions.olean",
+        "NLA/MF14Degree44/Definitions.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:25.824404+00:00",
+      "source_sha256": "cb5cb2a374e2bc0a82e4cc0770a3e8e1baf7972f92ce17f51768a2d3ae7ea2f2",
+      "dependency_olean_sha256": {
+        "NLA.MF14.Definitions": "5d1820746b89f87ebd02ba7fdd2a653f1f28a9e6147ef80d59016f461b897dcf"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:29.468604+00:00",
+      "elapsed_seconds": 3.6441154580006696,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2328084480,
+      "output_sha256": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+    },
+    {
+      "module": "NLA.MF14Degree44.Family",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Family.olean",
+        "NLA/MF14Degree44/Family.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:29.499188+00:00",
+      "source_sha256": "89e71dd7b7963f0c74f2782942a13fe237007c6af783d5f5e7e98cfdea7939a5",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Definitions": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:32.572757+00:00",
+      "elapsed_seconds": 3.073432416000287,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2334687232,
+      "output_sha256": "361a26def3c0538aeb9cc06e3ddbe517becb7a843a4d3fb30cd50f1b54d70a58"
+    },
+    {
+      "module": "NLA.MF14Degree44.Degeneration",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/NLA/MF14Degree44/Degeneration.olean",
+        "NLA/MF14Degree44/Degeneration.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:32.603018+00:00",
+      "source_sha256": "6b750c44cae01b51029ad6857f39a385cecffa23056d41d6d6357ad398ce0304",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Definitions": "4e9f0a86c036457e09fa59ee9ef7cd516451d05422298b066323699583fa4d3a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:37.916730+00:00",
+      "elapsed_seconds": 5.313571333001164,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "maxrss_bytes_macos_cumulative": 2344173568,
+      "output_sha256": "aaaa1464f18b63c130d4ed8e39ec782f9d3d8fbd4411d7db807738d51621af5b"
+    },
+    {
+      "module": "MF14Degree44Challenge",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/MF14Degree44Challenge.olean",
+        "MF14Degree44Challenge.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T06:14:37.948851+00:00",
+      "source_sha256": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+      "dependency_olean_sha256": {
+        "NLA.MF14Degree44.Family": "361a26def3c0538aeb9cc06e3ddbe517becb7a843a4d3fb30cd50f1b54d70a58",
+        "NLA.MF14Degree44.Degeneration": "aaaa1464f18b63c130d4ed8e39ec782f9d3d8fbd4411d7db807738d51621af5b"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T06:14:40.571360+00:00",
+      "elapsed_seconds": 2.6220602499997767,
+      "log_sha256": "cea56dd6c778401ac1ef2d9415326208d207aa74922037697bc4bd2d65ee957e",
+      "maxrss_bytes_macos_cumulative": 2351546368,
+      "output_sha256": "0616b3521ac56fb7d48a93739bcb9680588689cb8e019aa9c03aa5758a7f0625"
+    }
+  ],
+  "shared_definition_reuse_chain": [
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-057/RECEIPT.json",
+      "sha256": "820ceae2ddc164184dcc45b3253002eca3a4489d730dcc4149352764accbfb5c",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-056/RECEIPT.json",
+      "sha256": "ede337623e71c5f887465502b8089b6453f3cd4a9c80fa338a82d1717d64312d",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-053/RECEIPT.json",
+      "sha256": "8df16f5f81a4627ce090cca784acdb477cea7ef103335484d9f31abe212eae59",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-052/RECEIPT.json",
+      "sha256": "973088f563c3359f648c11bce5d6368c9e680eb0b87a168653158d6a6dd0ba5a",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-051/RECEIPT.json",
+      "sha256": "2165b70f0f7c3dffbde8d930e0159dd70589f0a9e64e0dc292bb114430dba580",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-050/RECEIPT.json",
+      "sha256": "047ab29e46a1f967c6b9ad8e1e47bd248834d55c5c56ab4176d264c20e31656c",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-049/RECEIPT.json",
+      "sha256": "3973e12b30b28f098de6c91c5d2612e0afc32478310a186a0ec681a1138caa2f",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-048/RECEIPT.json",
+      "sha256": "f639b453d2837ad5fca9637b5bba320de022ef1937b6f681eff9d5dc108117af",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-046/RECEIPT.json",
+      "sha256": "ec616464e44f984865993e5c8eb06a934746aeae9dfb85840c50044ee6affab0",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-045/RECEIPT.json",
+      "sha256": "65cdf0e030a9cc1df0850511ee3ee52acd434d843966a5b854a8c3397af48bc7",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-037/RECEIPT.json",
+      "sha256": "1efac1a874b6f4759be021b4ce3c227561de8f6831a1ef7638f0a70a89418dc1",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-036/RECEIPT.json",
+      "sha256": "101e6abc69c35e97087f678e100b37c7b7c6801f00a1256f3521dc0bab0b947a",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-031/RECEIPT.json",
+      "sha256": "fa56494980a81e72607964043d1c7c8f18c0b1fbd9b869351471905ccd15b44b",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-030/RECEIPT.json",
+      "sha256": "7f0c53d32ceeca6c5fceea157793e18f2f7afba41ca97d46a5b21ecd9cf7db70",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-024/RECEIPT.json",
+      "sha256": "441dd61b406fa133df8e83f58c90e60eda94ae629ca43e0f4fb761b25c3bec92",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-023/RECEIPT.json",
+      "sha256": "f43a02abf4229605206e32411daf5a294003ea6943c0cf5c77309838c32cfa29",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-020/RECEIPT.json",
+      "sha256": "1dff9ecd727aae300ef870c0c950ddd0b2c2b76e63d986eaa6d1c1deb7832e07",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-018/RECEIPT.json",
+      "sha256": "699a94e51dac1b49f5cf4b949320c172228c67f01b8e893d97aefe7d74c7f7d7",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-017/RECEIPT.json",
+      "sha256": "c6fb9b0854c47759c27ca00acd5bc4cf28069d01d315ef372fa56a1490f5971b",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-016/RECEIPT.json",
+      "sha256": "908ead41cbe6170a5edd995bc2ee9b3538f56d96529f92b8844927e0f030960c",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-015/RECEIPT.json",
+      "sha256": "b6ac5188acdeb08e76ab859ae54dbc7acf970e703bc9a62849f328e472cc5fdb",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-014/RECEIPT.json",
+      "sha256": "33af2c402eb0ee4498db3279bf9c746f8e8ea84a00b45dff6fc876c037c8c184",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-009/RECEIPT.json",
+      "sha256": "9b9045a51bc24f229bddd4bce54c55975c00c1f25bc8b59aefabc0835b99f0ee",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-008/RECEIPT.json",
+      "sha256": "c7e8c65a32d9631bca260552f89e0a3a24ae6b34a843c8f2f9df9dc70f0e6d11",
+      "status": "reused_exact_successful_local_output",
+      "exit_code": null
+    },
+    {
+      "receipt": ".local-recovery-20260918/local-lean/runs/recovery-005/RECEIPT.json",
+      "sha256": "1d6c619958273e9e4368ed88bee9493f530943340513d428da9d72c3ffc788b3",
+      "status": "compiled",
+      "exit_code": 0
+    }
+  ],
+  "pinned_rubric_archive_bindings": {
+    "README.md": {
+      "sha256": "a4f1ee85d2a772510e76dc8b5ec9166fff3980aabb9dacac81faccc83e0fd3e2",
+      "git_blob": "62575c64850fe6baaaf3dfbe8344b59c5e4e9237"
+    },
+    "_common.md": {
+      "sha256": "00fc21b79826edd959e12a552d061a7297bb6e3c2e1cde1ddc15e265131d981a",
+      "git_blob": "506416058bdc19591c2fd8429a8a5d555ae83d0c"
+    },
+    "api-design.md": {
+      "sha256": "bd8605a58f46f0023e15eaa9374e1cfccdb2d4369ca07e6700657bcd41087387",
+      "git_blob": "69238f8e64a77d6fb780c1b252ad1fa14691cce1"
+    },
+    "attribution.md": {
+      "sha256": "04e2956b91409b5abce91f934db00218fddb0fc5ba7e6776bf748690554c71db",
+      "git_blob": "5bad5b89cf6776c7e10984f89a2370a28bc468ea"
+    },
+    "correctness.md": {
+      "sha256": "24eb3f6504809e7e938b02daeb75179fd7d99338bda63f125f7229a2e4b1ca06",
+      "git_blob": "a0a8db82a04fac15c397d3ab89a4ccee58616842"
+    },
+    "documentation.md": {
+      "sha256": "cd2c5855e21c6f6b62ca22733438e6264b6e5943f417fce9c7db368531858623",
+      "git_blob": "82e83064fbe2a14833e9fc9b13626f1b613f85f9"
+    },
+    "generality.md": {
+      "sha256": "b793f946b84a7b079626271cb8c81f219b8e21dfebf0263620dc4b091c9a84c7",
+      "git_blob": "c8a098a35ca6b4fb593ae716a2d8bf6a48160c18"
+    },
+    "naming.md": {
+      "sha256": "0983aba631ccc181eace2deb213ade3dcd467769e90a8fa1db3ff710348f24b8",
+      "git_blob": "9e69d160218ccff102f4eb6b202883bf6d7e7f21"
+    },
+    "placement.md": {
+      "sha256": "c480cd252d2d0d24cddbe03e714babe5b6b966dd8be1fcba753dfd9da74fa024",
+      "git_blob": "94f92ad56a4185cde74c714cfd088ec0fb8a7e89"
+    },
+    "proof-quality.md": {
+      "sha256": "346768b1a3445343e5fad4d0f78dcb601f5f633cbc7abd81ba189ac4d15ecb83",
+      "git_blob": "9ca7d4b380674a7d38c14e0d8d06cab31d667c43"
+    },
+    "reuse.md": {
+      "sha256": "43325e91f32f5f2e5819012caae8c42b72326dfff86599c1feb1ba498ca14a3b",
+      "git_blob": "1911ba70cbb44577a21da7df07f1c1adfc243208"
+    },
+    "scope.md": {
+      "sha256": "e29b9221af3b89ffbbfd8c540457d54f0589f8375150581b689f264655da9d43",
+      "git_blob": "b30869b0eac32d1d34d6265cede5cbf42869e24c"
+    }
+  },
+  "script_sha256": "d07ee7fc70257bf8c6217b10d8fe26a3b1ea9932106eda3cc19be62151776c33"
+}
