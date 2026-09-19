@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.third_input_basis_products_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.third_input_span_product_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_polynomial_operands' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_polynomial_mem_product_span' depends on axioms: [propext, Classical.choice, Quot.sound]

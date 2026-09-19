@@ -1,0 +1,3 @@
+'NLA.MF14Degree44.family_first_jet_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.family_first_jet_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.coefficient_jacobian_eq_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]

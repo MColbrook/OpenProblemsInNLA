@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.degree_plane44_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.embed44_polynomial_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.degree44_coverage_of_density_and_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.original_equality_false_of_coverage44' depends on axioms: [propext, Classical.choice, Quot.sound]

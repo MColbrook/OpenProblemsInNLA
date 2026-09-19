@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.integerJacobian_eq_checked_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.mod3_checked_table_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.integerJacobianMod3_eq_checked_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.integer_jacobian_mod3_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]

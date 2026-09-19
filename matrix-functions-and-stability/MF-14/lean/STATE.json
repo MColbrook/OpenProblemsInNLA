@@ -1,0 +1,83 @@
+{
+  "status": "LOCAL FULL TARGET and two independent final source reviews PASS; Linux Comparator pending",
+  "updated_utc": "2026-09-19T08:23:09.696302+00:00",
+  "original_target": "MF-14: is the largest covered degree exactly 42 in the original complex seven-product full 129-coefficient closure model?",
+  "formalized_scope_intended": [
+    "NLA.MF14.CoversDegree 44",
+    "not IsGreatest NLA.MF14.coveredDegrees 42"
+  ],
+  "degree47_claim_formalized_by_this_route": false,
+  "whole_problem_verified": false,
+  "count_change": 0,
+  "completed_original_targets": 0,
+  "statement_gate": {
+    "status": "APPROVED before substantive implementations",
+    "freeze_sha256": "10d161750ec789b5b8f24e0e82e229a722017b77b4cb7bdce11787dde70d7e3c",
+    "independent_approvals": 2
+  },
+  "local_full_aggregate": {
+    "status": "PASS actual coordinator-owned local Lean",
+    "runs": [
+      "recovery-086",
+      "recovery-087",
+      "recovery-088"
+    ],
+    "module": "Solution",
+    "record": "verification/local-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+    "record_sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+    "actual_command": [
+      "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+      "--threads=1",
+      "--memory=4096",
+      "-o",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Solution.olean",
+      "Solution.lean"
+    ],
+    "actual_source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+    "actual_log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+    "modules": 86,
+    "threads": 1,
+    "memory_cap_mib": 4096,
+    "standalone_lake_build": "NOT_RUN; direct serial Lean commands recorded",
+    "publication_name_replay": "PASS recovery-088; Solution and independent Challenge separately elaborated, same frozen Lean source bytes"
+  },
+  "final_independent_reviews": {
+    "status": "PASS",
+    "approved_nonauthor_count": 2,
+    "reports": [
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_a",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-a/REPORT.md",
+        "report_sha256": "9487b2edcaa41f6f037f2b3277c2802c24770f21167590b0de376494560f7715",
+        "manifest": "reviews/final-referee-a/MANIFEST.json",
+        "manifest_sha256": "feaf03bc1bf6fcc197372a37e395576b5a32a8334a68e84c8ecc454adbd0eb56",
+        "new_Lean_or_Comparator_run": false
+      },
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_b",
+        "role": "Independent nonauthor AI-agent final referee",
+        "verdict": "APPROVE",
+        "report": "reviews/final-referee-b/REPORT.md",
+        "report_sha256": "324678541771c27834b0c3967dcae81aa3c15083acb2715ca1c1f8f7a2440424",
+        "manifest": "reviews/final-referee-b/MANIFEST.json",
+        "manifest_sha256": "8df5c6f142ea1e6ffce3cf4910fc8307b6029b4f7cfe5292f723bd8002dd6b05",
+        "new_Lean_or_Comparator_run": false
+      }
+    ]
+  },
+  "github_comparator": {
+    "status": "NOT_RUN for this new package",
+    "run_ids": [],
+    "proof_commit": null
+  },
+  "publication": {
+    "status": "NOT_PUBLISHED",
+    "upstream": "ajt60gaibb/OpenProblemsInNLA",
+    "base": "main",
+    "pr_url": null
+  },
+  "metadata_packet_lean_runs": 0,
+  "metadata_packet_comparator_runs": 0
+}

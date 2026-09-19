@@ -1,0 +1,20 @@
+NLA/MF14Degree44/SeedFirstColumns2.lean:25:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns2.lean:37:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns2.lean:49:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns2.lean:61:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+NLA/MF14Degree44/SeedFirstColumns2.lean:73:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.seed_first_column_14' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,429 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json",
+  "version": "v0.4",
+  "project": {
+    "name": "MF-14: degree44 closure coverage refutes the original seven-product degree42 equality",
+    "description": "Complete formalization of the original MF-14 negative answer through Marcus Webb’s degree-44 construction passes actual local serial Lean and two wholly nonauthor final source reviews. Real published Linux Comparator checks are pending. The stronger exact maximum47 is outside formalized scope.",
+    "authors": [
+      "George Stepaniants"
+    ],
+    "affiliations": {
+      "George Stepaniants": "Department of Computing and Mathematical Sciences, California Institute of Technology"
+    },
+    "responsible_maintainers": [
+      "George Stepaniants"
+    ],
+    "license": "Apache-2.0"
+  },
+  "repository": {
+    "role": "substantive-development"
+  },
+  "sources": [
+    {
+      "title": "MF-14 — Degree coverage with seven matrix multiplications",
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/71563f17926cd826a892c2bba0e294894ee57a5c/matrix-functions-and-stability/MF-14/README.md",
+      "type": "web-post",
+      "relationship": "formalizes",
+      "location": "Unchanged original complex closure question in the full coefficient space through degree128",
+      "author_endorsement": "not-contacted",
+      "note": "Permanent problem ID, canonical path and original target retained. Formalization of an existing negative resolution, not a new mathematical solution."
+    },
+    {
+      "title": "MF-14: degree44 coverage with seven products",
+      "authors": [
+        "Marcus Webb"
+      ],
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/71563f17926cd826a892c2bba0e294894ee57a5c/references/webb-mf14-degree44-2026-09-17/proof.tex",
+      "type": "manuscript",
+      "relationship": "adapts",
+      "location": "Theorem1 and the simultaneous fourth-product border and three-product continuation constructions in Sections2–3",
+      "author_endorsement": "not-contacted",
+      "note": "Marcus Webb, The University of Manchester, retains original mathematical authorship. The source was developed with substantial ChatGPT assistance. Formalization uses an exact modular nonsingularity certificate instead of proving the literal determinant256. The published upper bound47 and exact degree47 theorem are outside this package."
+    },
+    {
+      "title": "MF-14: exact maximum47",
+      "authors": [
+        "Marcus Webb"
+      ],
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/71563f17926cd826a892c2bba0e294894ee57a5c/references/webb-mf14-degree47-2026-09-17/proof.tex",
+      "type": "manuscript",
+      "relationship": "background",
+      "author_endorsement": "not-contacted",
+      "note": "Later stronger mathematical resolution retained unchanged in the canonical page and archive. This separate degree44 formalization neither certifies nor withdraws its exact maximum47 claim or the saved degree47 Lean work."
+    },
+    {
+      "title": "Degree42 coverage by seven matrix multiplications",
+      "authors": [
+        "Matthew J. Colbrook"
+      ],
+      "id": "https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/71563f17926cd826a892c2bba0e294894ee57a5c/references/colbrook-matrix-functions-2026-09-11/manuscripts/MF-14.tex",
+      "type": "manuscript",
+      "relationship": "background",
+      "location": "Theorem1 and equations(1)–(2)",
+      "author_endorsement": "not-contacted",
+      "note": "Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge, retains credit for the earlier degree42 partial result. Its original archive is preserved."
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1",
+      "relationship": "other",
+      "note": "Consulted statement/analysis structure; no mathematical result imported."
+    },
+    {
+      "id": "https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof",
+      "relationship": "other",
+      "note": "Consulted numerical-target, pinned LeanCert/kernel and Comparator structure; no mathematical result imported."
+    }
+  ],
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "framework": "OpenAI Codex",
+        "tool_setup": "Parallel source development and independent review; only the coordinator runs the single local compiler, one thread and4096MiB, with pinned source-matched cache reuse. Final real non-root Linux Comparator runs on GitHub after local development.",
+        "prompting_notes": "Freeze all definitions and25 exact contracts after two independent statement reviews. Minimize computation through coefficientwise first jets, exact natural residue checks before ZMod casting, sparse polynomial identities, a5-by5 determinant core and triangular factors. Preserve all domains and complete129-dimensional closure semantics."
+      }
+    ],
+    "notes": "Substantial AI assistance disclosed. Root and /root/recover_lean_sources are proof authors and excluded from final independent review. Actual local compiler receipts and two nonauthor final source reviews are attached. No official Tau Ceti service run, external human peer review, source-author endorsement or unmeasured cost is claimed."
+  },
+  "status": {
+    "scope": "All 25 frozen contracts and the complete original negative answer passed actual local serial Lean through publication-name aggregate recovery-088 and two wholly nonauthor final reviews; GitHub Linux Comparator pending.",
+    "whole_problem_verified": false,
+    "completed_original_targets": 0,
+    "main_results": [
+      {
+        "declaration": "NLA.MF14Degree44.canonical_gate_padding",
+        "contract": "D44-01a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/CircuitPrefix.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.four_prefix_full_coefficients",
+        "contract": "D44-01b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/CircuitPrefix.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.three_product_tuple",
+        "contract": "D44-02a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/ThreeProductTuple.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.good_border_parameters_eventually",
+        "contract": "D44-02b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/GoodParameters.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.fourth_span_coordinates",
+        "contract": "D44-03a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/SpanBasisCoordinates.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.fourth_map_smooth",
+        "contract": "D44-03b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FourthSmooth.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.fourth_jacobian_identity",
+        "contract": "D44-03c",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FourthJacobian.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.fourth_minor_identity",
+        "contract": "D44-03d",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FourthMinorIdentity.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.fourth_product_joint_closure",
+        "contract": "D44-03e",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FourthJointClosure.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.polynomial_density_of_strict_derivative",
+        "contract": "D44-04",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/PolynomialDensity.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.degeneration_identity",
+        "contract": "D44-05a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/DegenerationIdentity.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.degeneration_at_zero",
+        "contract": "D44-05b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/DegenerationAtZero.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.degeneration_in_span",
+        "contract": "D44-05c",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/ProductSpan.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.monic_border_joint_closure",
+        "contract": "D44-06",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FinalClosure.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.continuation_actual_output",
+        "contract": "D44-07a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/ContinuationCircuit.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.continuation_degree_bound",
+        "contract": "D44-07b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/DegreeBounds.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.continuation_closure_transfer",
+        "contract": "D44-07c",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/ContinuationClosure.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.family_image_mem_closure",
+        "contract": "D44-07d",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FinalClosure.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.family_degree_and_full_vector",
+        "contract": "D44-08a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FamilyDegreeBounds.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.coefficient_map_smooth",
+        "contract": "D44-08b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FamilySmooth.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.coefficient_jacobian_identity",
+        "contract": "D44-08c",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/JacobianIdentity.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.integer_jacobian_mod3_inverse",
+        "contract": "D44-08d",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/Mod3Certificate.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.coefficient_derivative_bijective",
+        "contract": "D44-08e",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/JacobianIdentity.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.degree44_coverage",
+        "contract": "D44-09a",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FinalClosure.lean",
+        "sorry_count": 0
+      },
+      {
+        "declaration": "NLA.MF14Degree44.original_equality_false",
+        "contract": "D44-09b",
+        "comparator_config": "comparator.json",
+        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "file": "NLA/MF14Degree44/FinalClosure.lean",
+        "sorry_count": 0
+      }
+    ],
+    "source_scan_note": "Inspected source-bound final review snapshot and its 25-declaration actual transitive AXIOMS.json; no compiler rerun by metadata author. Challenge placeholders remain isolated from Solution.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0
+  },
+  "fidelity": {
+    "divergences": "Original circuit model, complex coefficients, at-most7 chronology and full Fin129 ambient closure remain unchanged. Degree44 coverage suffices to refute the unchanged equality42. The complete degree47 strengthening, its optimality upper bound, exact determinant256, exact representation of every polynomial and numerical stability are not formalized here. The45-by45 derivative is proved equal to the actual symbolic table, then a full right inverse modulo3 proves its determinant nonzero. Selected coordinates are bridged to the entire fourth-product span and full129-dimensional outputs; they are not projected-target substitutions."
+  },
+  "review": {
+    "status": "PASS: two pre-proof statement approvals and two wholly nonauthor final AI-agent source reviews",
+    "reviewers": [
+      "/root/nr04_mf14_final_referee_a",
+      "/root/nr04_mf14_final_referee_b"
+    ],
+    "notes": "Follow docs/lean/REVIEW.md, adapted from Tau Ceti afb424eda89e8ac96d9eb69f6a88972055a4cd1b. Both final reviewers authored no MF14 definitions, statements, code or repairs. Reports bind exact frozen final bytes and cover statement fidelity, proof correctness, reuse/API/documentation and attribution. Reviews inspected actual local evidence; neither reviewer reran Lean or Comparator."
+  },
+  "alignment": {
+    "canonical_problem": "MF-14",
+    "canonical_path": "matrix-functions-and-stability/MF-14/README.md",
+    "canonical_source_revision": "71563f17926cd826a892c2bba0e294894ee57a5c",
+    "contracts": "IMPLEMENTATION-MAP.json",
+    "frozen_statement": "STATEMENT-FREEZE.json",
+    "numerical_targets": "NUMERICAL_TARGETS.md",
+    "final_declarations": [
+      "NLA.MF14Degree44.degree44_coverage",
+      "NLA.MF14Degree44.original_equality_false"
+    ],
+    "definition_names": [],
+    "extra_substantive_final_hypotheses": false,
+    "scope_exclusions": [
+      "Exact maximum47 and its upper bound",
+      "Literal determinant256 rather than nonzero",
+      "Exact representation or numerical stability",
+      "Discarding high coefficients or changing complex closure to real density"
+    ]
+  },
+  "acknowledgements": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, for formalization and proof engineering. Marcus Webb, The University of Manchester, retains mathematical construction authorship. Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge, retains the earlier degree42 result. Preserve component, Mathlib, Lean, LeanCert and Comparator credits and licenses. No email published.",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.33.1",
+    "dependencies": {
+      "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    "manifest": "lake-manifest.json"
+  },
+  "verification": {
+    "state_record": "STATE.json",
+    "canonical_verification_completed": false,
+    "count_change": 0,
+    "local_aggregate": {
+      "status": "PASS actual coordinator-owned local Lean",
+      "runs": [
+        "recovery-086",
+        "recovery-087",
+        "recovery-088"
+      ],
+      "module": "Solution",
+      "record": "verification/local-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+      "record_sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+      "actual_command": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Solution.olean",
+        "Solution.lean"
+      ],
+      "actual_source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+      "actual_log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+      "modules": 86,
+      "threads": 1,
+      "memory_cap_mib": 4096,
+      "standalone_lake_build": "NOT_RUN; direct serial Lean commands recorded",
+      "publication_name_replay": "PASS recovery-088; Solution and independent Challenge separately elaborated, same frozen Lean source bytes"
+    },
+    "LeanCert": {
+      "trust_mode": "kernel",
+      "role": "Pinned LeanCert #assert_trust kernel audits for exact modular and symbolic proof declarations. Numerical certificate arithmetic is exact natural/integer/finite-field algebra, not an interval oracle.",
+      "interval_computations": "NONE required in this degree44 route; no artificial unused numerical certificate added",
+      "final_body_consumption_check": "PASS actual local kernel trust audits through recovery-088 and two independent source reviews; Linux Comparator pending."
+    },
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "actual_final_axiom_report": "verification/local-2026-09-19/actual-axioms.json",
+    "statement_review_approvals": 2,
+    "statement_freeze_sha256": "10d161750ec789b5b8f24e0e82e229a722017b77b4cb7bdce11787dde70d7e3c",
+    "final_independent_reviews": {
+      "status": "PASS",
+      "approved_nonauthor_count": 2,
+      "reports": [
+        {
+          "reviewer": "/root/nr04_mf14_final_referee_a",
+          "role": "Independent nonauthor AI-agent final referee",
+          "verdict": "APPROVE",
+          "report": "reviews/final-referee-a/REPORT.md",
+          "report_sha256": "9487b2edcaa41f6f037f2b3277c2802c24770f21167590b0de376494560f7715",
+          "manifest": "reviews/final-referee-a/MANIFEST.json",
+          "manifest_sha256": "feaf03bc1bf6fcc197372a37e395576b5a32a8334a68e84c8ecc454adbd0eb56",
+          "new_Lean_or_Comparator_run": false
+        },
+        {
+          "reviewer": "/root/nr04_mf14_final_referee_b",
+          "role": "Independent nonauthor AI-agent final referee",
+          "verdict": "APPROVE",
+          "report": "reviews/final-referee-b/REPORT.md",
+          "report_sha256": "324678541771c27834b0c3967dcae81aa3c15083acb2715ca1c1f8f7a2440424",
+          "manifest": "reviews/final-referee-b/MANIFEST.json",
+          "manifest_sha256": "8df5c6f142ea1e6ffce3cf4910fc8307b6029b4f7cfe5292f723bd8002dd6b05",
+          "new_Lean_or_Comparator_run": false
+        }
+      ]
+    },
+    "GitHub_Comparator": {
+      "status": "NOT_RUN for this new package",
+      "contract_count": 25,
+      "definition_names": [],
+      "proof_commit": null,
+      "runs": []
+    },
+    "publication": {
+      "status": "NOT_PUBLISHED",
+      "target_repository": "ajt60gaibb/OpenProblemsInNLA",
+      "target_branch": "main",
+      "pull_request": null,
+      "related_mathematical_prs": [
+        "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/287",
+        "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/291"
+      ]
+    },
+    "promotion_rule": "Retain current canonical Solved status and count until all original-target proof obligations, exact final local evidence, two wholly nonauthor reviews and published-source Linux Comparator/default-kernel/sandbox gates pass. One original target only; no new mathematical resolution is counted."
+  }
+}

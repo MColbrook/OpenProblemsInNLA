@@ -1,0 +1,6 @@
+'NLA.MF14Degree44.available_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.available_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.available_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.polynomial_C_mul_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.linearCombination_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.append_product_to_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,14 @@
+{
+  "scope": "Independent referee Python arithmetic and repetitive-source-shape check; not Lean, not Comparator, not proof input",
+  "status": "PASS",
+  "reconstructed_family_directions": 45,
+  "exact_derivative_table_entries_matched": 2025,
+  "modulo_three_product_entries_checked": 2025,
+  "whole_polynomial_column_expansions_and_table_formulas_checked": 45,
+  "kernel_decide_row_source_patterns_checked": 45,
+  "seed_whole_polynomial_direction_source_patterns_checked": 43,
+  "seed_columns_0_and_1": "Read individually in SeedFirstPilot.lean; excluded from repetitive-source pattern check",
+  "high_derivative_coefficients": "Every reconstructed direction has degree at most 44; no truncation needed",
+  "source_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "script_sha256": "1c505e0286703e8beb92467081b173340347fdeb4141c93dfd47ad96e2589e64"
+}

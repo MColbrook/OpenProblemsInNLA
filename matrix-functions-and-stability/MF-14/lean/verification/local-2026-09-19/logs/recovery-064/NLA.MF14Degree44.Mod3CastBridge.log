@@ -1,0 +1,4 @@
+'NLA.MF14Degree44.Mod3Certificate.product_entry_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.matrix_entry_of_natural_residue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

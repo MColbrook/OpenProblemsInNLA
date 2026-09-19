@@ -1,0 +1,5 @@
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.Mod3Certificate.column_table_match_14' depends on axioms: [propext, Classical.choice, Quot.sound]

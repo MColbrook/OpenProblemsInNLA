@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.syzygy_third_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.syzygy_fourth_factor' depends on axioms: [propext, Classical.choice, Quot.sound]

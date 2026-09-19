@@ -1,0 +1,93 @@
+{
+  "scope": "Independent inspection of existing local run records, without Lean execution; source verdict remains bound to frozen MF14-v1.",
+  "inspected_at_utc": "2026-09-19T08:08:21.512247+00:00",
+  "receipt": {
+    "path": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-088/RECEIPT.json",
+    "sha256": "72478dd92a3bce17b57c7bda2834aaf57052ff35745826e86248e2610448015e",
+    "platform": "darwin",
+    "resource_limits": {
+      "max_compiler_processes": 1,
+      "threads": 1,
+      "memory_cap_mib": 4096
+    },
+    "commands": {
+      "Solution": {
+        "module": "Solution",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Solution.olean",
+          "Solution.lean"
+        ],
+        "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+        "start": "2026-09-19T07:51:35.271490+00:00",
+        "source_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+        "dependency_olean_sha256": {
+          "NLA.MF14Degree44.FinalClosure": "cb413593e48b393f6091dc41ea5bc388d593195184b1a842bb15151d7eb9858d"
+        },
+        "exit_code": 0,
+        "end": "2026-09-19T07:51:43.250652+00:00",
+        "elapsed_seconds": 7.979062665999663,
+        "log_sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336",
+        "maxrss_bytes_macos_cumulative": 3572629504,
+        "output_sha256": "444ad1fadb76f93c7bbca6720f1867beb8075fd5d770be56a0c6ecb94cba658a"
+      },
+      "Challenge": {
+        "module": "Challenge",
+        "argv": [
+          "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "--threads=1",
+          "--memory=4096",
+          "-o",
+          "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/Challenge.olean",
+          "Challenge.lean"
+        ],
+        "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+        "start": "2026-09-19T07:51:43.282904+00:00",
+        "source_sha256": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+        "dependency_olean_sha256": {
+          "NLA.MF14Degree44.Family": "361a26def3c0538aeb9cc06e3ddbe517becb7a843a4d3fb30cd50f1b54d70a58",
+          "NLA.MF14Degree44.Degeneration": "aaaa1464f18b63c130d4ed8e39ec782f9d3d8fbd4411d7db807738d51621af5b"
+        },
+        "exit_code": 0,
+        "end": "2026-09-19T07:51:46.017548+00:00",
+        "elapsed_seconds": 2.7340489580019494,
+        "log_sha256": "838341ee6cb6575449f0d52152863675d86f539697de429c1e5e96392297bbb0",
+        "maxrss_bytes_macos_cumulative": 3572629504,
+        "output_sha256": "f2e274cfcaae661e862d0ee7079ae62bfad735e1491cf3fe44688785f3c507b9"
+      }
+    }
+  },
+  "logs": {
+    "Solution": {
+      "path": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-088/Solution.log",
+      "sha256": "4332f3f7259395d8785cf3877b763a6bb831f30ecd8a857ff131e6598b8a7336"
+    },
+    "Challenge": {
+      "path": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/runs/recovery-088/Challenge.log",
+      "sha256": "838341ee6cb6575449f0d52152863675d86f539697de429c1e5e96392297bbb0"
+    }
+  },
+  "solution_log_identical_to_frozen_aggregate": true,
+  "solution_current_output_hash_matched": true,
+  "challenge_scope": "Retained receipt source hash equals frozen Challenge; retained log matches and records 25 expected sorry warnings. Later mutable live Challenge source/output no longer match; no current-output claim.",
+  "root_recursive_audit": {
+    "path": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-local-20260919/LOCAL-REPLAY-AUDIT.json",
+    "sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+    "reviewer_inspection": "Hash and top-level metadata only; historical compile origins not independently revalidated in full."
+  },
+  "publication_identity_observation": {
+    "path": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14/matrix-functions-and-stability/MF-14/lean",
+    "all_87_registered_Lean_sources_identical": true,
+    "lake_manifest_sha256": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb",
+    "lakefile_sha256": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3",
+    "top_level_project_name": "NLAMF14Degree44",
+    "dependency_entries_identical": true,
+    "publication_metadata_review": "Not performed beyond these specific comparisons."
+  },
+  "new_Lean_run_by_reviewer": false,
+  "Comparator_run_by_reviewer": false,
+  "count_change": 0
+}
