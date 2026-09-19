@@ -1,5 +1,5 @@
 {
-  "status": "PASS actual repaired local aggregate recovery-095, all 25 exact elaborated types, and two independent nonauthor continuation approvals; real repaired-source Linux checks pending",
+  "status": "PASS: frozen statements, source-bound local proof, two independent final reviews and published Linux Comparator",
   "contracts": [
     {
       "declaration": "NLA.MF14Degree44.canonical_gate_padding",

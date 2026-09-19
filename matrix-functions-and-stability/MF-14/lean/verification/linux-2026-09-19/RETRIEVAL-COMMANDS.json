@@ -1,0 +1,216 @@
+[
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:00.268160+00:00",
+    "end": "2026-09-19T09:26:00.550380+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-run.json",
+    "output_sha256": "456dfcb52aa1ce1424bf45ef5efa12f87bd866915a715652754b938775a77652",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-run.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875/jobs?per_page=100"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:00.552070+00:00",
+    "end": "2026-09-19T09:26:00.969624+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-jobs.json",
+    "output_sha256": "95891a4b06031f62b90c042d13b5a426cfc7f1b537ee550b2b74856f578ea959",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-jobs.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875/artifacts?per_page=100"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:00.971155+00:00",
+    "end": "2026-09-19T09:26:01.240316+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-artifacts.json",
+    "output_sha256": "ecc8a086a5aa5c70132bfbe07ae91d5e147ee48e6e324a0fa4d1ed79f3f18392",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-artifacts.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/artifacts/10581683130/zip"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:01.241033+00:00",
+    "end": "2026-09-19T09:26:01.767827+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/lean-MF-14.zip",
+    "output_sha256": "552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/lean-MF-14.zip.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/jobs/105873200871/logs",
+      "--allow-escape-sequences"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:01.779351+00:00",
+    "end": "2026-09-19T09:26:02.234926+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-job-105873200871.raw.log",
+    "output_sha256": "2352c0eea953f867570304acbe3a7b536bea524729db0e4129096c10b40e210f",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-job-105873200871.raw.log.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/actions/jobs/105873255308/logs",
+      "--allow-escape-sequences"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:02.236865+00:00",
+    "end": "2026-09-19T09:26:02.757483+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-job-105873255308.raw.log",
+    "output_sha256": "fea91ef21b7a36474d508e75b4f94286610f28c8ec5e94518874b503e0d1a420",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-job-105873255308.raw.log.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/sgstepaniants/OpenProblemsInNLA/git/commits/c89c859a6b21c399a99f5e9f5fb2b7f472c96657"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:02.760467+00:00",
+    "end": "2026-09-19T09:26:03.070656+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-checked-commit.json",
+    "output_sha256": "624ef5b0440080b9db49ca56355140d3e14a3f31d9ec5218f2ab0e5d0b462615",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/fork/official-checked-commit.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:03.073219+00:00",
+    "end": "2026-09-19T09:26:03.359225+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-run.json",
+    "output_sha256": "2f48b8a5de489297f55a3890001813a06d6fb88cfa128a83cc704bc6f7e09ece",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-run.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434/jobs?per_page=100"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:03.360974+00:00",
+    "end": "2026-09-19T09:26:03.958903+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-jobs.json",
+    "output_sha256": "a94354413b4c8021cce4830d75e88b37b31fe653256ce66737852ab76fd542dc",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-jobs.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434/artifacts?per_page=100"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:03.960437+00:00",
+    "end": "2026-09-19T09:26:04.220117+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-artifacts.json",
+    "output_sha256": "bcb5ac5a76bdc7475627459a4bc174e4d593393396819a64afa6b2854dfb0fe1",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-artifacts.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/artifacts/10582237117/zip"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:04.221817+00:00",
+    "end": "2026-09-19T09:26:04.741037+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/lean-MF-14.zip",
+    "output_sha256": "c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/lean-MF-14.zip.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/jobs/105873205339/logs",
+      "--allow-escape-sequences"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:04.750665+00:00",
+    "end": "2026-09-19T09:26:05.224877+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-job-105873205339.raw.log",
+    "output_sha256": "f83878f7fd998e3bd925048b68c3ef40a1d72770ff4b3079d1573fb1acb860b6",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-job-105873205339.raw.log.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/actions/jobs/105873251674/logs",
+      "--allow-escape-sequences"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:05.226884+00:00",
+    "end": "2026-09-19T09:26:05.758064+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-job-105873251674.raw.log",
+    "output_sha256": "a591f6e1c3dacf7c685455c7bccf9cd83dd629438960d791ae05bc9abff66017",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-job-105873251674.raw.log.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/tools/gh-2.101.0/gh_2.101.0_macOS_arm64/bin/gh",
+      "api",
+      "repos/ajt60gaibb/OpenProblemsInNLA/git/commits/84f2d7bd1f2d7613e8e7812f60ece7800dca429d"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:05.760790+00:00",
+    "end": "2026-09-19T09:26:06.132375+00:00",
+    "exit_code": 0,
+    "output": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-checked-commit.json",
+    "output_sha256": "e39280a0f59ea091f20901edb5c6e9878ffa1b04b2f07b813d6b12a1bcc1f9e1",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/upstream/official-checked-commit.json.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

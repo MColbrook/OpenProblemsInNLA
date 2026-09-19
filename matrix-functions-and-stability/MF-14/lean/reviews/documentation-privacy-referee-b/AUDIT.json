@@ -1,0 +1,1028 @@
+{
+  "verdict": "PASS bounded documentation/source-hash/privacy audit",
+  "created_utc": "2026-09-19T09:43:36.081618+00:00",
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "no_compiler_or_comparator_execution": true,
+  "worktree": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/publication/MF14",
+  "current_head": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+  "verified_proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+  "reviewed_snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+  "metadata_hashes": {
+    "matrix-functions-and-stability/MF-14/README.md": "2047c6ae967294adc7fbacd27654c47965d461e85e6cc8b93058e1e508a7839c",
+    "RESOLVED.md": "07a5cc01d93e99dbad3d6511eabc1f9a81908255f70e59e0a8f1cbfb7542227a",
+    "matrix-functions-and-stability/MF-14/lean/README.md": "1e71caf355d069c57179f0a50020c38de3503e74f7aaa794dffab447c42ff83c",
+    "matrix-functions-and-stability/MF-14/lean/formalization.yaml": "8d9d5ee7577d881d4008603c17b663b8b7aef88d7ceebd99cbab4b6cdea71930",
+    "matrix-functions-and-stability/MF-14/lean/STATE.json": "75d2c6abe7b92a24af5241fadecaaddcad840f63778d0cb8e75c3d6edec7420a",
+    "matrix-functions-and-stability/MF-14/lean/verification/PRIVACY-REDACTIONS.json": "6e329598f102ff28a69f5497c521d386cdb0144c35c385acaa0b311e092efadf",
+    "matrix-functions-and-stability/MF-14/lean/PACKAGING-NEXT-STEPS.md": "5f46b4052482fcac489620f8386ba4f7c43e2e014609657ddc938ac98883856e",
+    "matrix-functions-and-stability/MF-14/lean/IMPLEMENTATION-MAP.json": "5f22050347568b136ba8629cc9abefce252c80cb066e3ba8ebb518f86fff6f0a"
+  },
+  "Lean_sources_unchanged": {
+    "Challenge.lean": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+    "NLA/MF14/CircuitFoundations.lean": "411343755bad7f24ac27539bb3c3f24ea0c614b893825ac071dfb4ea69315a35",
+    "NLA/MF14/Definitions.lean": "f9ab23794894bfa508b5382393d95457a361cf07063629c7f48e5f14fefea9a8",
+    "NLA/MF14Degree44/BasisDegreeData.lean": "0d839b69a35aa80646e2ca5fed6320836af841f93508cb3a635009dd0fad805c",
+    "NLA/MF14Degree44/BorderLimit.lean": "a54d22494b8513911e1cf8b56148579a8576c33e90cd886d71e8295e990c441b",
+    "NLA/MF14Degree44/BorderPathContinuity.lean": "f38b3fd78b534af6b968bb65ad96c286be95b445ba655a03d27224bb26945ae4",
+    "NLA/MF14Degree44/CircuitPrefix.lean": "ab0e8c55cd18dfaa276ad4a99020eca686e29cec1f9c05924c55755bbd237898",
+    "NLA/MF14Degree44/CircuitSpanOperations.lean": "e77d78fb38e7564a895078b691a6bc6fbf6df95d9bef63bdf8590518e83088b2",
+    "NLA/MF14Degree44/CoefficientSmooth.lean": "16c1c8c27b578c1c36ecd2951f41a8d704aac211d24b96ffb00228937d5d71dd",
+    "NLA/MF14Degree44/ContinuationCircuit.lean": "adad9b97debaf8c237a7f5374e8aa877112f37def70735e6231e421520a8e09d",
+    "NLA/MF14Degree44/ContinuationClosure.lean": "6fca4fca8f08a259ff3005e5415cbbc01f857d42ca5ed43e8c41ced9737a3366",
+    "NLA/MF14Degree44/ContinuationPolynomialMaps.lean": "024035034cb2821793b07da0a87100ee97e0c45a0c362a3c8f85b03a14b84aeb",
+    "NLA/MF14Degree44/CoverageBridge.lean": "9fe884bd2645c39285d2137837f80f68487a3111c8931c03fc50e4b677ac0ee6",
+    "NLA/MF14Degree44/Definitions.lean": "cb5cb2a374e2bc0a82e4cc0770a3e8e1baf7972f92ce17f51768a2d3ae7ea2f2",
+    "NLA/MF14Degree44/Degeneration.lean": "6b750c44cae01b51029ad6857f39a385cecffa23056d41d6d6357ad398ce0304",
+    "NLA/MF14Degree44/DegenerationAtZero.lean": "23a89d0712d173bf5e5e3f7d270e62204451044628f3cf1b90fedd5319ddf9ee",
+    "NLA/MF14Degree44/DegenerationCoefficientData.lean": "51b82c8a83ff58e56b9ca3386f2fd3191b8d51703a2c3c53ee04b611a3ef2390",
+    "NLA/MF14Degree44/DegenerationIdentity.lean": "2f1508a16f55eedc7ebb1d2f8a0c3db8f0eb146edd414c9afbb0a253107e1b55",
+    "NLA/MF14Degree44/DegreeBounds.lean": "0b7b7cb6491551a49b349c6b0425e416ffdc9906e3d117a3a477ad033a2fff2b",
+    "NLA/MF14Degree44/Family.lean": "89e71dd7b7963f0c74f2782942a13fe237007c6af783d5f5e7e98cfdea7939a5",
+    "NLA/MF14Degree44/FamilyDegreeBounds.lean": "6ff865228d9187feec0e18ca843796037290548131b650e04d548f0287ab5ec9",
+    "NLA/MF14Degree44/FamilyFirstJet.lean": "e3ead83c3df9107b52fb753497e3a6e339fa2c7e66fa1bfa52ddfe7933593a3d",
+    "NLA/MF14Degree44/FamilySmooth.lean": "2e08d0705e708b1e2744a0bfc25f93bd431dea81aca631ff28ccddd8ab1b357d",
+    "NLA/MF14Degree44/FinalClosure.lean": "d7e3f2ff6870c7e55aac1960f706addafbd76c061d152eb014637af021b99200",
+    "NLA/MF14Degree44/FirstDerivatives.lean": "8fa7119f8aa5bc4f894c9f6fab778b724f0c2b91c649c2ab027cba61f7cc1d66",
+    "NLA/MF14Degree44/FourthActualCircuit.lean": "87ca8294613183b4e904b56fa44a9a619651aaae86452bdb15b8aca26530fcaf",
+    "NLA/MF14Degree44/FourthDeterminantBlocks.lean": "0506809193ed92880aed7d18c522924e0c688fd29dba2d763c440d19aac0f36b",
+    "NLA/MF14Degree44/FourthJacobian.lean": "5419d8a7f26a23f4214875dea25a62d30f2f2da15116a7d6121ba52ca443cb64",
+    "NLA/MF14Degree44/FourthJointClosure.lean": "1f93b2f1f5c531618586b337641bed88f54a740444b23d836d29c35f4982a0d4",
+    "NLA/MF14Degree44/FourthMinorBlocks.lean": "caf84af7c4bfd862b3133d10f678d239d2965cf4dd4bcf3a347cf4098a557c48",
+    "NLA/MF14Degree44/FourthMinorCoefficients.lean": "3d29fd745e8117f032d04f71bc667dd0b6c60c99569960aefa390baec0f6dc06",
+    "NLA/MF14Degree44/FourthMinorIdentity.lean": "c7ba6dcc153bda2e7b1678c0f92bf55f7da002cf4b469659ff4201a8d05e02ae",
+    "NLA/MF14Degree44/FourthSmooth.lean": "39f211313d511e9996ccae169424ab3aa2a8ea33267ac323d73bd1e5182dc3ad",
+    "NLA/MF14Degree44/FourthSpanMembership.lean": "cceb40d3d87837c0e3feda87e03fbd9eb1e23313fdf6be7270ce7ab0595b1cca",
+    "NLA/MF14Degree44/GoodParameters.lean": "5a78d56b50bfe6182ac0266a70fca3b7d29a9ff21ca373e96ac4ad7e4c1b53f5",
+    "NLA/MF14Degree44/JacobianEquivalence.lean": "25aa75a2c1a165f8c9a5a156900011e3801261f2ee7568beb10cfa4072712f7b",
+    "NLA/MF14Degree44/JacobianIdentity.lean": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
+    "NLA/MF14Degree44/JacobianNonzero.lean": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
+    "NLA/MF14Degree44/Mod3CastBridge.lean": "d1f34f926b566240e03d7492821eb5233414d0061d01bfd6f860b83ae8190355",
+    "NLA/MF14Degree44/Mod3Certificate.lean": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+    "NLA/MF14Degree44/Mod3Columns0.lean": "412076e819da1251b01e1be21caa9832d3d9c8dfd1560f2869592827ea4af019",
+    "NLA/MF14Degree44/Mod3Columns1.lean": "59cf2b97076e25766960b7e1129a8c4785fd7ef3917041cf91f47bff10f39624",
+    "NLA/MF14Degree44/Mod3Columns2.lean": "04ab23746dc2ee6737fa817f92f843acbe6ae69c8a638a92db1f406fac6fe948",
+    "NLA/MF14Degree44/Mod3Columns3.lean": "87e16cdf33cd04486c57d8c6221a891598b2fd3428515df7454c8ccdd80304b4",
+    "NLA/MF14Degree44/Mod3Columns4.lean": "09e23fc8a4b7956105d088b68a146a3f190301212d729079c6cea7cf70ac5dac",
+    "NLA/MF14Degree44/Mod3Columns5.lean": "91a47f3e773240e449650444ca88dd1e6d965d2553847447adaebc0d83679c63",
+    "NLA/MF14Degree44/Mod3Columns6.lean": "98b0774ea11f58ff0045bc5f4b103af158e665ddd694be9d6ba1bbf68522cb77",
+    "NLA/MF14Degree44/Mod3Columns7.lean": "9aaaba115512415bd0bec6b2687132bc2a72ce163a2d865169e092d030fb8701",
+    "NLA/MF14Degree44/Mod3Columns8.lean": "17b304792342d12d754a8bfedb41b9fa725f846b937a004591b49f42f65c5590",
+    "NLA/MF14Degree44/Mod3Lists.lean": "73ea43a05f51b4687b35067bf051afe642823ea401e81ae3aa7be3c67c008296",
+    "NLA/MF14Degree44/Mod3Rows0.lean": "93396070a20d8efff88e990f8a8e76e679fc4d8087326eb0fefc596d0715377f",
+    "NLA/MF14Degree44/Mod3Rows1.lean": "93d84853656023d6ab06d0667030762013a1147bfe64d2490b99ffc5daa9eba2",
+    "NLA/MF14Degree44/Mod3Rows2.lean": "26eab34b927e908393ee7f98aa45864a54a434835bfb541583fea10d832e8ee7",
+    "NLA/MF14Degree44/Mod3Rows3.lean": "af41eeb01d179aaa16deb43d3745a055448f775bc09dbeffa5d1e97552aabcf6",
+    "NLA/MF14Degree44/Mod3Rows4.lean": "d4a5f2170809b43bc3e4c824f0c349c237f07554bed4584cf8582d153746b681",
+    "NLA/MF14Degree44/Mod3Rows5.lean": "302a1b89ce1df25d90c3e897b6a8bff2bd5ba0917bdc9adfa33cf1db43325cd6",
+    "NLA/MF14Degree44/Mod3Rows6.lean": "e7bb6163a1152f7b4d78d13fa978bf51b76e0dea513c4b07222b49efa079be3f",
+    "NLA/MF14Degree44/Mod3Rows7.lean": "d19cdedac9575a7d73dc972a89be61499644c35def7ed85f5143abe9fbeb19a7",
+    "NLA/MF14Degree44/Mod3Rows8.lean": "405388b498a4660be5a4bdd5cdec056d75bcac63e2286369333d5ef45923ad61",
+    "NLA/MF14Degree44/MonicBorderPath.lean": "71d6f3874ebe55a575d9a1cca3f0bbecc737a3ad41642c7df7bae0fc34879563",
+    "NLA/MF14Degree44/PolynomialDensity.lean": "6edc305d51a2dcad8f26a847fa976de701af73a4d102892bfe3e700932eb1804",
+    "NLA/MF14Degree44/PolynomialMaps.lean": "d19c0cf5deedbfc3390dfc4f85e03648e358c9e956830f405e3bb94fea09b495",
+    "NLA/MF14Degree44/ProductSpan.lean": "66da6016227992f43be35cdc04eb8ed688b29b5723a65058445c65cfd392fbdb",
+    "NLA/MF14Degree44/SeedFirstColumns.lean": "16e92e836c24df19c0321dead5cab01896a2318f0be33cf6f4a59eadf4854ed3",
+    "NLA/MF14Degree44/SeedFirstColumns0.lean": "87bf432622ed507fef2ff26a74afd039adb1461ba0c083abe157f33b6e43aa47",
+    "NLA/MF14Degree44/SeedFirstColumns1.lean": "e89610192e571837d661945d4c7e696a8e5682f5456696c2600a51e101599cc8",
+    "NLA/MF14Degree44/SeedFirstColumns2.lean": "9ae8c7c2dc38c41bfc04e4ba584a7adc4066488bc2ed1e583d6d836baf01d845",
+    "NLA/MF14Degree44/SeedFirstColumns3.lean": "9641071c84bf50c7b2cf12d2a22d55a28e0d76d2caab8764524a53456fb866f5",
+    "NLA/MF14Degree44/SeedFirstColumns4.lean": "c275200cb92820c3b899fa345883ac16dabba9fc95188ec541240708bce1ae74",
+    "NLA/MF14Degree44/SeedFirstColumns5.lean": "8422871cb21784c30a200f7d564628a91d796dd7ca6039c2f6790dcd9163f297",
+    "NLA/MF14Degree44/SeedFirstColumns6.lean": "aa9714ddc2a5d0388799dabffc0ad466b57026aa8b77fd9c5f932d51b7e37d7d",
+    "NLA/MF14Degree44/SeedFirstColumns7.lean": "6ae6f7316fbdd6dac8ffbf8e6576312494a40a2651d779ab3e0c93cc76d56d08",
+    "NLA/MF14Degree44/SeedFirstColumns8.lean": "8c57637f701e1e1e69faeede538caef46c78b6ed472dc2930163ef9729bedd87",
+    "NLA/MF14Degree44/SeedFirstPilot.lean": "965a3a4dc90a34b7b9c9631bf9a78e4880da0a925091aaf711df715036c2769d",
+    "NLA/MF14Degree44/SpanBasisCoordinates.lean": "dc7fa5f5e56abd48402d72a01b9ab2ae1696bcb5df0bf676a23b25e258cde3cd",
+    "NLA/MF14Degree44/SpanCoordinates.lean": "588030d92358106b61caf387f52d8578c2552b574feea77729c7829ee4afd631",
+    "NLA/MF14Degree44/SpanReconstruction.lean": "0dc6bd3bfb3a47c1f4a6e9fee05af2b1526faf4e730a11e843ae95ef86a546a7",
+    "NLA/MF14Degree44/SyzygyExpansion.lean": "657f0fc7082e72f30ba369b4e479661f3ff4db3fe24f90dea9e6b385e9c28943",
+    "NLA/MF14Degree44/SyzygyFactors.lean": "1172e0babc9db39bdf5d9d1bb4b481b540f1eb31fd037dc0d19fd9b6c9c4a5f6",
+    "NLA/MF14Degree44/SyzygyLowPart.lean": "dccc88baa58902d278642a2d9bf4b16a252d911d124f7b7909da8c35dc389d5c",
+    "NLA/MF14Degree44/SyzygyMiddle10.lean": "a1cb7c8abd895bd01d2b2cae941fa874ae4ebe34749f606469d7ab0e01c84438",
+    "NLA/MF14Degree44/SyzygyMiddle7.lean": "c25252ed183a107c704fab1265e149b0675301cb6d79ee159bb2dc01a7daefb1",
+    "NLA/MF14Degree44/SyzygyMiddle8.lean": "17f9c8023e5b4bad65b661acd5017a7729dfeb984fba8879a87c222bb46d0010",
+    "NLA/MF14Degree44/SyzygyMiddle9.lean": "184fac891cbb3b312ef1ba052d3a838790363973cba09c40737dc100a0afa413",
+    "NLA/MF14Degree44/ThirdProductFactorization.lean": "4f4f0bb500a5aa4d4ba1a82a5d31777369e513d7ab6f5cc0e3ea417f0c437873",
+    "NLA/MF14Degree44/ThreeProductTuple.lean": "4ef8ea51a77f99fc51aa8859a1e4024911892e5876fcdae1bdc2cc819d7ebc5e",
+    "Solution.lean": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44"
+  },
+  "configs_unchanged": {
+    "comparator.json": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+    "lake-manifest.json": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb",
+    "lakefile.toml": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "STATEMENT-FREEZE.json": "10d161750ec789b5b8f24e0e82e229a722017b77b4cb7bdce11787dde70d7e3c"
+  },
+  "snapshot_config_exception": "Before the verified proof commit, the Lake manifest top-level project name was corrected from NLAPF03 to NLAMF14Degree44 and the lakefile name from NLAMF14 to NLAMF14Degree44, with one lakefile comment changed. All other manifest/lakefile fields and every dependency pin agree with the frozen snapshot. Current bytes equal the actually verified proof commit.",
+  "original_question_unchanged_from_base": "71563f17926cd826a892c2bba0e294894ee57a5c",
+  "shared_verifier_and_degree44_degree47_source_archives_unchanged": true,
+  "public_evidence_files_matched_to_originals": [
+    {
+      "public_file": "verification/linux-2026-09-19/AUDIT-1.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/AUDIT-1.stdout",
+      "public_sha256": "9ab97e8d6366763a81a52051acbe75c5cb9052b330a3313be8ac69f036c0d9d7",
+      "local_original_sha256": "9ab97e8d6366763a81a52051acbe75c5cb9052b330a3313be8ac69f036c0d9d7"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/AUDIT-2.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/AUDIT-2.stdout",
+      "public_sha256": "e199f80b76f4b68aa33d6f4cf3d56d8152ec8fb84467353a83872a78f37ad8bd",
+      "local_original_sha256": "e199f80b76f4b68aa33d6f4cf3d56d8152ec8fb84467353a83872a78f37ad8bd"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/AUDIT-COMMANDS.json",
+      "public_sha256": "7939c7e95550145527c35d294b2cea655ad5e3698e673023deebe7bc987c68d8",
+      "local_original_sha256": "7939c7e95550145527c35d294b2cea655ad5e3698e673023deebe7bc987c68d8"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/INDEPENDENT-AUDIT.json",
+      "public_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30",
+      "local_original_sha256": "a70c8938f3f0431b2a9adbb4d2c3a03701e7bd1a7666942c4446357d3140ea30"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/INDEPENDENT-DETAILS.json",
+      "public_sha256": "e199f80b76f4b68aa33d6f4cf3d56d8152ec8fb84467353a83872a78f37ad8bd",
+      "local_original_sha256": "e199f80b76f4b68aa33d6f4cf3d56d8152ec8fb84467353a83872a78f37ad8bd"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/ORIGINAL-AUDIT-SCRIPT.py",
+      "public_sha256": "2a1bd69590007ee367f3a3774687e86db2d3023d32da6f81b485c33b8dee3f04",
+      "local_original_sha256": "2a1bd69590007ee367f3a3774687e86db2d3023d32da6f81b485c33b8dee3f04"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/RETRIEVAL-COMMANDS.json",
+      "public_sha256": "97cbcdc02dcbf87e1876632f4a9ada8c36b37258f00b5024cf93a2350c1a24c1",
+      "local_original_sha256": "97cbcdc02dcbf87e1876632f4a9ada8c36b37258f00b5024cf93a2350c1a24c1"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/RETRIEVAL-INVOCATION.json",
+      "public_sha256": "7c8fd12428af48d7d207b93672d76f866a980adae5a385afd9fe0111c4793a15",
+      "local_original_sha256": "7c8fd12428af48d7d207b93672d76f866a980adae5a385afd9fe0111c4793a15"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/RETRIEVAL-SUMMARY.json",
+      "public_sha256": "1bf551cdfd650a463797bfccbb026c54efd09afc004624a89b98e85f4781afad",
+      "local_original_sha256": "1bf551cdfd650a463797bfccbb026c54efd09afc004624a89b98e85f4781afad"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/ROOT-AUDIT.json",
+      "public_sha256": "2a34b708d845c12150ef91bb03c54d2464de1b79bd0592abe52a2d02e95ed955",
+      "local_original_sha256": "2a34b708d845c12150ef91bb03c54d2464de1b79bd0592abe52a2d02e95ed955"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/ROOT-SPEC.json",
+      "public_sha256": "25d8d5a57ad2643af8c9f9557f43572c8218cd3befad52182c55517a64ae4310",
+      "local_original_sha256": "25d8d5a57ad2643af8c9f9557f43572c8218cd3befad52182c55517a64ae4310"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/SPEC.json",
+      "public_sha256": "7d3c4856d78bc767ca0cc846db5862ec556337602adb386d58bb0b32b890dec4",
+      "local_original_sha256": "7d3c4856d78bc767ca0cc846db5862ec556337602adb386d58bb0b32b890dec4"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/ARTIFACT-FILES.json",
+      "public_sha256": "146c8c7acee3fabca1c46f67b24d17395c9ed3d65141e9e644f7f47f2f84f5d4",
+      "local_original_sha256": "146c8c7acee3fabca1c46f67b24d17395c9ed3d65141e9e644f7f47f2f84f5d4"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/GITHUB-PROVENANCE.json",
+      "public_sha256": "4d8be6d02ba1c62c3131ee139b4bc8826f1ad5a2a9367d6de2f98bd9ba8991bd",
+      "local_original_sha256": "4d8be6d02ba1c62c3131ee139b4bc8826f1ad5a2a9367d6de2f98bd9ba8991bd"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/bootstrap/comparator-build.log",
+      "public_sha256": "1f80012cabff8acc4c6f759697c5e69688de42824fc769a27513d63b6f85e409",
+      "local_original_sha256": "1f80012cabff8acc4c6f759697c5e69688de42824fc769a27513d63b6f85e409"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/bootstrap/elan.log",
+      "public_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+      "local_original_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/bootstrap/landrun-build.log",
+      "public_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302",
+      "local_original_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/comparator-controls.log",
+      "public_sha256": "093061923b6cbea3cbeb0a68f190602d6aa60b0c8cb04477dc2a396571e0af7e",
+      "local_original_sha256": "093061923b6cbea3cbeb0a68f190602d6aa60b0c8cb04477dc2a396571e0af7e"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/comparator.log",
+      "public_sha256": "0fc41758a6b9d0ebb25341eb195722c3f5b0cdc7b70731968960992d71349ea8",
+      "local_original_sha256": "0fc41758a6b9d0ebb25341eb195722c3f5b0cdc7b70731968960992d71349ea8"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/dependencies.log",
+      "public_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+      "local_original_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/kernel-controls.log",
+      "public_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+      "local_original_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/mathlib-cache.log",
+      "public_sha256": "008062b27220296a83ff60161b3f1db73cf9c2058e1cb29021108732a66e813e",
+      "local_original_sha256": "008062b27220296a83ff60161b3f1db73cf9c2058e1cb29021108732a66e813e"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/negative-native.log",
+      "public_sha256": "ddcc086d4276dabc2f5af43a4f9e3a8cc3019bab72cbe4295434f50e9bfe2038",
+      "local_original_sha256": "ddcc086d4276dabc2f5af43a4f9e3a8cc3019bab72cbe4295434f50e9bfe2038"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/negative-sorry.log",
+      "public_sha256": "b621659141e610bd57dd540edd66fb30b27a130f0fc165d4b3024a17b643b8d4",
+      "local_original_sha256": "b621659141e610bd57dd540edd66fb30b27a130f0fc165d4b3024a17b643b8d4"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/result.json",
+      "public_sha256": "292bd89f5ac21d86eb4535365038aff8a2bbd15ad6315051fc6ba699514e3474",
+      "local_original_sha256": "292bd89f5ac21d86eb4535365038aff8a2bbd15ad6315051fc6ba699514e3474"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/sandbox.log",
+      "public_sha256": "70200f659bc04c5766f62f656f35c7df93d61b52c419b44e1c9601dead6d3d33",
+      "local_original_sha256": "70200f659bc04c5766f62f656f35c7df93d61b52c419b44e1c9601dead6d3d33"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/artifact/verify-20260919T091038Z-4108/user-service.log",
+      "public_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+      "local_original_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/lean-MF-14.zip",
+      "public_sha256": "552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+      "local_original_sha256": "552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/lean-MF-14.zip.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-artifacts.json",
+      "public_sha256": "ecc8a086a5aa5c70132bfbe07ae91d5e147ee48e6e324a0fa4d1ed79f3f18392",
+      "local_original_sha256": "ecc8a086a5aa5c70132bfbe07ae91d5e147ee48e6e324a0fa4d1ed79f3f18392"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-artifacts.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-checked-commit.json",
+      "public_sha256": "624ef5b0440080b9db49ca56355140d3e14a3f31d9ec5218f2ab0e5d0b462615",
+      "local_original_sha256": "624ef5b0440080b9db49ca56355140d3e14a3f31d9ec5218f2ab0e5d0b462615"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-checked-commit.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-job-105873200871.raw.log",
+      "public_sha256": "2352c0eea953f867570304acbe3a7b536bea524729db0e4129096c10b40e210f",
+      "local_original_sha256": "2352c0eea953f867570304acbe3a7b536bea524729db0e4129096c10b40e210f"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-job-105873200871.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-job-105873255308.raw.log",
+      "public_sha256": "fea91ef21b7a36474d508e75b4f94286610f28c8ec5e94518874b503e0d1a420",
+      "local_original_sha256": "fea91ef21b7a36474d508e75b4f94286610f28c8ec5e94518874b503e0d1a420"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-job-105873255308.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-jobs.json",
+      "public_sha256": "95891a4b06031f62b90c042d13b5a426cfc7f1b537ee550b2b74856f578ea959",
+      "local_original_sha256": "95891a4b06031f62b90c042d13b5a426cfc7f1b537ee550b2b74856f578ea959"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-jobs.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-run.json",
+      "public_sha256": "456dfcb52aa1ce1424bf45ef5efa12f87bd866915a715652754b938775a77652",
+      "local_original_sha256": "456dfcb52aa1ce1424bf45ef5efa12f87bd866915a715652754b938775a77652"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/fork/official-run.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/.github/workflows/lean-verification.yml",
+      "public_sha256": "2c3963089483ec5e7e35e6355fa60988778e0b439ce099d7cd7050a8c3b6467c",
+      "local_original_sha256": "2c3963089483ec5e7e35e6355fa60988778e0b439ce099d7cd7050a8c3b6467c"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/matrix-functions-and-stability/MF-14/lean/comparator.json",
+      "public_sha256": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+      "local_original_sha256": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/matrix-functions-and-stability/MF-14/lean/lake-manifest.json",
+      "public_sha256": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb",
+      "local_original_sha256": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/matrix-functions-and-stability/MF-14/lean/lakefile.toml",
+      "public_sha256": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3",
+      "local_original_sha256": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/matrix-functions-and-stability/MF-14/lean/lean-toolchain",
+      "public_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "local_original_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/tools/lean/harness.py",
+      "public_sha256": "f81767a17973956fbe9e5765c664d4639cce15ddf8c106f70cdcb32151808c2f",
+      "local_original_sha256": "f81767a17973956fbe9e5765c664d4639cce15ddf8c106f70cdcb32151808c2f"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/tools/lean/source-lock.json",
+      "public_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "local_original_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/reviewed-verifier-inputs/tools/lean/verify.sh",
+      "public_sha256": "fb97ffb467b0e9acac302b2bdfc418da12b88e4ae307fb0d580c96fd6b63e997",
+      "local_original_sha256": "fb97ffb467b0e9acac302b2bdfc418da12b88e4ae307fb0d580c96fd6b63e997"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/ARTIFACT-FILES.json",
+      "public_sha256": "5c99f64e287efad85a3f0d2add3d41c4d725ee36321730054182e6a251ba4dae",
+      "local_original_sha256": "5c99f64e287efad85a3f0d2add3d41c4d725ee36321730054182e6a251ba4dae"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "public_sha256": "b3ec4961f66b28b5c713feb49669ed69923569f528fc5eb82e467f7d44101fa7",
+      "local_original_sha256": "8a64b95b6b379a853687f1e6d3401f5325c8ffe70553b72ac780522152d2c2bb"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/bootstrap/comparator-build.log",
+      "public_sha256": "0575ba53e3ec44659feb5d9fb1b123051c15b4297b4014022e46c3d4a44ae5d1",
+      "local_original_sha256": "0575ba53e3ec44659feb5d9fb1b123051c15b4297b4014022e46c3d4a44ae5d1"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/bootstrap/elan.log",
+      "public_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+      "local_original_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/bootstrap/landrun-build.log",
+      "public_sha256": "fddaebb73345274c62a6676a68d959f9ebc573ac991e0240ee276c887e44415b",
+      "local_original_sha256": "fddaebb73345274c62a6676a68d959f9ebc573ac991e0240ee276c887e44415b"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/comparator-controls.log",
+      "public_sha256": "beda3de61c7fb7ece5c462f745bf9fe1872c2e9b1822198be1614a139c5be70e",
+      "local_original_sha256": "beda3de61c7fb7ece5c462f745bf9fe1872c2e9b1822198be1614a139c5be70e"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/comparator.log",
+      "public_sha256": "7aca9db3455babd7d545798c0283c78014af0ba9ca324f1fbb70f17853805128",
+      "local_original_sha256": "7aca9db3455babd7d545798c0283c78014af0ba9ca324f1fbb70f17853805128"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/dependencies.log",
+      "public_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+      "local_original_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/kernel-controls.log",
+      "public_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+      "local_original_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/mathlib-cache.log",
+      "public_sha256": "f0ef4ddd2f8addf95c023eac51e9716dd17423de278df2af01b13e3260ef9945",
+      "local_original_sha256": "f0ef4ddd2f8addf95c023eac51e9716dd17423de278df2af01b13e3260ef9945"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/negative-native.log",
+      "public_sha256": "71a6ad6790106d0e776d6e0bb23374f86ec6dbd882a2b6b745a3894585e7be12",
+      "local_original_sha256": "71a6ad6790106d0e776d6e0bb23374f86ec6dbd882a2b6b745a3894585e7be12"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/negative-sorry.log",
+      "public_sha256": "daab6dd45ddb8228de567259a0af79487665dfbef671c368a16bd3acfee6ce57",
+      "local_original_sha256": "daab6dd45ddb8228de567259a0af79487665dfbef671c368a16bd3acfee6ce57"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/result.json",
+      "public_sha256": "92a7b40dfe5f0682ba553b0666210f974053e6190671dc8a13d9efac72197c71",
+      "local_original_sha256": "92a7b40dfe5f0682ba553b0666210f974053e6190671dc8a13d9efac72197c71"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/sandbox.log",
+      "public_sha256": "a18d4d7dc764a1fe09f4c649cbcadd3ca22316dd10b9b2840fea5e0ae217cb08",
+      "local_original_sha256": "a18d4d7dc764a1fe09f4c649cbcadd3ca22316dd10b9b2840fea5e0ae217cb08"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/artifact/verify-20260919T091043Z-4019/user-service.log",
+      "public_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+      "local_original_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/lean-MF-14.zip",
+      "public_sha256": "c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+      "local_original_sha256": "c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/lean-MF-14.zip.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-artifacts.json",
+      "public_sha256": "bcb5ac5a76bdc7475627459a4bc174e4d593393396819a64afa6b2854dfb0fe1",
+      "local_original_sha256": "bcb5ac5a76bdc7475627459a4bc174e4d593393396819a64afa6b2854dfb0fe1"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-artifacts.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-checked-commit.json",
+      "public_sha256": "e7207d383c7a4567f641a765503fcc80827246eec1ea83adafdc03229a9693d5",
+      "local_original_sha256": "e39280a0f59ea091f20901edb5c6e9878ffa1b04b2f07b813d6b12a1bcc1f9e1"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-checked-commit.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-job-105873205339.raw.log",
+      "public_sha256": "f83878f7fd998e3bd925048b68c3ef40a1d72770ff4b3079d1573fb1acb860b6",
+      "local_original_sha256": "f83878f7fd998e3bd925048b68c3ef40a1d72770ff4b3079d1573fb1acb860b6"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-job-105873205339.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-job-105873251674.raw.log",
+      "public_sha256": "a591f6e1c3dacf7c685455c7bccf9cd83dd629438960d791ae05bc9abff66017",
+      "local_original_sha256": "a591f6e1c3dacf7c685455c7bccf9cd83dd629438960d791ae05bc9abff66017"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-job-105873251674.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-jobs.json",
+      "public_sha256": "a94354413b4c8021cce4830d75e88b37b31fe653256ce66737852ab76fd542dc",
+      "local_original_sha256": "a94354413b4c8021cce4830d75e88b37b31fe653256ce66737852ab76fd542dc"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-jobs.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-run.json",
+      "public_sha256": "2f48b8a5de489297f55a3890001813a06d6fb88cfa128a83cc704bc6f7e09ece",
+      "local_original_sha256": "2f48b8a5de489297f55a3890001813a06d6fb88cfa128a83cc704bc6f7e09ece"
+    },
+    {
+      "public_file": "verification/linux-2026-09-19/upstream/official-run.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-2.stderr",
+      "public_sha256": "f01d312b50c1b9961fc7f1bb586b67139e5c573ebdc58b05f31318764b42c593",
+      "local_original_sha256": "f01d312b50c1b9961fc7f1bb586b67139e5c573ebdc58b05f31318764b42c593"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-2.stdout",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-3.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-3.stdout",
+      "public_sha256": "18091e7c0812e1c236d14d28f183edab296ab856223a69d989b55cf13b7c7993",
+      "local_original_sha256": "18091e7c0812e1c236d14d28f183edab296ab856223a69d989b55cf13b7c7993"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-COMMANDS.json",
+      "public_sha256": "dde91c406d71cb1fc1b6188eb05ed92ca18f28150067254409c4c8b44ba82ddc",
+      "local_original_sha256": "dde91c406d71cb1fc1b6188eb05ed92ca18f28150067254409c4c8b44ba82ddc"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT-GIT-COMMANDS.json",
+      "public_sha256": "65d9faca45a6ce586f64f45c3db226a1da24e6a530fa9f59736298aa2dd0e87a",
+      "local_original_sha256": "65d9faca45a6ce586f64f45c3db226a1da24e6a530fa9f59736298aa2dd0e87a"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT.stderr",
+      "public_sha256": "564cb0269fb692d4f78fa7406e9bafb6cfa527b192840a783029fa34787687c9",
+      "local_original_sha256": "564cb0269fb692d4f78fa7406e9bafb6cfa527b192840a783029fa34787687c9"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/AUDIT.stdout",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/INDEPENDENT-AUDIT.json",
+      "public_sha256": "0e04a6283ccbd67c283d0d7b60c55b1e86482d18a57ebc5ea0a6aec4ddf075e8",
+      "local_original_sha256": "0e04a6283ccbd67c283d0d7b60c55b1e86482d18a57ebc5ea0a6aec4ddf075e8"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/PROOF-INPUT-HASHES.json",
+      "public_sha256": "4a3065df820b99a67b659793f274f62b29e32e069813f8b6f9a1c7b37443356f",
+      "local_original_sha256": "4a3065df820b99a67b659793f274f62b29e32e069813f8b6f9a1c7b37443356f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/RETRIEVAL-COMMANDS.json",
+      "public_sha256": "4b022fc39c11f0817eadd72c6455ea40b93d724f467accdfd1473556f72be2b8",
+      "local_original_sha256": "4b022fc39c11f0817eadd72c6455ea40b93d724f467accdfd1473556f72be2b8"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/RETRIEVAL-SUMMARY.json",
+      "public_sha256": "53783f642ac923b1cda2f829564c1c23cb374b7d93e4569eee5e87c81d358230",
+      "local_original_sha256": "53783f642ac923b1cda2f829564c1c23cb374b7d93e4569eee5e87c81d358230"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/SPEC.json",
+      "public_sha256": "70650cf697db9156e51db30d2fba071062890d8cbcc3c75f90de8e1f4dc93e57",
+      "local_original_sha256": "70650cf697db9156e51db30d2fba071062890d8cbcc3c75f90de8e1f4dc93e57"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/ARTIFACT-FILES.json",
+      "public_sha256": "b190f5dfcad818f03f9f1db8db03d4fa6accf7d25104097f4aa343ef7a9e7a65",
+      "local_original_sha256": "b190f5dfcad818f03f9f1db8db03d4fa6accf7d25104097f4aa343ef7a9e7a65"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/GITHUB-PROVENANCE.json",
+      "public_sha256": "da52fed428d87d1f9535d046d2ebae84cf6b95c4a783d9fe92369fdf6f46b987",
+      "local_original_sha256": "da52fed428d87d1f9535d046d2ebae84cf6b95c4a783d9fe92369fdf6f46b987"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/bootstrap/comparator-build.log",
+      "public_sha256": "e18206eb90b45a327195382d3b97770b5ce71d769e2bf2a921154164691efd58",
+      "local_original_sha256": "e18206eb90b45a327195382d3b97770b5ce71d769e2bf2a921154164691efd58"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/bootstrap/elan.log",
+      "public_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+      "local_original_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/bootstrap/landrun-build.log",
+      "public_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302",
+      "local_original_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/comparator-controls.log",
+      "public_sha256": "fc65bde696895ccb8b8c35cd473a17f9c3a2f162befa60d9d64e54562abbd4f6",
+      "local_original_sha256": "fc65bde696895ccb8b8c35cd473a17f9c3a2f162befa60d9d64e54562abbd4f6"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/comparator.log",
+      "public_sha256": "7aecab443981cec40587805e7b18d8cc007a86272cfb6c8784b19e257d879c47",
+      "local_original_sha256": "7aecab443981cec40587805e7b18d8cc007a86272cfb6c8784b19e257d879c47"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/dependencies.log",
+      "public_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+      "local_original_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/kernel-controls.log",
+      "public_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+      "local_original_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/mathlib-cache.log",
+      "public_sha256": "bab2ff1320f00b5ea86c0eb8e7c82afe6c6fe9d9e4d004f9b376a360781957fe",
+      "local_original_sha256": "bab2ff1320f00b5ea86c0eb8e7c82afe6c6fe9d9e4d004f9b376a360781957fe"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/negative-native.log",
+      "public_sha256": "d445593f903d0ef99971cafc5d758ee1ec15187760104860bb3907de984bf5e1",
+      "local_original_sha256": "d445593f903d0ef99971cafc5d758ee1ec15187760104860bb3907de984bf5e1"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/negative-sorry.log",
+      "public_sha256": "7c6b7a85c113b5068d2bb2e79749952ab7a06586978e32f0f10f3aa902f30c17",
+      "local_original_sha256": "7c6b7a85c113b5068d2bb2e79749952ab7a06586978e32f0f10f3aa902f30c17"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/sandbox.log",
+      "public_sha256": "f145e82f7a2c417a15c22cba11d9867b1cd60e9a2ae3f091a96e04905649fd54",
+      "local_original_sha256": "f145e82f7a2c417a15c22cba11d9867b1cd60e9a2ae3f091a96e04905649fd54"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/artifact/verify-20260919T082642Z-3942/user-service.log",
+      "public_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+      "local_original_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/early-official-verify-job.raw.log",
+      "public_sha256": "0ff19d7d0a3bc0769928a756e51ed489b9395b085dc6523cacacbe7ddc052c1f",
+      "local_original_sha256": "0ff19d7d0a3bc0769928a756e51ed489b9395b085dc6523cacacbe7ddc052c1f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/lean-MF-14.zip",
+      "public_sha256": "1a3becd36dd4e17c94bedbc2aac20583a683b598aafa69be84fdeb48691dfd9a",
+      "local_original_sha256": "1a3becd36dd4e17c94bedbc2aac20583a683b598aafa69be84fdeb48691dfd9a"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/lean-MF-14.zip.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-artifacts.json",
+      "public_sha256": "fa45edf760a41c30cb2f793beb9af3d01c6c228046b8ba2681abbaadd2cb67e7",
+      "local_original_sha256": "fa45edf760a41c30cb2f793beb9af3d01c6c228046b8ba2681abbaadd2cb67e7"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-artifacts.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-checked-commit.json",
+      "public_sha256": "2744014f90f2f0a71c0fc709a6ea87a90ab5055709c82f6a1152e01b419844b8",
+      "local_original_sha256": "2744014f90f2f0a71c0fc709a6ea87a90ab5055709c82f6a1152e01b419844b8"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-checked-commit.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-job-105867989118.raw.log",
+      "public_sha256": "0a6177447f5eb8d164734ba0e92f95f3c27b4a2d536bfdb90649df7c05f129b9",
+      "local_original_sha256": "0a6177447f5eb8d164734ba0e92f95f3c27b4a2d536bfdb90649df7c05f129b9"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-job-105867989118.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-job-105868030877.raw.log",
+      "public_sha256": "0ff19d7d0a3bc0769928a756e51ed489b9395b085dc6523cacacbe7ddc052c1f",
+      "local_original_sha256": "0ff19d7d0a3bc0769928a756e51ed489b9395b085dc6523cacacbe7ddc052c1f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-job-105868030877.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-jobs.json",
+      "public_sha256": "7385171a0dd80e37fa022f81d019a9d40675bab8b8a7aece448532de539448a6",
+      "local_original_sha256": "7385171a0dd80e37fa022f81d019a9d40675bab8b8a7aece448532de539448a6"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-jobs.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-run.json",
+      "public_sha256": "6bdb708dc11791c71f76d7e7353a3f08a335d67c0b1d55de7abf41bd5b99f9bb",
+      "local_original_sha256": "6bdb708dc11791c71f76d7e7353a3f08a335d67c0b1d55de7abf41bd5b99f9bb"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/fork/official-run.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/.github/workflows/lean-verification.yml",
+      "public_sha256": "2c3963089483ec5e7e35e6355fa60988778e0b439ce099d7cd7050a8c3b6467c",
+      "local_original_sha256": "2c3963089483ec5e7e35e6355fa60988778e0b439ce099d7cd7050a8c3b6467c"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/Challenge.lean",
+      "public_sha256": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
+      "local_original_sha256": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/NLA/MF14Degree44/Mod3Certificate.lean",
+      "public_sha256": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+      "local_original_sha256": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/Solution.lean",
+      "public_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44",
+      "local_original_sha256": "e5c888faffd3a0936d55c7cb9ec59d24ea54a60b204f921d5ee68734f5124d44"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/comparator.json",
+      "public_sha256": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36",
+      "local_original_sha256": "1d8f63295e7ab1a50ed019455f454dbc78d0d531d02c0784e264ba61dc8fbb36"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/lake-manifest.json",
+      "public_sha256": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb",
+      "local_original_sha256": "a1178d808d9442e147aa42dcee4cf5b7570867cadc1b00a06710ef12d530d1cb"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/lakefile.toml",
+      "public_sha256": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3",
+      "local_original_sha256": "4623aa48ab408e33bfdd6d7d46321376e884f10f20a6e1a7ed6afabdd10fa6c3"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/matrix-functions-and-stability/MF-14/lean/lean-toolchain",
+      "public_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "local_original_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/tools/lean/harness.py",
+      "public_sha256": "f81767a17973956fbe9e5765c664d4639cce15ddf8c106f70cdcb32151808c2f",
+      "local_original_sha256": "f81767a17973956fbe9e5765c664d4639cce15ddf8c106f70cdcb32151808c2f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/tools/lean/source-lock.json",
+      "public_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "local_original_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/reviewed-proof-inputs/tools/lean/verify.sh",
+      "public_sha256": "fb97ffb467b0e9acac302b2bdfc418da12b88e4ae307fb0d580c96fd6b63e997",
+      "local_original_sha256": "fb97ffb467b0e9acac302b2bdfc418da12b88e4ae307fb0d580c96fd6b63e997"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/ARTIFACT-FILES.json",
+      "public_sha256": "7f7cf7817f63622524ddebe752206c05adcc12fbce053ab7d5ea52a9f2184c8f",
+      "local_original_sha256": "7f7cf7817f63622524ddebe752206c05adcc12fbce053ab7d5ea52a9f2184c8f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "public_sha256": "a6c207cb864fb30d5d289d9fdf3fc0fee41e566709beb5e7387deb003b05a479",
+      "local_original_sha256": "26fa3cf5897916802d7ff7e5da0f538016329bf2dfec8d40acf370bf3c370623"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/bootstrap/comparator-build.log",
+      "public_sha256": "43ff8afdc28c1fbf09ed2ec72e1941bc43ccf2cc7a56bb23632519793e9f01fb",
+      "local_original_sha256": "43ff8afdc28c1fbf09ed2ec72e1941bc43ccf2cc7a56bb23632519793e9f01fb"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/bootstrap/elan.log",
+      "public_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+      "local_original_sha256": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/bootstrap/landrun-build.log",
+      "public_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302",
+      "local_original_sha256": "baf6c06b231f4e2c2af81c514a62c8194bacce0677b2adb9d8948da24f91c302"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/comparator-controls.log",
+      "public_sha256": "236f61202893a3960763da8dfabe606f592e7a6e3cc13903877aee5e94469174",
+      "local_original_sha256": "236f61202893a3960763da8dfabe606f592e7a6e3cc13903877aee5e94469174"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/comparator.log",
+      "public_sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471",
+      "local_original_sha256": "fe767b80f8f065f8a96a16ff27842203c9dd35e48774cd44d247548ba3548471"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/dependencies.log",
+      "public_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+      "local_original_sha256": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/kernel-controls.log",
+      "public_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+      "local_original_sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/mathlib-cache.log",
+      "public_sha256": "11148bfa82f1966bb74a5da980e92b43ddac260962ea6c1f6e69510bf02201ad",
+      "local_original_sha256": "11148bfa82f1966bb74a5da980e92b43ddac260962ea6c1f6e69510bf02201ad"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/negative-native.log",
+      "public_sha256": "865aa982c06fe5eeea37ada327f5a1cf8b97092117e7274c9eff06ebf69fc0c3",
+      "local_original_sha256": "865aa982c06fe5eeea37ada327f5a1cf8b97092117e7274c9eff06ebf69fc0c3"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/negative-sorry.log",
+      "public_sha256": "5ecfa22a61a06273487790e53e9d1f476600ba953db2117d03f595da221b7597",
+      "local_original_sha256": "5ecfa22a61a06273487790e53e9d1f476600ba953db2117d03f595da221b7597"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/sandbox.log",
+      "public_sha256": "53bad31754b7d79505e2269ddbed09546d894d01b2d8fac4e319fcb199c9d264",
+      "local_original_sha256": "53bad31754b7d79505e2269ddbed09546d894d01b2d8fac4e319fcb199c9d264"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/artifact/verify-20260919T082654Z-4176/user-service.log",
+      "public_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+      "local_original_sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/lean-MF-14.zip",
+      "public_sha256": "6cf2591d87b66a17fb98d884496c11616758e4ec93303ee06927f6f35b4c74da",
+      "local_original_sha256": "6cf2591d87b66a17fb98d884496c11616758e4ec93303ee06927f6f35b4c74da"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/lean-MF-14.zip.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-artifacts.json",
+      "public_sha256": "d31a3165ff1656d125fb69a730f98001869e4151aeca50568e06dbb4a4a5f8b4",
+      "local_original_sha256": "d31a3165ff1656d125fb69a730f98001869e4151aeca50568e06dbb4a4a5f8b4"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-artifacts.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-checked-commit.json",
+      "public_sha256": "a20af732ad33825eae854a37afc793f2b14bb783af996e55ab80755d6ba99d04",
+      "local_original_sha256": "a6c014186411272499b804dfe5fd576770cf39ec0e48ab7b2312a1c0b08beebd"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-checked-commit.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-job-105868000119.raw.log",
+      "public_sha256": "ebdb1667d826a235d7bd91c8b367a02b681ef2feeb760aa8178031d25ef03420",
+      "local_original_sha256": "ebdb1667d826a235d7bd91c8b367a02b681ef2feeb760aa8178031d25ef03420"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-job-105868000119.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-job-105868048984.raw.log",
+      "public_sha256": "9ce8e0d5e64bad525ddee183252752fc34c735fda313acb1a46d4fcdf8c13bbd",
+      "local_original_sha256": "9ce8e0d5e64bad525ddee183252752fc34c735fda313acb1a46d4fcdf8c13bbd"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-job-105868048984.raw.log.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-jobs.json",
+      "public_sha256": "b59f8f0d4757ec6d2ff38a1284f862e3b00d57e4dee9baa1f699321b519978bc",
+      "local_original_sha256": "b59f8f0d4757ec6d2ff38a1284f862e3b00d57e4dee9baa1f699321b519978bc"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-jobs.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-run.json",
+      "public_sha256": "58cd050f82e136c13108de54f38a8941cbe847c79a04cc5a09f43aef20a34bde",
+      "local_original_sha256": "58cd050f82e136c13108de54f38a8941cbe847c79a04cc5a09f43aef20a34bde"
+    },
+    {
+      "public_file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-run.json.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "public_file": "reviews/runtime-referee-b/MANIFEST.json",
+      "public_sha256": "2a722bc9b03c5219fbac1b2285449fceabc55f7c22fcabe8b041ab7d823dfbd6",
+      "local_original_sha256": "2a722bc9b03c5219fbac1b2285449fceabc55f7c22fcabe8b041ab7d823dfbd6"
+    },
+    {
+      "public_file": "reviews/runtime-referee-b/REPORT.md",
+      "public_sha256": "3b5415636ba683fe34e6cdb6b8a049f7936869f1b98f12aa5bf8f3edcb137b96",
+      "local_original_sha256": "3b5415636ba683fe34e6cdb6b8a049f7936869f1b98f12aa5bf8f3edcb137b96"
+    },
+    {
+      "public_file": "reviews/runtime-referee-b/audit_target_linux.reviewed.py",
+      "public_sha256": "2a1bd69590007ee367f3a3774687e86db2d3023d32da6f81b485c33b8dee3f04",
+      "local_original_sha256": "2a1bd69590007ee367f3a3774687e86db2d3023d32da6f81b485c33b8dee3f04"
+    },
+    {
+      "public_file": "reviews/runtime-referee-b/check_runtime_details.py",
+      "public_sha256": "d21f41fc1044b6627794fc598c838885639e2701e4eb6d4bc7b43d14de52d62b",
+      "local_original_sha256": "d21f41fc1044b6627794fc598c838885639e2701e4eb6d4bc7b43d14de52d62b"
+    },
+    {
+      "public_file": "reviews/runtime-referee-b/retrieve_target_linux_referee.reviewed.py",
+      "public_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8",
+      "local_original_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8"
+    },
+    {
+      "public_file": "reviews/runtime-failed-fe4bbee/MANIFEST.json",
+      "public_sha256": "46ceda23c100887e75af4c1c9dc92af432f062abb23686981e8eba524a3c2d6c",
+      "local_original_sha256": "46ceda23c100887e75af4c1c9dc92af432f062abb23686981e8eba524a3c2d6c"
+    },
+    {
+      "public_file": "reviews/runtime-failed-fe4bbee/REPORT.md",
+      "public_sha256": "57efc40c48e5715b1ba09373a6605c12851e4beb18713d633466376072e0b8ff",
+      "local_original_sha256": "57efc40c48e5715b1ba09373a6605c12851e4beb18713d633466376072e0b8ff"
+    },
+    {
+      "public_file": "reviews/runtime-failed-fe4bbee/audit_failed_runtime.py",
+      "public_sha256": "4adddb92a8eb4edae7901e8202ebbfd5d7c7f1db8b5629147e63ad3469c30e3c",
+      "local_original_sha256": "4adddb92a8eb4edae7901e8202ebbfd5d7c7f1db8b5629147e63ad3469c30e3c"
+    },
+    {
+      "public_file": "reviews/runtime-failed-fe4bbee/retrieve_target_linux_referee.reviewed.py",
+      "public_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8",
+      "local_original_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8"
+    }
+  ],
+  "new_public_metadata": [
+    {
+      "file": "verification/linux-2026-09-19/SUMMARY.json",
+      "sha256": "4c5b2c3eeb0331800d4c0536561c4104580d46a284b80f1e032a57647616bd93",
+      "role": "New public root-authored summary, not an original official response; independently read against actual runtime evidence."
+    }
+  ],
+  "redactions": [
+    {
+      "file": "verification/linux-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "original_sha256": "8a64b95b6b379a853687f1e6d3401f5325c8ffe70553b72ac780522152d2c2bb",
+      "public_sha256": "b3ec4961f66b28b5c713feb49669ed69923569f528fc5eb82e467f7d44101fa7",
+      "only_changed_json_paths": [
+        "/checked_commit/author/email",
+        "/checked_commit/verification/payload"
+      ],
+      "replacement_count": 2
+    },
+    {
+      "file": "verification/linux-2026-09-19/upstream/official-checked-commit.json",
+      "original_sha256": "e39280a0f59ea091f20901edb5c6e9878ffa1b04b2f07b813d6b12a1bcc1f9e1",
+      "public_sha256": "e7207d383c7a4567f641a765503fcc80827246eec1ea83adafdc03229a9693d5",
+      "only_changed_json_paths": [
+        "/author/email",
+        "/verification/payload"
+      ],
+      "replacement_count": 2
+    },
+    {
+      "file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/GITHUB-PROVENANCE.json",
+      "original_sha256": "26fa3cf5897916802d7ff7e5da0f538016329bf2dfec8d40acf370bf3c370623",
+      "public_sha256": "a6c207cb864fb30d5d289d9fdf3fc0fee41e566709beb5e7387deb003b05a479",
+      "only_changed_json_paths": [
+        "/checked_commit/author/email",
+        "/checked_commit/verification/payload"
+      ],
+      "replacement_count": 2
+    },
+    {
+      "file": "verification/linux-failed-fe4bbee-2026-09-19/upstream/official-checked-commit.json",
+      "original_sha256": "a6c014186411272499b804dfe5fd576770cf39ec0e48ab7b2312a1c0b08beebd",
+      "public_sha256": "a20af732ad33825eae854a37afc793f2b14bb783af996e55ab80755d6ba99d04",
+      "only_changed_json_paths": [
+        "/author/email",
+        "/verification/payload"
+      ],
+      "replacement_count": 2
+    }
+  ],
+  "privacy_scan": {
+    "project_files": 625,
+    "decompressed_archive_members": 163,
+    "additional_catalog_files": 4,
+    "remaining_known_contributor_contact_matches": 0,
+    "scope": "raw file bytes and recursive gzip/zip members; no PDF text renderer invoked"
+  },
+  "metadata_review_scope": "Current uncommitted promotion; actual execution claims remain bound to immutable proof commit. No new execution claimed."
+}

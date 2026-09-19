@@ -1,0 +1,757 @@
+{
+  "scope": "Coordinator independent inspection of actual repaired published-source Linux evidence; root is a proof author and this is not a nonauthor mathematical review or another execution.",
+  "reviewer": "/root",
+  "time": "2026-09-19T09:27:37.793970+00:00",
+  "verdict": "PASS",
+  "script_sha256": "2a1bd69590007ee367f3a3774687e86db2d3023d32da6f81b485c33b8dee3f04",
+  "spec_sha256": "25d8d5a57ad2643af8c9f9557f43572c8218cd3befad52182c55517a64ae4310",
+  "problem": "MF-14",
+  "runs": [
+    {
+      "repository": "sgstepaniants/OpenProblemsInNLA",
+      "run_id": 35433896875,
+      "job_id": 105873255308,
+      "artifact_id": 10581683130,
+      "artifact_digest": "sha256:552d7e5578d4f582b7e4ed3162249e26d9abda74d9e254df4aed0cf6d279f4d8",
+      "proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+      "checked_repository_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+      "all_project_inputs_match": 536,
+      "contracts": 25,
+      "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "actual_axiom_reports": {
+        "NLA.MF14Degree44.canonical_gate_padding": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.four_prefix_full_coefficients": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.three_product_tuple": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.good_border_parameters_eventually": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_span_coordinates": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_map_smooth": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_jacobian_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_minor_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_product_joint_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.polynomial_density_of_strict_derivative": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_at_zero": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_in_span": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.monic_border_joint_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_actual_output": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_degree_bound": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_closure_transfer": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.family_image_mem_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.family_degree_and_full_vector": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_map_smooth": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_jacobian_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.integer_jacobian_mod3_inverse": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_derivative_bijective": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degree44_coverage": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.original_equality_false": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ]
+      },
+      "logs": {
+        "user-service.log": {
+          "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+          "exit_code": 0,
+          "required_markers": [
+            "systemd-run",
+            "--user"
+          ]
+        },
+        "sandbox.log": {
+          "sha256": "70200f659bc04c5766f62f656f35c7df93d61b52c419b44e1c9601dead6d3d33",
+          "exit_code": 0,
+          "required_markers": [
+            "Outer and export fixture contents unchanged; only designated build fixture written."
+          ]
+        },
+        "kernel-controls.log": {
+          "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+          "exit_code": 0,
+          "required_markers": [
+            "PASS: all three actual Comparator.runBuiltinKernel cases behaved as required"
+          ]
+        },
+        "comparator-controls.log": {
+          "sha256": "093061923b6cbea3cbeb0a68f190602d6aa60b0c8cb04477dc2a396571e0af7e",
+          "exit_code": 0,
+          "required_markers": [
+            "PASS: all five Comparator regressions"
+          ]
+        },
+        "negative-sorry.log": {
+          "sha256": "b621659141e610bd57dd540edd66fb30b27a130f0fc165d4b3024a17b643b8d4",
+          "exit_code": 1,
+          "required_markers": [
+            "Illegal axiom detected: 'sorryAx'"
+          ]
+        },
+        "negative-native.log": {
+          "sha256": "ddcc086d4276dabc2f5af43a4f9e3a8cc3019bab72cbe4295434f50e9bfe2038",
+          "exit_code": 1,
+          "required_markers": [
+            "Illegal axiom detected: 'checked._native.native_decide.ax_1_1'"
+          ]
+        },
+        "comparator.log": {
+          "sha256": "0fc41758a6b9d0ebb25341eb195722c3f5b0cdc7b70731968960992d71349ea8",
+          "exit_code": 0,
+          "required_markers": [
+            "Building Challenge",
+            "Building Solution",
+            "Running Lean default kernel on solution.",
+            "Lean default kernel accepts the solution",
+            "Your solution is okay!"
+          ]
+        }
+      },
+      "result_receipt_sha256": "292bd89f5ac21d86eb4535365038aff8a2bbd15ad6315051fc6ba699514e3474",
+      "provenance_sha256": "4d8be6d02ba1c62c3131ee139b4bc8826f1ad5a2a9367d6de2f98bd9ba8991bd"
+    },
+    {
+      "repository": "ajt60gaibb/OpenProblemsInNLA",
+      "run_id": 35433898434,
+      "job_id": 105873251674,
+      "artifact_id": 10582237117,
+      "artifact_digest": "sha256:c9fc3f22572e78fc827f44202348e9e3cf156f087950dc1658a04b5335110d2f",
+      "proof_commit": "c89c859a6b21c399a99f5e9f5fb2b7f472c96657",
+      "checked_repository_commit": "84f2d7bd1f2d7613e8e7812f60ece7800dca429d",
+      "all_project_inputs_match": 536,
+      "contracts": 25,
+      "source_lock_sha256": "b3833b07916e5db77579b9cc53ca582282f6a841f36d6a60d693e5b02d342b6b",
+      "actual_axiom_reports": {
+        "NLA.MF14Degree44.canonical_gate_padding": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.four_prefix_full_coefficients": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.three_product_tuple": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.good_border_parameters_eventually": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_span_coordinates": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_map_smooth": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_jacobian_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_minor_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.fourth_product_joint_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.polynomial_density_of_strict_derivative": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_at_zero": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degeneration_in_span": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.monic_border_joint_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_actual_output": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_degree_bound": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.continuation_closure_transfer": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.family_image_mem_closure": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.family_degree_and_full_vector": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_map_smooth": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_jacobian_identity": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.integer_jacobian_mod3_inverse": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.coefficient_derivative_bijective": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.degree44_coverage": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ],
+        "NLA.MF14Degree44.original_equality_false": [
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        ]
+      },
+      "logs": {
+        "user-service.log": {
+          "sha256": "4700d2ea9f713793f38154d753a4e1aa1ff05342dc9d3ac4cfd5ffde7d53851a",
+          "exit_code": 0,
+          "required_markers": [
+            "systemd-run",
+            "--user"
+          ]
+        },
+        "sandbox.log": {
+          "sha256": "a18d4d7dc764a1fe09f4c649cbcadd3ca22316dd10b9b2840fea5e0ae217cb08",
+          "exit_code": 0,
+          "required_markers": [
+            "Outer and export fixture contents unchanged; only designated build fixture written."
+          ]
+        },
+        "kernel-controls.log": {
+          "sha256": "ac5884a6a9aab533b23369a1a9a4e453f745264bbaeb2e13d60d94569c45a361",
+          "exit_code": 0,
+          "required_markers": [
+            "PASS: all three actual Comparator.runBuiltinKernel cases behaved as required"
+          ]
+        },
+        "comparator-controls.log": {
+          "sha256": "beda3de61c7fb7ece5c462f745bf9fe1872c2e9b1822198be1614a139c5be70e",
+          "exit_code": 0,
+          "required_markers": [
+            "PASS: all five Comparator regressions"
+          ]
+        },
+        "negative-sorry.log": {
+          "sha256": "daab6dd45ddb8228de567259a0af79487665dfbef671c368a16bd3acfee6ce57",
+          "exit_code": 1,
+          "required_markers": [
+            "Illegal axiom detected: 'sorryAx'"
+          ]
+        },
+        "negative-native.log": {
+          "sha256": "71a6ad6790106d0e776d6e0bb23374f86ec6dbd882a2b6b745a3894585e7be12",
+          "exit_code": 1,
+          "required_markers": [
+            "Illegal axiom detected: 'checked._native.native_decide.ax_1_1'"
+          ]
+        },
+        "comparator.log": {
+          "sha256": "7aca9db3455babd7d545798c0283c78014af0ba9ca324f1fbb70f17853805128",
+          "exit_code": 0,
+          "required_markers": [
+            "Building Challenge",
+            "Building Solution",
+            "Running Lean default kernel on solution.",
+            "Lean default kernel accepts the solution",
+            "Your solution is okay!"
+          ]
+        }
+      },
+      "result_receipt_sha256": "92a7b40dfe5f0682ba553b0666210f974053e6190671dc8a13d9efac72197c71",
+      "provenance_sha256": "8a64b95b6b379a853687f1e6d3401f5325c8ffe70553b72ac780522152d2c2bb"
+    }
+  ],
+  "limits": "Machine logs and source matching do not establish informal statement fidelity; the two separate nonauthor mathematical reviews cover that scope.",
+  "canonical_promotion": "PENDING metadata, documentation, independent runtime review and repository publication"
+}

@@ -19,13 +19,16 @@ None of these statuses is counted as open. A partial result leaves the
 surviving target in the open catalog with **🟡 PARTIAL**, even if that partial
 result is formalized in Lean.
 
-## MF-14 — exact seven-product maximum 47 — Marcus Webb
+## MF-14 — exact seven-product maximum 47 — Marcus Webb; original negative answer Lean-formalized by George Stepaniants
 
 **Solved negatively, with exact maximum determined, 17 September 2026.** Marcus Webb, The University of Manchester. [Theorem 1 of the complete degree-47 proof](references/webb-mf14-degree47-2026-09-17/proof.pdf) proves $`d_7=47`$ in the original complex full-closure model. It establishes coverage of every polynomial of degree at most 47 and excludes coverage of the entire degree-at-most-48 space, retaining all coefficients through degree 128. The original equality $`d_7=42`$ remains displayed on the [canonical page](matrix-functions-and-stability/MF-14/README.md).
 
 An explicit seven-product family, an exact Gaussian-rational contraction certificate and an inverse-function/weighted-limit argument prove the lower bound. A self-contained dimension count, irreducibility and $`x^{128}`$ prove the matching upper bound. Separate Codex agents reviewed the mathematics; an independent verifier reconstructs all 129 coefficients and all 49 parameter derivatives and uses a different Hessian bound. [Submission and reproduction](references/webb-mf14-degree47-2026-09-17/README.md) · [Standalone proof source](references/webb-mf14-degree47-2026-09-17/proof.tex) · [Independent integration review](references/webb-mf14-degree47-2026-09-17/verification/packaging-review.md). The work used substantial ChatGPT/Codex assistance. The review is informal AI-agent review, not external human peer review or formal verification.
 
 Webb's [earlier degree-44 contribution](references/webb-mf14-degree44-2026-09-17/README.md), with its simultaneous four-product border construction and exact determinant 256, already refuted the equality and established $`44\le d_7\le47`$. Its proof, source record and certificates are retained unchanged. Matthew J. Colbrook retains credit for the earlier degree-42 theorem. Permanent IDs, canonical paths, the original question and the open count are unchanged by this stronger result.
+
+
+**Lean verified — 19 September 2026 (UTC). Formalization: George Stepaniants**, Department of Computing and Mathematical Sciences, California Institute of Technology. Seven chronological products cover every complex polynomial through degree 44 in the full 129-coefficient closure model, refuting the original equality 42. The later exact maximum 47 is outside this formalization. Local serial Lean, two independent nonauthor final AI-agent reviews, and the actual [sgstepaniants run 35433896875](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35433896875) and [ajt60gaibb run 35433898434](https://github.com/ajt60gaibb/OpenProblemsInNLA/actions/runs/35433898434) passed all 25 contracts, default-kernel/Comparator checks, standard axioms and real sandbox/rejection controls. [Scope, reproduction and retained evidence](matrix-functions-and-stability/MF-14/README.md#lean-proof-and-verification-evidence). Marcus Webb, The University of Manchester retains mathematical authorship. This formalizes one existing original target.
 
 ## Reviewed AC-01–AC-06 research — 14 September 2026
 

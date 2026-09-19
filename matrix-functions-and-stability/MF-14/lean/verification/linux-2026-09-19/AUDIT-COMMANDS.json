@@ -1,0 +1,31 @@
+[
+  {
+    "argv": [
+      "python3",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/recovery-tools/audit_target_linux.py",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/SPEC.json"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:21.103820+00:00",
+    "end": "2026-09-19T09:26:27.262751+00:00",
+    "exit_code": 0,
+    "stdout": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/AUDIT-1.stdout",
+    "stdout_sha256": "9ab97e8d6366763a81a52051acbe75c5cb9052b330a3313be8ac69f036c0d9d7",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/AUDIT-1.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-repaired-runtime-referee-b/check_runtime_details.py"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "start": "2026-09-19T09:26:27.262990+00:00",
+    "end": "2026-09-19T09:26:28.304921+00:00",
+    "exit_code": 0,
+    "stdout": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/AUDIT-2.stdout",
+    "stdout_sha256": "e199f80b76f4b68aa33d6f4cf3d56d8152ec8fb84467353a83872a78f37ad8bd",
+    "stderr": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/AUDIT-2.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

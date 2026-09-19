@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python3",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/recovery-tools/retrieve_target_linux_referee.py",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/verification/MF14-repaired-linux-20260919/SPEC.json"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+  "exit_code": 0,
+  "scope": "Top-level retrieval invocation; exact individual GitHub command start/end times and hashes are in RETRIEVAL-COMMANDS.json",
+  "script_sha256": "6d723bf39d3a1fbf64ea5eefb7c2794798ce1e46d17a5b7ab58143b18865c0a8",
+  "no_compiler_or_remote_write": true
+}
