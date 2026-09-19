@@ -1,0 +1,8 @@
+{
+  "scope": "Local diagnostic dependency tracking repair; mathematical Lean sources unchanged",
+  "previous_runner_sha256": "83b20af8ae24401b510932cd1efc5bbcba6a3cdc5ad4684ff202a5b2b8706ee7",
+  "new_runner_sha256": "632516b916e54f275cc63bab7bf6eaa7e1d1a9dc9ac2cf50b436475037c40a09",
+  "change": "Previously only NLA.* imports were tracked; now all imports that occur in the staged source map are tracked too. Missing NLA imports still fail.",
+  "reason": "Type diagnostic imported top-level Challenge/Solution; Challenge must be built first and both exact outputs bound in its receipt.",
+  "previous_run093": "Challenge diagnostic failed missing module; Solution diagnostic ran but its top-level dependency output was not listed. Do not count093 as complete statement matching."
+}

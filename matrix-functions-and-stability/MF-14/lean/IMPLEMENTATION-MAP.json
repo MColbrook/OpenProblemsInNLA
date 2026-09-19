@@ -1,5 +1,5 @@
 {
-  "status": "Bound to exact final source snapshot; actual local aggregate and two independent final reviews PASS; Linux Comparator pending",
+  "status": "PASS actual repaired local aggregate recovery-095, all 25 exact elaborated types, and two independent nonauthor continuation approvals; real repaired-source Linux checks pending",
   "contracts": [
     {
       "declaration": "NLA.MF14Degree44.canonical_gate_padding",
@@ -280,7 +280,7 @@
       "observed_staged_sources": [
         {
           "file": "NLA/MF14Degree44/Mod3Certificate.lean",
-          "source_sha256": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a"
+          "source_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e"
         }
       ],
       "observation_only": false,
@@ -330,5 +330,5 @@
   "frozen_contract_count": 25,
   "definition_names": [],
   "final_source_binding": "PASS: all 25 implementation mappings match exact final source hashes and frozen contracts",
-  "review_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436"
+  "review_snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892"
 }

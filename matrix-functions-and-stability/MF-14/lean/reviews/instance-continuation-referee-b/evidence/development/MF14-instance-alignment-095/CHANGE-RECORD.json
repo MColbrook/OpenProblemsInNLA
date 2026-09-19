@@ -1,0 +1,10 @@
+{
+  "author": "/root",
+  "reason": "Actual Linux Comparator rejected D44-08d: frozen reference elaborates matrix multiplication through ZMod.commRing while implementation imports additionally expose ZMod.instField.",
+  "scope": "Disable only that field instance for elaborating this implementation declaration; frozen Challenge, definitions, hypotheses, conclusion and all other implementations unchanged.",
+  "old_sha256": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+  "new_sha256": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
+  "local_verification": "PENDING",
+  "independent_continuation_reviews": "PENDING",
+  "count_change": 0
+}

@@ -1,0 +1,3 @@
+'NLA.MF14Degree44.lowPart6_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.syzygy_low_part_high_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.scaled_degenerationZ_low_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]

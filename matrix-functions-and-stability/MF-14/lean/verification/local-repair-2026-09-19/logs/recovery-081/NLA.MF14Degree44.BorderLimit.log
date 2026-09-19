@@ -1,0 +1,3 @@
+NLA/MF14Degree44/BorderLimit.lean:23:33: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+'NLA.MF14Degree44.joint_four_closure_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.monic_border_joint_closure_of_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]

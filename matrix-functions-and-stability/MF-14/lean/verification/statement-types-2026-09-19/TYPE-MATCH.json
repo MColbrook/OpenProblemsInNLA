@@ -1,0 +1,11 @@
+{
+  "scope": "Actual local elaborated Expr dumps with all implicit instance arguments; this diagnostic is not Comparator",
+  "reference_run": "recovery-094",
+  "solution_run": "recovery-095",
+  "reference_log_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+  "solution_log_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+  "reference_count": 25,
+  "solution_count": 25,
+  "mismatches": [],
+  "status": "PASS"
+}

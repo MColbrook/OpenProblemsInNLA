@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.CoefficientPolynomial.mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.decodeQuad_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]

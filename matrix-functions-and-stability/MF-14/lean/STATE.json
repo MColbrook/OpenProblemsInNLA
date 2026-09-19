@@ -1,6 +1,6 @@
 {
-  "status": "LOCAL FULL TARGET and two independent final source reviews PASS; Linux Comparator pending",
-  "updated_utc": "2026-09-19T08:23:09.696302+00:00",
+  "status": "All 25 original-target contracts pass actual repaired local aggregate recovery-095, all 25 raw elaborated types and universe lists match the frozen reference, and two independent nonauthor continuation reviews approve the exact repair. The initial published Linux checks failed the now-repaired D44-08d instance alignment; real repaired-source Linux Comparator and kernel verification remain pending.",
+  "updated_utc": "2026-09-19T09:03:58.261033+00:00",
   "original_target": "MF-14: is the largest covered degree exactly 42 in the original complex seven-product full 129-coefficient closure model?",
   "formalized_scope_intended": [
     "NLA.MF14.CoversDegree 44",
@@ -16,15 +16,14 @@
     "independent_approvals": 2
   },
   "local_full_aggregate": {
-    "status": "PASS actual coordinator-owned local Lean",
+    "status": "PASS actual repaired coordinator-owned local Lean",
     "runs": [
-      "recovery-086",
-      "recovery-087",
-      "recovery-088"
+      "recovery-094",
+      "recovery-095"
     ],
     "module": "Solution",
-    "record": "verification/local-2026-09-19/LOCAL-REPLAY-AUDIT.json",
-    "record_sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+    "record": "verification/local-repair-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+    "record_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
     "actual_command": [
       "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
       "--threads=1",
@@ -39,7 +38,7 @@
     "threads": 1,
     "memory_cap_mib": 4096,
     "standalone_lake_build": "NOT_RUN; direct serial Lean commands recorded",
-    "publication_name_replay": "PASS recovery-088; Solution and independent Challenge separately elaborated, same frozen Lean source bytes"
+    "publication_name_replay": "PASS recovery-095 Solution; isolated reference Challenge compiled in recovery-094; all 25 raw-type and universe logs are byte-identical"
   },
   "final_independent_reviews": {
     "status": "PASS",
@@ -65,18 +64,65 @@
         "manifest_sha256": "8df5c6f142ea1e6ffce3cf4910fc8307b6029b4f7cfe5292f723bd8002dd6b05",
         "new_Lean_or_Comparator_run": false
       }
+    ],
+    "continuation_status": "PASS two independent nonauthor approvals of the exact repaired snapshot",
+    "continuation_reports": [
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_a",
+        "role": "Independent nonauthor AI-agent continuation referee",
+        "verdict": "APPROVE",
+        "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+        "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+        "report": "reviews/instance-continuation-referee-a/REPORT.md",
+        "report_sha256": "5242cf0036aa8e536346a81ab319777b2aa693e2ea5e590aed9a0d544b0ed03c",
+        "manifest": "reviews/instance-continuation-referee-a/MANIFEST.json",
+        "manifest_sha256": "88c9ce2b42f84021ba11f3656ef5ac059497b7fe08aa21ac568a5ef1b25a22ad",
+        "new_Lean_or_Comparator_run": false
+      },
+      {
+        "reviewer": "/root/nr04_mf14_final_referee_b",
+        "role": "Independent nonauthor AI-agent continuation referee",
+        "verdict": "APPROVE bounded continuation",
+        "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+        "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+        "report": "reviews/instance-continuation-referee-b/REPORT.md",
+        "report_sha256": "4168dfb04db9c0f374524117cd2e493ccd9191e2763f12336ad373257ab09397",
+        "manifest": "reviews/instance-continuation-referee-b/MANIFEST.json",
+        "manifest_sha256": "a5ca02447528cbce4db5aa6cf2c97d809723c72df35870760616ceda85630743",
+        "new_Lean_or_Comparator_run": false
+      }
     ]
   },
   "github_comparator": {
-    "status": "NOT_RUN for this new package",
-    "run_ids": [],
-    "proof_commit": null
+    "status": "FAILED at initial proof fe4bbee26cc79f06587c803c5c902164c1e02e8e; repaired implementation not yet run",
+    "contract_count": 25,
+    "definition_names": [],
+    "proof_commit": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+    "runs": [
+      {
+        "repository": "sgstepaniants/OpenProblemsInNLA",
+        "run_id": 35431937168,
+        "conclusion": "failure"
+      },
+      {
+        "repository": "ajt60gaibb/OpenProblemsInNLA",
+        "run_id": 35431941636,
+        "conclusion": "failure"
+      }
+    ],
+    "failure": "integer_jacobian_mod3_inverse elaborates extra ZMod field instance in implementation. All Lean builds succeeded; Comparator rejected statement before kernel replay.",
+    "evidence": "verification/linux-failed-fe4bbee-2026-09-19",
+    "independent_report": "reviews/runtime-failed-fe4bbee/REPORT.md"
   },
   "publication": {
-    "status": "NOT_PUBLISHED",
-    "upstream": "ajt60gaibb/OpenProblemsInNLA",
-    "base": "main",
-    "pr_url": null
+    "status": "DRAFT PR305; historical Linux failure preserved; repaired local proof and two continuation reviews pass; repaired-source GitHub verification pending",
+    "target_repository": "ajt60gaibb/OpenProblemsInNLA",
+    "target_branch": "main",
+    "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/305",
+    "related_mathematical_prs": [
+      "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/287",
+      "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/291"
+    ]
   },
   "metadata_packet_lean_runs": 0,
   "metadata_packet_comparator_runs": 0

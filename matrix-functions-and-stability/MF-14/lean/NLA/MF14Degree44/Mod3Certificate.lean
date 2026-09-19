@@ -137,6 +137,9 @@ theorem integerJacobianMod3_eq_checked_table : integerJacobianMod3 = tableJacobi
   rw [integerJacobian_eq_checked_table]
   simp only [tableIntegerJacobian, Int.cast_natCast]
 
+-- Keep this public contract on the frozen commutative-ring instance.
+-- Imports below the proof route also expose a field instance for ZMod 3.
+attribute [-instance] ZMod.instField in
 theorem integer_jacobian_mod3_inverse :
     ∃ B : Matrix (Fin 45) (Fin 45) (ZMod 3), integerJacobianMod3 * B = 1 := by
   refine ⟨tableInverseMod3, ?_⟩

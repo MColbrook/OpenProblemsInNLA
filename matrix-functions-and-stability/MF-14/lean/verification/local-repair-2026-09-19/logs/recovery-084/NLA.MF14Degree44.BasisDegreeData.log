@@ -1,0 +1,5 @@
+NLA/MF14Degree44/BasisDegreeData.lean:61:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'NLA.MF14Degree44.product_span_basis_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.product_span_basis_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]

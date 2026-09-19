@@ -1,0 +1,35 @@
+[
+  {
+    "argv": [
+      "python3",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-runtime-referee-b/audit_failed_runtime.py"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "time_utc": "2026-09-19T08:46:06.808847+00:00",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "564cb0269fb692d4f78fa7406e9bafb6cfa527b192840a783029fa34787687c9"
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-runtime-referee-b/audit_failed_runtime.py"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "time_utc": "2026-09-19T08:46:42.365990+00:00",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "f01d312b50c1b9961fc7f1bb586b67139e5c573ebdc58b05f31318764b42c593"
+  },
+  {
+    "argv": [
+      "python3",
+      "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/reviews/MF14-runtime-referee-b/audit_failed_runtime.py"
+    ],
+    "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA",
+    "time_utc": "2026-09-19T08:47:04.909368+00:00",
+    "exit_code": 0,
+    "stdout_sha256": "18091e7c0812e1c236d14d28f183edab296ab856223a69d989b55cf13b7c7993",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

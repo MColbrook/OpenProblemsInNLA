@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.coefficient_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.coefficient_derivative_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]

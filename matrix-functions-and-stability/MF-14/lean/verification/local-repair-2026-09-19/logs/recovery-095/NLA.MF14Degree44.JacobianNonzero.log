@@ -1,0 +1,2 @@
+'NLA.MF14Degree44.integer_jacobian_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.complex_integer_jacobian_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

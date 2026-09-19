@@ -1,0 +1,1 @@
+'NLA.MF14Degree44.polynomial_density_of_strict_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]

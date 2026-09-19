@@ -1,0 +1,1098 @@
+$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-lean-tools/.verification-tmp/nla-fresh-proof-tunm94k_/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-lean-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-lean-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-lean-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-lean-tools/.verification-tmp lake env /home/runner/work/_temp/nla-lean-tools/.tools/comparator/.lake/build/bin/comparator comparator.json
+Building Challenge
+✔ [2133/2138] Built NLA.MF14.Definitions (1.4s)
+✔ [2134/2138] Built NLA.MF14Degree44.Definitions (1.7s)
+✔ [2135/2138] Built NLA.MF14Degree44.Family (2.2s)
+✔ [2136/2138] Built NLA.MF14Degree44.Degeneration (4.6s)
+⚠ [2137/2138] Built Challenge (1.3s)
+warning: Challenge.lean:18:8: declaration uses `sorry`
+warning: Challenge.lean:23:8: declaration uses `sorry`
+warning: Challenge.lean:28:8: declaration uses `sorry`
+warning: Challenge.lean:34:8: declaration uses `sorry`
+warning: Challenge.lean:39:8: declaration uses `sorry`
+warning: Challenge.lean:47:8: declaration uses `sorry`
+warning: Challenge.lean:52:8: declaration uses `sorry`
+warning: Challenge.lean:58:8: declaration uses `sorry`
+warning: Challenge.lean:63:8: declaration uses `sorry`
+warning: Challenge.lean:72:8: declaration uses `sorry`
+warning: Challenge.lean:80:8: declaration uses `sorry`
+warning: Challenge.lean:86:8: declaration uses `sorry`
+warning: Challenge.lean:91:8: declaration uses `sorry`
+warning: Challenge.lean:97:8: declaration uses `sorry`
+warning: Challenge.lean:102:8: declaration uses `sorry`
+warning: Challenge.lean:108:8: declaration uses `sorry`
+warning: Challenge.lean:113:8: declaration uses `sorry`
+warning: Challenge.lean:119:8: declaration uses `sorry`
+warning: Challenge.lean:124:8: declaration uses `sorry`
+warning: Challenge.lean:131:8: declaration uses `sorry`
+warning: Challenge.lean:135:8: declaration uses `sorry`
+warning: Challenge.lean:142:8: declaration uses `sorry`
+warning: Challenge.lean:148:8: declaration uses `sorry`
+warning: Challenge.lean:153:8: declaration uses `sorry`
+warning: Challenge.lean:157:8: declaration uses `sorry`
+Build completed successfully (2138 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MF14Degree44.canonical_gate_padding, NLA.MF14Degree44.four_prefix_full_coefficients, NLA.MF14Degree44.three_product_tuple, NLA.MF14Degree44.good_border_parameters_eventually, NLA.MF14Degree44.fourth_span_coordinates, NLA.MF14Degree44.fourth_map_smooth, NLA.MF14Degree44.fourth_jacobian_identity, NLA.MF14Degree44.fourth_minor_identity, NLA.MF14Degree44.fourth_product_joint_closure, NLA.MF14Degree44.polynomial_density_of_strict_derivative, NLA.MF14Degree44.degeneration_identity, NLA.MF14Degree44.degeneration_at_zero, NLA.MF14Degree44.degeneration_in_span, NLA.MF14Degree44.monic_border_joint_closure, NLA.MF14Degree44.continuation_actual_output, NLA.MF14Degree44.continuation_degree_bound, NLA.MF14Degree44.continuation_closure_transfer, NLA.MF14Degree44.family_image_mem_closure, NLA.MF14Degree44.family_degree_and_full_vector, NLA.MF14Degree44.coefficient_map_smooth, NLA.MF14Degree44.coefficient_jacobian_identity, NLA.MF14Degree44.integer_jacobian_mod3_inverse, NLA.MF14Degree44.coefficient_derivative_bijective, NLA.MF14Degree44.degree44_coverage, NLA.MF14Degree44.original_equality_false, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [2779/2812] Built LeanCert.Core.Interval (2.6s)
+✔ [2780/2812] Built LeanCert.Core.DerivativeIntervals (3.0s)
+✔ [2781/2819] Built LeanCert.Contrib.Sinc (4.2s)
+✔ [2782/2819] Built LeanCert.Core.Expr (4.8s)
+✔ [2783/2823] Built LeanCert.Core.Dyadic (4.0s)
+✔ [2784/2823] Built LeanCert.Tactic.Verification (4.1s)
+✔ [2785/2823] Built LeanCert.Core.IntervalRat.Basic (7.4s)
+✔ [2786/2824] Built LeanCert.Core.Taylor (7.1s)
+✔ [2787/2824] Built LeanCert.Core.Support (2.0s)
+✔ [2788/2824] Built LeanCert.Tactic.LeanCert.Bridge.Environment (2.2s)
+✔ [2789/2824] Built LeanCert.Core.IntervalRat.LogReduction (4.2s)
+✔ [2790/2824] Built LeanCert.Meta.Numeral (3.3s)
+✔ [2791/2824] Built LeanCert.Engine.Eval.Result (2.3s)
+✔ [2792/2824] Built LeanCert.Tactic.NumericalRefinement (404ms)
+✔ [2793/2824] Built LeanCert.Core.TrigReduction (2.5s)
+✔ [2794/2824] Built LeanCert.Tactic.IntervalAuto.Types (2.0s)
+✔ [2795/2824] Built LeanCert.Core.IntervalRat.Transcendental (3.8s)
+✔ [2796/2829] Built LeanCert.Tactic.IntervalAuto.Extract (2.8s)
+✔ [2850/2931] Built LeanCert.Tactic.IntervalAuto.Norm (4.2s)
+✔ [2852/2932] Built LeanCert.Tactic.VecUtil (3.2s)
+✔ [2853/2935] Built LeanCert.Meta.ToExpr (5.6s)
+✔ [2854/2935] Built LeanCert.Tactic.FinSumExpand (2.7s)
+✔ [2855/2935] Built LeanCert.Tactic.FinsetParse (3.6s)
+✔ [2856/2959] Built LeanCert.Tactic.BridgeNative (1.3s)
+✔ [3516/3598] Built LeanCert.Tactic.LeanCert.Normalize (3.2s)
+✔ [3517/3602] Built LeanCert.Tactic.IntervalAuto.Parse (5.4s)
+✔ [3518/3605] Built LeanCert.Tactic.LeanCert.Semantic.Domain (1.2s)
+✔ [3519/3605] Built LeanCert.Validity.Eventual (2.5s)
+✔ [3520/3605] Built LeanCert.Tactic.LeanCert.Semantic.Goal (1.5s)
+✔ [3521/3605] Built LeanCert.Tactic.VecSimp (1.3s)
+✔ [3522/3609] Built LeanCert.Tactic.IntervalAuto.Diagnostic (2.6s)
+✔ [3523/3610] Built LeanCert.Core.IntervalRat.Taylor (15s)
+✔ [3524/3610] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (1.0s)
+✔ [3525/3610] Built LeanCert.Core.IntervalReal (1.9s)
+✔ [3526/3613] Built LeanCert.Tactic.Extension.Protocol (2.2s)
+✔ [3527/3613] Built LeanCert.Core.IntervalRat.TrigReduced (2.3s)
+✔ [3528/3613] Built LeanCert.Tactic.EventualBound (3.8s)
+✔ [3529/3613] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (2.6s)
+✔ [3530/3613] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (2.9s)
+✔ [3531/3613] Built LeanCert.Engine.Affine.Basic (5.8s)
+✔ [3532/3613] Built LeanCert.Core.IntervalRealEndpoints (4.7s)
+✔ [3533/3613] Built LeanCert.Tactic.Extension.Registry (4.2s)
+✔ [3534/3617] Built LeanCert.Core.IntervalDyadic (6.5s)
+✔ [3535/3618] Built LeanCert.Tactic.LeanCert.Config (1.5s)
+✔ [3537/3626] Built LeanCert.Engine.Affine.Nonlinear (4.3s)
+✔ [3538/3633] Built LeanCert.Core.DyadicCell (4.4s)
+✔ [3539/3633] Built LeanCert.Engine.Algebra.QPoly (4.7s)
+✔ [3540/3634] Built LeanCert.Engine.Eval.Core (6.5s)
+✔ [3541/3634] Built LeanCert.Engine.FloatEval (2.9s)
+✔ [3542/3638] Built LeanCert.Core.DyadicFrontier (2.5s)
+✔ [3544/3638] Built LeanCert.Tactic.Extension.Command (1.0s)
+✔ [3545/3642] Built LeanCert.Engine.Algebra.QPolyIntegral (2.6s)
+✔ [3547/3653] Built NLA.MF14.CircuitFoundations (2.6s)
+✔ [3548/3672] Built LeanCert.Tactic.Extension (2.2s)
+✔ [3552/3674] Built LeanCert.Engine.Eval.Extended (3.3s)
+✔ [3553/3685] Built NLA.MF14Degree44.DegenerationCoefficientData (2.5s)
+ℹ [3559/3685] Built NLA.MF14Degree44.PolynomialMaps (2.4s)
+info: NLA/MF14Degree44/PolynomialMaps.lean:104:0: 'NLA.MF14Degree44.CoefficientPolynomial.mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/PolynomialMaps.lean:106:0: 'NLA.MF14Degree44.decodeQuad_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3560/3700] Built NLA.MF14Degree44.GoodParameters (2.4s)
+info: NLA/MF14Degree44/GoodParameters.lean:49:0: 'NLA.MF14Degree44.good_border_parameters_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3561/3701] Built LeanCert.Engine.Bounds.Lemmas (2.2s)
+✔ [3562/3703] Built LeanCert.Engine.IntervalEval (1.9s)
+✔ [3563/3703] Built NLA.MF14Degree44.Mod3Lists (5.2s)
+✔ [3564/3703] Built LeanCert.Engine.Affine.Transcendental (3.4s)
+✔ [3565/3703] Built LeanCert.Validity.Bounds.Checked (2.1s)
+ℹ [3566/3703] Built NLA.MF14Degree44.ContinuationPolynomialMaps (8.5s)
+info: NLA/MF14Degree44/ContinuationPolynomialMaps.lean:105:0: 'NLA.MF14Degree44.continuation_basis_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ContinuationPolynomialMaps.lean:107:0: 'NLA.MF14Degree44.continuation_polynomial_coefficient_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: NLA/MF14Degree44/ContinuationPolynomialMaps.lean:109:0: 'NLA.MF14Degree44.continuation_map_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3567/3703] Built LeanCert.Validity.Bounds.Core (2.6s)
+✔ [3568/3703] Built LeanCert.Engine.IntervalEvalDyadic (5.2s)
+ℹ [3569/3703] Built NLA.MF14Degree44.DegreeBounds (12s)
+info: NLA/MF14Degree44/DegreeBounds.lean:118:0: 'NLA.MF14Degree44.continuation_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3570/3703] Built LeanCert.Engine.RootFinding.Basic (4.1s)
+✔ [3571/3705] Built LeanCert.Engine.Optimization.Box (2.5s)
+✔ [3572/3705] Built LeanCert.Engine.AD.Basic (2.8s)
+✔ [3573/3705] Built LeanCert.Engine.Integrate (5.5s)
+ℹ [3574/3705] Built NLA.MF14Degree44.Mod3Columns4 (5.6s)
+info: NLA/MF14Degree44/Mod3Columns4.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns4.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_21' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns4.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns4.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_23' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns4.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_24' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3575/3705] Built LeanCert.Engine.TaylorModel.Core (7.5s)
+ℹ [3576/3705] Built NLA.MF14Degree44.Mod3Columns2 (6.8s)
+info: NLA/MF14Degree44/Mod3Columns2.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns2.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns2.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns2.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns2.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3577/3705] Built NLA.MF14Degree44.Mod3Columns3 (7.3s)
+info: NLA/MF14Degree44/Mod3Columns3.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns3.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns3.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_17' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns3.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_18' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns3.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_19' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3578/3705] Built NLA.MF14Degree44.Mod3Columns1 (5.5s)
+info: NLA/MF14Degree44/Mod3Columns1.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns1.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns1.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns1.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns1.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3579/3705] Built NLA.MF14Degree44.Mod3Columns0 (5.0s)
+info: NLA/MF14Degree44/Mod3Columns0.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns0.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns0.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns0.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns0.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3580/3705] Built LeanCert.Engine.FinSumDyadic (3.8s)
+✔ [3581/3705] Built LeanCert.Validity.DyadicBounds (2.0s)
+✔ [3582/3705] Built LeanCert.Engine.IntervalEvalAffine (4.4s)
+ℹ [3583/3706] Built NLA.MF14Degree44.FamilyDegreeBounds (3.0s)
+info: NLA/MF14Degree44/FamilyDegreeBounds.lean:40:0: 'NLA.MF14Degree44.family_degree_and_full_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3584/3707] Built LeanCert.Engine.Search.Heuristic (2.3s)
+✔ [3585/3707] Built LeanCert.Engine.RootFinding.Bisection (3.6s)
+ℹ [3586/3707] Built NLA.MF14Degree44.Mod3Columns6 (3.6s)
+info: NLA/MF14Degree44/Mod3Columns6.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_30' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns6.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_31' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns6.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_32' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns6.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns6.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_34' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3587/3707] Built NLA.MF14Degree44.Mod3Columns5 (4.4s)
+info: NLA/MF14Degree44/Mod3Columns5.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_25' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns5.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_26' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns5.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_27' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns5.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns5.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_29' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3588/3707] Built LeanCert.Engine.AD.Transcendental (3.5s)
+✔ [3589/3707] Built LeanCert.Engine.TaylorModel.Integral (2.8s)
+✔ [3590/3707] Built LeanCert.Engine.TaylorModel.Special (2.2s)
+✔ [3591/3707] Built LeanCert.Engine.WitnessSum (4.8s)
+✔ [3592/3707] Built LeanCert.Engine.TaylorModel.ExpLog (7.1s)
+✔ [3593/3707] Built LeanCert.Engine.TaylorModel.Trig (8.9s)
+✔ [3594/3708] Built LeanCert.Engine.Affine.Environment (4.1s)
+✔ [3595/3709] Built LeanCert.Engine.TaylorModel.Hyperbolic (10s)
+ℹ [3596/3709] Built NLA.MF14Degree44.CoverageBridge (2.9s)
+info: NLA/MF14Degree44/CoverageBridge.lean:67:0: 'NLA.MF14Degree44.degree_plane44_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CoverageBridge.lean:69:0: 'NLA.MF14Degree44.embed44_polynomial_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CoverageBridge.lean:71:0: 'NLA.MF14Degree44.degree44_coverage_of_density_and_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CoverageBridge.lean:73:0: 'NLA.MF14Degree44.original_equality_false_of_coverage44' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3597/3710] Built LeanCert.Engine.AD.Eval (2.0s)
+⚠ [3598/3710] Built NLA.MF14Degree44.Mod3Columns7 (3.6s)
+info: NLA/MF14Degree44/Mod3Columns7.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/Mod3Columns7.lean:45:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns7.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_36' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/Mod3Columns7.lean:65:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns7.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_37' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/Mod3Columns7.lean:85:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns7.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_38' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns7.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_39' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3599/3711] Built NLA.MF14Degree44.Mod3Columns8 (3.8s)
+warning: NLA/MF14Degree44/Mod3Columns8.lean:25:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns8.lean:27:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_40' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/Mod3Columns8.lean:45:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns8.lean:47:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/Mod3Columns8.lean:65:13: This simp argument is unused:
+  coeff_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF14Degree44/Mod3Columns8.lean:67:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_42' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns8.lean:87:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Columns8.lean:107:0: 'NLA.MF14Degree44.Mod3Certificate.column_table_match_44' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3600/3711] Built LeanCert.Engine.TaylorModel.Functions (1.9s)
+✔ [3601/3712] Built LeanCert.Engine.AD.Correctness (2.9s)
+ℹ [3602/3713] Built NLA.MF14Degree44.Mod3Rows0 (15s)
+info: NLA/MF14Degree44/Mod3Rows0.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_0' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows0.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_1' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows0.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_2' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows0.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_3' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows0.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_4' depends on axioms: [propext]
+ℹ [3603/3713] Built NLA.MF14Degree44.Mod3Rows1 (16s)
+info: NLA/MF14Degree44/Mod3Rows1.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_5' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows1.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_6' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows1.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_7' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows1.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_8' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows1.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_9' depends on axioms: [propext]
+✔ [3604/3713] Built LeanCert.Engine.TaylorModel.Expr (4.0s)
+ℹ [3605/3713] Built NLA.MF14Degree44.Mod3Rows2 (16s)
+info: NLA/MF14Degree44/Mod3Rows2.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_10' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows2.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_11' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows2.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_12' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows2.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_13' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows2.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_14' depends on axioms: [propext]
+✔ [3606/3714] Built LeanCert.Engine.AD.Computable (3.1s)
+ℹ [3607/3715] Built NLA.MF14Degree44.Mod3Rows3 (17s)
+info: NLA/MF14Degree44/Mod3Rows3.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_15' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows3.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_16' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows3.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_17' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows3.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_18' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows3.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_19' depends on axioms: [propext]
+✔ [3608/3715] Built LeanCert.Engine.AD.PartialCorrectness (4.8s)
+✔ [3609/3715] Built LeanCert.Engine.TaylorModel (1.9s)
+✔ [3610/3716] Built LeanCert.Engine.AD.DomainChecked (2.9s)
+ℹ [3611/3717] Built NLA.MF14Degree44.Mod3Rows4 (15s)
+info: NLA/MF14Degree44/Mod3Rows4.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_20' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows4.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_21' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows4.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_22' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows4.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_23' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows4.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_24' depends on axioms: [propext]
+ℹ [3613/3723] Built NLA.MF14Degree44.Mod3Rows5 (15s)
+info: NLA/MF14Degree44/Mod3Rows5.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_25' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows5.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_26' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows5.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_27' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows5.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_28' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows5.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_29' depends on axioms: [propext]
+✔ [3614/3723] Built LeanCert.Engine.AD.Dyadic (3.5s)
+ℹ [3615/3723] Built NLA.MF14Degree44.Mod3Rows6 (16s)
+info: NLA/MF14Degree44/Mod3Rows6.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_30' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows6.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_31' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows6.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_32' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows6.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_33' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows6.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_34' depends on axioms: [propext]
+ℹ [3616/3723] Built NLA.MF14Degree44.Mod3CastBridge (2.5s)
+info: NLA/MF14Degree44/Mod3CastBridge.lean:26:0: 'NLA.MF14Degree44.Mod3Certificate.product_entry_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3CastBridge.lean:28:0: 'NLA.MF14Degree44.Mod3Certificate.matrix_entry_of_natural_residue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3617/3723] Built LeanCert.Engine.AD (1.7s)
+ℹ [3618/3723] Built NLA.MF14Degree44.Mod3Rows7 (16s)
+info: NLA/MF14Degree44/Mod3Rows7.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_35' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows7.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_36' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows7.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_37' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows7.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_38' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows7.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_39' depends on axioms: [propext]
+✔ [3619/3723] Built LeanCert.Validity.Bounds.Smart (2.5s)
+✔ [3620/3723] Built LeanCert.Meta.ProveSupported (2.9s)
+✔ [3621/3723] Built LeanCert.Engine.IntervalEvalRefined (3.6s)
+✔ [3622/3723] Built LeanCert.Validity.Bounds.Bridge (2.5s)
+✔ [3623/3723] Built LeanCert.Engine.Optimize (4.8s)
+✔ [3624/3723] Built LeanCert.Meta.ProveContinuous (3.7s)
+✔ [3625/3723] Built LeanCert.Validity.Bounds.Basic (2.3s)
+✔ [3626/3723] Built LeanCert.Tactic.IntervalAuto.ProveCommon (4.3s)
+ℹ [3627/3723] Built NLA.MF14Degree44.Mod3Rows8 (16s)
+info: NLA/MF14Degree44/Mod3Rows8.lean:16:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_40' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows8.lean:25:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_41' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows8.lean:34:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_42' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows8.lean:43:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_43' depends on axioms: [propext]
+info: NLA/MF14Degree44/Mod3Rows8.lean:52:0: 'NLA.MF14Degree44.Mod3Certificate.natural_inverse_row_44' depends on axioms: [propext]
+✔ [3628/3723] Built LeanCert.Engine.Optimization.Gradient (4.7s)
+✔ [3629/3723] Built LeanCert.Engine.RootFinding.Newton (3.8s)
+✔ [3630/3723] Built LeanCert.Tactic.IntervalAuto.Basic (2.6s)
+✔ [3631/3723] Built LeanCert.Validity.Integration (4.6s)
+✔ [3632/3723] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (2.0s)
+ℹ [3633/3723] Built NLA.MF14Degree44.Mod3Certificate (3.3s)
+info: NLA/MF14Degree44/Mod3Certificate.lean:146:0: 'NLA.MF14Degree44.integerJacobian_eq_checked_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Certificate.lean:148:0: 'NLA.MF14Degree44.mod3_checked_table_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Certificate.lean:150:0: 'NLA.MF14Degree44.integerJacobianMod3_eq_checked_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/Mod3Certificate.lean:152:0: 'NLA.MF14Degree44.integer_jacobian_mod3_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3634/3723] Built LeanCert.Engine.RootFinding.Krawczyk (6.4s)
+✔ [3635/3723] Built LeanCert.Engine.RootFinding.MVTBounds (7.6s)
+✔ [3636/3723] Built LeanCert.Tactic.LeanCert.Integral (8.9s)
+✔ [3637/3723] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (4.7s)
+ℹ [3638/3723] Built NLA.MF14Degree44.JacobianNonzero (4.1s)
+info: NLA/MF14Degree44/JacobianNonzero.lean:39:0: 'NLA.MF14Degree44.integer_jacobian_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/JacobianNonzero.lean:41:0: 'NLA.MF14Degree44.complex_integer_jacobian_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3639/3723] Built LeanCert.Validity.Krawczyk (2.3s)
+✔ [3640/3723] Built LeanCert.Engine.RootFinding.KrawczykCandidate (2.9s)
+✔ [3641/3723] Built LeanCert.Engine.RootFinding.Contraction (4.3s)
+✔ [3642/3723] Built LeanCert.Engine.Optimization.Global (18s)
+✔ [3643/3723] Built LeanCert.Tactic.LeanCert.Solver.Protocol (4.5s)
+✔ [3644/3723] Built LeanCert.Engine.RootFinding.Main (2.5s)
+✔ [3645/3723] Built LeanCert.Tactic.Extension.Execute (6.0s)
+✔ [3646/3723] Built LeanCert.Validity.Types (2.6s)
+✔ [3647/3723] Built LeanCert.Engine.Optimization.Guided (2.4s)
+✔ [3648/3723] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (2.9s)
+✔ [3649/3723] Built LeanCert.Engine.Search.CounterExample (2.3s)
+✔ [3650/3723] Built LeanCert.Engine.Optimization.BoundVerify (2.5s)
+✔ [3651/3723] Built LeanCert.Tactic.Enclosure (2.5s)
+✔ [3652/3723] Built LeanCert.Validity.Bounds (4.0s)
+✔ [3653/3723] Built LeanCert.Discovery.Find (2.8s)
+✔ [3654/3723] Built LeanCert.Tactic.IntervalAuto.OptBound (3.1s)
+✔ [3655/3723] Built LeanCert.Tactic.IntervalAuto.Multivariate (4.6s)
+✔ [3656/3723] Built LeanCert.Tactic.IntervalAuto.RootBound (2.5s)
+✔ [3657/3723] Built LeanCert.Tactic.IntervalAuto.Bound (10s)
+✔ [3658/3723] Built LeanCert.Tactic.IntervalAuto.Subdiv (3.0s)
+✔ [3659/3723] Built LeanCert.Tactic.IntervalAuto.Adaptive (4.4s)
+✔ [3660/3723] Built LeanCert.Tactic.IntervalAuto.PointIneq (6.2s)
+✔ [3661/3723] Built LeanCert.Tactic.IntervalAuto (1.6s)
+✔ [3662/3723] Built LeanCert.Tactic.Refute (2.2s)
+✔ [3663/3723] Built LeanCert.Tactic.FinSumWitness (3.8s)
+✔ [3664/3723] Built LeanCert.Tactic.FinSumBound (2.9s)
+✔ [3665/3723] Built LeanCert.Tactic.LeanCert.Semantic.Parse (2.2s)
+✔ [3666/3723] Built LeanCert.Tactic.Discovery (9.1s)
+✔ [3667/3723] Built LeanCert.Tactic.Krawczyk (2.3s)
+✔ [3668/3723] Built LeanCert.Tactic.LeanCert.Router (5.2s)
+✔ [3669/3723] Built LeanCert.Tactic.LeanCert (1.8s)
+✔ [3670/3723] Built LeanCert.Tactic (1.8s)
+ℹ [3671/3723] Built NLA.MF14Degree44.SyzygyFactors (2.8s)
+info: NLA/MF14Degree44/SyzygyFactors.lean:25:0: 'NLA.MF14Degree44.syzygy_third_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SyzygyFactors.lean:27:0: 'NLA.MF14Degree44.syzygy_fourth_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3672/3723] Built NLA.MF14Degree44.SyzygyMiddle7 (3.1s)
+info: NLA/MF14Degree44/SyzygyMiddle7.lean:20:0: 'NLA.MF14Degree44.syzygy_middle7_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3673/3723] Built NLA.MF14Degree44.SyzygyMiddle10 (3.1s)
+info: NLA/MF14Degree44/SyzygyMiddle10.lean:20:0: 'NLA.MF14Degree44.syzygy_middle10_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3674/3723] Built NLA.MF14Degree44.SyzygyExpansion (3.7s)
+warning: NLA/MF14Degree44/SyzygyExpansion.lean:25:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SyzygyExpansion.lean:27:0: 'NLA.MF14Degree44.syzygy_polynomial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3675/3723] Built NLA.MF14Degree44.SyzygyMiddle9 (3.1s)
+info: NLA/MF14Degree44/SyzygyMiddle9.lean:20:0: 'NLA.MF14Degree44.syzygy_middle9_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3676/3723] Built NLA.MF14Degree44.SyzygyLowPart (2.8s)
+info: NLA/MF14Degree44/SyzygyLowPart.lean:58:0: 'NLA.MF14Degree44.lowPart6_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SyzygyLowPart.lean:60:0: 'NLA.MF14Degree44.syzygy_low_part_high_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SyzygyLowPart.lean:62:0: 'NLA.MF14Degree44.scaled_degenerationZ_low_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3677/3723] Built NLA.MF14Degree44.SyzygyMiddle8 (3.1s)
+info: NLA/MF14Degree44/SyzygyMiddle8.lean:20:0: 'NLA.MF14Degree44.syzygy_middle8_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3678/3723] Built NLA.MF14Degree44.DegenerationAtZero (3.1s)
+warning: NLA/MF14Degree44/DegenerationAtZero.lean:21:97: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/DegenerationAtZero.lean:23:0: 'NLA.MF14Degree44.degeneration_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3679/3723] Built NLA.MF14Degree44.PolynomialDensity (3.0s)
+info: NLA/MF14Degree44/PolynomialDensity.lean:47:0: 'NLA.MF14Degree44.polynomial_density_of_strict_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3680/3723] Built NLA.MF14Degree44.CoefficientSmooth (3.2s)
+✔ [3681/3723] Built NLA.MF14Degree44.FirstDerivatives (3.4s)
+ℹ [3682/3723] Built NLA.MF14Degree44.ThirdProductFactorization (3.4s)
+info: NLA/MF14Degree44/ThirdProductFactorization.lean:24:0: 'NLA.MF14Degree44.third_product_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3683/3723] Built NLA.MF14Degree44.CircuitPrefix (2.9s)
+info: NLA/MF14Degree44/CircuitPrefix.lean:78:0: 'NLA.MF14Degree44.canonical_gate_padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitPrefix.lean:80:0: 'NLA.MF14Degree44.prefix_gate_natDegree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitPrefix.lean:82:0: 'NLA.MF14Degree44.prefix_available_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitPrefix.lean:84:0: 'NLA.MF14Degree44.four_prefix_full_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3684/3723] Built NLA.MF14Degree44.DegenerationIdentity (3.6s)
+warning: NLA/MF14Degree44/DegenerationIdentity.lean:26:51: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [syzygyHighPartFor, syzygy_third_factor, syzygy_fourth_factor, syzygyR5, syzygyR6, degenerationZ,
+    map_add, map_mul, map_pow, map_ofNat, map_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/DegenerationIdentity.lean:26:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/DegenerationIdentity.lean:55:0: 'NLA.MF14Degree44.degeneration_high_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/DegenerationIdentity.lean:57:0: 'NLA.MF14Degree44.degeneration_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/DegenerationIdentity.lean:59:0: 'NLA.MF14Degree44.degeneration_low_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/DegenerationIdentity.lean:61:0: 'NLA.MF14Degree44.degeneration_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3685/3723] Built NLA.MF14Degree44.JacobianEquivalence (3.0s)
+info: NLA/MF14Degree44/JacobianEquivalence.lean:74:0: 'NLA.MF14Degree44.jacobianAt_eq_toMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/JacobianEquivalence.lean:76:0: 'NLA.MF14Degree44.jacobianAt_det_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/JacobianEquivalence.lean:78:0: 'NLA.MF14Degree44.derivative_equivalence_of_jacobian_det_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: NLA/MF14Degree44/JacobianEquivalence.lean:80:0: 'NLA.MF14Degree44.derivative_bijective_of_jacobian_det_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: NLA/MF14Degree44/JacobianEquivalence.lean:82:0: 'NLA.MF14Degree44.polynomial_density_of_smooth_jacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3686/3723] Built NLA.MF14Degree44.FourthDeterminantBlocks (4.5s)
+warning: NLA/MF14Degree44/FourthDeterminantBlocks.lean:50:6: Unused tactic linter: `norm_num` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthDeterminantBlocks.lean:50:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthDeterminantBlocks.lean:51:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/FourthDeterminantBlocks.lean:53:0: 'NLA.MF14Degree44.det_fin_add_of_lower_left_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthDeterminantBlocks.lean:55:0: 'NLA.MF14Degree44.fourth_core_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3687/3723] Built NLA.MF14Degree44.FourthSmooth (3.7s)
+info: NLA/MF14Degree44/FourthSmooth.lean:38:0: 'NLA.MF14Degree44.fourth_polynomial_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthSmooth.lean:40:0: 'NLA.MF14Degree44.fourth_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3688/3723] Built NLA.MF14Degree44.FourthJacobian (7.2s)
+info: NLA/MF14Degree44/FourthJacobian.lean:81:0: 'NLA.MF14Degree44.fourth_first_jet_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthJacobian.lean:83:0: 'NLA.MF14Degree44.fourth_first_jet_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthJacobian.lean:85:0: 'NLA.MF14Degree44.fourth_first_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthJacobian.lean:87:0: 'NLA.MF14Degree44.fourth_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3689/3723] Built NLA.MF14Degree44.CircuitSpanOperations (3.1s)
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:86:0: 'NLA.MF14Degree44.available_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:88:0: 'NLA.MF14Degree44.available_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:90:0: 'NLA.MF14Degree44.available_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:92:0: 'NLA.MF14Degree44.polynomial_C_mul_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:94:0: 'NLA.MF14Degree44.linearCombination_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/CircuitSpanOperations.lean:96:0: 'NLA.MF14Degree44.append_product_to_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3690/3723] Built NLA.MF14Degree44.FamilySmooth (11s)
+info: NLA/MF14Degree44/FamilySmooth.lean:133:0: 'NLA.MF14Degree44.continuation_basis_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FamilySmooth.lean:135:0: 'NLA.MF14Degree44.continuation_polynomial_coefficients_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: NLA/MF14Degree44/FamilySmooth.lean:137:0: 'NLA.MF14Degree44.family_quad_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FamilySmooth.lean:139:0: 'NLA.MF14Degree44.family_polynomial_coefficients_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FamilySmooth.lean:141:0: 'NLA.MF14Degree44.coefficient_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3691/3723] Built NLA.MF14Degree44.FourthMinorCoefficients (5.5s)
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:21:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:25:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:30:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:36:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:45:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:99:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:123:45: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:148:45: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:173:45: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:198:45: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:223:45: This simp argument is unused:
+  coeff_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coeff_add, coeff_C_mul_X_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:120:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:125:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:130:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:135:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:140:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:145:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:150:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:155:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:160:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:165:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:170:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:175:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:180:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:185:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:190:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:195:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:200:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:205:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:210:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:215:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:220:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:225:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:230:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:235:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:240:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:120:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:125:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:130:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:135:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:140:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:145:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:150:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:155:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:160:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:165:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:170:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:175:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:180:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:185:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:190:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:195:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:200:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:205:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:210:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:215:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:220:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:225:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:230:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:235:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:240:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:119:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:124:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:129:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:134:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:139:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:144:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:149:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:154:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:159:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:164:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:169:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:174:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:179:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:184:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:189:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:194:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:199:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:204:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:209:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:214:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:219:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:224:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:229:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:234:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorCoefficients.lean:239:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/FourthMinorCoefficients.lean:242:0: 'NLA.MF14Degree44.fourth_R_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorCoefficients.lean:244:0: 'NLA.MF14Degree44.fourth_middle_column_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorCoefficients.lean:246:0: 'NLA.MF14Degree44.fourth_tail_column_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorCoefficients.lean:248:0: 'NLA.MF14Degree44.fourth_tail_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorCoefficients.lean:250:0: 'NLA.MF14Degree44.fourth_core_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3692/3723] Built NLA.MF14Degree44.ProductSpan (6.3s)
+info: NLA/MF14Degree44/ProductSpan.lean:61:0: 'NLA.MF14Degree44.product_span_basis_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ProductSpan.lean:63:0: 'NLA.MF14Degree44.product_span_monomial_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ProductSpan.lean:65:0: 'NLA.MF14Degree44.syzygy_basis_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ProductSpan.lean:67:0: 'NLA.MF14Degree44.degeneration_E_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ProductSpan.lean:69:0: 'NLA.MF14Degree44.low_part6_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/ProductSpan.lean:71:0: 'NLA.MF14Degree44.degeneration_in_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3693/3723] Built NLA.MF14Degree44.ThreeProductTuple (3.1s)
+info: NLA/MF14Degree44/ThreeProductTuple.lean:85:0: 'NLA.MF14Degree44.three_product_tuple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3694/3723] Built NLA.MF14Degree44.FamilyFirstJet (17s)
+info: NLA/MF14Degree44/FamilyFirstJet.lean:202:0: 'NLA.MF14Degree44.family_first_jet_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FamilyFirstJet.lean:204:0: 'NLA.MF14Degree44.family_first_jet_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FamilyFirstJet.lean:206:0: 'NLA.MF14Degree44.coefficient_jacobian_eq_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3695/3723] Built NLA.MF14Degree44.SpanCoordinates (2.9s)
+info: NLA/MF14Degree44/SpanCoordinates.lean:67:0: 'NLA.MF14Degree44.span_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SpanCoordinates.lean:69:0: 'NLA.MF14Degree44.basis_coefficient_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SpanCoordinates.lean:71:0: 'NLA.MF14Degree44.coefficient_span_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3696/3723] Built NLA.MF14Degree44.FourthMinorBlocks (3.4s)
+warning: NLA/MF14Degree44/FourthMinorBlocks.lean:57:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/FourthMinorBlocks.lean:66:28: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/FourthMinorBlocks.lean:68:0: 'NLA.MF14Degree44.fourth_first_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorBlocks.lean:70:0: 'NLA.MF14Degree44.fourth_first_lower_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorBlocks.lean:72:0: 'NLA.MF14Degree44.fourth_middle_lower_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorBlocks.lean:74:0: 'NLA.MF14Degree44.fourth_tail_upper_triangular' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthMinorBlocks.lean:76:0: 'NLA.MF14Degree44.fourth_tail_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3697/3723] Built NLA.MF14Degree44.BasisDegreeData (3.5s)
+warning: NLA/MF14Degree44/BasisDegreeData.lean:61:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: NLA/MF14Degree44/BasisDegreeData.lean:71:0: 'NLA.MF14Degree44.product_span_basis_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/BasisDegreeData.lean:73:0: 'NLA.MF14Degree44.product_span_basis_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3698/3723] Built NLA.MF14Degree44.MonicBorderPath (3.8s)
+info: NLA/MF14Degree44/MonicBorderPath.lean:92:0: 'NLA.MF14Degree44.monic_border_path_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/MonicBorderPath.lean:94:0: 'NLA.MF14Degree44.monic_border_path_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/MonicBorderPath.lean:96:0: 'NLA.MF14Degree44.moving_border_path_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3699/3723] Built NLA.MF14Degree44.ContinuationCircuit (10s)
+info: NLA/MF14Degree44/ContinuationCircuit.lean:123:0: 'NLA.MF14Degree44.continuation_actual_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3700/3723] Built NLA.MF14Degree44.FourthSpanMembership (3.9s)
+info: NLA/MF14Degree44/FourthSpanMembership.lean:145:0: 'NLA.MF14Degree44.third_input_basis_products_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthSpanMembership.lean:147:0: 'NLA.MF14Degree44.third_input_span_product_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthSpanMembership.lean:149:0: 'NLA.MF14Degree44.fourth_polynomial_operands' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthSpanMembership.lean:151:0: 'NLA.MF14Degree44.fourth_polynomial_mem_product_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3701/3723] Built NLA.MF14Degree44.SeedFirstColumns8 (17s)
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:25:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:25:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns8.lean:27:0: 'NLA.MF14Degree44.seed_first_column_40' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:37:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:37:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns8.lean:39:0: 'NLA.MF14Degree44.seed_first_column_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns8.lean:51:0: 'NLA.MF14Degree44.seed_first_column_42' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns8.lean:63:0: 'NLA.MF14Degree44.seed_first_column_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns8.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns8.lean:75:0: 'NLA.MF14Degree44.seed_first_column_44' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3702/3723] Built NLA.MF14Degree44.SeedFirstColumns7 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns7.lean:27:0: 'NLA.MF14Degree44.seed_first_column_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:37:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:37:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns7.lean:39:0: 'NLA.MF14Degree44.seed_first_column_36' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:49:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:49:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns7.lean:51:0: 'NLA.MF14Degree44.seed_first_column_37' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:61:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:61:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns7.lean:63:0: 'NLA.MF14Degree44.seed_first_column_38' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:73:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns7.lean:73:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF14Degree44/SeedFirstColumns7.lean:75:0: 'NLA.MF14Degree44.seed_first_column_39' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3703/3723] Built NLA.MF14Degree44.SeedFirstColumns6 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:25:15: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:25:15: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:27:0: 'NLA.MF14Degree44.seed_first_column_30' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:37:15: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:37:15: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:39:0: 'NLA.MF14Degree44.seed_first_column_31' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:49:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:49:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:51:0: 'NLA.MF14Degree44.seed_first_column_32' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:61:15: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:61:15: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:63:0: 'NLA.MF14Degree44.seed_first_column_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:73:15: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:73:15: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF14Degree44/SeedFirstColumns6.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns6.lean:75:0: 'NLA.MF14Degree44.seed_first_column_34' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3704/3723] Built NLA.MF14Degree44.SeedFirstColumns5 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns5.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns5.lean:27:0: 'NLA.MF14Degree44.seed_first_column_25' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns5.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns5.lean:39:0: 'NLA.MF14Degree44.seed_first_column_26' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns5.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns5.lean:51:0: 'NLA.MF14Degree44.seed_first_column_27' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns5.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns5.lean:63:0: 'NLA.MF14Degree44.seed_first_column_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns5.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns5.lean:75:0: 'NLA.MF14Degree44.seed_first_column_29' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3705/3723] Built NLA.MF14Degree44.SeedFirstColumns4 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns4.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns4.lean:27:0: 'NLA.MF14Degree44.seed_first_column_20' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns4.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns4.lean:39:0: 'NLA.MF14Degree44.seed_first_column_21' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns4.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns4.lean:51:0: 'NLA.MF14Degree44.seed_first_column_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns4.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns4.lean:63:0: 'NLA.MF14Degree44.seed_first_column_23' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns4.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns4.lean:75:0: 'NLA.MF14Degree44.seed_first_column_24' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3706/3723] Built NLA.MF14Degree44.SeedFirstColumns3 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns3.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns3.lean:27:0: 'NLA.MF14Degree44.seed_first_column_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns3.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns3.lean:39:0: 'NLA.MF14Degree44.seed_first_column_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns3.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns3.lean:51:0: 'NLA.MF14Degree44.seed_first_column_17' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns3.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns3.lean:63:0: 'NLA.MF14Degree44.seed_first_column_18' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns3.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns3.lean:75:0: 'NLA.MF14Degree44.seed_first_column_19' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3707/3723] Built NLA.MF14Degree44.SeedFirstColumns2 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns2.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns2.lean:27:0: 'NLA.MF14Degree44.seed_first_column_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns2.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns2.lean:39:0: 'NLA.MF14Degree44.seed_first_column_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns2.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns2.lean:51:0: 'NLA.MF14Degree44.seed_first_column_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns2.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns2.lean:63:0: 'NLA.MF14Degree44.seed_first_column_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns2.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns2.lean:75:0: 'NLA.MF14Degree44.seed_first_column_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3708/3723] Built NLA.MF14Degree44.SeedFirstColumns1 (18s)
+warning: NLA/MF14Degree44/SeedFirstColumns1.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns1.lean:27:0: 'NLA.MF14Degree44.seed_first_column_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns1.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns1.lean:39:0: 'NLA.MF14Degree44.seed_first_column_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns1.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns1.lean:51:0: 'NLA.MF14Degree44.seed_first_column_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns1.lean:61:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns1.lean:63:0: 'NLA.MF14Degree44.seed_first_column_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns1.lean:73:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns1.lean:75:0: 'NLA.MF14Degree44.seed_first_column_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3709/3723] Built NLA.MF14Degree44.SpanReconstruction (2.8s)
+info: NLA/MF14Degree44/SpanReconstruction.lean:41:0: 'NLA.MF14Degree44.span_reconstruct_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SpanReconstruction.lean:43:0: 'NLA.MF14Degree44.span_reconstruct_coefficient_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3710/3723] Built NLA.MF14Degree44.FourthMinorIdentity (2.9s)
+info: NLA/MF14Degree44/FourthMinorIdentity.lean:31:0: 'NLA.MF14Degree44.fourth_minor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3711/3723] Built NLA.MF14Degree44.ContinuationClosure (2.0s)
+info: NLA/MF14Degree44/ContinuationClosure.lean:47:0: 'NLA.MF14Degree44.continuation_closure_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3712/3723] Built NLA.MF14Degree44.BorderPathContinuity (3.5s)
+info: NLA/MF14Degree44/BorderPathContinuity.lean:107:0: 'NLA.MF14Degree44.CoefficientsContinuous.mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/BorderPathContinuity.lean:109:0: 'NLA.MF14Degree44.degenerationZ_coefficients_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/BorderPathContinuity.lean:111:0: 'NLA.MF14Degree44.monic_border_path_coefficients_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/BorderPathContinuity.lean:113:0: 'NLA.MF14Degree44.moving_border_path_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3713/3723] Built NLA.MF14Degree44.SeedFirstPilot (8.8s)
+warning: NLA/MF14Degree44/SeedFirstPilot.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstPilot.lean:27:0: 'NLA.MF14Degree44.seed_first_column_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstPilot.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstPilot.lean:39:0: 'NLA.MF14Degree44.seed_first_column_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3714/3723] Built NLA.MF14Degree44.SeedFirstColumns0 (11s)
+warning: NLA/MF14Degree44/SeedFirstColumns0.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns0.lean:27:0: 'NLA.MF14Degree44.seed_first_column_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns0.lean:37:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns0.lean:39:0: 'NLA.MF14Degree44.seed_first_column_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: NLA/MF14Degree44/SeedFirstColumns0.lean:49:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SeedFirstColumns0.lean:51:0: 'NLA.MF14Degree44.seed_first_column_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3715/3723] Built NLA.MF14Degree44.SpanBasisCoordinates (2.8s)
+warning: NLA/MF14Degree44/SpanBasisCoordinates.lean:32:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF14Degree44/SpanBasisCoordinates.lean:45:0: 'NLA.MF14Degree44.fourth_rows_strictMono' depends on axioms: [propext]
+info: NLA/MF14Degree44/SpanBasisCoordinates.lean:47:0: 'NLA.MF14Degree44.product_basis_matrix_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SpanBasisCoordinates.lean:49:0: 'NLA.MF14Degree44.product_basis_matrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/SpanBasisCoordinates.lean:51:0: 'NLA.MF14Degree44.fourth_span_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3716/3723] Built NLA.MF14Degree44.FourthActualCircuit (2.0s)
+info: NLA/MF14Degree44/FourthActualCircuit.lean:36:0: 'NLA.MF14Degree44.fourth_actual_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3717/3723] Built NLA.MF14Degree44.BorderLimit (2.9s)
+warning: NLA/MF14Degree44/BorderLimit.lean:23:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+info: NLA/MF14Degree44/BorderLimit.lean:58:0: 'NLA.MF14Degree44.joint_four_closure_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/BorderLimit.lean:60:0: 'NLA.MF14Degree44.monic_border_joint_closure_of_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3718/3723] Built NLA.MF14Degree44.SeedFirstColumns (2.3s)
+info: NLA/MF14Degree44/SeedFirstColumns.lean:68:0: 'NLA.MF14Degree44.seed_first_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3719/3723] Built NLA.MF14Degree44.FourthJointClosure (2.2s)
+info: NLA/MF14Degree44/FourthJointClosure.lean:87:0: 'NLA.MF14Degree44.reconstructed_moving_coordinate_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FourthJointClosure.lean:89:0: 'NLA.MF14Degree44.fourth_product_joint_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3720/3723] Built NLA.MF14Degree44.JacobianIdentity (1.0s)
+info: NLA/MF14Degree44/JacobianIdentity.lean:36:0: 'NLA.MF14Degree44.coefficient_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/JacobianIdentity.lean:38:0: 'NLA.MF14Degree44.coefficient_derivative_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3721/3723] Built NLA.MF14Degree44.FinalClosure (1.9s)
+info: NLA/MF14Degree44/FinalClosure.lean:70:0: 'NLA.MF14Degree44.quad_reconstruction_of_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FinalClosure.lean:72:0: 'NLA.MF14Degree44.border_quad_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FinalClosure.lean:74:0: 'NLA.MF14Degree44.monic_border_joint_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FinalClosure.lean:76:0: 'NLA.MF14Degree44.family_image_mem_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FinalClosure.lean:78:0: 'NLA.MF14Degree44.degree44_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF14Degree44/FinalClosure.lean:80:0: 'NLA.MF14Degree44.original_equality_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3722/3723] Built Solution (1.8s)
+info: Solution.lean:12:0: 'NLA.MF14Degree44.canonical_gate_padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:15:0: 'NLA.MF14Degree44.four_prefix_full_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:18:0: 'NLA.MF14Degree44.three_product_tuple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:21:0: 'NLA.MF14Degree44.good_border_parameters_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:24:0: 'NLA.MF14Degree44.fourth_span_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:27:0: 'NLA.MF14Degree44.fourth_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:30:0: 'NLA.MF14Degree44.fourth_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:33:0: 'NLA.MF14Degree44.fourth_minor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:36:0: 'NLA.MF14Degree44.fourth_product_joint_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:39:0: 'NLA.MF14Degree44.polynomial_density_of_strict_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:42:0: 'NLA.MF14Degree44.degeneration_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:45:0: 'NLA.MF14Degree44.degeneration_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:48:0: 'NLA.MF14Degree44.degeneration_in_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:51:0: 'NLA.MF14Degree44.monic_border_joint_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:54:0: 'NLA.MF14Degree44.continuation_actual_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:57:0: 'NLA.MF14Degree44.continuation_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:60:0: 'NLA.MF14Degree44.continuation_closure_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:63:0: 'NLA.MF14Degree44.family_image_mem_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:66:0: 'NLA.MF14Degree44.family_degree_and_full_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:69:0: 'NLA.MF14Degree44.coefficient_map_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:72:0: 'NLA.MF14Degree44.coefficient_jacobian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:75:0: 'NLA.MF14Degree44.integer_jacobian_mod3_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:78:0: 'NLA.MF14Degree44.coefficient_derivative_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:81:0: 'NLA.MF14Degree44.degree44_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:84:0: 'NLA.MF14Degree44.original_equality_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3723 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MF14Degree44.canonical_gate_padding, NLA.MF14Degree44.four_prefix_full_coefficients, NLA.MF14Degree44.three_product_tuple, NLA.MF14Degree44.good_border_parameters_eventually, NLA.MF14Degree44.fourth_span_coordinates, NLA.MF14Degree44.fourth_map_smooth, NLA.MF14Degree44.fourth_jacobian_identity, NLA.MF14Degree44.fourth_minor_identity, NLA.MF14Degree44.fourth_product_joint_closure, NLA.MF14Degree44.polynomial_density_of_strict_derivative, NLA.MF14Degree44.degeneration_identity, NLA.MF14Degree44.degeneration_at_zero, NLA.MF14Degree44.degeneration_in_span, NLA.MF14Degree44.monic_border_joint_closure, NLA.MF14Degree44.continuation_actual_output, NLA.MF14Degree44.continuation_degree_bound, NLA.MF14Degree44.continuation_closure_transfer, NLA.MF14Degree44.family_image_mem_closure, NLA.MF14Degree44.family_degree_and_full_vector, NLA.MF14Degree44.coefficient_map_smooth, NLA.MF14Degree44.coefficient_jacobian_identity, NLA.MF14Degree44.integer_jacobian_mod3_inverse, NLA.MF14Degree44.coefficient_derivative_bijective, NLA.MF14Degree44.degree44_coverage, NLA.MF14Degree44.original_equality_false, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+uncaught exception: Challenge and solution theorem statement do not match: 'NLA.MF14Degree44.integer_jacobian_mod3_inverse'
+
+EXIT_STATUS=1

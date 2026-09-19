@@ -3,7 +3,7 @@
   "version": "v0.4",
   "project": {
     "name": "MF-14: degree44 closure coverage refutes the original seven-product degree42 equality",
-    "description": "Complete formalization of the original MF-14 negative answer through Marcus Webb’s degree-44 construction passes actual local serial Lean and two wholly nonauthor final source reviews. Real published Linux Comparator checks are pending. The stronger exact maximum47 is outside formalized scope.",
+    "description": "Formalization of the original MF-14 negative answer through Marcus Webb’s degree-44 construction, with actual repaired local Lean success, two independent full-source reviews and two independent repair continuations. Repaired published Linux verification remains pending. The stronger exact maximum 47 is outside this formalized scope.",
     "authors": [
       "George Stepaniants"
     ],
@@ -88,7 +88,7 @@
     "notes": "Substantial AI assistance disclosed. Root and /root/recover_lean_sources are proof authors and excluded from final independent review. Actual local compiler receipts and two nonauthor final source reviews are attached. No official Tau Ceti service run, external human peer review, source-author endorsement or unmeasured cost is claimed."
   },
   "status": {
-    "scope": "All 25 frozen contracts and the complete original negative answer passed actual local serial Lean through publication-name aggregate recovery-088 and two wholly nonauthor final reviews; GitHub Linux Comparator pending.",
+    "scope": "All 25 original-target contracts pass actual repaired local aggregate recovery-095, all 25 raw elaborated types and universe lists match the frozen reference, and two independent nonauthor continuation reviews approve the exact repair. The initial published Linux checks failed the now-repaired D44-08d instance alignment; real repaired-source Linux Comparator and kernel verification remain pending.",
     "whole_problem_verified": false,
     "completed_original_targets": 0,
     "main_results": [
@@ -96,7 +96,7 @@
         "declaration": "NLA.MF14Degree44.canonical_gate_padding",
         "contract": "D44-01a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/CircuitPrefix.lean",
         "sorry_count": 0
       },
@@ -104,7 +104,7 @@
         "declaration": "NLA.MF14Degree44.four_prefix_full_coefficients",
         "contract": "D44-01b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/CircuitPrefix.lean",
         "sorry_count": 0
       },
@@ -112,7 +112,7 @@
         "declaration": "NLA.MF14Degree44.three_product_tuple",
         "contract": "D44-02a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/ThreeProductTuple.lean",
         "sorry_count": 0
       },
@@ -120,7 +120,7 @@
         "declaration": "NLA.MF14Degree44.good_border_parameters_eventually",
         "contract": "D44-02b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/GoodParameters.lean",
         "sorry_count": 0
       },
@@ -128,7 +128,7 @@
         "declaration": "NLA.MF14Degree44.fourth_span_coordinates",
         "contract": "D44-03a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/SpanBasisCoordinates.lean",
         "sorry_count": 0
       },
@@ -136,7 +136,7 @@
         "declaration": "NLA.MF14Degree44.fourth_map_smooth",
         "contract": "D44-03b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FourthSmooth.lean",
         "sorry_count": 0
       },
@@ -144,7 +144,7 @@
         "declaration": "NLA.MF14Degree44.fourth_jacobian_identity",
         "contract": "D44-03c",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FourthJacobian.lean",
         "sorry_count": 0
       },
@@ -152,7 +152,7 @@
         "declaration": "NLA.MF14Degree44.fourth_minor_identity",
         "contract": "D44-03d",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FourthMinorIdentity.lean",
         "sorry_count": 0
       },
@@ -160,7 +160,7 @@
         "declaration": "NLA.MF14Degree44.fourth_product_joint_closure",
         "contract": "D44-03e",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FourthJointClosure.lean",
         "sorry_count": 0
       },
@@ -168,7 +168,7 @@
         "declaration": "NLA.MF14Degree44.polynomial_density_of_strict_derivative",
         "contract": "D44-04",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/PolynomialDensity.lean",
         "sorry_count": 0
       },
@@ -176,7 +176,7 @@
         "declaration": "NLA.MF14Degree44.degeneration_identity",
         "contract": "D44-05a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/DegenerationIdentity.lean",
         "sorry_count": 0
       },
@@ -184,7 +184,7 @@
         "declaration": "NLA.MF14Degree44.degeneration_at_zero",
         "contract": "D44-05b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/DegenerationAtZero.lean",
         "sorry_count": 0
       },
@@ -192,7 +192,7 @@
         "declaration": "NLA.MF14Degree44.degeneration_in_span",
         "contract": "D44-05c",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/ProductSpan.lean",
         "sorry_count": 0
       },
@@ -200,7 +200,7 @@
         "declaration": "NLA.MF14Degree44.monic_border_joint_closure",
         "contract": "D44-06",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FinalClosure.lean",
         "sorry_count": 0
       },
@@ -208,7 +208,7 @@
         "declaration": "NLA.MF14Degree44.continuation_actual_output",
         "contract": "D44-07a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/ContinuationCircuit.lean",
         "sorry_count": 0
       },
@@ -216,7 +216,7 @@
         "declaration": "NLA.MF14Degree44.continuation_degree_bound",
         "contract": "D44-07b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/DegreeBounds.lean",
         "sorry_count": 0
       },
@@ -224,7 +224,7 @@
         "declaration": "NLA.MF14Degree44.continuation_closure_transfer",
         "contract": "D44-07c",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/ContinuationClosure.lean",
         "sorry_count": 0
       },
@@ -232,7 +232,7 @@
         "declaration": "NLA.MF14Degree44.family_image_mem_closure",
         "contract": "D44-07d",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FinalClosure.lean",
         "sorry_count": 0
       },
@@ -240,7 +240,7 @@
         "declaration": "NLA.MF14Degree44.family_degree_and_full_vector",
         "contract": "D44-08a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FamilyDegreeBounds.lean",
         "sorry_count": 0
       },
@@ -248,7 +248,7 @@
         "declaration": "NLA.MF14Degree44.coefficient_map_smooth",
         "contract": "D44-08b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FamilySmooth.lean",
         "sorry_count": 0
       },
@@ -256,7 +256,7 @@
         "declaration": "NLA.MF14Degree44.coefficient_jacobian_identity",
         "contract": "D44-08c",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/JacobianIdentity.lean",
         "sorry_count": 0
       },
@@ -264,7 +264,7 @@
         "declaration": "NLA.MF14Degree44.integer_jacobian_mod3_inverse",
         "contract": "D44-08d",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/Mod3Certificate.lean",
         "sorry_count": 0
       },
@@ -272,7 +272,7 @@
         "declaration": "NLA.MF14Degree44.coefficient_derivative_bijective",
         "contract": "D44-08e",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/JacobianIdentity.lean",
         "sorry_count": 0
       },
@@ -280,7 +280,7 @@
         "declaration": "NLA.MF14Degree44.degree44_coverage",
         "contract": "D44-09a",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FinalClosure.lean",
         "sorry_count": 0
       },
@@ -288,7 +288,7 @@
         "declaration": "NLA.MF14Degree44.original_equality_false",
         "contract": "D44-09b",
         "comparator_config": "comparator.json",
-        "verification_status": "PASS source-bound local aggregate recovery-088 and two wholly nonauthor final source reviews; GitHub Linux Comparator PENDING",
+        "verification_status": "PASS actual repaired local aggregate recovery-095, exact frozen-type match and two nonauthor continuation reviews; repaired Linux Comparator pending",
         "file": "NLA/MF14Degree44/FinalClosure.lean",
         "sorry_count": 0
       }
@@ -301,7 +301,7 @@
     "divergences": "Original circuit model, complex coefficients, at-most7 chronology and full Fin129 ambient closure remain unchanged. Degree44 coverage suffices to refute the unchanged equality42. The complete degree47 strengthening, its optimality upper bound, exact determinant256, exact representation of every polynomial and numerical stability are not formalized here. The45-by45 derivative is proved equal to the actual symbolic table, then a full right inverse modulo3 proves its determinant nonzero. Selected coordinates are bridged to the entire fourth-product span and full129-dimensional outputs; they are not projected-target substitutions."
   },
   "review": {
-    "status": "PASS: two pre-proof statement approvals and two wholly nonauthor final AI-agent source reviews",
+    "status": "PASS two independent full-source reviews and two exact-repair continuations",
     "reviewers": [
       "/root/nr04_mf14_final_referee_a",
       "/root/nr04_mf14_final_referee_b"
@@ -342,15 +342,14 @@
     "canonical_verification_completed": false,
     "count_change": 0,
     "local_aggregate": {
-      "status": "PASS actual coordinator-owned local Lean",
+      "status": "PASS actual repaired coordinator-owned local Lean",
       "runs": [
-        "recovery-086",
-        "recovery-087",
-        "recovery-088"
+        "recovery-094",
+        "recovery-095"
       ],
       "module": "Solution",
-      "record": "verification/local-2026-09-19/LOCAL-REPLAY-AUDIT.json",
-      "record_sha256": "94021fa538957ad35044b9a6540fecf8a3ca99bcacd6546881cd3ac1b37e2cfa",
+      "record": "verification/local-repair-2026-09-19/LOCAL-REPLAY-AUDIT.json",
+      "record_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
       "actual_command": [
         "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
         "--threads=1",
@@ -365,13 +364,13 @@
       "threads": 1,
       "memory_cap_mib": 4096,
       "standalone_lake_build": "NOT_RUN; direct serial Lean commands recorded",
-      "publication_name_replay": "PASS recovery-088; Solution and independent Challenge separately elaborated, same frozen Lean source bytes"
+      "publication_name_replay": "PASS recovery-095 Solution; isolated reference Challenge compiled in recovery-094; all 25 raw-type and universe logs are byte-identical"
     },
     "LeanCert": {
       "trust_mode": "kernel",
       "role": "Pinned LeanCert #assert_trust kernel audits for exact modular and symbolic proof declarations. Numerical certificate arithmetic is exact natural/integer/finite-field algebra, not an interval oracle.",
       "interval_computations": "NONE required in this degree44 route; no artificial unused numerical certificate added",
-      "final_body_consumption_check": "PASS actual local kernel trust audits through recovery-088 and two independent source reviews; Linux Comparator pending."
+      "final_body_consumption_check": "PASS actual local kernel trust audits through recovery-095, two full-source reviews and two repair continuations; repaired Linux checks pending"
     },
     "permitted_axioms": [
       "propext",
@@ -405,25 +404,72 @@
           "manifest_sha256": "8df5c6f142ea1e6ffce3cf4910fc8307b6029b4f7cfe5292f723bd8002dd6b05",
           "new_Lean_or_Comparator_run": false
         }
+      ],
+      "continuation_status": "PASS two independent nonauthor approvals of the exact repaired snapshot",
+      "continuation_reports": [
+        {
+          "reviewer": "/root/nr04_mf14_final_referee_a",
+          "role": "Independent nonauthor AI-agent continuation referee",
+          "verdict": "APPROVE",
+          "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+          "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+          "report": "reviews/instance-continuation-referee-a/REPORT.md",
+          "report_sha256": "5242cf0036aa8e536346a81ab319777b2aa693e2ea5e590aed9a0d544b0ed03c",
+          "manifest": "reviews/instance-continuation-referee-a/MANIFEST.json",
+          "manifest_sha256": "88c9ce2b42f84021ba11f3656ef5ac059497b7fe08aa21ac568a5ef1b25a22ad",
+          "new_Lean_or_Comparator_run": false
+        },
+        {
+          "reviewer": "/root/nr04_mf14_final_referee_b",
+          "role": "Independent nonauthor AI-agent continuation referee",
+          "verdict": "APPROVE bounded continuation",
+          "scope": "Only the exact instance-alignment delta and its actual local evidence; full-source review retained separately; repaired Linux acceptance pending",
+          "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+          "report": "reviews/instance-continuation-referee-b/REPORT.md",
+          "report_sha256": "4168dfb04db9c0f374524117cd2e493ccd9191e2763f12336ad373257ab09397",
+          "manifest": "reviews/instance-continuation-referee-b/MANIFEST.json",
+          "manifest_sha256": "a5ca02447528cbce4db5aa6cf2c97d809723c72df35870760616ceda85630743",
+          "new_Lean_or_Comparator_run": false
+        }
       ]
     },
     "GitHub_Comparator": {
-      "status": "NOT_RUN for this new package",
+      "status": "FAILED at initial proof fe4bbee26cc79f06587c803c5c902164c1e02e8e; repaired implementation not yet run",
       "contract_count": 25,
       "definition_names": [],
-      "proof_commit": null,
-      "runs": []
+      "proof_commit": "fe4bbee26cc79f06587c803c5c902164c1e02e8e",
+      "runs": [
+        {
+          "repository": "sgstepaniants/OpenProblemsInNLA",
+          "run_id": 35431937168,
+          "conclusion": "failure"
+        },
+        {
+          "repository": "ajt60gaibb/OpenProblemsInNLA",
+          "run_id": 35431941636,
+          "conclusion": "failure"
+        }
+      ],
+      "failure": "integer_jacobian_mod3_inverse elaborates extra ZMod field instance in implementation. All Lean builds succeeded; Comparator rejected statement before kernel replay.",
+      "evidence": "verification/linux-failed-fe4bbee-2026-09-19",
+      "independent_report": "reviews/runtime-failed-fe4bbee/REPORT.md"
     },
     "publication": {
-      "status": "NOT_PUBLISHED",
+      "status": "DRAFT PR305; historical Linux failure preserved; repaired local proof and two continuation reviews pass; repaired-source GitHub verification pending",
       "target_repository": "ajt60gaibb/OpenProblemsInNLA",
       "target_branch": "main",
-      "pull_request": null,
+      "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/305",
       "related_mathematical_prs": [
         "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/287",
         "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/291"
       ]
     },
-    "promotion_rule": "Retain current canonical Solved status and count until all original-target proof obligations, exact final local evidence, two wholly nonauthor reviews and published-source Linux Comparator/default-kernel/sandbox gates pass. One original target only; no new mathematical resolution is counted."
+    "promotion_rule": "Retain current canonical Solved status and count until all original-target proof obligations, exact final local evidence, two wholly nonauthor reviews and published-source Linux Comparator/default-kernel/sandbox gates pass. One original target only; no new mathematical resolution is counted.",
+    "statement_type_diagnostic": {
+      "status": "PASS",
+      "record": "verification/statement-types-2026-09-19/TYPE-MATCH.json",
+      "record_sha256": "119a8bb6673de36440525487b7b32e334549fca5ab01be388a7a04fd821de912",
+      "scope": "Actual local elaborated types and universe lists for25contracts; byte-identical logs. This is not Comparator."
+    }
   }
 }

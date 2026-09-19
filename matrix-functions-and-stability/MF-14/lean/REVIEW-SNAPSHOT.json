@@ -1,7 +1,7 @@
 {
-  "created_utc": "2026-09-19T07:50:42.611340+00:00",
+  "created_utc": "2026-09-19T08:45:28.233781+00:00",
   "problem": "MF14",
-  "scope": "Frozen final proof source for independent nonauthor review. Local full aggregate passed, real Linux Comparator pending. No whole-verification count increment.",
+  "scope": "Continuation of two full nonauthor final reviews: one declaration-scoped algebra-instance alignment after actual Linux statement mismatch. Complete repaired local proof and all25 exact raw types passed095. Repaired Linux verification pending.",
   "proof_authors": [
     "/root",
     "/root/recover_lean_sources"
@@ -9,8 +9,8 @@
   "original_problem": "matrix-functions-and-stability/MF-14/README.md",
   "source_proof": "references/webb-mf14-degree44-2026-09-17/proof.tex",
   "observed_upstream_commit": "71563f17926cd826a892c2bba0e294894ee57a5c",
-  "original_local_aggregate_module": "MF14Degree44Solution",
-  "source_rename_note": "Solution.lean has byte-identical content to the actual local aggregate; MF14 publication-name elaboration pending separate root088 (same declarations).",
+  "original_local_aggregate_module": "Solution",
+  "source_rename_note": "Actual repaired local aggregate Solution passed recovery095; same name as publication.",
   "Lean_sources": {
     "Challenge.lean": "caba1fdbcc389d22c7353e26a2fb56d089992e4d5603f02b0e2f9ad1454d79e8",
     "NLA/MF14/CircuitFoundations.lean": "411343755bad7f24ac27539bb3c3f24ea0c614b893825ac071dfb4ea69315a35",
@@ -51,7 +51,7 @@
     "NLA/MF14Degree44/JacobianIdentity.lean": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
     "NLA/MF14Degree44/JacobianNonzero.lean": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
     "NLA/MF14Degree44/Mod3CastBridge.lean": "d1f34f926b566240e03d7492821eb5233414d0061d01bfd6f860b83ae8190355",
-    "NLA/MF14Degree44/Mod3Certificate.lean": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+    "NLA/MF14Degree44/Mod3Certificate.lean": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
     "NLA/MF14Degree44/Mod3Columns0.lean": "412076e819da1251b01e1be21caa9832d3d9c8dfd1560f2869592827ea4af019",
     "NLA/MF14Degree44/Mod3Columns1.lean": "59cf2b97076e25766960b7e1129a8c4785fd7ef3917041cf91f47bff10f39624",
     "NLA/MF14Degree44/Mod3Columns2.lean": "04ab23746dc2ee6737fa817f92f843acbe6ae69c8a638a92db1f406fac6fe948",
@@ -141,7 +141,7 @@
     "NLA/MF14Degree44/JacobianIdentity.lean": "4a721ddcf07e2027e3c5fb5f8ddd3aa2d0e519c04e93bfe64a0e75bdad7aafee",
     "NLA/MF14Degree44/JacobianNonzero.lean": "2838c3b4d229b15a30371f0f3751aa7df5c6535b3ba9813768d983245dc333f4",
     "NLA/MF14Degree44/Mod3CastBridge.lean": "d1f34f926b566240e03d7492821eb5233414d0061d01bfd6f860b83ae8190355",
-    "NLA/MF14Degree44/Mod3Certificate.lean": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+    "NLA/MF14Degree44/Mod3Certificate.lean": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e",
     "NLA/MF14Degree44/Mod3Columns0.lean": "412076e819da1251b01e1be21caa9832d3d9c8dfd1560f2869592827ea4af019",
     "NLA/MF14Degree44/Mod3Columns1.lean": "59cf2b97076e25766960b7e1129a8c4785fd7ef3917041cf91f47bff10f39624",
     "NLA/MF14Degree44/Mod3Columns2.lean": "04ab23746dc2ee6737fa817f92f843acbe6ae69c8a638a92db1f406fac6fe948",
@@ -230,5 +230,12 @@
     "NLA.MF14Degree44.degree44_coverage",
     "NLA.MF14Degree44.original_equality_false"
   ],
-  "count_change": 0
+  "count_change": 0,
+  "previous_snapshot_sha256": "e52fab5a7b58c3bc6fb2c2df1283d55c6e4352056689c900de936c12e2595436",
+  "changed_Lean_sources": {
+    "NLA/MF14Degree44/Mod3Certificate.lean": {
+      "before": "bf12a3b817de8c2abeeb15a53412884f9ebeb9d2f9712573d7ce102aac60638a",
+      "after": "962a7033d3eaaba2c7121aafbf81543786d80eff58fb7bf89a8633df6147a78e"
+    }
+  }
 }

@@ -1,0 +1,54 @@
+$ lake exe cache get
+✔ [1/5] Built Cache.Cli (251ms)
+✔ [2/5] Built Cache.Lean (268ms)
+✔ [6/26] Built Cache.Cli:c.o (170ms)
+✔ [7/26] Built Cache.Lean:c.o (147ms)
+✔ [8/26] Built Cache.Infra (325ms)
+✔ [9/26] Built Cache.Infra:c.o (138ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (630ms)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (857ms)
+✔ [12/26] Built Cache.IO (957ms)
+✔ [13/26] Built Cache.Hashing (550ms)
+✔ [14/26] Built Cache.Hashing:c.o (297ms)
+✔ [15/26] Built Cache.IO:c.o (1.2s)
+✔ [16/26] Built Cache.Requests (1.4s)
+✔ [17/26] Built Cache.Marker (402ms)
+✔ [18/26] Built Cache.Marker:c.o (110ms)
+✔ [19/26] Built Cache.Query (507ms)
+✔ [20/26] Built Cache.Query:c.o (210ms)
+✔ [21/26] Built Cache.Warning (532ms)
+✔ [22/26] Built Cache.Warning:c.o (232ms)
+✔ [23/26] Built Cache.Requests:c.o (2.0s)
+✔ [24/26] Built Cache.Main (846ms)
+✔ [25/26] Built Cache.Main:c.o (664ms)
+✔ [26/26] Built cache:exe (610ms)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/8690 = 0%, 23 KB/s], Decompressed: 0
+Downloaded: 381 file(s) [attempted 381/8690 = 4%, 10179 KB/s], Decompressed: 17
+Downloaded: 830 file(s) [attempted 830/8690 = 9%, 6319 KB/s], Decompressed: 17
+Downloaded: 1237 file(s) [attempted 1237/8690 = 14%, 610 KB/s], Decompressed: 17
+Downloaded: 1708 file(s) [attempted 1708/8690 = 19%, 5307 KB/s], Decompressed: 145
+Downloaded: 2181 file(s) [attempted 2181/8690 = 25%, 4047 KB/s], Decompressed: 145
+Downloaded: 2621 file(s) [attempted 2621/8690 = 30%, 4897 KB/s], Decompressed: 145
+Downloaded: 2985 file(s) [attempted 2985/8690 = 34%, 3109 KB/s], Decompressed: 145
+Downloaded: 3482 file(s) [attempted 3482/8690 = 40%, 7628 KB/s], Decompressed: 145
+Downloaded: 3897 file(s) [attempted 3897/8690 = 44%, 6430 KB/s], Decompressed: 145
+Downloaded: 4347 file(s) [attempted 4347/8690 = 50%, 9711 KB/s], Decompressed: 145
+Downloaded: 4807 file(s) [attempted 4807/8690 = 55%, 943 KB/s], Decompressed: 145
+Downloaded: 5186 file(s) [attempted 5186/8690 = 59%, 4684 KB/s], Decompressed: 145
+Downloaded: 5664 file(s) [attempted 5664/8690 = 65%, 4079 KB/s], Decompressed: 145
+Downloaded: 6040 file(s) [attempted 6040/8690 = 69%, 375 KB/s], Decompressed: 145
+Downloaded: 6429 file(s) [attempted 6429/8690 = 73%, 27281 KB/s], Decompressed: 145
+Downloaded: 6813 file(s) [attempted 6813/8690 = 78%, 13178 KB/s], Decompressed: 145
+Downloaded: 7222 file(s) [attempted 7222/8690 = 83%, 4697 KB/s], Decompressed: 145
+Downloaded: 7632 file(s) [attempted 7632/8690 = 87%, 3598 KB/s], Decompressed: 145
+Downloaded: 8095 file(s) [attempted 8095/8690 = 93%, 21747 KB/s], Decompressed: 145
+Downloaded: 8540 file(s) [attempted 8540/8690 = 98%, 1247 KB/s], Decompressed: 145
+Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 1247 KB/s], Decompressed: 145
+Decompressed 8690 file(s)
+Already decompressed 8690 file(s)
+
+EXIT_STATUS=0

@@ -1,0 +1,141 @@
+{
+  "scope": "Independent referee hashing and source inspection; no new compiler, Lake or Comparator run",
+  "created_utc": "2026-09-19T08:51:24.224406+00:00",
+  "status": "PASS",
+  "all_snapshot_file_hashes_checked": 101,
+  "Lean_files": 87,
+  "source_and_fresh_log_records_checked": 86,
+  "compressed_and_uncompressed_receipts_checked": 56,
+  "reuse_edges_recursively_authenticated": 807,
+  "all_fresh_dependency_outputs_match_reviewed_source_records": true,
+  "all_reused_transitive_source_hashes_match_reviewed_snapshot": true,
+  "publication_name_Solution_and_separate_Challenge_success_recorded": true,
+  "separate_Challenge_is_only_statement_elaboration_evidence": true,
+  "implementation_forbidden_token_scan": "PASS after nested comment removal",
+  "Solution_imports_Challenge": false,
+  "all_25_contract_signatures_whitespace_normalized_identical": true,
+  "all_25_actual_axiom_reports_and_kernel_assertions_match": true,
+  "contract_implementation_files": {
+    "NLA.MF14Degree44.canonical_gate_padding": "NLA/MF14Degree44/CircuitPrefix.lean",
+    "NLA.MF14Degree44.four_prefix_full_coefficients": "NLA/MF14Degree44/CircuitPrefix.lean",
+    "NLA.MF14Degree44.three_product_tuple": "NLA/MF14Degree44/ThreeProductTuple.lean",
+    "NLA.MF14Degree44.good_border_parameters_eventually": "NLA/MF14Degree44/GoodParameters.lean",
+    "NLA.MF14Degree44.fourth_span_coordinates": "NLA/MF14Degree44/SpanBasisCoordinates.lean",
+    "NLA.MF14Degree44.fourth_map_smooth": "NLA/MF14Degree44/FourthSmooth.lean",
+    "NLA.MF14Degree44.fourth_jacobian_identity": "NLA/MF14Degree44/FourthJacobian.lean",
+    "NLA.MF14Degree44.fourth_minor_identity": "NLA/MF14Degree44/FourthMinorIdentity.lean",
+    "NLA.MF14Degree44.fourth_product_joint_closure": "NLA/MF14Degree44/FourthJointClosure.lean",
+    "NLA.MF14Degree44.polynomial_density_of_strict_derivative": "NLA/MF14Degree44/PolynomialDensity.lean",
+    "NLA.MF14Degree44.degeneration_identity": "NLA/MF14Degree44/DegenerationIdentity.lean",
+    "NLA.MF14Degree44.degeneration_at_zero": "NLA/MF14Degree44/DegenerationAtZero.lean",
+    "NLA.MF14Degree44.degeneration_in_span": "NLA/MF14Degree44/ProductSpan.lean",
+    "NLA.MF14Degree44.monic_border_joint_closure": "NLA/MF14Degree44/FinalClosure.lean",
+    "NLA.MF14Degree44.continuation_actual_output": "NLA/MF14Degree44/ContinuationCircuit.lean",
+    "NLA.MF14Degree44.continuation_degree_bound": "NLA/MF14Degree44/DegreeBounds.lean",
+    "NLA.MF14Degree44.continuation_closure_transfer": "NLA/MF14Degree44/ContinuationClosure.lean",
+    "NLA.MF14Degree44.family_image_mem_closure": "NLA/MF14Degree44/FinalClosure.lean",
+    "NLA.MF14Degree44.family_degree_and_full_vector": "NLA/MF14Degree44/FamilyDegreeBounds.lean",
+    "NLA.MF14Degree44.coefficient_map_smooth": "NLA/MF14Degree44/FamilySmooth.lean",
+    "NLA.MF14Degree44.coefficient_jacobian_identity": "NLA/MF14Degree44/JacobianIdentity.lean",
+    "NLA.MF14Degree44.integer_jacobian_mod3_inverse": "NLA/MF14Degree44/Mod3Certificate.lean",
+    "NLA.MF14Degree44.coefficient_derivative_bijective": "NLA/MF14Degree44/JacobianIdentity.lean",
+    "NLA.MF14Degree44.degree44_coverage": "NLA/MF14Degree44/FinalClosure.lean",
+    "NLA.MF14Degree44.original_equality_false": "NLA/MF14Degree44/FinalClosure.lean"
+  },
+  "snapshot_sha256": "10b1b576719a24d12d3a123a1180c2c89d26626a41367ef0abaf42001cb52892",
+  "local_audit_sha256": "e514221a1ef727416004506ee71ad461aba5f8e110c91d3eb2c5be6909d5f408",
+  "script_sha256": "799f24d134afaaf4bea061120512d8c59345d6f27dcdac80e9d842bf475acb7b",
+  "count_increment": 0,
+  "reviewer": "/root/nr04_mf14_final_referee_b",
+  "verdict": "APPROVE bounded source/evidence continuation; repaired GitHub Comparator remains pending",
+  "changed_packet_files": [
+    "NLA/MF14Degree44/Mod3Certificate.lean"
+  ],
+  "single_declaration_scoped_instance_attribute_is_only_code_change": true,
+  "all_25_raw_elaborated_type_and_universe_logs_byte_identical": true,
+  "raw_reference_and_repaired_solution_log_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+  "old_raw_mismatches_independently_recomputed": [
+    "NLA.MF14Degree44.integer_jacobian_mod3_inverse"
+  ],
+  "fresh_changed_module_dependency_chain": [
+    "NLA.MF14Degree44.Mod3Certificate",
+    "NLA.MF14Degree44.JacobianNonzero",
+    "NLA.MF14Degree44.JacobianIdentity",
+    "NLA.MF14Degree44.FinalClosure",
+    "Solution"
+  ],
+  "diagnostic_commands": {
+    "recovery-094/MF14ChallengeTypes093": {
+      "module": "MF14ChallengeTypes093",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/MF14ChallengeTypes093.olean",
+        "MF14ChallengeTypes093.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T08:41:43.988144+00:00",
+      "source_sha256": "ab467d3aad16c697f2ab99baf01216df6d706aece4cef54713bc4de736fcb977",
+      "dependency_olean_sha256": {
+        "Challenge": "f2e274cfcaae661e862d0ee7079ae62bfad735e1491cf3fe44688785f3c507b9"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T08:41:48.523682+00:00",
+      "elapsed_seconds": 4.5353977080012555,
+      "log_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+      "maxrss_bytes_macos_cumulative": 2702278656,
+      "output_sha256": "462158215e1f1a567550075d003f86c1130d2799767d3873347dedfa995c9b70"
+    },
+    "recovery-094/MF14SolutionTypes093": {
+      "module": "MF14SolutionTypes093",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/MF14SolutionTypes093.olean",
+        "MF14SolutionTypes093.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T08:41:49.227818+00:00",
+      "source_sha256": "2aa893e97a792dee600f445c0e0c285c03117e1d4fdc8c2deb4a58a9fa31a7ac",
+      "dependency_olean_sha256": {
+        "Solution": "444ad1fadb76f93c7bbca6720f1867beb8075fd5d770be56a0c6ecb94cba658a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T08:41:58.499217+00:00",
+      "elapsed_seconds": 9.271388707998995,
+      "log_sha256": "c6bd1e4abeea576a82a1e49697159675292b435cf76361bfc8be36124918d067",
+      "maxrss_bytes_macos_cumulative": 3594158080,
+      "output_sha256": "bf900ab9f6cfd085832baf5dcb12f03bded6ce9a5f4ad8fbd2050a66103f9c10"
+    },
+    "recovery-095/MF14SolutionTypes093": {
+      "module": "MF14SolutionTypes093",
+      "argv": [
+        "/Users/georgestepaniants/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--threads=1",
+        "--memory=4096",
+        "-o",
+        "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean/.lake/build/lib/lean/MF14SolutionTypes093.olean",
+        "MF14SolutionTypes093.lean"
+      ],
+      "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/.local-recovery-20260918/local-lean",
+      "start": "2026-09-19T08:43:46.098182+00:00",
+      "source_sha256": "2aa893e97a792dee600f445c0e0c285c03117e1d4fdc8c2deb4a58a9fa31a7ac",
+      "dependency_olean_sha256": {
+        "Solution": "444ad1fadb76f93c7bbca6720f1867beb8075fd5d770be56a0c6ecb94cba658a"
+      },
+      "exit_code": 0,
+      "end": "2026-09-19T08:43:51.192770+00:00",
+      "elapsed_seconds": 5.0945491250022314,
+      "log_sha256": "5ff7380dc81ef84138c68db3dfadd700672b52698b02183c99fd471723ea4f77",
+      "maxrss_bytes_macos_cumulative": 3659497472,
+      "output_sha256": "bf900ab9f6cfd085832baf5dcb12f03bded6ce9a5f4ad8fbd2050a66103f9c10"
+    }
+  },
+  "root_type_match_json_sha256": "119a8bb6673de36440525487b7b32e334549fca5ab01be388a7a04fd821de912",
+  "no_new_Lean_Lake_or_Comparator_by_reviewer": true,
+  "repaired_GitHub_Comparator_success": "NOT_YET_ESTABLISHED"
+}

@@ -1,0 +1,11 @@
+NLA/MF14Degree44/FourthMinorBlocks.lean:57:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+NLA/MF14Degree44/FourthMinorBlocks.lean:66:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'NLA.MF14Degree44.fourth_first_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_first_lower_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_middle_lower_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_tail_upper_triangular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF14Degree44.fourth_tail_det' depends on axioms: [propext, Classical.choice, Quot.sound]
