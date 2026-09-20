@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF21.full_target",
+    "NLA.MF21.universal_obstruction",
+    "NLA.MF21.smooth_common_family",
+    "NLA.MF21.fourier_matrix_entries",
+    "NLA.MF21.coefficients_unique"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

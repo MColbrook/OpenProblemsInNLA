@@ -1,0 +1,187 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'MF-21: the uniform Toeplitz eigenvalue expansion threshold for every m >= 3'
+  description: Complete symbolic Lean proof of the original three-part target, continuous-family obstruction,
+    smooth common coefficients, sharp finite-head and global errors, and exact Fourier-matrix correspondence.
+    Canonical Linux acceptance is pending.
+  authors:
+  - OpenAI Codex AI agents
+  license: Apache-2.0
+repository:
+  role: substantive-development
+sources:
+- title: Eigenvalues of even very nice Toeplitz matrices can be unexpectedly erratic
+  authors:
+  - Mauricio Barrera
+  - Albrecht Böttcher
+  - Sergei Grudsky
+  - Egor Maximenko
+  id: https://arxiv.org/abs/1710.05243
+  type: article
+  location: Conjecture 8.4; Proposition 4.2 and Remark 8.3
+  relationship: formalizes
+  author_endorsement: other
+  note: The source authors retain credit for the problem and prior results. Sergei Grudsky supplied the
+    mathematical comments motivating this revision; neither his endorsement of the revision nor formalization
+    authorship is claimed.
+- title: 'MF-21: the regular expansion threshold for every higher-order zero'
+  authors:
+  - George Stepaniants
+  id: ../solution.md
+  type: manuscript
+  location: Theorem 1, Lemmas 2-5, Corollary 6
+  relationship: adapts
+  author_endorsement: not-contacted
+  note: 'Original manuscript author: George Stepaniants, Department of Computing and Mathematical Sciences,
+    California Institute of Technology, Pasadena, California, USA. Codex agents expanded the uniqueness
+    argument, direct finite inverse-trace proof, finite-head lower bound and attribution during September
+    2026.'
+- title: Inside the eigenvalues of certain Hermitian Toeplitz band matrices
+  authors:
+  - Albrecht Böttcher
+  - Sergei Grudsky
+  - Egor Maximenko
+  id: https://doi.org/10.1016/j.cam.2009.10.010
+  type: article
+  relationship: background
+  author_endorsement: not-contacted
+  note: Simple-loop method attribution; no theorem imported as an axiom.
+- title: Eigenvalues of non-Hermitian banded Toeplitz matrices approaching simple points of the limiting
+    set
+  authors:
+  - Manuel Bogoya
+  - Sergei Grudsky
+  id: https://doi.org/10.1134/S0965542525700745
+  type: article
+  relationship: background
+  location: Theorems 2.1-2.2
+  author_endorsement: not-contacted
+  note: Related general local expansions; no priority claim or claim that shrinking-cutoff uniformity
+    follows without further estimates.
+- title: From Toeplitz eigenvalues through Green’s kernels to higher-order Wirtinger-Sobolev inequalities
+  authors:
+  - Albrecht Böttcher
+  - Harold Widom
+  id: https://arxiv.org/abs/math/0412269
+  type: article
+  relationship: background
+  author_endorsement: not-contacted
+  note: Classical trace constant; the formal proof instead derives it directly from finite inverse columns
+    and a Schur-complement recurrence.
+related_formalizations:
+- id: https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474
+  relationship: builds-on
+  note: Pinned actual Hermitian spectrum, Fourier analysis, implicit-function and Taylor theorems, integration
+    and even-zeta formula.
+- id: https://github.com/gotrevor/lean-formalizations/tree/3a24a73416f83c32b4d4a2ac09588524c6291650
+  relationship: builds-on
+  note: Six Apache-2.0 pi-transcendence proof sources, adapted import prefixes and one documented mathlib
+    compatibility simplification. All code in the local checked closure; original AI-assistance disclosures
+    retained.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Coordinating agent and three implementing agents, scoped nonauthor cross-reviews, a fresh
+      nonimplementing statement referee, raw-kernel fresh source replay and isolated local Linux VM checks.
+    prompting_notes: Preserve the full original all-m target, actual matrix and exact mesh; discharge
+      every analytic dependency; no sorry, custom or native trust axiom in proof code. Keep all work local
+      and request permission before any GitHub push.
+  notes: Formalization authored by AI agents. Source proof authorship and informal mathematical-method
+    attribution are separate. No external human peer review or measured cost is asserted.
+status:
+  scope: For every m >= 3, the exact Fourier Toeplitz matrix has the original same-family estimates through
+    order 2m-1 globally and order 2m above ceil(log(n+2)^2); no continuous family attains the next uniform
+    order. The same smooth family has matching h^(2m) lower and upper maximum-error bounds.
+  whole_problem_verified: false
+  sorry_count: 0
+  sorry_in_definitions: 0
+  source_scan_note: Five deliberate specification placeholders occur only in Challenge. Solution never
+    imports Challenge. Fresh macOS replay checked all 82 proof modules and 1354 local declarations. Canonical
+    Linux acceptance and final review remain pending.
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: NLA.MF21.full_target
+    file: Solution.lean
+    sorry_count: 0
+    comparator_config: comparator.json
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
+    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
+      and final source review.'
+  - declaration: NLA.MF21.universal_obstruction
+    file: Solution.lean
+    sorry_count: 0
+    comparator_config: comparator.json
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
+    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
+      and final source review.'
+  - declaration: NLA.MF21.smooth_common_family
+    file: Solution.lean
+    sorry_count: 0
+    comparator_config: comparator.json
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
+    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
+      and final source review.'
+  - declaration: NLA.MF21.fourier_matrix_entries
+    file: Solution.lean
+    sorry_count: 0
+    comparator_config: comparator.json
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
+    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
+      and final source review.'
+  - declaration: NLA.MF21.coefficients_unique
+    file: Solution.lean
+    sorry_count: 0
+    comparator_config: comparator.json
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
+    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
+      and final source review.'
+fidelity:
+  divergences: No target weakened. The finite inverse-column/Schur recurrence replaces the continuum Green-kernel
+    limit. Equation (24) uses a finite-head Taylor bound. The determinant desingularization uses 2 sin(theta/2),
+    which has the same simple zero as theta. See NUMERICAL_TARGETS.md.
+review:
+  status: Final canonical independent review in progress; earlier author and scoped nonauthor reviews
+    retained in the dated audit.
+  reviewers:
+  - OpenAI Codex agent final_fidelity_referee (nonimplementing canonical referee)
+  - OpenAI Codex agent lean_audit (nonauthor cross-review only outside authored modules)
+  - OpenAI Codex agent trace_audit (nonauthor trace-obstruction and uniqueness assembly review only outside
+    authored modules)
+  notes: Authorship exclusions and file hashes are explicit in each report. Current canonical review is
+    after implementation; it is not represented as pre-implementation review. Original target statement
+    reviews predate the analytic proof development.
+alignment:
+  source_correspondence: NUMERICAL_TARGETS.md
+  numerical_boundary: NUMERICAL_TARGETS.md
+  proposed_statements: Challenge.lean
+  proposed_declarations:
+  - NLA.MF21.full_target
+  - NLA.MF21.universal_obstruction
+  - NLA.MF21.smooth_common_family
+  - NLA.MF21.fourier_matrix_entries
+  - NLA.MF21.coefficients_unique

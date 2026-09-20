@@ -1,0 +1,488 @@
+[
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundaryDecay.lean",
+    "development_sha256": "bb0474f5fd0fa379b3ca644fc8d054a82bd921b3e1084979012c15150578ff45",
+    "canonical_path": "MF21/ActualBoundaryDecay.lean",
+    "canonical_sha256": "338fe9e1c5600a0aceb301acf0d6d17dee749ec91daca8b6e8be9fbc7f61e972"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundaryDeterminant.lean",
+    "development_sha256": "f3b75a67d6fd2e1ca6a8791948b1e0eb650d4eef37bcc03761f6d84177b98feb",
+    "canonical_path": "MF21/ActualBoundaryDeterminant.lean",
+    "canonical_sha256": "a46e3db08207104112bcefc0eeb507328cc977a90b5445c5cc58867e06a96b25"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundaryError.lean",
+    "development_sha256": "73ccf03148e37c2640a41b86c2699b328e420d3f4a0ab87083bd50cb472e1187",
+    "canonical_path": "MF21/ActualBoundaryError.lean",
+    "canonical_sha256": "1d5efb483a62f698ab87665e780fa11a1900ec3defa5b35b78bd513f5964667b"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundaryExpansion.lean",
+    "development_sha256": "ba4904c173b242c2fd691bb13f1166fd69522d18bebdf362e8f6d2b3629e681f",
+    "canonical_path": "MF21/ActualBoundaryExpansion.lean",
+    "canonical_sha256": "c1b7f948cbea32902e9a947a089b5791f1868b2fc4a80e4f7f8e580140f65e2d"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundaryPhase.lean",
+    "development_sha256": "7a8455b59a660a1ef8550610ebbfa32e561c1d3363636578afcf98007205ba50",
+    "canonical_path": "MF21/ActualBoundaryPhase.lean",
+    "canonical_sha256": "1ab2637cbbf0650232ff54a63a4d76bbb34d59d633eefcdf256739cc74d44aec"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundarySimplicity.lean",
+    "development_sha256": "cc3fc43268e183ddbd16db1dd901f3efe6baa2f24f620e08a2eb935829ec9132",
+    "canonical_path": "MF21/ActualBoundarySimplicity.lean",
+    "canonical_sha256": "d76b8ca24c8f128b695fe73c9d08412c5870fdfb2d521e304454f0334a16f9da"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualBoundarySmooth.lean",
+    "development_sha256": "55438161132124fc2a49096c61d58454334f94447d62a016501c0b7f2f6dd8f0",
+    "canonical_path": "MF21/ActualBoundarySmooth.lean",
+    "canonical_sha256": "ea171b99959b848de75231660d6659d4c7feaa2fe12e6611b46789321d686660"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualPhaseIndexing.lean",
+    "development_sha256": "77809b5d67465853a453a7583b0630b09728f326b4c30e38c1c1da6a2eb1cea4",
+    "canonical_path": "MF21/ActualPhaseIndexing.lean",
+    "canonical_sha256": "9a4945ac77fd44e875bb3e5614fa5ff88f8157a0a929e11c0d49159ed8f4ea09"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualTailAngles.lean",
+    "development_sha256": "6113bb0b01ce982863a95a137e4fb9b3270ea595f15823a1c5a3de00e9f2de64",
+    "canonical_path": "MF21/ActualTailAngles.lean",
+    "canonical_sha256": "77355f708c1e543dad52002d36c3c2407f3500c0d2c428b9a270a577e92df502"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ActualTraceObstruction.lean",
+    "development_sha256": "30cbfbd2af2d1fdeab80a12783105bdde2e81e7ca859fcc3a9cbfb6a49eced0e",
+    "canonical_path": "MF21/ActualTraceObstruction.lean",
+    "canonical_sha256": "43733405bcc41ee948c3a89c02a11c9dfc93799acdf107c3d53fb6c7afbb04e4"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryBlockForm.lean",
+    "development_sha256": "255cb109f9db8e14a35b3d8fe01b669ffebf13bd0b53de201ecb2223df109f87",
+    "canonical_path": "MF21/BoundaryBlockForm.lean",
+    "canonical_sha256": "bfc0506aa76e833f667656ad2ef5edc9c6404e3f6eea5a8cc21f36853c277c54"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryDecay.lean",
+    "development_sha256": "8e0e2159d19bf6ef1db7e9ed202f109999d0d520c9d2a77518bf20ef29b2f5f1",
+    "canonical_path": "MF21/BoundaryDecay.lean",
+    "canonical_sha256": "85fafdfc3d24b475a0b24b0044752fb7256a242b24913d0a7bd38b0cf4957bc0"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryDeterminant.lean",
+    "development_sha256": "cea1f8181f7665d9f7670e77247b67ae724465b62d3f7d752ee449c8d30830ce",
+    "canonical_path": "MF21/BoundaryDeterminant.lean",
+    "canonical_sha256": "f68d99c3bc7d95c3098d52c139779fbcdfd8d934d7fc2428bc4c8ae90d7e949b"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryExpansion.lean",
+    "development_sha256": "6b501d6f9e53d3f197b71a971c30493550e87313429b88e6165f06a1c011a7d6",
+    "canonical_path": "MF21/BoundaryExpansion.lean",
+    "canonical_sha256": "c973766839eee1349e09fd3d309368e9966966489689eb4469572ab6c21639c0"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryLeadingTerms.lean",
+    "development_sha256": "d3179ee9c7d63df0f171d5420fb8d063effba6980baf9737f567c54cd4a9db84",
+    "canonical_path": "MF21/BoundaryLeadingTerms.lean",
+    "canonical_sha256": "6adebd57c1eae1cfc3c5f709bb3151c2e870b7badfe400eeeba766b09a23e9ec"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryNormalization.lean",
+    "development_sha256": "5345d43a0a597fac984a79f78b2a1ad73bc37ccbc7090a3e64c8bd36416ab4e7",
+    "canonical_path": "MF21/BoundaryNormalization.lean",
+    "canonical_sha256": "5345d43a0a597fac984a79f78b2a1ad73bc37ccbc7090a3e64c8bd36416ab4e7"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryPolynomial.lean",
+    "development_sha256": "0ea762a708fc29eb4e642136dc47fbf381bcbeca1759d2d2edb4ea6263191c97",
+    "canonical_path": "MF21/BoundaryPolynomial.lean",
+    "canonical_sha256": "03504e856f15ab5c97e4c4a719a6659d1e3f31761b1f51f74cecb455956fa268"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundaryReality.lean",
+    "development_sha256": "f49875e9e350909628ae315f1272c9b7bc99d0b4207760f7dd4f1fc7300dd9be",
+    "canonical_path": "MF21/BoundaryReality.lean",
+    "canonical_sha256": "cd5c0326640671d0b2e98e9d01e2b2cb3adb59479b3deb7e4432591eca43a0d5"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BoundarySpectrum.lean",
+    "development_sha256": "c1dc69e952d6a9e8fe55c35bbbc172a1011e67be915c50cb4ccec2c4cacc992c",
+    "canonical_path": "MF21/BoundarySpectrum.lean",
+    "canonical_sha256": "e82a6d61ee20f7f363a8d4bc878dccbc7d4897db94b7ecb9741b95bce49f9c4c"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkDecay.lean",
+    "development_sha256": "497a4150b68b1397c00ac67c598a794532d6ade36e1c6801a30e8795f4f49a0a",
+    "canonical_path": "MF21/BulkDecay.lean",
+    "canonical_sha256": "b91e67bbc434e5729400fddc1cb42b5ccee45a7be7680f8938f3007fea539909"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkEndpoint.lean",
+    "development_sha256": "4d416cb08a8e8e91484e3dbb76eec13b144f8925677403992e9d33cef59833d6",
+    "canonical_path": "MF21/BulkEndpoint.lean",
+    "canonical_sha256": "3b451210f777a2c8c462d6dd4273c37f1e52566efb78357b0ce2b4857c67f755"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkEta.lean",
+    "development_sha256": "78170d4fb8fa0cd8a502696955104fd91ec7b25b41f7f62826b6b5f38b6c102c",
+    "canonical_path": "MF21/BulkEta.lean",
+    "canonical_sha256": "0c69fffe0593c9a19c500ff9d50df11a5ba0ba7785fa19ce282194d23e4255b9"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkImplicit.lean",
+    "development_sha256": "0f500fb21bb60e14e8f99422c7b393fe04abbebac40b766df5f8e0f714fdc65d",
+    "canonical_path": "MF21/BulkImplicit.lean",
+    "canonical_sha256": "0f500fb21bb60e14e8f99422c7b393fe04abbebac40b766df5f8e0f714fdc65d"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkLeadingPhase.lean",
+    "development_sha256": "a681a668291b40d63f030577d17576a094435febb949e42ac8226814f1c9cdfe",
+    "canonical_path": "MF21/BulkLeadingPhase.lean",
+    "canonical_sha256": "56a31164627b8726f5b8bf4d5497ebad55956b4af166b42514de4aefc9cc23d4"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkPhase.lean",
+    "development_sha256": "3c4aa6fd3075f79eb7fbc7fd9836e4ec4839d00848f9a1ab46366cae8467b921",
+    "canonical_path": "MF21/BulkPhase.lean",
+    "canonical_sha256": "9caa2e1d88ea93c17c0916a961bb24ea71c06422c47ce62b2f9d55d927c66ef2"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkRootFamily.lean",
+    "development_sha256": "10165cfe650f9a8ce4413dfdd1ae3bf0dfeff134ab26cf8c22528e9c1a177697",
+    "canonical_path": "MF21/BulkRootFamily.lean",
+    "canonical_sha256": "29fe65567f6c28d4235092ec03760c2fb7abeb6336447251a7f53a44896e62f9"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkRoots.lean",
+    "development_sha256": "131ac06b866bb4bfcaa1ef5fdfaddd8c981c6962b7e6e0a1884ed40ea24d3f49",
+    "canonical_path": "MF21/BulkRoots.lean",
+    "canonical_sha256": "131ac06b866bb4bfcaa1ef5fdfaddd8c981c6962b7e6e0a1884ed40ea24d3f49"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkSlopes.lean",
+    "development_sha256": "bc898a19fa257515fa15bb4903faa4747b0875486a7b7262ccb07fff8df8a17e",
+    "canonical_path": "MF21/BulkSlopes.lean",
+    "canonical_sha256": "1831f27c839626786dffd871274bd4158be044233ca47b1d250ab4d59d39b9a7"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkSymbol.lean",
+    "development_sha256": "62b8aaaa81a3b7c6ae3245c365ee2b3ceabd2279e23d53467e72c1bb65401db4",
+    "canonical_path": "MF21/BulkSymbol.lean",
+    "canonical_sha256": "f6f3b3834a5499496058e817e04649b0dee06c876f2a12e1fbda1dd15c03392f"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/BulkTotalPhase.lean",
+    "development_sha256": "725c3b6a3c62062939a29ce0f73311d835f290768eec818530cb8066aab6a276",
+    "canonical_path": "MF21/BulkTotalPhase.lean",
+    "canonical_sha256": "dd144ecc1b9e5c41229ce399db2473e1721fee39d652cd9a66b8a8b4bb2ebae8"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/Challenge.lean",
+    "development_sha256": "0c18548156a323e2554d97a1f99739bbf8abb7a52b4e821669f0e7bf1217c302",
+    "canonical_path": "MF21/Definitions.lean",
+    "canonical_sha256": "bf813d493c38164aa8f4b3a6fc4476c2b57560b0bd87932b02ab1a4d94038525"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/CirculantOrdering.lean",
+    "development_sha256": "97a526aa993db3b48b1d0b05033b69cbc049e2d14f4cf47cac7b37eda0f25a6c",
+    "canonical_path": "MF21/CirculantOrdering.lean",
+    "canonical_sha256": "651d37339703955562c69ecbf030f1a51a37df3368d4699bd0eb54b2901febfc"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/CirculantSpectrum.lean",
+    "development_sha256": "8ebc7676b790df9db2addb18871ac774a9469f22bf95e91c0ea1f7ad0ea8bc8f",
+    "canonical_path": "MF21/CirculantSpectrum.lean",
+    "canonical_sha256": "e580cc249d7422b17989750a3277d77dc49f485c2799f1d6da9cbcd3af09c59b"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/CoefficientUniqueness.lean",
+    "development_sha256": "9a32b2f97a400e86fd934d5ff18d94e2c8d46fa746d6c33dc571ced519a7de56",
+    "canonical_path": "MF21/CoefficientUniqueness.lean",
+    "canonical_sha256": "9a32b2f97a400e86fd934d5ff18d94e2c8d46fa746d6c33dc571ced519a7de56"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/CompressionInterlacing.lean",
+    "development_sha256": "e9083f4078b03733b7f8c741c1e116a1bdfc00fbd725dacb9922ea512b5fd60a",
+    "canonical_path": "MF21/CompressionInterlacing.lean",
+    "canonical_sha256": "27e8701a22c69cab5d35931a9aa1c1d7a9743bc0e15c1cb5da7b092d0c42b822"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/DeterminantSimpleKernel.lean",
+    "development_sha256": "d4c758331cccb66bd44eade3c5a24400bce7ad07420f00e07c54a0d3249438cb",
+    "canonical_path": "MF21/DeterminantSimpleKernel.lean",
+    "canonical_sha256": "55864da728427ca33a82ec9b307399cbda4b66d5f4421d47c096c80cdb13dc3f"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/DiscretePowerLimits.lean",
+    "development_sha256": "813bb9aefd380da2c35f4e12e85bfe5e5c43a5dad5be8b1b219f7f9108f5aac7",
+    "canonical_path": "MF21/DiscretePowerLimits.lean",
+    "canonical_sha256": "813bb9aefd380da2c35f4e12e85bfe5e5c43a5dad5be8b1b219f7f9108f5aac7"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/Eigenangles.lean",
+    "development_sha256": "c79b423b8263180cfa0b5cd6c3c35a76683817af59f7a480dbd4facb1bfa0ad5",
+    "canonical_path": "MF21/Eigenangles.lean",
+    "canonical_sha256": "71b2af26753c601a2c6069940d70a42a9945663ce79c382e8d89cf013dae9f33"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ExpansionEstimates.lean",
+    "development_sha256": "a9c5ef7c46335b64a6da6a99bdc333095b77940a56a7b76999972c1f87016b32",
+    "canonical_path": "MF21/ExpansionEstimates.lean",
+    "canonical_sha256": "78ca691710ec1488fa31ae5d5326910a607da28b600f3d38c8585a086fa23b0a"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ExponentialCutoff.lean",
+    "development_sha256": "9c2c45ddfa82dd7a4229965199ba13d887e8de2e9f6061913988913b3279c64e",
+    "canonical_path": "MF21/ExponentialCutoff.lean",
+    "canonical_sha256": "7810fbae4788aac9e237dbd5bf1b0892bee7c389979431dc57611f6db409ce76"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ExponentialSums.lean",
+    "development_sha256": "2ddd08933c93dc98fc1046db16452ace7589a6e184fd7481e3b6bb8b5b44b27a",
+    "canonical_path": "MF21/ExponentialSums.lean",
+    "canonical_sha256": "2ddd08933c93dc98fc1046db16452ace7589a6e184fd7481e3b6bb8b5b44b27a"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FinalTarget.lean",
+    "development_sha256": "065c08e12c733e8b933773292670b4beedbaf76a19c18579a12e353e9823bffd",
+    "canonical_path": "MF21/FinalTarget.lean",
+    "canonical_sha256": "02eb2d9dde8f38beb440073281e8bcc05e4339e1f9bc4d00709ff26c2e3309b8"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FiniteHeadModel.lean",
+    "development_sha256": "3fcef0dea21a88c2875cabf597d0612527f85e6bfb5ad271bbe1c45b95ce07b4",
+    "canonical_path": "MF21/FiniteHeadModel.lean",
+    "canonical_sha256": "a1118397738c67a69c4d7d887850351cd6438ea467c31db436b4843096b345c9"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FiniteTraceObstruction.lean",
+    "development_sha256": "2f2289d930ed107fb7a1480934f0628ac696e2996b532e68d9273c07dc254446",
+    "canonical_path": "MF21/FiniteTraceObstruction.lean",
+    "canonical_sha256": "2f2289d930ed107fb7a1480934f0628ac696e2996b532e68d9273c07dc254446"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FirstColumnAsymptotics.lean",
+    "development_sha256": "fb1c4af6fdd26022862ccaf62eb4cef3490a5665d5c16e8d91532ce674c778c9",
+    "canonical_path": "MF21/FirstColumnAsymptotics.lean",
+    "canonical_sha256": "b8336339d354eb82d168bf41d73a4bda2aa771876e7e9dc8e75a7c54c26c07e3"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FirstInverseColumn.lean",
+    "development_sha256": "383e67fab7b8e42ab3cc99b2aeac1b86b6489ef1770183a507a4801fb9167146",
+    "canonical_path": "MF21/FirstInverseColumn.lean",
+    "canonical_sha256": "bbc4c87227ca90b916e6ba7b8ba651d089c635ca81ff264e804e1295d2807910"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/FourierCoefficients.lean",
+    "development_sha256": "56df75748a30449cbf4e1c7e173e54bfbbd9faef1e88f83667327b17263b1b39",
+    "canonical_path": "MF21/FourierCoefficients.lean",
+    "canonical_sha256": "dfd2c642a60e0dbf2977a913d2de36763dd4771c5dddd60d1691d16997b9a2f4"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/InverseTraceRecurrence.lean",
+    "development_sha256": "b7255ac64978ad33f720712fa7f8b926112d5b3115ec7c501fa7a4a70125a8ad",
+    "canonical_path": "MF21/InverseTraceRecurrence.lean",
+    "canonical_sha256": "cb748f319f6f8f846d78d507c191e0894bef1f5446f16abae436f980bcec0980"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/LaurentSymbol.lean",
+    "development_sha256": "a7150e0b98aef3870c2113d54aa77fa8e0069a2f1a72ed743fce14f2d7418259",
+    "canonical_path": "MF21/LaurentSymbol.lean",
+    "canonical_sha256": "db1c87ea34c642a574be1f453ddbb455b594a1048950919ae37c0031f63278c0"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/LogSquaredMesh.lean",
+    "development_sha256": "faeca4b2e92aa3c88f741e7ddb3b40dbbca70353b6587e760b3ede33a33c5635",
+    "canonical_path": "MF21/LogSquaredMesh.lean",
+    "canonical_sha256": "faeca4b2e92aa3c88f741e7ddb3b40dbbca70353b6587e760b3ede33a33c5635"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21CoefficientUniqueness.lean",
+    "development_sha256": "bb52497b59a734dc526f5a2fa790e5dd47bb69146ffd9f0b6efb86cc6cec6005",
+    "canonical_path": "MF21/MF21CoefficientUniqueness.lean",
+    "canonical_sha256": "96212645705e88344c1323aedc62638868c2fcae883bf8577797b44de509c4af"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21TraceSeries.lean",
+    "development_sha256": "a76fdb7e8f464be70086b2232100ba294b6fd820b57a72c849c09e557465c79a",
+    "canonical_path": "MF21/MF21TraceSeries.lean",
+    "canonical_sha256": "2db46c1fa4a9fc75efb8709a9413145bde464969abd2762351bfc88ebefbf6db"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/ETranscendental.lean",
+    "development_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+    "canonical_path": "MF21/MF21Transcendence/ETranscendental.lean",
+    "canonical_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/HermiteLindemann.lean",
+    "development_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+    "canonical_path": "MF21/MF21Transcendence/HermiteLindemann.lean",
+    "canonical_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/MonicRootSums.lean",
+    "development_sha256": "fe7bdeff23f45c70f308a5aa9a39305f8b8a95dbc21c72c5c4f4f9f49109f92d",
+    "canonical_path": "MF21/MF21Transcendence/MonicRootSums.lean",
+    "canonical_sha256": "24a2c11a9eb995ce2fc712ea581a00347761735a926a93dbf4490bbfa1132cfd"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/PiLindemann.lean",
+    "development_sha256": "b3b422a86d330a0b0523f5417ce14ed4e8c1665d9155862b59b4fd785e2c999a",
+    "canonical_path": "MF21/MF21Transcendence/PiLindemann.lean",
+    "canonical_sha256": "04e8580903b4a931cff19d4abbc398bf717bbbc6b7cc4072630266155f46246e"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/PiTranscendental.lean",
+    "development_sha256": "7c5d65a4e8b23a5accdd122368cc0f535c419bc7ac8957e6233b6de15de861c8",
+    "canonical_path": "MF21/MF21Transcendence/PiTranscendental.lean",
+    "canonical_sha256": "948e3ee2e5d7318937cd331aa2c142eff162193cc8c25dc2a66cee2d4626a821"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence/SubsetSumEsymm.lean",
+    "development_sha256": "57a317148b047b86922be713ea28ecdff461b8ddf411db03bd952c22621eef58",
+    "canonical_path": "MF21/MF21Transcendence/SubsetSumEsymm.lean",
+    "canonical_sha256": "57a317148b047b86922be713ea28ecdff461b8ddf411db03bd952c22621eef58"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/MF21Transcendence.lean",
+    "development_sha256": "7a73499ee7127b9380a76d19e11ad1619082ee58abe8086353a1a864c802fb44",
+    "canonical_path": "MF21/MF21Transcendence.lean",
+    "canonical_sha256": "4ec6b2218f9eb615a1f1375e2620234ce36c5555fcca5fa3e42e448dbea9053b"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PerturbedPhase.lean",
+    "development_sha256": "fcc66348d39514327eae69329155a5ec9ea80a36a9397d8ab0fd678309150bc4",
+    "canonical_path": "MF21/PerturbedPhase.lean",
+    "canonical_sha256": "cc57f9714142d442e530ad3839769ae450c7be65cfdb5d7ec7f4033c64a0080d"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PhaseCellRoot.lean",
+    "development_sha256": "f4ea064e25a2c439ab383dcbc710325730fd324f3c2e4762e160b3e9564bec8a",
+    "canonical_path": "MF21/PhaseCellRoot.lean",
+    "canonical_sha256": "07477c5d3daac6f5f66ebb2ede34b533ba3debe144db4bdbc49e7896226c35d5"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PhaseCutoffs.lean",
+    "development_sha256": "5d3472ada33e4cabcfc4adbeb6ba8c77624331660f2f87a748612ccbc49561bf",
+    "canonical_path": "MF21/PhaseCutoffs.lean",
+    "canonical_sha256": "4f7edac54dd7693dd61ef9b864ce764f184ced3a1253d800e4acb71cd52b4753"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PhaseErrorEstimate.lean",
+    "development_sha256": "d412968df8144a70002a54108b57830cc909302a95759d846e9d2e241227c509",
+    "canonical_path": "MF21/PhaseErrorEstimate.lean",
+    "canonical_sha256": "7b0ae4eeeb166b421df4a58ec7426b4a03cc5d2a5f1460843b7b8e5b7a2ef6ee"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PhaseIndexing.lean",
+    "development_sha256": "9bc7fec20a7420132d4f80c12830e5572fd6eb27c8a51a32b4ca3fc5e388b3a5",
+    "canonical_path": "MF21/PhaseIndexing.lean",
+    "canonical_sha256": "06330fa769c5ade0612322e2391a10dfd0df85c02ca892d0fb5196f6c2428d43"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/PhaseRotatedError.lean",
+    "development_sha256": "cb7770bdcdcdb0f1e5941ebaddc1d73b75595ffc83ec29de936a109c13ecd5d3",
+    "canonical_path": "MF21/PhaseRotatedError.lean",
+    "canonical_sha256": "76f213bd566cf3cebd4da7eb85df035a26bba4da2c23a662b2be0d6a4663885a"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/QuantizationTaylor.lean",
+    "development_sha256": "9b660a7eb8ba3eaa0107b9e49bb2baabf70e8539ed20dc52f15b41b1c190fc79",
+    "canonical_path": "MF21/QuantizationTaylor.lean",
+    "canonical_sha256": "534f1dd8702da40241325fb10e7766ffac11bb0b8d4b0f309a2eb23d0be23a2a"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/RealBoundaryError.lean",
+    "development_sha256": "7fc2707f2d78fa34e2b39ab51fea84fdcb3964af0450a0caa8b0c248d7d82348",
+    "canonical_path": "MF21/RealBoundaryError.lean",
+    "canonical_sha256": "2fa5b721ad4cd211eab6d923cf25e77c3e493695d6ce45cbf7e0e7b80c7b932e"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/RecurrenceBasis.lean",
+    "development_sha256": "7cb859d3f42c2c457c9c17f13e3e239885b581b61da14a1d4202240dae36be29",
+    "canonical_path": "MF21/RecurrenceBasis.lean",
+    "canonical_sha256": "7cb859d3f42c2c457c9c17f13e3e239885b581b61da14a1d4202240dae36be29"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/SmoothQuantization.lean",
+    "development_sha256": "44a8e8e190cc54bfdc16aead899a7ee5c1f124e9e967c1acaeb92b213898cbd3",
+    "canonical_path": "MF21/SmoothQuantization.lean",
+    "canonical_sha256": "23206fb1daf70c8eefa10abd70b853bd7cb7b5f9e7ed9205b4da6bac4aca9f26"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/SpectralBounds.lean",
+    "development_sha256": "490d96be78cba141087c54c594c4dbab438b517a918c1d789bb0f120869a4f82",
+    "canonical_path": "MF21/SpectralBounds.lean",
+    "canonical_sha256": "465fd9d3de8fa8a0af15e40e19f0929b9a6aba73fdf9fa21af25993400b47fe8"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/SpectralSimplicity.lean",
+    "development_sha256": "e3a3765cd301b538eda9f0ac2fd47d300bc13def924c689571f578d3b672194d",
+    "canonical_path": "MF21/SpectralSimplicity.lean",
+    "canonical_sha256": "c58613773313cb43b0d9b329992bf0f300d7099615d66778ae7d1a6a7a980150"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/SpectralTrace.lean",
+    "development_sha256": "242e2f53c979dcec3e10667fb375cb854f3c278f210ee7e529172cd1c249ecc8",
+    "canonical_path": "MF21/SpectralTrace.lean",
+    "canonical_sha256": "8e40c376636bed857fe873c671b51ff5005f2d03c6a612137b95e83b8a7dae8e"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/SymbolTransfer.lean",
+    "development_sha256": "597cb24ff1765f19c764b5e8bfa35f11368c1c67d02d8fe816e509a928968855",
+    "canonical_path": "MF21/SymbolTransfer.lean",
+    "canonical_sha256": "4015400f983720adedca8561e516679cfd5831b749a55d18f4230f5b066aa30b"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ToeplitzGram.lean",
+    "development_sha256": "d978db56ac56272e256bdc0f0512fd223458e624fd4cb5fc3d1900cbb258e50d",
+    "canonical_path": "MF21/ToeplitzGram.lean",
+    "canonical_sha256": "bfb27142071497543aa89befcf4b40260b045db9b00ca179e36a55544a1828f1"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/ToeplitzTraceLimit.lean",
+    "development_sha256": "9a8e9830dfa6201d7a1e13153179f95fc5061a71ab483c115e62b4d1aa6e4410",
+    "canonical_path": "MF21/ToeplitzTraceLimit.lean",
+    "canonical_sha256": "e7efaeb7bdedccbd141a659a0607dbc001a08a6036184d7ab4935ba5fd861d16"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/TopDownIndexing.lean",
+    "development_sha256": "ffaf8c3b05e7187407429530e63a93e6453d24ba8d563549c77e53112d580996",
+    "canonical_path": "MF21/TopDownIndexing.lean",
+    "canonical_sha256": "83c1598fa4cf402fb02ca0922488331575f6029322d5b7fe24ab55dc0bf2b37a"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/TraceArithmetic.lean",
+    "development_sha256": "723f59d69edee8c9c32050becb116b63d5bc70e2bf4a571905e70f7ce99c2ea6",
+    "canonical_path": "MF21/TraceArithmetic.lean",
+    "canonical_sha256": "723f59d69edee8c9c32050becb116b63d5bc70e2bf4a571905e70f7ce99c2ea6"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/TraceIntegralConstant.lean",
+    "development_sha256": "7c8fff739677ea385f465e2d79be1b6a6129961080c1950649015bbc5bea82db",
+    "canonical_path": "MF21/TraceIntegralConstant.lean",
+    "canonical_sha256": "3548fe8104b6ab0ec6e8d1cc07444c8c6f6d6a3e17097b177ef1f2e5ec8bb35e"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/TraceLimitSummation.lean",
+    "development_sha256": "7093ff3df2e9dcad8d25f6851ac093e24755faaa623f317d941347614f75bbcb",
+    "canonical_path": "MF21/TraceLimitSummation.lean",
+    "canonical_sha256": "0389283a5066861d94709c469224b89083a2209e9e21a60117b97c0bd34c5d71"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/UniformQuantization.lean",
+    "development_sha256": "c64c934d9069c5b1e1410ef9e69d20b78e1e82c1469047b6ff31f99988fd300d",
+    "canonical_path": "MF21/UniformQuantization.lean",
+    "canonical_sha256": "99e4ac426182fa08598babe2e30ba1810973d5acc94b000437b71b262fc9f5d2"
+  },
+  {
+    "development_path": "reviews/2026-09-19-mf21/lean/UniformTaylor.lean",
+    "development_sha256": "08ccec0d6d5630468d024a803ade43bfeeb4746e5b12168a65a30c33b5fe74e0",
+    "canonical_path": "MF21/UniformTaylor.lean",
+    "canonical_sha256": "89859f0a640afb1fb7361ee08f660912c52dc478c35bece610df3f89b9cc690c"
+  }
+]
