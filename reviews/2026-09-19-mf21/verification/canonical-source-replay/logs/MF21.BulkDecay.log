@@ -1,0 +1,7 @@
+MF21/BulkDecay.lean:47:75: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Bulk.exists_exp_bound_of_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.angleRoot_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_angle_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_angle_logDeriv_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

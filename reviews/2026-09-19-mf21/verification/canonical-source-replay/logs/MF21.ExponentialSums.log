@@ -1,0 +1,9 @@
+MF21/ExponentialSums.lean:43:54: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/ExponentialSums.lean:91:4: warning: Try this: intro i _ x hx
+'MF21ExpSums.finite_sum_norm_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,12 @@
+MF21/SmoothQuantization.lean:47:6: warning: `ext` did not consume the patterns `y`
+
+Note: This linter can be disabled with `set_option linter.unusedRCasesPattern false`
+MF21/SmoothQuantization.lean:65:43: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [equation, zero_mul, sub_self] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Quantization.exists_local_smooth_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Quantization.implicit_symbol_diagonal_profile' depends on axioms: [propext, Classical.choice, Quot.sound]

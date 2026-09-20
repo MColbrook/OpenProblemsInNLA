@@ -1,0 +1,5 @@
+'MF21ActualBoundary.model_phase_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.sine_zero_iff_eigenangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.actual_phase_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.simple_sine_zero_unique_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.actual_indexed_phase_roots' depends on axioms: [propext, Classical.choice, Quot.sound]

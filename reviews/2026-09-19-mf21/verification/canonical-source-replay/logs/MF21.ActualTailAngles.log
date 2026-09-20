@@ -1,0 +1,1 @@
+'MF21Expansion.actual_tailAngleApproximation' depends on axioms: [propext, Classical.choice, Quot.sound]

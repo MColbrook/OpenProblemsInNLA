@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/gotrevor/lean-formalizations",
+  "commit": "3a24a73416f83c32b4d4a2ac09588524c6291650",
+  "license": "Apache-2.0",
+  "source_directory": "src/LeanFormalizations/NumberTheory/Transcendence",
+  "initial_changes": "Rename only project-local imports to MF21Transcendence; preserve namespace and mathematical statements.",
+  "files": [
+    {
+      "file": "ETranscendental.lean",
+      "source_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+      "adapted_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+      "development_adapted_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0"
+    },
+    {
+      "file": "HermiteLindemann.lean",
+      "source_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+      "adapted_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+      "development_adapted_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108"
+    },
+    {
+      "file": "MonicRootSums.lean",
+      "source_sha256": "c6b20c3138f3ec57e96de603f796422479894f42bbd45d2ebafd0d8ec8558d04",
+      "adapted_sha256": "24a2c11a9eb995ce2fc712ea581a00347761735a926a93dbf4490bbfa1132cfd",
+      "development_adapted_sha256": "fe7bdeff23f45c70f308a5aa9a39305f8b8a95dbc21c72c5c4f4f9f49109f92d"
+    },
+    {
+      "file": "PiLindemann.lean",
+      "source_sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+      "adapted_sha256": "04e8580903b4a931cff19d4abbc398bf717bbbc6b7cc4072630266155f46246e",
+      "development_adapted_sha256": "b3b422a86d330a0b0523f5417ce14ed4e8c1665d9155862b59b4fd785e2c999a"
+    },
+    {
+      "file": "PiTranscendental.lean",
+      "source_sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+      "adapted_sha256": "948e3ee2e5d7318937cd331aa2c142eff162193cc8c25dc2a66cee2d4626a821",
+      "development_adapted_sha256": "7c5d65a4e8b23a5accdd122368cc0f535c419bc7ac8957e6233b6de15de861c8"
+    },
+    {
+      "file": "SubsetSumEsymm.lean",
+      "source_sha256": "311a97ce3b745500f3f14ff879c2eaa42299c5ab57914bf1c86fe04a6cdf3165",
+      "adapted_sha256": "57a317148b047b86922be713ea28ecdff461b8ddf411db03bd952c22621eef58",
+      "development_adapted_sha256": "57a317148b047b86922be713ea28ecdff461b8ddf411db03bd952c22621eef58"
+    }
+  ],
+  "compatibility_changes": [
+    "Renamed local imports to MF21Transcendence.",
+    "SubsetSumEsymm.lean ringHom_map_multiset_esymm: added Multiset.powersetCard_zero_right to the empty/successor simplification for mathlib 0df444a360. No theorem statement changed.",
+    "Canonical package prefixes local imports with MF21; no statement or proof body changes."
+  ]
+}

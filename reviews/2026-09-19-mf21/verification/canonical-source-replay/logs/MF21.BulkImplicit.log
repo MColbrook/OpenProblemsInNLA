@@ -1,0 +1,3 @@
+'MF21Bulk.local_implicit_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.implicit_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.existsUnique_implicit_solution' depends on axioms: [propext, Classical.choice, Quot.sound]

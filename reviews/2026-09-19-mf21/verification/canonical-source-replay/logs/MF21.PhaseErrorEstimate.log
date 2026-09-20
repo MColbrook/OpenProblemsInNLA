@@ -1,0 +1,2 @@
+'MF21Phase.phase_exponential_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.phase_cell_angle_linear_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

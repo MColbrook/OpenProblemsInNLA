@@ -1,0 +1,5 @@
+'MF21Mesh.log_squared_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Mesh.cutoff_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Mesh.index_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Mesh.mesh_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Mesh.mesh_mem' depends on axioms: [propext, Classical.choice, Quot.sound]

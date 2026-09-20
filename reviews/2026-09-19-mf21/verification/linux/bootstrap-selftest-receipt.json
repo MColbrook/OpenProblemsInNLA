@@ -1,0 +1,35 @@
+{
+  "stage": "Linux bootstrap and infrastructure self-test only; theorem Comparator not yet run",
+  "host": "Apple Silicon macOS, no host directories/audio/clipboard shared",
+  "guest": "Ubuntu 24.04.4 LTS ARM64, Linux 7.0.0-30-generic",
+  "tart_version": "2.37.0",
+  "tart_archive_url": "https://github.com/openai/tart/releases/download/2.37.0/tart.tar.gz",
+  "tart_archive_sha256": "d531752c4dad5d4214ac7ff540cefc2647df1fca2338d413d3c01754f54b356b",
+  "tart_codesign": "codesign --verify --deep --strict passed outside restricted host tool sandbox",
+  "vm_image": "ghcr.io/cirruslabs/ubuntu:24.04",
+  "vm_image_digest": "sha256:e1814edfeddabeaed5e6bdc646445c96701618d6a2a3d0fe993b0c2914417c07",
+  "guest_resources": {
+    "cpus": 4,
+    "memory_mib": 8192,
+    "disk_gb": 80
+  },
+  "guest_tools": {
+    "go": "1.27.1",
+    "elan": "4.2.4",
+    "bubblewrap": "0.9.0",
+    "lean": "4.33.1"
+  },
+  "go_archive_sha256": "3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec",
+  "guest_prerequisite_changes": [
+    "installed compiler/Bubblewrap packages",
+    "enabled linger and user@1000.service for admin",
+    "runtime kernel.apparmor_restrict_unprivileged_userns=0 to permit unprivileged user namespaces"
+  ],
+  "selftest": "passed unchanged repository harness; actual sandbox, kernel, Comparator and axiom negative controls",
+  "guest_selftest_path": "/home/admin/nla-lean-tools/logs/selftest-20260920T092038Z-3346",
+  "archive": "bootstrap-selftest-20260920.tar.gz",
+  "archive_sha256": "10e874261a58b1daef6375f68d59690c8ce462c1643d91b73bfbd9b1e06aeaae",
+  "elan_archive_sha256": "05febd124d84ebf994b2e7479922a5650b1e950c17ae3bd1ddd776b65bb72bf9",
+  "elan_archive_url": "https://github.com/leanprover/elan/releases/latest/download/elan-aarch64-unknown-linux-gnu.tar.gz",
+  "elan_resolved_version": "4.2.4"
+}

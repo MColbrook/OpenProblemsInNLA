@@ -1,0 +1,1787 @@
+{
+  "kind": "development source replay; not Linux Comparator",
+  "status": "passed",
+  "started_utc": "2026-09-20T09:19:34.560764+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "lean": "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "manifest_sha256": "abbdfc92fbee7ffb47c17ef29119d45c1ba25372885f06d16176dc0ca4549ea0",
+  "runner_sha256": "09443118cd5ef48c34594664adad66b1b51a8d3eede47f2a6d88b55b066aa2fa",
+  "source": "/private/tmp/mf21-local-pr/matrix-functions-and-stability/MF-21/lean",
+  "output": "/private/tmp/mf21-canonical-replay-20260920-01",
+  "lean_path": "/private/tmp/mf21-canonical-replay-20260920-01/olean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/mathlib/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/plausible/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/importGraph/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/aesop/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/Qq/.lake/build/lib/lean:/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/batteries/.lake/build/lib/lean",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "expected_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "plausible",
+      "expected_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/plausible/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "importGraph",
+      "expected_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "proofwidgets",
+      "expected_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "aesop",
+      "expected_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/aesop/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "Qq",
+      "expected_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/Qq/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "batteries",
+      "expected_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/batteries/.lake/build/lib/lean",
+      "cache_present": true,
+      "revision_check": "unavailable; external cache trusted"
+    },
+    {
+      "name": "Cli",
+      "expected_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "observed_revision": null,
+      "cache": "/private/tmp/nla-formalization-campaign-20260915/linear-systems-and-elimination/IE-15/lean/.lake/packages/Cli/.lake/build/lib/lean",
+      "cache_present": false,
+      "revision_check": "unavailable; external cache trusted"
+    }
+  ],
+  "excluded_modules": [
+    "Challenge"
+  ],
+  "probe_policy": "Every filename containing Probe is excluded",
+  "local_import_graph": {
+    "Solution": [
+      "MF21.FinalTarget"
+    ],
+    "MF21.ActualBoundaryPhase": [
+      "MF21.ActualBoundaryExpansion",
+      "MF21.BoundaryReality",
+      "MF21.BulkLeadingPhase",
+      "MF21.RealBoundaryError"
+    ],
+    "MF21.BoundaryReality": [
+      "MF21.BoundaryBlockForm",
+      "MF21.BulkSlopes",
+      "MF21.BulkTotalPhase"
+    ],
+    "MF21.BulkRootFamily": [
+      "MF21.BulkEndpoint"
+    ],
+    "MF21.BoundaryNormalization": [],
+    "MF21.BulkTotalPhase": [
+      "MF21.BulkPhase"
+    ],
+    "MF21.BulkEta": [
+      "MF21.BulkTotalPhase"
+    ],
+    "MF21.ToeplitzGram": [
+      "MF21.Definitions"
+    ],
+    "MF21.Eigenangles": [
+      "MF21.BulkSymbol",
+      "MF21.SpectralBounds"
+    ],
+    "MF21.ToeplitzTraceLimit": [
+      "MF21.FirstColumnAsymptotics",
+      "MF21.SpectralTrace",
+      "MF21.TraceIntegralConstant",
+      "MF21.TraceLimitSummation"
+    ],
+    "MF21.RealBoundaryError": [
+      "MF21.PhaseRotatedError"
+    ],
+    "MF21.BulkPhase": [
+      "MF21.BulkRootFamily"
+    ],
+    "MF21.ExpansionEstimates": [
+      "MF21.ExponentialCutoff",
+      "MF21.FiniteHeadModel"
+    ],
+    "MF21.Definitions": [],
+    "MF21.ExponentialCutoff": [
+      "MF21.Definitions",
+      "MF21.LogSquaredMesh"
+    ],
+    "MF21.QuantizationTaylor": [
+      "MF21.BulkEta",
+      "MF21.UniformQuantization"
+    ],
+    "MF21.BoundaryDecay": [
+      "MF21.BoundaryExpansion"
+    ],
+    "MF21.FinalTarget": [
+      "MF21.ActualTailAngles",
+      "MF21.ActualTraceObstruction",
+      "MF21.ExpansionEstimates",
+      "MF21.MF21CoefficientUniqueness"
+    ],
+    "MF21.ActualTraceObstruction": [
+      "MF21.FiniteTraceObstruction",
+      "MF21.LogSquaredMesh",
+      "MF21.QuantizationTaylor",
+      "MF21.SpectralBounds",
+      "MF21.ToeplitzTraceLimit"
+    ],
+    "MF21.BulkEndpoint": [
+      "MF21.BulkRoots"
+    ],
+    "MF21.DeterminantSimpleKernel": [
+      "MF21.BoundaryDeterminant"
+    ],
+    "MF21.SpectralBounds": [
+      "MF21.CirculantOrdering"
+    ],
+    "MF21.BoundaryExpansion": [
+      "MF21.BoundaryLeadingTerms"
+    ],
+    "MF21.TopDownIndexing": [
+      "MF21.Eigenangles"
+    ],
+    "MF21.FourierCoefficients": [
+      "MF21.Definitions"
+    ],
+    "MF21.MF21CoefficientUniqueness": [
+      "MF21.CoefficientUniqueness",
+      "MF21.Definitions",
+      "MF21.LogSquaredMesh"
+    ],
+    "MF21.BoundarySpectrum": [
+      "MF21.BoundaryDeterminant"
+    ],
+    "MF21.BoundaryPolynomial": [
+      "MF21.BoundaryDeterminant",
+      "MF21.LaurentSymbol"
+    ],
+    "MF21.PhaseIndexing": [
+      "MF21.PhaseCellRoot",
+      "MF21.TopDownIndexing"
+    ],
+    "MF21.ActualBoundaryDeterminant": [
+      "MF21.BoundaryPolynomial",
+      "MF21.BoundarySpectrum",
+      "MF21.BulkRootFamily"
+    ],
+    "MF21.ActualTailAngles": [
+      "MF21.ActualPhaseIndexing",
+      "MF21.SymbolTransfer"
+    ],
+    "MF21.BulkSlopes": [
+      "MF21.BulkDecay"
+    ],
+    "MF21.ActualBoundaryExpansion": [
+      "MF21.ActualBoundaryError",
+      "MF21.BoundaryBlockForm"
+    ],
+    "MF21.BoundaryDeterminant": [
+      "MF21.FirstInverseColumn",
+      "MF21.RecurrenceBasis"
+    ],
+    "MF21.SpectralSimplicity": [
+      "MF21.BoundarySpectrum",
+      "MF21.CompressionInterlacing",
+      "MF21.Eigenangles"
+    ],
+    "MF21.LaurentSymbol": [
+      "MF21.FirstInverseColumn"
+    ],
+    "MF21.BoundaryLeadingTerms": [
+      "MF21.BoundaryNormalization"
+    ],
+    "MF21.PhaseRotatedError": [
+      "MF21.ActualBoundaryError",
+      "MF21.BulkPhase"
+    ],
+    "MF21.PhaseCutoffs": [
+      "MF21.PhaseErrorEstimate"
+    ],
+    "MF21.FirstInverseColumn": [
+      "MF21.ToeplitzGram"
+    ],
+    "MF21.PerturbedPhase": [
+      "MF21.Eigenangles"
+    ],
+    "MF21.CirculantOrdering": [
+      "MF21.CirculantSpectrum"
+    ],
+    "MF21.PhaseCellRoot": [
+      "MF21.PerturbedPhase"
+    ],
+    "MF21.BulkLeadingPhase": [
+      "MF21.BulkSlopes",
+      "MF21.BulkTotalPhase"
+    ],
+    "MF21.SymbolTransfer": [
+      "MF21.LogSquaredMesh",
+      "MF21.QuantizationTaylor"
+    ],
+    "MF21.TraceArithmetic": [],
+    "MF21.LogSquaredMesh": [],
+    "MF21.ActualBoundarySimplicity": [
+      "MF21.ActualBoundaryDeterminant",
+      "MF21.BulkPhase",
+      "MF21.DeterminantSimpleKernel",
+      "MF21.SpectralSimplicity"
+    ],
+    "MF21.PhaseErrorEstimate": [
+      "MF21.PhaseIndexing"
+    ],
+    "MF21.CompressionInterlacing": [
+      "MF21.SpectralTrace"
+    ],
+    "MF21.TraceLimitSummation": [
+      "MF21.DiscretePowerLimits",
+      "MF21.InverseTraceRecurrence"
+    ],
+    "MF21.InverseTraceRecurrence": [
+      "MF21.ToeplitzGram"
+    ],
+    "MF21.ActualPhaseIndexing": [
+      "MF21.ActualBoundaryPhase",
+      "MF21.ActualBoundarySimplicity",
+      "MF21.ActualBoundarySmooth",
+      "MF21.PhaseCutoffs",
+      "MF21.QuantizationTaylor"
+    ],
+    "MF21.ActualBoundarySmooth": [
+      "MF21.ActualBoundaryPhase",
+      "MF21.ActualBoundarySimplicity"
+    ],
+    "MF21.BulkRoots": [],
+    "MF21.CoefficientUniqueness": [],
+    "MF21.FiniteTraceObstruction": [],
+    "MF21.BulkDecay": [
+      "MF21.BulkPhase"
+    ],
+    "MF21.SmoothQuantization": [
+      "MF21.Definitions"
+    ],
+    "MF21.BulkImplicit": [],
+    "MF21.FiniteHeadModel": [
+      "MF21.SpectralBounds",
+      "MF21.SymbolTransfer"
+    ],
+    "MF21.ExponentialSums": [],
+    "MF21.DiscretePowerLimits": [],
+    "MF21.UniformQuantization": [
+      "MF21.UniformTaylor"
+    ],
+    "MF21.CirculantSpectrum": [
+      "MF21.CompressionInterlacing",
+      "MF21.FourierCoefficients"
+    ],
+    "MF21.RecurrenceBasis": [],
+    "MF21.BulkSymbol": [
+      "MF21.Definitions"
+    ],
+    "MF21.FirstColumnAsymptotics": [
+      "MF21.DiscretePowerLimits",
+      "MF21.FirstInverseColumn"
+    ],
+    "MF21.UniformTaylor": [
+      "MF21.SmoothQuantization"
+    ],
+    "MF21.ActualBoundaryError": [
+      "MF21.ActualBoundaryDecay",
+      "MF21.ExponentialSums"
+    ],
+    "MF21.MF21TraceSeries": [
+      "MF21.MF21Transcendence"
+    ],
+    "MF21.ActualBoundaryDecay": [
+      "MF21.BoundaryDecay",
+      "MF21.BulkDecay",
+      "MF21.BulkSlopes"
+    ],
+    "MF21.MF21Transcendence": [
+      "MF21.MF21Transcendence.PiTranscendental"
+    ],
+    "MF21.TraceIntegralConstant": [
+      "MF21.MF21TraceSeries"
+    ],
+    "MF21.BoundaryBlockForm": [
+      "MF21.ActualBoundaryDeterminant",
+      "MF21.BoundaryNormalization"
+    ],
+    "MF21.SpectralTrace": [
+      "MF21.ToeplitzGram"
+    ],
+    "MF21.MF21Transcendence.SubsetSumEsymm": [],
+    "MF21.MF21Transcendence.HermiteLindemann": [],
+    "MF21.MF21Transcendence.PiTranscendental": [
+      "MF21.MF21Transcendence.MonicRootSums",
+      "MF21.MF21Transcendence.SubsetSumEsymm"
+    ],
+    "MF21.MF21Transcendence.ETranscendental": [],
+    "MF21.MF21Transcendence.PiLindemann": [
+      "MF21.MF21Transcendence.ETranscendental"
+    ],
+    "MF21.MF21Transcendence.MonicRootSums": [
+      "MF21.MF21Transcendence.HermiteLindemann",
+      "MF21.MF21Transcendence.PiLindemann"
+    ]
+  },
+  "source_sha256": {
+    "Solution": "8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6",
+    "MF21.ActualBoundaryPhase": "1ab2637cbbf0650232ff54a63a4d76bbb34d59d633eefcdf256739cc74d44aec",
+    "MF21.BoundaryReality": "cd5c0326640671d0b2e98e9d01e2b2cb3adb59479b3deb7e4432591eca43a0d5",
+    "MF21.BulkRootFamily": "29fe65567f6c28d4235092ec03760c2fb7abeb6336447251a7f53a44896e62f9",
+    "MF21.BoundaryNormalization": "5345d43a0a597fac984a79f78b2a1ad73bc37ccbc7090a3e64c8bd36416ab4e7",
+    "MF21.BulkTotalPhase": "dd144ecc1b9e5c41229ce399db2473e1721fee39d652cd9a66b8a8b4bb2ebae8",
+    "MF21.BulkEta": "0c69fffe0593c9a19c500ff9d50df11a5ba0ba7785fa19ce282194d23e4255b9",
+    "MF21.ToeplitzGram": "bfb27142071497543aa89befcf4b40260b045db9b00ca179e36a55544a1828f1",
+    "MF21.Eigenangles": "71b2af26753c601a2c6069940d70a42a9945663ce79c382e8d89cf013dae9f33",
+    "MF21.ToeplitzTraceLimit": "e7efaeb7bdedccbd141a659a0607dbc001a08a6036184d7ab4935ba5fd861d16",
+    "MF21.RealBoundaryError": "2fa5b721ad4cd211eab6d923cf25e77c3e493695d6ce45cbf7e0e7b80c7b932e",
+    "MF21.BulkPhase": "9caa2e1d88ea93c17c0916a961bb24ea71c06422c47ce62b2f9d55d927c66ef2",
+    "MF21.ExpansionEstimates": "78ca691710ec1488fa31ae5d5326910a607da28b600f3d38c8585a086fa23b0a",
+    "MF21.Definitions": "bf813d493c38164aa8f4b3a6fc4476c2b57560b0bd87932b02ab1a4d94038525",
+    "MF21.ExponentialCutoff": "7810fbae4788aac9e237dbd5bf1b0892bee7c389979431dc57611f6db409ce76",
+    "MF21.QuantizationTaylor": "534f1dd8702da40241325fb10e7766ffac11bb0b8d4b0f309a2eb23d0be23a2a",
+    "MF21.BoundaryDecay": "85fafdfc3d24b475a0b24b0044752fb7256a242b24913d0a7bd38b0cf4957bc0",
+    "MF21.FinalTarget": "02eb2d9dde8f38beb440073281e8bcc05e4339e1f9bc4d00709ff26c2e3309b8",
+    "MF21.ActualTraceObstruction": "43733405bcc41ee948c3a89c02a11c9dfc93799acdf107c3d53fb6c7afbb04e4",
+    "MF21.BulkEndpoint": "3b451210f777a2c8c462d6dd4273c37f1e52566efb78357b0ce2b4857c67f755",
+    "MF21.DeterminantSimpleKernel": "55864da728427ca33a82ec9b307399cbda4b66d5f4421d47c096c80cdb13dc3f",
+    "MF21.SpectralBounds": "465fd9d3de8fa8a0af15e40e19f0929b9a6aba73fdf9fa21af25993400b47fe8",
+    "MF21.BoundaryExpansion": "c973766839eee1349e09fd3d309368e9966966489689eb4469572ab6c21639c0",
+    "MF21.TopDownIndexing": "83c1598fa4cf402fb02ca0922488331575f6029322d5b7fe24ab55dc0bf2b37a",
+    "MF21.FourierCoefficients": "dfd2c642a60e0dbf2977a913d2de36763dd4771c5dddd60d1691d16997b9a2f4",
+    "MF21.MF21CoefficientUniqueness": "96212645705e88344c1323aedc62638868c2fcae883bf8577797b44de509c4af",
+    "MF21.BoundarySpectrum": "e82a6d61ee20f7f363a8d4bc878dccbc7d4897db94b7ecb9741b95bce49f9c4c",
+    "MF21.BoundaryPolynomial": "03504e856f15ab5c97e4c4a719a6659d1e3f31761b1f51f74cecb455956fa268",
+    "MF21.PhaseIndexing": "06330fa769c5ade0612322e2391a10dfd0df85c02ca892d0fb5196f6c2428d43",
+    "MF21.ActualBoundaryDeterminant": "a46e3db08207104112bcefc0eeb507328cc977a90b5445c5cc58867e06a96b25",
+    "MF21.ActualTailAngles": "77355f708c1e543dad52002d36c3c2407f3500c0d2c428b9a270a577e92df502",
+    "MF21.BulkSlopes": "1831f27c839626786dffd871274bd4158be044233ca47b1d250ab4d59d39b9a7",
+    "MF21.ActualBoundaryExpansion": "c1b7f948cbea32902e9a947a089b5791f1868b2fc4a80e4f7f8e580140f65e2d",
+    "MF21.BoundaryDeterminant": "f68d99c3bc7d95c3098d52c139779fbcdfd8d934d7fc2428bc4c8ae90d7e949b",
+    "MF21.SpectralSimplicity": "c58613773313cb43b0d9b329992bf0f300d7099615d66778ae7d1a6a7a980150",
+    "MF21.LaurentSymbol": "db1c87ea34c642a574be1f453ddbb455b594a1048950919ae37c0031f63278c0",
+    "MF21.BoundaryLeadingTerms": "6adebd57c1eae1cfc3c5f709bb3151c2e870b7badfe400eeeba766b09a23e9ec",
+    "MF21.PhaseRotatedError": "76f213bd566cf3cebd4da7eb85df035a26bba4da2c23a662b2be0d6a4663885a",
+    "MF21.PhaseCutoffs": "4f7edac54dd7693dd61ef9b864ce764f184ced3a1253d800e4acb71cd52b4753",
+    "MF21.FirstInverseColumn": "bbc4c87227ca90b916e6ba7b8ba651d089c635ca81ff264e804e1295d2807910",
+    "MF21.PerturbedPhase": "cc57f9714142d442e530ad3839769ae450c7be65cfdb5d7ec7f4033c64a0080d",
+    "MF21.CirculantOrdering": "651d37339703955562c69ecbf030f1a51a37df3368d4699bd0eb54b2901febfc",
+    "MF21.PhaseCellRoot": "07477c5d3daac6f5f66ebb2ede34b533ba3debe144db4bdbc49e7896226c35d5",
+    "MF21.BulkLeadingPhase": "56a31164627b8726f5b8bf4d5497ebad55956b4af166b42514de4aefc9cc23d4",
+    "MF21.SymbolTransfer": "4015400f983720adedca8561e516679cfd5831b749a55d18f4230f5b066aa30b",
+    "MF21.TraceArithmetic": "723f59d69edee8c9c32050becb116b63d5bc70e2bf4a571905e70f7ce99c2ea6",
+    "MF21.LogSquaredMesh": "faeca4b2e92aa3c88f741e7ddb3b40dbbca70353b6587e760b3ede33a33c5635",
+    "MF21.ActualBoundarySimplicity": "d76b8ca24c8f128b695fe73c9d08412c5870fdfb2d521e304454f0334a16f9da",
+    "MF21.PhaseErrorEstimate": "7b0ae4eeeb166b421df4a58ec7426b4a03cc5d2a5f1460843b7b8e5b7a2ef6ee",
+    "MF21.CompressionInterlacing": "27e8701a22c69cab5d35931a9aa1c1d7a9743bc0e15c1cb5da7b092d0c42b822",
+    "MF21.TraceLimitSummation": "0389283a5066861d94709c469224b89083a2209e9e21a60117b97c0bd34c5d71",
+    "MF21.InverseTraceRecurrence": "cb748f319f6f8f846d78d507c191e0894bef1f5446f16abae436f980bcec0980",
+    "MF21.ActualPhaseIndexing": "9a4945ac77fd44e875bb3e5614fa5ff88f8157a0a929e11c0d49159ed8f4ea09",
+    "MF21.ActualBoundarySmooth": "ea171b99959b848de75231660d6659d4c7feaa2fe12e6611b46789321d686660",
+    "MF21.BulkRoots": "131ac06b866bb4bfcaa1ef5fdfaddd8c981c6962b7e6e0a1884ed40ea24d3f49",
+    "MF21.CoefficientUniqueness": "9a32b2f97a400e86fd934d5ff18d94e2c8d46fa746d6c33dc571ced519a7de56",
+    "MF21.FiniteTraceObstruction": "2f2289d930ed107fb7a1480934f0628ac696e2996b532e68d9273c07dc254446",
+    "MF21.BulkDecay": "b91e67bbc434e5729400fddc1cb42b5ccee45a7be7680f8938f3007fea539909",
+    "MF21.SmoothQuantization": "23206fb1daf70c8eefa10abd70b853bd7cb7b5f9e7ed9205b4da6bac4aca9f26",
+    "MF21.BulkImplicit": "0f500fb21bb60e14e8f99422c7b393fe04abbebac40b766df5f8e0f714fdc65d",
+    "MF21.FiniteHeadModel": "a1118397738c67a69c4d7d887850351cd6438ea467c31db436b4843096b345c9",
+    "MF21.ExponentialSums": "2ddd08933c93dc98fc1046db16452ace7589a6e184fd7481e3b6bb8b5b44b27a",
+    "MF21.DiscretePowerLimits": "813bb9aefd380da2c35f4e12e85bfe5e5c43a5dad5be8b1b219f7f9108f5aac7",
+    "MF21.UniformQuantization": "99e4ac426182fa08598babe2e30ba1810973d5acc94b000437b71b262fc9f5d2",
+    "MF21.CirculantSpectrum": "e580cc249d7422b17989750a3277d77dc49f485c2799f1d6da9cbcd3af09c59b",
+    "MF21.RecurrenceBasis": "7cb859d3f42c2c457c9c17f13e3e239885b581b61da14a1d4202240dae36be29",
+    "MF21.BulkSymbol": "f6f3b3834a5499496058e817e04649b0dee06c876f2a12e1fbda1dd15c03392f",
+    "MF21.FirstColumnAsymptotics": "b8336339d354eb82d168bf41d73a4bda2aa771876e7e9dc8e75a7c54c26c07e3",
+    "MF21.UniformTaylor": "89859f0a640afb1fb7361ee08f660912c52dc478c35bece610df3f89b9cc690c",
+    "MF21.ActualBoundaryError": "1d5efb483a62f698ab87665e780fa11a1900ec3defa5b35b78bd513f5964667b",
+    "MF21.MF21TraceSeries": "2db46c1fa4a9fc75efb8709a9413145bde464969abd2762351bfc88ebefbf6db",
+    "MF21.ActualBoundaryDecay": "338fe9e1c5600a0aceb301acf0d6d17dee749ec91daca8b6e8be9fbc7f61e972",
+    "MF21.MF21Transcendence": "4ec6b2218f9eb615a1f1375e2620234ce36c5555fcca5fa3e42e448dbea9053b",
+    "MF21.TraceIntegralConstant": "3548fe8104b6ab0ec6e8d1cc07444c8c6f6d6a3e17097b177ef1f2e5ec8bb35e",
+    "MF21.BoundaryBlockForm": "bfc0506aa76e833f667656ad2ef5edc9c6404e3f6eea5a8cc21f36853c277c54",
+    "MF21.SpectralTrace": "8e40c376636bed857fe873c671b51ff5005f2d03c6a612137b95e83b8a7dae8e",
+    "MF21.MF21Transcendence.SubsetSumEsymm": "57a317148b047b86922be713ea28ecdff461b8ddf411db03bd952c22621eef58",
+    "MF21.MF21Transcendence.HermiteLindemann": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+    "MF21.MF21Transcendence.PiTranscendental": "948e3ee2e5d7318937cd331aa2c142eff162193cc8c25dc2a66cee2d4626a821",
+    "MF21.MF21Transcendence.ETranscendental": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+    "MF21.MF21Transcendence.PiLindemann": "04e8580903b4a931cff19d4abbc398bf717bbbc6b7cc4072630266155f46246e",
+    "MF21.MF21Transcendence.MonicRootSums": "24a2c11a9eb995ce2fc712ea581a00347761735a926a93dbf4490bbfa1132cfd"
+  },
+  "generated_audit_sha256": "4fa376df2951a7d1d7b7db170b8d4b466cefb6a117ec56ff26636db344b2dfaf",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "MF21.BoundaryNormalization": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryNormalization.olean",
+        "MF21/BoundaryNormalization.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.939,
+      "log": "logs/MF21.BoundaryNormalization.log",
+      "log_sha256": "491d9b8fedad1682e8cec7fd61c5e6d1789401a20ddf71090d8a5f1b9fc7ac11",
+      "olean_sha256": "935ebea6c13c1f177f732933f165e8cbb0e95790ba07061793316a0e42b4b142",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BulkImplicit": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkImplicit.olean",
+        "MF21/BulkImplicit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.107,
+      "log": "logs/MF21.BulkImplicit.log",
+      "log_sha256": "3725d097de24afe22f2151c51c0af07e0e144fddbb8abcd042b1e8c6e11ec7d7",
+      "olean_sha256": "a21029edc264ad65013d61662b4d40d78992008b1973ba7c0978e5bddde5568f",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.BoundaryLeadingTerms": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryLeadingTerms.olean",
+        "MF21/BoundaryLeadingTerms.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.05,
+      "log": "logs/MF21.BoundaryLeadingTerms.log",
+      "log_sha256": "2693a8f969458a5a0dcfff4ac79be2a456becda8eba6f7bb2aa899918f65d0e5",
+      "olean_sha256": "e9132b4a4a6eed5f2a4f8cb3fa99a1bc3439f6fd4819e15a7b0f6dc5b2a64e1f",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.BulkRoots": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkRoots.olean",
+        "MF21/BulkRoots.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.059,
+      "log": "logs/MF21.BulkRoots.log",
+      "log_sha256": "c2742564814c45ad68b23cb28e8fb990baa842d35b6d27f788655804b9cd13ad",
+      "olean_sha256": "90ce45812c856819066bee678909582be66c94007cc2b342bd2b42f442c90a3d",
+      "failures": [],
+      "printed_axiom_reports": 7
+    },
+    "MF21.BoundaryExpansion": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryExpansion.olean",
+        "MF21/BoundaryExpansion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.137,
+      "log": "logs/MF21.BoundaryExpansion.log",
+      "log_sha256": "6ce5bd4df7247b1f4e91641d91c443efbb76b8fed029f83a959e0701b28e5993",
+      "olean_sha256": "44d6f41360fced92e45c60c346ccf95c7325dad80a1e51a34c28e01533997d5a",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.BulkEndpoint": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkEndpoint.olean",
+        "MF21/BulkEndpoint.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.444,
+      "log": "logs/MF21.BulkEndpoint.log",
+      "log_sha256": "968e80ac99b689af1efc2c1234b519fec13b29df56ab243a5bd97c830bb3beb1",
+      "olean_sha256": "ce01714ea6b884ccca299920cd583042295e9a41530959e510452f36856bb802",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BoundaryDecay": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryDecay.olean",
+        "MF21/BoundaryDecay.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.734,
+      "log": "logs/MF21.BoundaryDecay.log",
+      "log_sha256": "aa399e119648d9c4f4218d9eea9d6c904b51c46f2be6e535c22f29d0ab4b6cdd",
+      "olean_sha256": "931c8048f635fbd4a7cfd82e4e4dc3fea5e9ba7ccd053efd4a8ca2203abc3f40",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.CoefficientUniqueness": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/CoefficientUniqueness.olean",
+        "MF21/CoefficientUniqueness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.315,
+      "log": "logs/MF21.CoefficientUniqueness.log",
+      "log_sha256": "85c80b980317d5e9dcbe95f16b457d65db53decd3824c7a867115acae059e315",
+      "olean_sha256": "a22232ead424634381b5316545fa536139f53cc4fbaaa5664f8069d961892c2d",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BulkRootFamily": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkRootFamily.olean",
+        "MF21/BulkRootFamily.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.762,
+      "log": "logs/MF21.BulkRootFamily.log",
+      "log_sha256": "5fbe8b05d09b24ef58ad6eb3ec9da8d19f8b2d205264c521804250fd1a955972",
+      "olean_sha256": "769f687a6125750a0646068608fd613920a7ef4c9779faf8b341f179bd54e9d3",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.Definitions": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/Definitions.olean",
+        "MF21/Definitions.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.97,
+      "log": "logs/MF21.Definitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "1640884e8a9b91c1119f42b40f4a3d53018f2783baf89d717354c0233483df26",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.BulkPhase": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkPhase.olean",
+        "MF21/BulkPhase.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.691,
+      "log": "logs/MF21.BulkPhase.log",
+      "log_sha256": "5f3786cb92217a9a629a375f0a754310605850248b7d99712b9ed36928d85e3a",
+      "olean_sha256": "86d0daa320a75420fd8d7f8651413cc73cd84d8f9df7deda103c3b63c47c8c8b",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.BulkSymbol": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkSymbol.olean",
+        "MF21/BulkSymbol.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.402,
+      "log": "logs/MF21.BulkSymbol.log",
+      "log_sha256": "3063064c801f8ed1302b302f5c2c2c4da00d96a6313bc5d0b543c9e9a277e3be",
+      "olean_sha256": "918d5818b76c4803be4b4f4529110d6631d867f2ea81f4e7b4e658dcea38f3e6",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BulkDecay": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkDecay.olean",
+        "MF21/BulkDecay.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.117,
+      "log": "logs/MF21.BulkDecay.log",
+      "log_sha256": "aa21d908f1ff20b36e415e873850d567f0157190d55274e095c259081b21357a",
+      "olean_sha256": "542173d9b2fcd4f9f870a95618e115f1fcf7c234887d782de29b0ce4bc63db56",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BulkTotalPhase": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkTotalPhase.olean",
+        "MF21/BulkTotalPhase.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.734,
+      "log": "logs/MF21.BulkTotalPhase.log",
+      "log_sha256": "0a66b2845383c43c61d76769902266da3a3d24d7e1309c90c82cef9320133da1",
+      "olean_sha256": "c09453022dc3db9e7e3055c7f5c3c43ef2e720ebbb665adb9ef7aaf9dedaf0cb",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.BulkSlopes": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkSlopes.olean",
+        "MF21/BulkSlopes.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.886,
+      "log": "logs/MF21.BulkSlopes.log",
+      "log_sha256": "da0281a30d93ad897925a8c5e2735a1269805dd9369e92acf03ac36caa0a3fb2",
+      "olean_sha256": "0dce7e2ecbed3842273d547ed45177bbecb6124491a1d1cb54ae43278b9712f9",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.BulkEta": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkEta.olean",
+        "MF21/BulkEta.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.465,
+      "log": "logs/MF21.BulkEta.log",
+      "log_sha256": "bb06fbbe2404139cc9d2b921e5a148a8b56d5581621d219b82586f0c009d0ff3",
+      "olean_sha256": "741d7438655a79945d629e2255cb362df387839490637196f5ed9fe4a987503d",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.ActualBoundaryDecay": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundaryDecay.olean",
+        "MF21/ActualBoundaryDecay.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.759,
+      "log": "logs/MF21.ActualBoundaryDecay.log",
+      "log_sha256": "8a3ae875b70b20be98b5b4a87b38677538f51d8494adba05297f243ef9a7a8c9",
+      "olean_sha256": "faf0e36c2bca6789a12da17eb08fbf6c40b15f201725baf5e6814fa69a4722c4",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.BulkLeadingPhase": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BulkLeadingPhase.olean",
+        "MF21/BulkLeadingPhase.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.052,
+      "log": "logs/MF21.BulkLeadingPhase.log",
+      "log_sha256": "a53d447f1a8cb584474bf529fe760da0e4f8ce569eb8667c1ab4c03d2c65e6c7",
+      "olean_sha256": "617afb39803117c7793bf09d8164de0b9e92bee5ef60035f50d4c8fd37fdff5a",
+      "failures": [],
+      "printed_axiom_reports": 8
+    },
+    "MF21.DiscretePowerLimits": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/DiscretePowerLimits.olean",
+        "MF21/DiscretePowerLimits.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.594,
+      "log": "logs/MF21.DiscretePowerLimits.log",
+      "log_sha256": "a646f2e0fb53ebc598542efbcd218d236a4bbe719d1915083171f34a1d740333",
+      "olean_sha256": "1486d1be0ecd276c0533226a993153b3836994a997ee1f12f5ac8f5efb7b7212",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.FiniteTraceObstruction": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FiniteTraceObstruction.olean",
+        "MF21/FiniteTraceObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.063,
+      "log": "logs/MF21.FiniteTraceObstruction.log",
+      "log_sha256": "33911cf4735f735fb96d7be4c8ef96df45a5dd6a0f0f1f9f230a9688ce6bdfec",
+      "olean_sha256": "85600036a49ace7bd92c3f7f074259c1f3f39f571993f85fa913a49f19c8747a",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.ExponentialSums": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ExponentialSums.olean",
+        "MF21/ExponentialSums.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.785,
+      "log": "logs/MF21.ExponentialSums.log",
+      "log_sha256": "c33096d133d21fa63ce0159ed7747d4cd80ec1d463a9ee038f69d0d53d688bff",
+      "olean_sha256": "452ac4f2aa74013360453820f9e2f9a2ff56c126ad4ff78e867335a9d2c37ef6",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.ActualBoundaryError": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundaryError.olean",
+        "MF21/ActualBoundaryError.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.999,
+      "log": "logs/MF21.ActualBoundaryError.log",
+      "log_sha256": "4474858e23de12cf383a7fa2e91709931ec84f5afaa17bdf118245557ca5cd0c",
+      "olean_sha256": "f60a029b29c1aade6ffdb5ff8f4853e4f1ce794c653c5023774199b012595543",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.FourierCoefficients": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FourierCoefficients.olean",
+        "MF21/FourierCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.086,
+      "log": "logs/MF21.FourierCoefficients.log",
+      "log_sha256": "fb60dd922781a1ffb482f0e68250d99a31271cfd67e7677a47a169a65cfe2496",
+      "olean_sha256": "b7234d5dd052b39293cec0d1a7b71207b3ca67746a550817491bf03e72d4675c",
+      "failures": [],
+      "printed_axiom_reports": 7
+    },
+    "MF21.LogSquaredMesh": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/LogSquaredMesh.olean",
+        "MF21/LogSquaredMesh.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.142,
+      "log": "logs/MF21.LogSquaredMesh.log",
+      "log_sha256": "b0a5af8b8acf57803b882f8116e68fc2a7c8fee5bc9065653abad0c434622242",
+      "olean_sha256": "d45447d60be2d7cdcf62498eb0103e4a40a67a1d9461572ad5b2182c61793da7",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.MF21Transcendence.ETranscendental": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/ETranscendental.olean",
+        "MF21/MF21Transcendence/ETranscendental.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.068,
+      "log": "logs/MF21.MF21Transcendence.ETranscendental.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "ecf975185200c4b9670ecbcb7f7a7686401a761767fe7157a9a8ca1a5ea07364",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.ExponentialCutoff": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ExponentialCutoff.olean",
+        "MF21/ExponentialCutoff.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.56,
+      "log": "logs/MF21.ExponentialCutoff.log",
+      "log_sha256": "b586060a801d9c86d6f1500e5147af1505c6facead6613121c9b086190f2d245",
+      "olean_sha256": "af51920256156e7418459b15f95594b23b9686186dca634b8d317c7c920988af",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.MF21CoefficientUniqueness": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21CoefficientUniqueness.olean",
+        "MF21/MF21CoefficientUniqueness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.396,
+      "log": "logs/MF21.MF21CoefficientUniqueness.log",
+      "log_sha256": "16ff3230bd194217b4d6c43812671550be20013aa256516da8f662a10e0c0261",
+      "olean_sha256": "3491f12ab39c42b99effcef3d23234d3b1c86f3c64efa24e103c27888a4ec9f9",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.MF21Transcendence.HermiteLindemann": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/HermiteLindemann.olean",
+        "MF21/MF21Transcendence/HermiteLindemann.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.966,
+      "log": "logs/MF21.MF21Transcendence.HermiteLindemann.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "b9621c5f810eed8dc23f4dc7d741724ad68520a7756418dbe29382d9576fc5f1",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.MF21Transcendence.PiLindemann": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/PiLindemann.olean",
+        "MF21/MF21Transcendence/PiLindemann.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.122,
+      "log": "logs/MF21.MF21Transcendence.PiLindemann.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "adf60342e03f0857b726073a5ed9e5ccd56c8c4e28015369c5111b3bb8de8d7a",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.MF21Transcendence.SubsetSumEsymm": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/SubsetSumEsymm.olean",
+        "MF21/MF21Transcendence/SubsetSumEsymm.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 11.244,
+      "log": "logs/MF21.MF21Transcendence.SubsetSumEsymm.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "94c51acde80034ef9d4ac0ad375abd25c24433577ad5e262cdabd53ac6a4d056",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.MF21Transcendence.MonicRootSums": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/MonicRootSums.olean",
+        "MF21/MF21Transcendence/MonicRootSums.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 9.631,
+      "log": "logs/MF21.MF21Transcendence.MonicRootSums.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "ec571ac77b1eff5569676e641fbe068954f22495295f4362814aaf249ae95ce8",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.PhaseRotatedError": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PhaseRotatedError.olean",
+        "MF21/PhaseRotatedError.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.973,
+      "log": "logs/MF21.PhaseRotatedError.log",
+      "log_sha256": "bedc070cc4e54e712940fd4b351f3c970793d91a3065cb04f2081f74fb832e4a",
+      "olean_sha256": "b4551b92d7c8c19ae17855da49e62f25571714d690ede4d763a801369a368015",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.MF21Transcendence.PiTranscendental": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence/PiTranscendental.olean",
+        "MF21/MF21Transcendence/PiTranscendental.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.395,
+      "log": "logs/MF21.MF21Transcendence.PiTranscendental.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "819043f335387a313cd43dea6c2e724d50e934bb0edcc386132c7b968905d174",
+      "failures": [],
+      "printed_axiom_reports": 0
+    },
+    "MF21.RealBoundaryError": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/RealBoundaryError.olean",
+        "MF21/RealBoundaryError.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.947,
+      "log": "logs/MF21.RealBoundaryError.log",
+      "log_sha256": "76a82260a13cd45218fcb83224df685bd3050dba6fd7d3b049185ffcf3341150",
+      "olean_sha256": "c9a2c0dbe7f21f0e2648d609becc78e0a6a4d32f5b451b8f667bf512ab4ca358",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.RecurrenceBasis": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/RecurrenceBasis.olean",
+        "MF21/RecurrenceBasis.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.047,
+      "log": "logs/MF21.RecurrenceBasis.log",
+      "log_sha256": "8e75acbbece4a9e14ec022417f42ecf8754be76bbc565203951ff8ecdf27a65d",
+      "olean_sha256": "ee28612c58fe78e6fcfc7bc2e57cccfbd4fe7bb73fdf0fba0f4f2a9a9cb5b2bf",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.SmoothQuantization": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/SmoothQuantization.olean",
+        "MF21/SmoothQuantization.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.283,
+      "log": "logs/MF21.SmoothQuantization.log",
+      "log_sha256": "6475320b29e89634bdb10ddfdcc1a7c37c63fb87d45a1bda3c3c396292dd4974",
+      "olean_sha256": "3334ee479e41f832c53e087a11a0f7aa13a253880bb50788519d618680c29d40",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.ToeplitzGram": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ToeplitzGram.olean",
+        "MF21/ToeplitzGram.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.841,
+      "log": "logs/MF21.ToeplitzGram.log",
+      "log_sha256": "d34dcdcab747ebbbe12d58cccf7bef309101a8f77f7c61ba6f2e0f863dc223fa",
+      "olean_sha256": "103904faf996d231e5b94a02c7bdccfaeb0a63caf9081b14cef91a6343e164f0",
+      "failures": [],
+      "printed_axiom_reports": 9
+    },
+    "MF21.MF21Transcendence": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21Transcendence.olean",
+        "MF21/MF21Transcendence.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 12.896,
+      "log": "logs/MF21.MF21Transcendence.log",
+      "log_sha256": "9818b0992d4184a5ae09a6e6715732c4cc3b48d7aad826395f157e969cb9e86d",
+      "olean_sha256": "319bec26c857a677425866f365b385eadc5fe75ea1dcd8407fa867fa2a142b78",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.FirstInverseColumn": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FirstInverseColumn.olean",
+        "MF21/FirstInverseColumn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.904,
+      "log": "logs/MF21.FirstInverseColumn.log",
+      "log_sha256": "487130fe37456b4775944c2a2dbf3afb7043bf05c7066d66aacfdab372de271d",
+      "olean_sha256": "81ce65b50b94f3a952d6ef33359aa7373896f50b04360bec7cf9097b751af315",
+      "failures": [],
+      "printed_axiom_reports": 6
+    },
+    "MF21.InverseTraceRecurrence": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/InverseTraceRecurrence.olean",
+        "MF21/InverseTraceRecurrence.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.445,
+      "log": "logs/MF21.InverseTraceRecurrence.log",
+      "log_sha256": "879fc527e75c48c4e3df8c36e270827358302641926b322c9978e90fd8d5af19",
+      "olean_sha256": "92335896a7dcabc7384e8264f646fc6ab9b289050edefd1b4fbd7a8e3f61a591",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.BoundaryDeterminant": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryDeterminant.olean",
+        "MF21/BoundaryDeterminant.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.529,
+      "log": "logs/MF21.BoundaryDeterminant.log",
+      "log_sha256": "cbcd0aab440df1fc7f0ffd5fe294b0caac24a27155ae19b8a59661e8dcc80ae9",
+      "olean_sha256": "783713a2ee88792d97071279d4a8dacf447180336e66660e2b7d8efa5a18b312",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.FirstColumnAsymptotics": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FirstColumnAsymptotics.olean",
+        "MF21/FirstColumnAsymptotics.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.951,
+      "log": "logs/MF21.FirstColumnAsymptotics.log",
+      "log_sha256": "1254f1858996ff24bf3f0440f8cfecaa9a1404f3bccaf533722b6fcc4f2b2aa4",
+      "olean_sha256": "077fb4d56f83c2285240f2e751c73605e192f7b8d458155d67ef44b3608ace65",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.BoundarySpectrum": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundarySpectrum.olean",
+        "MF21/BoundarySpectrum.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.28,
+      "log": "logs/MF21.BoundarySpectrum.log",
+      "log_sha256": "b9a150b58bc5ea8f713e836a993b2e1b0c5c96842a254ae939801480702c5bc6",
+      "olean_sha256": "bfcb12156d97606590e454a9fcf7e0479c120bba7575b9fa247520bcbf9ed807",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.DeterminantSimpleKernel": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/DeterminantSimpleKernel.olean",
+        "MF21/DeterminantSimpleKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.275,
+      "log": "logs/MF21.DeterminantSimpleKernel.log",
+      "log_sha256": "ae6966f29d521621ed7adfb4cbc3b152500eb41331f13a7c513bba1c1dd4863a",
+      "olean_sha256": "ff171d6bfd0ebe5b378994386890d32124fa9a871858d036fbafb31500484787",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.LaurentSymbol": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/LaurentSymbol.olean",
+        "MF21/LaurentSymbol.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.786,
+      "log": "logs/MF21.LaurentSymbol.log",
+      "log_sha256": "8c29968702aa386d2e0539079d5b469b9e9c2853c883ac38d893b95fae5202b4",
+      "olean_sha256": "f0f87730aebdc70c829a5152b7420deb2741849f6edcd5b1c9d6da34b760c3cd",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.BoundaryPolynomial": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryPolynomial.olean",
+        "MF21/BoundaryPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.653,
+      "log": "logs/MF21.BoundaryPolynomial.log",
+      "log_sha256": "e91c943cc28d411915709db931e2043eac24f3f802abf24c22f52f4a7690e1fc",
+      "olean_sha256": "4d71123f0d8ad5c3b92e7c1e1c400a3d7a52107b2360a817e4e7e1e796835108",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.ActualBoundaryDeterminant": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundaryDeterminant.olean",
+        "MF21/ActualBoundaryDeterminant.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.454,
+      "log": "logs/MF21.ActualBoundaryDeterminant.log",
+      "log_sha256": "85cd9375c19c0f713e3ce892c7deb405542c26b1b8aafe5c968d9251ef086127",
+      "olean_sha256": "6599e52b6f8ae47bf5d8f31ba769bfa675eaef5aa7afa88ca219cd59cfd9986d",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.BoundaryBlockForm": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryBlockForm.olean",
+        "MF21/BoundaryBlockForm.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.195,
+      "log": "logs/MF21.BoundaryBlockForm.log",
+      "log_sha256": "609e57194672bd3e9e73758324f57b34dd668f90f0f4d6f76d6bf3344292e4d1",
+      "olean_sha256": "019120049f7e8a2e04c27cafaaeb7af466aa925aa0d9aff6ce0662330375b4b9",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.ActualBoundaryExpansion": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundaryExpansion.olean",
+        "MF21/ActualBoundaryExpansion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.395,
+      "log": "logs/MF21.ActualBoundaryExpansion.log",
+      "log_sha256": "5399e6106add1099b2ce35953aa427c5a7d75e4318407565a1168b84455c9eb3",
+      "olean_sha256": "e86e8bade89b2c0c4b5311b1f5b2589c0e5e50b34a517cc9c27285aa2089e2d0",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.MF21TraceSeries": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/MF21TraceSeries.olean",
+        "MF21/MF21TraceSeries.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 12.255,
+      "log": "logs/MF21.MF21TraceSeries.log",
+      "log_sha256": "075676d41a7cd5a7a8e7abd1bcf848a704efd16e72a550522f67d6093031b66e",
+      "olean_sha256": "e8990ef8bb4f73f1e518eda383eec8f5c5ed2e4e5068d2a688a8bda3020e6590",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.BoundaryReality": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/BoundaryReality.olean",
+        "MF21/BoundaryReality.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.082,
+      "log": "logs/MF21.BoundaryReality.log",
+      "log_sha256": "26d7f9f250246db57e19e8daf559cbb210a2cc0e756faeb261e988d0e711d9fc",
+      "olean_sha256": "8ccdc42ca4abab95d3487dd97682523eb96e6e6b8b3674ffdf22801ec4355ecf",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.SpectralTrace": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/SpectralTrace.olean",
+        "MF21/SpectralTrace.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.704,
+      "log": "logs/MF21.SpectralTrace.log",
+      "log_sha256": "31efd077c5afbbcd4f47f03d6fe17fc4891d1ca95a1f2c6267bc1cdcf92cc92d",
+      "olean_sha256": "6fbd1425147f39aac2086bf2ea6d65b22013eefaeacb0c41f35ab54323194fed",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.ActualBoundaryPhase": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundaryPhase.olean",
+        "MF21/ActualBoundaryPhase.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.829,
+      "log": "logs/MF21.ActualBoundaryPhase.log",
+      "log_sha256": "5134a59752a99820cfec5a053659005658fc4a02fafc535d2dffff7443307bf5",
+      "olean_sha256": "12672d67feaed68fc32c01fda4c3aace26c9803f2f6838eb3143862140871671",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.CompressionInterlacing": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/CompressionInterlacing.olean",
+        "MF21/CompressionInterlacing.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.096,
+      "log": "logs/MF21.CompressionInterlacing.log",
+      "log_sha256": "b0604da4ddd43a4b43a087e12343680828bc2713d20e5522c477fc927dc950b2",
+      "olean_sha256": "e7cedaa2c572b56da5c74ba5f3bc20463c5959951f7df50b51535db5ea94e18c",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.TraceArithmetic": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/TraceArithmetic.olean",
+        "MF21/TraceArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.079,
+      "log": "logs/MF21.TraceArithmetic.log",
+      "log_sha256": "90ef862cb3b58e9d283bc11233c8750b6b9586fa17cac09855fd7b7017dd9e95",
+      "olean_sha256": "e490fe947526b7593f8ff0893844dbca334dace821f41764db87bfc73e6c8de2",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.CirculantSpectrum": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/CirculantSpectrum.olean",
+        "MF21/CirculantSpectrum.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.23,
+      "log": "logs/MF21.CirculantSpectrum.log",
+      "log_sha256": "db66f7e8147d91d13a76312ad29207822157f3501f89d346666b8455c3062859",
+      "olean_sha256": "9ef57dacd82a997ff6d947500fe404809e55e11e3d0489a4b4fc50885dcc833c",
+      "failures": [],
+      "printed_axiom_reports": 7
+    },
+    "MF21.TraceIntegralConstant": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/TraceIntegralConstant.olean",
+        "MF21/TraceIntegralConstant.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.075,
+      "log": "logs/MF21.TraceIntegralConstant.log",
+      "log_sha256": "f64ae5b90042741d94abce2d0c694ec068c2127986f66393b0a25904b98ddf19",
+      "olean_sha256": "88dea2b660afb732ec982cc36b799c65699263785458d6541ab2fdb7d7528aa9",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.CirculantOrdering": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/CirculantOrdering.olean",
+        "MF21/CirculantOrdering.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.009,
+      "log": "logs/MF21.CirculantOrdering.log",
+      "log_sha256": "84e21a160c743dd31cfbabdd1e5b2376e5924e82e939e2190ca8421571a18cc4",
+      "olean_sha256": "c99da31ecd08d4285fcb96ba46a7ace30247e2423477aa415596e79b72b6a1cb",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.TraceLimitSummation": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/TraceLimitSummation.olean",
+        "MF21/TraceLimitSummation.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.631,
+      "log": "logs/MF21.TraceLimitSummation.log",
+      "log_sha256": "7bee9f959b60326d6e26dced1257a1ac7a2998f99f9515f92bd58aedfd73424c",
+      "olean_sha256": "677f334c98b7740b36239d4b5cf7fbe702db78796ab14484099e16fb6e47ea9c",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.SpectralBounds": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/SpectralBounds.olean",
+        "MF21/SpectralBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.162,
+      "log": "logs/MF21.SpectralBounds.log",
+      "log_sha256": "7640a54b84a362e0fa8c9a282f53f78743a87828bd35d002b3073dae518fed52",
+      "olean_sha256": "04a6921c011f285b9dc59584c5d60fb7bb70cdca9ed06db5f635fbc16369885d",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.Eigenangles": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/Eigenangles.olean",
+        "MF21/Eigenangles.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.043,
+      "log": "logs/MF21.Eigenangles.log",
+      "log_sha256": "87439347683b74f125c65178e0311accd8e38bb09939571275073c323c4b32f3",
+      "olean_sha256": "5e0db9f46120c256834231097327db523467ea22eaaa5e94251e247ab1b970d8",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.ToeplitzTraceLimit": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ToeplitzTraceLimit.olean",
+        "MF21/ToeplitzTraceLimit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.953,
+      "log": "logs/MF21.ToeplitzTraceLimit.log",
+      "log_sha256": "6ee33f84d9277000ce829874d279539626b679615304e40897b72868df31959a",
+      "olean_sha256": "8fd8dd0603cef505fb73467d5fa38a5329047e55aabbd2d89c4fb70aadfdd6d1",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.PerturbedPhase": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PerturbedPhase.olean",
+        "MF21/PerturbedPhase.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.0,
+      "log": "logs/MF21.PerturbedPhase.log",
+      "log_sha256": "5e209a3337825f5c3c11d369530c0f6f49a14a2850378e6f4b5ae18804cdbd96",
+      "olean_sha256": "04d1e2618d32cf1ecc1e19d02fd3cec92098fd40e4e0a479886a208f5b89786b",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.SpectralSimplicity": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/SpectralSimplicity.olean",
+        "MF21/SpectralSimplicity.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.056,
+      "log": "logs/MF21.SpectralSimplicity.log",
+      "log_sha256": "c03c4c7f5f1ff30a2ae22fbdc18f972be13123c158ac442744fd2cbff2a05f41",
+      "olean_sha256": "a02fe2a2f8522a63738aa069ee5a2894d945f0f43f8219562d1d8f02dd9cf5e2",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.PhaseCellRoot": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PhaseCellRoot.olean",
+        "MF21/PhaseCellRoot.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.803,
+      "log": "logs/MF21.PhaseCellRoot.log",
+      "log_sha256": "1b6be0ba82dbfd5839143111cfd7dd6a112a389cd79473ddae68fa0132f84eb7",
+      "olean_sha256": "780e645e06d05aa1900c22a60c44948cafe273cf218023bc7edbe2f4392715be",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.ActualBoundarySimplicity": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundarySimplicity.olean",
+        "MF21/ActualBoundarySimplicity.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.835,
+      "log": "logs/MF21.ActualBoundarySimplicity.log",
+      "log_sha256": "d2b4c771a2b9bda2bafc45a11cf499b8fcd760fafbd33f5cbb4ea0dbb3befcd6",
+      "olean_sha256": "bd679d78fbcfa88001ddbf694f78cd3648a0b1d78cafca83a3c6c770658a1873",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.TopDownIndexing": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/TopDownIndexing.olean",
+        "MF21/TopDownIndexing.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.894,
+      "log": "logs/MF21.TopDownIndexing.log",
+      "log_sha256": "aad494d23d9cb0005b60f1c80a4285939be2ff6278d38b31789a87f923192ec1",
+      "olean_sha256": "ab438f62684f84496a4ffceec24689d2ddf64eecec22fb10562b8ff025423657",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.ActualBoundarySmooth": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualBoundarySmooth.olean",
+        "MF21/ActualBoundarySmooth.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.885,
+      "log": "logs/MF21.ActualBoundarySmooth.log",
+      "log_sha256": "01095a8832a64de758843bf65df92e7e8fd322acf772d203e91d2e376f6df205",
+      "olean_sha256": "667516d15a3b546f04fb4ee7debd193c7b05ddf880086665dc18594e1a65d5e0",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.PhaseIndexing": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PhaseIndexing.olean",
+        "MF21/PhaseIndexing.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.529,
+      "log": "logs/MF21.PhaseIndexing.log",
+      "log_sha256": "1347e656ad14c21a84c58182db53023d2a73e08bcc27a97cd1efbe78be43cad6",
+      "olean_sha256": "4ed6b073d4cd44786a262ab224cd562e87cdcdfb545638ff051accce5b6dbff5",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.UniformTaylor": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/UniformTaylor.olean",
+        "MF21/UniformTaylor.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.362,
+      "log": "logs/MF21.UniformTaylor.log",
+      "log_sha256": "cf128982733d9986c865932f0d9d88b651b56b3368285287277a24ca289ece3c",
+      "olean_sha256": "61c58b18253a113c153e307a3758b58907a4f92c0faf17842bdb824abe6be710",
+      "failures": [],
+      "printed_axiom_reports": 6
+    },
+    "MF21.PhaseErrorEstimate": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PhaseErrorEstimate.olean",
+        "MF21/PhaseErrorEstimate.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.055,
+      "log": "logs/MF21.PhaseErrorEstimate.log",
+      "log_sha256": "d0cf398edb6240c3eaa6f93b5becb93b315a2ad715f26d257e662f876f7846f3",
+      "olean_sha256": "8e54054d6cdb3e9b3a0f6e93a30771abb55d2df9e156690a963b1ccea5181ba8",
+      "failures": [],
+      "printed_axiom_reports": 2
+    },
+    "MF21.UniformQuantization": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/UniformQuantization.olean",
+        "MF21/UniformQuantization.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.021,
+      "log": "logs/MF21.UniformQuantization.log",
+      "log_sha256": "a9613e0a3ef21b5878f056da60d2682cf6a4ee57f6740790a0c5e7cf4c68bb78",
+      "olean_sha256": "3f245719a9cbe92a8915c5b01c13a56075065c55753a1f7afaced5d74f2521e7",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.QuantizationTaylor": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/QuantizationTaylor.olean",
+        "MF21/QuantizationTaylor.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.948,
+      "log": "logs/MF21.QuantizationTaylor.log",
+      "log_sha256": "df154df344e8e8a69ab73345a0a458678f786dc8af76ea103744c8577546744e",
+      "olean_sha256": "48de8793c4990a24b2b4d8d54469590b012ac2bc6d247bb14b379e3ce6a4de58",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.PhaseCutoffs": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/PhaseCutoffs.olean",
+        "MF21/PhaseCutoffs.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.802,
+      "log": "logs/MF21.PhaseCutoffs.log",
+      "log_sha256": "9b6212ca7d8ebc3f32a26af63cc556633ef2ea2e8e6644a3df47ef3499949df0",
+      "olean_sha256": "be778b8e072012762efe40355aa9def5d93fc8211f7428f8a01aae066f4fc7f9",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.ActualPhaseIndexing": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualPhaseIndexing.olean",
+        "MF21/ActualPhaseIndexing.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.365,
+      "log": "logs/MF21.ActualPhaseIndexing.log",
+      "log_sha256": "e834a2c7373e131a96bd10e3fcbbabe2eb07d9a8bb38ae0058428f0b23e64a28",
+      "olean_sha256": "ef3caca2575c0be3005423b9f3056034543d79ba7dbc0869a3aa9a00a0b97404",
+      "failures": [],
+      "printed_axiom_reports": 5
+    },
+    "MF21.SymbolTransfer": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/SymbolTransfer.olean",
+        "MF21/SymbolTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.664,
+      "log": "logs/MF21.SymbolTransfer.log",
+      "log_sha256": "77024874208a36b6359c354b6118c2ee0467263d3eb922be7a556e80b92f6a23",
+      "olean_sha256": "b3702a45e7ac12d09c0f4936d514858c7ecb5e3677d2f9f46f6d8da29872125f",
+      "failures": [],
+      "printed_axiom_reports": 3
+    },
+    "MF21.ActualTraceObstruction": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualTraceObstruction.olean",
+        "MF21/ActualTraceObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.596,
+      "log": "logs/MF21.ActualTraceObstruction.log",
+      "log_sha256": "22b3893d8a15bf9f3ebd32bebd70affc39c907a87a0d8db0f42f169f7266a99c",
+      "olean_sha256": "d695dc11887ed5fef947be600f2759ce9310190e356d842ea34395d8e37a35e6",
+      "failures": [],
+      "printed_axiom_reports": 4
+    },
+    "MF21.ActualTailAngles": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ActualTailAngles.olean",
+        "MF21/ActualTailAngles.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.684,
+      "log": "logs/MF21.ActualTailAngles.log",
+      "log_sha256": "4d93394e0b4e28c4ad2d28354619f95bc7b5a7d1b3cc8f3719c58ebc73468f8f",
+      "olean_sha256": "8f59f7509ab92a9f889fceaa0cceeb3144a22ada093760fdfb15a684b0e724db",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.FiniteHeadModel": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FiniteHeadModel.olean",
+        "MF21/FiniteHeadModel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.534,
+      "log": "logs/MF21.FiniteHeadModel.log",
+      "log_sha256": "1f0cb0e00ece4d3029a61e2865b344a0a5bf90ccd98fb54e2e5fe3c666d5fe98",
+      "olean_sha256": "5ae0defd9c58088d7bd2b4854112a97de565cd3abc15e4058c7d1a98a2ec340c",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.ExpansionEstimates": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/ExpansionEstimates.olean",
+        "MF21/ExpansionEstimates.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.302,
+      "log": "logs/MF21.ExpansionEstimates.log",
+      "log_sha256": "62e208aa05718230e52f56c90c3140420ffa24069580c1d96cd2c95313094306",
+      "olean_sha256": "781bc950e2dabfa114b3df39a170792c7bd93c4ff599613cb3f92f8f5b43773c",
+      "failures": [],
+      "printed_axiom_reports": 1
+    },
+    "MF21.FinalTarget": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/MF21/FinalTarget.olean",
+        "MF21/FinalTarget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.468,
+      "log": "logs/MF21.FinalTarget.log",
+      "log_sha256": "fe76eb5a542b6bf31d490a1c298a0ee514d065131a1f32126f454350e88c8c17",
+      "olean_sha256": "ce323180244e07707169317b4fb75c9c0b68dcf3718f6e56d01bbab6cd9effaa",
+      "failures": [],
+      "printed_axiom_reports": 8
+    },
+    "Solution": {
+      "command": [
+        "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+        "--trust=0",
+        "-o",
+        "/private/tmp/mf21-canonical-replay-20260920-01/olean/Solution.olean",
+        "Solution.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.927,
+      "log": "logs/Solution.log",
+      "log_sha256": "6943fdcc06a7958fb8d9cd0afed5b18f3c87fec17d5caba91ec116a709e94c15",
+      "olean_sha256": "1a8ce87f5b8d7ea2dff66d23a66053818f211b2c6309b642a898dd6481fbdc34",
+      "failures": [],
+      "printed_axiom_reports": 5
+    }
+  },
+  "axiom_audit": {
+    "command": [
+      "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+      "--trust=0",
+      "-o",
+      "/private/tmp/mf21-canonical-replay-20260920-01/olean/ReplayAxiomAudit.olean",
+      "ReplayAxiomAudit.lean"
+    ],
+    "exit_code": 0,
+    "seconds": 3.912,
+    "log": "logs/ReplayAxiomAudit.log",
+    "log_sha256": "6b58ccf2b0d255429a7fc13ddcd3d7689f38f9ae5aa546a186eef008472f364b",
+    "olean_sha256": "d329dacce6b503c15184660f9022fdf42371a66f0b34c1dd04ed622724b69658",
+    "failures": [],
+    "printed_axiom_reports": 0
+  },
+  "source_changed_since_snapshot": [],
+  "unfinished_modules": [],
+  "finished_utc": "2026-09-20T09:22:15.933440+00:00"
+}

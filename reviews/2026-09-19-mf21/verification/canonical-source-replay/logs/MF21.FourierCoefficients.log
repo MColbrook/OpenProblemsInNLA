@@ -1,0 +1,7 @@
+'MF21Fourier.circleSymbol_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.coefficient_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.coefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.coefficient_neg_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.circleSymbol_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.sourceCoefficient_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Fourier.toeplitz_eq_source' depends on axioms: [propext, Classical.choice, Quot.sound]

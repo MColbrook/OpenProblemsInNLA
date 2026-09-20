@@ -1,0 +1,2 @@
+'MF21Phase.phase_cell_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.phase_tail_cell_root' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'MF21Bulk.psi_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.psi_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.psi_endpoint_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.psi_endpoint_neighborhood' depends on axioms: [propext, Classical.choice, Quot.sound]

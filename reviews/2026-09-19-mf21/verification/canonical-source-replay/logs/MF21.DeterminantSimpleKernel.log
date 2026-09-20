@@ -1,0 +1,5 @@
+'MF21SimpleKernel.hasDerivAt_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21SimpleKernel.kernel_finrank_eq_one_of_simple_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21SimpleKernel.eigenspace_finrank_eq_one_of_simple_boundary_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

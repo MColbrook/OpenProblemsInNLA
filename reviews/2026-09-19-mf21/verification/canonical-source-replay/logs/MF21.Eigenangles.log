@@ -1,0 +1,3 @@
+'MF21Challenge.exists_unique_eigenangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.eigenangle_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.eigenangle_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'MF21Phase.exists_exp_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.exists_small_phase_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.exists_final_phase_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.eventual_indexed_phase_roots' depends on axioms: [propext, Classical.choice, Quot.sound]

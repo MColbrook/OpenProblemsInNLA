@@ -1,0 +1,6 @@
+'MF21FirstColumn.full_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstColumn.extreme_left_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstColumn.row_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstColumn.toeplitz_mulVec_firstColumn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstColumn.firstColumn_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstColumn.inverse_column_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
