@@ -1,0 +1,7 @@
+'MF21Bulk.no_unit_characteristic_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.exists_stable_characteristic_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stable_characteristic_root_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stable_characteristic_root_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.local_characteristic_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]

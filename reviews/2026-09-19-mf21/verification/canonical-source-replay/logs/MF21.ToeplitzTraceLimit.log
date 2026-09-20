@@ -1,0 +1,3 @@
+'MF21TraceLimit.inverseTrace_increment_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21TraceLimit.inverseTrace_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21TraceLimit.eigenvalue_inverse_sum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

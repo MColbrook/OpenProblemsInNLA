@@ -1,0 +1,4 @@
+'MF21Bulk.local_desingularized_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_endpoint_factorization_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_endpoint_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.stableRoot_endpoint_extension' depends on axioms: [propext, Classical.choice, Quot.sound]

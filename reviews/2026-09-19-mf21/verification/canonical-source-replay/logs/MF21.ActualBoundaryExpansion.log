@@ -1,0 +1,2 @@
+'MF21ActualBoundary.determinant_two_leading_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.leading_coefficient_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]

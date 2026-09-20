@@ -1,0 +1,13 @@
+MF21/BulkRootFamily.lean:100:91: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21/BulkRootFamily.lean:122:25: warning: This simp argument is unused:
+  if_pos hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [baseRoot, omega, hj, pow_zero, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Bulk.characteristicRoots_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.characteristicRoots_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.omega_stableRoot_endpoint_extension' depends on axioms: [propext, Classical.choice, Quot.sound]

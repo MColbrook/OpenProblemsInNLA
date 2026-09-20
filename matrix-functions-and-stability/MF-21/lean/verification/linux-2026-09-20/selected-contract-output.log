@@ -1,0 +1,10 @@
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MF21.full_target, NLA.MF21.universal_obstruction, NLA.MF21.smooth_common_family, NLA.MF21.fourier_matrix_entries, NLA.MF21.coefficients_unique, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+info: Solution.lean:56:0: 'NLA.MF21.full_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:57:0: 'NLA.MF21.universal_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:58:0: 'NLA.MF21.smooth_common_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:59:0: 'NLA.MF21.fourier_matrix_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solution.lean:60:0: 'NLA.MF21.coefficients_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, NLA.MF21.full_target, NLA.MF21.universal_obstruction, NLA.MF21.smooth_common_family, NLA.MF21.fourier_matrix_entries, NLA.MF21.coefficients_unique, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

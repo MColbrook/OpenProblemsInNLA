@@ -1,0 +1,7 @@
+MF21/BoundaryNormalization.lean:90:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Normalization.rowShift_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Normalization.blockPower_det_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Normalization.blockPower_det_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Normalization.blockPower_det_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]

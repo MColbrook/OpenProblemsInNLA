@@ -4,7 +4,11 @@
 Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA  
 12 September 2026 (UTC)
 
-This manuscript proves the complete three-part MF-21 target for every integer $m\ge3$. The conjecture and its prior special cases are due to Barrera, Böttcher, Grudsky, Maximenko, and the cited later authors. The proof combines an exact boundary determinant with a classical inverse-kernel limit, retaining attribution for that external theorem.
+This manuscript proves the complete three-part MF-21 target for every integer $m\ge3$. The conjecture and its prior special cases are due to Barrera, Böttcher, Grudsky, Maximenko, and the cited later authors. The bulk argument uses the simple-loop method developed by Böttcher, Grudsky, Maximenko, and collaborators [BGM10, BG25]. The proof combines that method with an exact finite-matrix inverse-trace calculation and a trace obstruction.
+
+**Revision — 19 September 2026 (UTC).** Following comments from Sergei Grudsky, this revision supplies the coefficient-uniqueness argument, makes the distinction between the upper estimate (25) and the trace obstruction explicit, proves a sharp lower bound for the maximum error, expands the method attribution, and supplies a direct finite-matrix derivation of the inverse-trace limit. The [revision audit](../../reviews/2026-09-19-mf21/README.md) records the checks and the scope of the formal-verification work.
+
+**Formal verification — 20 September 2026 (UTC).** The [complete Lean formalization](lean/README.md) verifies Theorem 1, coefficient uniqueness and Corollary 6, including the exact Fourier matrix and one common smooth coefficient family. All five public contracts passed the isolated Linux Comparator and Lean default kernel at the recorded proof revision, with only standard foundational axioms. Separate AI-agent source reviews are retained with the verification evidence.
 
 **Review and assistance.** The [independent mathematical review](../../references/stepaniants-mf21-2026-09-12/independent-review.md) and [submission record](../../references/stepaniants-mf21-2026-09-12/README.md) identify the reviewed source and verification scope. Substantial AI assistance is disclosed. An independent AI-agent audit is informal review; it does not establish external human peer review or formal verification.
 
@@ -26,7 +30,7 @@ $$
 \tag{1}
 $$
 
-for sufficiently large $n$; the same estimate for $p=2m$ holds for $j\ge\lceil(\log(n+2))^2\rceil$; and the latter estimate cannot hold for every $j$. Constants and lower bounds on $n$ may depend on $m,p$, but not on $n,j$.
+for sufficiently large $n$; the same estimate for $p=2m$ holds for $j\ge\lceil(\log(n+2))^2\rceil$; and the latter estimate cannot hold for every $j$. In fact, no family of continuous coefficient functions on $[0,\pi]$ admits an order-$2m$ expansion with a uniform $O(h^{2m+1})$ remainder over all indices. Constants and lower bounds on $n$ may depend on $m,p$, but not on $n,j$.
 
 Here is a constructive definition of the functions. Write
 
@@ -286,14 +290,15 @@ g(Y(x,h))=\sum_{k=0}^p d_k(x)h^k+O(h^{p+1})
 \tag{23}
 $$
 
-uniformly in $x\in[0,\pi]$. Since $g$ vanishes to order $2m$ at zero, repeated differentiation in $h$ shows
+uniformly in $x\in[0,\pi]$, with $d_0=g$. For every fixed integer $J$, equation (4) and boundedness of $\eta$ give $Y(\pi jh,h)=O_J(h)$ for $1\le j\le J$. Since $g$ vanishes to order $2m$ at zero, (23) at $p=2m-1$ therefore gives
 
 $$
-d_k(x)=O(x^{2m-k})\quad(0\le k\le2m),\qquad d_0=g.
+g(Y(\pi jh,h))=O_J(h^{2m}),\qquad
+\sum_{k=0}^{2m-1}d_k(\pi jh)h^k=O_J(h^{2m})
 \tag{24}
 $$
 
-Indeed, every term in the $k$-th derivative is a bounded smooth factor times $g^{(s)}(x)$ for $s\le k$, and $g^{(s)}(x)=O(x^{2m-s})$. For $k=0$ the same conclusion is immediate.
+uniformly over this fixed finite set of indices. This argument uses the same coefficient family as the bulk expansion.
 
 For $j\ge J$, the mean value theorem, $g'(\theta)=O(\theta^{2m-1})$, and (19) yield
 
@@ -307,42 +312,91 @@ For $j<J$, (21) gives $\lambda_{n,j}=O(h^{2m})$, and (24) gives $\sum_{k=0}^{2m-
 
 If $j\ge\lceil(\log(n+2))^2\rceil$, the first bound in (25) is $O(h^{2m+1})$: exponential decay beats the displayed polynomial uniformly in that range. Equation (23) with $p=2m$ now proves Part 2 of the target.
 
-## 5. A trace obstruction to extending order $2m$ to the lowest indices
+Equation (25) is an upper bound; it does not prove that an $O(h^{2m+1})$ remainder is impossible. That obstruction is proved next by comparing two trace limits, after identifying any hypothetical alternative coefficient family.
 
-We use a classical inverse-kernel limit, rather than an unproved formula for each extreme eigenvalue. For $A_n=T_n(|1-z|^{2m})$, the known limit is
+## 5. Coefficient uniqueness and the trace obstruction
+
+The following specialization of the coefficient-uniqueness principle in [BBGM, Proposition 4.2] addresses the distinction emphasized in their Remark 8.3 between failure for a constructed family and failure for every continuous family.
+
+**Lemma 5 (uniqueness on the bulk grid).** Fix an integer $p\ge0$, put $h_n=(n+2)^{-1}$ and $L_n=\lceil(\log(n+2))^2\rceil$, and suppose two real continuous families $d_0,\ldots,d_p$ and $e_0,\ldots,e_p$ on $[0,\pi]$ satisfy
 
 $$
-n^{1-2m}(A_n^{-1})_{\lceil nx\rceil,\lceil ny\rceil}\longrightarrow G_m(x,y)
-\quad\hbox{in }L^\infty([0,1]^2),
+\left|\lambda_{n,j}-\sum_{k=0}^p c_k(j\pi h_n)h_n^k\right|
+\le C_c h_n^{p+1}
+\qquad(n\ge N_c,\ L_n\le j\le n),
+$$
+
+for $c=d$ and $c=e$, with constants independent of $n,j$. Then $d_k=e_k$ on $[0,\pi]$ for every $0\le k\le p$.
+
+*Proof.* Induct on $k$, proving equality on the entire closed interval at each step. Fix $x\in(0,\pi)$ and let $j_n=\lfloor x(n+2)/\pi\rfloor$. Since $j_n/(n+2)\to x/\pi\in(0,1)$, $L_n/(n+2)\to0$, and $n/(n+2)\to1$, eventually $L_n\le j_n\le n$. The sample points $x_n=j_n\pi h_n$ lie in $[0,\pi]$ and converge to $x$.
+
+Subtract the two estimates. If $d_\ell=e_\ell$ on $[0,\pi]$ for every $\ell<k$, the corresponding lower-order terms vanish at $x_n$. Dividing by $h_n^k>0$ gives
+
+$$
+\left|(d_k-e_k)(x_n)+
+\sum_{\ell=k+1}^p(d_\ell-e_\ell)(x_n)h_n^{\ell-k}\right|
+\le(C_d+C_e)h_n^{p+1-k}.
+$$
+
+The higher coefficients are bounded on the compact interval. Their finite sum tends to zero, as does the right side because $k\le p$. Continuity therefore gives $d_k(x)=e_k(x)$. Since $x$ was arbitrary in $(0,\pi)$, continuity extends this equality to both endpoints. For $k=0$ the lower-order hypothesis is empty; thus this proves the base case and the induction. $\square$
+
+Only the highest-order estimates are hypotheses of Lemma 5; separate estimates for the lower truncations are unnecessary. In particular, any continuous family with a global order-$2m$ estimate must coincide on $[0,\pi]$ with the family (5), since both satisfy that estimate on the bulk grid by Section 4.
+
+We derive the inverse-trace limit directly from finite matrices. Write $(a)_q=a(a+1)\cdots(a+q-1)$, with $(a)_0=1$, and use zero-based indices for the following inverse column. For $n\ge1$,
+
+$$
+u_k^{(n)}:=(A_n^{-1})_{k,0}
+=\binom{m+k-1}{k}\frac{(n-k)_m}{(n+m)_m},
+\qquad 0\le k<n.
 \tag{26}
 $$
 
-with endpoint indices interpreted in $\{1,\ldots,n\}$. The continuous Green kernel is that of $(-1)^m d^{2m}/dx^{2m}$ with derivatives of orders $0,\ldots,m-1$ vanishing at both endpoints. The precise input (26), including the explicit kernel, is recorded in Böttcher–Widom [BW], §2, pp. 3–4, in the paragraph preceding (13); its formula (5) gives, when $x+y\ge1$,
+To verify (26), extend its right side to the polynomial
 
 $$
-G_m(x,y)=\frac{x^m y^m}{((m-1)!)^2}
-\int_{\max(x,y)}^1\frac{(t-x)^{m-1}(t-y)^{m-1}}{t^{2m}}\,dt.
+P_n(x)=\frac{(x+1)_{m-1}(n-x)_m}{(m-1)!(n+m)_m}.
+$$
+
+Its degree is $2m-1$, so its $2m$-th finite difference vanishes. Also $P_n$ vanishes at the ghost indices $-m+1,\ldots,-1$ and $n,\ldots,n+m-1$, while $P_n(-m)=(-1)^{m-1}$. The centered difference stencil for $A_n$ has coefficients $(-1)^\ell\binom{2m}{m+\ell}$. For row zero, the omitted leftmost value contributes $(-1)^mP_n(-m)=-1$; all other omitted ghost contributions vanish. Thus $A_n(P_n(0),\ldots,P_n(n-1))^T=e_0$, proving (26).
+
+Put $\tau_n=\operatorname{tr}(A_n^{-1})$ and $\tau_0=0$. The inverse of the principal tail of $A_n$ is the corresponding block of $A_n^{-1}$ minus $u_{\rm tail}^{(n)}(u_{\rm tail}^{(n)})^T/u_0^{(n)}$. This follows by multiplying the two matrices, or by the Schur-complement identity. Taking traces gives the exact recurrence
+
+$$
+\tau_n-\tau_{n-1}
+=\frac{\sum_{k=0}^{n-1}(u_k^{(n)})^2}{u_0^{(n)}}.
 \tag{27}
 $$
 
-The kernel is invariant under $(x,y)\mapsto(1-x,1-y)$. Substituting $u=1-x/t$ in (27) at $y=x\ge1/2$, and then using this symmetry, gives on all of $[0,1]$
+Formula (26) gives $u_0^{(n)}\to1$ and the uniform profile limit
 
 $$
-G_m(x,x)=\frac{x^{2m-1}(1-x)^{2m-1}}{(2m-1)((m-1)!)^2}.
+\max_{0\le k<n}\left|n^{1-m}u_k^{(n)}-
+\frac{(k/n)^{m-1}(1-k/n)^m}{(m-1)!}\right|\longrightarrow0.
+$$
+
+Indeed, after dividing each rising-factorial factor by $n$, the numerator is a polynomial in $x=k/n$ and $1/n$, and the denominator tends to $(m-1)!\ne0$. Riemann sums in (27) therefore yield
+
+$$
+n^{1-2m}(\tau_n-\tau_{n-1})\longrightarrow
+\beta_m:=\frac{1}{((m-1)!)^2}
+\int_0^1x^{2m-2}(1-x)^{2m}\,dx
+=\frac{(2m-2)!(2m)!}{(4m-1)!((m-1)!)^2}.
 \tag{28}
 $$
 
-The essential-uniform convergence in (26) also controls the diagonal: the approximating kernel is constant on each grid square, and continuity of $G_m$ bounds the difference between an interior point of such a square and its diagonal. Thus integrating the diagonal yields
+Summing the increments, using $n^{-2m}\sum_{k=1}^n k^{2m-1}\to1/(2m)$, gives
 
 $$
 \lim_{n\to\infty}(n+2)^{-2m}\operatorname{tr}(A_n^{-1})
-=\int_0^1G_m(x,x)\,dx
+=\frac{\beta_m}{2m}
 =\frac{((2m-1)!)^2}{(4m-1)!(2m-1)((m-1)!)^2}
 \in\mathbb Q.
 \tag{29}
 $$
 
-Suppose, contrary to Part 3, that the estimate of order $2m$ were uniform for every $j$. For each fixed $j$, (23) then gives
+This is also the trace constant obtained from the classical Green-kernel limit in Böttcher–Widom [BW, §2]. The finite-matrix derivation above supplies the trace input used here.
+
+Suppose that some continuous coefficient family gave an order-$2m$ estimate uniform for every $j$. Lemma 5 identifies that family with (5). For each fixed $j$, (23) then gives
 
 $$
 \lambda_{n,j}=g(Y(\pi jh,h))+O(h^{2m+1}).
@@ -381,15 +435,66 @@ Euler's formula makes $\zeta(2m)/\pi^{2m}$ rational. In both (32) and (33), the 
 
 The contradiction does not rely on an interchange of a merely pointwise spectral limit without domination; the uniform tail majorant was supplied explicitly by (22). It also does not infer a general-$m$ statement from the $m=2$ or $m=3$ cases.
 
+The same trace comparison yields a lower bound without assuming an improved remainder.
+
+**Corollary 6 (sharp maximum-error order).** Write
+
+$$
+P_{n,j}=\sum_{k=0}^{2m}d_k(\pi jh)h^k,\qquad
+R_{2m,n,j}=\lambda_{n,j}-P_{n,j}.
+$$
+
+There are an integer $J_0\ge1$ and constants $c,C>0$, depending only on $m$, such that for all sufficiently large $n\ge J_0$,
+
+$$
+c h^{2m}\le
+\max_{1\le j\le J_0}|R_{2m,n,j}|
+\le\max_{1\le j\le n}|R_{2m,n,j}|
+\le C h^{2m}.
+$$
+
+*Proof.* Put $s=2m$, $q_{n,j}=h^{-s}\lambda_{n,j}$, and $b_j=\pi^s(j+(m-1)/2)^s$. Let $C_m$ denote the rational value in (29), and let $B_m=\sum_{j=1}^\infty b_j^{-1}$. Equations (32)–(33) show that $B_m$ is irrational, independently of any hypothesis on eigenvalue remainders. Thus $\delta=|C_m-B_m|>0$.
+
+For $j\ge2$, (22) gives the uniform majorant
+
+$$
+q_{n,j}^{-1}\le
+\left(\frac{3(n+2m)}{4(n+2)j}\right)^s
+\le\left(\frac{3m}{4}\right)^s j^{-s}
+\qquad(2\le j\le n).
+$$
+
+Choose $J_0\ge1$ so that both $\sum_{j=J_0+1}^n q_{n,j}^{-1}$, uniformly in $n\ge J_0$, and $\sum_{j=J_0+1}^\infty b_j^{-1}$ are less than $\delta/8$. By (29), for all sufficiently large $n$ the full actual sum is within $\delta/8$ of $C_m$. Choose $\varepsilon>0$ with $\varepsilon\le b_1/2$ and $2J_0\varepsilon/b_1^2\le\delta/8$.
+
+If $|q_{n,j}-b_j|\le\varepsilon$ for every $j\le J_0$, then $q_{n,j}\ge b_j/2$ and
+
+$$
+|q_{n,j}^{-1}-b_j^{-1}|
+=\frac{|q_{n,j}-b_j|}{q_{n,j}b_j}
+\le\frac{2\varepsilon}{b_1^2}.
+$$
+
+The difference of the two finite head sums would be at most $\delta/8$. Adding this bound, the two tails, and the trace-limit error would give $\delta\le\delta/2$, a contradiction. Hence $\max_{j\le J_0}|q_{n,j}-b_j|>\varepsilon$ for every sufficiently large $n$.
+
+Equations (4), (7), and (23) give $P_{n,j}/h^s\to b_j$ for each fixed $j$, without an eigenvalue-error assumption. Over the finite set $j\le J_0$ this convergence is uniform, so the last bound implies $\max_{j\le J_0}|R_{2m,n,j}|\ge(\varepsilon/2)h^s$ eventually. The upper bound follows from (1) at $p=2m-1$ and boundedness of $d_{2m}$. $\square$
+
+Corollary 6 does not require one specified index to attain the lower bound for every large $n$.
+
 ## 6. Sources, attribution, and verification scope
 
 The target is Conjecture 8.4 of Barrera, Böttcher, Grudsky, and Maximenko [BBGM], p. 26. Their Theorem 1.2 establishes the analogous $m=2$ threshold. The later seven-diagonal work [BGSV] treats $m=3$; the 2026 survey [B26], section “Beyond the simple-loop class,” distinguishes these results from broader local expansions. These contributions retain their original attribution.
 
-The only substantive external Toeplitz theorem used above is the established uniform inverse-kernel limit (26), with the kernel formula (27). The determinant argument and its error estimates, endpoint counting, all-order Taylor construction, and trace contradiction are proved here. Cauchy interlacing, the finite-dimensional implicit function theorem, Euler's even-zeta formula, and transcendence of $\pi$ are standard mathematical inputs. No numerical calculation is a premise of the proof.
+The simple-loop method originates in the work of Böttcher, Grudsky, and Maximenko [BGM10] and was developed further by these authors and their collaborators. Bogoya–Grudsky [BG25, Theorems 2.1–2.2] give local phase equations and all-order expansions near simple nondegenerate points for general banded Toeplitz matrices. Sections 2–4 specialize the simple-loop approach and provide the estimates and indexing needed here. Deducing the shrinking logarithmic-squared cutoff directly from the local formulation in [BG25] would require control of its constants as the endpoint is approached; no such deduction or novelty claim is asserted here.
 
-The linked independent review and public eligibility audit record the verification status and bounded search scope. The source search checked the original conjecture, the seven-diagonal preprint, the 2026 survey, and targeted later work; it found no full resolution of the three parts for every $m\ge3$. A bounded public search does not certify novelty or exclude private or unpublished work. No formal verification, external human peer review, or priority certification is asserted.
+The trace constant (29) agrees with the classical inverse-kernel calculation of Böttcher–Widom [BW] and the predecessors credited there; equations (26)–(28) give a direct derivation from finite matrices. Lemma 5 spells out the coefficient-uniqueness principle of [BBGM, Proposition 4.2]. Cauchy interlacing, the finite-dimensional implicit function theorem, Euler's even-zeta formula, and transcendence of $\pi$ are standard mathematical inputs. No numerical calculation is a premise of the proof.
 
-**[BBGM]** M. Barrera, A. Böttcher, S. M. Grudsky, and E. A. Maximenko, *Eigenvalues of even very nice Toeplitz matrices can be unexpectedly erratic*, Operator Theory: Advances and Applications 268 (2018), 51–77. [arXiv:1710.05243](https://arxiv.org/abs/1710.05243), Conjecture 8.4 and Theorem 1.2; [DOI](https://doi.org/10.1007/978-3-319-75996-8_2).
+The linked submission and review records document the original snapshot and the bounded searches performed for it. The 19 September revision adds [BG25] and expands the proof in response to Grudsky's comments. No novelty or priority claim is made. The original mathematical reviews were informal AI-agent audits. The revised complete formalization and its independent AI-agent statement reviews are documented above; external human peer review is not asserted.
+
+**[BBGM]** M. Barrera, A. Böttcher, S. M. Grudsky, and E. A. Maximenko, *Eigenvalues of even very nice Toeplitz matrices can be unexpectedly erratic*, Operator Theory: Advances and Applications 268 (2018), 51–77. [arXiv:1710.05243](https://arxiv.org/abs/1710.05243), Conjecture 8.4, Theorem 1.2, Proposition 4.2, and Remark 8.3; [DOI](https://doi.org/10.1007/978-3-319-75996-8_2).
+
+**[BGM10]** A. Böttcher, S. M. Grudsky, and E. A. Maximenko, *Inside the eigenvalues of certain Hermitian Toeplitz band matrices*, Journal of Computational and Applied Mathematics 233 (2010), 2245–2264. [DOI](https://doi.org/10.1016/j.cam.2009.10.010).
+
+**[BG25]** M. Bogoya and S. M. Grudsky, *Eigenvalues of non-Hermitian banded Toeplitz matrices approaching simple points of the limiting set*, Computational Mathematics and Mathematical Physics 65 (2025), 1453–1471. Theorems 2.1–2.2; [DOI](https://doi.org/10.1134/S0965542525700745); [author-hosted paper](https://www.math.cinvestav.mx/~grudsky/Papers/162.pdf).
 
 **[BW]** A. Böttcher and H. Widom, *From Toeplitz eigenvalues through Green's kernels to higher-order Wirtinger–Sobolev inequalities*, Operator Theory: Advances and Applications 171 (2006), 73–87. [arXiv:math/0412269](https://arxiv.org/abs/math/0412269), formula (5), §2 paragraph preceding (13), and (13); [DOI](https://doi.org/10.1007/978-3-7643-7980-3_4).
 

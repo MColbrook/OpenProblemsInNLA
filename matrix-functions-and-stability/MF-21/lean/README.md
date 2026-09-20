@@ -5,11 +5,19 @@ Conjecture 8.4 of Barrera–Böttcher–Grudsky–Maximenko, for every integer
 `m ≥ 3`, together with the revised manuscript's stronger continuous-family
 obstruction and sharp maximum-error bounds.
 
-The development capstones have passed Lean 4.33.1 with `--trust=0` and only
-the standard foundational axioms. **Canonical package verification is still
-in progress:** a local build does not replace the required independent
-statement reviews and fresh non-root Linux Comparator run. No publication
-or push has been authorized.
+**Verified locally on 20 September 2026.** The exact proof revision
+`e378ec4679f9119aacf79a0fe30b80493a61ec5b` passed the repository's unchanged
+non-root Linux Comparator, default-kernel replay, permitted-axiom check,
+real sandbox and rejection controls. All five exported contracts were
+accepted. A fresh macOS `--trust=0` replay also checked all 82 local proof
+modules and the axiom closure of 1,354 local declarations.
+
+The [verification receipt and immutable input snapshot](verification/linux-2026-09-20/README.md)
+and the independent [fidelity](reviews/independent-fidelity.md) and
+[proof](reviews/independent-proof.md) reviews record their exact scopes.
+An additional [nonauthor cross-review](reviews/independent-cross-review.md)
+records ownership exclusions. These are AI-agent reviews, not external human
+peer review. The local branch has not been pushed and no GitHub PR was created.
 
 ## Entry points
 

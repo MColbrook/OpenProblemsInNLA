@@ -1,0 +1,5 @@
+'MF21Circulant.toeplitz_eigenvalue_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.toeplitz_eigenvalue_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.scaled_reciprocal_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.reciprocal_majorant_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.toeplitz_eigenvalue_strict_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

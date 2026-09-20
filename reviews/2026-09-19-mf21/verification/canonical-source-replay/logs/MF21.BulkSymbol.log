@@ -1,0 +1,4 @@
+'MF21Challenge.symbol_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.symbol_difference_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.symbol_eq_pow_mul_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.symbol_factor_tendsto_one' depends on axioms: [propext, Classical.choice, Quot.sound]

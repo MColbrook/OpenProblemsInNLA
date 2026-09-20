@@ -1,0 +1,19 @@
+{
+  "proof_revision": "e378ec4679f9119aacf79a0fe30b80493a61ec5b",
+  "result": "PASS: all mathematical and build inputs identical to accepted proof",
+  "unchanged_lean_files": 83,
+  "editorial_differences": [
+    {
+      "file": "README.md",
+      "verified_sha256": "95afaf62d0dfd45d723eea364a39ec4174018d8afb63b591d877e7311f58ad27",
+      "publication_sha256": "8213cd16072767ab02056b5ca5fbc965c7298321eb55652675208b01d8215482"
+    },
+    {
+      "file": "formalization.yaml",
+      "verified_sha256": "5be7580088b34c9c5c2265b00f5ad700eda674551ca666b3044e5fc71d879b07",
+      "publication_sha256": "48177cef50bef8867961d341aeafbd1f0cc299da3f1aafa8a3874c610ff7b56c"
+    }
+  ],
+  "new_files_scope": "Independent review reports, verification evidence and documentation only; no additional Lean sources.",
+  "github_push_performed": false
+}

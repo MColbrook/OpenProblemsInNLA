@@ -1,0 +1,5 @@
+'MF21Boundary.finite_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Boundary.recurrence_at_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Boundary.eigenvector_iff_boundary_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Boundary.boundaryKernelEquivEigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Boundary.boundaryKernel_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]

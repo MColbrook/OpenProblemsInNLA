@@ -1,0 +1,4 @@
+'MF21Audit.rational_sub_div_pow_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.trace_values_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.trace_limits_inconsistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.zero_remainder_satisfies_both_orders' depends on axioms: [propext, Classical.choice, Quot.sound]

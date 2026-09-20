@@ -1,0 +1,29 @@
+{
+  "result": "comparator-accepted",
+  "repository_commit": "e378ec4679f9119aacf79a0fe30b80493a61ec5b",
+  "project": "matrix-functions-and-stability/MF-21/lean",
+  "selected_theorems": [
+    "NLA.MF21.full_target",
+    "NLA.MF21.universal_obstruction",
+    "NLA.MF21.smooth_common_family",
+    "NLA.MF21.fourier_matrix_entries",
+    "NLA.MF21.coefficients_unique"
+  ],
+  "all_recorded_project_inputs_match_current_files": true,
+  "all_82_replayed_proof_sources_match_linux_snapshot": true,
+  "actual_printed_axiom_reports": 251,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "local_bundle_sha256": "4e0c26d8db86d7d8fa146fa8886ebd1b138163e55e21c6d882071c814fe4ee10",
+  "full_logs_sha256": "94988ded35ef4ac20f877632b80c130582574a88e217d7158f9834bd9ddbb6e6",
+  "result_sha256": "aaedb2d6a7c9e30e34ce4f0b2696b54dcafd7329b0ed8ad80ed7fcfd5b6da168",
+  "comparator_log_sha256": "130acc3692fb7feff8c0f93d697c0535bfb1ce5c23e5c2c7e61b5a3a8f42b458",
+  "actual_axioms_sha256": "dc40d5c556bd554edc6dfc870259d3e213684dc5447202ffe1fc1d39626220e9",
+  "semantic_review": "separate; not supplied by Comparator",
+  "failed_linux_project_runs": 0,
+  "trusted_input_archive_sha256": "360046e0ca4cb5bc60cce8c60f8d9b129934c3884c661c10f794d397077cf136",
+  "trusted_input_files": 96
+}

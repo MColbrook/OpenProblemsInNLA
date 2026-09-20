@@ -1,0 +1,15 @@
+{
+  "kind": "trusted challenge statement elaboration; placeholders expected",
+  "exit_code": 0,
+  "command": [
+    "/private/tmp/nla-campaign-toolchain/lean-4.33.1-darwin_aarch64/bin/lean",
+    "--trust=0",
+    "-o",
+    "/private/tmp/mf21-canonical-challenge-20260920-01/Challenge.olean",
+    "Challenge.lean"
+  ],
+  "source_sha256": "7e7f7d89e0e26cd21c5cf6b3d9c3ca78f1b7bf6580cfe4f12a0666e84c267fd1",
+  "expected_sorry_warnings": 5,
+  "observed_sorry_warnings": 5,
+  "log_sha256": "fed1ca103b0734b86107e4fde0cfe60af3e713a3bda36d6414deca54546ee7c0"
+}

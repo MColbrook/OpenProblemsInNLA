@@ -1,0 +1,17 @@
+MF21/BulkPhase.lean:173:26: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.add_im, Complex.mul_re, Complex.mul_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, mul_zero, zero_mul, mul_one, zero_add, add_zero, sub_zero,
+    Real.cos_sub, Real.sin_sub, Real.cos_pi_div_two, Real.sin_pi_div_two, Real.sin_two_mul, Real.cos_two_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/BulkPhase.lean:175:42: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Bulk.phaseFactor_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.rootPhase_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.phaseFactor_endpoint_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.rootPhase_endpoint_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.rootPhase_endpoint_extension_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]

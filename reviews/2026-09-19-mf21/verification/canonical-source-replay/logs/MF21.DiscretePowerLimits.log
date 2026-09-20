@@ -1,0 +1,2 @@
+'MF21DiscreteLimits.normalized_power_sum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21DiscreteLimits.polynomial_riemann_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'MF21ActualBoundary.stable_family_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.nonleading_actual_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

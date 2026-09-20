@@ -1,0 +1,4 @@
+'MF21Obstruction.actual_finite_head_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Obstruction.model_finite_head_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Obstruction.model_not_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Obstruction.model_finite_head_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]

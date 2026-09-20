@@ -6,10 +6,25 @@
 
 **Difficulty:** challenging  
 **Importance:** interesting to specialist  
-**Status:** Solved  
-**Last checked:** 2026-09-12
+**Status:** Lean verified
+
+**Last checked:** 2026-09-20
 
 **Rating rationale:** Matching bulk asymptotics with extreme eigenvalues at the exact breakdown order is challenging; the detailed expansion threshold is mainly important to structured spectral specialists.
+
+## Lean proof and verification evidence — 20 September 2026
+
+The [complete formalization](lean/README.md) proves all three original assertions for every $`m\ge3`$, the obstruction for every continuous coefficient family, and the revised proof's smooth common family with matching upper and finite-head lower error bounds. The exact Fourier-integral matrix correspondence and coefficient uniqueness are separately exported. No analytic or transcendence hypothesis remains unproved in these results.
+
+The immutable local proof commit `e378ec4679f9119aacf79a0fe30b80493a61ec5b` passed the actual non-root Linux Comparator, Lean default-kernel replay, standard-axiom checks, and real sandbox/rejection controls. [Checked input snapshot and raw evidence](lean/verification/linux-2026-09-20/README.md) · [Five proved exports](lean/Solution.lean) · [Exact statement correspondence](lean/NUMERICAL_TARGETS.md).
+
+Separate nonimplementing AI agents approved the [formal statement and source correspondence](lean/reviews/independent-fidelity.md) and [proof and runtime evidence](lean/reviews/independent-proof.md); an additional [scoped cross-review](lean/reviews/independent-cross-review.md) records authorship exclusions. The formalization and September proof revisions were produced by OpenAI Codex AI agents. George Stepaniants retains original manuscript authorship, and the conjecture and simple-loop method retain the cited authors' attribution. No external human peer review or source-author endorsement is claimed. This candidate and its verification were prepared locally; no GitHub push has occurred.
+
+## Proof clarification - 19 September 2026
+
+The [revised proof](solution.md) explicitly proves uniqueness of the continuous coefficient functions on the logarithmic-squared bulk grid (Lemma 5, following Proposition 4.2 of Barrera–Böttcher–Grudsky–Maximenko). This identifies any hypothetical all-index expansion with the constructed one. Equation (25) supplies only an upper bound; the obstruction uses the separate inverse-trace contradiction in equations (26)–(33). Corollary 6 now gives a matching lower bound of order $`h^{2m}`$ for the maximum error over a fixed finite set of low indices.
+
+The revision also credits the simple-loop method explicitly and adds Bogoya–Grudsky (2025). The [dated audit](../../reviews/2026-09-19-mf21/README.md) records the mathematical checks, source comparison, and coefficient-uniqueness repair. The [initial Lean audit](../../reviews/2026-09-19-mf21/lean-audit.md) records the earlier partial development; it is superseded by the completed verification above. The original problem, permanent ID, grid, cutoff, and quantifiers below are unchanged.
 
 ## Affirmative resolution - 12 September 2026 (UTC)
 
@@ -19,7 +34,7 @@
 
 [Proof PDF](solution.pdf) · [Standalone proof TeX](solution.tex) · [Independent mathematical review](../../references/stepaniants-mf21-2026-09-12/independent-review.md) · [Submission and public-source audit](../../references/stepaniants-mf21-2026-09-12/README.md).
 
-The complete proof passed a separate Codex-agent informal audit. It derives the bulk expansion from an exact boundary determinant and proves the final obstruction using a classical uniform inverse-kernel limit and a trace identity. Barrera, Böttcher, Grudsky, Maximenko and the cited later authors retain credit for the conjecture and prior cases; Böttcher-Widom and their cited predecessors retain credit for the inverse-kernel theorem. Substantial AI assistance is disclosed. This is neither external human peer review nor formal verification. The original statement, permanent ID, references and dated history are retained below; the ratings are historical.
+The original proof passed a separate Codex-agent informal audit. It derived the bulk expansion from an exact boundary determinant and the final obstruction from a classical uniform inverse-kernel limit and a trace identity; the revision above supplies a direct finite-matrix trace calculation. Barrera, Böttcher, Grudsky, Maximenko and the cited later authors retain credit for the conjecture and prior cases; Böttcher-Widom and their cited predecessors retain credit for the inverse-kernel theorem. Substantial AI assistance is disclosed. That initial audit was informal; the completed Lean verification is documented above. External human peer review is not claimed. The original statement, permanent ID, references and dated history are retained below; the ratings are historical.
 
 ## Statement
 
@@ -60,6 +75,7 @@ Regular eigenvalue expansions support accurate computation without forming large
 
 - M. Barrera, A. Böttcher, S. M. Grudsky and E. A. Maximenko, *Eigenvalues of even very nice Toeplitz matrices can be unexpectedly erratic*, Oper. Theory Adv. Appl. **268** (2018), 51–77, [DOI](https://doi.org/10.1007/978-3-319-75996-8_2); [author preprint](https://arxiv.org/abs/1710.05243), Conjecture 8.4, p. 26, equation (8.4); Theorem 1.2 supplies the proved $`m=2`$ analogue.
 - M. Barrera, S. Grudsky, V. Stukopin and I. Voronin, *Asymptotics of the eigenvalues of seven-diagonal Toeplitz matrices of a special form*, Adv. Oper. Theory **9** (2024), 79, [DOI](https://doi.org/10.1007/s43036-024-00374-1); [preprint](https://arxiv.org/abs/2111.07196), Theorems 2.3–2.6. This studies the sixth-order-zero case with more elaborate formulas.
+- M. Bogoya and S. Grudsky, *Eigenvalues of non-Hermitian banded Toeplitz matrices approaching simple points of the limiting set*, Comput. Math. Math. Phys. **65** (2025), 1453–1471, [DOI](https://doi.org/10.1134/S0965542525700745); [author-hosted paper](https://www.math.cinvestav.mx/~grudsky/Papers/162.pdf), Theorems 2.1–2.2. This gives local phase equations and expansions near nondegenerate simple points; the revised proof records the methodological connection without a novelty claim.
 - A. Böttcher, *Ten years with Sergei Grudsky in the eigenvalue bulk of Toeplitz matrices*, J. Math. Sci. **298** (2026), 363–376, [DOI](https://doi.org/10.1007/s10958-025-07833-x), section “Beyond the simple-loop class,” Theorems 2–5 and discussion of higher-order zeros.
 
 On 2026-09-10, checked the original full preprint, the seven-diagonal follow-up's full preprint and publication record, the 2026 survey, and targeted title/conjecture/2025–2026 searches. No resolution of all parts for every $`m\ge3`$ was located. Later local second-order expansions and results confined to $`m=3`$ do not establish this full statement. This bounded search is not a proof of openness.

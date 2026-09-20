@@ -1,0 +1,2 @@
+'MF21Laurent.central_sum_eq_laurent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Laurent.geometric_stencil' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+MF21/ExponentialCutoff.lean:22:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21/ExponentialCutoff.lean:22:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Expansion.exponential_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Expansion.log_squared_exponential_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]

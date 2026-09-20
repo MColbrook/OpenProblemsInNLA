@@ -1,0 +1,8 @@
+'MF21Verified.targetAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.fullTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.universalObstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.smooth_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.finite_head_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.smooth_common_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.fourier_matrix_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Verified.model_sharp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

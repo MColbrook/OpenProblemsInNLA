@@ -4,7 +4,8 @@ project:
   name: 'MF-21: the uniform Toeplitz eigenvalue expansion threshold for every m >= 3'
   description: Complete symbolic Lean proof of the original three-part target, continuous-family obstruction,
     smooth common coefficients, sharp finite-head and global errors, and exact Fourier-matrix correspondence.
-    Canonical Linux acceptance is pending.
+    All five contracts passed actual non-root Linux Comparator and default-kernel acceptance at the recorded
+    immutable proof revision.
   authors:
   - OpenAI Codex AI agents
   license: Apache-2.0
@@ -94,12 +95,13 @@ status:
   scope: For every m >= 3, the exact Fourier Toeplitz matrix has the original same-family estimates through
     order 2m-1 globally and order 2m above ceil(log(n+2)^2); no continuous family attains the next uniform
     order. The same smooth family has matching h^(2m) lower and upper maximum-error bounds.
-  whole_problem_verified: false
+  whole_problem_verified: true
   sorry_count: 0
   sorry_in_definitions: 0
-  source_scan_note: Five deliberate specification placeholders occur only in Challenge. Solution never
-    imports Challenge. Fresh macOS replay checked all 82 proof modules and 1354 local declarations. Canonical
-    Linux acceptance and final review remain pending.
+  source_scan_note: Five deliberate specification placeholders occur only in Challenge, which Solution
+    never imports. All five exports passed isolated Linux Comparator and default-kernel replay. Fresh
+    raw-kernel replay checked 82 proof modules and all 1,354 local declarations; only standard axioms
+    occur.
   axioms:
   - propext
   - Classical.choice
@@ -114,8 +116,8 @@ status:
     - Classical.choice
     - Quot.sound
     file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
-    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
-      and final source review.'
+    verification_status: 'PASS: actual non-root Linux Comparator and default kernel at e378ec4679f9119aacf79a0fe30b80493a61ec5b;
+      two independent nonimplementing source reviews and nonauthor runtime audit retained.'
   - declaration: NLA.MF21.universal_obstruction
     file: Solution.lean
     sorry_count: 0
@@ -125,8 +127,8 @@ status:
     - Classical.choice
     - Quot.sound
     file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
-    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
-      and final source review.'
+    verification_status: 'PASS: actual non-root Linux Comparator and default kernel at e378ec4679f9119aacf79a0fe30b80493a61ec5b;
+      two independent nonimplementing source reviews and nonauthor runtime audit retained.'
   - declaration: NLA.MF21.smooth_common_family
     file: Solution.lean
     sorry_count: 0
@@ -136,8 +138,8 @@ status:
     - Classical.choice
     - Quot.sound
     file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
-    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
-      and final source review.'
+    verification_status: 'PASS: actual non-root Linux Comparator and default kernel at e378ec4679f9119aacf79a0fe30b80493a61ec5b;
+      two independent nonimplementing source reviews and nonauthor runtime audit retained.'
   - declaration: NLA.MF21.fourier_matrix_entries
     file: Solution.lean
     sorry_count: 0
@@ -147,8 +149,8 @@ status:
     - Classical.choice
     - Quot.sound
     file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
-    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
-      and final source review.'
+    verification_status: 'PASS: actual non-root Linux Comparator and default kernel at e378ec4679f9119aacf79a0fe30b80493a61ec5b;
+      two independent nonimplementing source reviews and nonauthor runtime audit retained.'
   - declaration: NLA.MF21.coefficients_unique
     file: Solution.lean
     sorry_count: 0
@@ -158,17 +160,18 @@ status:
     - Classical.choice
     - Quot.sound
     file_sha256: 8f21de690dff7251125fb3ec5601e8578db2203c941e6c8675290108b29a4aa6
-    verification_status: 'PASS: fresh macOS raw-kernel source replay. Pending: isolated Linux Comparator
-      and final source review.'
+    verification_status: 'PASS: actual non-root Linux Comparator and default kernel at e378ec4679f9119aacf79a0fe30b80493a61ec5b;
+      two independent nonimplementing source reviews and nonauthor runtime audit retained.'
 fidelity:
   divergences: No target weakened. The finite inverse-column/Schur recurrence replaces the continuum Green-kernel
     limit. Equation (24) uses a finite-head Taylor bound. The determinant desingularization uses 2 sin(theta/2),
     which has the same simple zero as theta. See NUMERICAL_TARGETS.md.
 review:
-  status: Final canonical independent review in progress; earlier author and scoped nonauthor reviews
-    retained in the dated audit.
+  status: 'Approved: two independent nonimplementing final referees, additional nonauthor cross-review,
+    and actual isolated Linux execution evidence.'
   reviewers:
   - OpenAI Codex agent final_fidelity_referee (nonimplementing canonical referee)
+  - OpenAI Codex agent independent_proof_referee (nonimplementing mathematical proof and runtime referee)
   - OpenAI Codex agent lean_audit (nonauthor cross-review only outside authored modules)
   - OpenAI Codex agent trace_audit (nonauthor trace-obstruction and uniqueness assembly review only outside
     authored modules)
@@ -185,3 +188,9 @@ alignment:
   - NLA.MF21.smooth_common_family
   - NLA.MF21.fourier_matrix_entries
   - NLA.MF21.coefficients_unique
+verification:
+  proof_revision: e378ec4679f9119aacf79a0fe30b80493a61ec5b
+  linux_receipt: verification/linux-2026-09-20/result.json
+  immutable_checked_inputs: verification/linux-2026-09-20/trusted-inputs.tar.gz
+  local_only: true
+  published_to_github: false

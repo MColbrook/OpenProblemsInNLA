@@ -1,0 +1,8 @@
+$ elan toolchain install leanprover/lean4:v4.33.1
+info: downloading https://releases.lean-lang.org/lean4/v4.33.1/lean-4.33.1-linux_aarch64.tar.zst
+info: installing /home/admin/.elan/toolchains/leanprover--lean4---v4.33.1
+
+leanprover/lean4:v4.33.1 installed - Lean (version 4.33.1, aarch64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+
+
+EXIT_STATUS=0

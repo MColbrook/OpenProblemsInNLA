@@ -1,0 +1,5 @@
+'MF21FirstAsymptotics.value_rescaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstAsymptotics.numerator_coeff_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstAsymptotics.firstColumn_square_sum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstAsymptotics.inverse_column_square_sum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21FirstAsymptotics.inverse_zero_zero_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

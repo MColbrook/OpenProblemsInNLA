@@ -1,0 +1,2 @@
+'MF21Boundary.boundary_det_block_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.determinant_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]

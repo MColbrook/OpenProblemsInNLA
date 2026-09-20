@@ -1,0 +1,3 @@
+'MF21ActualBoundary.determinant_realError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.determinant_zero_iff_sine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.complexError_im_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
