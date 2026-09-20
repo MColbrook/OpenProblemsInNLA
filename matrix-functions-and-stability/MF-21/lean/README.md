@@ -17,7 +17,8 @@ and the independent [fidelity](reviews/independent-fidelity.md) and
 [proof](reviews/independent-proof.md) reviews record their exact scopes.
 An additional [nonauthor cross-review](reviews/independent-cross-review.md)
 records ownership exclusions. These are AI-agent reviews, not external human
-peer review. The local branch has not been pushed and no GitHub PR was created.
+peer review. After verification was completed locally, publication was
+authorized in [PR #309](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309).
 
 ## Entry points
 

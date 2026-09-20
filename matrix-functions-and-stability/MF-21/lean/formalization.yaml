@@ -192,5 +192,6 @@ verification:
   proof_revision: e378ec4679f9119aacf79a0fe30b80493a61ec5b
   linux_receipt: verification/linux-2026-09-20/result.json
   immutable_checked_inputs: verification/linux-2026-09-20/trusted-inputs.tar.gz
-  local_only: true
-  published_to_github: false
+  execution_environment: local_isolated_linux_vm
+  published_to_github: true
+  pull_request: https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309

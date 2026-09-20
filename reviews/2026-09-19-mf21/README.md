@@ -128,3 +128,9 @@ the even-zeta identities and necessary transcendence input, and the complete
 assembly with the exact original quantifiers. Repository promotion would
 also require statement review and the prescribed fresh Linux Comparator
 checks. No `Lean verified` status is claimed here.
+
+## Publication follow-up
+
+After the completed local verification, the user authorized publication. The
+verified branch was pushed and [PR #309](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309) opened. Earlier local-only statements above describe the preparation
+phase. No email reply was added to the repository.

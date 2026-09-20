@@ -72,3 +72,9 @@ The historical development source archive and scoped author/cross-reviews
 remain in this directory. The canonical `reviews/packaging-map.json` records
 source hashes before and after the mechanical import migration. The local
 branch has not been pushed and no GitHub PR was created.
+
+## Publication follow-up
+
+After the completed local verification, the user authorized publication. The
+verified branch was pushed and [PR #309](https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309) opened. Earlier local-only statements above describe the preparation
+phase. No email reply was added to the repository.

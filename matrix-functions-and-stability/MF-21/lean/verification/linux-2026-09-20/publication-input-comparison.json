@@ -6,14 +6,15 @@
     {
       "file": "README.md",
       "verified_sha256": "95afaf62d0dfd45d723eea364a39ec4174018d8afb63b591d877e7311f58ad27",
-      "publication_sha256": "8213cd16072767ab02056b5ca5fbc965c7298321eb55652675208b01d8215482"
+      "publication_sha256": "b03b659e8fd209c36a76f8a404b8ed8fb25cb90821a8104138173e0b1279e96a"
     },
     {
       "file": "formalization.yaml",
       "verified_sha256": "5be7580088b34c9c5c2265b00f5ad700eda674551ca666b3044e5fc71d879b07",
-      "publication_sha256": "48177cef50bef8867961d341aeafbd1f0cc299da3f1aafa8a3874c610ff7b56c"
+      "publication_sha256": "8b8ea88e82db042e6dfe8949b12053b595a735819ce589e3b108c93a2b45d949"
     }
   ],
   "new_files_scope": "Independent review reports, verification evidence and documentation only; no additional Lean sources.",
-  "github_push_performed": false
+  "github_push_performed": true,
+  "pull_request": "https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309"
 }
