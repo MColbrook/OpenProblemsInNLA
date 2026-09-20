@@ -24,6 +24,8 @@ Each entry records its own literature-check date. Literature checks are bounded;
 
 Special thanks to **George Stepaniants**, **Matthew J. Colbrook**, and **Sidney Holden** for their substantial contributions to this repository so far, and to everyone else who has contributed to the repository or emailed additions and corrections.
 
+We also thank **Sergei Grudsky** for his careful reading and important contribution to [MF-21](matrix-functions-and-stability/MF-21/README.md).
+
 If you would like to get involved but don't know how, please email [townsend@cornell.edu](mailto:townsend@cornell.edu).
 
 ## Browse by category
