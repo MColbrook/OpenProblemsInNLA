@@ -1,0 +1,5 @@
+'MF21Phase.phase_cell_unique_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.phase_residual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.inverse_phase_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.final_cell_no_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Phase.root_phase_index_range' depends on axioms: [propext, Classical.choice, Quot.sound]

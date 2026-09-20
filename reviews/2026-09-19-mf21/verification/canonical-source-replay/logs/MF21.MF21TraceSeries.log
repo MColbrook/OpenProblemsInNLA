@@ -1,0 +1,5 @@
+'MF21Audit.even_zeta_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.half_tail_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.modelTrace_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.kernelTraceConstant_ne_modelTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.modelTrace_series_summable' depends on axioms: [propext, Classical.choice, Quot.sound]

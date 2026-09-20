@@ -1,0 +1,5 @@
+'MF21Quantization.model_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Quantization.Model.uniform_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Quantization.Model.coefficient_fixed_index_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Quantization.Model.d_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Quantization.Model.fixed_index_low_order_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

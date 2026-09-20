@@ -1,0 +1,39 @@
+MF21/PhaseRotatedError.lean:17:21: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [phaseRotate, norm_div, unitRoot_norm, div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/PhaseRotatedError.lean:17:31: warning: This simp argument is unused:
+  norm_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [phaseRotate, norm_mul, unitRoot_norm, div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/PhaseRotatedError.lean:36:22: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [norm_div, unitRoot_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/PhaseRotatedError.lean:36:32: warning: This simp argument is unused:
+  norm_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [norm_mul, unitRoot_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/PhaseRotatedError.lean:57:10: warning: This simp argument is unused:
+  quantizationPhase
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21/PhaseRotatedError.lean:56:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21ActualBoundary.complexError_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

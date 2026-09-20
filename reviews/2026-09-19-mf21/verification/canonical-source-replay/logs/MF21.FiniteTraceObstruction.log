@@ -1,0 +1,5 @@
+'MF21Audit.finite_head_separation_of_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.finite_head_separation_of_inverse_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.finite_head_separation_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.finite_head_separation_of_finite_inverse_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.finite_head_scaled_remainder_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

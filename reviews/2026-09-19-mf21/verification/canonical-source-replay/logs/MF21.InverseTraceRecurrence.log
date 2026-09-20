@@ -1,0 +1,3 @@
+'MF21InverseTrace.inverse_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21InverseTrace.inverse_trace_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21InverseTrace.toeplitz_inverse_trace_step' depends on axioms: [propext, Classical.choice, Quot.sound]

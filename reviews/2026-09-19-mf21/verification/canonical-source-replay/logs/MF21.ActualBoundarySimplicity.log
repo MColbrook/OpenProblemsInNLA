@@ -1,0 +1,4 @@
+'MF21ActualBoundary.boundaryMatrix_differentiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21ActualBoundary.unique_eigenangle_index_of_simple_normalized_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

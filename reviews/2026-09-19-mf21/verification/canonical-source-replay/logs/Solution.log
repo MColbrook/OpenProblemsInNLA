@@ -1,0 +1,5 @@
+'NLA.MF21.full_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF21.universal_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF21.smooth_common_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF21.fourier_matrix_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF21.coefficients_unique' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+'MF21Audit.diagonal_compression_antitone_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.diagonal_compression_antitone_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.exists_ordered_diagonalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.compression_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Challenge.principal_submatrix_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'MF21Recurrence.solution_eq_geometric_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Recurrence.geometric_coefficients_unique' depends on axioms: [propext, Classical.choice, Quot.sound]

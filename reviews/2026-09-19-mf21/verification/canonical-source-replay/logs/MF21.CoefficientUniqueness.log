@@ -1,0 +1,4 @@
+'MF21Audit.coefficient_unique_of_weighted_bigO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.continuous_coefficient_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.expansion_unique_on_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.top_expansion_unique_on_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]

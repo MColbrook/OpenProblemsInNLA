@@ -1,0 +1,7 @@
+'MF21Circulant.fourierMatrix_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.circulant_charpoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.periodicCoefficient_dft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.realCirculant_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.periodicCoefficient_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.realCirculant_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Circulant.realCirculant_charpoly' depends on axioms: [propext, Classical.choice, Quot.sound]

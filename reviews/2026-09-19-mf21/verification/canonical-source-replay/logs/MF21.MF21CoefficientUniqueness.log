@@ -1,0 +1,4 @@
+'MF21Uniqueness.bulkExpansion_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Uniqueness.mf21_bulk_coefficients_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Uniqueness.mf21_uniform_coefficients_eq_bulk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Uniqueness.universalObstruction_of_fullTarget' depends on axioms: [propext, Classical.choice, Quot.sound]

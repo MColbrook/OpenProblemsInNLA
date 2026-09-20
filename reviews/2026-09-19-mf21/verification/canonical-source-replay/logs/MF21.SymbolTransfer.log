@@ -1,0 +1,3 @@
+'MF21Expansion.model_grid_angle_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Expansion.symbol_power_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Expansion.tailSymbol_of_tailAngle' depends on axioms: [propext, Classical.choice, Quot.sound]

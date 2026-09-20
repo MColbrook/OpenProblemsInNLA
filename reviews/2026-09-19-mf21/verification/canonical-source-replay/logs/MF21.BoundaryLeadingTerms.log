@@ -1,0 +1,2 @@
+'MF21Normalization.maskedBlock_right_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Normalization.maskedBlock_swap_det' depends on axioms: [propext, Classical.choice, Quot.sound]

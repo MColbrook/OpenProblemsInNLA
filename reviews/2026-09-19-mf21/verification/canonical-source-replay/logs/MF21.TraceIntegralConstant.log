@@ -1,0 +1,5 @@
+MF21/TraceIntegralConstant.lean:72:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21DiscreteLimits.integral_pow_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21DiscreteLimits.first_column_integral_constant' depends on axioms: [propext, Classical.choice, Quot.sound]

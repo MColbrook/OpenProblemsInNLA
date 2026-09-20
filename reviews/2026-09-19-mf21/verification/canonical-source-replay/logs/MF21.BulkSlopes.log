@@ -1,0 +1,3 @@
+'MF21Bulk.stable_slope_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.base_slopes_exist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Bulk.block_slopes_exist' depends on axioms: [propext, Classical.choice, Quot.sound]

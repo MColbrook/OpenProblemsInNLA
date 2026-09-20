@@ -34,7 +34,7 @@ zeros},pdfauthor={Open Problems in Numerical Linear Algebra}}
 \fancyhf{}
 \fancyhead[L]{\sffamily\footnotesize\color{muted}OPEN PROBLEMS IN NUMERICAL LINEAR ALGEBRA}
 \fancyhead[R]{\sffamily\bfseries\footnotesize\color{accent}MF-21}
-\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Literature check: 2026-09-12}}
+\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Verification check: 2026-09-20}}
 \fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule height \headrulewidth\hfill}}
@@ -52,7 +52,7 @@ zeros\par}
 \vspace{7pt}
 {\sffamily\small\textbf{Difficulty:} challenging\quad\textbf{Importance:} interesting
 to specialist\par}
-{\sffamily\small\bfseries\color{accent}Status: Solved\par}
+{\sffamily\small\bfseries\color{accent}Status: Lean verified\par}
 \vspace{4pt}
 {\color{accent}\hrule height 0.8pt}
 \vspace{6pt}
@@ -60,6 +60,68 @@ to specialist\par}
 eigenvalues at the exact breakdown order is challenging; the detailed
 expansion threshold is mainly important to structured spectral
 specialists.
+
+\subsection{Lean proof and verification evidence --- 20 September
+2026}\label{lean-proof-and-verification-evidence-20-september-2026}
+
+The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/README.md}{complete
+formalization} proves all three original assertions for every \(m\ge3\),
+the obstruction for every continuous coefficient family, and the revised
+proof's smooth common family with matching upper and finite-head lower
+error bounds. The exact Fourier-integral matrix correspondence and
+coefficient uniqueness are separately exported. No analytic or
+transcendence hypothesis remains unproved in these results.
+
+The immutable local proof commit
+\textit{e378ec4679f9119aacf79a0fe30b80493a61ec5b} passed the actual
+non-root Linux Comparator, Lean default-kernel replay, standard-axiom
+checks, and real sandbox/rejection controls.
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/verification/linux-2026-09-20/README.md}{Checked
+input snapshot and raw evidence} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/Solution.lean}{Five
+proved exports} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/NUMERICAL_TARGETS.md}{Exact
+statement correspondence}.
+
+Separate nonimplementing AI agents approved the
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-fidelity.md}{formal
+statement and source correspondence} and
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-proof.md}{proof
+and runtime evidence}; an additional
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-cross-review.md}{scoped
+cross-review} records authorship exclusions. The formalization and
+September proof revisions were produced by OpenAI Codex AI agents.
+George Stepaniants retains original manuscript authorship, and the
+conjecture and simple-loop method retain the cited authors' attribution.
+No external human peer review or source-author endorsement is claimed.
+Verification was completed locally before the authorized publication in
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309}{PR
+\#309}.
+
+\subsection{Proof clarification - 19 September
+2026}\label{proof-clarification---19-september-2026}
+
+The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/solution.md}{revised
+proof} explicitly proves uniqueness of the continuous coefficient
+functions on the logarithmic-squared bulk grid (Lemma 5, following
+Proposition 4.2 of Barrera--Böttcher--Grudsky--Maximenko). This
+identifies any hypothetical all-index expansion with the constructed
+one. Equation (25) supplies only an upper bound; the obstruction uses
+the separate inverse-trace contradiction in equations (26)--(33).
+Corollary 6 now gives a matching lower bound of order \(h^{2m}\) for the
+maximum error over a fixed finite set of low indices.
+
+The revision also credits the simple-loop method explicitly and adds
+Bogoya--Grudsky (2025). The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/reviews/2026-09-19-mf21/README.md}{dated
+audit} records the mathematical checks, source comparison, and
+coefficient-uniqueness repair. The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/reviews/2026-09-19-mf21/lean-audit.md}{initial
+Lean audit} records the earlier partial development; it is superseded by
+the completed verification above. The original problem, permanent ID,
+grid, cutoff, and quantifiers below are unchanged.
 
 \subsection{Affirmative resolution - 12 September 2026
 (UTC)}\label{affirmative-resolution---12-september-2026-utc}
@@ -86,35 +148,33 @@ mathematical review} ·
 \href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/references/stepaniants-mf21-2026-09-12/README.md}{Submission
 and public-source audit}.
 
-The complete proof passed a separate Codex-agent informal audit. It
-derives the bulk expansion from an exact boundary determinant and proves
-the final obstruction using a classical uniform inverse-kernel limit and
-a trace identity. Barrera, Böttcher, Grudsky, Maximenko and the cited
-later authors retain credit for the conjecture and prior cases;
-Böttcher-Widom and their cited predecessors retain credit for the
-inverse-kernel theorem. Substantial AI assistance is disclosed. This is
-neither external human peer review nor formal verification. The original
-statement, permanent ID, references and dated history are retained
-below; the ratings are historical.
+The original proof passed a separate Codex-agent informal audit. It
+derived the bulk expansion from an exact boundary determinant and the
+final obstruction from a classical uniform inverse-kernel limit and a
+trace identity; the revision above supplies a direct finite-matrix trace
+calculation. Barrera, Böttcher, Grudsky, Maximenko and the cited later
+authors retain credit for the conjecture and prior cases; Böttcher-Widom
+and their cited predecessors retain credit for the inverse-kernel
+theorem. Substantial AI assistance is disclosed. That initial audit was
+informal; the completed Lean verification is documented above. External
+human peer review is not claimed. The original statement, permanent ID,
+references and dated history are retained below; the ratings are
+historical.
 
 \subsection{Statement}\label{statement}
 
 For each integer \(m\ge3\), let
 
-\[
-g_m(\theta)=\bigl(2\sin(\theta/2)\bigr)^{2m},\qquad
-\widehat g_{m,k}=\frac1{2\pi}\int_{-\pi}^{\pi}g_m(\theta)e^{-ik\theta}\,d\theta.
-\]
+\[g_m(\theta)=\bigl(2\sin(\theta/2)\bigr)^{2m},\qquad
+\widehat g_{m,k}=\frac1{2\pi}\int_{-\pi}^{\pi}g_m(\theta)e^{-ik\theta}\,d\theta.\]
 
 Let \(T_n(g_m)=(\widehat g_{m,j-k})_{j,k=1}^n\), with eigenvalues
 \(\lambda_{n,1}\le\cdots\le\lambda_{n,n}\) counted with multiplicity.
 For real continuous functions \(d_0,\ldots,d_{2m}\) on \([0,\pi]\),
 independent of \(n,j\), write
 
-\[
-R_{p,n,j}=\lambda_{n,j}-\sum_{k=0}^p
-\frac{d_k(j\pi/(n+2))}{(n+2)^k}.
-\]
+\[R_{p,n,j}=\lambda_{n,j}-\sum_{k=0}^p
+\frac{d_k(j\pi/(n+2))}{(n+2)^k}.\]
 
 \textbf{Conjecture 8.4 of Barrera--Böttcher--Grudsky--Maximenko.} Such
 coefficient functions exist, with \(d_0=g_m\), for which all three
@@ -122,15 +182,17 @@ assertions hold:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   For every integer \(0\le p\le2m-1\), there are constants \(D_p>0\) and
   \(N_p\in\mathbb N\) such that
+
   \[|R_{p,n,j}|\le D_p(n+2)^{-p-1}\qquad(n\ge N_p,\ 1\le j\le n).\]
 \item
   There are constants \(D_{2m}>0\) and \(N_{2m}\in\mathbb N\) such that
-  \[|R_{2m,n,j}|\le D_{2m}(n+2)^{-2m-1}\] whenever \(n\ge N_{2m}\) and
-  \(\lceil(\log(n+2))^2\rceil\le j\le n\).
+
+  \[|R_{2m,n,j}|\le D_{2m}(n+2)^{-2m-1}\]
+
+  whenever \(n\ge N_{2m}\) and \(\lceil(\log(n+2))^2\rceil\le j\le n\).
 \item
   No constants \(D>0,N\in\mathbb N\) make the bound
   \(|R_{2m,n,j}|\le D(n+2)^{-2m-1}\) valid for every \(n\ge N\) and
@@ -170,6 +232,15 @@ check}\label{references-and-status-check}
   \href{https://doi.org/10.1007/s43036-024-00374-1}{DOI};
   \href{https://arxiv.org/abs/2111.07196}{preprint}, Theorems 2.3--2.6.
   This studies the sixth-order-zero case with more elaborate formulas.
+\item
+  M. Bogoya and S. Grudsky, \emph{Eigenvalues of non-Hermitian banded
+  Toeplitz matrices approaching simple points of the limiting set},
+  Comput. Math. Math. Phys. \textbf{65} (2025), 1453--1471,
+  \href{https://doi.org/10.1134/S0965542525700745}{DOI};
+  \href{https://www.math.cinvestav.mx/~grudsky/Papers/162.pdf}{author-hosted
+  paper}, Theorems 2.1--2.2. This gives local phase equations and
+  expansions near nondegenerate simple points; the revised proof records
+  the methodological connection without a novelty claim.
 \item
   A. Böttcher, \emph{Ten years with Sergei Grudsky in the eigenvalue
   bulk of Toeplitz matrices}, J. Math. Sci. \textbf{298} (2026),

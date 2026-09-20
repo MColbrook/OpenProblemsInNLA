@@ -1,0 +1,4 @@
+'MF21Audit.pi_transcendental' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.pi_pow_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.pi_trace_value_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Audit.trace_values_ne_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
