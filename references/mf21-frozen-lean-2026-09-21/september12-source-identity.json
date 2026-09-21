@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-21T02:27:38.068322+00:00",
+  "source_commit": "eb37bc17a462177f57efa270e9a9f9b17e9d88e2",
+  "source_commit_author_date": "2026-09-12T00:05:32-04:00",
+  "source_commit_committer_date": "2026-09-12T00:05:32-04:00",
+  "source_commit_subject": "Resolve MF-21 higher-order Toeplitz expansion threshold",
+  "source_history_scope": "Locally available git --all --follow history; first solution.md introduction at this commit and later September20edit at6fd3514fefe43b678ef62ba9e2bb7096935d93b3",
+  "solution_md_sha256": "6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa",
+  "solution_tex_sha256": "1baff64e748b8a3a31d53f1727560937e5c84524a202a25bc92c081b4f1fcd49",
+  "display_formula_count": 43,
+  "display_formula_comparison": "Exact whitespace-normalized equality, same order, Markdown double-dollar blocks versus original standalone TeX display blocks. This is source identity/format correspondence, not a proof-correctness check.",
+  "passed": true
+}

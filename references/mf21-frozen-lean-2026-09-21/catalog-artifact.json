@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-09-21T01:29:45.863835+00:00",
+  "scope": "Downloaded real GitHub document artifact and matched all rendering input/output hashes; visual review pending; not Lean/Comparator",
+  "run_id": 35550862537,
+  "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35550862537",
+  "run_conclusion": "success",
+  "commit": "3deaed77d26667dff051ed45244b5f5c29b9f176",
+  "artifact_id": 10617998578,
+  "artifact_name": "mf21-catalog-3deaed77d26667dff051ed45244b5f5c29b9f176",
+  "artifact_zip_bytes": 76751,
+  "input_hashes_match_snapshots_and_current_sources": true,
+  "output_hashes_match": true,
+  "provenance_sha256": "3325879945dc84cc10058da5ed82eeb80024254964ba5b515ac6fb57b734c3dd",
+  "files": {
+    "inputs/.github/workflows/mf21-catalog-once.yml": "10d0f50419680237df0de66b196c7d8b24d4c53b19fc3e431e166f9c29ba2f21",
+    "inputs/matrix-functions-and-stability/MF-21/README.md": "d574d73fdf6691991cf8dd2a3bb18bbd5b7dd2fb4c2632b242b42e4f7aae80df",
+    "inputs/matrix-functions-and-stability/README.md": "efa9b81c8af531bef77c41af6f0bc39b22ec3e4ffdda79ac388d9c6787c85f3d",
+    "inputs/tools/github_math.lua": "31439d03daf97570d4332a54fa0c44471f827242ef5b4514f16d96d822e07931",
+    "inputs/tools/problem-template.tex": "271a7f3ed3b65daece40e32c9edf2e81f93f5050c81df336a43e1fc0b6c5bb76",
+    "inputs/tools/render_problems.py": "586916bcbd8b89a24fcc53a07b7a393a9dab7e9cb2ff079c982d7586ce56a5a9",
+    "package-versions.txt": "098156afe6e4668903e2470042adbc85cbd139d05140b324c4e2bf3c6a53a48d",
+    "pandoc-version.txt": "e0a812bea917693f601202d28ce288bf7ca3afdb2cb6f591aa9ad09120092488",
+    "pdfinfo.txt": "19eb386ea7764fdce19dbf0edc19daf9c0a7d231419091a135699473d28c8fa6",
+    "problem.pdf": "dd9fb1bea55919c5aa24eb8f70aec968290277481f441db259359e6563bbfdf2",
+    "problem.tex": "d5ef4dfd0a95ecde4087c6bef58de5fe5c4165b81d5a159b21bde482fc430f25",
+    "provenance.json": "3325879945dc84cc10058da5ed82eeb80024254964ba5b515ac6fb57b734c3dd",
+    "python-version.txt": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366",
+    "render.log": "ace5d19fcb9ed489949764a00da73f6b4294ef990fbb1c952e7519964cd2efaf",
+    "xelatex-version.txt": "c6da8d8ca1c1e52fc2633d1723bd2ec638501594e45166d2508b354f66e98471"
+  }
+}

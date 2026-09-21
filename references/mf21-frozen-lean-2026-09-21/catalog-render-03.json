@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-09-21T02:03:30.207929+00:00",
+  "scope": "Actual GitHub artifact download and byte/provenance comparisons; semantic and visual review are separate",
+  "run_id": 35552753810,
+  "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35552753810",
+  "conclusion": "success",
+  "commit": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "artifact_id": 10618374919,
+  "artifact_name": "mf21-catalog-0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "artifact_zip_bytes": 76837,
+  "files": {
+    "inputs/.github/workflows/mf21-catalog-once.yml": "10d0f50419680237df0de66b196c7d8b24d4c53b19fc3e431e166f9c29ba2f21",
+    "inputs/matrix-functions-and-stability/MF-21/README.md": "9b6c85cba00e7d652d231cd4134e5072ba1a863976f155ea6a7080e73bdc688e",
+    "inputs/matrix-functions-and-stability/README.md": "efa9b81c8af531bef77c41af6f0bc39b22ec3e4ffdda79ac388d9c6787c85f3d",
+    "inputs/tools/github_math.lua": "31439d03daf97570d4332a54fa0c44471f827242ef5b4514f16d96d822e07931",
+    "inputs/tools/problem-template.tex": "271a7f3ed3b65daece40e32c9edf2e81f93f5050c81df336a43e1fc0b6c5bb76",
+    "inputs/tools/render_problems.py": "586916bcbd8b89a24fcc53a07b7a393a9dab7e9cb2ff079c982d7586ce56a5a9",
+    "package-versions.txt": "098156afe6e4668903e2470042adbc85cbd139d05140b324c4e2bf3c6a53a48d",
+    "pandoc-version.txt": "e0a812bea917693f601202d28ce288bf7ca3afdb2cb6f591aa9ad09120092488",
+    "pdfinfo.txt": "532ac436bc18db4a765f879fd6b9b93f2008b80053784154609fef07c6b983ec",
+    "problem.pdf": "74aad20a85d3fe292ccafe0f1936c755eb706762c0bf56710527c6a085eb53ae",
+    "problem.tex": "f2ccdcb2c6e90e1eb76ad1a0edbd499616d3cd922315979117dcf69051ece046",
+    "provenance.json": "72a5e9d5f1d9cf11e9c0cece53610bbf13fb38cc507ca023577759b28eab9865",
+    "python-version.txt": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366",
+    "render.log": "c9221f609b92e718f79608720f5cc98dda48e2aedf4ad79298c6130c3ac88f34",
+    "xelatex-version.txt": "c6da8d8ca1c1e52fc2633d1723bd2ec638501594e45166d2508b354f66e98471"
+  },
+  "input_hashes_match_snapshot_commit_and_current_files": true,
+  "output_hashes_match": true,
+  "visual_review": "separate; not asserted by this command"
+}

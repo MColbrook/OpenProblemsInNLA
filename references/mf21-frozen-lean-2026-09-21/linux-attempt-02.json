@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-09-21T01:38:28.563498+00:00",
+  "scope": "Downloaded actual second Linux failure artifact; no target Comparator/kernel acceptance",
+  "run_id": 35550709155,
+  "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35550709155",
+  "commit": "bd3014e699f277500beabda57cfeb1f57925ab78",
+  "conclusion": "failure",
+  "artifact_id": 10617913898,
+  "artifact_name": "mf21-frozen-bd3014e699f277500beabda57cfeb1f57925ab78",
+  "zip_bytes": 20801,
+  "raw_combined_job_log_sha256": "4af5ebea1ad9bb2fdfac68f87685135116e21123cd8b235f0d810c6cdd28f04e",
+  "observed_failure": "PhaseWindowRoots.lean exited 134 with interpreter memory_exception under -j1 -M4096; project build failed before target Comparator/default-kernel acceptance. No isolated causal diagnosis asserted.",
+  "files": {
+    "bootstrap/comparator-build.log": "9871787b032cdf8fe67c0a96bdbffe5303e247c1e8b9f26c834850f46601d5a5",
+    "bootstrap/elan.log": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+    "bootstrap/landrun-build.log": "eeb7491005d3f9ec4ebb970ed1262a7fa322e7f0d47905509f49562d75a0ed5d",
+    "verify-20260921T012357Z-4182/comparator-controls.log": "c46cc05bd279db1aeff972dea5abfe94a823a4f6d9bdb9ce50f2f28c3363d015",
+    "verify-20260921T012357Z-4182/comparator.log": "32f18010bb8babfe443d39c0f9d841ea8098090a24139cdbe553aa8fd9c952d7",
+    "verify-20260921T012357Z-4182/dependencies.log": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+    "verify-20260921T012357Z-4182/kernel-controls.log": "eb8c0e9e7121025d13e1916452e8c4d7c368f1a39769f8b151e52bfeacaedd57",
+    "verify-20260921T012357Z-4182/mathlib-cache.log": "d26a58b5c76ad6e31581961bb96acce9ff64a996bd2920e23911a1997c35a105",
+    "verify-20260921T012357Z-4182/negative-native.log": "be05314b9e6e67f190943525f329ff552abb03f3e4e8af0438974cc8b2defbe4",
+    "verify-20260921T012357Z-4182/negative-sorry.log": "107a682e7a695880eba7e190b83a1d2b2bde4a112f6a4c612dcebed283976af3",
+    "verify-20260921T012357Z-4182/sandbox.log": "745c0fde1a96e004ad5b409067e55a198a37c8e8b7a7a52ac2290513a756d0c7",
+    "verify-20260921T012357Z-4182/user-service.log": "0aac4e667616cc36615953b752acdf97ce1cc7871abeca7aec8f8c7385f94e33"
+  }
+}

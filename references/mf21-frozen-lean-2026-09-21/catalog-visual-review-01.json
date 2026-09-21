@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-09-21T01:31:24.485336+00:00",
+  "scope": "Coordinator visual inspection of all three rendered pages",
+  "renderer_run_id": 35550862537,
+  "pdf_sha256": "dd9fb1bea55919c5aa24eb8f70aec968290277481f441db259359e6563bbfdf2",
+  "render_command": [
+    "/opt/homebrew/bin/pdftoppm",
+    "-r",
+    "110",
+    "-png",
+    "matrix-functions-and-stability/MF-21/problem.pdf",
+    "/private/tmp/mf21-verifier-tools/pdf-qa/mf21"
+  ],
+  "pages_inspected": [
+    1,
+    2,
+    3
+  ],
+  "passed": false,
+  "finding": "Page 1 new evidence paragraph contains a full commit hash that extends beyond the right margin. Pages 2 and 3 have no observed clipping. Abbreviate the displayed commit identifier, preserving full immutable source identification in the linked proof project, then regenerate and reinspect.",
+  "page_image_hashes": {
+    "mf21-1.png": "3d0a2434a926eef0125b3ccb781c45889784d3d147586981c2aef1899a3d0831",
+    "mf21-3.png": "acf27dcd1e2a02b0cc1805763f9971654087b3e7cc6edd6a08403d3ca4396bea",
+    "mf21-2.png": "f923efcdcaa7c41d31f0420087ad1ebcf905ccbe0800006e07c9334e02f6c175"
+  }
+}

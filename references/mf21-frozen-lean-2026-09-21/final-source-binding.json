@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-21T02:06:10.158173+00:00",
+  "proof_commit": "fe2183e9b570322d7c1f64bba3480460082af8d3",
+  "current_doc_commit": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "checked_source_count": 125,
+  "checked_pin_file_count": 3,
+  "checked_source_copy_file_count": 1422,
+  "proof_project_unchanged_since_proof_commit": true,
+  "canonical_original_statement_body_sha256": "f9294d7f2ea5f8a4de7a012e768de998c8b0b0c93b4d66a21488658a139c06ec",
+  "statement_extraction": "Text following the exact ## Statement newline through immediately before the next level-two heading; excludes both headings. Byte equality against upstream/main was checked directly.",
+  "existing_proof_and_manuscript_unchanged_from_base": true,
+  "registry_and_catalog_indexes_unchanged_from_base": true,
+  "scope": "Source/hash and publication-diff comparison; no additional compiler or Comparator execution"
+}

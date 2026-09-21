@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-09-21T02:04:47.408143+00:00",
+  "reviewer": "root Codex AI agent",
+  "scope": "Actual visual inspection of all three final rendered PDF pages; no mathematical or Lean verification asserted by this review",
+  "passed": true,
+  "pages": 3,
+  "pdf_sha256": "74aad20a85d3fe292ccafe0f1936c755eb706762c0bf56710527c6a085eb53ae",
+  "tex_sha256": "f2ccdcb2c6e90e1eb76ad1a0edbd499616d3cd922315979117dcf69051ece046",
+  "source_run_id": 35552753810,
+  "source_commit": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "render_command": [
+    "/opt/homebrew/bin/pdftoppm",
+    "-r",
+    "110",
+    "-png",
+    "matrix-functions-and-stability/MF-21/problem.pdf",
+    "/private/tmp/mf21-verifier-tools/pdf-qa-final/mf21"
+  ],
+  "rendered_images": {
+    "mf21-1.png": "c6029a585abc1419a151d16ff9e8bd70c474baa493b91243a563511434f506ac",
+    "mf21-2.png": "f923efcdcaa7c41d31f0420087ad1ebcf905ccbe0800006e07c9334e02f6c175",
+    "mf21-3.png": "acf27dcd1e2a02b0cc1805763f9971654087b3e7cc6edd6a08403d3ca4396bea"
+  },
+  "observations": [
+    "All three pages rendered and visually inspected.",
+    "The earlier overlong commit label is shortened and stays inside the right margin.",
+    "Title, mathematical expressions, source attribution, new verification paragraph, page numbers and references are legible; no clipping or overlapping content observed.",
+    "The original target and existing verification text are retained; new verification text distinguishes local coverage and the separate Linux run."
+  ]
+}
