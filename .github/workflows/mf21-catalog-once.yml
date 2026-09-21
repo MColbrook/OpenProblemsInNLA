@@ -1,0 +1,124 @@
+# Temporary document-rendering workflow; remove before the final upstream PR.
+name: MF-21 catalog rendering (temporary)
+
+on:
+  push:
+    paths:
+      - '.github/workflows/mf21-catalog-once.yml'
+      - 'matrix-functions-and-stability/MF-21/README.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mf21-catalog-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render-mf21-catalog:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/workflows/mf21-catalog-once.yml
+            /tools/render_problems.py
+            /tools/problem-template.tex
+            /tools/github_math.lua
+            /matrix-functions-and-stability/README.md
+            /matrix-functions-and-stability/MF-21/README.md
+      - name: Record exact rendering inputs
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, shutil, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+          output = Path(os.environ['RUNNER_TEMP']) / 'mf21-catalog-once'
+          output.mkdir(parents=True, exist_ok=True)
+          names = [
+              '.github/workflows/mf21-catalog-once.yml',
+              'tools/render_problems.py',
+              'tools/problem-template.tex',
+              'tools/github_math.lua',
+              'matrix-functions-and-stability/README.md',
+              'matrix-functions-and-stability/MF-21/README.md',
+          ]
+          inputs = {}
+          for name in names:
+              path = Path(name)
+              data = path.read_bytes()
+              inputs[name] = {'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}
+              destination = output / 'inputs' / name
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(path, destination)
+          record = {
+              'scope': 'MF-21 canonical README document rendering only; no Lean verification',
+              'recorded_utc': datetime.now(timezone.utc).isoformat(),
+              'repository_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+              'github_sha': os.environ['GITHUB_SHA'],
+              'github_run_id': os.environ['GITHUB_RUN_ID'],
+              'github_run_attempt': os.environ['GITHUB_RUN_ATTEMPT'],
+              'command': ['python3', 'tools/render_problems.py', 'MF-21'],
+              'inputs': inputs,
+              'status': 'render_not_yet_completed',
+          }
+          (output / 'provenance.json').write_text(json.dumps(record, indent=2) + '\n')
+          PY
+      - name: Install document renderer and template fonts
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            tex-gyre fonts-texgyre fonts-texgyre-math poppler-utils
+          pandoc --version > "$RUNNER_TEMP/mf21-catalog-once/pandoc-version.txt"
+          xelatex --version > "$RUNNER_TEMP/mf21-catalog-once/xelatex-version.txt"
+          python3 --version > "$RUNNER_TEMP/mf21-catalog-once/python-version.txt"
+          dpkg-query -W -f='${binary:Package}\t${Version}\n' \
+            pandoc texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            tex-gyre fonts-texgyre fonts-texgyre-math poppler-utils \
+            > "$RUNNER_TEMP/mf21-catalog-once/package-versions.txt"
+      - name: Render only MF-21 with the unchanged repository renderer
+        run: |
+          set -euo pipefail
+          python3 tools/render_problems.py MF-21 2>&1 \
+            | tee "$RUNNER_TEMP/mf21-catalog-once/render.log"
+          test -s matrix-functions-and-stability/MF-21/problem.tex
+          test -s matrix-functions-and-stability/MF-21/problem.pdf
+          cp matrix-functions-and-stability/MF-21/problem.tex "$RUNNER_TEMP/mf21-catalog-once/problem.tex"
+          cp matrix-functions-and-stability/MF-21/problem.pdf "$RUNNER_TEMP/mf21-catalog-once/problem.pdf"
+          pdfinfo matrix-functions-and-stability/MF-21/problem.pdf \
+            > "$RUNNER_TEMP/mf21-catalog-once/pdfinfo.txt"
+          python3 - <<'PY'
+          import hashlib, json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          output = Path(os.environ['RUNNER_TEMP']) / 'mf21-catalog-once'
+          record_path = output / 'provenance.json'
+          record = json.loads(record_path.read_text())
+          for name, expected in record['inputs'].items():
+              if hashlib.sha256(Path(name).read_bytes()).hexdigest() != expected['sha256']:
+                  raise SystemExit('Rendering input changed: ' + name)
+          record['outputs'] = {}
+          for name in ['problem.tex', 'problem.pdf', 'render.log']:
+              data = (output / name).read_bytes()
+              record['outputs'][name] = {'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}
+          record['finished_utc'] = datetime.now(timezone.utc).isoformat()
+          record['status'] = 'rendered; visual review remains separate'
+          record_path.write_text(json.dumps(record, indent=2) + '\n')
+          PY
+      - name: Retain document outputs and exact-source evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: mf21-catalog-${{ github.sha }}
+          path: ${{ runner.temp }}/mf21-catalog-once/
+          include-hidden-files: true
+          if-no-files-found: warn
