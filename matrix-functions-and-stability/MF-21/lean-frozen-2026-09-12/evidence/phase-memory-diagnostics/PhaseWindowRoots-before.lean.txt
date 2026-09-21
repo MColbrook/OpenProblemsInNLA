@@ -17,7 +17,7 @@ namespace MF21Restart
 private theorem phase_cos_gt_quarter (x : ℝ) (hx : |x| ≤ Real.pi / 4) :
     (1 / 4 : ℝ) < Real.cos x := by
   have hcos := Real.cos_le_cos_of_nonneg_of_le_pi (abs_nonneg x)
-    (by linarith only [Real.pi_pos] : Real.pi / 4 ≤ Real.pi) hx
+    (by linarith [Real.pi_pos] : Real.pi / 4 ≤ Real.pi) hx
   rw [Real.cos_abs] at hcos
   have hmargin : (1 / 4 : ℝ) < Real.cos (Real.pi / 4) := by
     simpa only [Real.sin_pi_div_four, Real.cos_pi_div_four] using phase_window_margin
@@ -60,7 +60,7 @@ private theorem scaledPhaseResidual_deriv_pos
         mul_lt_mul_of_pos_right hcos hFpos
   have hsE : |(-1 : ℝ) ^ k * deriv E θ| < A / 8 := by
     simpa only [abs_mul, abs_pow, abs_neg, abs_one, one_pow, one_mul] using hEsmall
-  linarith only [hmain, (abs_lt.mp hsE).1]
+  linarith [(abs_lt.mp hsE).1]
 
 /-- The scalar calculus argument. Every hypothesis is discharged by the
 actual functions in the public theorem below. -/
@@ -87,7 +87,7 @@ private theorem phase_window_unique_zero
     exact (half_pos hA).trans_le
       (hFlo θ (Set.mem_of_mem_of_subset hθ interior_subset))
   have hlevels : (k : ℝ) * Real.pi - Real.pi / 4 <
-      (k : ℝ) * Real.pi + Real.pi / 4 := by linarith only [Real.pi_pos]
+      (k : ℝ) * Real.pi + Real.pi / 4 := by linarith [Real.pi_pos]
   obtain ⟨a, ha, haF⟩ := intermediate_value_Icc Real.pi_pos.le hFcont
     (show (k : ℝ) * Real.pi - Real.pi / 4 ∈ Set.Icc (F 0) (F Real.pi) from
       ⟨hleft.le, (hlevels.trans hright).le⟩)
@@ -108,16 +108,16 @@ private theorem phase_window_unique_zero
     have hu := hmono.monotoneOn (hmem θ hθ) hb hθ.2
     rw [haF] at hl
     rw [hbF] at hu
-    exact abs_le.mpr ⟨by linarith only [hl], by linarith only [hu]⟩
+    exact abs_le.mpr ⟨by linarith, by linarith⟩
   have hcell_mem (θ : ℝ) (hθ : θ ∈ Set.Icc 0 Real.pi)
       (hc : |F θ - (k : ℝ) * Real.pi| ≤ Real.pi / 4) : θ ∈ Set.Icc a b := by
     constructor
     · apply (hmono.le_iff_le ha hθ).mp
       rw [haF]
-      linarith only [(abs_le.mp hc).1]
+      linarith [(abs_le.mp hc).1]
     · apply (hmono.le_iff_le hθ hb).mp
       rw [hbF]
-      linarith only [(abs_le.mp hc).2]
+      linarith [(abs_le.mp hc).2]
   have hdR (θ : ℝ) (hθ : θ ∈ Set.Icc 0 Real.pi)
       (hc : |F θ - (k : ℝ) * Real.pi| ≤ Real.pi / 4) :
       0 < deriv (scaledPhaseResidual F E k) θ :=
@@ -143,13 +143,13 @@ private theorem phase_window_unique_zero
     have hoff : ((k : ℝ) * Real.pi - Real.pi / 4) - (k : ℝ) * Real.pi =
         -(Real.pi / 4) := by ring
     rw [hoff, Real.sin_neg]
-    linarith only [phase_window_margin, (abs_lt.mp hEa).2]
+    linarith [phase_window_margin, (abs_lt.mp hEa).2]
   have hRb : 0 < scaledPhaseResidual F E k b := by
     rw [scaledPhaseResidual_eq, hbF]
     have hoff : ((k : ℝ) * Real.pi + Real.pi / 4) - (k : ℝ) * Real.pi =
         Real.pi / 4 := by ring
     rw [hoff]
-    linarith only [phase_window_margin, (abs_lt.mp hEb).1]
+    linarith [phase_window_margin, (abs_lt.mp hEb).1]
   obtain ⟨θ, hθ, hRzero⟩ := intermediate_value_Icc hab.le hRcont ⟨hRa.le, hRb.le⟩
   have hHθ : Real.sin (F θ) + E θ = 0 := by
     change (-1 : ℝ) ^ k * (Real.sin (F θ) + E θ) = 0 at hRzero
@@ -202,9 +202,9 @@ theorem manuscriptResidual_unique_root_in_phase_windows (m : ℕ) (hm : 2 ≤ m)
     have hzero : manuscriptPhaseFn m n 0 ≤ 0 := by
       rw [manuscriptPhaseFn_zero m n (by omega)]
       exact neg_nonpos.mpr (div_nonneg
-        (mul_nonneg (by linarith only [hmr] : 0 ≤ (m : ℝ) - 1) Real.pi_pos.le) (by norm_num))
+        (mul_nonneg (by linarith : 0 ≤ (m : ℝ) - 1) Real.pi_pos.le) (by norm_num))
     have hkpi := mul_le_mul_of_nonneg_right hk1 Real.pi_pos.le
-    linarith only [hzero, hkpi, Real.pi_pos]
+    linarith [Real.pi_pos]
   have hright : (k : ℝ) * Real.pi + Real.pi / 4 < manuscriptPhaseFn m n Real.pi := by
     rw [manuscriptPhaseFn_pi m n (by omega)]
     have hkpi := mul_le_mul_of_nonneg_right hknr Real.pi_pos.le
@@ -215,7 +215,7 @@ theorem manuscriptResidual_unique_root_in_phase_windows (m : ℕ) (hm : 2 ≤ m)
         |deriv (manuscriptError m n hm) θ| < (n + 2 : ℝ) / 8 := by
     apply hEsmall n θ hθ.1 hθ.2
     have hJkpi := mul_le_mul_of_nonneg_right hJkr Real.pi_pos.le
-    linarith only [hJkpi, (abs_le.mp hc).1]
+    linarith [(abs_le.mp hc).1]
   exact
     phase_window_unique_zero (manuscriptPhaseFn m n) (manuscriptError m n hm)
       (n + 2 : ℝ) k (by positivity) hF hE

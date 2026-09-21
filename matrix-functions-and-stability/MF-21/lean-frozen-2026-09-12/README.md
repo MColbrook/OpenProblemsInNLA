@@ -54,6 +54,11 @@ exit codes and dependency revisions, and checks all 386 declarations in
 Audit.lean against the three permitted standard axioms. A fresh installation
 first needs its pinned dependencies and Mathlib cache materialized.
 
+The library configuration allows 6144 MiB for ordinary `lake build`, including
+on the Linux verification runner. That setting also applies to an ordinary
+local Lake build. Use `python3 verify_local.py` for the serial local workflow
+above; it explicitly retains the 4096 MiB cap and one-thread limit.
+
 Seven separate Challenge/Solution contracts include the full canonical target
 and the stronger smooth statement. Challenge contains deliberate theorem
 placeholders and is never imported by Solution or a proof module. No definition

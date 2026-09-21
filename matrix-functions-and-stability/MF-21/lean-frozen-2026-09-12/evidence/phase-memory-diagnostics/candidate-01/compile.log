@@ -1,0 +1,32 @@
+import took 9.87s
+.olean serialization took 161ms
+{"caption":"","data":"This simp argument is unused:\n  scaledPhaseResidual\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Real.cos_sub_nat_mul_pi]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`","endPos":{"column":34,"line":43},"fileName":"/private/tmp/MF21PhaseWindowRootsCandidate.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unusedSimpArgs","pos":{"column":15,"line":43},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":65,"line":42},"fileName":"/private/tmp/MF21PhaseWindowRootsCandidate.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":62,"line":42},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":64,"line":43},"fileName":"/private/tmp/MF21PhaseWindowRootsCandidate.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":61,"line":43},"severity":"warning"}
+{"caption":"","data":"'MF21Restart.manuscriptResidual_unique_root_in_phase_windows' depends on axioms: [propext, Classical.choice, Quot.sound]","endPos":{"column":6,"line":224},"fileName":"/private/tmp/MF21PhaseWindowRootsCandidate.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":224},"severity":"information"}
+cumulative profiling times:
+	.olean serialization 161ms
+	C code generation 0.0652ms
+	attribute application 0.0397ms
+	blocked (unaccounted) 857ms
+	congr simp thm 0.712ms
+	elaboration 32.2ms
+	fix level params 0.916ms
+	import 9.87s
+	initialization 20ms
+	instantiate metavars 1.61ms
+	interpretation 747ms
+	let-to-have transformation 0.118ms
+	linting 18.4ms
+	module linting 0.00104ms
+	norm_num 64.6ms
+	overlappingInstancesLinter 2.52ms
+	parsing 7.43ms
+	process pre-definitions 12.8ms
+	ring 43.7ms
+	share common exprs 13.7ms
+	simp 13.2ms
+	tactic execution 151ms
+	tacticAnalysis 23.2ms
+	type checking 66.8ms
+	typeclass inference 203ms

@@ -1,0 +1,35 @@
+{
+  "scope": "Local PhaseWindowRoots arithmetic-context candidate, actual compiler exit; not Linux or Comparator",
+  "started_utc": "2026-09-21T01:37:31.726573+00:00",
+  "source_sha256": "7992ba76a6919b9e38aa3758ff74205befe02238e515b66b96584c1848a8d5c8",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-R",
+    "/private/tmp",
+    "/private/tmp/MF21PhaseWindowRootsCandidate.lean",
+    "-o",
+    "/private/tmp/mf21-phase-memory-tests/candidate-01/PhaseWindowRoots.olean",
+    "-i",
+    "/private/tmp/mf21-phase-memory-tests/candidate-01/PhaseWindowRoots.ilean",
+    "-c",
+    "/private/tmp/mf21-phase-memory-tests/candidate-01/PhaseWindowRoots.c",
+    "--profile",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "finished_utc": "2026-09-21T01:37:47.043446+00:00",
+  "exit_code": 0,
+  "log_sha256": "1170ac43a02555af0a09328376f8086b9dfe0c116bc803c3f853baea9be68284",
+  "max_child_rss_bytes_macos": 3649159168,
+  "output_hashes": {
+    "PhaseWindowRoots.c": "b6304d65a9cd20b8227966bc38da4decc8fb5639f093681e2930ed62006999e9",
+    "PhaseWindowRoots.ilean": "7bb19c6d4ec90fc577dbda636051b1f42322e9f169e920d6a77b4f400d8f5548",
+    "PhaseWindowRoots.olean": "7b2ac74892620ccaed98d502935e74ffeeba7a30dbf7d567eaf1d22a85ce129f"
+  }
+}

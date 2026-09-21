@@ -134,7 +134,8 @@ automation:
     tool_setup: 'Local Lean 4.33.1 with pinned Mathlib and LeanCert caches; at most one local
       compiler, one thread and 4096 MiB per process. Kernel-mode LeanCert. Independent source
       and proof reviewers requested at max reasoning. Real Comparator is reserved for the
-      GitHub Linux runner.
+      GitHub Linux runner. Ordinary Lake library builds allow 6144 MiB; the local
+      verify_local.py workflow explicitly retains one thread and a 4096 MiB cap.
 
       '
     prompting_notes: 'User requested a restart and adversarial review of the earlier Lean
@@ -159,7 +160,11 @@ review:
     compiler execution. The coordinator compiled sources serially. Reports identify exact
     source/log/output hashes, author exclusions, and actual execution scopes. These are AI-agent
     reviews, not human peer review. Local compiler evidence and final GitHub Comparator/kernel/sandbox
-    evidence are distinct.
+    evidence are distinct. The same-statement phase tactic repair and resource-only
+    Lake configuration change received a separate review. The latest local recheck
+    compiled all 10 affected modules, validated 115 reused source/output/dependency
+    identities, and checked all 386 actual axiom reports; an independent evidence
+    audit confirmed that scope. These records do not assert Linux acceptance.
 alignment:
   namespace: MF21Restart
   statements:

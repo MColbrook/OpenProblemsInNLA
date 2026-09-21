@@ -74,6 +74,18 @@ records that comparison. This run includes both the minimal numerical
 certificate and the six-root Lake configuration. It is local Lean evidence,
 not a Linux Comparator or sandbox acceptance.
 
+The subsequent [phase-source recheck](evidence/runs/20260921T014829335357Z-phase-recheck/record.json)
+passed from `2026-09-21T01:48:29.335357+00:00` to
+`2026-09-21T01:50:06.082402+00:00`. Its record SHA256 is
+`bcb21102dcd847a244595c04f6cd759b7221b4bd0c0e674beef969ed6eea9c3a`.
+This was 10 actual recompilations covering PhaseWindowRoots and all its local
+dependents, including TargetProof, Solution and Audit. The other 115 outputs
+were reused only after matching their source, output, log and dependency
+hashes against the preceding successful run. All 386 actual axiom reports
+matched again. This is not another 125-invocation build. The commands still
+used one thread and a 4096 MiB cap; the current library configuration's higher
+ordinary-Lake limit does not alter the local runner.
+
 ## Independent review
 
 The two mathematical/source agents reviewed each other's components. The
@@ -84,6 +96,8 @@ reviewing its author's own contributions. Final reports include:
 - [Complete target and all contracts](reviews/target-and-full-contracts-review.md).
 - [Nonimplementing final statement referee](reviews/independent-final-statement-review.md).
 - [Nonimplementing final proof and trust referee](reviews/independent-final-proof-review.md).
+- [Unchanged phase statements and resource-only Lake repair](reviews/phase-memory-repair-review.md).
+- [Independent audit of the 10-compilation, 115-reuse recheck](reviews/phase-recheck-evidence-review.md).
 - [Circulant ordering, true Hermitian interlacing and quantitative bounds](reviews/circulant-interlacing-bounds-referee-b.md).
 - [Global and bulk expansion assembly](reviews/expansion-assembly-review.md).
 - [Actual critical fixed-index limit](reviews/actual-fixed-index-review.md).
@@ -127,6 +141,24 @@ same exported theorem. See [module-registration evidence](evidence/lake-registra
 and [numerical repair evidence](evidence/numerics-minimal-certificate.json).
 The failed run remains recorded as failed; a successful new Linux execution
 is still required.
+
+The second [published Linux attempt](https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35550709155),
+at commit `bd3014e699f277500beabda57cfeb1f57925ab78`, built the repaired
+Numerics and registered transcendence modules successfully, then failed in
+PhaseWindowRoots with an interpreter memory exception under the 4096 MiB cap.
+It likewise produced no target Comparator or default-kernel acceptance.
+
+Twelve arithmetic tactic calls in PhaseWindowRoots now name their sufficient
+hypotheses explicitly; no theorem statement or mathematical argument changed.
+Both old and new versions passed isolated local checks, with approximately
+3.65 GB peak resident memory. The measurements do not establish a material
+memory reduction. Four ordinary-Lake library limits were therefore raised
+from 4096 to 6144 MiB for the next Linux run. These limits also apply to an
+ordinary local `lake build`; `verify_local.py` remains explicitly capped at
+4096 MiB. No contract, dependency, trust setting or sandbox restriction changed.
+See the [repair record](evidence/phase-memory-diagnostics/repair.json) and the
+two scoped independent reviews above. Linux acceptance remains a separate
+required execution.
 
 The final check uses the repository's existing pinned Lean 4.33.1 Linux
 Comparator harness, real Landrun/Bubblewrap isolation and AF_UNIX-restricted

@@ -10,17 +10,17 @@ rev = "v4.33.1"
 [[lean_lib]]
 name = "MF21Restart"
 roots = ["MF21Restart"]
-moreLeanArgs = ["-j1", "-M4096"]
+moreLeanArgs = ["-j1", "-M6144"]
 
 [[lean_lib]]
 name = "Challenge"
 roots = ["Challenge"]
-moreLeanArgs = ["-j1", "-M4096"]
+moreLeanArgs = ["-j1", "-M6144"]
 
 [[lean_lib]]
 name = "Solution"
 roots = ["Solution"]
-moreLeanArgs = ["-j1", "-M4096"]
+moreLeanArgs = ["-j1", "-M6144"]
 
 [[lean_lib]]
 name = "LeanFormalizations"
@@ -32,4 +32,4 @@ roots = [
   "LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm",
   "LeanFormalizations.NumberTheory.Transcendence.PiTranscendental",
 ]
-moreLeanArgs = ["-j1", "-M4096"]
+moreLeanArgs = ["-j1", "-M6144"]

@@ -1,0 +1,17 @@
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/PhaseWindowRoots.olean MF21Restart/PhaseWindowRoots.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/PhaseWindowIndexing.olean MF21Restart/PhaseWindowIndexing.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/PhaseQuantitative.olean MF21Restart/PhaseQuantitative.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/ImplicitSpectralError.olean MF21Restart/ImplicitSpectralError.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/ImplicitSpectralData.olean MF21Restart/ImplicitSpectralData.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/ImplicitExpansionBounds.olean MF21Restart/ImplicitExpansionBounds.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart/TargetProof.olean MF21Restart/TargetProof.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/MF21Restart.olean MF21Restart.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/Solution.olean Solution.lean
+Running: LEAN_NUM_THREADS=1 lake env lean -j1 -M4096 -o .lake/build/lib/lean/Audit.olean Audit.lean
+{
+  "passed": true,
+  "compiled": 10,
+  "reused": 115,
+  "record": "evidence/runs/20260921T014829335357Z-phase-recheck/record.json",
+  "record_sha256": "bcb21102dcd847a244595c04f6cd759b7221b4bd0c0e674beef969ed6eea9c3a"
+}
