@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ToeplitzInverse.olean",
+    "MF21Restart/ToeplitzInverse.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "cd5af3cf32a12d55ff2c7499b5d47e05b1d5192d3675b837ca053a647cf6d39e",
+  "source": "MF21Restart/ToeplitzInverse.lean",
+  "started_epoch": 1789942454.912761,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "c2f0c66cabde823aa45cf9c1340939a6f5c9c1a1f9f0b9bb48c9d83fb396b99d",
+  "finished_epoch": 1789942461.466837,
+  "output_sha256": "1c425393d13621f8ded3de09a173ac9a6d476670ccb9734cd76f3aef92f29e0f"
+}

@@ -1,0 +1,4 @@
+'MF21Restart.stableQuadraticRoot_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

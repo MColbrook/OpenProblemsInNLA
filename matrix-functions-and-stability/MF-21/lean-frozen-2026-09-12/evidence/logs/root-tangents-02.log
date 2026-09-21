@@ -1,0 +1,21 @@
+MF21Restart/RootTangents.lean:32:10: warning: This simp argument is unused:
+  oscillatoryRoot
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/RootTangents.lean:31:84: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/RootTangents.lean:36:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/RootTangents.lean:41:89: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.characteristicRoots_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRootTangents_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_sub_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRootTangents_sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

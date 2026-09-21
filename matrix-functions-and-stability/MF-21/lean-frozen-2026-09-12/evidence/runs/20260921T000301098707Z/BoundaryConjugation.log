@@ -1,0 +1,4 @@
+'MF21Restart.rootConjugationPerm_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_re_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

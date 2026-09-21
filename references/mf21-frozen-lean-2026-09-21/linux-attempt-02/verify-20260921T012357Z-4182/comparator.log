@@ -1,0 +1,904 @@
+$ systemd-run --user --quiet --wait --pipe --collect -p 'RestrictAddressFamilies=~AF_UNIX' --working-directory /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project /usr/bin/env -i PATH=/home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin:/home/runner/.elan/bin:/home/runner/go/bin:/opt/hostedtoolcache/go/1.27.1/x64/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin HOME=/home/runner LANG=C.UTF-8 XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus GIT_TERMINAL_PROMPT=0 GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null COMPARATOR_BIN=/home/runner/work/_temp/nla-mf21-frozen-tools/.tools/comparator/.lake/build/bin/comparator COMPARATOR_LEAN4EXPORT=/home/runner/work/_temp/nla-mf21-frozen-tools/.tools/lean4export/.lake/build/bin/lean4export COMPARATOR_LANDRUN=/home/runner/work/_temp/nla-mf21-frozen-tools/scripts/strict_landrun.py XDG_CACHE_HOME=/home/runner/work/_temp/nla-mf21-frozen-tools/.tools/cache TMPDIR=/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp lake env /home/runner/work/_temp/nla-mf21-frozen-tools/.tools/comparator/.lake/build/bin/comparator comparator.json
+Building Challenge
+✔ [2848/2850] Built MF21Restart.Definitions (2.6s)
+⚠ [2849/2850] Built Challenge (2.1s)
+warning: Challenge.lean:15:8: declaration uses `sorry`
+warning: Challenge.lean:22:8: declaration uses `sorry`
+warning: Challenge.lean:26:8: declaration uses `sorry`
+warning: Challenge.lean:42:8: declaration uses `sorry`
+warning: Challenge.lean:50:8: declaration uses `sorry`
+warning: Challenge.lean:53:8: declaration uses `sorry`
+warning: Challenge.lean:61:8: declaration uses `sorry`
+Build completed successfully (2850 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, MF21Restart.Contracts.complex_fourier_eq_cosine, MF21Restart.Contracts.bulk_cutoff_pos, MF21Restart.Contracts.critical_bound_implies_fixed_index_limit, MF21Restart.Contracts.exists_log_sq_bulk_scale_gain, MF21Restart.Contracts.phase_window_margin, MF21Restart.Contracts.manuscript_smooth_target, MF21Restart.Contracts.target_proved, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+✔ [2894/2900] Built LeanCert.Core.Interval (4.1s)
+ℹ [2896/2935] Built MF21Restart.StatementBridges (4.5s)
+info: MF21Restart/StatementBridges.lean:78:0: 'MF21Restart.complex_fourier_eq_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StatementBridges.lean:79:0: 'MF21Restart.bulk_cutoff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2926/2936] Built MF21Restart.FixedIndex (4.0s)
+info: MF21Restart/FixedIndex.lean:138:0: 'MF21Restart.implicit_phase_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FixedIndex.lean:139:0: 'MF21Restart.symbol_scaled_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FixedIndex.lean:140:0: 'MF21Restart.fixed_index_limit_of_implicit_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FixedIndex.lean:141:0: 'MF21Restart.critical_bound_implies_fixed_index_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2927/2937] Built MF21Restart.BulkDecay (5.2s)
+✔ [2929/2973] Built LeanCert.Tactic.Verification (4.4s)
+⚠ [3475/3486] Built MF21Restart.FourierStencil (6.4s)
+info: MF21Restart/FourierStencil.lean:58:22: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: MF21Restart/FourierStencil.lean:57:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/FourierStencil.lean:58:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/FourierStencil.lean:93:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/FourierStencil.lean:126:0: 'MF21Restart.symbol_eq_cosine_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierStencil.lean:127:0: 'MF21Restart.fourierCoeff_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierStencil.lean:128:0: 'MF21Restart.fourierCoeff_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierStencil.lean:129:0: 'MF21Restart.fourierCoeff_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierStencil.lean:130:0: 'MF21Restart.toeplitz_entry_eq_zero_of_lt_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3476/3486] Built LeanCert.Core.Expr (7.6s)
+✔ [3477/3487] Built LeanCert.Core.IntervalRat.Basic (9.0s)
+ℹ [3478/3488] Built MF21Restart.RecurrenceBasis (4.4s)
+info: MF21Restart/RecurrenceBasis.lean:101:0: 'MF21Restart.recurrence_solution_geometric_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RecurrenceBasis.lean:102:0: 'MF21Restart.geometric_coefficients_zero_of_consecutive_zeros' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3479/3488] Built MF21Restart.FourierEndpoint (3.5s)
+info: MF21Restart/FourierEndpoint.lean:49:0: 'MF21Restart.fourierCoeff_right_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierEndpoint.lean:50:0: 'MF21Restart.fourierCoeff_left_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierEndpoint.lean:51:0: 'MF21Restart.fourierCoeff_right_endpoint_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierEndpoint.lean:52:0: 'MF21Restart.fourierCoeff_left_endpoint_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3480/3489] Built MF21Restart.BoundaryExpansion (6.8s)
+info: MF21Restart/BoundaryExpansion.lean:283:0: 'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryExpansion.lean:284:0: 'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryExpansion.lean:285:0: 'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryExpansion.lean:286:0: 'MF21Restart.boundaryCoefficient_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3481/3489] Built MF21Restart.FourierLaurent (3.9s)
+info: MF21Restart/FourierLaurent.lean:120:0: 'MF21Restart.fourierCoeff_laurent_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3483/3491] Built MF21Restart.FiniteRecurrence (4.8s)
+info: MF21Restart/FiniteRecurrence.lean:121:0: 'MF21Restart.mkSol_eq_of_finite_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FiniteRecurrence.lean:122:0: 'MF21Restart.finite_recurrence_iff_ghost_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3484/3493] Built LeanCert.Core.IntervalRat.Transcendental (5.8s)
+ℹ [3486/3527] Built MF21Restart.BoundaryRecurrence (5.0s)
+info: MF21Restart/BoundaryRecurrence.lean:89:0: 'MF21Restart.boundary_mulVec_zero_iff_ghosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryRecurrence.lean:90:0: 'MF21Restart.boundaryDeterminant_zero_iff_recurrence_ghosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3517/3531] Built MF21Restart.FourierRecurrence (5.0s)
+info: MF21Restart/FourierRecurrence.lean:135:0: 'MF21Restart.fourierCoeff_shifted_laurent_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierRecurrence.lean:136:0: 'MF21Restart.fourierRecurrence_charPoly_isRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3524/3555] Built MF21Restart.Numerics (3.7s)
+info: MF21Restart/Numerics.lean:31:0: 'MF21Restart.phase_window_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3525/3555] Built MF21Restart.ToeplitzRecurrence (4.2s)
+info: MF21Restart/ToeplitzRecurrence.lean:71:0: 'MF21Restart.zeroGhost_convolution_eq_toeplitz_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3548/3565] Built MF21Restart.KernelDiagonal (4.6s)
+warning: MF21Restart/KernelDiagonal.lean:59:30: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/KernelDiagonal.lean:61:33: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/KernelDiagonal.lean:59:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/KernelDiagonal.lean:61:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/KernelDiagonal.lean:98:43: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/KernelDiagonal.lean:98:43: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: MF21Restart/KernelDiagonal.lean:100:0: 'MF21Restart.kernel_diagonal_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/KernelDiagonal.lean:101:0: 'MF21Restart.kernel_diagonal_integral_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3553/3567] Built MF21Restart.TraceIntegral (3.8s)
+warning: MF21Restart/TraceIntegral.lean:33:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/TraceIntegral.lean:98:0: 'MF21Restart.integral_pow_mul_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceIntegral.lean:99:0: 'MF21Restart.diagonal_kernel_integral_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceIntegral.lean:100:0: 'MF21Restart.diagonal_kernel_integral_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceIntegral.lean:101:0: 'MF21Restart.diagonal_kernel_integral_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3555/3567] Built LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann (2.7s)
+ℹ [3556/3567] Built MF21Restart.FourierRecurrenceEquation (3.7s)
+info: MF21Restart/FourierRecurrenceEquation.lean:94:0: 'MF21Restart.fourierRecurrence_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3557/3652] Built MF21Restart.EigenvalueBridge (3.4s)
+warning: MF21Restart/EigenvalueBridge.lean:37:31: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [orderedEigenvalueList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/EigenvalueBridge.lean:39:0: 'MF21Restart.eigenvalue_index_iff_mem_orderedList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/EigenvalueBridge.lean:40:0: 'MF21Restart.eigenvalue_index_iff_charpoly_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3665/3682] Built LeanFormalizations.NumberTheory.Transcendence.ETranscendental (6.7s)
+ℹ [3666/3683] Built MF21Restart.BoundaryToeplitz (3.5s)
+info: MF21Restart/BoundaryToeplitz.lean:50:0: 'MF21Restart.boundaryDeterminant_zero_iff_toeplitz_eigenvector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [3667/3684] Built MF21Restart.TraceSeriesZeta (4.0s)
+warning: MF21Restart/TraceSeriesZeta.lean:64:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/TraceSeriesZeta.lean:75:0: 'MF21Restart.hasSum_even_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesZeta.lean:76:0: 'MF21Restart.hasSum_even_zeta_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesZeta.lean:77:0: 'MF21Restart.hasSum_integer_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesZeta.lean:78:0: 'MF21Restart.integerTailCorrection_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3668/3684] Built LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm (8.9s)
+ℹ [3669/3690] Built MF21Restart.RealComplexEigenvalue (3.8s)
+info: MF21Restart/RealComplexEigenvalue.lean:67:0: 'MF21Restart.real_matrix_charpoly_root_iff_complex_eigenvector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RealComplexEigenvalue.lean:68:0: 'MF21Restart.eigenvalue_index_iff_boundaryDeterminant_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RealComplexEigenvalue.lean:69:0: 'MF21Restart.mem_orderedEigenvalueList_iff_boundaryDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3670/3691] Built MF21Restart.StableRootAlgebra (6.8s)
+info: MF21Restart/StableRootAlgebra.lean:108:0: 'MF21Restart.stableQuadraticRoot_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootAlgebra.lean:109:0: 'MF21Restart.stableQuadraticRoot_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootAlgebra.lean:110:0: 'MF21Restart.stableQuadraticRoot_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootAlgebra.lean:111:0: 'MF21Restart.stableQuadraticRoot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3671/3693] Built LeanFormalizations.NumberTheory.Transcendence.PiLindemann (8.3s)
+⚠ [3672/3693] Built MF21Restart.TraceSeriesHalf (4.9s)
+warning: MF21Restart/TraceSeriesHalf.lean:58:26: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/TraceSeriesHalf.lean:58:26: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/TraceSeriesHalf.lean:90:0: 'MF21Restart.hasSum_half_integer_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesHalf.lean:91:0: 'MF21Restart.hasSum_half_integer_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesHalf.lean:92:0: 'MF21Restart.halfIntegerTailCorrection_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3673/3696] Built MF21Restart.DeterminantMultiplicity (4.1s)
+info: MF21Restart/DeterminantMultiplicity.lean:97:0: 'MF21Restart.det_updateRow_eq_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantMultiplicity.lean:98:0: 'MF21Restart.hasDerivAt_det_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantMultiplicity.lean:99:0: 'MF21Restart.hasDerivAt_det_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantMultiplicity.lean:100:0: 'MF21Restart.hasDerivAt_det_zero_of_entrywise_deriv_and_two_le_finrank_ker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3674/3698] Built MF21Restart.BoundaryMultiplicity (5.1s)
+info: MF21Restart/BoundaryMultiplicity.lean:176:0: 'MF21Restart.boundaryInterior_injective_on_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryMultiplicity.lean:177:0: 'MF21Restart.boundaryInterior_maps_to_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryMultiplicity.lean:178:0: 'MF21Restart.boundaryInterior_surjective_to_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryMultiplicity.lean:179:0: 'MF21Restart.boundaryEigenspaceMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryMultiplicity.lean:180:0: 'MF21Restart.boundary_kernel_finrank_eq_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3675/3698] Built MF21Restart.AnalyticSlope (3.0s)
+warning: MF21Restart/AnalyticSlope.lean:20:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/AnalyticSlope.lean:45:0: 'MF21Restart.analyticAt_dslope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/AnalyticSlope.lean:46:0: 'MF21Restart.analyticAt_dslope_of_forall_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3676/3699] Built MF21Restart.SimpleDeterminant (3.0s)
+info: MF21Restart/SimpleDeterminant.lean:45:0: 'MF21Restart.finrank_ker_eq_one_of_simple_determinant_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SimpleDeterminant.lean:46:0: 'MF21Restart.toeplitz_eigenspace_finrank_eq_one_of_simple_boundary_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [3677/3716] Built MF21Restart.VandermondeScale (3.8s)
+warning: MF21Restart/VandermondeScale.lean:21:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/VandermondeScale.lean:41:0: 'MF21Restart.twice_vandermondeDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/VandermondeScale.lean:42:0: 'MF21Restart.vandermonde_mul_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/VandermondeScale.lean:43:0: 'MF21Restart.vandermonde_one_add_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3678/3717] Built LeanFormalizations.NumberTheory.Transcendence.MonicRootSums (9.0s)
+⚠ [3679/3717] Built MF21Restart.EigenvalueMultiplicity (6.1s)
+warning: MF21Restart/EigenvalueMultiplicity.lean:89:33: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [orderedEigenvalueList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/EigenvalueMultiplicity.lean:141:0: 'MF21Restart.count_orderedEigenvalueList_eq_complex_eigenspace_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/EigenvalueMultiplicity.lean:142:0: 'MF21Restart.existsUnique_eigenvalue_index_of_complex_eigenspace_finrank_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3680/3720] Built LeanFormalizations.NumberTheory.Transcendence.PiTranscendental (3.8s)
+⚠ [3681/3721] Built MF21Restart.SpectralEnclosure (6.5s)
+warning: MF21Restart/SpectralEnclosure.lean:190:35: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MF21Restart/SpectralEnclosure.lean:265:0: 'MF21Restart.toeplitz_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralEnclosure.lean:266:0: 'MF21Restart.toeplitz_upper_complement_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralEnclosure.lean:267:0: 'MF21Restart.eigenvalue_strict_spectral_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3683/3722] Built MF21Restart.WeightedBinomialInverse (6.8s)
+warning: MF21Restart/WeightedBinomialInverse.lean:110:57: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MF21Restart/WeightedBinomialInverse.lean:154:30: This simp argument is unused:
+  Nat.cast_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_succ, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MF21Restart/WeightedBinomialInverse.lean:154:44: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_succ, Nat.cast_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/WeightedBinomialInverse.lean:269:0: 'MF21Restart.weightedBinomialRisingSum_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/WeightedBinomialInverse.lean:270:0: 'MF21Restart.weightedBinomialRisingSum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/WeightedBinomialInverse.lean:271:0: 'MF21Restart.weightedBinomialInverse_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3684/3723] Built MF21Restart.PiTranscendence (3.5s)
+info: MF21Restart/PiTranscendence.lean:15:0: 'MF21Restart.pi_transcendental' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3685/3724] Built MF21Restart.MatrixInverseAlgebra (2.9s)
+info: MF21Restart/MatrixInverseAlgebra.lean:58:0: 'MF21Restart.diagonal_reciprocal_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/MatrixInverseAlgebra.lean:59:0: 'MF21Restart.diagonal_mul_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/MatrixInverseAlgebra.lean:60:0: 'MF21Restart.rightInverse_of_weighted_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/MatrixInverseAlgebra.lean:61:0: 'MF21Restart.inverse_of_weighted_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3686/3729] Built MF21Restart.TriangularInverse (4.7s)
+info: MF21Restart/TriangularInverse.lean:134:0: 'MF21Restart.powerSeriesUpperMatrix_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:135:0: 'MF21Restart.powerSeriesUpperMatrix_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:136:0: 'MF21Restart.binomialUpperMatrix_mul_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:137:0: 'MF21Restart.differenceUpperMatrix_mul_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:138:0: 'MF21Restart.binomialUpperMatrix_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:139:0: 'MF21Restart.powerSeries_coeff_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TriangularInverse.lean:140:0: 'MF21Restart.differenceUpperMatrix_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3687/3730] Built MF21Restart.FourierBinomialStencil (6.4s)
+info: MF21Restart/FourierBinomialStencil.lean:108:0: 'MF21Restart.fourierStencilPolynomial_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/FourierBinomialStencil.lean:109:0: 'MF21Restart.fourierCoeff_shifted_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3688/3731] Built MF21Restart.TraceIrrationality (3.8s)
+info: MF21Restart/TraceIrrationality.lean:22:0: 'MF21Restart.rational_sub_div_pi_pow_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceIrrationality.lean:23:0: 'MF21Restart.trace_rational_form_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3689/3731] Built MF21Restart.SpectralOrder (3.5s)
+info: MF21Restart/SpectralOrder.lean:73:0: 'MF21Restart.symbol_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralOrder.lean:74:0: 'MF21Restart.symbol_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralOrder.lean:75:0: 'MF21Restart.symbol_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralOrder.lean:76:0: 'MF21Restart.orderedEigenvalue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralOrder.lean:77:0: 'MF21Restart.eigenvalue_existsUnique_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3690/3739] Built MF21Restart.OrderedTailCounting (3.5s)
+info: MF21Restart/OrderedTailCounting.lean:87:0: 'MF21Restart.ordered_tail_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3696/3741] Built MF21Restart.TraceSeriesOdd (4.2s)
+info: MF21Restart/TraceSeriesOdd.lean:47:0: 'MF21Restart.integer_shift_trace_series_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeriesOdd.lean:48:0: 'MF21Restart.trace_series_irrational_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3697/3741] Built MF21Restart.ToeplitzWeightedFactorization (5.1s)
+info: MF21Restart/ToeplitzWeightedFactorization.lean:159:0: 'MF21Restart.toeplitz_weighted_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3699/3762] Built MF21Restart.UniformImplicitScalar (6.7s)
+warning: MF21Restart/UniformImplicitScalar.lean:152:10: `ext` did not consume the patterns `z`
+
+Note: This linter can be disabled with `set_option linter.unusedRCasesPattern false`
+info: MF21Restart/UniformImplicitScalar.lean:181:0: 'MF21Restart.uniform_implicit_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3714/3763] Built MF21Restart.ToeplitzInverse (3.9s)
+info: MF21Restart/ToeplitzInverse.lean:73:0: 'MF21Restart.risingFactorial_succ_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ToeplitzInverse.lean:74:0: 'MF21Restart.toeplitz_mul_manuscriptFiniteInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ToeplitzInverse.lean:75:0: 'MF21Restart.toeplitz_inverse_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ToeplitzInverse.lean:76:0: 'MF21Restart.toeplitz_inverse_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3716/3768] Built MF21Restart.TraceSeries (4.8s)
+info: MF21Restart/TraceSeries.lean:50:0: 'MF21Restart.half_integer_shift_trace_series_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/TraceSeries.lean:51:0: 'MF21Restart.trace_series_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3719/3768] Built MF21Restart.SymbolDerivative (4.8s)
+warning: MF21Restart/SymbolDerivative.lean:22:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/SymbolDerivative.lean:23:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/SymbolDerivative.lean:58:0: 'MF21Restart.symbol_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SymbolDerivative.lean:59:0: 'MF21Restart.abs_symbol_deriv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SymbolDerivative.lean:60:0: 'MF21Restart.symbol_difference_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3720/3769] Built MF21Restart.InverseKernelEntries (3.9s)
+info: MF21Restart/InverseKernelEntries.lean:64:0: 'MF21Restart.choose_add_eq_rising_div_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelEntries.lean:65:0: 'MF21Restart.toeplitz_inverse_apply_rising' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelEntries.lean:66:0: 'MF21Restart.toeplitz_submatrix_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelEntries.lean:67:0: 'MF21Restart.toeplitz_inverse_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3721/3770] Built MF21Restart.ParametricTaylor (5.1s)
+warning: MF21Restart/ParametricTaylor.lean:70:33: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MF21Restart/ParametricTaylor.lean:133:0: 'MF21Restart.verticalIteratedDeriv_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ParametricTaylor.lean:134:0: 'MF21Restart.parametricTaylorCoefficient_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ParametricTaylor.lean:135:0: 'MF21Restart.parametricTaylor_uniform_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3722/3771] Built MF21Restart.CirculantEmbedding (3.6s)
+info: MF21Restart/CirculantEmbedding.lean:95:0: 'MF21Restart.fourierCirculant_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantEmbedding.lean:96:0: 'MF21Restart.fourierCirculant_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantEmbedding.lean:97:0: 'MF21Restart.toeplitz_eq_circulant_submatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3723/3781] Built MF21Restart.RiemannCellBound (3.8s)
+info: MF21Restart/RiemannCellBound.lean:58:0: 'MF21Restart.riemann_right_sum_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3724/3783] Built MF21Restart.ScaledRising (4.1s)
+info: MF21Restart/ScaledRising.lean:100:0: 'MF21Restart.scaledRising_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:101:0: 'MF21Restart.scaledRising_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:102:0: 'MF21Restart.scaledRising_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:103:0: 'MF21Restart.continuous_scaledRising' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:104:0: 'MF21Restart.scaledRising_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:105:0: 'MF21Restart.finiteKernelIntegrand_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:106:0: 'MF21Restart.finiteKernelIntegrand_continuousOn_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:107:0: 'MF21Restart.finiteKernelIntegrand_uniformContinuousOn_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ScaledRising.lean:108:0: 'MF21Restart.finiteKernelIntegrand_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3725/3783] Built MF21Restart.VerticalPowerFactor (4.3s)
+info: MF21Restart/VerticalPowerFactor.lean:80:0: 'MF21Restart.verticalPowerFactor_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/VerticalPowerFactor.lean:81:0: 'MF21Restart.verticalIteratedDeriv_pow_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3726/3784] Built MF21Restart.DiagonalInterlacing (3.9s)
+warning: MF21Restart/DiagonalInterlacing.lean:20:42: Variable name `hnN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hnN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MF21Restart/DiagonalInterlacing.lean:171:0: 'MF21Restart.diagonal_isometry_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3727/3785] Built MF21Restart.KernelRiemannApprox (5.2s)
+info: MF21Restart/KernelRiemannApprox.lean:156:0: 'MF21Restart.kernelParameters_mem_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/KernelRiemannApprox.lean:157:0: 'MF21Restart.finiteKernelIntegrand_uniform_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/KernelRiemannApprox.lean:158:0: 'MF21Restart.finiteKernelIntegrand_uniform_right_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3728/3786] Built MF21Restart.ExpansionScalar (5.0s)
+info: MF21Restart/ExpansionScalar.lean:147:0: 'MF21Restart.nat_pow_exp_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ExpansionScalar.lean:148:0: 'MF21Restart.eventually_bulk_cutoff_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ExpansionScalar.lean:149:0: 'MF21Restart.expansion_fixed_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3729/3787] Built MF21Restart.ScaledInverseSum (8.7s)
+warning: MF21Restart/ScaledInverseSum.lean:50:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/ScaledInverseSum.lean:50:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/ScaledInverseSum.lean:53:0: 'MF21Restart.scaled_toeplitz_inverse_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3730/3787] Built MF21Restart.HermitianInterlacing (6.4s)
+warning: MF21Restart/HermitianInterlacing.lean:48:10: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MF21Restart/HermitianInterlacing.lean:51:13: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/HermitianInterlacing.lean:193:0: 'MF21Restart.hermitianAscendingValue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/HermitianInterlacing.lean:194:0: 'MF21Restart.hermitianAscendingValue_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/HermitianInterlacing.lean:195:0: 'MF21Restart.hermitian_principal_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3731/3788] Built MF21Restart.KernelShiftedSum (6.1s)
+info: MF21Restart/KernelShiftedSum.lean:133:0: 'MF21Restart.finiteKernelIntegrand_continuousOn_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/KernelShiftedSum.lean:134:0: 'MF21Restart.finiteKernelIntegrand_uniform_shifted_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3732/3789] Built MF21Restart.SmoothCoefficient (4.2s)
+info: MF21Restart/SmoothCoefficient.lean:53:0: 'MF21Restart.verticalIteratedDeriv_contDiffAt_infty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SmoothCoefficient.lean:54:0: 'MF21Restart.parametricTaylorCoefficient_contDiffAt_infty' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3734/3794] Built MF21Restart.ExpansionAssembly (5.3s)
+info: MF21Restart/ExpansionAssembly.lean:158:0: 'MF21Restart.uniformBound_of_taylor_vanishing_spectral_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ExpansionAssembly.lean:159:0: 'MF21Restart.bulkBound_of_taylor_spectral_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3735/3794] Built MF21Restart.InverseKernelGridTop (4.9s)
+info: MF21Restart/InverseKernelGridTop.lean:124:0: 'MF21Restart.kernelGridPoint_mem_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelGridTop.lean:125:0: 'MF21Restart.kernelGridPoint_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelGridTop.lean:126:0: 'MF21Restart.scaled_toeplitz_inverse_eq_grid_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelGridTop.lean:127:0: 'MF21Restart.toeplitz_inverse_grid_top_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3736/3794] Built MF21Restart.InverseSpectralTrace (3.5s)
+info: MF21Restart/InverseSpectralTrace.lean:77:0: 'MF21Restart.posDef_inverse_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseSpectralTrace.lean:78:0: 'MF21Restart.sum_orderedEigenvalue_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseSpectralTrace.lean:79:0: 'MF21Restart.toeplitz_inverse_trace_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseSpectralTrace.lean:80:0: 'MF21Restart.toeplitz_inverse_trace_one_based' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3737/3794] Built MF21Restart.GridAverage (4.6s)
+info: MF21Restart/GridAverage.lean:73:0: 'MF21Restart.continuous_grid_average_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3738/3794] Built MF21Restart.SpectralTracePassage (5.1s)
+warning: MF21Restart/SpectralTracePassage.lean:60:13: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MF21Restart/SpectralTracePassage.lean:84:15: This simp argument is unused:
+  one_div_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, div_eq_mul_inv, mul_inv_rev]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MF21Restart/SpectralTracePassage.lean:84:28: This simp argument is unused:
+  one_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div_pow, div_eq_mul_inv, mul_inv_rev]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/SpectralTracePassage.lean:144:0: 'MF21Restart.inverseSpectralTerm_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralTracePassage.lean:145:0: 'MF21Restart.tsum_inverseSpectralTerm_eq_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralTracePassage.lean:146:0: 'MF21Restart.inverseSpectralTerm_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/SpectralTracePassage.lean:147:0: 'MF21Restart.toeplitz_inverse_trace_tendsto_series_of_limits_and_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3739/3794] Built MF21Restart.InverseKernelContinuity (9.1s)
+info: MF21Restart/InverseKernelContinuity.lean:123:0: 'MF21Restart.finiteKernelIntegrand_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:124:0: 'MF21Restart.inverseKernelTopExtension_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:125:0: 'MF21Restart.inverseKernelTopExtension_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:126:0: 'MF21Restart.continuous_inverseKernelTopExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:127:0: 'MF21Restart.inverseKernel_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:128:0: 'MF21Restart.continuous_inverseKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:129:0: 'MF21Restart.inverseKernel_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:130:0: 'MF21Restart.inverseKernel_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelContinuity.lean:131:0: 'MF21Restart.inverseKernel_uniformContinuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3740/3794] Built MF21Restart.ActualKernelDiagonal (3.0s)
+warning: MF21Restart/ActualKernelDiagonal.lean:33:8: Unused tactic linter: `change finiteKernelIntegrand m 0 x x t = _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/ActualKernelDiagonal.lean:68:0: 'MF21Restart.inverseKernel_diagonal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualKernelDiagonal.lean:69:0: 'MF21Restart.inverseKernel_diagonal_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualKernelDiagonal.lean:70:0: 'MF21Restart.kernelTraceConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualKernelDiagonal.lean:71:0: 'MF21Restart.kernelTraceConstant_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3741/3794] Built MF21Restart.InverseKernelGrid (4.3s)
+warning: MF21Restart/InverseKernelGrid.lean:22:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/InverseKernelGrid.lean:22:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/InverseKernelGrid.lean:91:0: 'MF21Restart.kernelUnitSquare_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelGrid.lean:92:0: 'MF21Restart.kernelGridPoint_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelGrid.lean:93:0: 'MF21Restart.toeplitz_inverse_grid_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3742/3794] Built MF21Restart.InverseKernelLimit (2.9s)
+warning: MF21Restart/InverseKernelLimit.lean:46:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/InverseKernelLimit.lean:46:12: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/InverseKernelLimit.lean:105:0: 'MF21Restart.kernelCellIndex_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelLimit.lean:106:0: 'MF21Restart.kernelGridPoint_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/InverseKernelLimit.lean:107:0: 'MF21Restart.toeplitz_inverse_kernel_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3743/3794] Built MF21Restart.ActualTraceLimit (4.0s)
+info: MF21Restart/ActualTraceLimit.lean:77:0: 'MF21Restart.toeplitz_inverse_trace_tendsto_n' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualTraceLimit.lean:78:0: 'MF21Restart.toeplitz_inverse_trace_tendsto_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3744/3794] Built MF21Restart.StableRootSmooth (87s)
+warning: MF21Restart/StableRootSmooth.lean:65:65: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/StableRootSmooth.lean:71:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/StableRootSmooth.lean:77:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/StableRootSmooth.lean:79:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/StableRootSmooth.lean:79:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/StableRootSmooth.lean:86:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/StableRootSmooth.lean:108:0: 'MF21Restart.stableRootCurve_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootSmooth.lean:109:0: 'MF21Restart.stableRootCurve_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootSmooth.lean:110:0: 'MF21Restart.stableRootCurve_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootSmooth.lean:111:0: 'MF21Restart.stableRootCurve_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3745/3794] Built MF21Restart.StableRootDecay (2.8s)
+info: MF21Restart/StableRootDecay.lean:105:0: 'MF21Restart.exists_pos_linear_upper_bound_of_neg_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootDecay.lean:106:0: 'MF21Restart.exists_pos_exp_upper_bound_of_neg_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootDecay.lean:107:0: 'MF21Restart.stableRootCurve_norm_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootDecay.lean:108:0: 'MF21Restart.stableRootCurve_exp_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3746/3794] Built MF21Restart.RootParameters (3.7s)
+info: MF21Restart/RootParameters.lean:75:0: 'MF21Restart.rootKappa_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootParameters.lean:76:0: 'MF21Restart.rootKappa_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootParameters.lean:77:0: 'MF21Restart.rootKappa_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootParameters.lean:78:0: 'MF21Restart.rootKappa_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootParameters.lean:79:0: 'MF21Restart.stableRootCurve_rootOmega_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3747/3794] Built MF21Restart.PhaseFactor (4.7s)
+warning: MF21Restart/PhaseFactor.lean:27:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/PhaseFactor.lean:27:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/PhaseFactor.lean:125:0: 'MF21Restart.phase_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseFactor.lean:126:0: 'MF21Restart.phaseNormalized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseFactor.lean:127:0: 'MF21Restart.phaseNormalized_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseFactor.lean:128:0: 'MF21Restart.phaseNormalized_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseFactor.lean:129:0: 'MF21Restart.individualPhase_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseFactor.lean:130:0: 'MF21Restart.individualPhase_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3748/3794] Built MF21Restart.StableRootBounds (3.3s)
+warning: MF21Restart/StableRootBounds.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: MF21Restart/StableRootBounds.lean:51:0: 'MF21Restart.stable_roots_uniform_exp_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootBounds.lean:52:0: 'MF21Restart.stableRootCurve_logarithmic_derivative_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3749/3794] Built MF21Restart.RootDistinctness (3.6s)
+warning: MF21Restart/RootDistinctness.lean:25:25: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/RootDistinctness.lean:25:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/RootDistinctness.lean:66:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/RootDistinctness.lean:73:0: 'MF21Restart.rootOmega_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDistinctness.lean:74:0: 'MF21Restart.rootOmega_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDistinctness.lean:75:0: 'MF21Restart.rootKappa_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3750/3794] Built MF21Restart.PhaseZero (4.2s)
+warning: MF21Restart/PhaseZero.lean:133:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/PhaseZero.lean:140:0: 'MF21Restart.rootKappa_add_I' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:141:0: 'MF21Restart.individualPhase_rootKappa_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:142:0: 'MF21Restart.manuscriptPsi_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:143:0: 'MF21Restart.manuscriptPsi_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:144:0: 'MF21Restart.manuscriptEta_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:145:0: 'MF21Restart.manuscriptPsi_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseZero.lean:146:0: 'MF21Restart.manuscriptEta_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3751/3794] Built MF21Restart.StableRootSymmetry (2.9s)
+info: MF21Restart/StableRootSymmetry.lean:74:0: 'MF21Restart.stableRootCurve_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootSymmetry.lean:75:0: 'MF21Restart.stableRootCurve_rootKappa_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/StableRootSymmetry.lean:76:0: 'MF21Restart.stableRootCurve_rootKappa_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3752/3794] Built MF21Restart.PhasePi (2.7s)
+info: MF21Restart/PhasePi.lean:68:0: 'MF21Restart.individualPhase_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhasePi.lean:69:0: 'MF21Restart.individualPhase_rootKappa_pi_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhasePi.lean:70:0: 'MF21Restart.manuscriptPsi_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhasePi.lean:71:0: 'MF21Restart.manuscriptEta_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3753/3794] Built MF21Restart.CharacteristicRoots (3.6s)
+info: MF21Restart/CharacteristicRoots.lean:216:0: 'MF21Restart.characteristicRoots_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CharacteristicRoots.lean:217:0: 'MF21Restart.characteristicRoots_norm_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CharacteristicRoots.lean:218:0: 'MF21Restart.characteristicRoots_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CharacteristicRoots.lean:219:0: 'MF21Restart.characteristicRoots_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3754/3794] Built MF21Restart.PhaseMonotonicity (4.3s)
+warning: MF21Restart/PhaseMonotonicity.lean:53:24: This simp argument is unused:
+  manuscriptPhaseFn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MF21Restart/PhaseMonotonicity.lean:52:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/PhaseMonotonicity.lean:82:0: 'MF21Restart.manuscriptEta_bounded_with_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseMonotonicity.lean:83:0: 'MF21Restart.manuscriptPhaseFn_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseMonotonicity.lean:84:0: 'MF21Restart.manuscriptPhaseFn_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseMonotonicity.lean:85:0: 'MF21Restart.manuscriptPhaseFn_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseMonotonicity.lean:86:0: 'MF21Restart.manuscriptPhaseFn_eventual_derivative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseMonotonicity.lean:87:0: 'MF21Restart.manuscriptPhaseFn_eventual_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3755/3794] Built MF21Restart.PhaseProduct (4.8s)
+warning: MF21Restart/PhaseProduct.lean:119:13: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MF21Restart/PhaseProduct.lean:181:0: 'MF21Restart.normalizedPhaseProduct_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:182:0: 'MF21Restart.normalizedPhaseProduct_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:183:0: 'MF21Restart.normalizedPhaseProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:184:0: 'MF21Restart.normalizedPhaseProduct_polar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:185:0: 'MF21Restart.manuscriptPhaseProduct_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:186:0: 'MF21Restart.manuscriptPhaseProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:187:0: 'MF21Restart.manuscriptPhaseProduct_polar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/PhaseProduct.lean:188:0: 'MF21Restart.manuscriptPhaseProduct_div_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3756/3794] Built MF21Restart.CirculantSpectrum (5.1s)
+warning: MF21Restart/CirculantSpectrum.lean:128:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: MF21Restart/CirculantSpectrum.lean:207:0: 'MF21Restart.periodicFourierColumn_laurent_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantSpectrum.lean:208:0: 'MF21Restart.fourierCirculant_mulVec_rootOmega' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantSpectrum.lean:209:0: 'MF21Restart.fourierCirculant_charpoly_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3757/3794] Built MF21Restart.RootTangents (5.7s)
+warning: MF21Restart/RootTangents.lean:32:10: This simp argument is unused:
+  oscillatoryRoot
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MF21Restart/RootTangents.lean:31:84: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/RootTangents.lean:36:83: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/RootTangents.lean:41:89: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/RootTangents.lean:190:0: 'MF21Restart.characteristicRoots_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootTangents.lean:191:0: 'MF21Restart.characteristicRoots_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootTangents.lean:192:0: 'MF21Restart.characteristicRootTangents_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootTangents.lean:193:0: 'MF21Restart.characteristicRoots_sub_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootTangents.lean:194:0: 'MF21Restart.characteristicRootTangents_sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3758/3794] Built MF21Restart.ConcreteBoundary (3.6s)
+info: MF21Restart/ConcreteBoundary.lean:64:0: 'MF21Restart.eigenvalue_iff_manuscriptBoundaryDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/ConcreteBoundary.lean:65:0: 'MF21Restart.manuscript_boundary_kernel_finrank_eq_eigenspace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/ConcreteBoundary.lean:66:0: 'MF21Restart.characteristicRoots_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ConcreteBoundary.lean:67:0: 'MF21Restart.manuscriptBoundaryDeterminant_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3759/3794] Built MF21Restart.EtaNeighborhood (4.1s)
+info: MF21Restart/EtaNeighborhood.lean:87:0: 'MF21Restart.manuscriptEta_enlarged_interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3760/3794] Built MF21Restart.RootDifferences (4.2s)
+info: MF21Restart/RootDifferences.lean:144:0: 'MF21Restart.normalizedCharacteristicDifference_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:145:0: 'MF21Restart.normalizedCharacteristicDifference_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:146:0: 'MF21Restart.normalizedCharacteristicDifference_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:147:0: 'MF21Restart.characteristicRoots_sub_eq_mul_normalizedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootDifferences.lean:148:0: 'MF21Restart.normalizedCharacteristicDifference_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:149:0: 'MF21Restart.normalizedCharacteristicDifference_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:150:0: 'MF21Restart.normalizedCharacteristicDifferenceProduct_analyticAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootDifferences.lean:151:0: 'MF21Restart.normalizedCharacteristicDifferenceProduct_contDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootDifferences.lean:152:0: 'MF21Restart.normalizedCharacteristicDifferenceProduct_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootDifferences.lean:153:0: 'MF21Restart.normalizedCharacteristicDifferenceProduct_zero_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootDifferences.lean:154:0: 'MF21Restart.normalizedCharacteristicDifferenceProduct_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootDifferences.lean:155:0: 'MF21Restart.characteristicRoots_differenceProduct_eq_pow_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3761/3794] Built MF21Restart.NormalizedBoundary (4.3s)
+info: MF21Restart/NormalizedBoundary.lean:109:0: 'MF21Restart.characteristicRootSlope_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:110:0: 'MF21Restart.characteristicRootSlope_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:111:0: 'MF21Restart.characteristicRootSlope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:112:0: 'MF21Restart.characteristicRoots_eq_one_add_mul_slope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:113:0: 'MF21Restart.normalizedRootVandermonde_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:114:0: 'MF21Restart.rootVandermonde_eq_pow_mul_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:115:0: 'MF21Restart.normalizedRootVandermonde_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:116:0: 'MF21Restart.boundaryCoefficient_eq_pow_mul_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:117:0: 'MF21Restart.normalizedBoundaryCoefficient_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedBoundary.lean:118:0: 'MF21Restart.normalizedBoundaryCoefficient_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3762/3794] Built MF21Restart.CirculantOrder (6.8s)
+warning: MF21Restart/CirculantOrder.lean:66:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/CirculantOrder.lean:66:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/CirculantOrder.lean:134:10: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/CirculantOrder.lean:138:0: 'MF21Restart.fourierCirculant_charpoly_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantOrder.lean:139:0: 'MF21Restart.fourierCirculant_charpoly_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantOrder.lean:140:0: 'MF21Restart.circulantOrderedValue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantOrder.lean:141:0: 'MF21Restart.fourierCirculant_sorted_eigenvalues' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3763/3794] Built MF21Restart.BoundaryConjugation (4.9s)
+info: MF21Restart/BoundaryConjugation.lean:125:0: 'MF21Restart.rootConjugationPerm_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryConjugation.lean:126:0: 'MF21Restart.characteristicRoots_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryConjugation.lean:127:0: 'MF21Restart.manuscriptBoundaryDeterminant_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryConjugation.lean:128:0: 'MF21Restart.manuscriptBoundaryDeterminant_re_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3764/3794] Built MF21Restart.ImplicitPhase (3.5s)
+info: MF21Restart/ImplicitPhase.lean:33:0: 'MF21Restart.manuscriptEta_uniform_implicit_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3765/3794] Built MF21Restart.CharacteristicSublist (4.4s)
+info: MF21Restart/CharacteristicSublist.lean:100:0: 'MF21Restart.characteristicRoots_eq_implies_index_eq_or_oscillatory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/CharacteristicSublist.lean:101:0: 'MF21Restart.characteristicRoots_sublist_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CharacteristicSublist.lean:102:0: 'MF21Restart.normalizedRootVandermonde_ne_zero_on_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CharacteristicSublist.lean:103:0: 'MF21Restart.normalizedBoundaryCoefficient_ne_zero_on_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3766/3794] Built MF21Restart.BoundaryProductDecay (5.9s)
+warning: MF21Restart/BoundaryProductDecay.lean:96:4: Unused tactic linter: `simp only [boundaryProductRatio, div_eq_mul_inv]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/BoundaryProductDecay.lean:96:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: MF21Restart/BoundaryProductDecay.lean:254:0: 'MF21Restart.boundaryExteriorProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryProductDecay.lean:255:0: 'MF21Restart.boundaryProductRatio_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryProductDecay.lean:256:0: 'MF21Restart.boundaryProductRatio_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryProductDecay.lean:257:0: 'MF21Restart.boundary_nonleading_has_stable_or_omitted_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/BoundaryProductDecay.lean:258:0: 'MF21Restart.boundaryProductRatio_eq_sdiff_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryProductDecay.lean:259:0: 'MF21Restart.boundaryProductRatio_uniform_exp_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3767/3794] Built MF21Restart.ImplicitTaylor (3.0s)
+info: MF21Restart/ImplicitTaylor.lean:65:0: 'MF21Restart.manuscript_uniform_implicit_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3768/3794] Built MF21Restart.NormalizedQuotient (4.2s)
+info: MF21Restart/NormalizedQuotient.lean:60:0: 'MF21Restart.boundaryCoefficient_ratio_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedQuotient.lean:61:0: 'MF21Restart.normalizedBoundaryRatio_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedQuotient.lean:62:0: 'MF21Restart.exists_pos_bound_with_deriv_of_contDiffAt_on_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/NormalizedQuotient.lean:63:0: 'MF21Restart.normalizedBoundaryRatio_bounded_with_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3769/3794] Built MF21Restart.CirculantBounds (7.6s)
+warning: MF21Restart/CirculantBounds.lean:88:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/CirculantBounds.lean:189:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/CirculantBounds.lean:189:12: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: MF21Restart/CirculantBounds.lean:214:0: 'MF21Restart.eigenvalue_circulant_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantBounds.lean:215:0: 'MF21Restart.eigenvalue_circulant_power_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantBounds.lean:216:0: 'MF21Restart.eigenvalue_circulant_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantBounds.lean:217:0: 'MF21Restart.eigenvalue_fixed_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantBounds.lean:218:0: 'MF21Restart.eigenvalue_reciprocal_tail_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CirculantBounds.lean:219:0: 'MF21Restart.eigenvalue_eventual_reciprocal_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3770/3794] Built MF21Restart.RootListProducts (4.8s)
+info: MF21Restart/RootListProducts.lean:114:0: 'MF21Restart.stableRootList_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootListProducts.lean:115:0: 'MF21Restart.exteriorRootList_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootListProducts.lean:116:0: 'MF21Restart.boundaryExteriorProduct_eq_prod_exteriorRootList' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/RootListProducts.lean:117:0: 'MF21Restart.boundaryExteriorProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootListProducts.lean:118:0: 'MF21Restart.boundaryExteriorProduct_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootListProducts.lean:119:0: 'MF21Restart.boundaryExteriorProduct_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/RootListProducts.lean:120:0: 'MF21Restart.rootVandermondeProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3771/3794] Built MF21Restart.LeadingBoundaryIndices (5.0s)
+info: MF21Restart/LeadingBoundaryIndices.lean:223:0: 'MF21Restart.card_boundaryLeadingZInvIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:224:0: 'MF21Restart.boundaryLeadingZInvIndices_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:225:0: 'MF21Restart.boundaryLeadingZInvIndices_compl_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:226:0: 'MF21Restart.boundaryLeadingZIndices_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:227:0: 'MF21Restart.boundaryLeadingZIndices_compl_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:228:0: 'MF21Restart.boundaryLaplaceSign_leadingZInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryIndices.lean:229:0: 'MF21Restart.boundaryLaplaceSign_leadingZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3772/3794] Built MF21Restart.ActualFixedIndex (4.9s)
+warning: MF21Restart/ActualFixedIndex.lean:20:45: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MF21Restart/ActualFixedIndex.lean:97:0: 'MF21Restart.critical_bound_implies_actual_fixed_index_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3773/3794] Built MF21Restart.ExtensionIndependence (4.4s)
+info: MF21Restart/ExtensionIndependence.lean:92:0: 'MF21Restart.implicitPhaseCoefficient_extension_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3774/3794] Built MF21Restart.CoefficientVanishing (5.1s)
+info: MF21Restart/CoefficientVanishing.lean:116:0: 'MF21Restart.implicitPhaseCoefficient_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/CoefficientVanishing.lean:117:0: 'MF21Restart.manuscript_uniform_implicit_taylor_with_vanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3775/3794] Built MF21Restart.NormalizedErrorCoefficient (4.0s)
+info: MF21Restart/NormalizedErrorCoefficient.lean:70:0: 'MF21Restart.card_boundaryLeadingZIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedErrorCoefficient.lean:71:0: 'MF21Restart.boundaryLeadingZIndices_separates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedErrorCoefficient.lean:72:0: 'MF21Restart.boundaryPhaseMultiplier_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedErrorCoefficient.lean:73:0: 'MF21Restart.normalizedErrorCoefficient_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/NormalizedErrorCoefficient.lean:74:0: 'MF21Restart.normalizedErrorCoefficient_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3776/3794] Built MF21Restart.BoundaryNormalizer (4.7s)
+info: MF21Restart/BoundaryNormalizer.lean:125:0: 'MF21Restart.stableRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:126:0: 'MF21Restart.exteriorRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:127:0: 'MF21Restart.manuscriptPhaseProduct_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:128:0: 'MF21Restart.manuscriptNormalizer_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:129:0: 'MF21Restart.manuscriptNormalizer_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:130:0: 'MF21Restart.manuscriptNormalizer_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:131:0: 'MF21Restart.manuscriptNormalizedDeterminant_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryNormalizer.lean:132:0: 'MF21Restart.eigenvalue_iff_manuscriptNormalizedDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [3777/3794] Built MF21Restart.LeadingBoundaryCoefficients (5.7s)
+warning: MF21Restart/LeadingBoundaryCoefficients.lean:186:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: MF21Restart/LeadingBoundaryCoefficients.lean:211:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: MF21Restart/LeadingBoundaryCoefficients.lean:233:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MF21Restart/LeadingBoundaryCoefficients.lean:257:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/LeadingBoundaryCoefficients.lean:281:0: 'MF21Restart.leading_phaseProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryCoefficients.lean:282:0: 'MF21Restart.boundaryCoefficient_leadingZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryCoefficients.lean:283:0: 'MF21Restart.boundaryCoefficient_leadingZInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryCoefficients.lean:284:0: 'MF21Restart.boundaryLeadingZIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingBoundaryCoefficients.lean:285:0: 'MF21Restart.boundaryLeadingZInvIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3778/3794] Built MF21Restart.BoundaryErrorBounds (5.3s)
+warning: MF21Restart/BoundaryErrorBounds.lean:80:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: MF21Restart/BoundaryErrorBounds.lean:208:0: 'MF21Restart.boundaryErrorTerm_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryErrorBounds.lean:209:0: 'MF21Restart.boundaryErrorExpression_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryErrorBounds.lean:210:0: 'MF21Restart.boundaryProductRatio_deriv_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/BoundaryErrorBounds.lean:211:0: 'MF21Restart.boundaryErrorExpression_exp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3779/3794] Built MF21Restart.LeadingNormalization (3.5s)
+warning: MF21Restart/LeadingNormalization.lean:36:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/LeadingNormalization.lean:36:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/LeadingNormalization.lean:77:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/LeadingNormalization.lean:77:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/LeadingNormalization.lean:127:12: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/LeadingNormalization.lean:127:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: MF21Restart/LeadingNormalization.lean:158:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MF21Restart/LeadingNormalization.lean:158:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: MF21Restart/LeadingNormalization.lean:160:0: 'MF21Restart.boundaryPhaseMultiplier_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingNormalization.lean:161:0: 'MF21Restart.manuscriptNormalizer_eq_leading' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingNormalization.lean:162:0: 'MF21Restart.boundaryCoefficient_leading_phase_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingNormalization.lean:163:0: 'MF21Restart.leading_phase_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingNormalization.lean:164:0: 'MF21Restart.boundaryLeadingTerms_eq_normalizer_mul_sin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/LeadingNormalization.lean:165:0: 'MF21Restart.normalizedErrorTerm_eq_raw_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3780/3794] Built MF21Restart.DeterminantRemainder (4.0s)
+warning: MF21Restart/DeterminantRemainder.lean:51:16: This simp argument is unused:
+  BoundaryNonleadingSubset
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_erase, P, Finset.mem_powersetCard, Finset.subset_univ, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: MF21Restart/DeterminantRemainder.lean:176:0: 'MF21Restart.boundaryLeadingSubsets_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:177:0: 'MF21Restart.manuscriptNormalizedDeterminant_eq_sin_add_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:178:0: 'MF21Restart.boundaryErrorExpression_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:179:0: 'MF21Restart.manuscriptError_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:180:0: 'MF21Restart.manuscriptError_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:181:0: 'MF21Restart.eigenvalue_iff_sin_add_manuscriptError_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:182:0: 'MF21Restart.manuscriptError_exp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:183:0: 'MF21Restart.manuscriptError_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/DeterminantRemainder.lean:184:0: 'MF21Restart.manuscriptError_endpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3781/3794] Built MF21Restart.ActualSimpleRoots (2.0s)
+info: MF21Restart/ActualSimpleRoots.lean:113:0: 'MF21Restart.manuscriptResidual_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualSimpleRoots.lean:114:0: 'MF21Restart.manuscriptBoundaryMatrix_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MF21Restart/ActualSimpleRoots.lean:115:0: 'MF21Restart.manuscriptBoundaryDeterminant_eq_normalizer_mul_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/ActualSimpleRoots.lean:116:0: 'MF21Restart.manuscriptBoundaryDeterminant_hasDerivAt_of_residual_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/ActualSimpleRoots.lean:117:0: 'MF21Restart.manuscriptResidual_simple_zero_eigenspace_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/ActualSimpleRoots.lean:118:0: 'MF21Restart.manuscriptResidual_simple_zero_existsUnique_eigenvalue_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3782/3794] Built MF21Restart.SpectralWindowBounds (3.8s)
+info: MF21Restart/SpectralWindowBounds.lean:67:0: 'MF21Restart.manuscriptError_high_phase_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3783/3794] Built MF21Restart.FinalPhaseWindow (3.6s)
+info: MF21Restart/FinalPhaseWindow.lean:150:0: 'MF21Restart.manuscriptFinalPhaseWindow_eventually_in_upper_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MF21Restart/FinalPhaseWindow.lean:151:0: 'MF21Restart.manuscriptFinalPhaseWindow_eventual_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3784/3794] Built MF21Restart.PhaseRootCoverage (4.6s)
+info: MF21Restart/PhaseRootCoverage.lean:107:0: 'MF21Restart.manuscriptResidual_high_phase_root_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3785/3794] Building MF21Restart.PhaseWindowRoots (31s)
+trace: .> LEAN_PATH=/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean -j1 -M4096 /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/MF21Restart/PhaseWindowRoots.lean -o /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/build/lib/lean/MF21Restart/PhaseWindowRoots.olean -i /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/build/lib/lean/MF21Restart/PhaseWindowRoots.ilean -c /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/build/ir/MF21Restart/PhaseWindowRoots.c --setup /home/runner/work/_temp/nla-mf21-frozen-tools/.verification-tmp/nla-fresh-proof-3m4wktv9/project/.lake/build/ir/MF21Restart/PhaseWindowRoots.setup.json --json
+info: stderr:
+libc++abi: terminating due to uncaught exception of type lean::memory_exception: excessive memory consumption detected at 'interpreter' (potential solution: increase memory consumption threshold)
+error: Lean exited with code 134
+Some required targets logged failures:
+- MF21Restart.PhaseWindowRoots
+error: build failed
+uncaught exception: Child exited with 1
+
+EXIT_STATUS=1

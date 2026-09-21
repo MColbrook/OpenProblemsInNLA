@@ -1,0 +1,34 @@
+import took 16.7s
+.olean serialization took 399ms
+{"caption":"","data":"This simp argument is unused:\n  scaledPhaseResidual\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Real.cos_sub_nat_mul_pi]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`","endPos":{"column":34,"line":43},"fileName":"/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unusedSimpArgs","pos":{"column":15,"line":43},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":65,"line":42},"fileName":"/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":62,"line":42},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":64,"line":43},"fileName":"/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":61,"line":43},"severity":"warning"}
+{"caption":"","data":"'MF21Restart.manuscriptResidual_unique_root_in_phase_windows' depends on axioms: [propext, Classical.choice, Quot.sound]","endPos":{"column":6,"line":224},"fileName":"/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":224},"severity":"information"}
+cumulative profiling times:
+	.olean serialization 399ms
+	C code generation 0.0621ms
+	attribute application 0.0406ms
+	blocked (unaccounted) 1.25s
+	congr simp thm 2.43ms
+	elaboration 35.6ms
+	fix level params 0.941ms
+	import 16.7s
+	initialization 19.7ms
+	instantiate metavars 1.52ms
+	interpretation 1.05s
+	let-to-have transformation 0.127ms
+	linting 17.5ms
+	module linting 0.000583ms
+	norm_num 185ms
+	overlappingInstancesLinter 2.56ms
+	parsing 8.38ms
+	process pre-definitions 14.3ms
+	ring 45.9ms
+	share common exprs 13.6ms
+	simp 39.6ms
+	tactic execution 164ms
+	tacticAnalysis 23.4ms
+	type checking 66.3ms
+	typeclass inference 250ms
+       20.98 real         3.72 user         5.70 sys
+time: sysctl kern.clockrate: Operation not permitted

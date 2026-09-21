@@ -1,0 +1,28 @@
+{
+  "scope": "Original source diagnostic with actual Lean exit and Python child-resource report; first time-wrapper had a sysctl permission error",
+  "started_utc": "2026-09-21T01:44:24.390959+00:00",
+  "source_sha256": "7ababccde85698a360037679ab6d314ca6582f97a0cc09a3a320a38deb7a4590",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean",
+    "-o",
+    "/private/tmp/mf21-phase-memory-tests/original-02/PhaseWindowRoots.olean",
+    "-i",
+    "/private/tmp/mf21-phase-memory-tests/original-02/PhaseWindowRoots.ilean",
+    "-c",
+    "/private/tmp/mf21-phase-memory-tests/original-02/PhaseWindowRoots.c",
+    "--profile",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "finished_utc": "2026-09-21T01:44:40.278756+00:00",
+  "exit_code": 0,
+  "log_sha256": "77e110beba90a02c54425fe61385fdd1fadf8457ac9c7b824a128514f827b214",
+  "max_child_rss_bytes_macos": 3652206592
+}

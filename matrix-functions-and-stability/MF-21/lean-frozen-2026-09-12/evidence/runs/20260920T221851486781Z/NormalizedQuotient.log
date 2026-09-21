@@ -1,0 +1,6 @@
+'MF21Restart.boundaryCoefficient_ratio_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedBoundaryRatio_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.exists_pos_bound_with_deriv_of_contDiffAt_on_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedBoundaryRatio_bounded_with_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]

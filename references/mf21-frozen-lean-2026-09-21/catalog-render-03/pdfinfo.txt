@@ -1,0 +1,19 @@
+Title:           MF-21 - The uniform expansion threshold for Toeplitz symbols with higher-order zeros
+Author:          Open Problems in Numerical Linear Algebra
+Creator:         LaTeX with hyperref
+Producer:        xdvipdfmx (20220710)
+CreationDate:    Mon Sep 21 02:02:25 2026 UTC
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           3
+Encrypted:       no
+Page size:       595.28 x 841.89 pts (A4)
+Page rot:        0
+File size:       53697 bytes
+Optimized:       no
+PDF version:     1.5

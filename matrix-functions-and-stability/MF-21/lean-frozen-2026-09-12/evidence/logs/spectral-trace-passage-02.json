@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/SpectralTracePassage.olean",
+    "MF21Restart/SpectralTracePassage.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/SpectralTracePassage.lean",
+  "source_sha256": "4366c06110bbd59395afb9993704f8dac810bf573921a37aa8624e79ebff5610",
+  "started_epoch": 1789948009.667246,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "58c52e5684f168b05fe7cef0b459449394012e77ef90c9a818f92de9be0160f8",
+  "finished_epoch": 1789948018.3276339,
+  "output_sha256": "6de19a4326937ba2a3b6025c219dcd3c63eae0739d87fb2d6a42093988095b7e"
+}

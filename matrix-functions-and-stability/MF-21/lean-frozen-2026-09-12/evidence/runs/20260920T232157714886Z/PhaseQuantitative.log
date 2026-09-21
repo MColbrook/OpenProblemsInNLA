@@ -1,0 +1,7 @@
+MF21Restart/PhaseQuantitative.lean:90:45: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/PhaseQuantitative.lean:90:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'MF21Restart.eigenvalue_eventual_quantitative_phase_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'MF21Restart.risingFactorial_succ_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_mul_manuscriptFiniteInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_apply' depends on axioms: [propext, Classical.choice, Quot.sound]

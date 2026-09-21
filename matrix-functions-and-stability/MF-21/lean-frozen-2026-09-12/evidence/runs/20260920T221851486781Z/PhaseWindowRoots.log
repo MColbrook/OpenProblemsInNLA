@@ -1,0 +1,14 @@
+MF21Restart/PhaseWindowRoots.lean:43:15: warning: This simp argument is unused:
+  scaledPhaseResidual
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Real.cos_sub_nat_mul_pi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/PhaseWindowRoots.lean:42:62: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseWindowRoots.lean:43:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.manuscriptResidual_unique_root_in_phase_windows' depends on axioms: [propext, Classical.choice, Quot.sound]

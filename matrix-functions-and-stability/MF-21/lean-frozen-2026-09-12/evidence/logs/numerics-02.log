@@ -1,0 +1,6 @@
+MF21Restart/Numerics.lean:20:2: error: linarith failed to find a contradiction
+hs : True
+a✝ : √2 / 2 ≤ 1 / 4
+⊢ False
+failed
+'MF21Restart.phase_window_margin' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

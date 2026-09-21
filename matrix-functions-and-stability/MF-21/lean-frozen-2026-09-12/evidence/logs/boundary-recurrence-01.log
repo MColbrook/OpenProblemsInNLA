@@ -1,0 +1,13 @@
+MF21Restart/BoundaryRecurrence.lean:64:15: error: Application type mismatch: The argument
+  geometric_sum_isSolution ?m.130 ?m.132 ?m.134 ?m.136
+has type
+  LinearRecurrence.IsSolution ?m.130 fun k => ∑ i, ?m.134 i * ?m.132 i ^ k
+but is expected to have type
+  { order := 2 * m, coeffs := a }.IsSolution u
+in the application
+  And.intro (geometric_sum_isSolution ?m.130 ?m.132 ?m.134 ?m.136)
+'MF21Restart.boundary_mulVec_zero_iff_ghosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_zero_iff_recurrence_ghosts' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

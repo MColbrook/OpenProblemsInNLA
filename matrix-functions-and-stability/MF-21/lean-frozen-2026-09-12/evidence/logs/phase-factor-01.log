@@ -1,0 +1,86 @@
+MF21Restart/PhaseFactor.lean:46:6: error: ring failed, ring expressions not equal
+κ : ℂ
+θ : ℝ
+hz : Complex.exp (-↑θ * Complex.I) * Complex.exp (↑θ * Complex.I) = 1
+hcos : Real.cos θ = 1 - 2 * Real.sin (θ / 2) ^ 2
+hsin : Real.sin θ = 2 * Real.sin (θ / 2) * Real.cos (θ / 2)
+hb : (1 + (κ * ↑(Real.sin (θ / 2))) ^ 2).sqrt ^ 2 = 1 + (κ * ↑(Real.sin (θ / 2))) ^ 2
+⊢ Complex.exp (-↑θ * Complex.I) * Complex.sin (↑θ / 2) ^ 2 * κ ^ 2 -
+          Complex.exp (-↑θ * Complex.I) * (1 + (κ * Complex.sin (↑θ / 2)) ^ 2).sqrt ^ 2 -
+        Complex.exp (-↑θ * Complex.I) * κ ^ 2 * ↑(Real.sin (θ / 2)) ^ 2 +
+      Complex.exp (-↑θ * Complex.I) * (1 + (κ * ↑(Real.sin (θ / 2))) ^ 2).sqrt ^ 2 =
+    0
+MF21Restart/PhaseFactor.lean:72:38: error(lean.invalidField): Invalid field `mul_const`: The environment does not contain `ContDiffWithinAt.match_1.mul_const`, so it is not possible to project the field `mul_const` from an expression
+  ContDiff.neg (ContinuousLinearMap.contDiff Complex.ofRealCLM)
+of type
+  match ?m.504 with
+  | none =>
+    ∃ p, HasFTaylorSeriesUpTo ⊤ (fun x => -Complex.ofRealCLM x) p ∧ ∀ (i : ℕ), AnalyticOnNhd ℝ (fun x => p x i) Set.univ
+  | some n => ∃ p, HasFTaylorSeriesUpTo (↑n) (fun x => -Complex.ofRealCLM x) p
+MF21Restart/PhaseFactor.lean:53:40: error: unsolved goals
+κ : ℂ
+hκ : 0 < κ.re
+hs : ContDiff ℝ ⊤ fun θ => ↑(Real.sin (θ / 2))
+hc : ContDiff ℝ ⊤ fun θ => ↑(Real.cos (θ / 2))
+hi : ContDiff ℝ ⊤ fun θ => 1 + (κ * ↑(Real.sin (θ / 2))) ^ 2
+hb : ContDiff ℝ ⊤ fun θ => (1 + (κ * ↑(Real.sin (θ / 2))) ^ 2).sqrt
+⊢ ContDiff ℝ ⊤ (phaseNormalized κ)
+MF21Restart/PhaseFactor.lean:82:51: error: linarith failed to find a contradiction
+κ : ℂ
+hκ : 0 < κ.re
+θ : ℝ
+hθ : θ ∈ Set.Icc 0 Real.pi
+hpos : 0 < θ
+a✝ : Real.pi ≤ θ / 2
+⊢ False
+failed
+MF21Restart/PhaseFactor.lean:94:42: error(lean.unknownIdentifier): Unknown constant `Complex.ofNat_re`
+MF21Restart/PhaseFactor.lean:94:60: error(lean.unknownIdentifier): Unknown constant `Complex.ofNat_im`
+MF21Restart/PhaseFactor.lean:96:2: error: linarith failed to find a contradiction
+case inr
+κ : ℂ
+hκ : 0 < κ.re
+θ : ℝ
+hθ : θ ∈ Set.Icc 0 Real.pi
+hpos : 0 < θ
+hs : 0 < Real.sin (θ / 2)
+he : ‖Complex.exp (-↑θ * Complex.I)‖ = 1
+hr : ‖stableRootCurve κ θ‖ < 1
+hprod : (stableRootCurve κ θ * Complex.exp (-↑θ * Complex.I)).re < 1
+hid :
+  1 -
+      ((stableRootCurve κ θ).re * (Complex.exp (-↑θ * Complex.I)).re -
+        (stableRootCurve κ θ).im * (Complex.exp (-↑θ * Complex.I)).im) =
+    Complex.re 2 * Real.sin (θ / 2) * (phaseNormalized κ θ).re - (2 * ↑(Real.sin (θ / 2))).im * (phaseNormalized κ θ).im
+a✝ : (phaseNormalized κ θ).re ≤ 0
+⊢ False
+failed
+MF21Restart/PhaseFactor.lean:95:14: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sub_re, Complex.one_re, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im,
+    Complex.ofNat_re, Complex.ofNat_im, mul_zero, sub_zero, add_zero] at hid
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/PhaseFactor.lean:95:34: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sub_re, Complex.one_re, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im,
+    Complex.ofNat_re, Complex.ofNat_im, mul_zero, zero_mul, sub_zero] at hid
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/PhaseFactor.lean:105:2: error: 'change' tactic failed, pattern
+  (phaseNormalized κ θ).arg = (↑(2 * Real.sin (θ / 2)) * phaseNormalized κ θ).arg
+is not definitionally equal to target
+  individualPhase κ θ = (2 * ↑(Real.sin (θ / 2)) * phaseNormalized κ θ).arg
+MF21Restart/PhaseFactor.lean:118:18: error(lean.invalidField): Invalid field `contDiffAt`: The environment does not contain `ContinuousLinearMap.contDiffAt`, so it is not possible to project the field `contDiffAt` from an expression
+  Complex.imCLM
+of type `ℂ →L[ℝ] ℝ`
+'MF21Restart.phase_factorization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_contDiff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_re_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_eq_original' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

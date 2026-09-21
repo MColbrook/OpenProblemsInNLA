@@ -1,0 +1,38 @@
+[
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean",
+    "upstream_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+    "local_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+    "modified": false
+  },
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean",
+    "upstream_sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+    "local_sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+    "modified": false
+  },
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean",
+    "upstream_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+    "local_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+    "modified": false
+  },
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean",
+    "upstream_sha256": "c6b20c3138f3ec57e96de603f796422479894f42bbd45d2ebafd0d8ec8558d04",
+    "local_sha256": "cad726aa56114f33a80a75bafba9fbe87d7a30e9da2dfff1d43efc482f40555c",
+    "modified": true
+  },
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean",
+    "upstream_sha256": "311a97ce3b745500f3f14ff879c2eaa42299c5ab57914bf1c86fe04a6cdf3165",
+    "local_sha256": "b9196dc2dc307cd7c9d32f703dab028c7bfecf2c036745c105b81581ba01503f",
+    "modified": true
+  },
+  {
+    "path": "LeanFormalizations/NumberTheory/Transcendence/PiTranscendental.lean",
+    "upstream_sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+    "local_sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+    "modified": false
+  }
+]

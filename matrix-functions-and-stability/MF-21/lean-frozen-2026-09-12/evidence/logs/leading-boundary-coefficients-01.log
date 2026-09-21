@@ -1,0 +1,27 @@
+MF21Restart/LeadingBoundaryCoefficients.lean:49:25: error: Type mismatch
+  Fin.snoc ?m.66 ?m.67 (Fin.last k)
+has type
+  ?m.64 (Fin.last k)
+but is expected to have type
+  ℂ
+MF21Restart/LeadingBoundaryCoefficients.lean:82:28: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/LeadingBoundaryCoefficients.lean:82:28: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/LeadingBoundaryCoefficients.lean:194:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:219:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:241:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/LeadingBoundaryCoefficients.lean:263:4: error: `simp` made no progress
+'MF21Restart.leading_phaseProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZ' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZInv' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]

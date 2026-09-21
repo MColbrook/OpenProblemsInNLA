@@ -1,0 +1,22 @@
+MF21Restart/FixedIndex.lean:34:73: error: unsolved goals
+h y : ℕ → ℝ
+η : ℝ → ℝ
+b : ℝ
+hy : Tendsto y atTop (𝓝 0)
+hη : ContinuousAt η 0
+hpos : ∀ᶠ (n : ℕ) in atTop, 0 < h n
+heq : ∀ᶠ (n : ℕ) in atTop, y n = b * h n + h n * η (y n)
+n : ℕ
+hn : 0 < h n
+hEq : y n = b * h n + h n * η (y n)
+⊢ b + η (y n) = b + η (h n * (b + η (y n)))
+MF21Restart/FixedIndex.lean:49:4: error: Type mismatch: After simplification, term
+  Tendsto.comp (ContinuousAt.tendsto (Continuous.continuousAt Real.continuous_sinc)) (Tendsto.div_const hy 2)
+ has type
+  @Tendsto ℕ ℝ (Real.sinc ∘ fun a => y a / 2) atTop (𝓝 1)
+but is expected to have type
+  @Tendsto ℕ ℝ (fun n => Real.sinc (y n / 2)) atTop (𝓝 1)
+MF21Restart/FixedIndex.lean:61:16: error: unexpected token 'λ'; expected '}'
+'MF21Restart.implicit_phase_ratio_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.symbol_scaled_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+MF21Restart/FixedIndex.lean:94:14: error(lean.unknownIdentifier): Unknown constant `fixed_index_limit_of_implicit_phase`

@@ -1,0 +1,22 @@
+MF21Restart/StableRootSmooth.lean:65:65: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:71:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:77:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:79:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:79:62: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:86:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.stableRootCurve_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_equation' depends on axioms: [propext, Classical.choice, Quot.sound]

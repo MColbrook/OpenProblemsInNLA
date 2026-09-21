@@ -1,0 +1,1 @@
+'MF21Restart.manuscript_implicit_taylor_with_spectral_error' depends on axioms: [propext, Classical.choice, Quot.sound]

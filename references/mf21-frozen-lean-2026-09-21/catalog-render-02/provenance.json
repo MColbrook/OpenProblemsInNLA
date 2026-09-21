@@ -1,0 +1,55 @@
+{
+  "scope": "MF-21 canonical README document rendering only; no Lean verification",
+  "recorded_utc": "2026-09-21T01:31:40.646540+00:00",
+  "repository_commit": "8e685d42a4da5845467d3843db2873eca43ecedf",
+  "github_sha": "8e685d42a4da5845467d3843db2873eca43ecedf",
+  "github_run_id": "35551175572",
+  "github_run_attempt": "1",
+  "command": [
+    "python3",
+    "tools/render_problems.py",
+    "MF-21"
+  ],
+  "inputs": {
+    ".github/workflows/mf21-catalog-once.yml": {
+      "sha256": "10d0f50419680237df0de66b196c7d8b24d4c53b19fc3e431e166f9c29ba2f21",
+      "bytes": 5794
+    },
+    "tools/render_problems.py": {
+      "sha256": "586916bcbd8b89a24fcc53a07b7a393a9dab7e9cb2ff079c982d7586ce56a5a9",
+      "bytes": 11050
+    },
+    "tools/problem-template.tex": {
+      "sha256": "271a7f3ed3b65daece40e32c9edf2e81f93f5050c81df336a43e1fc0b6c5bb76",
+      "bytes": 2937
+    },
+    "tools/github_math.lua": {
+      "sha256": "31439d03daf97570d4332a54fa0c44471f827242ef5b4514f16d96d822e07931",
+      "bytes": 1107
+    },
+    "matrix-functions-and-stability/README.md": {
+      "sha256": "efa9b81c8af531bef77c41af6f0bc39b22ec3e4ffdda79ac388d9c6787c85f3d",
+      "bytes": 5860
+    },
+    "matrix-functions-and-stability/MF-21/README.md": {
+      "sha256": "660535b0213ce4aae213accef3adbd2ad3678ae67ea88124c8f493eb1105840b",
+      "bytes": 11783
+    }
+  },
+  "status": "rendered; visual review remains separate",
+  "outputs": {
+    "problem.tex": {
+      "sha256": "fd8e36939c78316e7fc7f5aab858084f14fa20bd80a41d61e3c25235f8bc8c47",
+      "bytes": 17095
+    },
+    "problem.pdf": {
+      "sha256": "ab02c035a3724526d3a1a6b0d176b9135ae198d7163737115499cc2b1a6d3f8f",
+      "bytes": 53616
+    },
+    "render.log": {
+      "sha256": "c9221f609b92e718f79608720f5cc98dda48e2aedf4ad79298c6130c3ac88f34",
+      "bytes": 40
+    }
+  },
+  "finished_utc": "2026-09-21T01:32:58.413682+00:00"
+}

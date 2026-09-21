@@ -1,0 +1,24 @@
+'MF21Restart.normalizedCharacteristicDifference_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedCharacteristicDifference_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedCharacteristicDifference_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_sub_eq_mul_normalizedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedCharacteristicDifference_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedCharacteristicDifference_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedCharacteristicDifferenceProduct_analyticAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedCharacteristicDifferenceProduct_contDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedCharacteristicDifferenceProduct_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedCharacteristicDifferenceProduct_zero_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedCharacteristicDifferenceProduct_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.characteristicRoots_differenceProduct_eq_pow_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

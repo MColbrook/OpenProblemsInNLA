@@ -1,0 +1,18 @@
+MF21Restart/RiemannCellBound.lean:56:28: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i ∈ Finset.Ico ?m.569 ?m.570, (?m.568 (i + 1) - ?m.568 i)
+in the target expression
+  ε * ∑ i ∈ Finset.Ico L U, (a (i + 1) - a i) = ε * (a U - a L)
+
+a : ℕ → ℝ
+ha : Monotone a
+L U : ℕ
+hLU : L ≤ U
+f : ℝ → ℝ
+ε : ℝ
+hf : ∀ k ∈ Finset.Ico L U, IntervalIntegrable f MeasureTheory.volume (a k) (a (k + 1))
+hosc : ∀ k ∈ Finset.Ico L U, ∀ x ∈ Set.Icc (a k) (a (k + 1)), |f (a (k + 1)) - f x| ≤ ε
+hcell :
+  ∀ k ∈ Finset.Ico L U, |(a (k + 1) - a k) * f (a (k + 1)) - ∫ (x : ℝ) in a k..a (k + 1), f x| ≤ ε * (a (k + 1) - a k)
+hsum : ∑ k ∈ Finset.Ico L U, ∫ (x : ℝ) in a k..a (k + 1), f x = ∫ (x : ℝ) in a L..a U, f x
+⊢ ε * ∑ i ∈ Finset.Ico L U, (a (i + 1) - a i) = ε * (a U - a L)
+'MF21Restart.riemann_right_sum_error_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

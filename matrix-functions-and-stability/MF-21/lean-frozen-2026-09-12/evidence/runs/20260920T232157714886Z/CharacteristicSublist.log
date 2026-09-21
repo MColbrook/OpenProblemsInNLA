@@ -1,0 +1,6 @@
+'MF21Restart.characteristicRoots_eq_implies_index_eq_or_oscillatory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.characteristicRoots_sublist_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedRootVandermonde_ne_zero_on_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedBoundaryCoefficient_ne_zero_on_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]

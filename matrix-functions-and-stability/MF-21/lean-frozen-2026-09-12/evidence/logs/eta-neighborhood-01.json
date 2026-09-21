@@ -1,0 +1,23 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/EtaNeighborhood.olean",
+    "MF21Restart/EtaNeighborhood.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "556cca2a8ae29de325a821c715a55b49560f9566cf04595c68ec88de39599cc4",
+  "source": "MF21Restart/EtaNeighborhood.lean",
+  "started_epoch": 1789943857.4225228,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "source_unchanged": true,
+  "log_sha256": "b9db74685f9e0a4ba04e55818302c778e189bb27d381aafe667fd8669afba827",
+  "finished_epoch": 1789943864.1406238
+}

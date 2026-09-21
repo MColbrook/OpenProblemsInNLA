@@ -1,0 +1,6 @@
+'MF21Restart.det_updateRow_eq_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_entrywise_deriv_and_two_le_finrank_ker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

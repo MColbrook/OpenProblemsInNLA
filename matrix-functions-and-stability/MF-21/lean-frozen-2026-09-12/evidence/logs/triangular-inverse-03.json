@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/TriangularInverse.olean",
+    "MF21Restart/TriangularInverse.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "07f55713eb4977c850e148c09943ef9cced5d75adc1b6d60362ecd40991ee319",
+  "source": "MF21Restart/TriangularInverse.lean",
+  "started_epoch": 1789942120.376651,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "5774c495fc6385bdc11b8302a2b90a9ea05464b903d4f1940b3a7d2914863160",
+  "finished_epoch": 1789942127.3577468,
+  "output_sha256": "6d1a9f233a59c3665d9fe0beed6611a2a44616612aa1cc1fa5203b9b8b20c3b0"
+}

@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-09-21T02:10:46.957469+00:00",
+  "scope": "Actual GitHub artifact download and byte/provenance comparisons; semantic and visual review are separate",
+  "run_id": 35552653565,
+  "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35552653565",
+  "conclusion": "success",
+  "commit": "fe2183e9b570322d7c1f64bba3480460082af8d3",
+  "artifact_id": 10619061816,
+  "artifact_name": "mf21-frozen-fe2183e9b570322d7c1f64bba3480460082af8d3",
+  "artifact_zip_bytes": 64859,
+  "files": {
+    "bootstrap/comparator-build.log": "a72048eb0ba5fcaf0d60f87bbe35994216028ddc6c5a55cb686a7866df4b01aa",
+    "bootstrap/elan.log": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+    "bootstrap/landrun-build.log": "eeb7491005d3f9ec4ebb970ed1262a7fa322e7f0d47905509f49562d75a0ed5d",
+    "verify-20260921T020023Z-4146/comparator-controls.log": "1866e50c0a605084121987d137754aff4f1b5835b363a3130e6c59327d4d1208",
+    "verify-20260921T020023Z-4146/comparator.log": "b84c7bbd7be8929e3079200c0b27b9dd7997c25fd4b655dd191ba152e02a268b",
+    "verify-20260921T020023Z-4146/dependencies.log": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+    "verify-20260921T020023Z-4146/kernel-controls.log": "eb8c0e9e7121025d13e1916452e8c4d7c368f1a39769f8b151e52bfeacaedd57",
+    "verify-20260921T020023Z-4146/mathlib-cache.log": "9409a9b29f6cca0cc9e1adb978cf6892a76100f968e100489f0e7fea5a16b765",
+    "verify-20260921T020023Z-4146/negative-native.log": "59bb3071cef58776c74223d18254f4f1b6c3ccf94fa287bae68c19674436d45c",
+    "verify-20260921T020023Z-4146/negative-sorry.log": "42ee57e3bb052015cc1a8d913ca077f994754c7cab4fa7413bd37de601160409",
+    "verify-20260921T020023Z-4146/result.json": "8fcd531b7e80c5eeda580f7e93a8bc7f7f32b40830ef5405b1f134430db4ee2f",
+    "verify-20260921T020023Z-4146/sandbox.log": "f9850ed727a5da37eefa6054de95d428d4bd94caf2ed52efc876672613b41074",
+    "verify-20260921T020023Z-4146/user-service.log": "0aac4e667616cc36615953b752acdf97ce1cc7871abeca7aec8f8c7385f94e33"
+  },
+  "raw_job_log_sha256": "cd30f36e663e2cdc1cf33f87e7a320300258599ebced0e97fa73d8465d12a7e7",
+  "target_result_count": 1,
+  "result_record": "verify-20260921T020023Z-4146/result.json",
+  "input_hashes_match_commit_and_current_files": true,
+  "target_acceptance_markers_present": true
+}

@@ -1,0 +1,13 @@
+{
+  "proof_commit": "eb37bc17a462177f57efa270e9a9f9b17e9d88e2",
+  "proof_path": "matrix-functions-and-stability/MF-21/solution.md",
+  "files": {
+    "MF21.lean": "952b956736971284f0cdba9102757a3be6c39013634c9d67f7e32daec74a790b",
+    "formalization.yaml": "dd23a6de60e917ea920829844a8ae5535ea88f4b86f60712a970fb967064b438",
+    "lakefile.toml": "a9440c5e1759679341b28227838b15cf58674fc784dc26ce57178e78ae508a06",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lake-manifest.json": "e00e2ce730251b75464c4bb12900157203d712b59c95a0a8d22d028691e54c8c",
+    "solution.md": "6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa"
+  },
+  "local_proof_matches_commit": true
+}

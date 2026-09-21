@@ -1,0 +1,85 @@
+{
+  "scope": "External pi-transcendence dependency, not MF-21 target",
+  "sources": {
+    "LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+    "LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+    "LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+    "LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean": "c6b20c3138f3ec57e96de603f796422479894f42bbd45d2ebafd0d8ec8558d04",
+    "LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean": "311a97ce3b745500f3f14ff879c2eaa42299c5ab57914bf1c86fe04a6cdf3165",
+    "LeanFormalizations/NumberTheory/Transcendence/PiTranscendental.lean": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+    "MF21Restart/PiTranscendence.lean": "63978695081b2c4e863609090b0ae358470ae7e64e17893385237339d8315cc9"
+  },
+  "runs": [
+    {
+      "source": "LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/LeanFormalizations/NumberTheory/Transcendence/ETranscendental.olean",
+        "LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean"
+      ],
+      "exit_code": 0,
+      "log": "evidence/vendor-runs/20260920T190739652073Z/ETranscendental.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/LeanFormalizations/NumberTheory/Transcendence/PiLindemann.olean",
+        "LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean"
+      ],
+      "exit_code": 0,
+      "log": "evidence/vendor-runs/20260920T190739652073Z/PiLindemann.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.olean",
+        "LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean"
+      ],
+      "exit_code": 0,
+      "log": "evidence/vendor-runs/20260920T190739652073Z/HermiteLindemann.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.olean",
+        "LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean"
+      ],
+      "exit_code": 134,
+      "log": "evidence/vendor-runs/20260920T190739652073Z/MonicRootSums.log",
+      "log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a"
+    }
+  ],
+  "limits": {
+    "threads": 1,
+    "memory_MiB": 4096
+  },
+  "comparator": "not_run",
+  "passed": false,
+  "sources_unchanged": true
+}

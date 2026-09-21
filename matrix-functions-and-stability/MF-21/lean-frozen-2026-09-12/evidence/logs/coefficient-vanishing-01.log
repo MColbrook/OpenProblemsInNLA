@@ -1,0 +1,35 @@
+MF21Restart/CoefficientVanishing.lean:67:40: error: linarith failed to find a contradiction
+m : ℕ
+Y : ℝ × ℝ → ℝ
+r ε : ℝ
+hr : 0 < r
+hε : 0 < ε
+hY : ∀ p ∈ Set.Ioo (-r / 2) (Real.pi + r / 2) ×ˢ Set.Ioo (-ε) ε, ContDiffAt ℝ ⊤ Y p
+hYzero : ∀ x ∈ Set.Icc 0 Real.pi, Y (x, 0) = x
+u : ℝ × ℝ → ℝ := fun p => 2 * Real.sin (Y p / 2)
+hu : ∀ p ∈ Set.Ioo (-r / 2) (Real.pi + r / 2) ×ˢ Set.Ioo (-ε) ε, ContDiffAt ℝ ⊤ u p
+hmem : ∀ x ∈ Set.Icc 0 Real.pi, (x, 0) ∈ Set.Ioo (-r / 2) (Real.pi + r / 2) ×ˢ Set.Ioo (-ε) ε
+k : ℕ
+hk : k ≤ 2 * m
+hc : ContinuousOn (fun x => verticalPowerFactor u (2 * m) k (x, 0)) (Set.Icc 0 Real.pi)
+M : ℝ
+hM : ∀ x ∈ Set.Icc 0 Real.pi, ‖verticalPowerFactor u (2 * m) k (x, 0)‖ ≤ M
+hfact : 0 < ↑k.factorial
+Ck : ℝ := max M 1 / ↑k.factorial
+hCk : 0 < Ck
+x : ℝ
+hx : x ∈ Set.Icc 0 Real.pi
+hufact :
+  verticalIteratedDeriv (fun p => u p ^ (2 * m)) k (x, 0) =
+    u (x, 0) ^ (2 * m - k) * verticalPowerFactor u (2 * m) k (x, 0)
+hcoeff :
+  implicitPhaseCoefficient m Y k x = u (x, 0) ^ (2 * m - k) * verticalPowerFactor u (2 * m) k (x, 0) / ↑k.factorial
+huvalue : u (x, 0) = 2 * Real.sin (x / 2)
+a✝ : x / 2 < 0
+⊢ False
+failed
+'MF21Restart.implicitPhaseCoefficient_vanishing' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscript_uniform_implicit_taylor_with_vanishing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

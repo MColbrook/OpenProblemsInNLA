@@ -1,0 +1,1 @@
+'MF21Restart.manuscript_uniform_implicit_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]

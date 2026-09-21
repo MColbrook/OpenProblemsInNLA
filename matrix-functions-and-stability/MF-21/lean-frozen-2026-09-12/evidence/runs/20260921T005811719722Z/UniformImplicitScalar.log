@@ -1,0 +1,4 @@
+MF21Restart/UniformImplicitScalar.lean:152:10: warning: `ext` did not consume the patterns `z`
+
+Note: This linter can be disabled with `set_option linter.unusedRCasesPattern false`
+'MF21Restart.uniform_implicit_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]

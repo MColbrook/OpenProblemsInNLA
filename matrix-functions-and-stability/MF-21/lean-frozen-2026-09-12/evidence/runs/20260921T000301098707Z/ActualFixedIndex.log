@@ -1,0 +1,7 @@
+MF21Restart/ActualFixedIndex.lean:20:45: warning: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MF21Restart.critical_bound_implies_actual_fixed_index_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

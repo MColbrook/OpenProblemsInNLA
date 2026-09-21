@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/CharacteristicSublist.olean",
+    "MF21Restart/CharacteristicSublist.lean"
+  ],
+  "source_sha256": "29ec8cd3beec7b1ec5b60a8788961fc755f1620975a35dfead59cce82acb8448",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "4a98cee186656389471b4ae7b27d1df40c3357b71e03221fcf638d6495c42588",
+  "started_epoch": 1789937344.422681,
+  "finished_epoch": 1789937351.4182742,
+  "output_sha256": "fa65787b6aa29615a7d10bbd5d48b9bb79938fc6207bad0933db6842619fe8db"
+}

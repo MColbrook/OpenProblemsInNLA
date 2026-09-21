@@ -1,0 +1,25 @@
+{
+  "source": "MF21Restart/PhaseZero.lean",
+  "source_sha256": "ac803ba9621d41d11d7ccff77c53299fdf6f13f9caf98e99b6692d4a3cb78885",
+  "started_utc": "2026-09-20T20:13:22.718945+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/PhaseZero.olean",
+    "MF21Restart/PhaseZero.lean"
+  ],
+  "exit_code": 0,
+  "log": "evidence/logs/phase-zero-04.log",
+  "log_sha256": "2aa61ea9aed37468d0de84b5e9c6da7a31d225510404309f84acf5b0c0dacc4a",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:13:30.710280+00:00",
+  "output_sha256": "28309c4ddb8b1e7a1e2e8211566d66d12b2ea77cf8372141bc74bc22aa6382d3"
+}

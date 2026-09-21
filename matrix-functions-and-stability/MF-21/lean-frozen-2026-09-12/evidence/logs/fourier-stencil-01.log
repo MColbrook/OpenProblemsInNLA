@@ -1,0 +1,21 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+MF21Restart/FourierStencil.lean:57:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/FourierStencil.lean:58:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/FourierStencil.lean:83:4: error(lean.unknownIdentifier): Unknown constant `intervalIntegral.integral_cos`
+MF21Restart/FourierStencil.lean:80:62: error: unsolved goals
+k : ℤ
+hk : k ≠ 0
+hkr : ↑k ≠ 0
+⊢ (↑k)⁻¹ • ∫ (x : ℝ) in ↑k * -Real.pi..↑k * Real.pi, Real.cos x = 0
+MF21Restart/FourierStencil.lean:93:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

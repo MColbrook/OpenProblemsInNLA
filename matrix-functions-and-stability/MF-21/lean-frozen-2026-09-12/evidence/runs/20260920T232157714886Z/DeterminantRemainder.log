@@ -1,0 +1,18 @@
+MF21Restart/DeterminantRemainder.lean:51:16: warning: This simp argument is unused:
+  BoundaryNonleadingSubset
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_erase, P, Finset.mem_powersetCard, Finset.subset_univ, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.boundaryLeadingSubsets_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizedDeterminant_eq_sin_add_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.boundaryErrorExpression_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_iff_sin_add_manuscriptError_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_exp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_endpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,14 @@
+MF21Restart/CirculantEmbedding.lean:34:2: error: unsolved goals
+case pos
+m N : ℕ
+hmN : m < N
+i j : Fin N
+hmNr : ↑m < ↑N
+hji : j ≤ i
+hji' : ↑j ≤ ↑i
+hplus : fourierCoeff m (↑↑i - ↑↑j + ↑N) = 0
+⊢ fourierCoeff m (↑↑i - ↑↑j + ↑0) + fourierCoeff m (↑↑i - ↑↑j + ↑0 - ↑N) =
+    fourierCoeff m (↑↑i - ↑↑j) + fourierCoeff m (↑↑i - ↑↑j - ↑N)
+'MF21Restart.fourierCirculant_apply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.fourierCirculant_isHermitian' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_eq_circulant_submatrix' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

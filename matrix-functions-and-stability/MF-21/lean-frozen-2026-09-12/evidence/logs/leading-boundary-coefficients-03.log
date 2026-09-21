@@ -1,0 +1,24 @@
+MF21Restart/LeadingBoundaryCoefficients.lean:49:10: error(lean.unknownIdentifier): Unknown constant `Finset.eq_empty_iff_forall_not_mem.mpr`
+MF21Restart/LeadingBoundaryCoefficients.lean:50:10: error: No goals to be solved
+MF21Restart/LeadingBoundaryCoefficients.lean:56:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+MF21Restart/LeadingBoundaryCoefficients.lean:193:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:218:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:240:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/LeadingBoundaryCoefficients.lean:264:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.leading_phaseProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZ' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZInv' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]

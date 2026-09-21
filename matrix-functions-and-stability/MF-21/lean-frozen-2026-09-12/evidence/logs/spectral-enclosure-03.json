@@ -1,0 +1,22 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/SpectralEnclosure.olean",
+    "MF21Restart/SpectralEnclosure.lean"
+  ],
+  "source_sha256": "897e91a69bf25da532691880d9d6832dc0167e43fae5b8d7271b74359762c4f0",
+  "started_epoch": 1789940980.604944,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "0fbef97c1de5049c162404dc87ddeb55e2b92f384979d3345e639ac5d5077d6f",
+  "finished_epoch": 1789940986.738816,
+  "output_sha256": "612f29fa51463bb45a64c7f2c51a44492133146c17be267295582c0af24ba4b4"
+}

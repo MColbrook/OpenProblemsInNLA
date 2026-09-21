@@ -1,0 +1,1 @@
+{"caption":"","data":"'MF21Restart.phase_window_margin' depends on axioms: [propext, Classical.choice, Quot.sound]","endPos":{"column":6,"line":31},"fileName":"/private/tmp/MF21NumericsCandidate.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":31},"severity":"information"}

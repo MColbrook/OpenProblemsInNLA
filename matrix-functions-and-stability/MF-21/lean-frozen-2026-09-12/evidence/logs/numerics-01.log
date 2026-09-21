@@ -1,0 +1,4 @@
+MF21Restart/Numerics.lean:17:2: error: LeanCert recognized a closed numerical comparison, but no strategy proved it within cost budget 6 (spent 2).
+
+Run `leancert?` on the same goal for the attempted strategies and detailed next steps.
+'MF21Restart.phase_window_margin' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

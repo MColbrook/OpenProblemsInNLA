@@ -1,0 +1,14 @@
+'MF21Restart.manuscriptResidual_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryMatrix_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_eq_normalizer_mul_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_hasDerivAt_of_residual_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscriptResidual_simple_zero_eigenspace_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscriptResidual_simple_zero_existsUnique_eigenvalue_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,17 @@
+MF21Restart/HermitianInterlacing.lean:48:10: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/HermitianInterlacing.lean:51:13: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.hermitianAscendingValue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hermitianAscendingValue_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hermitian_principal_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]

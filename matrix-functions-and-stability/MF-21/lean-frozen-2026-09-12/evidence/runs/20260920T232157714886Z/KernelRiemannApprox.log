@@ -1,0 +1,3 @@
+'MF21Restart.kernelParameters_mem_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_right_sum' depends on axioms: [propext, Classical.choice, Quot.sound]

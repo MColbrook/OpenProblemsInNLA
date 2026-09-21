@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/SmoothCoefficient.olean",
+    "MF21Restart/SmoothCoefficient.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/SmoothCoefficient.lean",
+  "source_sha256": "e6e21a777cb876fb84e63a32c679c066bdeaa0f64589444999cd190ffacb8dfc",
+  "started_epoch": 1789947854.71025,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "de249a64860b580379d86d42d7867c9ac506296df5956c82eb1da268f4f440b5",
+  "finished_epoch": 1789947861.725575,
+  "output_sha256": "5ab4b61f54874a98cd287f5b59a7e5f1d6368a6c01158edfb8a65eef222fe6f4"
+}

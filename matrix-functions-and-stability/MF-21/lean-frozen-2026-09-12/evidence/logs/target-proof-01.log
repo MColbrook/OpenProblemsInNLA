@@ -1,0 +1,3 @@
+'MF21Restart.implicitPhase_critical_bound_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscript_smooth_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.target_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

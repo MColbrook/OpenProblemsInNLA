@@ -1,0 +1,23 @@
+MF21Restart/ParametricTaylor.lean:30:12: error: Type mismatch: After simplification, term
+  hF
+ has type
+  @ContDiffAt ℝ DenselyNormedField.toNontriviallyNormedField (ℝ × ℝ) Prod.normedAddCommGroup Prod.normedSpace ℝ
+    Real.normedAddCommGroup RCLike.toInnerProductSpaceReal.toNormedSpace ⊤ F p
+but is expected to have type
+  @ContDiffAt ℝ DenselyNormedField.toNontriviallyNormedField (ℝ × ℝ) Prod.normedAddCommGroup Prod.normedSpace ℝ
+    Real.normedAddCommGroup RCLike.toInnerProductSpaceReal.toNormedSpace ⊤ (verticalIteratedDeriv F 0) p
+MF21Restart/ParametricTaylor.lean:42:4: error: Type mismatch: After simplification, term
+  he
+ has type
+  ContDiffAt ℝ ⊤ (fun x => (fderiv ℝ (fun t => iteratedDeriv k (fun h => F (x.1, h)) t) x.2) 1) p
+but is expected to have type
+  ContDiffAt ℝ ⊤ (verticalIteratedDeriv F (k + 1)) p
+MF21Restart/ParametricTaylor.lean:56:33: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MF21Restart.verticalIteratedDeriv_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.parametricTaylorCoefficient_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.parametricTaylor_uniform_remainder' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/LeadingBoundaryIndices.olean",
+    "MF21Restart/LeadingBoundaryIndices.lean"
+  ],
+  "source_sha256": "cccc3c1efd31bcd7a7bb3c9e7f63b6414f79537098ca4ee7885ce613df02833c",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "bf73e7fc8d8eb977b3b378631a2a6a0a2f58f4fa0907ffb57d0c126fa05d1ca5",
+  "started_epoch": 1789938114.661243,
+  "finished_epoch": 1789938128.971085,
+  "output_sha256": "091bf621576424c259b34887475310b3cba8034f1ebf07811f323cfd34c0ace0"
+}

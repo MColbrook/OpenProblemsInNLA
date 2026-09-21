@@ -1,0 +1,47 @@
+{
+  "upstream_commit": "3a24a73416f83c32b4d4a2ac09588524c6291650",
+  "comparisons": [
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean",
+      "upstream_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+      "local_sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+      "byte_identical": true,
+      "unified_diff": ""
+    },
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean",
+      "upstream_sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+      "local_sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+      "byte_identical": true,
+      "unified_diff": ""
+    },
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean",
+      "upstream_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+      "local_sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+      "byte_identical": true,
+      "unified_diff": ""
+    },
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean",
+      "upstream_sha256": "c6b20c3138f3ec57e96de603f796422479894f42bbd45d2ebafd0d8ec8558d04",
+      "local_sha256": "cad726aa56114f33a80a75bafba9fbe87d7a30e9da2dfff1d43efc482f40555c",
+      "byte_identical": false,
+      "unified_diff": "--- upstream/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean\n+++ local/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean\n@@ -20,10 +20,11 @@\n `#print axioms sum_aeval_roots_int = [propext, Classical.choice, Quot.sound]` (no `sorry`, no\n added axiom). Ported verbatim into the project namespace.\n -/\n--- This file is an Aristotle-ported proof verified under `import Mathlib`; we keep that\n--- broad import (rather than the project's usual targeted imports) to match the exact\n--- environment in which it was kernel-verified axiom-clean.\n-import Mathlib\n+-- Local MF-21 port: targeted imports replace upstream `import Mathlib`\n+-- to keep compilation within the project's 4096 MiB limit. Proof statements\n+-- and proofs are preserved; successful local verification is recorded separately.\n+import Mathlib.RingTheory.MvPolynomial.Symmetric.NewtonIdentities\n+import Mathlib.Tactic\n import LeanFormalizations.NumberTheory.Transcendence.PiLindemann\n import LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\n \n"
+    },
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean",
+      "upstream_sha256": "311a97ce3b745500f3f14ff879c2eaa42299c5ab57914bf1c86fe04a6cdf3165",
+      "local_sha256": "b9196dc2dc307cd7c9d32f703dab028c7bfecf2c036745c105b81581ba01503f",
+      "byte_identical": false,
+      "unified_diff": "--- upstream/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean\n+++ local/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean\n@@ -15,7 +15,12 @@\n lemmas (`ringHom_map_multiset_esymm`, `subsetSum_esymm_isSymmetric`, `esymm_theta_mem_range`,\n `aeval_mem_range`) coincide with the local roadmap independently developed this lap.\n -/\n-import Mathlib\n+-- Local MF-21 port: use the specific algebraic imports within 4096 MiB.\n+import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem\n+import Mathlib.Analysis.Complex.Polynomial.Basic\n+import Mathlib.FieldTheory.IsAlgClosed.Basic\n+import Mathlib.RingTheory.Polynomial.Vieta\n+import Mathlib.Tactic\n \n open scoped BigOperators Nat Classical\n open Polynomial\n@@ -30,7 +35,7 @@\n     f (s.esymm m) = (s.map f).esymm m := by\n   unfold Multiset.esymm\n   induction' s using Multiset.induction_on with a s ih generalizing m\n-  \u00b7 cases m <;> simp +decide\n+  \u00b7 cases m <;> simp +decide [Multiset.powersetCard_zero_right]\n   \u00b7 rcases m with ( _ | m ) <;> simp_all +decide [ Multiset.powersetCard_cons ]\n     simp +decide [ \u2190 ih, Multiset.sum_map_mul_left ]\n \n"
+    },
+    {
+      "file": "LeanFormalizations/NumberTheory/Transcendence/PiTranscendental.lean",
+      "upstream_sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+      "local_sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+      "byte_identical": true,
+      "unified_diff": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+MF21Restart/ActualKernelDiagonal.lean:33:8: warning: Unused tactic linter: `change finiteKernelIntegrand m 0 x x t = _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'MF21Restart.inverseKernel_diagonal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernel_diagonal_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.kernelTraceConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.kernelTraceConstant_rational' depends on axioms: [propext, Classical.choice, Quot.sound]

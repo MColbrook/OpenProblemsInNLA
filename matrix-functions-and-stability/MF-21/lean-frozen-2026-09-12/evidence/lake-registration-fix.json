@@ -1,0 +1,102 @@
+{
+  "utc": "2026-09-21T00:45:09.396951+00:00",
+  "old_lakefile_sha256": "72d7312e69cec52c85a3ad536f18d71d6e41603040a5717b298018374b8343f3",
+  "new_lakefile_sha256": "3237f2e50720c93b153a5179b89ebd9e30f84687193079c9d3628dee99931d31",
+  "old_file_archived": "evidence/runs/20260921T000301098707Z/lakefile.toml",
+  "change": "Register all six existing vendored modules for fresh Lake builds; mathematical source, toolchain, and dependency revisions unchanged.",
+  "local_failure_before": {
+    "command": [
+      "lake",
+      "--no-build",
+      "--no-cache",
+      "build",
+      "+LeanFormalizations.NumberTheory.Transcendence.ETranscendental"
+    ],
+    "exit_code": 1,
+    "output": "error: unknown module `LeanFormalizations.NumberTheory.Transcendence.ETranscendental`\n"
+  },
+  "actual_comparator_result": "No acceptance obtained; final check failed during Solution build.",
+  "linux_run": 35548010081,
+  "linux_conclusion": "failure",
+  "cancellation_attempt": "Run had already completed; cancellation was not performed.",
+  "linux_failure_scope": [
+    "Missing vendored MonicRootSums.olean due to library registration",
+    "Numerics.lean interpreter exceeded configured4096MiB before completion"
+  ],
+  "module_resolution_checks": [
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.ETranscendental"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [2748/2748] Building LeanFormalizations.NumberTheory.Transcendence.ETranscendental\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.ETranscendental\n",
+      "recognized": true
+    },
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.PiLindemann"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [2901/2902] Building LeanFormalizations.NumberTheory.Transcendence.ETranscendental\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.ETranscendental\n",
+      "recognized": true
+    },
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [2218/2218] Building LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\n",
+      "recognized": true
+    },
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.MonicRootSums"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [3404/3408] Building LeanFormalizations.NumberTheory.Transcendence.ETranscendental\nerror: target is out-of-date and needs to be rebuilt\n\u2716 [3407/3408] Building LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.ETranscendental\n- LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\n",
+      "recognized": true
+    },
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [3392/3392] Building LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm\n",
+      "recognized": true
+    },
+    {
+      "command": [
+        "lake",
+        "--no-build",
+        "--no-cache",
+        "build",
+        "+LeanFormalizations.NumberTheory.Transcendence.PiTranscendental"
+      ],
+      "exit_code": 3,
+      "output": "\u2716 [3404/3415] Building LeanFormalizations.NumberTheory.Transcendence.ETranscendental\nerror: target is out-of-date and needs to be rebuilt\n\u2716 [3407/3415] Building LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\nerror: target is out-of-date and needs to be rebuilt\n\u2716 [3414/3415] Building LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm\nerror: target is out-of-date and needs to be rebuilt\nSome required targets logged failures:\n- LeanFormalizations.NumberTheory.Transcendence.ETranscendental\n- LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann\n- LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm\n",
+      "recognized": true
+    }
+  ],
+  "module_resolution_scope": "All six targets recognized; --no-build forbids compiling missing outputs. Expected nonzero out-of-date results are not proof passes.",
+  "resolution_checked_utc": "2026-09-21T00:50:05.592182+00:00"
+}

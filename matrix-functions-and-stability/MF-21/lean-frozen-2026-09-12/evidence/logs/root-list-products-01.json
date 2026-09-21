@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/RootListProducts.olean",
+    "MF21Restart/RootListProducts.lean"
+  ],
+  "source_sha256": "331f649581125568a45313aea57d79342c4362ae1efb4d0dad1f5ff64f91c75e",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "05349e6b5325e3eb2bf90fc827c9662ceef83ab1b87d3df4a39f7408fd561873",
+  "started_epoch": 1789938175.7557929,
+  "finished_epoch": 1789938184.581512,
+  "output_sha256": "e577183afc4c5987c98eeb9c4eac2843c604d45683a8159b5e396273162f21ee"
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Unchanged PhaseWindowRoots diagnostic, local Lake-shaped output/profile flags; not Linux reproduction or Comparator",
+  "started_utc": "2026-09-21T01:35:34.383858+00:00",
+  "source_sha256": "7ababccde85698a360037679ab6d314ca6582f97a0cc09a3a320a38deb7a4590",
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart/MF21Restart/PhaseWindowRoots.lean",
+    "-o",
+    "/private/tmp/mf21-phase-memory-tests/original/PhaseWindowRoots.olean",
+    "-i",
+    "/private/tmp/mf21-phase-memory-tests/original/PhaseWindowRoots.ilean",
+    "-c",
+    "/private/tmp/mf21-phase-memory-tests/original/PhaseWindowRoots.c",
+    "--profile",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "finished_utc": "2026-09-21T01:35:55.376070+00:00",
+  "exit_code": 1,
+  "log_sha256": "8f54f2a1f508eefd48d293971c27bc0750334745a5c5d1856c0ad34c11085210"
+}

@@ -1,0 +1,10 @@
+'MF21Restart.stableRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.exteriorRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizedDeterminant_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_iff_manuscriptNormalizedDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

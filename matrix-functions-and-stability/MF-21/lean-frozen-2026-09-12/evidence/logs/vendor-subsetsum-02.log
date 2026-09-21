@@ -1,0 +1,10 @@
+LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean:38:2: error: unsolved goals
+case empty.succ
+R : Type u_1
+S : Type u_2
+inst✝¹ : CommSemiring R
+inst✝ : CommSemiring S
+f : R →+* S
+n✝ : ℕ
+⊢ f (Multiset.map prod (Multiset.powersetCard (n✝ + 1) 0)).sum =
+    (Multiset.map prod (Multiset.powersetCard (n✝ + 1) 0)).sum

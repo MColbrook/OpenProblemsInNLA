@@ -1,0 +1,9 @@
+'MF21Restart.complex_fourier_eq_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.bulk_cutoff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.implicit_phase_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_scaled_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.fixed_index_limit_of_implicit_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.critical_bound_implies_fixed_index_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.exists_log_sq_bulk_scale_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phase_window_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+MF21Restart.Target : Prop

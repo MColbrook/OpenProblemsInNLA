@@ -1,0 +1,6 @@
+{
+  "status": "interrupted_before_completion",
+  "terminal_exit_code": 130,
+  "reason": "Preparation script rejected a harmless theorem-name prefix collision before writing the extended Audit.lean. The compiler run was interrupted to finish that preparation. No successful integrated check is claimed for this run.",
+  "comparator": "not_run"
+}

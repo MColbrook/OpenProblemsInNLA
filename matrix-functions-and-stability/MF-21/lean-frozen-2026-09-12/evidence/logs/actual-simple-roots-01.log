@@ -1,0 +1,37 @@
+MF21Restart/ActualSimpleRoots.lean:33:71: error: unexpected token 'set_option'; expected 'lemma'
+MF21Restart/ActualSimpleRoots.lean:36:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  NormedAddCommGroup (Matrix (Fin (2 * m)) (Fin (2 * m)) ℂ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+MF21Restart/ActualSimpleRoots.lean:65:43: error: Application type mismatch: The argument
+  manuscriptResidual m n hm
+has type
+  ℝ → ℝ
+but is expected to have type
+  ℝ → ℂ
+in the application
+  deriv (manuscriptResidual m n hm)
+MF21Restart/ActualSimpleRoots.lean:85:7: error: failed to infer `have` declaration type
+MF21Restart/ActualSimpleRoots.lean:84:79: error: unsolved goals
+m n : ℕ
+hm : 2 ≤ m
+θ : ℝ
+hθ : 0 < θ
+hθπ : θ < Real.pi
+hzero : manuscriptResidual m n hm θ = 0
+hsimple : deriv (manuscriptResidual m n hm) θ ≠ 0
+⊢ Module.finrank ℂ ↥(Module.End.eigenspace ((toeplitz m n).map Complex.ofReal).mulVecLin ↑(symbol m θ)) = 1
+'MF21Restart.manuscriptResidual_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryMatrix_contDiff' depends on axioms: [sorryAx]
+'MF21Restart.manuscriptBoundaryDeterminant_eq_normalizer_mul_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+MF21Restart/ActualSimpleRoots.lean:115:14: error(lean.unknownIdentifier): Unknown constant `manuscriptBoundaryDeterminant_hasDerivAt_of_residual_zero`
+'MF21Restart.manuscriptResidual_simple_zero_eigenspace_finrank' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscriptResidual_simple_zero_existsUnique_eigenvalue_index' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

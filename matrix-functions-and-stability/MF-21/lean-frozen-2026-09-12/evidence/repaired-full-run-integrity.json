@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-21T01:14:17.640292+00:00",
+  "scope": "Coordinator read-only integrity and full axiom-log comparison; not another compiler or Comparator run",
+  "record": "evidence/runs/20260921T005811719722Z/record.json",
+  "record_sha256": "497c98bffe6628a5adef5653adfb73cf25e04fd27f7306176aea9e34260842c5",
+  "started_utc": "2026-09-21T00:58:11.719722+00:00",
+  "finished_utc": "2026-09-21T01:13:32.503384+00:00",
+  "source_count": 125,
+  "successful_invocations": 125,
+  "axiom_reports": 386,
+  "all_source_pin_runner_manuscript_log_output_hashes_match": true,
+  "all_permitted_standard_axioms": true,
+  "local_compilation_passed": true,
+  "linux_comparator_acceptance": false
+}

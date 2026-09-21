@@ -1,0 +1,34 @@
+MF21Restart/DiagonalInterlacing.lean:25:4: error: `dsimp` made no progress
+MF21Restart/DiagonalInterlacing.lean:29:4: error: `dsimp` made no progress
+MF21Restart/DiagonalInterlacing.lean:35:8: warning: declaration uses `sorry`
+MF21Restart/DiagonalInterlacing.lean:40:8: warning: declaration uses `sorry`
+MF21Restart/DiagonalInterlacing.lean:59:19: error: unsolved goals
+n N : ℕ
+hnN : n ≤ N
+a : Fin n → ℝ
+b : Fin N → ℝ
+ha : Monotone a
+hb : Monotone b
+L : (Fin n → ℝ) →ₗ[ℝ] Fin N → ℝ
+hnorm : ∀ (x : Fin n → ℝ), ∑ i, L x i ^ 2 = ∑ i, x i ^ 2
+hform : ∀ (x : Fin n → ℝ), ∑ i, b i * L x i ^ 2 = ∑ i, a i * x i ^ 2
+j : Fin n
+hj : ↑j < n
+E : (Fin (↑j + 1) → ℝ) →ₗ[ℝ] Fin n → ℝ := initialCoordinateEmbedding (↑j + 1) n ⋯
+c : ℝ
+v : Fin (↑j + 1) → ℝ
+i : Fin ↑j
+⊢ c • L (E v) ⟨↑i, ⋯⟩ = (RingHom.id ℝ) c • L (E v) ⟨↑i, ⋯⟩
+MF21Restart/DiagonalInterlacing.lean:142:36: error: Type mismatch
+  Equiv.sum_comp Fin.revPerm ?m.445
+has type
+  ∑ i, ?m.445 (Fin.revPerm i) = ∑ i, ?m.445 i
+but is expected to have type
+  ∑ i, x i.rev ^ 2 = ∑ i, x i ^ 2
+MF21Restart/DiagonalInterlacing.lean:151:8: error: Type mismatch
+  Equiv.sum_comp Fin.revPerm ?m.701
+has type
+  ∑ i, ?m.701 (Fin.revPerm i) = ∑ i, ?m.701 i
+but is expected to have type
+  ∑ x_1, b x_1.rev * L (fun k => x k.rev) x_1.rev ^ 2 = ∑ i, b i * L (fun k => x k.rev) i ^ 2
+'MF21Restart.diagonal_isometry_interlacing' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

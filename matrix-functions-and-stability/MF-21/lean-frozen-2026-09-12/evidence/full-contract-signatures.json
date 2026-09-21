@@ -1,0 +1,18 @@
+{
+  "scope": "Textual declaration-signature equality only; not Lean elaboration, Comparator, kernel replay, or sandbox verification",
+  "matched_names": [
+    "MF21Restart.Contracts.complex_fourier_eq_cosine",
+    "MF21Restart.Contracts.bulk_cutoff_pos",
+    "MF21Restart.Contracts.critical_bound_implies_fixed_index_limit",
+    "MF21Restart.Contracts.exists_log_sq_bulk_scale_gain",
+    "MF21Restart.Contracts.phase_window_margin",
+    "MF21Restart.Contracts.manuscript_smooth_target",
+    "MF21Restart.Contracts.target_proved"
+  ],
+  "source_hashes": {
+    "Challenge.lean": "9bb51fae68bab7a4ba5ff8fe7c3b815e361f31c041897ee04596dfd0215989b2",
+    "Solution.lean": "97dffa0a35b7067b784763adcdf01c21f8da7d005a69c32662dbe9c84e080659",
+    "comparator.json": "dabddad03ffd9e58d22f1712583ee686d166ede59ebe073798fddd57a928c3ab",
+    "MF21Restart/Definitions.lean": "35a74047a81a9b7526e9bf039880ca8f07ae33314e2b5b960ab254e02fca4b51"
+  }
+}

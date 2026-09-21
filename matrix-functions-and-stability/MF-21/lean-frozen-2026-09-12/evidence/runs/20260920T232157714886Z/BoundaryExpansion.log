@@ -1,0 +1,4 @@
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]

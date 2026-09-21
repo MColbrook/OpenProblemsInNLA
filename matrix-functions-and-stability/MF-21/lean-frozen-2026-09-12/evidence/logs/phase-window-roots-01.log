@@ -1,0 +1,39 @@
+MF21Restart/PhaseWindowRoots.lean:43:15: warning: This simp argument is unused:
+  scaledPhaseResidual
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Real.cos_sub_nat_mul_pi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/PhaseWindowRoots.lean:42:62: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseWindowRoots.lean:43:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseWindowRoots.lean:219:2: error: Type mismatch: After simplification, term
+  phase_window_unique_zero (manuscriptPhaseFn m n) (manuscriptError m n hm) (↑n + 2) k
+    (Right.add_pos_of_nonneg_of_pos (Nat.cast_nonneg' n)
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2))))
+    hF hE (fun θ hθ => (hN n hnN θ hθ).left) hleft hright hsmall
+ has type
+  And
+    (∃! θ,
+      θ ∈ Set.Ioo 0 Real.pi ∧
+        |manuscriptPhaseFn m n θ - ↑k * Real.pi| ≤ Real.pi / 4 ∧
+          Real.sin (manuscriptPhaseFn m n θ) + manuscriptError m n hm θ = 0)
+    (∀ θ ∈ Set.Ioo 0 Real.pi,
+      |manuscriptPhaseFn m n θ - ↑k * Real.pi| ≤ Real.pi / 4 →
+        deriv (fun t => Real.sin (manuscriptPhaseFn m n t) + manuscriptError m n hm t) θ ≠ 0)
+but is expected to have type
+  And
+    (∃! θ,
+      θ ∈ Set.Ioo 0 Real.pi ∧
+        |manuscriptPhaseFn m n θ - ↑k * Real.pi| ≤ Real.pi / 4 ∧
+          Real.sin (manuscriptPhaseFn m n θ) + manuscriptError m n hm θ = 0)
+    (∀ θ ∈ Set.Ioo 0 Real.pi,
+      |manuscriptPhaseFn m n θ - ↑k * Real.pi| ≤ Real.pi / 4 → deriv (manuscriptResidual m n hm) θ ≠ 0)
+'MF21Restart.manuscriptResidual_unique_root_in_phase_windows' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

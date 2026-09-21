@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-09-21T00:53:00.386476+00:00",
+  "run_id": 35548010081,
+  "run_url": "https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35548010081",
+  "proof_commit": "e6f038f48b3039df030237424c05be745e33ce24",
+  "github_conclusion": "failure",
+  "artifact_id": 10617142788,
+  "artifact_archive_bytes": 22939,
+  "scope": "Actual failed initial attempt. Expected negative controls precede two Solution-build failures: vendored module registration, and Numerics interpreter memory limit. No final kernel/Comparator acceptance. Cancellation was attempted only after completion and did not occur.",
+  "files_sha256": {
+    "linux-attempt-01/bootstrap/comparator-build.log": "bb9b06f1aa074ccab91a626321553703ddd5f08a27ff405716037b0d37a2e592",
+    "linux-attempt-01/bootstrap/landrun-build.log": "eeb7491005d3f9ec4ebb970ed1262a7fa322e7f0d47905509f49562d75a0ed5d",
+    "linux-attempt-01/bootstrap/elan.log": "b9711b498167d8e7f8fd98d6ec303edfe75693784469d39bb7ec47d487c1420f",
+    "linux-attempt-01/verify-20260921T003354Z-4172/mathlib-cache.log": "f73f8f9465df12e3e687c01b8756548c31facf8db46f62cdf0b32e9440e1fc1f",
+    "linux-attempt-01/verify-20260921T003354Z-4172/dependencies.log": "740fcb700c777ae28e11ddf7c40e50a87ba79bbe97b1a1e1d21a314fea802b4d",
+    "linux-attempt-01/verify-20260921T003354Z-4172/comparator-controls.log": "45153648f334135b6e61ac800c8d14ad62cb62559087388939741ed0c8d2a369",
+    "linux-attempt-01/verify-20260921T003354Z-4172/negative-native.log": "940fd146d23c143322665e1db2c1c606a191d5fe3ba2b17279daa388bef0875d",
+    "linux-attempt-01/verify-20260921T003354Z-4172/sandbox.log": "b501242553ef57d8ec0808c66ebaaf32f2042ec0b9a4532565e10e0c7af54944",
+    "linux-attempt-01/verify-20260921T003354Z-4172/comparator.log": "f890c287edc9f99a7c7cc777e15b1c92d3c7a1ee51fd56919d90a501ca6918b9",
+    "linux-attempt-01/verify-20260921T003354Z-4172/negative-sorry.log": "dbea2ca4b09e98e5c0d9469f03ad2905b1ebac615b63c703bedfc555277d2bef",
+    "linux-attempt-01/verify-20260921T003354Z-4172/kernel-controls.log": "eb8c0e9e7121025d13e1916452e8c4d7c368f1a39769f8b151e52bfeacaedd57",
+    "linux-attempt-01/verify-20260921T003354Z-4172/user-service.log": "0aac4e667616cc36615953b752acdf97ce1cc7871abeca7aec8f8c7385f94e33"
+  }
+}

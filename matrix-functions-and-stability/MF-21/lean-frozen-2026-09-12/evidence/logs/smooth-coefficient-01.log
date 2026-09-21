@@ -1,0 +1,4 @@
+MF21Restart/SmoothCoefficient.lean:14:51: error: expected token
+MF21Restart/SmoothCoefficient.lean:46:23: error: expected token
+MF21Restart/SmoothCoefficient.lean:52:14: error(lean.unknownIdentifier): Unknown constant `verticalIteratedDeriv_contDiffAt_infty`
+MF21Restart/SmoothCoefficient.lean:53:14: error(lean.unknownIdentifier): Unknown constant `parametricTaylorCoefficient_contDiffAt_infty`

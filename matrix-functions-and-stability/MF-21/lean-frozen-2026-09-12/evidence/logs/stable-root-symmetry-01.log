@@ -1,0 +1,21 @@
+MF21Restart/StableRootSymmetry.lean:62:66: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (fun ell => stableRootCurve (rootKappa m ↑ell) theta) a
+in the target expression
+  2 - stableRootCurve (rootKappa m ↑a) theta - (stableRootCurve (rootKappa m ↑a) theta)⁻¹ =
+    2 - stableRootCurve (rootKappa m ↑b) theta - (stableRootCurve (rootKappa m ↑b) theta)⁻¹
+
+m : ℕ
+theta : ℝ
+htheta : 0 < theta
+htheta_pi : theta ≤ Real.pi
+a b : { ell // 1 ≤ ell ∧ ell < m }
+hab : (fun ell => stableRootCurve (rootKappa m ↑ell) theta) a = (fun ell => stableRootCurve (rootKappa m ↑ell) theta) b
+hs : 0 < Real.sin (theta / 2)
+hcos : Real.cos theta = 1 - 2 * Real.sin (theta / 2) ^ 2
+hgpos : 0 < 2 - 2 * Real.cos theta
+hg : ↑(2 - 2 * Real.cos theta) ≠ 0
+⊢ 2 - stableRootCurve (rootKappa m ↑a) theta - (stableRootCurve (rootKappa m ↑a) theta)⁻¹ =
+    2 - stableRootCurve (rootKappa m ↑b) theta - (stableRootCurve (rootKappa m ↑b) theta)⁻¹
+'MF21Restart.stableRootCurve_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_rootKappa_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_rootKappa_injective' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

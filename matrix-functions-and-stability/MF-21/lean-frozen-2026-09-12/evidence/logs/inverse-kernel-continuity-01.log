@@ -1,0 +1,32 @@
+MF21Restart/InverseKernelContinuity.lean:37:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  max t (1 / 4)
+in the target expression
+  (fun x_1 => finiteKernelIntegrand m 0 x y (max x_1 (1 / 4))) t = finiteKernelIntegrand m 0 x y t
+
+m : ℕ
+x y : ℝ
+hxy : 1 ≤ x + y
+hmax : 1 / 4 ≤ max x y
+t : ℝ
+ht : t ∈ Set.uIcc (max x y) 1
+htq : 1 / 4 ≤ t
+⊢ (fun x_1 => finiteKernelIntegrand m 0 x y (max x_1 (1 / 4))) t = finiteKernelIntegrand m 0 x y t
+MF21Restart/InverseKernelContinuity.lean:85:32: error: linarith failed to find a contradiction
+case h1
+m : ℕ
+hc : Continuous fun p => inverseKernelTopExtension m p.1 p.2
+hr : Continuous fun p => inverseKernelTopExtension m (1 - p.1) (1 - p.2)
+p : ℝ × ℝ
+hp : 1 = (Prod.fst + Prod.snd) p
+a✝ : 1 - p.1 < p.2
+⊢ False
+failed
+'MF21Restart.finiteKernelIntegrand_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernelTopExtension_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernelTopExtension_eq_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.continuous_inverseKernelTopExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernel_eq_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.continuous_inverseKernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernel_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernel_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseKernel_uniformContinuousOn' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

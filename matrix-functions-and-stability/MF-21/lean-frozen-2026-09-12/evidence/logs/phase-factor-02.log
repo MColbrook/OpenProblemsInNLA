@@ -1,0 +1,46 @@
+MF21Restart/PhaseFactor.lean:27:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseFactor.lean:27:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseFactor.lean:71:5: error: typeclass instance problem is stuck
+  IsScalarTower ℝ ?m.466 ℂ
+
+Note: Lean will not try to resolve this typeclass instance problem because the second, fourth, and fifth type arguments to `IsScalarTower` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+MF21Restart/PhaseFactor.lean:95:2: error: linarith failed to find a contradiction
+case inr
+κ : ℂ
+hκ : 0 < κ.re
+θ : ℝ
+hθ : θ ∈ Set.Icc 0 Real.pi
+hpos : 0 < θ
+hs : 0 < Real.sin (θ / 2)
+he : ‖Complex.exp (-↑θ * Complex.I)‖ = 1
+hr : ‖stableRootCurve κ θ‖ < 1
+hid :
+  1 -
+      ((stableRootCurve κ θ).re * (Complex.exp (-(↑θ * Complex.I))).re -
+        (stableRootCurve κ θ).im * (Complex.exp (-(↑θ * Complex.I))).im) =
+    2 * (Complex.sin (↑θ / 2)).re * (phaseNormalized κ θ).re - 2 * (Complex.sin (↑θ / 2)).im * (phaseNormalized κ θ).im
+hprod :
+  (stableRootCurve κ θ).re * (Complex.exp (-↑θ * Complex.I)).re -
+      (stableRootCurve κ θ).im * (Complex.exp (-↑θ * Complex.I)).im <
+    1
+a✝ : (phaseNormalized κ θ).re ≤ 0
+⊢ False
+failed
+MF21Restart/PhaseFactor.lean:115:2: error: Type mismatch: After simplification, term
+  ContDiffAt.comp θ (ContDiff.contDiffAt (ContinuousLinearMap.contDiff Complex.imCLM)) hlog
+ has type
+  ContDiffAt ℝ ⊤ (fun x => Complex.imCLM (Complex.log (phaseNormalized κ x))) θ
+but is expected to have type
+  ContDiffAt ℝ ⊤ (individualPhase κ) θ
+'MF21Restart.phase_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_contDiff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_re_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

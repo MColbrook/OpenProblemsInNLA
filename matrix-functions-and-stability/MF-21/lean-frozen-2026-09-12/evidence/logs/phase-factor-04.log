@@ -1,0 +1,12 @@
+MF21Restart/PhaseFactor.lean:27:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/PhaseFactor.lean:27:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.phase_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.phaseNormalized_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,33 @@
+MF21Restart/BoundaryNormalizer.lean:77:4: error: Type mismatch: After simplification, term
+  ContDiff.comp (ContinuousLinearMap.contDiff Complex.ofRealCLM)
+    (ContDiff.add (ContDiff.mul hr hr) (ContDiff.mul hi hi))
+ has type
+  @ContDiff ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.normedAddCommGroup
+    RCLike.toInnerProductSpaceReal.toNormedSpace ℂ Complex.instNormedAddCommGroup
+    instInnerProductSpaceRealComplex.toNormedSpace ⊤
+    (⇑Complex.ofRealCLM ∘ fun x =>
+      (manuscriptPhaseProduct m x).re * (manuscriptPhaseProduct m x).re +
+        (manuscriptPhaseProduct m x).im * (manuscriptPhaseProduct m x).im)
+but is expected to have type
+  @ContDiff ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.normedAddCommGroup
+    RCLike.toInnerProductSpaceReal.toNormedSpace ℂ Complex.instNormedAddCommGroup
+    instInnerProductSpaceRealComplex.toNormedSpace ⊤ fun θ =>
+    ↑((manuscriptPhaseProduct m θ).re * (manuscriptPhaseProduct m θ).re +
+        (manuscriptPhaseProduct m θ).im * (manuscriptPhaseProduct m θ).im)
+MF21Restart/BoundaryNormalizer.lean:114:38: error(lean.unknownIdentifier): Unknown identifier `neg_div_neg`
+MF21Restart/BoundaryNormalizer.lean:110:96: error: unsolved goals
+m n : ℕ
+hm : 2 ≤ m
+θ : ℝ
+⊢ -manuscriptBoundaryDeterminant m n θ / -manuscriptNormalizer m n θ =
+    manuscriptBoundaryDeterminant m n θ / manuscriptNormalizer m n θ
+'MF21Restart.stableRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.exteriorRootList_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_contDiff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizer_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizedDeterminant_real' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_iff_manuscriptNormalizedDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

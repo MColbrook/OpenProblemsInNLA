@@ -1,0 +1,7 @@
+MF21Restart/ExtensionIndependence.lean:64:35: error: numerals are data in Lean, but the expected type is a proposition
+  ContinuousAt (Prod.mk x) 0 : Prop
+MF21Restart/ExtensionIndependence.lean:91:2: error: No goals to be solved
+'MF21Restart.implicitPhaseCoefficient_extension_independent' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

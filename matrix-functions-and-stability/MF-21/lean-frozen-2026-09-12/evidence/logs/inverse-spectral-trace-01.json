@@ -1,0 +1,23 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/InverseSpectralTrace.olean",
+    "MF21Restart/InverseSpectralTrace.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/InverseSpectralTrace.lean",
+  "source_sha256": "428642c5bba9d0c90312dcd86dae0b4ae408caf793d3b7ead7c63d12fd5dd135",
+  "started_epoch": 1789947442.437094,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "source_unchanged": true,
+  "log_sha256": "7c641d97f5574b05e990fc89886e151d261c2018e84f416c3dbada8547b5fd3f",
+  "finished_epoch": 1789947448.525672
+}

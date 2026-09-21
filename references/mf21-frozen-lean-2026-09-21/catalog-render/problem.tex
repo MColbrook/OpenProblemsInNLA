@@ -1,0 +1,324 @@
+% Standalone problem document, generated from the adjacent README.md.
+% Compile with XeLaTeX. Mathematical content is maintained in Markdown.
+\documentclass[11pt,a4paper]{article}
+\usepackage[fontsize=10.5pt]{scrextend}
+\usepackage[margin=22mm,headheight=15pt,headsep=9mm,footskip=11mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont{texgyrecursor}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic,Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\usepackage{unicode-math}
+\setmathfont{texgyrepagella-math.otf}
+\usepackage{xcolor,microtype,enumitem,needspace,fancyhdr}
+\usepackage{bookmark}
+\definecolor{ink}{HTML}{17344B}
+\definecolor{accent}{HTML}{197D80}
+\definecolor{muted}{HTML}{596773}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdftitle={MF-21 - The
+uniform expansion threshold for Toeplitz symbols with higher-order
+zeros},pdfauthor={Open Problems in Numerical Linear Algebra}}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\linespread{1.04}
+\setlength{\emergencystretch}{3em}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\allowdisplaybreaks[1]
+\setlist{nosep,leftmargin=1.5em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize\color{muted}OPEN PROBLEMS IN NUMERICAL LINEAR ALGEBRA}
+\fancyhead[R]{\sffamily\bfseries\footnotesize\color{accent}MF-21}
+\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Verification check: 2026-09-20}}
+\fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule height \headrulewidth\hfill}}
+\makeatletter
+\renewcommand{\section}{\Needspace{5\baselineskip}\@startsection{section}{1}{0pt}{12pt plus 2pt minus 2pt}{4pt}{\sffamily\bfseries\large\color{ink}}}
+\renewcommand{\subsection}{\Needspace{4\baselineskip}\@startsection{subsection}{2}{0pt}{9pt plus 1pt minus 1pt}{3pt}{\sffamily\bfseries\normalsize\color{ink}}}
+\makeatother
+\setcounter{secnumdepth}{0}
+\begin{document}
+{\sffamily\small\color{muted}Matrix functions and stability\par}
+\vspace{3pt}
+{\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\sffamily\bfseries\fontsize{21}{24}\selectfont\color{ink}The
+uniform expansion threshold for Toeplitz symbols with higher-order
+zeros\par}
+\vspace{7pt}
+{\sffamily\small\textbf{Difficulty:} challenging\quad\textbf{Importance:} interesting
+to specialist\par}
+{\sffamily\small\bfseries\color{accent}Status: Lean verified\par}
+\vspace{4pt}
+{\color{accent}\hrule height 0.8pt}
+\vspace{6pt}
+\textbf{Rating rationale:} Matching bulk asymptotics with extreme
+eigenvalues at the exact breakdown order is challenging; the detailed
+expansion threshold is mainly important to structured spectral
+specialists.
+
+\hypertarget{lean-proof-and-verification-evidence-20-september-2026}{%
+\subsection{Lean proof and verification evidence --- 20 September
+2026}\label{lean-proof-and-verification-evidence-20-september-2026}}
+
+The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/README.md}{complete
+formalization} proves all three original assertions for every \(m\ge3\),
+the obstruction for every continuous coefficient family, and the revised
+proof's smooth common family with matching upper and finite-head lower
+error bounds. The exact Fourier-integral matrix correspondence and
+coefficient uniqueness are separately exported. No analytic or
+transcendence hypothesis remains unproved in these results.
+
+The immutable local proof commit
+\textit{e378ec4679f9119aacf79a0fe30b80493a61ec5b} passed the actual
+non-root Linux Comparator, Lean default-kernel replay, standard-axiom
+checks, and real sandbox/rejection controls.
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/verification/linux-2026-09-20/README.md}{Checked
+input snapshot and raw evidence} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/Solution.lean}{Five
+proved exports} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/NUMERICAL_TARGETS.md}{Exact
+statement correspondence}.
+
+Separate nonimplementing AI agents approved the
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-fidelity.md}{formal
+statement and source correspondence} and
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-proof.md}{proof
+and runtime evidence}; an additional
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/lean/reviews/independent-cross-review.md}{scoped
+cross-review} records authorship exclusions. The formalization and
+September proof revisions were produced by OpenAI Codex AI agents.
+George Stepaniants retains original manuscript authorship, and the
+conjecture and simple-loop method retain the cited authors' attribution.
+No external human peer review or source-author endorsement is claimed.
+Verification was completed locally before the authorized publication in
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/pull/309}{PR
+\#309}.
+
+\hypertarget{independent-formalization-of-the-frozen-manuscript}{%
+\subsection{Independent formalization of the frozen
+manuscript}\label{independent-formalization-of-the-frozen-manuscript}}
+
+An
+\href{https://github.com/sgstepaniants/OpenProblemsInNLA/tree/bd3014e699f277500beabda57cfeb1f57925ab78/matrix-functions-and-stability/MF-21/lean-frozen-2026-09-12}{additional
+Lean formalization} follows the unchanged manuscript from commit
+\textit{eb37bc17a462177f57efa270e9a9f9b17e9d88e2}. Its
+\textit{MF21Restart.Contracts.target\_proved} and
+\textit{MF21Restart.Contracts.manuscript\_smooth\_target} prove the
+original three-part target with one smooth coefficient family. The
+development retains the original boundary determinant, phase indexing,
+inverse-kernel limit, and trace contradiction. It supplements the
+existing formalization and does not add another distinct solved problem.
+
+The serial local build checked all 125 source files and 386 axiom
+reports, using only the permitted standard foundational axioms. Lean
+4.33.1, Mathlib and kernel-mode LeanCert are pinned in the
+\href{https://github.com/sgstepaniants/OpenProblemsInNLA/tree/bd3014e699f277500beabda57cfeb1f57925ab78/matrix-functions-and-stability/MF-21/lean-frozen-2026-09-12}{proof
+project}; it includes exact statements, component reviews and two
+additional nonimplementing final referees, and the one-process
+reproduction command \textit{python3 verify\_local.py}. The
+\href{https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35550709155}{separate
+Linux run} and
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/references/mf21-frozen-lean-2026-09-21/README.md}{retained
+publication evidence} identify the exact checked revision and the actual
+Comparator, kernel-replay and sandbox results. George Stepaniants is
+credited with his Department of Computing and Mathematical Sciences,
+California Institute of Technology affiliation, with substantial AI
+assistance disclosed.
+
+\hypertarget{proof-clarification---19-september-2026}{%
+\subsection{Proof clarification - 19 September
+2026}\label{proof-clarification---19-september-2026}}
+
+The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/solution.md}{revised
+proof} explicitly proves uniqueness of the continuous coefficient
+functions on the logarithmic-squared bulk grid (Lemma 5, following
+Proposition 4.2 of Barrera--Böttcher--Grudsky--Maximenko). This
+identifies any hypothetical all-index expansion with the constructed
+one. Equation (25) supplies only an upper bound; the obstruction uses
+the separate inverse-trace contradiction in equations (26)--(33).
+Corollary 6 now gives a matching lower bound of order \(h^{2m}\) for the
+maximum error over a fixed finite set of low indices.
+
+The revision also credits the simple-loop method explicitly and adds
+Bogoya--Grudsky (2025). The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/reviews/2026-09-19-mf21/README.md}{dated
+audit} records the mathematical checks, source comparison, and
+coefficient-uniqueness repair. The
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/reviews/2026-09-19-mf21/lean-audit.md}{initial
+Lean audit} records the earlier partial development; it is superseded by
+the completed verification above. The original problem, permanent ID,
+grid, cutoff, and quantifiers below are unchanged.
+
+\hypertarget{affirmative-resolution---12-september-2026-utc}{%
+\subsection{Affirmative resolution - 12 September 2026
+(UTC)}\label{affirmative-resolution---12-september-2026-utc}}
+
+\textbf{Author:} George Stepaniants, Department of Computing and
+Mathematical Sciences, California Institute of Technology, Pasadena,
+California, USA.
+
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/solution.md}{Theorem
+1 and Sections 2-5 of the complete proof} establish all three assertions
+below for every integer \(m\ge3\), using the same smooth coefficient
+functions with \(d_0=g_m\). The expansion is uniform over every
+eigenvalue through order \(2m-1\), extends to order \(2m\) above the
+stated logarithmic-squared index cutoff, and fails to extend uniformly
+to all indices at that order. The matrix, grid normalization, parameter
+quantifiers and cutoff are unchanged.
+
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/solution.pdf}{Proof
+PDF} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/matrix-functions-and-stability/MF-21/solution.tex}{Standalone
+proof TeX} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/references/stepaniants-mf21-2026-09-12/independent-review.md}{Independent
+mathematical review} ·
+\href{https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/references/stepaniants-mf21-2026-09-12/README.md}{Submission
+and public-source audit}.
+
+The original proof passed a separate Codex-agent informal audit. It
+derived the bulk expansion from an exact boundary determinant and the
+final obstruction from a classical uniform inverse-kernel limit and a
+trace identity; the revision above supplies a direct finite-matrix trace
+calculation. Barrera, Böttcher, Grudsky, Maximenko and the cited later
+authors retain credit for the conjecture and prior cases; Böttcher-Widom
+and their cited predecessors retain credit for the inverse-kernel
+theorem. Substantial AI assistance is disclosed. That initial audit was
+informal; the completed Lean verification is documented above. External
+human peer review is not claimed. The original statement, permanent ID,
+references and dated history are retained below; the ratings are
+historical.
+
+\hypertarget{statement}{%
+\subsection{Statement}\label{statement}}
+
+For each integer \(m\ge3\), let
+
+\[g_m(\theta)=\bigl(2\sin(\theta/2)\bigr)^{2m},\qquad
+\widehat g_{m,k}=\frac1{2\pi}\int_{-\pi}^{\pi}g_m(\theta)e^{-ik\theta}\,d\theta.\]
+
+Let \(T_n(g_m)=(\widehat g_{m,j-k})_{j,k=1}^n\), with eigenvalues
+\(\lambda_{n,1}\le\cdots\le\lambda_{n,n}\) counted with multiplicity.
+For real continuous functions \(d_0,\ldots,d_{2m}\) on \([0,\pi]\),
+independent of \(n,j\), write
+
+\[R_{p,n,j}=\lambda_{n,j}-\sum_{k=0}^p
+\frac{d_k(j\pi/(n+2))}{(n+2)^k}.\]
+
+\textbf{Conjecture 8.4 of Barrera--Böttcher--Grudsky--Maximenko.} Such
+coefficient functions exist, with \(d_0=g_m\), for which all three
+assertions hold:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  For every integer \(0\le p\le2m-1\), there are constants \(D_p>0\) and
+  \(N_p\in\mathbb N\) such that
+
+  \[|R_{p,n,j}|\le D_p(n+2)^{-p-1}\qquad(n\ge N_p,\ 1\le j\le n).\]
+\item
+  There are constants \(D_{2m}>0\) and \(N_{2m}\in\mathbb N\) such that
+
+  \[|R_{2m,n,j}|\le D_{2m}(n+2)^{-2m-1}\]
+
+  whenever \(n\ge N_{2m}\) and \(\lceil(\log(n+2))^2\rceil\le j\le n\).
+\item
+  No constants \(D>0,N\in\mathbb N\) make the bound
+  \(|R_{2m,n,j}|\le D(n+2)^{-2m-1}\) valid for every \(n\ge N\) and
+  every \(1\le j\le n\).
+\end{enumerate}
+
+All constants may depend on \(m\) and the expansion order; \(\log\)
+denotes the natural logarithm. The same coefficient functions are used
+throughout. The continuity and existence quantifiers make explicit the
+regular-expansion convention of the source's Theorem 1.2 and §8; these
+are not matrix-size-dependent fitted coefficients.
+
+\hypertarget{numerical-significance}{%
+\subsection{Numerical significance}\label{numerical-significance}}
+
+Regular eigenvalue expansions support accurate computation without
+forming large Toeplitz matrices. This conjecture identifies exactly
+where extreme eigenvalues obstruct a uniform expansion for these
+polynomial symbols. It retains all three parts as one problem.
+
+\hypertarget{references-and-status-check}{%
+\subsection{References and status
+check}\label{references-and-status-check}}
+
+\begin{itemize}
+\tightlist
+\item
+  M. Barrera, A. Böttcher, S. M. Grudsky and E. A. Maximenko,
+  \emph{Eigenvalues of even very nice Toeplitz matrices can be
+  unexpectedly erratic}, Oper. Theory Adv. Appl. \textbf{268} (2018),
+  51--77, \href{https://doi.org/10.1007/978-3-319-75996-8_2}{DOI};
+  \href{https://arxiv.org/abs/1710.05243}{author preprint}, Conjecture
+  8.4, p.~26, equation (8.4); Theorem 1.2 supplies the proved \(m=2\)
+  analogue.
+\item
+  M. Barrera, S. Grudsky, V. Stukopin and I. Voronin, \emph{Asymptotics
+  of the eigenvalues of seven-diagonal Toeplitz matrices of a special
+  form}, Adv. Oper. Theory \textbf{9} (2024), 79,
+  \href{https://doi.org/10.1007/s43036-024-00374-1}{DOI};
+  \href{https://arxiv.org/abs/2111.07196}{preprint}, Theorems 2.3--2.6.
+  This studies the sixth-order-zero case with more elaborate formulas.
+\item
+  M. Bogoya and S. Grudsky, \emph{Eigenvalues of non-Hermitian banded
+  Toeplitz matrices approaching simple points of the limiting set},
+  Comput. Math. Math. Phys. \textbf{65} (2025), 1453--1471,
+  \href{https://doi.org/10.1134/S0965542525700745}{DOI};
+  \href{https://www.math.cinvestav.mx/~grudsky/Papers/162.pdf}{author-hosted
+  paper}, Theorems 2.1--2.2. This gives local phase equations and
+  expansions near nondegenerate simple points; the revised proof records
+  the methodological connection without a novelty claim.
+\item
+  A. Böttcher, \emph{Ten years with Sergei Grudsky in the eigenvalue
+  bulk of Toeplitz matrices}, J. Math. Sci. \textbf{298} (2026),
+  363--376, \href{https://doi.org/10.1007/s10958-025-07833-x}{DOI},
+  section ``Beyond the simple-loop class,'' Theorems 2--5 and discussion
+  of higher-order zeros.
+\end{itemize}
+
+On 2026-09-10, checked the original full preprint, the seven-diagonal
+follow-up's full preprint and publication record, the 2026 survey, and
+targeted title/conjecture/2025--2026 searches. No resolution of all
+parts for every \(m\ge3\) was located. Later local second-order
+expansions and results confined to \(m=3\) do not establish this full
+statement. This bounded search is not a proof of openness.
+
+\hypertarget{audit-2026-09-10}{%
+\subsection{Audit --- 2026-09-10}\label{audit-2026-09-10}}
+
+Independently rechecked
+\href{https://arxiv.org/pdf/1710.05243}{Conjecture 8.4},
+\href{https://arxiv.org/pdf/2111.07196}{the seven-diagonal paper's
+Theorems 2.3--2.6}, and
+\href{https://doi.org/10.1007/s10958-025-07833-x}{Böttcher's survey}.
+Corrected the status to Open: the proved \(m=2\) analogue lies outside
+the displayed range, and the \(m=3\) local and second-order formulas do
+not establish the three-part threshold assertion. The
+\href{https://doi.org/10.1007/s10958-026-08227-3}{March 2026
+eigenvalue-superposition paper} assumes simple-loop symbols, excluding
+these higher-order zeros. Title and conjecture searches found no
+complete resolution. Challenging difficulty and specialist importance
+are retained.
+
+\hypertarget{resolution-audit---2026-09-12}{%
+\subsection{Resolution audit -
+2026-09-12}\label{resolution-audit---2026-09-12}}
+
+The independent audit checked the complete all-\(m\) argument, including
+the coalescing characteristic roots, normalized determinant remainder,
+upper-endpoint cancellation, eigenvalue indexing, all three expansion
+orders, and dominated trace limit. The primary-source and public
+branch/fork/PR checks found no existing full resolution at the recorded
+time; the linked submission record gives the precise scope and
+limitations of that search.
+\end{document}

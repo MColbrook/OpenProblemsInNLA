@@ -1,0 +1,30 @@
+{
+  "scope": "Local PhaseWindowRoots narrowed arithmetic plus removal of one potentially unused import; no Linux/Comparator claim",
+  "started_utc": "2026-09-21T01:42:21.315474+00:00",
+  "source_sha256": "4b9acec6440156bfd300675e44bc96f0d0479c1c48712ae5f0ab1b4ab3b8f7c9",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-R",
+    "/private/tmp",
+    "/private/tmp/MF21PhaseWindowRootsMinimalImports.lean",
+    "-o",
+    "/private/tmp/mf21-phase-memory-tests/minimal-imports-01/PhaseWindowRoots.olean",
+    "-i",
+    "/private/tmp/mf21-phase-memory-tests/minimal-imports-01/PhaseWindowRoots.ilean",
+    "-c",
+    "/private/tmp/mf21-phase-memory-tests/minimal-imports-01/PhaseWindowRoots.c",
+    "--profile",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "finished_utc": "2026-09-21T01:42:38.063206+00:00",
+  "exit_code": 1,
+  "log_sha256": "7598e7dbc53ec5675cb2d9a9254f114ed3a4ca5968764d90f8ace43113e3f9a3",
+  "max_child_rss_bytes_macos": 3541663744
+}

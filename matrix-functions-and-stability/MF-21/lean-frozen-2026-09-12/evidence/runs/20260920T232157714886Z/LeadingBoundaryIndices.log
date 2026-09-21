@@ -1,0 +1,7 @@
+'MF21Restart.card_boundaryLeadingZInvIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_compl_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_compl_orderEmb_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLaplaceSign_leadingZInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLaplaceSign_leadingZ' depends on axioms: [propext, Classical.choice, Quot.sound]

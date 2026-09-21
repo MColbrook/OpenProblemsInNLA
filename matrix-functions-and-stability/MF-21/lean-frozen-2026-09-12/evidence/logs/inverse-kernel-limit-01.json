@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/InverseKernelLimit.olean",
+    "MF21Restart/InverseKernelLimit.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/InverseKernelLimit.lean",
+  "source_sha256": "e7a8f48440570bb2ca8d62c770d252618e3d4eeaecc1daceed254255282e5ea9",
+  "started_epoch": 1789945907.61317,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "dcf2d3f014313682e71f846eeb516a8ce2b11e9496c47df56c261ae5112a6203",
+  "finished_epoch": 1789945914.303571,
+  "output_sha256": "23334f1a2ab58c1bcab863214789fb7f987fa67a41e0f8f7c9cdbe2209532b95"
+}

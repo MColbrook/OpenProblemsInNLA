@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/InverseKernelGrid.olean",
+    "MF21Restart/InverseKernelGrid.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/InverseKernelGrid.lean",
+  "source_sha256": "48629ecc6165f1343374ad5f20b3805cdd88c2f17441039fba2308bf2864afc9",
+  "started_epoch": 1789945899.0484521,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "1675984c8de28c01408deff64b2117e503f05ec28b3a357d588f779b865c3f0f",
+  "finished_epoch": 1789945907.611847,
+  "output_sha256": "e2bef800a7fe90a2eae4296e4a6871aff7268e623850b13d93bdc7f44a4c5ece"
+}

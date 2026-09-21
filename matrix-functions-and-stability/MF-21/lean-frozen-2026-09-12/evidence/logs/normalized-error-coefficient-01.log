@@ -1,0 +1,10 @@
+MF21Restart/NormalizedErrorCoefficient.lean:43:42: error: No goals to be solved
+MF21Restart/NormalizedErrorCoefficient.lean:43:91: error: No goals to be solved
+'MF21Restart.card_boundaryLeadingZIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_separates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryPhaseMultiplier_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedErrorCoefficient_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.normalizedErrorCoefficient_uniform_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

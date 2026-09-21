@@ -1,0 +1,27 @@
+MF21Restart/BoundaryExpansion.lean:55:76: error: unsolved goals
+case e_a
+ι : Type u_1
+K : Type u_2
+inst✝² : Fintype ι
+inst✝¹ : DecidableEq ι
+inst✝ : CommRing K
+U L : Matrix ι ι K
+c : ι → K
+D : (ι → K) [⋀^ι]→ₗ[K] K := Matrix.detRowAlternating
+hrows :
+  (Matrix.of fun i j => U i j + c j * L i j).transpose =
+    Matrix.of ((fun j => c j • L.transpose j) + fun j => U.transpose j)
+s : Finset ι
+a✝ : s ∈ Finset.univ
+hsplit :
+  (s.piecewise (fun j => c j • L.transpose j) fun j => U.transpose j) = fun j =>
+    (if j ∈ s then c j else 1) • s.piecewise (fun j => L.transpose j) (fun j => U.transpose j) j
+i j : ι
+⊢ (if j ∈ s then L.transpose j else U.transpose j) i = if j ∈ s then L i j else U i j
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.boundaryCoefficient_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]

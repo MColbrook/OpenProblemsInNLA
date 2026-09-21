@@ -1,0 +1,55 @@
+{
+  "scope": "MF-21 canonical README document rendering only; no Lean verification",
+  "recorded_utc": "2026-09-21T02:01:08.204069+00:00",
+  "repository_commit": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "github_sha": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "github_run_id": "35552753810",
+  "github_run_attempt": "1",
+  "command": [
+    "python3",
+    "tools/render_problems.py",
+    "MF-21"
+  ],
+  "inputs": {
+    ".github/workflows/mf21-catalog-once.yml": {
+      "sha256": "10d0f50419680237df0de66b196c7d8b24d4c53b19fc3e431e166f9c29ba2f21",
+      "bytes": 5794
+    },
+    "tools/render_problems.py": {
+      "sha256": "586916bcbd8b89a24fcc53a07b7a393a9dab7e9cb2ff079c982d7586ce56a5a9",
+      "bytes": 11050
+    },
+    "tools/problem-template.tex": {
+      "sha256": "271a7f3ed3b65daece40e32c9edf2e81f93f5050c81df336a43e1fc0b6c5bb76",
+      "bytes": 2937
+    },
+    "tools/github_math.lua": {
+      "sha256": "31439d03daf97570d4332a54fa0c44471f827242ef5b4514f16d96d822e07931",
+      "bytes": 1107
+    },
+    "matrix-functions-and-stability/README.md": {
+      "sha256": "efa9b81c8af531bef77c41af6f0bc39b22ec3e4ffdda79ac388d9c6787c85f3d",
+      "bytes": 5860
+    },
+    "matrix-functions-and-stability/MF-21/README.md": {
+      "sha256": "9b6c85cba00e7d652d231cd4134e5072ba1a863976f155ea6a7080e73bdc688e",
+      "bytes": 11926
+    }
+  },
+  "status": "rendered; visual review remains separate",
+  "outputs": {
+    "problem.tex": {
+      "sha256": "f2ccdcb2c6e90e1eb76ad1a0edbd499616d3cd922315979117dcf69051ece046",
+      "bytes": 17238
+    },
+    "problem.pdf": {
+      "sha256": "74aad20a85d3fe292ccafe0f1936c755eb706762c0bf56710527c6a085eb53ae",
+      "bytes": 53697
+    },
+    "render.log": {
+      "sha256": "c9221f609b92e718f79608720f5cc98dda48e2aedf4ad79298c6130c3ac88f34",
+      "bytes": 40
+    }
+  },
+  "finished_utc": "2026-09-21T02:02:25.554376+00:00"
+}

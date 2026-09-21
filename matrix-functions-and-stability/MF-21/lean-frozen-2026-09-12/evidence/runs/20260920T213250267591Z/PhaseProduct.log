@@ -1,0 +1,14 @@
+MF21Restart/PhaseProduct.lean:119:13: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MF21Restart.normalizedPhaseProduct_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedPhaseProduct_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedPhaseProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedPhaseProduct_polar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_polar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPhaseProduct_div_conj' depends on axioms: [propext, Classical.choice, Quot.sound]

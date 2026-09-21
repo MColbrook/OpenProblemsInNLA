@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ExtensionIndependence.olean",
+    "MF21Restart/ExtensionIndependence.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/ExtensionIndependence.lean",
+  "source_sha256": "bd4acdd599b5a263020c292231426399292f7e13a83cca076d88c9b01cc8f126",
+  "started_epoch": 1789948147.771442,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "c6ec98ae571cb6b18d3ed1c1c712af7b2c94d0117be8b6f8f663580a069d42c3",
+  "finished_epoch": 1789948156.995251,
+  "output_sha256": "4404397f64c1f8d1512525bb2ef6d0fdaedc62867c914daa8b54cb83b398eed9"
+}

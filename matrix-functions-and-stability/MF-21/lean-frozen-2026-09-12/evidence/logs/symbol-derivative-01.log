@@ -1,0 +1,14 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+MF21Restart/SymbolDerivative.lean:21:83: error: unsolved goals
+case e'_9
+m : ℕ
+t : ℝ
+⊢ Real.cos (t * (1 / 2)) = Real.cos (id t * (1 / 2))
+'MF21Restart.symbol_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.abs_symbol_deriv_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.symbol_difference_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

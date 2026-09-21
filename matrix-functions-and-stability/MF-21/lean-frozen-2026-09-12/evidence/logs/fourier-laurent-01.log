@@ -1,0 +1,70 @@
+MF21Restart/FourierLaurent.lean:38:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c - d ≥ 1
+where
+ c := b
+ d := a
+MF21Restart/FourierLaurent.lean:40:23: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a - b ≥ 1
+where
+ a := k
+ b := (fun k => k - r) (k + r)
+MF21Restart/FourierLaurent.lean:56:8: error: Application type mismatch: The argument
+  hc
+has type
+  Function.HasFiniteSupport fun k => ↑(fourierCoeff m k)
+but is expected to have type
+  Function.HasFiniteSupport Complex.ofReal
+in the application
+  Function.HasFiniteSupport.fun_comp_of_injective ?m.74 hc
+MF21Restart/FourierLaurent.lean:56:50: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c - d ≥ 1
+where
+ c := b
+ d := a
+MF21Restart/FourierLaurent.lean:59:8: error: Application type mismatch: The argument
+  hc
+has type
+  Function.HasFiniteSupport fun k => ↑(fourierCoeff m k)
+but is expected to have type
+  Function.HasFiniteSupport Complex.ofReal
+in the application
+  Function.HasFiniteSupport.fun_comp_of_injective ?m.105 hc
+MF21Restart/FourierLaurent.lean:59:50: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c - d ≥ 1
+where
+ c := b
+ d := a
+MF21Restart/FourierLaurent.lean:89:18: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ᶠ (i : ℤ),
+    (((fun k => 2 * (↑(fourierCoeff m k) * z ^ k)) - fun k => ↑(fourierCoeff m (k - 1)) * z ^ k) i -
+      ↑(fourierCoeff m (i + 1)) * z ^ i)
+in the target expression
+  ∑ᶠ (k : ℤ),
+      (2 * (↑(fourierCoeff m k) * z ^ k) - ↑(fourierCoeff m (k - 1)) * z ^ k - ↑(fourierCoeff m (k + 1)) * z ^ k) =
+    (2 - z - z⁻¹) ^ (m + 1)
+
+case succ
+z : ℂ
+hz : z ≠ 0
+m : ℕ
+ih : ∑ᶠ (k : ℤ), ↑(fourierCoeff m k) * z ^ k = (2 - z - z⁻¹) ^ m
+hc : Function.HasFiniteSupport fun k => ↑(fourierCoeff m k)
+hcminus : Function.HasFiniteSupport fun k => ↑(fourierCoeff m (k - 1))
+hcplus : Function.HasFiniteSupport fun k => ↑(fourierCoeff m (k + 1))
+hw : Function.HasFiniteSupport fun k => ↑(fourierCoeff m k) * z ^ k
+htwo : Function.HasFiniteSupport fun k => 2 * (↑(fourierCoeff m k) * z ^ k)
+hminus : Function.HasFiniteSupport fun k => ↑(fourierCoeff m (k - 1)) * z ^ k
+hplus : Function.HasFiniteSupport fun k => ↑(fourierCoeff m (k + 1)) * z ^ k
+hrecur :
+  (fun k => ↑(fourierCoeff (m + 1) k) * z ^ k) = fun k =>
+    2 * (↑(fourierCoeff m k) * z ^ k) - ↑(fourierCoeff m (k - 1)) * z ^ k - ↑(fourierCoeff m (k + 1)) * z ^ k
+hshiftminus : ∑ᶠ (k : ℤ), ↑(fourierCoeff m (k - 1)) * z ^ k = (∑ᶠ (k : ℤ), ↑(fourierCoeff m k) * z ^ k) * z
+hshiftplus : ∑ᶠ (k : ℤ), ↑(fourierCoeff m (k + 1)) * z ^ k = (∑ᶠ (k : ℤ), ↑(fourierCoeff m k) * z ^ k) * z⁻¹
+⊢ ∑ᶠ (k : ℤ),
+      (2 * (↑(fourierCoeff m k) * z ^ k) - ↑(fourierCoeff m (k - 1)) * z ^ k - ↑(fourierCoeff m (k + 1)) * z ^ k) =
+    (2 - z - z⁻¹) ^ (m + 1)
+'MF21Restart.fourierCoeff_laurent_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

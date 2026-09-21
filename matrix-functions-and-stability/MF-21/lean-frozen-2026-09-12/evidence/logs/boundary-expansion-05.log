@@ -1,0 +1,140 @@
+MF21Restart/BoundaryExpansion.lean:80:2: error: Tactic `rfl` failed: The left-hand side
+  (Matrix.of (s.piecewise (fun j => L.transpose j) fun j => U.transpose j)).transpose.det
+is not definitionally equal to the right-hand side
+  (Matrix.of fun i j => if j ∈ s then L i j else U i j).det
+
+case e_a
+ι : Type u_1
+K : Type u_2
+inst✝² : Fintype ι
+inst✝¹ : DecidableEq ι
+inst✝ : CommRing K
+U L : Matrix ι ι K
+c : ι → K
+D : (ι → K) [⋀^ι]→ₗ[K] K := Matrix.detRowAlternating
+hrows :
+  (Matrix.of fun i j => U i j + c j * L i j).transpose =
+    Matrix.of ((fun j => c j • L.transpose j) + fun j => U.transpose j)
+s : Finset ι
+a✝ : s ∈ Finset.univ
+hsplit :
+  (s.piecewise (fun j => c j • L.transpose j) fun j => U.transpose j) = fun j =>
+    (if j ∈ s then c j else 1) • s.piecewise (fun j => L.transpose j) (fun j => U.transpose j) j
+⊢ (Matrix.of (s.piecewise (fun j => L.transpose j) fun j => U.transpose j)).transpose.det =
+    (Matrix.of fun i j => if j ∈ s then L i j else U i j).det
+MF21Restart/BoundaryExpansion.lean:74:53: warning: This simp argument is unused:
+  Finset.prod_const_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.prod_ite_mem, Finset.univ_inter, mul_one, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryExpansion.lean:74:76: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.prod_ite_mem, Finset.univ_inter, Finset.prod_const_one, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryExpansion.lean:190:32: error: invalid `▸` notation, expected result type of cast is 
+  a i ∈ s
+however, the equality 
+  Eq.symm hij
+of type 
+  Sum.elim (⇑a) (⇑b) (Sum.inr j) = Sum.elim (⇑a) (⇑b) (Sum.inl i)
+does not contain the expected result type on either the left or the right hand side
+MF21Restart/BoundaryExpansion.lean:196:32: error: invalid `▸` notation, expected result type of cast is 
+  a j ∈ s
+however, the equality 
+  hij
+of type 
+  Sum.elim (⇑a) (⇑b) (Sum.inr i) = Sum.elim (⇑a) (⇑b) (Sum.inl j)
+does not contain the expected result type on either the left or the right hand side
+MF21Restart/BoundaryExpansion.lean:228:2: error: unsolved goals
+case inl.inl
+m : ℕ
+w : Fin (2 * m) → ℂ
+s : Finset (Fin (2 * m))
+hs : s.card = m
+i j : Fin m
+hj : (sᶜ.orderEmbOfFin ⋯) j ∉ s
+⊢ (if (Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inl j) ∈ s then
+      boundaryLower m w ((boundaryRowEquiv m) (Sum.inl i))
+        ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inl j))
+    else w ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inl j)) ^ ↑i) =
+    w ((sᶜ.orderEmbOfFin ⋯) j) ^ ↑i
+MF21Restart/BoundaryExpansion.lean:232:2: error: unsolved goals
+case inl.inr
+m : ℕ
+w : Fin (2 * m) → ℂ
+s : Finset (Fin (2 * m))
+hs : s.card = m
+i j : Fin m
+hj : (s.orderEmbOfFin hs) j ∈ s
+⊢ (Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inr j) ∉ s →
+    boundaryUpper m w ((boundaryRowEquiv m) (Sum.inl i))
+        ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inr j)) =
+      0
+MF21Restart/BoundaryExpansion.lean:235:2: error: unsolved goals
+case inr.inl
+m : ℕ
+w : Fin (2 * m) → ℂ
+s : Finset (Fin (2 * m))
+hs : s.card = m
+i j : Fin m
+hj : (sᶜ.orderEmbOfFin ⋯) j ∉ s
+⊢ (Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inl j) ∈ s →
+    boundaryLower m w ((boundaryRowEquiv m) (Sum.inr i))
+        ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inl j)) =
+      0
+MF21Restart/BoundaryExpansion.lean:239:2: error: unsolved goals
+case inr.inr
+m : ℕ
+w : Fin (2 * m) → ℂ
+s : Finset (Fin (2 * m))
+hs : s.card = m
+i j : Fin m
+hj : (s.orderEmbOfFin hs) j ∈ s
+⊢ (if (Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inr j) ∈ s then
+      w ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inr j)) ^ ↑i
+    else
+      boundaryUpper m w ((boundaryRowEquiv m) (Sum.inr i))
+        ((Equiv.ofBijective (Sum.elim ⇑(sᶜ.orderEmbOfFin ⋯) ⇑(s.orderEmbOfFin hs)) ⋯) (Sum.inr j))) =
+    w ((s.orderEmbOfFin hs) j) ^ ↑i
+MF21Restart/BoundaryExpansion.lean:230:34: warning: declaration uses `sorry`
+MF21Restart/BoundaryExpansion.lean:230:70: warning: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix_apply, boundaryColumnEquiv, boundaryUpper, boundaryRowEquiv_inl_val, i.isLt,
+    Matrix.transpose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryExpansion.lean:233:70: warning: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix_apply, boundaryColumnEquiv, boundaryLower, boundaryRowEquiv_inl_val, i.isLt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryExpansion.lean:237:70: warning: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix_apply, boundaryColumnEquiv, boundaryUpper, boundaryRowEquiv_inr_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryExpansion.lean:240:70: warning: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix_apply, boundaryColumnEquiv, boundaryLower, boundaryRowEquiv_inr_val,
+    Matrix.transpose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

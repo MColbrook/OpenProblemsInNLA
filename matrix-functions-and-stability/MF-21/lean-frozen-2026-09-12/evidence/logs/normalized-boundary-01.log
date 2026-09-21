@@ -1,0 +1,40 @@
+MF21Restart/NormalizedBoundary.lean:86:33: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a =>
+    ↑↑(boundaryLaplaceSign m s hs) *
+          (↑θ ^ vandermondeDegree m * normalizedRootVandermonde m m (⇑(sᶜ.orderEmbOfFin ⋯)) θ) *
+        (↑θ ^ vandermondeDegree m * normalizedRootVandermonde m m (⇑(s.orderEmbOfFin hs)) θ) =
+      ↑θ ^ (2 * vandermondeDegree m) * normalizedBoundaryCoefficient m s hs θ
+Error: Application type mismatch: The argument
+  s
+has type
+  Finset (Fin (2 * m))
+but is expected to have type
+  Finset (Fin _a)
+in the application
+  sᶜ
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+m : ℕ
+s : Finset (Fin (2 * m))
+hs : s.card = m
+θ : ℝ
+⊢ ↑↑(boundaryLaplaceSign m s hs) *
+        (↑θ ^ vandermondeDegree m * normalizedRootVandermonde m m (⇑(sᶜ.orderEmbOfFin ⋯)) θ) *
+      (↑θ ^ vandermondeDegree m * normalizedRootVandermonde m m (⇑(s.orderEmbOfFin hs)) θ) =
+    ↑θ ^ (2 * vandermondeDegree m) * normalizedBoundaryCoefficient m s hs θ
+'MF21Restart.characteristicRootSlope_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRootSlope_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRootSlope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_eq_one_add_mul_slope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedRootVandermonde_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.rootVandermonde_eq_pow_mul_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedRootVandermonde_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_pow_mul_normalized' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedBoundaryCoefficient_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedBoundaryCoefficient_zero_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

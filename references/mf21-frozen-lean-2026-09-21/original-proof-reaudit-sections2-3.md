@@ -1,0 +1,85 @@
+# MF-21: adversarial comparison of the frozen manuscript, Sections 2–3
+
+Reviewer: independent AI referee agent `/root/mf21_final_statement_referee`.
+Review date: 21 September 2026 UTC.
+Verdict: **APPROVE for this bounded comparison — no material false claim or silently repaired mathematical step found in Sections 2–3.** This is not a verdict on the whole manuscript and does not resolve an alleged error whose location has not been supplied.
+
+The checked project is `matrix-functions-and-stability/MF-21/lean-frozen-2026-09-12` in publication worktree commit `0d314d9957d9a7b68ac4af125ed7e527a4683e52`. The primary source is the exact frozen `original-proof/solution.md`, SHA-256 `6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa`. Line references below refer to those bytes. Sections 2–3 occupy lines 68–278; the definitions in lines 13–66 were also read.
+
+This agent did not implement or edit the Lean proof. It previously issued narrower statement and evidence reviews, but their approvals and compiler results were not used as evidence for the original mathematical prose in this audit. This review applies the source-fidelity/adversarial guidance in the checked project's `reviews/REFEREE_STANDARDS.md`. It directly compares original claims with definitions and relevant proof passages, and independently checks the potential sign, order, endpoint and quantifier failures described below. No Lean compiler, GitHub invocation, numerical experiment, proof edit or manuscript edit was performed.
+
+## Claim-by-claim comparison
+
+All Lean names below are in namespace `MF21Restart`; file names are relative to `MF21Restart/`.
+
+| Frozen manuscript lines/equation | Comparison and adversarial finding |
+|---|---|
+| 70–101, Lemma 2, (6), (8): smooth stable roots, no zeros, uniform exponential decay, bounded logarithmic derivatives | `rootKappa` in `RootParameters.lean:19` is exactly exp(i(πℓ/m−π/2)), with indices 1≤ℓ<m and κ²=−ω. `stableRootCurve` is the explicit root (sqrt(1+(κ sin(θ/2))²)−κ sin(θ/2))². `stableRootCurve_rootOmega_equation`, `stableRootCurve_norm_lt_one`, `stableRootCurve_hasDerivAt_zero`, `stable_roots_uniform_exp_decay` and `stableRootCurve_logarithmic_derivative_bounded` give the claimed equation, branch, derivative −κ, closed-interval decay and logarithmic bound. The explicit branch is a construction of the manuscript's root, not a different spectral parameter. Independently, the discriminant can vanish only when ω(2−2cosθ) is 0 or 4; neither occurs for 0<θ≤π and 1≤ℓ<m. The exceptional real case ω=−1 gives a negative right side, so does not admit a unit-circle root. No false branch or endpoint extension found. |
+| 103–110, (7): individual arguments, limit κ+i and endpoint phases | `PhaseFactor.lean` factors the original factor by the positive scalar 2sin(θ/2), and extends the quotient at zero. `rootKappa_add_I`, `individualPhase_rootKappa_zero`, `manuscriptPsi_eq_original`, `manuscriptPsi_zero`, `manuscriptPsi_pi` and the corresponding η results retain the **sum of individual principal arguments**. They do not replace it by the principal argument of the product. The identity κ+i=2sin(πℓ/(2m))exp(iπℓ/(2m)) and reflection ℓ↦m−ℓ give ψ(0)=(m−1)π/4 and ψ(π)=0. The zero endpoint value can exceed the principal argument range for the product when m is large; neither manuscript nor implementation makes that replacement. |
+| 112–137, (9)–(12): exact phase, eigenvalue equivalence, remainder and endpoint bound | `manuscriptPhaseFn` is (n+2)θ−η(θ). `DeterminantRemainder.lean:104–148` states the equivalence only for 0<θ<π, while the remainder bounds hold for every natural n and 0≤θ≤π. The derivative factor is C(n+1), not C independent of n. The endpoint estimate contains both (n+1)(π−θ) and exp(−cnπ/2). The constants are existentially chosen before n and θ, so cannot depend on either. These are at least the original domains; no missing factor or weaker eventual-only remainder estimate found. |
+| 142–159, (13): characteristic roots, ghost indices, shifted boundary determinant and equal kernel dimensions | `CharacteristicRoots.lean:19` uses the listed order R,z,z⁻¹,O. `boundaryMatrix` in `BoundaryExpansion.lean:20` has powers 0,…,m−1 and n+m,…,n+2m−1. `boundaryInterior` in `BoundaryMultiplicity.lean:15` uses powers m,…,m+n−1, corresponding to the original interior indices 1,…,n after shift by m−1. `ConcreteBoundary.lean:13–30` proves both the eigenvalue criterion and equality of complex kernel/eigenspace dimensions on the open interval. The original sentence concluding equal dimensions is compressed: injection alone would not suffice. Lean supplies the omitted reverse map through finite recurrence extension (`boundaryInterior_surjective_to_eigenspace`), so this is a supplied justification of a true claim, not a counterexample or a changed claim. |
+| 161–188, (14)–(16): Laplace signs, leading powers and normalization | `boundaryCoefficient_vandermonde` proves the inherited-order signed Vandermonde expansion. `boundaryCoefficient_leadingZ` and `boundaryCoefficient_leadingZInv` give exactly the two displayed coefficients, fixing the manuscript's unspecified σ to −1. `manuscriptNormalizer` is −2i V(R)V(O)Q^(n+m+1)|f|². `boundaryLeadingTerms_eq_normalizer_mul_sin` proves the exact leading sum. Independently, multiplying z^(n+m) by z^(−(m−1)) leaves z^(n+1), so the phase is (n+1)θ−2ψ, not (n+m)θ−2ψ. `boundaryExteriorProduct_re_pos` proves Q>0, and `manuscriptNormalizer_ne_zero` includes θ=π. No sign, power or n+2-shift repair found. |
+| 192–207, (17)–(18): the nonleading product and actual error terms | `boundaryProductRatio` is literally (product over S)/Q. `boundaryProductRatio_eq_sdiff_prod` cancels selected exterior roots; a nonleading size-m subset leaves a stable factor or the reciprocal of an omitted exterior factor. The product proof bounds this by such a stable-root modulus, which also justifies the manuscript's intermediate maximum bound. `normalizedErrorTerm_eq_raw_quotient` connects each implemented term to the actual determinant term divided by N. Thus the bounded object is the normalized remainder, and the argument never bounds exterior roots themselves by 1. The powers are n+m as written. |
+| 211: “every pairwise root difference has a simple zero” and exact cancellation order m(m−1) | `characteristicRootTangents_injective` proves distinctness of −κℓ, i, −i, κℓ. The stable tangents have negative real part, exterior tangents positive real part, and the two remaining tangents are ±i. `boundaryCoefficient_eq_pow_mul_normalized` factors every size-m coefficient as θ^(m(m−1)) times a smooth coefficient; `normalizedBoundaryCoefficient_zero_ne_zero` shows the remaining value is nonzero. The original denominator has order (m−1)(m−2)+2(m−1)=m(m−1). At π the chosen leading subset separates z and z⁻¹, leaving its denominator nonzero. `normalizedErrorCoefficient_uniform_bound` bounds the coefficient and its first derivative on the whole closed interval. No nonuniform loss near θ=0 or π found. |
+| 213: nonzero smooth b, derivative estimates, reality | `boundaryProductRatio_ne_zero` and `boundaryProductRatio_contDiff` justify nonvanishing and smoothness; compactness then bounds b′/b. Lean's remainder proof uses the weaker sufficient ordinary derivative bound and powers b^(n+m−1), with n+m−1≥n for m≥2. This bypasses use of a logarithmic derivative but does not invalidate the stronger written claim. `manuscriptNormalizedDeterminant_real` uses the actual conjugation permutations, and `boundaryErrorExpression_real` proves the error sum real. Reality is proved, not assumed by taking a real part and discarding an unproved imaginary part. |
+| 215: E_n(π)=0 and integration to (12) | `manuscriptBoundaryDeterminant_pi` uses the coincident oscillatory columns. The nonzero normalizer and F_n(π)=(n+1)π give `manuscriptError_pi`. `manuscriptError_endpoint_bound` integrates the derivative bound on [θ,π] and uses θ≥π/2. The determinant criterion itself is not incorrectly extended to θ=π as an eigenvalue criterion. |
+| 219: exactly n eigenangles, counted with multiplicity | `SpectralEnclosure.lean` proves the actual Fourier quadratic-form integral with the 1/(2π) factor, strict positivity for g and 4^m−g, and strict spectral enclosure. `eigenvalue_existsUnique_angle` uses strict monotonicity of g on [0,π]. `Definitions.lean:38–49` sorts all n eigenvalues with repeated values retained; it does not form a set of distinct eigenvalues. |
+| 221–237, Lemma 4 and (20): quantifiers, phase bounds, fixed J | `manuscriptPhaseFn_eventual_derivative_bounds` gives the displayed lower and upper derivative constants and both endpoint values. `manuscriptError_high_phase_small` chooses J before n and θ. Independently, writing B≥|η| gives nθ≥Jπ−B−9π/4 on the specified high-phase range, which is enough for a fixed J. `manuscriptResidual_unique_root_in_phase_windows` quantifies N,J before n,k and covers J≤k≤n inclusively. There is no n-dependent lower-index cutoff substituted for fixed J. |
+| 239: root existence, uniqueness, determinant simplicity and eigenvalue simplicity | `PhaseWindowRoots.lean` proves the signed residual is strictly increasing throughout each quarter-period cell and has opposite endpoint signs. It uses the sufficient inequality cos(δ)>1/4 rather than retaining the sharper 1/√2 constant; the written sharper claim follows directly from |δ|≤π/4 and is true. `ActualSimpleRoots.lean:62–111` differentiates the determinant identity on a neighborhood of the interior zero, proves eigenspace dimension one, and obtains a unique original eigenvalue index. Simplicity is not supplied as a premise of the actual root construction. |
+| 241–249: gaps, final artificial root and downward counting | `manuscriptResidual_high_phase_root_coverage` excludes roots outside the ordinary cells in the high-phase range, using the nearest phase index and small sine. `FinalPhaseWindow.lean:65–148` proves |sin F|≥(n+2)(π−θ)/π and compares it to (12), excluding only θ<π. `PhaseWindowIndexing.lean:59–161` combines simplicity, ordering and coverage to identify the original one-based j exactly. It neither assumes the index match nor counts π as an eigenangle. The manuscript's “none between or above them” refers to eigenangles, consistent with its explicit artificial-root discussion. |
+| 251–257, (19): exponential phase distance, size bounds, same implicit function | `eigenvalue_eventual_quantitative_phase_preimage` proves C exp(−cj)/(n+2) and both Cj/(n+2) bounds for every J≤j≤n. `phase_preimage_eq_implicit` rewrites F(y)=jπ as y=x_nj+hη(y), with h=1/(n+2), then uses interval uniqueness. `manuscript_implicit_taylor_with_spectral_error` obtains that uniqueness from the already constructed Y and discharges the helper premise. This is the same Y, not a family chosen separately for n or j. |
+| 259–278, (21)–(22): circulant dimension, sorted formula, interlacing and lower bound | `toeplitz_eq_circulant_submatrix` embeds the actual Toeplitz matrix in size N=n+2m. A translated block frequency has absolute value at least N−(n−1)=2m+1>m, so cannot wrap into the bandwidth. `circulantOrderedValue` is g(2π floor(j/2)/N), and `fourierCirculant_sorted_eigenvalues` preserves multiplicities for both even and odd N. `eigenvalue_circulant_interlacing` uses exactly j and j+2m. `eigenvalue_circulant_power_bounds` and `eigenvalue_circulant_lower_bound` retain the lower-bound restriction j≥2. Indeed floor(j/2)≥j/3 then; it would be false at j=1, which the manuscript explicitly excludes. The stronger upper denominator n+2m implies the displayed O((j+2m)^(2m)n^(−2m)) for positive n. |
+
+## Scope and limits of the finding
+
+The implementation follows the Sections 2–3 argument through the actual normalized determinant and the actual ordered spectrum. It expands short arguments into explicit constructions and sometimes uses a weaker sufficient intermediate estimate. The principal differences found are the explicit stable-root formula, the proved reverse kernel map, normalized quotient extensions at zero, the ordinary derivative estimate for b, and the weaker trigonometric margin. None revealed a false stronger original claim within the reviewed range.
+
+This finding is based on inspection of the listed statements and selected underlying proofs, together with the elementary checks above. It is not a new compiler audit, an audit of every imported declaration, or a claim that kernel acceptance establishes the truth of every sentence in the manuscript. The trace obstruction, inverse-kernel citation and limiting arguments in Section 5, and the Taylor/extension arguments of Section 4, are outside this assignment. No counterexample was found in Sections 2–3; the user's suspected original error remains unresolved by this scoped result.
+
+## Source hashes
+
+SHA-256 of the consulted source files follows. The manifest records file bytes; it does not claim every line of every listed module received a full proof audit.
+
+```text
+6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa  original-proof/solution.md
+e4771ab0a1c2f51541a2b849ec82fadaf7fc927ba4984295d25b08995d1947f1  reviews/REFEREE_STANDARDS.md
+35a74047a81a9b7526e9bf039880ca8f07ae33314e2b5b960ab254e02fca4b51  MF21Restart/Definitions.lean
+f1b6459dc1372fba3bb5762c0cb557c4e082443e1be8d09506419bd43d59dde5  MF21Restart/StableRootAlgebra.lean
+241296dc3b8ac1ca554a1685162f9952d7e4825d170abf56cba8d54f233f4011  MF21Restart/StableRootSmooth.lean
+de3a7eb721977af0be836dff1f6c68b525db5dccd36f5e6b4a68075633052b31  MF21Restart/StableRootBounds.lean
+c784f609c8eeba69db1ec5e7d3ca52ba0611777d662556c8fd8b6321b60af1fa  MF21Restart/RootParameters.lean
+079597268e849c9fbca2adc00d049fce7dd38138278c685b051f5bc7c05700dd  MF21Restart/StableRootSymmetry.lean
+4b681c97f6c26935ab1a495703f9d648c7fb36c77746d47f9637e6fe741be238  MF21Restart/PhaseFactor.lean
+ac803ba9621d41d11d7ccff77c53299fdf6f13f9caf98e99b6692d4a3cb78885  MF21Restart/PhaseZero.lean
+b0ae70dd2c035f312b4858c0ca1f4573bb242e6eb8693404f1330256b49f3e47  MF21Restart/PhasePi.lean
+d955e1ff32b205f3422e6c2161bf415a84cd733ccb1bb8e248a7dc4d2d7065e9  MF21Restart/CharacteristicRoots.lean
+a37f2ec6cc1c1385b4219cb927e2164e0cfab3f584cd912ac48974391f7a299f  MF21Restart/RootTangents.lean
+3d45a02be0ce050f37be4ec3db227504028730c9283f4148d5739b37c48a9261  MF21Restart/NormalizedBoundary.lean
+64b0c557994407c92cc1247d11d2701b2b3435acb966c9dabf95da9ddcb3863c  MF21Restart/NormalizedQuotient.lean
+196098a5618651861b2d92ff8ce145b2e7425092241b97ed908a07b2bb85c52d  MF21Restart/NormalizedErrorCoefficient.lean
+bc873ac5a5cb569d3dda0bc3b6ecf623e09d326f0d82cd613fdc3149c24a3979  MF21Restart/BoundaryExpansion.lean
+bde3c2195d13e981249f6eebf9691b05d1f186edad7aa7b9e72c133f911063f4  MF21Restart/ConcreteBoundary.lean
+94d136b3310fe28699fa3a386143e2b22d20f23f226541aecc49468492d659b9  MF21Restart/BoundaryMultiplicity.lean
+f048a547bf8493c0355996d766e69562be5454bd0545ed4cb875e7dd957b7ab0  MF21Restart/LeadingBoundaryCoefficients.lean
+74e5df08f291842541efcc6c92ca718121066d15a047daf213303bc4a8571de3  MF21Restart/LeadingNormalization.lean
+7309e2650c79b925f4f4bb158b2b4fc435def898012e399d6b20d83579e8d3b6  MF21Restart/BoundaryNormalizer.lean
+331f649581125568a45313aea57d79342c4362ae1efb4d0dad1f5ff64f91c75e  MF21Restart/RootListProducts.lean
+f9f9b6b0d5c8b8842049f91850a3cb6d4482747443c1448d1c1e325bdcd0d0e3  MF21Restart/BoundaryProductDecay.lean
+b6b6d491b44d1992c1903fd6dcc82d726914f7d2b23866ae1b65f04d0370132e  MF21Restart/BoundaryErrorBounds.lean
+3ff379de253810a3edaf355a243e26981c46d0052ca636aac5ace9b82bb6f318  MF21Restart/DeterminantRemainder.lean
+fd2b696d326d7672d791d41c1368a2b8cfd0a2c8fc1737f32c36a591bd95f6f8  MF21Restart/ActualSimpleRoots.lean
+0c0e3034173e4a00103d31eb702356c037f71617ed8e3c4e67f7c69b3b7f7300  MF21Restart/PhaseMonotonicity.lean
+897e91a69bf25da532691880d9d6832dc0167e43fae5b8d7271b74359762c4f0  MF21Restart/SpectralEnclosure.lean
+e2a65362fe207b91b8602ce7ec6e85c7e9dacb9d59ce547a9e351f3372ddb468  MF21Restart/SpectralOrder.lean
+4e188878d1a1b079f0569bd010bfa88f7b151ea690453d7efb8500789ca9efd3  MF21Restart/SpectralWindowBounds.lean
+7992ba76a6919b9e38aa3758ff74205befe02238e515b66b96584c1848a8d5c8  MF21Restart/PhaseWindowRoots.lean
+81501dac643fe4505569c895f84d2af10160b35c023ec5b5ab577dd3ee80dc96  MF21Restart/FinalPhaseWindow.lean
+89f61e946010850d0cc6de3052457ece34233e9c079f021172c23e0ff0d28d1c  MF21Restart/PhaseRootCoverage.lean
+8b99a37e436dfe7f4e8efbf39de6d091f511d62e5634e6c405dc2a00ffff1117  MF21Restart/PhaseWindowIndexing.lean
+bc649144eeafa74c1f0435e4bb90df7a679780c22cb709f2525b9c32be4b9649  MF21Restart/PhaseQuantitative.lean
+41da02350921c1a6e8cfae0c366ab1801e549c10d554752083f567705566cf2e  MF21Restart/ImplicitSpectralError.lean
+e379ad2cfd444ba82aa0f10e9c4d51c2bf61d081836754c24ae7c2029fd1bc1b  MF21Restart/ImplicitSpectralData.lean
+df78ed06e9e64d6ff009cb4bb5bb7badc7215ae140a765652e4e8abb492b442d  MF21Restart/CirculantEmbedding.lean
+b2fefbff57d6567cef75d9b1c92902147612a67b48de6255d9e358797ecbda0c  MF21Restart/CirculantOrder.lean
+f63c776c46312d11347199ae3eb42003725dd95c578012b72f490fbb9a2a86ff  MF21Restart/CirculantBounds.lean
+```

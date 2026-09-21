@@ -1,0 +1,7 @@
+MF21Restart/ScaledInverseSum.lean:50:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/ScaledInverseSum.lean:50:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'MF21Restart.scaled_toeplitz_inverse_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]

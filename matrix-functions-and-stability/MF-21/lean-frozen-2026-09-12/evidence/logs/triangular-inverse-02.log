@@ -1,0 +1,24 @@
+MF21Restart/TriangularInverse.lean:77:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 1
+  b ≥ 0
+  b - c ≤ -1
+  b - d ≤ 0
+  a ≥ 0
+  a - b ≥ 0
+  a - c ≤ -1
+  a - d ≥ 0
+where
+ a := ↑↑j
+ b := ↑↑i
+ c := ↑n
+ d := ↑↑k
+'MF21Restart.powerSeriesUpperMatrix_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.powerSeriesUpperMatrix_mul' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.binomialUpperMatrix_mul_difference' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.differenceUpperMatrix_mul_binomial' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.binomialUpperMatrix_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.powerSeries_coeff_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.differenceUpperMatrix_apply' depends on axioms: [propext, Classical.choice, Quot.sound]

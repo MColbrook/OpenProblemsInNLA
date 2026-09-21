@@ -1,0 +1,2 @@
+'MF21Restart.implicitPhase_expansion_bounds_of_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscript_implicit_expansion_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

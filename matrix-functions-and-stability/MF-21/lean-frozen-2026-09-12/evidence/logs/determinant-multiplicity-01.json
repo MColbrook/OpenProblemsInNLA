@@ -1,0 +1,24 @@
+{
+  "source": "MF21Restart/DeterminantMultiplicity.lean",
+  "source_sha256": "557f4d2775393657ba5784e8dd0f9ce12178d61a3e7cb9c8526003aa346d0cff",
+  "started_utc": "2026-09-20T20:13:44.104454+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/DeterminantMultiplicity.olean",
+    "MF21Restart/DeterminantMultiplicity.lean"
+  ],
+  "exit_code": 1,
+  "log": "evidence/logs/determinant-multiplicity-01.log",
+  "log_sha256": "3668e79b3ec70f414cf3e79d9316db1765195e254c2003e47b0fdb74ada05286",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:13:49.828898+00:00"
+}

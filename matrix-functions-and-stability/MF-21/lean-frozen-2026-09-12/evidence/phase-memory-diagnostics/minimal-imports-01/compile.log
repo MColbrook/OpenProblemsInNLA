@@ -1,0 +1,32 @@
+import took 11.7s
+{"caption":"","data":"This simp argument is unused:\n  scaledPhaseResidual\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Real.cos_sub_nat_mul_pi]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`","endPos":{"column":34,"line":42},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unusedSimpArgs","pos":{"column":15,"line":42},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":65,"line":41},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":62,"line":41},"severity":"warning"}
+{"caption":"","data":"Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`","endPos":{"column":64,"line":42},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"linter.unnecessarySeqFocus","pos":{"column":61,"line":42},"severity":"warning"}
+{"caption":"","data":"Unknown identifier `manuscriptResidual`\n\nNote: It is not possible to treat `manuscriptResidual` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.","endPos":{"column":28,"line":181},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"lean.unknownIdentifier._namedError","pos":{"column":10,"line":181},"severity":"error"}
+{"caption":"","data":"Unknown identifier `manuscriptResidual`\n\nNote: It is not possible to treat `manuscriptResidual` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.","endPos":{"column":35,"line":184},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"lean.unknownIdentifier._namedError","pos":{"column":17,"line":184},"severity":"error"}
+{"caption":"","data":"failed to synthesize instance of type class\n  AddCommGroup ℕ\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.","endPos":{"column":45,"line":184},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"lean.synthInstanceFailed._namedError","pos":{"column":10,"line":184},"severity":"error"}
+{"caption":"","data":"'MF21Restart.manuscriptResidual_unique_root_in_phase_windows' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]","endPos":{"column":6,"line":223},"fileName":"/private/tmp/MF21PhaseWindowRootsMinimalImports.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":223},"severity":"information"}
+cumulative profiling times:
+	attribute application 0.036ms
+	blocked (unaccounted) 599ms
+	congr simp thm 0.831ms
+	elaboration 28.6ms
+	fix level params 0.772ms
+	import 11.7s
+	initialization 19.7ms
+	instantiate metavars 1.24ms
+	interpretation 770ms
+	let-to-have transformation 0.113ms
+	linting 16.6ms
+	module linting 0.000667ms
+	norm_num 65.1ms
+	overlappingInstancesLinter 2.89ms
+	parsing 7.37ms
+	process pre-definitions 12.6ms
+	ring 45.9ms
+	share common exprs 11.4ms
+	simp 12.9ms
+	tactic execution 146ms
+	tacticAnalysis 20.6ms
+	type checking 52.4ms
+	typeclass inference 207ms

@@ -1,0 +1,21 @@
+{
+  "changed_utc": "2026-09-21T01:46:37.894225+00:00",
+  "scope": "Identical phase-window statements and argument; restrict twelve linarith contexts. Give Lake builds 6144 MiB, while unchanged verify_local.py explicitly keeps local compilation at4096 MiB with one process/thread.",
+  "old_source_sha256": "7ababccde85698a360037679ab6d314ca6582f97a0cc09a3a320a38deb7a4590",
+  "new_source_sha256": "7992ba76a6919b9e38aa3758ff74205befe02238e515b66b96584c1848a8d5c8",
+  "lakefile_sha256": "a44cbbbcb0c57a23ac33ba4503d21e59a3205df717a93a547b1ad897b92da9f4",
+  "runner_sha256": "67b74e0aedc0d6896d1ccaf7e57de3e70b156c56e706e77d6c43703a5ef9a128",
+  "manuscript_sha256": "6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa",
+  "original_actual_local_exit": 0,
+  "candidate_actual_local_exit": 0,
+  "original_max_child_rss_bytes_macos": 3652206592,
+  "candidate_max_child_rss_bytes_macos": 3649159168,
+  "memory_diagnosis": "Small observed local RSS difference does not establish a Linux memory fix. First time-wrapper error and failed import-removal candidate are retained as failed diagnostics. Linux acceptance still requires a new real run.",
+  "full_dependency_closure_recheck": {
+    "passed": true,
+    "record": "evidence/runs/20260921T014829335357Z-phase-recheck/record.json",
+    "sha256": "bcb21102dcd847a244595c04f6cd759b7221b4bd0c0e674beef969ed6eea9c3a",
+    "compiled": 10,
+    "unaffected_source_matched_reused": 115
+  }
+}

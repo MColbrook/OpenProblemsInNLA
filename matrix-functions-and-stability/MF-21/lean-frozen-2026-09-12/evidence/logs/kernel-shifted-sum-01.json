@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/KernelShiftedSum.olean",
+    "MF21Restart/KernelShiftedSum.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "d59239301b9a0db3b55a7c2e3e0ffcfbcd9a64936823b55ee0591c04f9e4091c",
+  "source": "MF21Restart/KernelShiftedSum.lean",
+  "started_epoch": 1789945059.3277829,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "d71f67c8ea6b23e02188a500530f6a2dba08663b8b8cd510b4a85a88b6ae9beb",
+  "finished_epoch": 1789945066.481104,
+  "output_sha256": "7cef7bc8bca121c3e957f9af40b52a2b0bc67eb6389767fef85bbead2d09a416"
+}

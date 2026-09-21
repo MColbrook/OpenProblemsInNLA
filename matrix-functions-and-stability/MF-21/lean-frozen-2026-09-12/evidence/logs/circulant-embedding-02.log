@@ -1,0 +1,3 @@
+'MF21Restart.fourierCirculant_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.fourierCirculant_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_eq_circulant_submatrix' depends on axioms: [propext, Classical.choice, Quot.sound]

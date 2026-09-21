@@ -1,0 +1,16 @@
+MF21Restart/TraceIntegral.lean:38:4: error: No goals to be solved
+MF21Restart/TraceIntegral.lean:53:4: error: Type mismatch: After simplification, term
+  hGamma
+ has type
+  ↑p.factorial * ↑q.factorial = ↑(p + q + 1).factorial * ∫ (x : ℝ) in 0..1, ↑x ^ p * (1 - ↑x) ^ q
+but is expected to have type
+  ↑p.factorial * ↑q.factorial = ↑(p + q + 1).factorial * ↑(∫ (x : ℝ) in 0..1, x ^ p * (1 - x) ^ q)
+MF21Restart/TraceIntegral.lean:91:76: error: unsolved goals
+m : ℕ
+hm : 1 ≤ m
+⊢ ↑((2 * m - 1).factorial ^ 2) / ↑((4 * m - 1).factorial * (2 * m - 1) * (m - 1).factorial ^ 2) =
+    ↑(↑((2 * m - 1).factorial ^ 2) / ↑((4 * m - 1).factorial * (2 * m - 1) * (m - 1).factorial ^ 2))
+'MF21Restart.integral_pow_mul_one_sub_pow' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_rational' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

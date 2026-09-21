@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-09-21T00:26:13.231157+00:00",
+  "base_revision": "aa8d010bdd5a3ef1750c9fa013b67b6d90786d96",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "tools/validate_problem_ids.py",
+        "--base-ref",
+        "upstream/main"
+      ],
+      "exit_code": 0,
+      "log": "prepublication-id-check-1.log",
+      "log_sha256": "2281c6061df20ea77bce4a8a36ba410ecb359e23d89c0cf49ce56c72c9e25d0d"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_problem_ids.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "prepublication-id-check-2.log",
+      "log_sha256": "eb3da778cc548e9eb79ac6ff24d3e003c7e9b22803fbf4e74536c3bc02dcbbd2"
+    }
+  ],
+  "scope": "Canonical IDs and paths unchanged; no index regeneration or PDF check claimed by this record."
+}

@@ -1,0 +1,9 @@
+MF21Restart/FourierBinomialStencil.lean:53:6: error: failed to synthesize
+  HasDistribNeg ℂ
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'MF21Restart.fourierStencilPolynomial_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.fourierCoeff_shifted_binomial' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

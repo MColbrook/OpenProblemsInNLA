@@ -1,0 +1,25 @@
+{
+  "source": "MF21Restart/StableRootSymmetry.lean",
+  "source_sha256": "079597268e849c9fbca2adc00d049fce7dd38138278c685b051f5bc7c05700dd",
+  "started_utc": "2026-09-20T20:13:30.711214+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/StableRootSymmetry.olean",
+    "MF21Restart/StableRootSymmetry.lean"
+  ],
+  "exit_code": 0,
+  "log": "evidence/logs/stable-root-symmetry-02.log",
+  "log_sha256": "eafa0ea7e1ef20e4aee3e471f402a4384dee2e11015a8ef89460a966726d820a",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:13:37.397526+00:00",
+  "output_sha256": "130cdb6c8e3a91d5396c3cd8f34bc49a6e836d613268275e0ed00840d87571c8"
+}

@@ -1,0 +1,40 @@
+MF21Restart/TraceSeriesZeta.lean:62:4: error: Tactic `apply` failed: could not unify the conclusion of `@funext`
+  ?f = ?g
+with the goal
+  Real.instAddCommMonoid = Real.instAddCommGroup.toAddCommMonoid
+
+Note: The full type of `@funext` is
+  ∀ {α : Sort ?u.51} {β : α → Sort ?u.50} {f g : (x : α) → β x}, (∀ (x : α), f x = g x) → f = g
+
+case e'_3
+m r : ℕ
+hm : 1 ≤ m
+h :
+  HasSum (fun n => ((↑(n + r) + 1) ^ (2 * m))⁻¹)
+    (↑(evenZetaRational m) * Real.pi ^ (2 * m) - ∑ i ∈ Finset.range r, ((↑i + 1) ^ (2 * m))⁻¹)
+⊢ Real.instAddCommMonoid = Real.instAddCommGroup.toAddCommMonoid
+MF21Restart/TraceSeriesZeta.lean:65:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑(integerTailCorrection ?m ?r)
+in the target expression
+  (fun j => ((↑j + 1 + ↑r) ^ (2 * m))⁻¹) = fun n => ((↑(n + r) + 1) ^ (2 * m))⁻¹
+
+case e'_5
+m r : ℕ
+hm : 1 ≤ m
+h :
+  HasSum (fun n => ((↑(n + r) + 1) ^ (2 * m))⁻¹)
+    (↑(evenZetaRational m) * Real.pi ^ (2 * m) - ∑ i ∈ Finset.range r, ((↑i + 1) ^ (2 * m))⁻¹)
+⊢ (fun j => ((↑j + 1 + ↑r) ^ (2 * m))⁻¹) = fun n => ((↑(n + r) + 1) ^ (2 * m))⁻¹
+MF21Restart/TraceSeriesZeta.lean:59:44: error: unsolved goals
+case e'_6
+m r : ℕ
+hm : 1 ≤ m
+h :
+  HasSum (fun n => ((↑(n + r) + 1) ^ (2 * m))⁻¹)
+    (↑(evenZetaRational m) * Real.pi ^ (2 * m) - ∑ i ∈ Finset.range r, ((↑i + 1) ^ (2 * m))⁻¹)
+⊢ ↑(evenZetaRational m) * Real.pi ^ (2 * m) - ↑(integerTailCorrection m r) =
+    ↑(evenZetaRational m) * Real.pi ^ (2 * m) - ∑ i ∈ Finset.range r, ((↑i + 1) ^ (2 * m))⁻¹
+'MF21Restart.hasSum_even_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasSum_even_zeta_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasSum_integer_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.integerTailCorrection_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

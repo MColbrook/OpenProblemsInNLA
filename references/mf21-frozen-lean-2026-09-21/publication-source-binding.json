@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-09-21T02:45:11.035591+00:00",
+  "proof_commit": "fe2183e9b570322d7c1f64bba3480460082af8d3",
+  "pre_publication_head": "0d314d9957d9a7b68ac4af125ed7e527a4683e52",
+  "proof_project_file_count": 1423,
+  "all_project_files_byte_equal_to_accepted_proof_commit": true,
+  "existing_manuscript_and_formalization_unchanged": true,
+  "registry_and_catalog_unchanged": true,
+  "temporary_render_workflow_absent": true,
+  "review_sha256": {
+    "original-proof-reaudit-sections2-3.md": "843a708ed96dae7551d83484041208a5a50e6906a562c4515b8f93d483961ac2",
+    "original-proof-reaudit-sections4-5.md": "343a98eb1cc0ef380c56b94298c80523693cf781e0eb210bafd88341b9c35904",
+    "fresh-september12-mathematical-review.md": "bd78d874769b7c2bf5d846bfe523230a05c06ff0eda75602d6234a0186204fcd",
+    "linux-operational-review.md": "5dbb7c36d431b5b3887343964dc7faf09c607d8a92138d8dd9842023bdf13d12"
+  },
+  "personal_author_email_scan": "No personal author address found",
+  "scope": "Byte/source and publication checks only; no additional Lean or Comparator run. Sparse-checkout-omitted canonical manuscript compared as Git blobs, with tracked diff also empty.",
+  "staged_diff_whitespace_check": {
+    "authored_files": "No findings",
+    "verbatim_artifact_paths": [
+      "references/mf21-frozen-lean-2026-09-21/catalog-render-02/inputs/matrix-functions-and-stability/MF-21/README.md",
+      "references/mf21-frozen-lean-2026-09-21/catalog-render-03/inputs/matrix-functions-and-stability/MF-21/README.md",
+      "references/mf21-frozen-lean-2026-09-21/catalog-render/inputs/matrix-functions-and-stability/MF-21/README.md",
+      "references/mf21-frozen-lean-2026-09-21/linux-attempt-01/verify-20260921T003354Z-4172/comparator.log",
+      "references/mf21-frozen-lean-2026-09-21/linux-attempt-02/verify-20260921T012357Z-4182/comparator.log",
+      "references/mf21-frozen-lean-2026-09-21/linux-attempt-03-job.log",
+      "references/mf21-frozen-lean-2026-09-21/linux-attempt-03/verify-20260921T020023Z-4146/comparator.log"
+    ],
+    "preserved_trailing_whitespace_count": 155,
+    "reason": "Raw downloaded logs and source snapshots retain their exact bytes and hashes; Markdown source snapshots include existing hard line breaks. No raw artifact was altered for whitespace formatting."
+  }
+}
