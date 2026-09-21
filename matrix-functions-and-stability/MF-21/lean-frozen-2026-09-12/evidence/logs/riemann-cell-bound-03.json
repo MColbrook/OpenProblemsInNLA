@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/RiemannCellBound.olean",
+    "MF21Restart/RiemannCellBound.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "36df748366656ab16d28493d9d9e60ca4b3aa509a975b64286f86374da88e8f9",
+  "source": "MF21Restart/RiemannCellBound.lean",
+  "started_epoch": 1789943585.021416,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "abdf89154870200196aeb5f343a04dcecf8d08bbcc951160f0539afe3d9d611d",
+  "finished_epoch": 1789943591.245177,
+  "output_sha256": "4df46444263f67b3a01c1bf616851de22072701d0e9eb6c20965d1d05ad2294e"
+}

@@ -1,0 +1,25 @@
+{
+  "source": "MF21Restart/ConcreteBoundary.lean",
+  "source_sha256": "bde3c2195d13e981249f6eebf9691b05d1f186edad7aa7b9e72c133f911063f4",
+  "started_utc": "2026-09-20T20:20:36.327019+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ConcreteBoundary.olean",
+    "MF21Restart/ConcreteBoundary.lean"
+  ],
+  "exit_code": 0,
+  "log": "evidence/logs/concrete-boundary-01.log",
+  "log_sha256": "28dbcf8967b29a5071c120c23f75664c74a7cd73b50bf5eb8328c9bbb4ee3ea5",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:20:43.099019+00:00",
+  "output_sha256": "a1049567397c555d231ec17e6217f05072ee5b5ec80ba0390370e503ff14200e"
+}

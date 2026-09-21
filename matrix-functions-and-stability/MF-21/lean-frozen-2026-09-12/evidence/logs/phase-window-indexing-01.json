@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/PhaseWindowIndexing.olean",
+    "MF21Restart/PhaseWindowIndexing.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "8b99a37e436dfe7f4e8efbf39de6d091f511d62e5634e6c405dc2a00ffff1117",
+  "source": "MF21Restart/PhaseWindowIndexing.lean",
+  "started_epoch": 1789943924.490849,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "d3756ed040cd70c376fc8c95f23da57c22fa707eed6a64959d1b36530b5d91fa",
+  "finished_epoch": 1789943935.2583108,
+  "output_sha256": "c4bca5b1a3051a3e8c87b5f316b608a215ed3b1692825f832ba254272d62cb91"
+}

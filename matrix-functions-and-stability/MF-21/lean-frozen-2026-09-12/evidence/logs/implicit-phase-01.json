@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ImplicitPhase.olean",
+    "MF21Restart/ImplicitPhase.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "db3e9ecbaa3dac159bc6bd736363794cbeb09afeaa1fd815a8b3d959b093a1dc",
+  "source": "MF21Restart/ImplicitPhase.lean",
+  "started_epoch": 1789944156.142955,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "dcf86b0142642a840b1c5b1872fec69d1a73e2a73fab7b1edb9b1245cb7ba749",
+  "finished_epoch": 1789944163.223888,
+  "output_sha256": "4beffbebbdabcce797cfb06ad4e6bd76e0bb6e2f07a0e4a9bc08dd881c59ce80"
+}

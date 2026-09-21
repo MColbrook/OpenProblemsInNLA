@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/EigenvalueMultiplicity.olean",
+    "MF21Restart/EigenvalueMultiplicity.lean"
+  ],
+  "source_sha256": "d2cd938bd1fbbf405f8c2645d38224cfbbf66df058318d11eababe2ecec71bd1",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "6f1f6c386111f67de040c56472b68fbd9c1888ca5ce0abb4137e78004ef08d3b",
+  "started_epoch": 1789936473.298172,
+  "finished_epoch": 1789936480.173992,
+  "output_sha256": "d3cb03b88c0a29ea650443a2ba2c6e6f0c4f92c1bbe470c2781fee45a5480d15"
+}

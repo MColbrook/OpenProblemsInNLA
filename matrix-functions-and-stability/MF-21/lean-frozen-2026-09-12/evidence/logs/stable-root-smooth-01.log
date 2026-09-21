@@ -1,0 +1,16 @@
+MF21Restart/StableRootSmooth.lean:44:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+MF21Restart/StableRootSmooth.lean:64:65: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:70:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/StableRootSmooth.lean:83:44: error: `simp` made no progress
+'MF21Restart.stableRootCurve_contDiff' does not depend on any axioms
+'MF21Restart.stableRootCurve_hasDerivAt_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_equation' depends on axioms: [propext, Classical.choice, Quot.sound]

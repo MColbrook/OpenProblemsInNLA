@@ -1,0 +1,51 @@
+MF21Restart/WeightedBinomialInverse.lean:54:4: error: Type mismatch: After simplification, term
+  congrArg (fun t => ↑t) (Nat.choose_succ_right_eq m (d + r))
+ has type
+  ↑(m.choose (d + (r + 1))) * (↑d + (↑r + 1)) = ↑(m.choose (d + r)) * (↑m - (↑d + ↑r))
+but is expected to have type
+  ↑(m.choose (d + (r + 1))) * (↑d + ↑r + 1) = ↑(m.choose (d + r)) * (↑m - (↑d + ↑r))
+MF21Restart/WeightedBinomialInverse.lean:110:57: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+MF21Restart/WeightedBinomialInverse.lean:154:30: warning: This simp argument is unused:
+  Nat.cast_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_succ, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/WeightedBinomialInverse.lean:154:44: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_succ, Nat.cast_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/WeightedBinomialInverse.lean:196:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Polynomial.eval ?y p
+in the target expression
+  (fun j => ↑j + 1) j ∈ {x | Polynomial.eval x p = Polynomial.eval x q}
+
+m d : ℕ
+hm : 1 ≤ m
+hd : d ≤ m
+x : ℝ
+p : Polynomial ℝ :=
+  ∑ r ∈ Finset.range (m - d + 1),
+    Polynomial.C (↑(m.choose r) * ↑(m.choose (d + r))) * (ascPochhammer ℝ (2 * m)).comp (Polynomial.X - Polynomial.C ↑r)
+q : Polynomial ℝ :=
+  Polynomial.C ↑((2 * m).choose (m + d)) * ascPochhammer ℝ m * (ascPochhammer ℝ m).comp (Polynomial.X + Polynomial.C ↑d)
+hp : ∀ (y : ℝ), Polynomial.eval y p = weightedBinomialRisingSum m d y
+hq :
+  ∀ (y : ℝ),
+    Polynomial.eval y q =
+      ↑((2 * m).choose (m + d)) * Polynomial.eval y (ascPochhammer ℝ m) * Polynomial.eval (y + ↑d) (ascPochhammer ℝ m)
+hinj : Function.Injective fun j => ↑j + 1
+j : ℕ
+⊢ (fun j => ↑j + 1) j ∈ {x | Polynomial.eval x p = Polynomial.eval x q}
+'MF21Restart.weightedBinomialRisingSum_recurrence' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.weightedBinomialRisingSum_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.weightedBinomialInverse_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

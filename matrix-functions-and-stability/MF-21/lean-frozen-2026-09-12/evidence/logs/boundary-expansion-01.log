@@ -1,0 +1,22 @@
+MF21Restart/BoundaryExpansion.lean:56:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Matrix.det ?M
+in the target expression
+  (Matrix.det fun i j => U i j + c j * L i j) =
+    ∑ s, (∏ j ∈ s, c j) * Matrix.det fun i j => if j ∈ s then L i j else U i j
+
+ι : Type u_1
+K : Type u_2
+inst✝² : Fintype ι
+inst✝¹ : DecidableEq ι
+inst✝ : CommRing K
+U L : Matrix ι ι K
+c : ι → K
+D : (ι → K) [⋀^ι]→ₗ[K] K := Matrix.detRowAlternating
+⊢ (Matrix.det fun i j => U i j + c j * L i j) =
+    ∑ s, (∏ j ∈ s, c j) * Matrix.det fun i j => if j ∈ s then L i j else U i j
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  function expected
+    U i
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

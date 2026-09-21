@@ -1,0 +1,38 @@
+MF21Restart/TriangularInverse.lean:41:31: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ ij ∈ Finset.antidiagonal ?n, ?f ij.1 ij.2
+in the target expression
+  ∑ p ∈ Finset.antidiagonal (↑j - ↑i), (PowerSeries.coeff p.1) f * (PowerSeries.coeff p.2) g =
+    ∑ j_1,
+      (if ↑i ≤ ↑j_1 then (PowerSeries.coeff (↑j_1 - ↑i)) f else 0) *
+        if ↑j_1 ≤ ↑j then (PowerSeries.coeff (↑j - ↑j_1)) g else 0
+
+case pos
+n : ℕ
+f g : PowerSeries ℝ
+i j : Fin n
+hij : ↑i ≤ ↑j
+⊢ ∑ p ∈ Finset.antidiagonal (↑j - ↑i), (PowerSeries.coeff p.1) f * (PowerSeries.coeff p.2) g =
+    ∑ j_1,
+      (if ↑i ≤ ↑j_1 then (PowerSeries.coeff (↑j_1 - ↑i)) f else 0) *
+        if ↑j_1 ≤ ↑j then (PowerSeries.coeff (↑j - ↑j_1)) g else 0
+MF21Restart/TriangularInverse.lean:111:69: error: Application type mismatch: The argument
+  ?m.45
+has type
+  0 < m
+of sort `Prop` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  PowerSeries.invOneSubPow_val_eq_mk_sub_one_add_choose_of_pos ℝ ?m.45
+MF21Restart/TriangularInverse.lean:109:65: error: unsolved goals
+m n : ℕ
+hm : 1 ≤ m
+i j : Fin n
+⊢ (if ↑i ≤ ↑j then (PowerSeries.coeff (↑j - ↑i)) ↑(PowerSeries.invOneSubPow ℝ m) else 0) =
+    if ↑i ≤ ↑j then ↑((m - 1 + (↑j - ↑i)).choose (m - 1)) else 0
+'MF21Restart.powerSeriesUpperMatrix_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.powerSeriesUpperMatrix_mul' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.binomialUpperMatrix_mul_difference' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.differenceUpperMatrix_mul_binomial' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.binomialUpperMatrix_apply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.powerSeries_coeff_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.differenceUpperMatrix_apply' depends on axioms: [propext, Classical.choice, Quot.sound]

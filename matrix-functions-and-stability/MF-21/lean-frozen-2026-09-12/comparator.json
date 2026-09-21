@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "MF21Restart.Contracts.complex_fourier_eq_cosine",
+    "MF21Restart.Contracts.bulk_cutoff_pos",
+    "MF21Restart.Contracts.critical_bound_implies_fixed_index_limit",
+    "MF21Restart.Contracts.exists_log_sq_bulk_scale_gain",
+    "MF21Restart.Contracts.phase_window_margin",
+    "MF21Restart.Contracts.manuscript_smooth_target",
+    "MF21Restart.Contracts.target_proved"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

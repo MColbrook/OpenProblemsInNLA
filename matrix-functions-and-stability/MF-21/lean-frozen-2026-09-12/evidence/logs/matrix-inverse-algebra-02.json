@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/MatrixInverseAlgebra.olean",
+    "MF21Restart/MatrixInverseAlgebra.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "c8875cd75561ef852fa151509ad848659a04fdc8d758c358861a8abe41fe95d3",
+  "source": "MF21Restart/MatrixInverseAlgebra.lean",
+  "started_epoch": 1789942266.8175628,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "bf45f8662838aec3a47b518f131db5834f57c6406db717cfdff4d07cc8da164c",
+  "finished_epoch": 1789942271.600587,
+  "output_sha256": "54999a411e4a3ba91614d601e65754b823d1cc1d0dca283fac4d9575a1b9ffdb"
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ActualSimpleRoots.olean",
+    "MF21Restart/ActualSimpleRoots.lean"
+  ],
+  "source_sha256": "fd2b696d326d7672d791d41c1368a2b8cfd0a2c8fc1737f32c36a591bd95f6f8",
+  "started_epoch": 1789941219.3397918,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "94b4e6b3aef5ac38b96097c7db366674178e3f69482f4c131122ac328ed0c395",
+  "finished_epoch": 1789941228.645853,
+  "output_sha256": "0c5bb9064394847dd95ff8c32dd96f1bba80e6bf6d4abffc27d539a9fc421bd2"
+}

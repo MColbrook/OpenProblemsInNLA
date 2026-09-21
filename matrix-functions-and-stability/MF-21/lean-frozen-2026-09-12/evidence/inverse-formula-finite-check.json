@@ -1,0 +1,307 @@
+{
+  "scope": "Exploratory exact rational finite checks only, not a universal proof or Lean verification",
+  "utc": "2026-09-20T21:09:06.409530+00:00",
+  "cases": [
+    {
+      "m": 1,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 1,
+      "n": 10,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 2,
+      "n": 10,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 3,
+      "n": 10,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 4,
+      "n": 10,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 5,
+      "n": 10,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 1,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 2,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 3,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 4,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 5,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 6,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 7,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 8,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 9,
+      "exact_product_is_identity": true
+    },
+    {
+      "m": 6,
+      "n": 10,
+      "exact_product_is_identity": true
+    }
+  ],
+  "passed": true
+}

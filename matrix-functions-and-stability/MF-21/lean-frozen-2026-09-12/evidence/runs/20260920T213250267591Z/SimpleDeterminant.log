@@ -1,0 +1,4 @@
+'MF21Restart.finrank_ker_eq_one_of_simple_determinant_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_eigenspace_finrank_eq_one_of_simple_boundary_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

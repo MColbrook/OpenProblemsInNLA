@@ -1,0 +1,9 @@
+MF21Restart/SymbolDerivative.lean:22:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/SymbolDerivative.lean:23:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.symbol_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.abs_symbol_deriv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_difference_le' depends on axioms: [propext, Classical.choice, Quot.sound]

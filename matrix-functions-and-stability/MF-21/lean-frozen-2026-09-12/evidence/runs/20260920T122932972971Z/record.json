@@ -1,0 +1,223 @@
+{
+  "scope": "Partial MF-21 components; Target unproved",
+  "started_utc": "2026-09-20T12:29:32.972971+00:00",
+  "limits": {
+    "threads": 1,
+    "memory_MiB": 4096
+  },
+  "comparator": "not_run",
+  "github_run_id": null,
+  "runs": [
+    {
+      "source": "MF21Restart/Definitions.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart/Definitions.olean",
+        "MF21Restart/Definitions.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/Definitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "5d626edc8b8ebb039e4a3e85e7ac890da5bdc2b319da9cfe731fb84d006e5f8d"
+    },
+    {
+      "source": "MF21Restart/StatementBridges.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart/StatementBridges.olean",
+        "MF21Restart/StatementBridges.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/StatementBridges.log",
+      "log_sha256": "c4bee587ce45589759e5d94b454505dbfdd21ed2148199675b58a2fd8552909d",
+      "output_sha256": "37ebc4e31adf3ecb65a4320f10960684be57d5368d4becb847102e42b95919df"
+    },
+    {
+      "source": "MF21Restart/FixedIndex.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart/FixedIndex.olean",
+        "MF21Restart/FixedIndex.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/FixedIndex.log",
+      "log_sha256": "dd5e18e30f671812922fc80e2f0b8bb43c92e79e653b213dfb3ad90201d1eb17",
+      "output_sha256": "69a19f40e98e9902832c3d483e5d2815a469c7aa78dff5d666c1d4b955361889"
+    },
+    {
+      "source": "MF21Restart/BulkDecay.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart/BulkDecay.olean",
+        "MF21Restart/BulkDecay.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/BulkDecay.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "18cbe2e258a26401d580838a2a09caf0e25536a8eb7ddec5c9d01d09da5440df"
+    },
+    {
+      "source": "MF21Restart/Numerics.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart/Numerics.olean",
+        "MF21Restart/Numerics.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/Numerics.log",
+      "log_sha256": "81b0aa4a269aa86bcf2d56c963b7e8cc080ba96b3189d5537e1d44f7d5e4f702",
+      "output_sha256": "3aff4ea6140a0533a7b96635b48d601eca2c614490e38c866cff3c6810d56445"
+    },
+    {
+      "source": "MF21Restart.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/MF21Restart.olean",
+        "MF21Restart.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/MF21Restart.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "3f8f95650d67177bc524539be5e3001da4af5d077dbc2d25907015578a5f2418"
+    },
+    {
+      "source": "Audit.lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4096",
+        "-o",
+        ".lake/build/lib/lean/Audit.olean",
+        "Audit.lean"
+      ],
+      "environment": {
+        "LEAN_NUM_THREADS": "1"
+      },
+      "exit_code": 0,
+      "log": "evidence/runs/20260920T122932972971Z/Audit.log",
+      "log_sha256": "ceda464af9cc3d3ed7c01aac8aa7bdb597b717b2d6ee41f2dcc6861e1acbeee9",
+      "output_sha256": "d642beb87d2ab7913b801c568cfad8dfa18c32dcbbc4805e58086d116703ff1f"
+    }
+  ],
+  "source_hashes": {
+    "MF21Restart/Definitions.lean": "35a74047a81a9b7526e9bf039880ca8f07ae33314e2b5b960ab254e02fca4b51",
+    "MF21Restart/StatementBridges.lean": "90992b2cf34bbbefdf9da9c04b814a693faba7ec8d48b16bdf8d00948c4db057",
+    "MF21Restart/FixedIndex.lean": "da98fb1baae1b4b1736f5be8f03261b4a609182342df6158ac2394713313fc28",
+    "MF21Restart/BulkDecay.lean": "2d768009100ca3c3659739bc4c7de26999e1a866fb8b3c2b1d876ae50bdc7582",
+    "MF21Restart/Numerics.lean": "9d8eb86229773759393cecd14b2651dfc6a994c270dc1ee82d3131c1af60bc42",
+    "MF21Restart.lean": "11baffe50a6f760f5f6296f5e6ff4726310597e7a3b0d1475c83167968f10b35",
+    "Audit.lean": "99040f11643ac13985d3319dddd8b689d35a02593a7cbb528b216b2e0a1b7eba"
+  },
+  "pin_hashes": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "e1294189966f709ebaa9fbf2a6e40285c668f3f2d92378cb99177e3eb6de1cdc",
+    "lake-manifest.json": "408ea491dc48a404e8703c56403d3d252fa7bdc4feb393951e34339675a5e2bc"
+  },
+  "manuscript_sha256": "6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa",
+  "passed": true,
+  "package_heads": {
+    "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "axioms": {
+    "MF21Restart.complex_fourier_eq_cosine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.bulk_cutoff_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.implicit_phase_ratio_limit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.symbol_scaled_limit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.fixed_index_limit_of_implicit_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.critical_bound_implies_fixed_index_limit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.exists_log_sq_bulk_scale_gain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MF21Restart.phase_window_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-09-20T12:30:35.067689+00:00"
+}

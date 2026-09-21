@@ -1,0 +1,4 @@
+'MF21Restart.exists_pos_linear_upper_bound_of_neg_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.exists_pos_exp_upper_bound_of_neg_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_norm_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_exp_decay' depends on axioms: [propext, Classical.choice, Quot.sound]

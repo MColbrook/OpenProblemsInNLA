@@ -1,0 +1,2 @@
+'MF21Restart.rational_sub_div_pi_pow_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.trace_rational_form_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]

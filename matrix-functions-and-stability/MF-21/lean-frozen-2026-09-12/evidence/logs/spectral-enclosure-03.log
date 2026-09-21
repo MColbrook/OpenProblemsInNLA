@@ -1,0 +1,9 @@
+MF21Restart/SpectralEnclosure.lean:190:35: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MF21Restart.toeplitz_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_upper_complement_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_strict_spectral_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]

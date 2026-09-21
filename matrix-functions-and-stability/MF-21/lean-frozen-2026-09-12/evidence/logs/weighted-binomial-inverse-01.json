@@ -1,0 +1,22 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/WeightedBinomialInverse.olean",
+    "MF21Restart/WeightedBinomialInverse.lean"
+  ],
+  "source_sha256": "e2199685f087aa7e292ff52e687324f00e8de49c53bcd924e270c5625da34f57",
+  "started_epoch": 1789940530.47378,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "scope": "single development component; full Target unproved; Comparator not run",
+  "exit_code": 1,
+  "source_unchanged": true,
+  "log_sha256": "12f47b58b2642a7ca5cf9096ee18050df6ec0142cb2c1f895eb22ec57df4aecc",
+  "finished_epoch": 1789940537.6782122
+}

@@ -1,0 +1,17 @@
+MF21Restart/PhaseZero.lean:110:4: error: Type mismatch: After simplification, term
+  h
+ has type
+  (∑ x, (↑x + 1)) * 2 = m * (m - 1)
+but is expected to have type
+  (∑ ell, ↑ell + 1) * 2 = m * (m - 1)
+MF21Restart/PhaseZero.lean:114:42: error: mod_cast has type
+  (∑ ell, ↑ell + 1) * 2 = m * (m - 1)
+but is expected to have type
+  (∑ x, (↑x + 1)) * 2 = m * (m - 1)
+'MF21Restart.rootKappa_add_I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.individualPhase_rootKappa_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPsi_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPsi_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptEta_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptPsi_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptEta_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

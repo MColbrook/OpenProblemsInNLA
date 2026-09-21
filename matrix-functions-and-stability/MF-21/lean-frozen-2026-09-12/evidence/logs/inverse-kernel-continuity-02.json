@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/InverseKernelContinuity.olean",
+    "MF21Restart/InverseKernelContinuity.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/InverseKernelContinuity.lean",
+  "source_sha256": "63299f9afc95a00d783086a93cf6dc9205790d7fefbc6b4312b02526a05f7e4d",
+  "started_epoch": 1789945638.845547,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "c7c502d66c46bf6d0ab9f1fd3164eeb056b11c0e8ea84fc7a2932341ec0f324a",
+  "finished_epoch": 1789945647.354505,
+  "output_sha256": "88483b4447da6c0b5e99afc39352b647e89f33780a2768049adf2ee5b7877b1e"
+}

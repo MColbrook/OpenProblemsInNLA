@@ -1,0 +1,25 @@
+MF21Restart/CirculantOrder.lean:66:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/CirculantOrder.lean:66:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/CirculantOrder.lean:75:2: error: Type mismatch: After simplification, term
+  fourierCirculant_charpoly_complex m N hmN
+ has type
+  @Eq (Polynomial ℂ) ((fourierCirculant m N).map Complex.ofReal).charpoly
+    (∏ ell, (Polynomial.X - Polynomial.C ↑(symbol m (2 * Real.pi * ↑↑ell / ↑N))))
+but is expected to have type
+  @Eq (Polynomial ℂ) ((fourierCirculant m N).map ⇑Complex.ofRealHom).charpoly
+    (∏ x, (Polynomial.X - Polynomial.C (Complex.ofRealHom (symbol m (2 * Real.pi * ↑↑x / ↑N)))))
+MF21Restart/CirculantOrder.lean:132:10: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.fourierCirculant_charpoly_real' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.fourierCirculant_charpoly_ordered' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.circulantOrderedValue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.fourierCirculant_sorted_eigenvalues' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

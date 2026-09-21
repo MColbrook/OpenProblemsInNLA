@@ -1,0 +1,17 @@
+MF21Restart/InverseSpectralTrace.lean:21:11: error(lean.unknownIdentifier): Unknown identifier `conjStarAlgAut`
+MF21Restart/InverseSpectralTrace.lean:18:72: error: unsolved goals
+n : ℕ
+A : Matrix (Fin n) (Fin n) ℝ
+hA : A.PosDef
+H : A.IsHermitian := Matrix.PosDef.isHermitian hA
+⊢ A⁻¹.trace = ∑ i, (⋯.eigenvalues i)⁻¹
+MF21Restart/InverseSpectralTrace.lean:48:73: error: unsolved goals
+m n : ℕ
+f : ℝ → ℝ
+hlist : List.ofFn (orderedEigenvalue m n) = orderedEigenvalueList m n
+⊢ ↑((List.ofFn ⋯.eigenvalues).mergeSort fun x1 x2 => decide (x1 ≤ x2)) = ↑(List.ofFn ⋯.eigenvalues)
+MF21Restart/InverseSpectralTrace.lean:51:60: error(lean.unknownIdentifier): Unknown constant `Quot.exact`
+'MF21Restart.posDef_inverse_trace' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.sum_orderedEigenvalue_map' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_trace_ordered' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_trace_one_based' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

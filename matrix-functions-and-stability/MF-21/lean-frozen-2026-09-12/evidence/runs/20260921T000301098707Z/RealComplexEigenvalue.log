@@ -1,0 +1,7 @@
+'MF21Restart.real_matrix_charpoly_root_iff_complex_eigenvector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.eigenvalue_index_iff_boundaryDeterminant_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.mem_orderedEigenvalueList_iff_boundaryDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

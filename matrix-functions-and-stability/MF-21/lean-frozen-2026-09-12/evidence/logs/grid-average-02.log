@@ -1,0 +1,2 @@
+MF21Restart/GridAverage.lean:47:13: error: invalid 'by' tactic, expected type has not been provided
+'MF21Restart.continuous_grid_average_tendsto' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

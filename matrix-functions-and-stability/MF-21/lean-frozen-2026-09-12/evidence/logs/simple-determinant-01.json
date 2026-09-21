@@ -1,0 +1,25 @@
+{
+  "source": "MF21Restart/SimpleDeterminant.lean",
+  "source_sha256": "14221eca53ecb544043c81acffe32691f740afd2ffdeaa34c5fec4f2a6cfade1",
+  "started_utc": "2026-09-20T20:20:30.156976+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/SimpleDeterminant.olean",
+    "MF21Restart/SimpleDeterminant.lean"
+  ],
+  "exit_code": 0,
+  "log": "evidence/logs/simple-determinant-01.log",
+  "log_sha256": "94f16da31257aa4754526d6b125e495ac16d160a6e0d431786002bfc027f1acf",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:20:36.326267+00:00",
+  "output_sha256": "b74506804f86eb2d0c9c7665f82fe2eeb8caac887df011d0c7b20a50d2d49234"
+}

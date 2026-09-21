@@ -1,0 +1,2 @@
+'MF21Restart.mkSol_eq_of_finite_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finite_recurrence_iff_ghost_solution' depends on axioms: [propext, Classical.choice, Quot.sound]

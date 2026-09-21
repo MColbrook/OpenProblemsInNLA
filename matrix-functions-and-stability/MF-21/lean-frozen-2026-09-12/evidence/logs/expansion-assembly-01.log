@@ -1,0 +1,17 @@
+MF21Restart/ExpansionAssembly.lean:99:2: error: Type mismatch: After simplification, term
+  herr
+ has type
+  |remainder m d p n j| ≤ C * (1 * (↑n + 2)⁻¹) ^ (p + 1)
+but is expected to have type
+  |remainder m d p n j| ≤ C * ((↑n + 2) ^ (p + 1))⁻¹
+MF21Restart/ExpansionAssembly.lean:156:2: error: Type mismatch: After simplification, term
+  herr
+ has type
+  |remainder m d (2 * m) n j| ≤ (Cs + Cp) * (1 * (↑n + 2)⁻¹) ^ (2 * m + 1)
+but is expected to have type
+  |remainder m d (2 * m) n j| ≤ (Cs + Cp) * ((↑n + 2) ^ (2 * m + 1))⁻¹
+'MF21Restart.uniformBound_of_taylor_vanishing_spectral_tail' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.bulkBound_of_taylor_spectral_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

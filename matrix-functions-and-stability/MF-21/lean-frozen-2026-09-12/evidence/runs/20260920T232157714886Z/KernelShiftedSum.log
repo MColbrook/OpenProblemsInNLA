@@ -1,0 +1,2 @@
+'MF21Restart.finiteKernelIntegrand_continuousOn_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_shifted_sum' depends on axioms: [propext, Classical.choice, Quot.sound]

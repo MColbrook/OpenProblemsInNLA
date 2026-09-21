@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/PhaseQuantitative.olean",
+    "MF21Restart/PhaseQuantitative.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "bc649144eeafa74c1f0435e4bb90df7a679780c22cb709f2525b9c32be4b9649",
+  "source": "MF21Restart/PhaseQuantitative.lean",
+  "started_epoch": 1789944809.0082471,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "9ea6530dbd00f67b9d24a8adaf2bd8776e43d93f608565a948a85cbcd418c4bc",
+  "finished_epoch": 1789944828.3498712,
+  "output_sha256": "ede0ea37d1abeacf2a07d66eef94c1a34daf450485c12da15bb56cb23a0db5ad"
+}

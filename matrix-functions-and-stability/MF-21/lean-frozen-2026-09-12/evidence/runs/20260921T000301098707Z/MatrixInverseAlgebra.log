@@ -1,0 +1,4 @@
+'MF21Restart.diagonal_reciprocal_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_mul_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.rightInverse_of_weighted_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverse_of_weighted_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]

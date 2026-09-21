@@ -1,0 +1,38 @@
+MF21Restart/RootTangents.lean:31:2: error: Type mismatch: After simplification, term
+  HasDerivAt.cexp (HasDerivAt.mul_const (HasDerivAt.ofReal_comp (hasDerivAt_id 0)) Complex.I)
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup
+    (NormedAlgebra.toNormedSpace ℂ).toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯
+    (fun x => Complex.exp (↑x * Complex.I)) Complex.I 0
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup
+    instInnerProductSpaceRealComplex.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ oscillatoryRoot
+    Complex.I 0
+MF21Restart/RootTangents.lean:36:2: error: Type mismatch: After simplification, term
+  HasDerivAt.inv oscillatoryRoot_hasDerivAt_zero (oscillatoryRoot_ne_zero 0)
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ
+    DenselyNormedField.toNontriviallyNormedField.toDivisionRing.toAddCommGroup (NormedAlgebra.toNormedSpace ℂ).toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ oscillatoryRoot⁻¹ (-Complex.I) 0
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup
+    instInnerProductSpaceRealComplex.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯
+    (fun theta => (oscillatoryRoot theta)⁻¹) (-Complex.I) 0
+MF21Restart/RootTangents.lean:41:2: error: Type mismatch: After simplification, term
+  HasDerivAt.inv (stableRootCurve_hasDerivAt_zero κ) (stableRootCurve_ne_zero κ 0)
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ
+    DenselyNormedField.toNontriviallyNormedField.toDivisionRing.toAddCommGroup (NormedAlgebra.toNormedSpace ℂ).toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (stableRootCurve κ)⁻¹ κ 0
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup
+    instInnerProductSpaceRealComplex.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯
+    (fun theta => (stableRootCurve κ theta)⁻¹) κ 0
+'MF21Restart.characteristicRoots_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_hasDerivAt_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRootTangents_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_sub_hasDerivAt_zero' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.characteristicRootTangents_sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

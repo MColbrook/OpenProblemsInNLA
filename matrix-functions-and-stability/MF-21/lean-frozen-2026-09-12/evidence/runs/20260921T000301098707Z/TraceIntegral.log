@@ -1,0 +1,7 @@
+MF21Restart/TraceIntegral.lean:33:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.integral_pow_mul_one_sub_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.diagonal_kernel_integral_rational' depends on axioms: [propext, Classical.choice, Quot.sound]

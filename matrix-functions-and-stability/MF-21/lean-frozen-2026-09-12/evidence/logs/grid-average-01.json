@@ -1,0 +1,23 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/GridAverage.olean",
+    "MF21Restart/GridAverage.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/GridAverage.lean",
+  "source_sha256": "aa22f4c73ea1643ecbc021fe973440a94423913b25ff40732fe71f467bca3dab",
+  "started_epoch": 1789946170.228238,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "source_unchanged": true,
+  "log_sha256": "2d12bb2f74b187ac3deae26b8b0e26296e6dba8e2f220adf0a7af5348205fa21",
+  "finished_epoch": 1789946176.547568
+}

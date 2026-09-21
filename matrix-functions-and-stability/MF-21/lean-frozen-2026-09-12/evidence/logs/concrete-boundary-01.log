@@ -1,0 +1,8 @@
+'MF21Restart.eigenvalue_iff_manuscriptBoundaryDeterminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscript_boundary_kernel_finrank_eq_eigenspace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.characteristicRoots_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_pi' depends on axioms: [propext, Classical.choice, Quot.sound]

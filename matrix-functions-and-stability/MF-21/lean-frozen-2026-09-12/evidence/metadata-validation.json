@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-21T00:21:10.374549+00:00",
+  "check": "Actual unchanged upstream validate_manifest.validate, official v0.4 schema and exact Comparator declaration coverage",
+  "result": "pass",
+  "python_version": "3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:09:17) [Clang 16.0.6 ]",
+  "metadata_sha256": "3448a61dc1a77ea9e13dd672ad4be93544f0aabf5f4123850b7896ec1368e3a3",
+  "validator_sha256": "31e473132c1e8a40c29f73eff01fbff0bafe85649da601d2f550cef164debeb1",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "comparator_sha256": "dabddad03ffd9e58d22f1712583ee686d166ede59ebe073798fddd57a928c3ab",
+  "stdout": "Manifest schema and comparator coverage: PASS (7 declarations)\n",
+  "lean_run": false,
+  "comparator_run": false
+}

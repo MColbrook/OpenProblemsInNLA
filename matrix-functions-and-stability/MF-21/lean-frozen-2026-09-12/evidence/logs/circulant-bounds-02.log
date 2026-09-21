@@ -1,0 +1,15 @@
+MF21Restart/CirculantBounds.lean:88:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/CirculantBounds.lean:189:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/CirculantBounds.lean:189:12: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'MF21Restart.eigenvalue_circulant_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_circulant_power_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_circulant_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_fixed_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_reciprocal_tail_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_eventual_reciprocal_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

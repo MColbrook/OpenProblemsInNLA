@@ -1,0 +1,76 @@
+MF21Restart/SpectralEnclosure.lean:96:20: error: Type mismatch
+  Continuous.intervalIntegrable (hrow i)
+has type
+  ∀ (a b : ℝ), IntervalIntegrable (fun θ => ∑ j, f i j θ) ?m.489 a b
+but is expected to have type
+  IntervalIntegrable (?m.484 i) ?m.481 ?m.479 ?m.480
+MF21Restart/SpectralEnclosure.lean:94:71: error: unsolved goals
+m n : ℕ
+v : Fin n → ℝ
+f : Fin n → Fin n → ℝ → ℝ := fun i j θ => v i * (symbol m θ * Real.cos (↑(↑↑i - ↑↑j) * θ)) * v j
+hf : ∀ (i j : Fin n), Continuous (f i j)
+hrow : ∀ (i : Fin n), Continuous fun θ => ∑ j, f i j θ
+hfun : ∀ (θ : ℝ), ∑ i, ∑ j, f i j θ = symbol m θ * spectralTrigNormSq n v θ
+⊢ 1 / (2 * Real.pi) * ∑ i, ∑ j, ∫ (θ : ℝ) in -Real.pi..Real.pi, f i j θ =
+    1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, ∑ i, ∑ j, f i j θ
+MF21Restart/SpectralEnclosure.lean:123:33: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  StarOrderedRing ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+MF21Restart/SpectralEnclosure.lean:122:62: error: unsolved goals
+case refine_1
+n : ℕ
+v : Fin n → ℝ
+hv : v ≠ 0
+⊢ StarOrderedRing ℝ
+MF21Restart/SpectralEnclosure.lean:154:6: error: Application type mismatch: The argument
+  Continuous.intervalIntegrable (Continuous.mul hw hp)
+has type
+  ∀ (a b : ℝ), IntervalIntegrable (w * p) ?m.296 a b
+but is expected to have type
+  IntervalIntegrable (fun θ => w θ * p θ) volume (-Real.pi) Real.pi
+in the application
+  intervalIntegral.integral_eq_zero_iff_of_le_of_nonneg_ae hab hnonneg
+    (Continuous.intervalIntegrable (Continuous.mul hw hp))
+MF21Restart/SpectralEnclosure.lean:163:6: error: Application type mismatch: The argument
+  Continuous.intervalIntegrable hp
+has type
+  ∀ (a b : ℝ), IntervalIntegrable p ?m.410 a b
+but is expected to have type
+  IntervalIntegrable p volume (-Real.pi) Real.pi
+in the application
+  intervalIntegral.integral_eq_zero_iff_of_le_of_nonneg_ae hab hpnonnegAE (Continuous.intervalIntegrable hp)
+MF21Restart/SpectralEnclosure.lean:189:35: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+MF21Restart/SpectralEnclosure.lean:217:4: error: Application type mismatch: The argument
+  Continuous.intervalIntegrable (Continuous.mul continuous_const hp)
+has type
+  ∀ (a b : ℝ), IntervalIntegrable ((fun x => ?m.268) * spectralTrigNormSq n v) ?m.279 a b
+but is expected to have type
+  IntervalIntegrable ?m.261 ?m.263 ?m.259 ?m.260
+in the application
+  intervalIntegral.integral_sub (Continuous.intervalIntegrable (Continuous.mul continuous_const hp))
+MF21Restart/SpectralEnclosure.lean:204:65: error: unsolved goals
+m n : ℕ
+v : Fin n → ℝ
+hp : Continuous (spectralTrigNormSq n v)
+hgp : Continuous fun θ => symbol m θ * spectralTrigNormSq n v θ
+hfun :
+  (fun θ => (4 ^ m - symbol m θ) * spectralTrigNormSq n v θ) = fun θ =>
+    4 ^ m * spectralTrigNormSq n v θ - symbol m θ * spectralTrigNormSq n v θ
+⊢ 4 ^ m * (1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, spectralTrigNormSq n v θ) -
+      1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, symbol m θ * spectralTrigNormSq n v θ =
+    1 / (2 * Real.pi) *
+      ∫ (θ : ℝ) in -Real.pi..Real.pi, 4 ^ m * spectralTrigNormSq n v θ - symbol m θ * spectralTrigNormSq n v θ
+MF21Restart/SpectralEnclosure.lean:224:38: error: `simp` made no progress
+MF21Restart/SpectralEnclosure.lean:243:39: error(lean.invalidField): Invalid field `HasEigenvalue`: The environment does not contain `LinearMap.HasEigenvalue`, so it is not possible to project the field `HasEigenvalue` from an expression
+  (toeplitz m n).mulVecLin
+of type `(Fin n → ℝ) →ₗ[ℝ] Fin n → ℝ`
+MF21Restart/SpectralEnclosure.lean:246:9: error: Tactic `rcases` failed: `x✝ : ?m.63` is not an inductive datatype
+'MF21Restart.toeplitz_posDef' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_upper_complement_posDef' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_strict_spectral_enclosure' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

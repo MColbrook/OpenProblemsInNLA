@@ -1,0 +1,38 @@
+MF21Restart/EtaNeighborhood.lean:62:10: error: Application type mismatch: The argument
+  henlarged hy
+has type
+  y ∈ U
+but is expected to have type
+  ContDiffAt ?m.418 ?m.428 ?m.426 ?m.427
+in the application
+  ContDiffAt.continuousAt (henlarged hy)
+MF21Restart/EtaNeighborhood.lean:66:14: error: Application type mismatch: The argument
+  henlarged hy
+has type
+  y ∈ U
+but is expected to have type
+  ContDiffAt ?m.463 ?m.473 ?m.471 ?m.472
+in the application
+  ContDiffAt.continuousAt_fderiv (henlarged hy)
+MF21Restart/EtaNeighborhood.lean:66:50: error: unsolved goals
+m : ℕ
+hm : 1 ≤ m
+U : Set ℝ := {y | ContDiffAt ℝ ⊤ (manuscriptEta m) y}
+hU : IsOpen U
+hsub : Set.Icc 0 Real.pi ⊆ U
+d₀ : ℝ
+hd₀ : d₀ > 0
+hball₀ : Metric.ball 0 d₀ ⊆ U
+dπ : ℝ
+hdπ : dπ > 0
+hballπ : Metric.ball Real.pi dπ ⊆ U
+r : ℝ := min d₀ dπ / 2
+hr : 0 < r
+hr₀ : r < d₀
+hrπ : r < dπ
+henlarged : Set.Icc (-r) (Real.pi + r) ⊆ U
+hc : ContinuousOn (manuscriptEta m) (Set.Icc (-r) (Real.pi + r))
+y : ℝ
+hy : y ∈ Set.Icc (-r) (Real.pi + r)
+⊢ ¬?m.473 = 0
+'MF21Restart.manuscriptEta_enlarged_interval_bounds' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

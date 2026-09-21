@@ -1,0 +1,16 @@
+MF21Restart/VandermondeScale.lean:21:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/VandermondeScale.lean:30:30: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a ^ ∑ i ∈ ?s, ?f i
+in the target expression
+  (∏ i, c ^ ↑i) * (Matrix.vandermonde u).det = c ^ vandermondeDegree k * (Matrix.vandermonde u).det
+
+k : ℕ
+u : Fin k → ℂ
+c : ℂ
+hm : (Matrix.vandermonde fun i => c * u i) = Matrix.of fun i j => c ^ ↑j * Matrix.vandermonde u i j
+⊢ (∏ i, c ^ ↑i) * (Matrix.vandermonde u).det = c ^ vandermondeDegree k * (Matrix.vandermonde u).det
+'MF21Restart.twice_vandermondeDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.vandermonde_mul_scalar' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.vandermonde_one_add_mul' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

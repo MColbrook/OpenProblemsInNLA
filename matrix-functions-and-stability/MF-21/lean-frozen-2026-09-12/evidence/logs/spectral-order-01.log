@@ -1,0 +1,5 @@
+'MF21Restart.symbol_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.orderedEigenvalue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_existsUnique_angle' depends on axioms: [propext, Classical.choice, Quot.sound]

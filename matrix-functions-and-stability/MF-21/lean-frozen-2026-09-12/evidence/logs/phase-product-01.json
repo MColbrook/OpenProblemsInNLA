@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/PhaseProduct.olean",
+    "MF21Restart/PhaseProduct.lean"
+  ],
+  "source_sha256": "1a4e719778fff8ed729c9bb6cc5f7615cf5d2aa0696b8df302c107afd64afeb1",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "43337936c60a56e35561bc8414e4f93fa18ec41692f01c477e1603eb7a16d9a7",
+  "started_epoch": 1789937675.676163,
+  "finished_epoch": 1789937682.429522,
+  "output_sha256": "16ee566ef09f741fb011cd81593dc47422871a154138dd1ac2cb1de7185bac24"
+}

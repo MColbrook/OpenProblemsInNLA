@@ -1,0 +1,32 @@
+MF21Restart/RecurrenceBasis.lean:31:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (fun k => w i ^ k) (n + E.order)
+in the target expression
+  c i * w i ^ (n + E.order) = c i * ∑ j, E.coeffs j * w i ^ (n + ↑j)
+
+E : LinearRecurrence ℂ
+w c : Fin E.order → ℂ
+hw : ∀ (i : Fin E.order), E.charPoly.IsRoot (w i)
+hgeom : ∀ (i : Fin E.order), E.IsSolution fun k => w i ^ k
+n : ℕ
+i : Fin E.order
+a✝ : i ∈ Finset.univ
+⊢ c i * w i ^ (n + E.order) = c i * ∑ j, E.coeffs j * w i ^ (n + ↑j)
+MF21Restart/RecurrenceBasis.lean:54:16: error: expected token
+MF21Restart/RecurrenceBasis.lean:47:65: error: unsolved goals
+E : LinearRecurrence ℂ
+w : Fin E.order → ℂ
+hinj : Function.Injective w
+hw : ∀ (i : Fin E.order), E.charPoly.IsRoot (w i)
+u : ℕ → ℂ
+hu : E.IsSolution u
+V : Matrix (Fin E.order) (Fin E.order) ℂ := (Matrix.vandermonde w).transpose
+hdet : V.det ≠ 0
+init : Fin E.order → ℂ := fun i => u ↑i
+c : Matrix (Fin E.order) (Fin E.order) ℂ := V⁻¹ * sorry
+⊢ ∃! c, ∀ (k : ℕ), u k = ∑ i, c i * w i ^ k
+MF21Restart/RecurrenceBasis.lean:86:17: error: expected token
+'MF21Restart.recurrence_solution_geometric_basis' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.geometric_coefficients_zero_of_consecutive_zeros' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

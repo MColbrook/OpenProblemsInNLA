@@ -1,0 +1,45 @@
+MF21Restart/BoundaryExpansion.lean:57:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Matrix.of fun i j => U i j + c j * L i j).det
+in the target expression
+  (Matrix.det fun i j => U i j + c j * L i j) =
+    ∑ s, (∏ j ∈ s, c j) * Matrix.det fun i j => if j ∈ s then L i j else U i j
+
+ι : Type u_1
+K : Type u_2
+inst✝² : Fintype ι
+inst✝¹ : DecidableEq ι
+inst✝ : CommRing K
+U L : Matrix ι ι K
+c : ι → K
+D : (ι → K) [⋀^ι]→ₗ[K] K := Matrix.detRowAlternating
+⊢ (Matrix.det fun i j => U i j + c j * L i j) =
+    ∑ s, (∏ j ∈ s, c j) * Matrix.det fun i j => if j ∈ s then L i j else U i j
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  function expected
+    U i
+MF21Restart/BoundaryExpansion.lean:108:13: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided
+MF21Restart/BoundaryExpansion.lean:109:6: error: No goals to be solved
+MF21Restart/BoundaryExpansion.lean:126:27: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Matrix.det ?M
+in the target expression
+  ¬(Matrix.det fun row col => if col ∈ s then boundaryLower m w row col else boundaryUpper m w row col) = 0
+
+m : ℕ
+w : Fin (2 * m) → ℂ
+s : Finset (Fin (2 * m))
+hcard : s.card ≠ m
+hdet : ¬(Matrix.det fun row col => if col ∈ s then boundaryLower m w row col else boundaryUpper m w row col) = 0
+⊢ False
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  function expected
+    boundaryLower m w row
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-09-21T00:22:42.034728+00:00",
+  "result": "passed",
+  "scope": "Python-only lock selection, actual two-process flock exclusion, and runner main equivalence except lock selection; no Lean or Comparator was executed. OS-selection cases are mocked; flock exclusion runs on the recorded host.",
+  "command": [
+    "python3",
+    "evidence/runner-portability-smoke.py"
+  ],
+  "host_platform": "darwin",
+  "python_version": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "script_sha256": "9568b4563e4ec1b23ce3e395cbe01e9fa2699d8a95a1dbd773c64777e9b33eac",
+  "current_runner_sha256": "67b74e0aedc0d6896d1ccaf7e57de3e70b156c56e706e77d6c43703a5ef9a128",
+  "archived_runner": "evidence/runs/20260921T000301098707Z/verify_local.py",
+  "archived_runner_sha256": "fddada659794fdf62748ffc0790368c30b1bf66ff0acc939161edbd1fd4b8d85",
+  "full_proof_record": "evidence/runs/20260921T000301098707Z/record.json",
+  "full_proof_record_sha256": "abdf520ffbcfc2fe80236e0c303795d97a50e8c11f46a5edbac8a29dba5d7856",
+  "selection_cases": [
+    {
+      "platform": "darwin",
+      "temporary_directory": "/ignored-for-macos",
+      "selected": "/private/tmp/nla-lean-compiler.lock"
+    },
+    {
+      "platform": "linux",
+      "temporary_directory": "/tmp",
+      "selected": "/tmp/nla-lean-compiler.lock"
+    },
+    {
+      "platform": "linux",
+      "temporary_directory": "/var/tmp",
+      "selected": "/var/tmp/nla-lean-compiler.lock"
+    }
+  ],
+  "held_lock_child": "blocked",
+  "released_lock_child": "acquired",
+  "main_unchanged_except_lock_selection": true,
+  "proof_source_drift": []
+}

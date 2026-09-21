@@ -1,0 +1,18 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/NormalizedErrorCoefficient.olean",
+    "MF21Restart/NormalizedErrorCoefficient.lean"
+  ],
+  "source_sha256": "27f7cea507021a1330e88bd3c5d7e73d1927a4adec8042a21752a36a2188f96b",
+  "exit_code": 1,
+  "source_unchanged": true,
+  "log_sha256": "4dfdfe66017cb6c7fad0f7f94e93280f9c0c22fa627653c4f95335fa07e9aeaa",
+  "started_epoch": 1789937598.682438,
+  "finished_epoch": 1789937605.489682
+}

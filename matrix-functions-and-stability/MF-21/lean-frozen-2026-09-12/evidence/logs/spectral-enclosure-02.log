@@ -1,0 +1,29 @@
+MF21Restart/SpectralEnclosure.lean:190:35: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+MF21Restart/SpectralEnclosure.lean:217:12: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ℝ) in -Real.pi..Real.pi,
+    ((fun x => ?m.268) * spectralTrigNormSq n v) x - symbol m x * spectralTrigNormSq n v x ∂?m.286
+in the target expression
+  4 ^ m * (1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, spectralTrigNormSq n v θ) -
+      1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, symbol m θ * spectralTrigNormSq n v θ =
+    1 / (2 * Real.pi) *
+      ∫ (θ : ℝ) in -Real.pi..Real.pi, 4 ^ m * spectralTrigNormSq n v θ - symbol m θ * spectralTrigNormSq n v θ
+
+m n : ℕ
+v : Fin n → ℝ
+hp : Continuous (spectralTrigNormSq n v)
+hgp : Continuous fun θ => symbol m θ * spectralTrigNormSq n v θ
+hfun :
+  (fun θ => (4 ^ m - symbol m θ) * spectralTrigNormSq n v θ) = fun θ =>
+    4 ^ m * spectralTrigNormSq n v θ - symbol m θ * spectralTrigNormSq n v θ
+⊢ 4 ^ m * (1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, spectralTrigNormSq n v θ) -
+      1 / (2 * Real.pi) * ∫ (θ : ℝ) in -Real.pi..Real.pi, symbol m θ * spectralTrigNormSq n v θ =
+    1 / (2 * Real.pi) *
+      ∫ (θ : ℝ) in -Real.pi..Real.pi, 4 ^ m * spectralTrigNormSq n v θ - symbol m θ * spectralTrigNormSq n v θ
+'MF21Restart.toeplitz_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_upper_complement_posDef' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_strict_spectral_enclosure' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

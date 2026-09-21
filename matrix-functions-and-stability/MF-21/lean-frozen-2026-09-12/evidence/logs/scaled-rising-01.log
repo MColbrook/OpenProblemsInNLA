@@ -1,0 +1,18 @@
+MF21Restart/ScaledRising.lean:75:4: error: Type mismatch: After simplification, term
+  hp.left 3
+ has type
+  @LE.le ℝ ((fun i => ((fun i => Real.instPreorder) i).toLE) 3) (![0, 0, 0, 1 / 4] 3) (p 3)
+but is expected to have type
+  @LE.le ℝ Real.instLE (1 / 4) (p 3)
+'MF21Restart.scaledRising_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.scaledRising_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.scaledRising_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.continuous_scaledRising' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.scaledRising_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_continuousOn_box' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniformContinuousOn_box' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

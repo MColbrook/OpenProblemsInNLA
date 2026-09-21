@@ -1,0 +1,19 @@
+MF21Restart/StableRootDecay.lean:39:52: error(lean.invalidField): Invalid field `symm`: The environment does not contain `Function.symm`, so it is not possible to project the field `symm` from an expression
+  hx0
+of type `x = 0 → False`
+MF21Restart/StableRootDecay.lean:58:33: error: Type mismatch
+  add_le_add_left hmul 1
+has type
+  x * dslope f 0 x + 1 ≤ x * dslope f 0 x₀ + 1
+but is expected to have type
+  1 + x * dslope f 0 x ≤ 1 + x * dslope f 0 x₀
+'MF21Restart.exists_pos_linear_upper_bound_of_neg_deriv' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.exists_pos_exp_upper_bound_of_neg_deriv' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.stableRootCurve_norm_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.stableRootCurve_exp_decay' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

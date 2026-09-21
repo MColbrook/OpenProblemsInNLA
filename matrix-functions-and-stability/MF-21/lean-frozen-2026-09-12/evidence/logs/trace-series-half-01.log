@@ -1,0 +1,15 @@
+MF21Restart/TraceSeriesHalf.lean:39:53: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  f ≥ 0
+  e ≥ 0
+  e - f ≥ 1
+  d ≥ 0
+  c ≥ 1
+where
+ c := ↑m
+ d := ↑((fun j => 2 * j + 1) b)
+ e := ↑b
+ f := ↑a
+'MF21Restart.hasSum_half_integer_zeta' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.hasSum_half_integer_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.halfIntegerTailCorrection_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

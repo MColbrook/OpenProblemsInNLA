@@ -1,0 +1,112 @@
+{
+  "commit": "3a24a73416f83c32b4d4a2ac09588524c6291650",
+  "target_module": "LeanFormalizations.NumberTheory.Transcendence.PiTranscendental",
+  "files": [
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.ETranscendental",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean",
+      "sha256": "7cf361e9979a0b68e932a6105c89a0e74bed28d4d3070ac947b370c681942ef0",
+      "bytes": 17168,
+      "lines": 303,
+      "imports": [
+        "Mathlib.NumberTheory.Transcendental.Lindemann.AnalyticalPart",
+        "Mathlib.RingTheory.Algebraic.Integral",
+        "Mathlib.RingTheory.Localization.Integral",
+        "Mathlib.Analysis.SpecialFunctions.Exponential",
+        "Mathlib.Topology.Algebra.Order.Floor"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/ETranscendental.lean"
+    },
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.PiLindemann",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean",
+      "sha256": "d7a7e51ecfa31365cf163558536e3702bc6b60d6984fa8bf6560dfc8fb07e030",
+      "bytes": 28247,
+      "lines": 484,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Exponential",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.RingTheory.Polynomial.IntegralNormalization",
+        "Mathlib.RingTheory.Polynomial.ScaleRoots",
+        "Mathlib.RingTheory.Polynomial.Vieta",
+        "Mathlib.FieldTheory.IsAlgClosed.Basic",
+        "Mathlib.Analysis.Complex.Polynomial.Basic",
+        "LeanFormalizations.NumberTheory.Transcendence.ETranscendental"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/PiLindemann.lean"
+    },
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean",
+      "sha256": "bd754566761fe4e7b34441420962d2d5d1d1c5a409ebca41e9346f55258df108",
+      "bytes": 1450,
+      "lines": 31,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.Analysis.Complex.IsIntegral",
+        "Mathlib.RingTheory.Algebraic.Integral"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/HermiteLindemann.lean"
+    },
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.MonicRootSums",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean",
+      "sha256": "c6b20c3138f3ec57e96de603f796422479894f42bbd45d2ebafd0d8ec8558d04",
+      "bytes": 12908,
+      "lines": 224,
+      "imports": [
+        "Mathlib",
+        "LeanFormalizations.NumberTheory.Transcendence.PiLindemann",
+        "LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean"
+    },
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean",
+      "sha256": "311a97ce3b745500f3f14ff879c2eaa42299c5ab57914bf1c86fe04a6cdf3165",
+      "bytes": 8587,
+      "lines": 148,
+      "imports": [
+        "Mathlib"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean"
+    },
+    {
+      "module": "LeanFormalizations.NumberTheory.Transcendence.PiTranscendental",
+      "path": "src/LeanFormalizations/NumberTheory/Transcendence/PiTranscendental.lean",
+      "sha256": "7ffa9e9a3734edce153443ced0a144515ab539091634dc9ab497066873aefdb6",
+      "bytes": 1584,
+      "lines": 28,
+      "imports": [
+        "LeanFormalizations.NumberTheory.Transcendence.MonicRootSums",
+        "LeanFormalizations.NumberTheory.Transcendence.SubsetSumEsymm"
+      ],
+      "url": "https://raw.githubusercontent.com/gotrevor/lean-formalizations/3a24a73416f83c32b4d4a2ac09588524c6291650/src/LeanFormalizations/NumberTheory/Transcendence/PiTranscendental.lean"
+    }
+  ],
+  "total_bytes": 69944,
+  "total_lines": 1218,
+  "all_source_hashes_match": true,
+  "external_imports": [
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Analysis.Complex.IsIntegral",
+    "Mathlib.Analysis.Complex.Polynomial.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+    "Mathlib.Analysis.SpecialFunctions.Exponential",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+    "Mathlib.FieldTheory.IsAlgClosed.Basic",
+    "Mathlib.NumberTheory.Transcendental.Lindemann.AnalyticalPart",
+    "Mathlib.RingTheory.Algebraic.Integral",
+    "Mathlib.RingTheory.Localization.Integral",
+    "Mathlib.RingTheory.Polynomial.IntegralNormalization",
+    "Mathlib.RingTheory.Polynomial.ScaleRoots",
+    "Mathlib.RingTheory.Polynomial.Vieta",
+    "Mathlib.Topology.Algebra.Order.Floor"
+  ],
+  "missing_pinned_mathlib_import_paths": [],
+  "flagged_code_keywords": [],
+  "definitions_and_notations": []
+}

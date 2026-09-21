@@ -1,0 +1,25 @@
+{
+  "source": "MF21Restart/StableRootBounds.lean",
+  "source_sha256": "de3a7eb721977af0be836dff1f6c68b525db5dccd36f5e6b4a68075633052b31",
+  "started_utc": "2026-09-20T20:13:37.398256+00:00",
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "comparator": "not_run",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/StableRootBounds.olean",
+    "MF21Restart/StableRootBounds.lean"
+  ],
+  "exit_code": 0,
+  "log": "evidence/logs/stable-root-bounds-01.log",
+  "log_sha256": "3bfce3dacf185336e20af5d569665f7c0e28a6e1d066c5fedc8bea4eceae2508",
+  "source_unchanged": true,
+  "finished_utc": "2026-09-20T20:13:44.103776+00:00",
+  "output_sha256": "14057e2115c4755b3b7b5d33c8c07291d48574e3ae6741514fe28f8aa08edbef"
+}

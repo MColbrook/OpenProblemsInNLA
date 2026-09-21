@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/CirculantSpectrum.olean",
+    "MF21Restart/CirculantSpectrum.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/CirculantSpectrum.lean",
+  "source_sha256": "f6b8574912fd23d3b6d53fe4d89aa85b2a577c0ad451a5fa7404d7d88eb552da",
+  "started_epoch": 1789946007.1918201,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "8e4aded8dfe640293e3fcb61172d760bbe0fa117428af618f2d8550f4380f97a",
+  "finished_epoch": 1789946014.2407181,
+  "output_sha256": "78a0beb2491ced37fa3f8628e1be7c2995048d502c6e9f4118a53a4ab7066021"
+}

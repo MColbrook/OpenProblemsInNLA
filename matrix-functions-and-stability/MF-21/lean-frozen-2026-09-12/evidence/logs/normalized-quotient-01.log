@@ -1,0 +1,21 @@
+MF21Restart/NormalizedQuotient.lean:29:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  NormedSpace ℂ ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+MF21Restart/NormalizedQuotient.lean:30:4: error: Application type mismatch: The argument
+  ContDiff.contDiffAt (normalizedBoundaryCoefficient_contDiff m hm t ht)
+has type
+  ContDiffAt ℝ ⊤ (normalizedBoundaryCoefficient m t ht) ?m.95
+but is expected to have type
+  ContDiffAt ℂ ?m.84 (normalizedBoundaryCoefficient m t ht) θ
+in the application
+  ContDiffAt.div ?m.85 (ContDiff.contDiffAt (normalizedBoundaryCoefficient_contDiff m hm t ht))
+'MF21Restart.boundaryCoefficient_ratio_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.normalizedBoundaryRatio_contDiffAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.exists_pos_bound_with_deriv_of_contDiffAt_on_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.normalizedBoundaryRatio_bounded_with_derivative' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

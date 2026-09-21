@@ -1,0 +1,4 @@
+'MF21Restart.kernelGridPoint_mem_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.kernelGridPoint_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.scaled_toeplitz_inverse_eq_grid_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_grid_top_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,43 @@
+--- upstream/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean
++++ local/LeanFormalizations/NumberTheory/Transcendence/MonicRootSums.lean
+@@ -20,10 +20,11 @@
+ `#print axioms sum_aeval_roots_int = [propext, Classical.choice, Quot.sound]` (no `sorry`, no
+ added axiom). Ported verbatim into the project namespace.
+ -/
+--- This file is an Aristotle-ported proof verified under `import Mathlib`; we keep that
+--- broad import (rather than the project's usual targeted imports) to match the exact
+--- environment in which it was kernel-verified axiom-clean.
+-import Mathlib
++-- Local MF-21 port: targeted imports replace upstream `import Mathlib`
++-- to keep compilation within the project's 4096 MiB limit. Proof statements
++-- and proofs are preserved; successful local verification is recorded separately.
++import Mathlib.RingTheory.MvPolynomial.Symmetric.NewtonIdentities
++import Mathlib.Tactic
+ import LeanFormalizations.NumberTheory.Transcendence.PiLindemann
+ import LeanFormalizations.NumberTheory.Transcendence.HermiteLindemann
+ 
+--- upstream/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean
++++ local/LeanFormalizations/NumberTheory/Transcendence/SubsetSumEsymm.lean
+@@ -15,7 +15,12 @@
+ lemmas (`ringHom_map_multiset_esymm`, `subsetSum_esymm_isSymmetric`, `esymm_theta_mem_range`,
+ `aeval_mem_range`) coincide with the local roadmap independently developed this lap.
+ -/
+-import Mathlib
++-- Local MF-21 port: use the specific algebraic imports within 4096 MiB.
++import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem
++import Mathlib.Analysis.Complex.Polynomial.Basic
++import Mathlib.FieldTheory.IsAlgClosed.Basic
++import Mathlib.RingTheory.Polynomial.Vieta
++import Mathlib.Tactic
+ 
+ open scoped BigOperators Nat Classical
+ open Polynomial
+@@ -30,7 +35,7 @@
+     f (s.esymm m) = (s.map f).esymm m := by
+   unfold Multiset.esymm
+   induction' s using Multiset.induction_on with a s ih generalizing m
+-  · cases m <;> simp +decide
++  · cases m <;> simp +decide [Multiset.powersetCard_zero_right]
+   · rcases m with ( _ | m ) <;> simp_all +decide [ Multiset.powersetCard_cons ]
+     simp +decide [ ← ih, Multiset.sum_map_mul_left ]
+ 

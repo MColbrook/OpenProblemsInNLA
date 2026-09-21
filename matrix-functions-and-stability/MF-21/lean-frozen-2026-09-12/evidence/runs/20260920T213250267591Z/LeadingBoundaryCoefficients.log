@@ -1,0 +1,17 @@
+MF21Restart/LeadingBoundaryCoefficients.lean:186:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:211:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:233:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/LeadingBoundaryCoefficients.lean:257:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.leading_phaseProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]

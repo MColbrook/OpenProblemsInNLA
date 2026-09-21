@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/HermitianInterlacing.olean",
+    "MF21Restart/HermitianInterlacing.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/HermitianInterlacing.lean",
+  "source_sha256": "b2f99448fd17409d3873c94a4d2a6e4e8d7ce1359e0764121d269065b5be30e2",
+  "started_epoch": 1789948274.650377,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "4220d9a80a9fec8e014ff38fa0b68114fcb76f694e851ea5dcd5e9ae29fb258e",
+  "finished_epoch": 1789948283.059872,
+  "output_sha256": "5fd072330a17d26a8ab4f3112a8fbce23929a8768915ed45b06b60a0cabfe917"
+}

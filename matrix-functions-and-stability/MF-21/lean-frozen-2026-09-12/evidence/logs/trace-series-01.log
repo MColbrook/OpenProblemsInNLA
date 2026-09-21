@@ -1,0 +1,2 @@
+'MF21Restart.half_integer_shift_trace_series_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.trace_series_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]

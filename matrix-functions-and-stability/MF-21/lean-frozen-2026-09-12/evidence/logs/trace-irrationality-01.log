@@ -1,0 +1,10 @@
+MF21Restart/TraceIrrationality.lean:15:2: error: Type mismatch
+  fun q =>
+    Irrational.ratCast_sub q
+      (Irrational.ratCast_div (Transcendental.irrational (Transcendental.pow pi_transcendental hk)) hv)
+has type
+  ∀ (q : ℚ), Irrational (↑q - ↑v / Real.pi ^ k)
+but is expected to have type
+  Irrational (↑u - ↑v / Real.pi ^ k)
+'MF21Restart.rational_sub_div_pi_pow_irrational' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.trace_rational_form_irrational' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

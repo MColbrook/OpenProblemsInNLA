@@ -1,0 +1,3 @@
+MF21Restart/StatementBridges.lean:69:34: error: not a positivity goal
+'MF21Restart.complex_fourier_eq_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.bulk_cutoff_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

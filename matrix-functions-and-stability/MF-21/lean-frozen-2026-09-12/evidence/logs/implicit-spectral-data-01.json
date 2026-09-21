@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ImplicitSpectralData.olean",
+    "MF21Restart/ImplicitSpectralData.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/ImplicitSpectralData.lean",
+  "source_sha256": "e379ad2cfd444ba82aa0f10e9c4d51c2bf61d081836754c24ae7c2029fd1bc1b",
+  "started_epoch": 1789945998.960864,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "9dc105bf979408e2455aee20f606c36cd5444000624c6df9cf0dec8b0a595c97",
+  "finished_epoch": 1789946007.191177,
+  "output_sha256": "fca381cae4798271271a53e22693954638fd5edb011c257945f69963fc3d6b3e"
+}

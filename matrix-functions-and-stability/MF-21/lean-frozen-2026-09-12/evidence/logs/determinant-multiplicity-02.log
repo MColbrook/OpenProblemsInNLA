@@ -1,0 +1,20 @@
+MF21Restart/DeterminantMultiplicity.lean:70:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup NormedSpace.complexToReal.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun t => (M t).det)
+    (∑ x, (determinantContinuousMultilinear N) (Function.update (M θ) x (M' x))) θ
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup NormedSpace.complexToReal.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun t => (M t).det)
+    (∑ i, (of (Function.update (M θ) i (M' i))).det) θ
+'MF21Restart.det_updateRow_eq_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_curve' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_two_le_finrank_ker' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_entrywise_deriv_and_two_le_finrank_ker' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

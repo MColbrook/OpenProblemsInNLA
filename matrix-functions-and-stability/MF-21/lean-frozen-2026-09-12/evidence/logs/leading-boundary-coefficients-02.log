@@ -1,0 +1,44 @@
+MF21Restart/LeadingBoundaryCoefficients.lean:51:4: error: Tactic `apply` failed: could not unify the conclusion of `@Finset.prod_eq_one`
+  ∏ x ∈ ?s, ?f x = 1
+with the goal
+  ∏ j > Fin.last k, Fin.snoc v u j - Fin.snoc v u (Fin.last k) = 1
+
+Note: The full type of `@Finset.prod_eq_one` is
+  ∀ {ι : Type ?u.60} {M : Type ?u.59} {s : Finset ι} [inst : CommMonoid M] {f : ι → M},
+    (∀ x ∈ s, f x = 1) → ∏ x ∈ s, f x = 1
+
+k : ℕ
+v : Fin k → ℂ
+u : ℂ
+⊢ ∏ j > Fin.last k, Fin.snoc v u j - Fin.snoc v u (Fin.last k) = 1
+MF21Restart/LeadingBoundaryCoefficients.lean:57:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∏ j > Fin.last k, Fin.snoc v u j - Fin.snoc v u (Fin.last k)
+in the target expression
+  (∏ i, ∏ j > i.castSucc, (Fin.snoc v u j - Fin.snoc v u i.castSucc)) *
+      ∏ j > Fin.last k, (Fin.snoc v u j - Fin.snoc v u (Fin.last k)) =
+    (Matrix.vandermonde v).det * ∏ i, (u - v i)
+
+k : ℕ
+v : Fin k → ℂ
+u : ℂ
+hlast : ∏ j > Fin.last k, Fin.snoc v u j - Fin.snoc v u (Fin.last k) = 1
+⊢ (∏ i, ∏ j > i.castSucc, (Fin.snoc v u j - Fin.snoc v u i.castSucc)) *
+      ∏ j > Fin.last k, (Fin.snoc v u j - Fin.snoc v u (Fin.last k)) =
+    (Matrix.vandermonde v).det * ∏ i, (u - v i)
+MF21Restart/LeadingBoundaryCoefficients.lean:195:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:220:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MF21Restart/LeadingBoundaryCoefficients.lean:242:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MF21Restart/LeadingBoundaryCoefficients.lean:266:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.leading_phaseProduct_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZ' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_leadingZInv' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryLeadingZInvIndices_rootProduct' depends on axioms: [propext, Classical.choice, Quot.sound]

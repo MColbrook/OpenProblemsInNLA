@@ -1,0 +1,74 @@
+MF21Restart/BoundaryConjugation.lean:85:12: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  characteristicRoots ?m ?θ ((rootBlockEquiv ?m ?hm) (Sum.inl (Sum.inr 0)))
+in the target expression
+  (starRingEnd ℂ) (characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ⟨0, ⋯⟩)))) =
+    characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ((Equiv.swap 0 1) ⟨0, ⋯⟩))))
+
+case inl.inr.«0»
+m : ℕ
+hm : 2 ≤ m
+θ : ℝ
+i : Fin (2 * m)
+hm1 : 1 ≤ m
+⊢ (starRingEnd ℂ) (characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ⟨0, ⋯⟩)))) =
+    characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ((Equiv.swap 0 1) ⟨0, ⋯⟩))))
+MF21Restart/BoundaryConjugation.lean:88:12: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  characteristicRoots m ?θ ((rootBlockEquiv m ⋯) (Sum.inl (Sum.inr 1)))
+in the target expression
+  (starRingEnd ℂ) (characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ⟨1, ⋯⟩)))) =
+    characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ((Equiv.swap 0 1) ⟨1, ⋯⟩))))
+
+case inl.inr.«1»
+m : ℕ
+hm : 2 ≤ m
+θ : ℝ
+i : Fin (2 * m)
+hm1 : 1 ≤ m
+⊢ (starRingEnd ℂ) (characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ⟨1, ⋯⟩)))) =
+    characteristicRoots m θ ((rootBlockEquiv m hm1) (Sum.inl (Sum.inr ((Equiv.swap 0 1) ⟨1, ⋯⟩))))
+MF21Restart/BoundaryConjugation.lean:84:10: warning: This simp argument is unused:
+  Equiv.swap_apply_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rootBlockConjugation, Equiv.sumCongr_apply, Sum.map_inl, Sum.map_inr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryConjugation.lean:87:10: warning: This simp argument is unused:
+  Equiv.swap_apply_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rootBlockConjugation, Equiv.sumCongr_apply, Sum.map_inl, Sum.map_inr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/BoundaryConjugation.lean:106:91: error: unsolved goals
+m n : ℕ
+hm : 2 ≤ m
+θ : ℝ
+B : Matrix (Fin (2 * m)) (Fin (2 * m)) ℂ := boundaryMatrix m n (characteristicRoots m θ)
+row col : Fin (2 * m)
+⊢ if ↑row < m then
+    (if ↑row < m then characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ ↑row
+      else characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ (n + ↑row)) =
+      characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ ↑row
+  else
+    (if ↑row < m then characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ ↑row
+      else characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ (n + ↑row)) =
+      characteristicRoots m θ ((rootConjugationPerm m ⋯) col) ^ (n + ↑row)
+MF21Restart/BoundaryConjugation.lean:111:23: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  B.map ⇑(starRingEnd ℂ)
+in the target expression
+  ((starRingEnd ℂ).mapMatrix B).det = -B.det
+
+m n : ℕ
+hm : 2 ≤ m
+θ : ℝ
+B : Matrix (Fin (2 * m)) (Fin (2 * m)) ℂ := boundaryMatrix m n (characteristicRoots m θ)
+hmap : B.map ⇑(starRingEnd ℂ) = B.submatrix id ⇑(rootConjugationPerm m ⋯)
+⊢ ((starRingEnd ℂ).mapMatrix B).det = -B.det
+'MF21Restart.rootConjugationPerm_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.characteristicRoots_conj' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_conj' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptBoundaryDeterminant_re_eq_zero' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

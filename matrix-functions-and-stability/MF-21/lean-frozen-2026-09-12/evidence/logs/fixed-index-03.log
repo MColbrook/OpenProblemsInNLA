@@ -1,0 +1,16 @@
+MF21Restart/FixedIndex.lean:112:59: error: Application type mismatch: The argument
+  n
+has type
+  ℝ
+but is expected to have type
+  ℕ
+in the application
+  eigenvalue m n
+MF21Restart/FixedIndex.lean:136:27: error(lean.unknownIdentifier): Unknown identifier `div_one_div`
+'MF21Restart.implicit_phase_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_scaled_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.fixed_index_limit_of_implicit_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.critical_bound_implies_fixed_index_limit' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

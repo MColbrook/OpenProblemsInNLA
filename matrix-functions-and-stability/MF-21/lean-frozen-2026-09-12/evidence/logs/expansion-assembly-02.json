@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/ExpansionAssembly.olean",
+    "MF21Restart/ExpansionAssembly.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source": "MF21Restart/ExpansionAssembly.lean",
+  "source_sha256": "3a9fc651f39e373f88780653b6f95946292d667c3ae791ba861e337d471d431d",
+  "started_epoch": 1789947989.887651,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "2e271d4e482a0a1ad32d87d1f38826d0f6aad29a211982f927cdff15fb6b547f",
+  "finished_epoch": 1789947997.1970172,
+  "output_sha256": "4038a96694adb0c0cddc81f988a198c1f5e139d3ce2d6ddae54729e0dd6a7522"
+}

@@ -1,0 +1,269 @@
+version: v0.4
+project:
+  name: 'MF-21: formalization of the frozen 12 September manuscript'
+  description: Complete canonical MF-21 Target and the manuscript's same-family smooth coefficient
+    theorem, proved locally from the unchanged frozen manuscript. Linux Comparator evidence
+    is recorded separately.
+  authors:
+  - George Stepaniants
+  responsible_maintainers:
+  - George Stepaniants
+  license: UNLICENSED
+sources:
+- title: 'MF-21: the regular expansion threshold for every higher-order zero'
+  authors:
+  - George Stepaniants
+  id: git:eb37bc17a462177f57efa270e9a9f9b17e9d88e2
+  type: research manuscript
+  location: original-proof/solution.md
+  relationship: formalizes
+  author_endorsement: participated
+  note: 'Frozen original SHA256 6e1bb10bb2ccfe1311775a6d24ca292113036867e080185741ef4f5d5b8174aa.
+    The restart does not modify the mathematical proof. The conjecture and cited external
+    results retain their original attribution in the source.
+
+    '
+- title: MF-21 canonical problem statement
+  id: git:9b35b5e246989843cd67b2fed702216ea1f0acdb:matrix-functions-and-stability/MF-21/README.md
+  type: problem statement
+  location: original-proof/problem.md
+  relationship: background
+  author_endorsement: not-contacted
+  note: Frozen locally available canonical three-part target. SHA256 1aac38ed3c7a83dfc3dddb4beeec26fcf117f23f5789b2a374c1332ba4cf359f.
+    Provenance is in original-proof/problem-provenance.json; its historical Open label is
+    not a current-status assertion.
+status:
+  scope: The full MF21Restart.Target and the stronger C-infinity coefficient theorem are proved,
+    with all prerequisites discharged for the actual integral-defined Toeplitz matrices, every
+    original eigenvalue index, and one coefficient family. The manuscript is unchanged at
+    the recorded SHA256. Local source-matched compiler and standard-axiom checks passed; see
+    VERIFICATION.md and the retained records. The final non-root Linux Comparator, kernel
+    replay and sandbox checks are separate, and their execution result is reported through
+    the exact published GitHub run and artifacts. This frozen-source formalization preserves
+    other upstream MF-21 work and does not count the same original target twice.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: MF21Restart.Contracts.complex_fourier_eq_cosine
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.bulk_cutoff_pos
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.critical_bound_implies_fixed_index_limit
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.exists_log_sq_bulk_scale_gain
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.phase_window_margin
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.manuscript_smooth_target
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+  - declaration: MF21Restart.Contracts.target_proved
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    verification_scope: Source-matched local Lean success; the corresponding component/target
+      axiom reports are recorded in VERIFICATION.md. Linux Comparator is a separate execution
+      record.
+automation:
+  methods:
+  - method: agent
+    models:
+    - Codex (GPT-6 session identity)
+    framework: OpenAI Codex
+    tool_setup: 'Local Lean 4.33.1 with pinned Mathlib and LeanCert caches; at most one local
+      compiler, one thread and 4096 MiB per process. Kernel-mode LeanCert. Independent source
+      and proof reviewers requested at max reasoning. Real Comparator is reserved for the
+      GitHub Linux runner.
+
+      '
+    prompting_notes: 'User requested a restart and adversarial review of the earlier Lean
+      development, preserving the manuscript. Numerical and analytic statements were written
+      before proofs; incomplete obligations are explicit. Incorrect legacy interfaces are
+      not reused.
+
+      '
+review:
+  status: agent-reviewed (source-matched component and complete-target scopes)
+  reviewers:
+  - 'mf21_restart_manuscript: independent mathematical and component proof review'
+  - 'mf21_restart_lean_audit: independent old/new statement and contract review'
+  notes: Two agents independently reviewed each other's components under the pinned Tau Ceti
+    adaptation. The complete target and exact seven contracts were reviewed by the agent who
+    did not author their assembly; its own interlacing dependencies have a separate review
+    by the other agent. The coordinator compiled sources serially. Reports identify exact
+    source/log/output hashes, author exclusions, and actual execution scopes. These are AI-agent
+    reviews, not human peer review. Local compiler evidence and final GitHub Comparator/kernel/sandbox
+    evidence are distinct.
+alignment:
+  namespace: MF21Restart
+  statements:
+  - source: Canonical three-part problem; manuscript Theorem 1
+    lean: MF21Restart.Target
+    module: MF21Restart/Definitions.lean
+    status: proved by MF21Restart.target_proved in MF21Restart/TargetProof.lean; locally checked
+    note: The stronger same-family C-infinity manuscript theorem is proved by manuscript_smooth_target.
+  - source: Original complex Fourier coefficient definition
+    lean: MF21Restart.complex_fourier_eq_cosine
+    module: MF21Restart/StatementBridges.lean
+    status: local component; Comparator not run
+  - source: Equation (30), conditional on the assumed global critical bound
+    lean: MF21Restart.critical_bound_implies_fixed_index_limit
+    module: MF21Restart/FixedIndex.lean
+    status: locally proved component; actual phase and Taylor hypotheses discharged by ActualFixedIndex
+      and TargetProof
+  - source: Logarithmic scale gain after equation (25)
+    lean: MF21Restart.exists_log_sq_bulk_scale_gain
+    module: MF21Restart/BulkDecay.lean
+    status: local scalar analytic component
+  - source: Lemma 4 phase-window sign margin
+    lean: MF21Restart.phase_window_margin
+    module: MF21Restart/Numerics.lean
+    status: local kernel-mode LeanCert component
+  - source: 'Equations (13)-(14): exact recurrence boundary criterion and Laplace expansion'
+    lean: MF21Restart.eigenvalue_iff_manuscriptBoundaryDeterminant_zero
+    module: MF21Restart/ConcreteBoundary.lean
+    status: local actual root list and spectral criterion
+  - source: 'Lemma 3, equations (10)-(18): actual real normalized determinant remainder'
+    lean: MF21Restart.eigenvalue_iff_sin_add_manuscriptError_zero
+    module: MF21Restart/DeterminantRemainder.lean
+    status: locally proved component used by the complete target; Linux Comparator execution
+      is separate
+  - source: 'Lemma 3, equation (11): uniform remainder and derivative bounds'
+    lean: MF21Restart.manuscriptError_exp_bounds
+    module: MF21Restart/DeterminantRemainder.lean
+    status: local symbolic estimate with actual coefficients and roots
+  - source: 'Lemma 3, equation (12): upper-endpoint improvement'
+    lean: MF21Restart.manuscriptError_endpoint_bound
+    module: MF21Restart/DeterminantRemainder.lean
+    status: local exact endpoint and mean-value argument
+  - source: 'Equations (27)-(29): literal kernel diagonal substitution and integral'
+    lean: MF21Restart.kernel_diagonal_integral_value
+    module: MF21Restart/KernelDiagonal.lean
+    status: local exact integral, subsequently linked to the actual limiting kernel and trace
+  - source: 'Equations (31)-(33): exact normalized trace series is irrational'
+    lean: MF21Restart.trace_series_irrational
+    module: MF21Restart/TraceSeries.lean
+    status: locally proved exact arithmetic; identified with the hypothetical spectral trace
+      limit in TargetProof
+  - source: 'Lemma 2, equation (8): actual smooth quadratic root and first derivative'
+    lean: MF21Restart.stableRootCurve_hasDerivAt_zero
+    module: MF21Restart/StableRootSmooth.lean
+    status: local actual-root component
+  - source: 'Equation (20): actual phase and derivative bounds'
+    lean: MF21Restart.manuscriptPhaseFn_eventual_derivative_bounds
+    module: MF21Restart/PhaseMonotonicity.lean
+    status: local phase derivative bounds used in the proved quantitative comparison
+  - source: 'Lemma 4: unique simple residual roots in high phase windows'
+    lean: MF21Restart.manuscriptResidual_unique_root_in_phase_windows
+    module: MF21Restart/PhaseWindowRoots.lean
+    status: local component; actual index identification is in PhaseWindowIndexing
+  - source: 'Lemma 4: high phase labels equal the original ordered eigenvalue indices'
+    lean: MF21Restart.eigenvalue_eventual_phase_window
+    module: MF21Restart/PhaseWindowIndexing.lean
+    status: local actual indexing, used by the proved phase and implicit spectral estimates
+  - source: 'Lemma 4: final phase window below pi contains no eigenangle'
+    lean: MF21Restart.manuscriptFinalPhaseWindow_eventual_nonzero
+    module: MF21Restart/FinalPhaseWindow.lean
+    status: local endpoint-exclusion component
+  - source: Finite inverse underlying the cited inverse-kernel input (26)
+    lean: MF21Restart.toeplitz_inverse_apply_rising
+    module: MF21Restart/InverseKernelEntries.lean
+    status: local exact inverse, used by the proved uniform kernel limit
+  - source: 'Equations (4), (23), (24), and (25): the same actual phase and coefficient family'
+    lean: MF21Restart.manuscript_implicit_taylor_with_spectral_error
+    module: MF21Restart/ImplicitSpectralData.lean
+    status: locally proved actual construction; global/bulk estimates and full Target assembled
+      for this same family
+  - source: 'Equation (26): uniform inverse-kernel limit with literal (27) and reflection'
+    lean: MF21Restart.toeplitz_inverse_kernel_uniform
+    module: MF21Restart/InverseKernelLimit.lean
+    status: local closed-square uniform convergence, including diagonal and endpoints
+  - source: 'Equation (29): actual rational trace limit with n+2 normalization'
+    lean: MF21Restart.toeplitz_inverse_trace_tendsto_mesh
+    module: MF21Restart/ActualTraceLimit.lean
+    status: locally proved actual rational trace limit; combined with the dominated spectral
+      trace passage in TargetProof
+  - source: 'After (18): common vanishing power of Laplace coefficients'
+    lean: MF21Restart.boundaryCoefficient_eq_pow_mul_normalized
+    module: MF21Restart/NormalizedBoundary.lean
+    status: local exact factorization used by the actual remainder construction
+  - source: Manuscript Theorem 1, all three assertions and smooth coefficient functions
+    lean: MF21Restart.manuscript_smooth_target
+    module: MF21Restart/TargetProof.lean
+    status: complete locally checked theorem
+  - source: Complete unchanged canonical three-part target
+    lean: MF21Restart.target_proved
+    module: MF21Restart/TargetProof.lean
+    status: complete locally checked theorem
+  - source: Equation (5), independence from the smooth extensions
+    lean: MF21Restart.implicitPhaseCoefficient_extension_independent
+    module: MF21Restart/ExtensionIndependence.lean
+    status: locally checked smooth-extension theorem, including endpoints
+acknowledgements: 'George Stepaniants, Department of Computing and Mathematical Sciences,
+  California Institute of Technology. Substantial AI assistance is disclosed. Uses Mathlib,
+  LeanCert, the formalization.yaml schema, Comparator''s contract structure, and Tau Ceti
+  review principles. Schiffer and Forsythe project layouts were consulted; their extra trust
+  dependencies were not imported.
+
+  '

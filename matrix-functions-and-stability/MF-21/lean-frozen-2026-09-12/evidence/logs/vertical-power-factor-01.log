@@ -1,0 +1,2 @@
+'MF21Restart.verticalPowerFactor_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.verticalIteratedDeriv_pow_factor' depends on axioms: [propext, Classical.choice, Quot.sound]

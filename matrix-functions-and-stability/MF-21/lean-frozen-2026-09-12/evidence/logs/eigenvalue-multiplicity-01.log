@@ -1,0 +1,19 @@
+MF21Restart/EigenvalueMultiplicity.lean:87:39: error: unsolved goals
+m n : ℕ
+lam : ℝ
+⊢ ((List.ofFn ⋯.eigenvalues).mergeSort fun x1 x2 => decide (x1 ≤ x2)).Perm (List.ofFn fun x => ⋯.eigenvalues x)
+MF21Restart/EigenvalueMultiplicity.lean:89:33: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [orderedEigenvalueList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.count_orderedEigenvalueList_eq_complex_eigenspace_finrank' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.existsUnique_eigenvalue_index_of_complex_eigenspace_finrank_one' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

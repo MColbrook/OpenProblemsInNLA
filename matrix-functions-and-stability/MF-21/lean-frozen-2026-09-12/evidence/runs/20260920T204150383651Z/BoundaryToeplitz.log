@@ -1,0 +1,3 @@
+'MF21Restart.boundaryDeterminant_zero_iff_toeplitz_eigenvector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

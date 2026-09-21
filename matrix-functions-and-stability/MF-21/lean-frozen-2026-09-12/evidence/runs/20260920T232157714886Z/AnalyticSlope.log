@@ -1,0 +1,5 @@
+MF21Restart/AnalyticSlope.lean:20:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.analyticAt_dslope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.analyticAt_dslope_of_forall_analyticAt' depends on axioms: [propext, Classical.choice, Quot.sound]

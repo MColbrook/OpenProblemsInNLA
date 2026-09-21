@@ -1,0 +1,35 @@
+MF21Restart/DeterminantRemainder.lean:38:21: error: unsolved goals
+m : ℕ
+hm : 2 ≤ m
+f : Finset (Fin (2 * m)) → ℂ
+P : Finset (Finset (Fin (2 * m))) := Finset.powersetCard m Finset.univ
+a : Finset (Fin (2 * m)) := boundaryLeadingZIndices m ⋯
+b : Finset (Fin (2 * m)) := boundaryLeadingZInvIndices m ⋯
+⊢ a.card = m
+MF21Restart/DeterminantRemainder.lean:33:58: error: unsolved goals
+m : ℕ
+hm : 2 ≤ m
+f : Finset (Fin (2 * m)) → ℂ
+P : Finset (Finset (Fin (2 * m))) := Finset.powersetCard m Finset.univ
+a : Finset (Fin (2 * m)) := boundaryLeadingZIndices m ⋯
+b : Finset (Fin (2 * m)) := boundaryLeadingZInvIndices m ⋯
+ha : a ∈ P
+⊢ ∑ s ∈ Finset.powersetCard m Finset.univ, f s =
+    f (boundaryLeadingZIndices m ⋯) + f (boundaryLeadingZInvIndices m ⋯) + ∑ s, f ↑s
+MF21Restart/DeterminantRemainder.lean:39:15: error: unexpected identifier; expected command
+MF21Restart/DeterminantRemainder.lean:162:11: error: invalid 'by' tactic, expected type has not been provided
+'MF21Restart.boundaryLeadingSubsets_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptNormalizedDeterminant_eq_sin_add_error' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.boundaryErrorExpression_real' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.eigenvalue_iff_sin_add_manuscriptError_zero' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.manuscriptError_exp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_pi' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.manuscriptError_endpoint_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

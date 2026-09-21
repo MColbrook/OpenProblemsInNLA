@@ -1,0 +1,18 @@
+MF21Restart/ExtensionIndependence.lean:78:14: error: Function expected at
+  hEta ?m.782
+but this term has type
+  etaTilde ?m.781 = manuscriptEta m ?m.781
+
+Note: Expected a function because this term is being applied to the argument
+  hzc
+MF21Restart/ExtensionIndependence.lean:83:10: error: Function expected at
+  hSymbol ?m.826
+but this term has type
+  gTilde ?m.825 = symbol m ?m.825
+
+Note: Expected a function because this term is being applied to the argument
+  hzc
+'MF21Restart.implicitPhaseCoefficient_extension_independent' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

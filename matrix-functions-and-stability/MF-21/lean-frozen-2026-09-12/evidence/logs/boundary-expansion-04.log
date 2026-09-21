@@ -1,0 +1,10 @@
+MF21Restart/BoundaryExpansion.lean:59:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HAdd (ι → ι → K) (Matrix ι ι K) ?m.119
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'MF21Restart.boundaryDeterminant_grouped_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.boundaryCoefficient_eq_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryDeterminant_card_grouped_expansion' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

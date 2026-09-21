@@ -1,0 +1,14 @@
+MF21Restart/BoundaryProductDecay.lean:96:4: warning: Unused tactic linter: `simp only [boundaryProductRatio, div_eq_mul_inv]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/BoundaryProductDecay.lean:96:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'MF21Restart.boundaryExteriorProduct_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryProductRatio_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryProductRatio_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundary_nonleading_has_stable_or_omitted_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.boundaryProductRatio_eq_sdiff_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryProductRatio_uniform_exp_decay' depends on axioms: [propext, Classical.choice, Quot.sound]

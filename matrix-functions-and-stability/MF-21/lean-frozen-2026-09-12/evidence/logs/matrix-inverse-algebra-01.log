@@ -1,0 +1,57 @@
+MF21Restart/MatrixInverseAlgebra.lean:14:41: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:21:41: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:29:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:36:4: error: invalid 'calc' step, left-hand side is
+  true : Bool
+but previous right-hand side is
+  Function.const Lean.Name ()
+    `MF21Restart.MatrixInverseAlgebra.34.4.35.51.4.51._sorry._@.MF21Restart.MatrixInverseAlgebra.3453268533._hygCtx._hyg.197 : Unit
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:50:32: error(lean.unknownIdentifier): Unknown identifier `ℝ`
+
+Note: It is not possible to treat `ℝ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+MF21Restart/MatrixInverseAlgebra.lean:57:14: error(lean.unknownIdentifier): Unknown constant `diagonal_reciprocal_mul`
+MF21Restart/MatrixInverseAlgebra.lean:58:14: error(lean.unknownIdentifier): Unknown constant `diagonal_mul_reciprocal`
+'MF21Restart.rightInverse_of_weighted_factorization' does not depend on any axioms
+'MF21Restart.inverse_of_weighted_factorization' does not depend on any axioms

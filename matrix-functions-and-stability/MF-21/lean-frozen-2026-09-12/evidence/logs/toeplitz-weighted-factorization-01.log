@@ -1,0 +1,19 @@
+MF21Restart/ToeplitzWeightedFactorization.lean:27:2: error: Type mismatch: After simplification, term
+  ascPochhammer_nat_eq_natCast_ascFactorial ℝ r (a + 1)
+ has type
+  Polynomial.eval (↑r) (ascPochhammer ℝ (a + 1)) = ↑(r.ascFactorial (a + 1))
+but is expected to have type
+  Polynomial.eval (↑a + 1) (ascPochhammer ℝ r) = ↑((a + 1).ascFactorial r)
+MF21Restart/ToeplitzWeightedFactorization.lean:85:4: error: unsolved goals
+case neg
+m n : ℕ
+i j : Fin n
+hji : ↑j ≤ ↑i
+term : Fin n → ℝ :=
+  fun k =>
+    differenceUpperMatrix m n k i * Polynomial.eval (↑↑k + 1) (ascPochhammer ℝ (2 * m)) * differenceUpperMatrix m n k j
+k : Fin n
+a✝ : k ∈ Finset.univ
+hk : ¬↑k ≤ ↑j
+⊢ k ≤ j → k ≤ i → (m.choose (↑i - ↑k) = 0 ∨ ∃ k_1 < 2 * m, ↑k_1 = -1 + -↑↑k) ∨ m.choose (↑j - ↑k) = 0
+'MF21Restart.toeplitz_weighted_factorization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

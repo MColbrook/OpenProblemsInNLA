@@ -1,0 +1,3 @@
+'MF21Restart.implicit_phase_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.symbol_scaled_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.fixed_index_limit_of_implicit_phase' depends on axioms: [propext, Classical.choice, Quot.sound]

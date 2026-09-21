@@ -1,0 +1,7 @@
+MF21Restart/TraceSeriesZeta.lean:64:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.hasSum_even_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasSum_even_zeta_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasSum_integer_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.integerTailCorrection_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

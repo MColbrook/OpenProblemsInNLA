@@ -1,0 +1,66 @@
+MF21Restart/SpectralTracePassage.lean:60:13: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+MF21Restart/SpectralTracePassage.lean:84:15: warning: This simp argument is unused:
+  one_div_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, div_eq_mul_inv, mul_inv_rev]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/SpectralTracePassage.lean:84:28: warning: This simp argument is unused:
+  one_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div_pow, div_eq_mul_inv, mul_inv_rev]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/SpectralTracePassage.lean:112:4: error: Type mismatch
+  inverseSpectralTerm_tendsto m hm hfixed 0
+has type
+  Tendsto (fun n => inverseSpectralTerm m n 0) atTop (𝓝 ((Real.pi ^ (2 * m))⁻¹ * ((↑0 + 1 + ↑(m - 1) / 2) ^ (2 * m))⁻¹))
+but is expected to have type
+  Tendsto (fun n => inverseSpectralTerm m n 0) atTop (𝓝 L)
+MF21Restart/SpectralTracePassage.lean:130:10: error: linarith failed to find a contradiction
+m : ℕ
+hm : 1 ≤ m
+hfixed :
+  ∀ (j : ℕ),
+    1 ≤ j →
+      Tendsto (fun n => (↑n + 2) ^ (2 * m) * eigenvalue m n j) atTop
+        (𝓝 (Real.pi ^ (2 * m) * (↑j + ↑(m - 1) / 2) ^ (2 * m)))
+C : ℝ
+hC : 0 < C
+N : ℕ
+hmajor :
+  ∀ (n : ℕ), N ≤ n → ∀ (j : ℕ), 2 ≤ j → j ≤ n → (1 / (↑n + 2)) ^ (2 * m) / eigenvalue m n j ≤ C * (↑j ^ (2 * m))⁻¹
+L : ℝ := (Real.pi ^ (2 * m))⁻¹ * ((0 + 1 + ↑(m - 1) / 2) ^ (2 * m))⁻¹
+D : ℝ := ‖L‖ + 1
+hD : 0 < D
+hfirst : Tendsto (fun n => inverseSpectralTerm m n 0) atTop (𝓝 L)
+hfirstBound : ∀ᶠ (n : ℕ) in atTop, ‖inverseSpectralTerm m n 0‖ < D
+bound : ℕ → ℝ := fun k => C * ((↑k + 1) ^ (2 * m))⁻¹ + if k = 0 then D else 0
+hsum : Summable bound
+n : ℕ
+hn : N ≤ n
+hfirstn : ‖inverseSpectralTerm m n 0‖ < D
+a✝ : (C + if True then D else 0) < D
+⊢ False
+failed
+MF21Restart/SpectralTracePassage.lean:129:21: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_zero, zero_add, one_pow, inv_one, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.inverseSpectralTerm_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.tsum_inverseSpectralTerm_eq_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.inverseSpectralTerm_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_trace_tendsto_series_of_limits_and_majorant' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

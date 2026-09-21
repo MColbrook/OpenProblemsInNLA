@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/CirculantEmbedding.olean",
+    "MF21Restart/CirculantEmbedding.lean"
+  ],
+  "cwd": "/Users/georgestepaniants/Research/OpenProblemsInNLA/lean-verification/MF21-restart",
+  "source_sha256": "df78ed06e9e64d6ff009cb4bb5bb7badc7215ae140a765652e4e8abb492b442d",
+  "source": "MF21Restart/CirculantEmbedding.lean",
+  "started_epoch": 1789945379.3859289,
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "0e5cf046782e0db25f69357015882b9ff28394c65757f6bbf3dc2d472de16eff",
+  "finished_epoch": 1789945385.4329321,
+  "output_sha256": "9218375521b40e7498dfc1103e720cc4a22229ead557daa2ec13b7e7f997e103"
+}

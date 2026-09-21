@@ -1,0 +1,34 @@
+MF21Restart/DeterminantMultiplicity.lean:69:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (ContinuousMultilinearMap.linearDeriv ?f ?x) ?y
+in the target expression
+  HasDerivAt (fun t => (M t).det) ((D.linearDeriv (M θ)) M') θ
+
+N : ℕ
+M : ℝ → Matrix (Fin N) (Fin N) ℂ
+M' : Matrix (Fin N) (Fin N) ℂ
+θ : ℝ
+hM : HasDerivAt M M' θ
+D : (Fin N → ℂ) [×N]→L[ℂ] ℂ := determinantContinuousMultilinear N
+h : HasDerivAt (fun t => (M t).det) ((D.linearDeriv (M θ)) M') θ
+⊢ HasDerivAt (fun t => (M t).det) (∑ i, ((M θ).updateRow i (M' i)).det) θ
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    M θ
+  has type
+    Matrix (Fin N) (Fin N) ℂ
+  but is expected to have type
+    Fin N → Fin N → ℂ
+  in the application
+    D.linearDeriv (M θ)
+'MF21Restart.det_updateRow_eq_zero_of_two_le_finrank_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_curve' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_two_le_finrank_ker' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.hasDerivAt_det_zero_of_entrywise_deriv_and_two_le_finrank_ker' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

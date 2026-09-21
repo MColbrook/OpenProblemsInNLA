@@ -1,0 +1,25 @@
+MF21Restart/KernelRiemannApprox.lean:53:2: error: Type mismatch: After simplification, term
+  hb
+ has type
+  @LT.lt ℝ Real.instLT
+    |finiteKernelIntegrand m (![h, x, y, t] 0) (![h, x, y, t] 1) (![h, x, y, t] 2) (![h, x, y, t] 3) -
+        finiteKernelIntegrand m (![0, x, y, t] 0) (![0, x, y, t] 1) (![0, x, y, t] 2) (![0, x, y, t] 3)|
+    ε
+but is expected to have type
+  @LT.lt ℝ Real.instLT |finiteKernelIntegrand m h x y t - finiteKernelIntegrand m 0 x y t| ε
+MF21Restart/KernelRiemannApprox.lean:101:10: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+MF21Restart/KernelRiemannApprox.lean:55:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'MF21Restart.kernelParameters_mem_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_zero_step' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MF21Restart.finiteKernelIntegrand_uniform_right_sum' does not depend on any axioms

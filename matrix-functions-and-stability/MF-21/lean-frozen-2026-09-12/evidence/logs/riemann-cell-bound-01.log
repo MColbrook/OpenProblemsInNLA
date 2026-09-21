@@ -1,0 +1,21 @@
+MF21Restart/RiemannCellBound.lean:44:17: error: Application type mismatch: The argument
+  hf
+has type
+  ∀ k ∈ Finset.Ico L U, IntervalIntegrable f MeasureTheory.volume (a k) (a (k + 1))
+but is expected to have type
+  ∀ k ∈ Set.Ico L U, IntervalIntegrable ?m.383 ?m.384 (a k) (a (k + 1))
+in the application
+  intervalIntegral.sum_integral_adjacent_intervals_Ico hLU hf
+MF21Restart/RiemannCellBound.lean:23:49: error: unsolved goals
+a : ℕ → ℝ
+ha : Monotone a
+L U : ℕ
+hLU : L ≤ U
+f : ℝ → ℝ
+ε : ℝ
+hf : ∀ k ∈ Finset.Ico L U, IntervalIntegrable f MeasureTheory.volume (a k) (a (k + 1))
+hosc : ∀ k ∈ Finset.Ico L U, ∀ x ∈ Set.Icc (a k) (a (k + 1)), |f (a (k + 1)) - f x| ≤ ε
+hcell :
+  ∀ k ∈ Finset.Ico L U, |(a (k + 1) - a k) * f (a (k + 1)) - ∫ (x : ℝ) in a k..a (k + 1), f x| ≤ ε * (a (k + 1) - a k)
+⊢ |∑ k ∈ Finset.Ico L U, (a (k + 1) - a k) * f (a (k + 1)) - ∫ (x : ℝ) in a L..a U, f x| ≤ ε * (a U - a L)
+'MF21Restart.riemann_right_sum_error_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

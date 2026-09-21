@@ -1,0 +1,20 @@
+MF21Restart/KernelDiagonal.lean:59:30: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/KernelDiagonal.lean:61:33: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/KernelDiagonal.lean:59:30: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/KernelDiagonal.lean:61:33: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/KernelDiagonal.lean:98:43: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/KernelDiagonal.lean:98:43: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'MF21Restart.kernel_diagonal_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.kernel_diagonal_integral_value' depends on axioms: [propext, Classical.choice, Quot.sound]

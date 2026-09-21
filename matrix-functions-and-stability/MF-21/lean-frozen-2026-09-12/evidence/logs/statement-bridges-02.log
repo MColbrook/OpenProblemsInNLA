@@ -1,0 +1,2 @@
+'MF21Restart.complex_fourier_eq_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.bulk_cutoff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

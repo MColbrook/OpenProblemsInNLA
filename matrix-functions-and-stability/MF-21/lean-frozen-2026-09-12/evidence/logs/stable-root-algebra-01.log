@@ -1,0 +1,94 @@
+MF21Restart/StableRootAlgebra.lean:16:2: error: Type mismatch: After simplification, term
+  Complex.cpow_nat_inv_pow z
+    (Mathlib.Meta.NormNum.isNat_eq_false (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2))
+      (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 0)) (Eq.refl false))
+ has type
+  @Eq ℂ ((z ^ (↑2)⁻¹) ^ 2) z
+but is expected to have type
+  @Eq ℂ ((z ^ 2⁻¹) ^ 2) z
+MF21Restart/StableRootAlgebra.lean:33:37: error: linarith failed to find a contradiction
+case h1
+a : ℂ
+ha : 0 < a.re
+b : ℂ := (1 + a ^ 2).sqrt
+hb : b ^ 2 = 1 + a ^ 2
+hbnonneg : 0 ≤ b.re
+hbre : b.re * b.re - b.im * b.im = 1 + (a.re * a.re - a.im * a.im)
+hbim : b.re * b.im + b.im * b.re = a.re * a.im + a.im * a.re
+h : ¬0 < b.re
+hbzero : b.re = 0
+a✝ : a.re * a.im < 0
+⊢ False
+failed
+MF21Restart/StableRootAlgebra.lean:62:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a⁻¹ ^ ?n
+in the target expression
+  2 - (b - a) ^ 2 - ((b - a) ^ 2)⁻¹ = -4 * a ^ 2
+
+a : ℂ
+b : ℂ := (1 + a ^ 2).sqrt
+hprod : (b - a) * (b + a) = 1
+hne : b - a ≠ 0
+hinv : (b - a)⁻¹ = b + a
+⊢ 2 - (b - a) ^ 2 - ((b - a) ^ 2)⁻¹ = -4 * a ^ 2
+MF21Restart/StableRootAlgebra.lean:76:4: error: Tactic `apply` failed: could not unify the conclusion of `nonneg_of_mul_nonneg_left`
+  0 ≤ b.re
+with the goal
+  0 ≤ a.im * b.im
+
+Note: The full type of `nonneg_of_mul_nonneg_left` is
+  0 ≤ b.re * ?m.148 → 0 < ?m.148 → 0 ≤ b.re
+
+a : ℂ
+ha : 0 < a.re
+b : ℂ := (1 + a ^ 2).sqrt
+hbpos : 0 < b.re
+hb : b ^ 2 = 1 + a ^ 2
+him : b.re * b.im + b.im * b.re = a.re * a.im + a.im * a.re
+hproduct : b.re * (a.im * b.im) = a.re * a.im ^ 2
+⊢ 0 ≤ a.im * b.im
+MF21Restart/StableRootAlgebra.lean:82:4: error: linarith failed to find a contradiction
+a : ℂ
+ha : 0 < a.re
+b : ℂ := (1 + a ^ 2).sqrt
+hbpos : 0 < b.re
+hb : b ^ 2 = 1 + a ^ 2
+him : b.re * b.im + b.im * b.re = a.re * a.im + a.im * a.re
+hproduct : b.re * (a.im * b.im) = a.re * a.im ^ 2
+himprod : 0 ≤ a.im * b.im
+a✝ : b.re * (star a).re - b.im * (star a).im ≤ 0
+⊢ False
+failed
+MF21Restart/StableRootAlgebra.lean:85:4: error: linarith failed to find a contradiction
+a : ℂ
+ha : 0 < a.re
+b : ℂ := (1 + a ^ 2).sqrt
+hbpos : 0 < b.re
+hb : b ^ 2 = 1 + a ^ 2
+him : b.re * b.im + b.im * b.re = a.re * a.im + a.im * a.re
+hproduct : b.re * (a.im * b.im) = a.re * a.im ^ 2
+himprod : 0 ≤ a.im * b.im
+hdot : 0 < (b * star a).re
+a✝ :
+  Complex.normSq b + Complex.normSq a + 2 * (b * (starRingEnd ℂ) a).re ≤
+    Complex.normSq b + Complex.normSq a - 2 * (b * (starRingEnd ℂ) a).re
+⊢ False
+failed
+MF21Restart/StableRootAlgebra.lean:81:31: warning: This simp argument is unused:
+  Complex.conj_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_re, Complex.conj_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MF21Restart/StableRootAlgebra.lean:81:48: warning: This simp argument is unused:
+  Complex.conj_im
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_re, Complex.conj_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MF21Restart.stableQuadraticRoot_ne_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_equation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_norm_lt_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MF21Restart.stableQuadraticRoot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

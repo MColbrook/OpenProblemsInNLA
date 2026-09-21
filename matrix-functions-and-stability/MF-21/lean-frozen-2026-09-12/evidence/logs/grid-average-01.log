@@ -1,0 +1,7 @@
+MF21Restart/GridAverage.lean:36:27: error: Type mismatch
+  zero_div ?m.294
+has type
+  0 / ?m.294 = 0
+but is expected to have type
+  q 0 = 0
+'MF21Restart.continuous_grid_average_tendsto' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/RootTangents.olean",
+    "MF21Restart/RootTangents.lean"
+  ],
+  "source_sha256": "a37f2ec6cc1c1385b4219cb927e2164e0cfab3f584cd912ac48974391f7a299f",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "log_sha256": "8c4b223692a533d72521572273844061fa080741ca93c0167f8c5a49d63f4062",
+  "started_epoch": 1789936403.5651782,
+  "finished_epoch": 1789936410.58787,
+  "output_sha256": "6eeeadb7501f9d995dfd780997ff10598e369775da24936db070e2eac23eff7e"
+}

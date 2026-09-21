@@ -1,0 +1,60 @@
+MF21Restart/InverseKernelGrid.lean:22:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MF21Restart/InverseKernelGrid.lean:22:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MF21Restart/InverseKernelGrid.lean:70:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  1 - kernelGridPoint n j + 1 / ↑n - (1 - kernelGridPoint n j)
+in the target expression
+  |(1 - kernelGridPoint n i + 1 / ↑n, kernelGridPoint n j.rev).2 -
+        (1 - kernelGridPoint n i, 1 - kernelGridPoint n j).2| <
+    δ
+
+case right
+m : ℕ
+hm : 1 ≤ m
+ε : ℝ
+hε : 0 < ε
+hhalf : 0 < ε / 2
+N₁ : ℕ
+hN₁ : 4 ≤ N₁
+htop :
+  ∀ (n : ℕ),
+    N₁ ≤ n →
+      ∀ (i j : Fin n),
+        1 ≤ kernelGridPoint n i + kernelGridPoint n j →
+          |(1 / ↑n) ^ (2 * m - 1) * (toeplitz m n)⁻¹ i j -
+                inverseKernelTop m (kernelGridPoint n i) (kernelGridPoint n j)| ≤
+            ε / 2
+δ : ℝ
+hδ : δ > 0
+hclose :
+  ∀ x ∈ kernelUnitSquare,
+    ∀ y ∈ kernelUnitSquare, dist x y < δ → dist (inverseKernel m x.1 x.2) (inverseKernel m y.1 y.2) < ε / 2
+N₂ : ℕ
+hN₂ : 1 / δ < ↑N₂
+n : ℕ
+hn : max N₁ N₂ ≤ n
+i j : Fin n
+hn₁ : N₁ ≤ n
+hn₂ : N₂ ≤ n
+hnpos : 0 < ↑n
+hh : 0 ≤ 1 / ↑n
+hsmall : 1 / ↑n < δ
+hxy : ¬1 ≤ kernelGridPoint n i + kernelGridPoint n j
+hrev : 1 ≤ kernelGridPoint n i.rev + kernelGridPoint n j.rev
+he :
+  |(1 / ↑n) ^ (2 * m - 1) * (toeplitz m n)⁻¹ i j -
+        inverseKernel m (kernelGridPoint n i.rev) (kernelGridPoint n j.rev)| ≤
+    ε / 2
+hx : kernelGridPoint n i ∈ Set.Icc 0 1
+hy : kernelGridPoint n j ∈ Set.Icc 0 1
+hxr : 1 - kernelGridPoint n i ∈ Set.Icc 0 1
+hyr : 1 - kernelGridPoint n j ∈ Set.Icc 0 1
+⊢ |(1 - kernelGridPoint n i + 1 / ↑n, kernelGridPoint n j.rev).2 -
+        (1 - kernelGridPoint n i, 1 - kernelGridPoint n j).2| <
+    δ
+'MF21Restart.kernelUnitSquare_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.kernelGridPoint_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_grid_uniform' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
