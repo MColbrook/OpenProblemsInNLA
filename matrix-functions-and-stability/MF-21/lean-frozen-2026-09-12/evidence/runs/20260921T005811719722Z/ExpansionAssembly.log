@@ -1,0 +1,2 @@
+'MF21Restart.uniformBound_of_taylor_vanishing_spectral_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.bulkBound_of_taylor_spectral_tail' depends on axioms: [propext, Classical.choice, Quot.sound]

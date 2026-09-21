@@ -1,0 +1,2 @@
+'MF21Restart.verticalIteratedDeriv_contDiffAt_infty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.parametricTaylorCoefficient_contDiffAt_infty' depends on axioms: [propext, Classical.choice, Quot.sound]

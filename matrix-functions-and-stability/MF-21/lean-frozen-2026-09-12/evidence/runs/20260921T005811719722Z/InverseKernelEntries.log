@@ -1,0 +1,4 @@
+'MF21Restart.choose_add_eq_rising_div_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_apply_rising' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_submatrix_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.toeplitz_inverse_rev' depends on axioms: [propext, Classical.choice, Quot.sound]

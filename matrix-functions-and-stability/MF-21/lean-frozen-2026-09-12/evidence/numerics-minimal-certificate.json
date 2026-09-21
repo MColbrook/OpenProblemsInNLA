@@ -1,0 +1,14 @@
+{
+  "updated_utc": "2026-09-21T00:58:11.683273+00:00",
+  "scope": "Implementation optimization of the same already-locked numerical statement and exact exported theorem; frozen manuscript unchanged.",
+  "old_source_sha256": "9d8eb86229773759393cecd14b2651dfc6a994c270dc1ee82d3131c1af60bc42",
+  "new_source_sha256": "c4677460fab467e2992c9fd0b1d74abf0d682ba8a7c89857d77e2b481a89e410",
+  "old_source_snapshot": "evidence/runs/20260921T000301098707Z/Numerics.lean.txt",
+  "prior_successful_candidate_record": "evidence/logs/numerics-minimal-candidate-02.json",
+  "full_integration": {
+    "record": "evidence/runs/20260921T005811719722Z/record.json",
+    "sha256": "497c98bffe6628a5adef5653adfb73cf25e04fd27f7306176aea9e34260842c5",
+    "passed": true,
+    "finished_utc": "2026-09-21T01:13:32.503384+00:00"
+  }
+}

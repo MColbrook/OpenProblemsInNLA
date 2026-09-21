@@ -1,0 +1,5 @@
+'MF21Restart.boundaryInterior_injective_on_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryInterior_maps_to_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryInterior_surjective_to_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundaryEigenspaceMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.boundary_kernel_finrank_eq_eigenspace' depends on axioms: [propext, Classical.choice, Quot.sound]

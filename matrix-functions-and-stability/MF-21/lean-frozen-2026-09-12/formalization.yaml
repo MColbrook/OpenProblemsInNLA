@@ -144,14 +144,19 @@ automation:
 
       '
 review:
-  status: agent-reviewed (source-matched component and complete-target scopes)
+  status: agent-reviewed (component, complete-target, and nonimplementing final referee scopes)
   reviewers:
   - 'mf21_restart_manuscript: independent mathematical and component proof review'
   - 'mf21_restart_lean_audit: independent old/new statement and contract review'
+  - 'mf21_final_statement_referee: nonimplementing final statement and premise-discharge review'
+  - 'mf21_final_proof_referee: nonimplementing final proof-assembly and numerical-trust review'
   notes: Two agents independently reviewed each other's components under the pinned Tau Ceti
     adaptation. The complete target and exact seven contracts were reviewed by the agent who
     did not author their assembly; its own interlacing dependencies have a separate review
-    by the other agent. The coordinator compiled sources serially. Reports identify exact
+    by the other agent. Two additional nonimplementing referees approved statement fidelity
+    and selected proof-assembly/trust scopes, including the repaired minimal LeanCert certificate.
+    Neither claims a fresh line-by-line review of all lower-level modules or an independent
+    compiler execution. The coordinator compiled sources serially. Reports identify exact
     source/log/output hashes, author exclusions, and actual execution scopes. These are AI-agent
     reviews, not human peer review. Local compiler evidence and final GitHub Comparator/kernel/sandbox
     evidence are distinct.

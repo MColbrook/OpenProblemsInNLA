@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-09-21T00:48:39.711338+00:00",
+  "source": "MF21Restart/Numerics.lean",
+  "source_sha256": "9d8eb86229773759393cecd14b2651dfc6a994c270dc1ee82d3131c1af60bc42",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "MF21Restart/Numerics.lean",
+    "-o",
+    ".lake/build/lib/lean/MF21Restart/Numerics.olean",
+    "-i",
+    ".lake/build/lib/lean/MF21Restart/Numerics.ilean",
+    "-c",
+    ".lake/build/lib/lean/MF21Restart/Numerics.c",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "scope": "Local direct Lean test including Lake-like info and native-code emission; does not claim actual Lake --setup replay.",
+  "exit_code": 0,
+  "finished_utc": "2026-09-21T00:49:01.377258+00:00",
+  "source_unchanged": true,
+  "log_sha256": "0e95fe77aec27fcc889d8daeeb0108768939339ecda8ce613cd020e0899c2755",
+  "log": "evidence/logs/numerics-lake-shape-01.log"
+}

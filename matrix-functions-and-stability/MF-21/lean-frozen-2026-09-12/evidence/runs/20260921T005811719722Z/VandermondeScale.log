@@ -1,0 +1,6 @@
+MF21Restart/VandermondeScale.lean:21:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MF21Restart.twice_vandermondeDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.vandermonde_mul_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MF21Restart.vandermonde_one_add_mul' depends on axioms: [propext, Classical.choice, Quot.sound]

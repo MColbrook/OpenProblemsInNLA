@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-09-21T00:54:39.031855+00:00",
+  "source": "/private/tmp/MF21NumericsCandidate.lean",
+  "source_sha256": "c4677460fab467e2992c9fd0b1d74abf0d682ba8a7c89857d77e2b481a89e410",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-M4096",
+    "/private/tmp/MF21NumericsCandidate.lean",
+    "-o",
+    "/private/tmp/mf21-numerics-candidate-test/Numerics.olean",
+    "-i",
+    "/private/tmp/mf21-numerics-candidate-test/Numerics.ilean",
+    "-c",
+    "/private/tmp/mf21-numerics-candidate-test/Numerics.c",
+    "--json"
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1"
+  },
+  "scope": "Actual local candidate Lean compilation, including native-code/info emission, kernel trust audit and axioms; not Linux Comparator.",
+  "exit_code": 1,
+  "finished_utc": "2026-09-21T00:54:40.813562+00:00",
+  "source_unchanged": true,
+  "log_sha256": "cdcb1d96c033d0e318fdf2eca47832b1d05d0bd5f6027afb728e4fa5b6c4650d",
+  "log": "evidence/logs/numerics-minimal-candidate-01.log"
+}
