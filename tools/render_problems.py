@@ -36,7 +36,7 @@ def restore_pdf_layout(identifier, body):
     if identifier in {"SP-05", "MF-08", "MF-14", "MI-28", "NM-04"}:
         # Keep the original target together after its resolution or verification notice.
         body = body.replace("## Problem statement\n", "\\newpage\n\n## Problem statement\n", 1)
-    if identifier in {"IE-14", "MF-02", "MF-12", "MF-24", "MI-28"}:
+    if identifier in {"IE-14", "IE-23", "MF-02", "MF-12", "MF-24", "MI-28"}:
         body = body.replace("## Lean proof and verification evidence", "\\newpage\n\n## Lean proof and verification evidence", 1)
     if identifier in {"IV-03", "MF-18"}:
         # Separate verification evidence and keep the full original target together.
@@ -46,7 +46,7 @@ def restore_pdf_layout(identifier, body):
         # Separate verification evidence and keep the retained original target together.
         body = body.replace("## Lean proof and verification evidence\n", "\\newpage\n\n## Lean proof and verification evidence\n", 1)
         body = body.replace("## Original statement (retained)\n", "\\newpage\n\n## Original statement (retained)\n", 1)
-    if identifier == "IE-14":
+    if identifier in {"IE-14", "IE-23"}:
         body = body.replace("## Problem statement\n", "\\newpage\n\n## Problem statement\n", 1)
     if identifier == "MF-22":
         heading = "## Resolution: affirmative, 11 September 2026\n"
@@ -116,7 +116,7 @@ def render(source):
         if identifier in {
             'AA-01', 'AC-13', 'AV-01', 'AV-02', 'AV-03', 'FR-01', 'FR-02', 'FR-04',
             'FR-10', 'FR-11', 'FR-12', 'IE-01', 'IE-03', 'IE-06', 'IE-08', 'IE-10', 'IE-11', 'IE-13',
-            'IE-14', 'IE-15', 'IE-17', 'IE-19', 'IE-21', 'IE-22', 'IE-23',
+            'IE-14', 'IE-15', 'IE-17', 'IE-19', 'IE-21', 'IE-22',
             'IE-24', 'IE-25', 'IE-26', 'IS-02', 'IS-03', 'IS-05', 'IV-02', 'IV-03', 'IV-04',
             'IV-05', 'IV-06', 'KE-03', 'KE-04', 'MD-06', 'MF-15',
             'MF-16', 'MF-17', 'MI-03', 'MI-04', 'MI-06', 'MI-07', 'MI-08',

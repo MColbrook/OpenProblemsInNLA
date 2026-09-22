@@ -7,12 +7,20 @@
 **Difficulty:** hard  
 **Importance:** interesting to specialist  
 **Status:** Lean verified
-**Last checked:** 2026-09-12
+**Last checked:** 2026-09-22
+
+## Author correspondence - 2026-09-21
+
+**Independent author resolution reported.** In an email to Alex Townsend on 21 September 2026, Ivan Dokmanić reported that he and Rémi Gribonval had also obtained proofs for the open cases in *Beyond Moore–Penrose Part I* while revising the manuscript. This independent work is credited alongside Matthew J. Colbrook's repository manuscript of 11 September and George Stepaniants's Lean formalization of 12 September.
+
+Dokmanić said that a revised Part I had been sent to **Cédric Villani** for review about two weeks earlier, before Townsend's 15 September email sharing the repository result. The revision may become part of a forthcoming book edited by Villani; inclusion was still under consideration. The email does not specify when the proofs were completed or whether they were included in the version sent for review.
+
+Dokmanić described a separate version with embedded AI-generated proofs as not yet carefully checked or revised. The attached drafts have not been reviewed for this update, which records the correspondence rather than an additional proof verification. He also reported an unchecked GPT-generated extension to $`p>2`$ of results in the companion [SIMAX paper](https://doi.org/10.1137/17M1145409); that separate claim is not part of IE-23's verified result. The original target and the scope of the existing Lean certificate remain as stated below.
 
 <!-- colbrook-recovered -->
 ## Independently reviewed resolution - 2026-09-11
 
-**Negative resolution.** Theorem 1 gives a $`2\times3`$ full-row-rank matrix with distinct norm-minimizing right inverses for every $`2< p<\infty`$ over both fields. Their common induced norm is $`2^{1/2-1/p}`$. Sections 3-4 identify the complete minimizer sets, including a complex higher-dimensional family. The smallest matrix is attributed to Dokmanic and Gribonval\'s spectral-norm example; its extension to the displayed direct-inverse objective is checked. No conclusion about the separate product objective is claimed.
+**Negative resolution.** Theorem 1 gives a $`2\times3`$ full-row-rank matrix with distinct norm-minimizing right inverses for every $`2< p<\infty`$ over both fields. Their common induced norm is $`2^{1/2-1/p}`$. Sections 3-4 identify the complete minimizer sets, including a complex higher-dimensional family. The smallest matrix is attributed to Dokmanić and Gribonval's spectral-norm example; its extension to the displayed direct-inverse objective is checked. No conclusion about the separate product objective is claimed.
 
 **Author:** Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge. [Complete manuscript](../../references/colbrook-recovered-2026-09-11/manuscripts/IE-23.pdf), [independent proof review](../../references/colbrook-recovered-2026-09-11/verification/reviews/IE-23-review.md), and [submission record](../../references/colbrook-recovered-2026-09-11/README.md). The supplied notes were reconstructed with substantial AI assistance. That original review was informal; the later Lean verification of the canonical negative answer is documented below. External human peer review, novelty and priority are not claimed.
 
@@ -25,7 +33,7 @@ The difficulty, importance and rating rationale below are historical assessments
 
 **The complete original uniqueness conjecture is Lean verified, with a negative answer.** The [proof at revision a40e560](https://github.com/sgstepaniants/OpenProblemsInNLA/tree/a40e5608f61dd4086708cb2e03901ffd01e4c0a9/linear-systems-and-elimination/IE-23/lean) uses the unchanged rational $`2\times3`$ example at $`p=4`$. Two distinct right inverses attain the same actual induced norm $`\sqrt{\sqrt{2}}`$ and are global minimizers over **every complex right inverse**. The formalization proves genuine matrix rank and inverse identities, real-power and Euclidean-norm bounds, and the actual supremum over all nonzero complex inputs. The generic norm semantics cover every original dimension and finite real $`p>2`$; no additional boundedness or minimality premise is assumed.
 
-**Lean formalization:** George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA, with AI-agent assistance. **Matthew J. Colbrook** retains mathematical authorship of the resolution; **Ivan Dokmanić and Rémi Gribonval** retain credit for the underlying example and original uniqueness question.
+**Lean formalization:** George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA, with AI-agent assistance. **Matthew J. Colbrook** is credited for the repository manuscript formalized here; **Ivan Dokmanić and Rémi Gribonval** are credited for the original uniqueness question, underlying example and independently reported resolution described in the author correspondence above.
 
 The eight [checked exports](https://github.com/sgstepaniants/OpenProblemsInNLA/blob/a40e5608f61dd4086708cb2e03901ffd01e4c0a9/linear-systems-and-elimination/IE-23/lean/Solution.lean), each with prefix `NLA.IE23.`, are:
 
