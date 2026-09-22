@@ -1,6 +1,6 @@
 # TR-27: complete projective tensor-square counterexample
 
-All 25 independently reviewed mathematical statements have complete Lean proofs. **Authoritative verification and final independent approval are pending; the canonical status remains Solved.** Local proof elaboration and transitive axiom audits pass with only `propext`, `Classical.choice`, and `Quot.sound`.
+**The complete original TR-27 conjecture is Lean verified, with a negative answer.** All 25 independently reviewed statements passed the real non-root Linux Comparator, authentic LeanCert kernel-trust assertions and default-kernel replay. Every transitive axiom report contains only `propext`, `Classical.choice`, and `Quot.sound`. Two nonauthor final referees approved the complete source and independently checked the actual verification evidence.
 
 The result refutes the [complete original problem](../README.md). It constructs a reduced irreducible nondegenerate complex projective curve and a point with rank 3, border rank at most 2, and rank 9 at the ordinary, unmerged Segre tensor square. All decomposition coefficients and variable parameters range over arbitrary complex numbers; lower bounds cover the whole variety, repetitions, zero summands, infinity and separately chosen left and right tensor factors.
 
@@ -20,6 +20,12 @@ Formalization: **George Stepaniants**, Department of Computing and Mathematical 
 The two final declarations conclude without assuming any missing geometry, independence, rank inequality or source lemma. Standard Mathlib facts are kernel checked; the informal source is not imported as an axiom. Exact algebra avoids artificial numerical certificates. LeanCert is used for explicit kernel-trust assertions on **every selected declaration** in [Solution.lean](Solution.lean). Optional source strengthenings—smoothness, exact border rank 2, arbitrary prescribed longer delays and eventual saving—are not claimed and are unnecessary for the complete negative answer.
 
 ## Reproduction and review
+
+The [successful full Linux run](verification/linux/OPERATIONAL-REVIEW.md), completed on 2026-09-22, binds all 116 immutable inputs from [source revision 775e8b1](https://github.com/ajt60gaibb/OpenProblemsInNLA/tree/775e8b169119c4045b07db7666eda8c001ae3bd1/tensor-computations/TR-27/lean). It checked all 25 selected statements with no definition holes and passed every real sandbox and rejection control. The dependency cache was reused; the project proof modules and authentic LeanCert verification module were freshly built. The [retained evidence auditor](verification/linux/audit_evidence.py) can check the archives, inputs, logs and receipts without rerunning Lean.
+
+Independent final reviews: [fidelity source report](reviews/final-fidelity-referee.md) and [completion addendum](reviews/final-fidelity-completion.md); [correctness source report](reviews/final-correctness-referee.md) and [completion addendum](reviews/final-correctness-completion.md). The Linux operator authored ProjectiveGeometry and is not counted as a final independent referee. The coordinator's [separate operational check](reviews/publication-audit/root-linux-checks.json) also discloses its proof authorship.
+
+This current guide, metadata, completion addenda and canonical verification notice were updated after the run. The [exact run input snapshot](verification/linux/source/) retains the then-pending documentation. Every mathematical source, frozen statement, selected target and build/dependency configuration remains byte-identical to that verified input. The original source-review reports and receipts remain unchanged.
 
 Pins: Lean 4.33.1, LeanCert `621a43d7cf21f87872392a01e874f2f1dbddc926`, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`. Comparator and its sandbox/control sources are locked by [the shared verifier](../../../tools/lean/source-lock.json).
 
