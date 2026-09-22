@@ -12,6 +12,10 @@ Yunhui He's [17 January 2025 paper](https://arxiv.org/pdf/2501.10248v1#page=15),
 
 The linked IE-18 manuscript now opens with this correction. Its complete reviewed mathematical body, the original submission archive, and all frozen Lean proof/review evidence are preserved. `record-sha256.json` remains the historical export manifest; [the dated correction manifest](verification/IE-18-attribution-update-2026-09-15.json) records the updated exports separately. The separate asymptotic question is not settled by these counterexamples.
 
+## IE-23 author correspondence - 21 September 2026
+
+Ivan Dokmanić reported that he and Rémi Gribonval had independently obtained proofs for the open cases in Part I while revising it. He also reported that a revised manuscript had been sent to Cédric Villani for review about two weeks earlier, for possible inclusion in a forthcoming book edited by Villani. His separate version with embedded AI-generated proofs was not yet carefully checked or revised. The [canonical history update](../../linear-systems-and-elimination/IE-23/README.md#author-correspondence---2026-09-21) credits this independently reported resolution alongside Colbrook's repository manuscript and Stepaniants's Lean formalization, and distinguishes the separate unchecked extension reported for Part II. The emailed drafts have not been reviewed for this update; the original submission, manuscript and verification evidence are preserved.
+
 ## Reviewed results
 
 | Canonical target | Result and primary proof | Independent review |

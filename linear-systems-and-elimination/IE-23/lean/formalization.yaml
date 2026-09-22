@@ -32,7 +32,7 @@ sources:
     PROOF_MAP.md give exact scope
   relationship: adapts
   author_endorsement: not-contacted
-  note: Colbrook retains the mathematical resolution. The rational matrices are unchanged. The p=4 case
+  note: Colbrook is credited for the repository manuscript formalized here. The rational matrices are unchanged. The p=4 case
     gives the full canonical negative answer. All-p formulas, full minimizer classifications, higher-dimensional
     families, smallest-dimension classification and endpoints are outside these eight exports.
 - title: 'Beyond Moore-Penrose Part I: Generalized Inverses that Minimize Matrix Norms'
@@ -43,10 +43,14 @@ sources:
   type: preprint
   location: Example 4.1, equations (51)-(53), pp.16-17; Corollary 4.2(3) and Remark 4.1, p.18
   relationship: background
-  author_endorsement: not-contacted
+  author_endorsement: other
   note: Retains attribution for the underlying rational A and Moore-Penrose example and the original direct-inverse
     uniqueness question. Its separate product objective is outside the canonical target. No unproved literature
-    inequality is assumed by the Lean proof.
+    inequality is assumed by the Lean proof. In a 21 September 2026 email to Alex Townsend, Dokmanić reported
+    independent proofs by the original authors and possible inclusion of the revised Part I in a book edited
+    by Cédric Villani. The email's version with AI-generated proofs was not carefully checked or revised and has
+    not been reviewed for this history update. This correspondence does not establish endorsement of the
+    formalization; see the dated author correspondence in the canonical README.
 related_formalizations:
 - id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
   relationship: other
@@ -252,7 +256,8 @@ alignment:
 - declaration: NLA.IE23.not_rightInverseUniqueConjecture
   scope: Unconditional negation of the complete original all-dimension, all-full-row-rank-complex-matrix,
     finite-real-p>2 strict uniqueness conjecture.
-acknowledgements: Matthew J. Colbrook for the mathematical resolution; Dokmanić and Gribonval for the
-  underlying example and original question; Mathlib and LeanCert contributors for actual norms, powers,
+acknowledgements: Matthew J. Colbrook for the repository manuscript formalized here; Dokmanić and Gribonval for the
+  underlying example, original question and independently reported resolution (21 September 2026 correspondence);
+  Mathlib and LeanCert contributors for actual norms, powers,
   matrix rank/inverse, supremum and kernel-trust APIs. Shared Comparator/exporter/sandbox tools retain
   their licenses and attribution. No external mathematical theorem is an unproved premise.

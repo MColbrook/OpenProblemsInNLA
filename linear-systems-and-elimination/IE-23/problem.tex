@@ -34,7 +34,7 @@ norm},pdfauthor={Open Problems in Numerical Linear Algebra}}
 \fancyhf{}
 \fancyhead[L]{\sffamily\footnotesize\color{muted}OPEN PROBLEMS IN NUMERICAL LINEAR ALGEBRA}
 \fancyhead[R]{\sffamily\bfseries\footnotesize\color{accent}IE-23}
-\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Literature check: 2026-09-12}}
+\fancyfoot[L]{\parbox[b]{0.9\textwidth}{\sffamily\fontsize{8}{10}\selectfont\color{muted}Editorial ratings; a bounded search cannot certify that a problem remains unsolved.\\Literature check: 2026-09-22}}
 \fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule height \headrulewidth\hfill}}
@@ -55,6 +55,33 @@ to specialist\par}
 \vspace{4pt}
 {\color{accent}\hrule height 0.8pt}
 \vspace{6pt}
+\subsection{Author correspondence -
+2026-09-21}\label{author-correspondence---2026-09-21}
+
+\textbf{Independent author resolution reported.} In an email to Alex
+Townsend on 21 September 2026, Ivan Dokmanić reported that he and Rémi
+Gribonval had also obtained proofs for the open cases in \emph{Beyond
+Moore--Penrose Part I} while revising the manuscript. This independent
+work is credited alongside Matthew J. Colbrook's repository manuscript
+of 11 September and George Stepaniants's Lean formalization of 12
+September.
+
+Dokmanić said that a revised Part I had been sent to \textbf{Cédric
+Villani} for review about two weeks earlier, before Townsend's 15
+September email sharing the repository result. The revision may become
+part of a forthcoming book edited by Villani; inclusion was still under
+consideration. The email does not specify when the proofs were completed
+or whether they were included in the version sent for review.
+
+Dokmanić described a separate version with embedded AI-generated proofs
+as not yet carefully checked or revised. The attached drafts have not
+been reviewed for this update, which records the correspondence rather
+than an additional proof verification. He also reported an unchecked
+GPT-generated extension to \(p>2\) of results in the companion
+\href{https://doi.org/10.1137/17M1145409}{SIMAX paper}; that separate
+claim is not part of IE-23's verified result. The original target and
+the scope of the existing Lean certificate remain as stated below.
+
 \subsection{Independently reviewed resolution -
 2026-09-11}\label{independently-reviewed-resolution---2026-09-11}
 
@@ -63,9 +90,9 @@ full-row-rank matrix with distinct norm-minimizing right inverses for
 every \(2< p<\infty\) over both fields. Their common induced norm is
 \(2^{1/2-1/p}\). Sections 3-4 identify the complete minimizer sets,
 including a complex higher-dimensional family. The smallest matrix is
-attributed to Dokmanic and Gribonval\textquotesingle s spectral-norm
-example; its extension to the displayed direct-inverse objective is
-checked. No conclusion about the separate product objective is claimed.
+attributed to Dokmanić and Gribonval's spectral-norm example; its
+extension to the displayed direct-inverse objective is checked. No
+conclusion about the separate product objective is claimed.
 
 \textbf{Author:} Matthew J. Colbrook, Department of Applied Mathematics
 and Theoretical Physics, University of Cambridge.
@@ -87,6 +114,8 @@ and dated audits are preserved.
 for a known norm minimizer; specialist impact is the characterization of
 generalized inverses under induced norms.
 
+\newpage
+
 \subsection{Lean proof and verification evidence -
 2026-09-12}\label{lean-proof-and-verification-evidence---2026-09-12}
 
@@ -105,9 +134,10 @@ boundedness or minimality premise is assumed.
 \textbf{Lean formalization:} George Stepaniants, Department of Computing
 and Mathematical Sciences, California Institute of Technology, Pasadena,
 California, USA, with AI-agent assistance. \textbf{Matthew J. Colbrook}
-retains mathematical authorship of the resolution; \textbf{Ivan Dokmanić
-and Rémi Gribonval} retain credit for the underlying example and
-original uniqueness question.
+is credited for the repository manuscript formalized here; \textbf{Ivan
+Dokmanić and Rémi Gribonval} are credited for the original uniqueness
+question, underlying example and independently reported resolution
+described in the author correspondence above.
 
 The eight
 \href{https://github.com/sgstepaniants/OpenProblemsInNLA/blob/a40e5608f61dd4086708cb2e03901ffd01e4c0a9/linear-systems-and-elimination/IE-23/lean/Solution.lean}{checked
@@ -186,6 +216,8 @@ tools/lean/verify.sh \
   /absolute/path/to/nla-lean-tools
 \end{verbatim}
 
+\newpage
+
 \subsection{Problem statement}\label{problem-statement}
 
 Let \(1\le m< n\), let \(A\in\mathbb C^{m\times n}\) have rank \(m\),
@@ -217,7 +249,6 @@ right-hand sides bounded in \(\ell^p\). Uniqueness determines whether
 another linear solver can match the Moore--Penrose inverse's optimal
 amplification while changing its sparsity or structure.
 
-\newpage
 \subsection{References}\label{references}
 
 \begin{enumerate}
