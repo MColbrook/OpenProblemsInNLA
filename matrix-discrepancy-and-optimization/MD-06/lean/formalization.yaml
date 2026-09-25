@@ -1,0 +1,71 @@
+version: v0.4
+project:
+  name: 'MD-06: global synchronization of a random cubic graph'
+  description: 'Faithful Lean 4.33.1 Challenge contract and a small axiom-free projection theorem; the complete probabilistic and analytic result remains unverified.'
+  authors:
+  - Matthew J. Colbrook
+  responsible_maintainers:
+  - OpenProblemsInNLA formalization team
+  license: Apache-2.0
+sources:
+- title: 'MD-06 — Global synchronization of a random cubic graph'
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/aa8d010bdd5a/matrix-discrepancy-and-optimization/MD-06/README.md
+  type: web-post
+  relationship: formalizes
+  location: 'Negative resolution theorem, graph model and torus energy statement'
+- title: 'Twenty-problem resolutions manuscript'
+  id: '../../04_twenty_problem_resolutions/main.tex'
+  type: manuscript
+  relationship: formalizes
+  location: 'Section MD-06, Theorem md-main and correction lemma md-correction'
+status:
+  scope: 'Challenge.lean records the full negative limit and the high-probability stable nonsynchronized critical-point conclusion, with the 1/32 and 1/320 constants, even sizes n >= 4, simple cubic graph predicate, uniform graph probability, local minima, critical points, edge cosines, Hessian quadratic form and mean-zero subspace.'
+  whole_problem_verified: false
+  main_results:
+  - declaration: MD06.MainClaim
+    file: Challenge.lean
+    sorry_count: 0
+    verification_status: 'Statement elaborates; no proof supplied.'
+  - declaration: MD06.StrongClaim
+    file: Challenge.lean
+    sorry_count: 0
+    verification_status: 'Statement elaborates; no proof supplied.'
+  supporting_results:
+  - declaration: MD06.stable_event_has_nonsync_critical
+    file: Solution.lean
+    verification_status: 'PASS: axiom-free definitional projection only; this is not the MD-06 theorem.'
+  exact_result_status: 'Not verified. The source theorem requires the uniform measure on labelled simple cubic graphs, torus differential calculus, random-regular-graph cycle and spectral-gap estimates, and the correction lemma.'
+  divergences: 'The semantic interface keeps these mathematical objects abstract because the pinned local environment contains Lean core only; no real-analysis or probability theorem is claimed.'
+toolchain:
+  lean: leanprover/lean4:v4.33.1
+  mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+  leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
+  trust: kernel
+verification:
+  statement_elaboration:
+    command: 'lake build Challenge'
+    output: verification-lake-challenge.txt
+    status: passed
+  solution:
+    command: 'lake build Solution'
+    output: verification-lake-build.txt
+    status: passed
+    axioms: []
+  pinned_cache_rerun:
+    status: passed
+    command: 'LEAN_PATH=<pinned Mathlib and package build/lib/lean paths>; lean Definitions.lean; lean Challenge.lean; lean Solution.lean'
+    outputs:
+    - verification-pinned-definitions.txt
+    - verification-pinned-challenge.txt
+    - verification-pinned-solution.txt
+    note: 'The MD-06 files currently import Lean core only; rerun confirms they elaborate with the pinned cache visible. No Mathlib theorem is imported and no LeanCert check was possible.'
+  comparator:
+    status: not-run
+    reason: 'Lean Comparator and LeanCert are not present in the local environment; pinned Mathlib artifacts are present and the core-only files were rerun against them.'
+review:
+  status: 'AI-reviewed; official referee and Comparator pending'
+  notes: 'Three AI review records are in reviews/. The fidelity notes identify the exact unformalized semantic obligations; official Tau Ceti and Comparator tooling were unavailable.'
+
+
+
+

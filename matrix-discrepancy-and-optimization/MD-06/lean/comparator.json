@@ -1,0 +1,8 @@
+{
+  "challenge": "Challenge.lean",
+  "solution": "Solution.lean",
+  "solution_must_not_import": ["Challenge"],
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "status": "not-run",
+  "reason": "Lean Comparator is not installed in this local Lean-core-only environment; complete MD-06 proof is not claimed."
+}

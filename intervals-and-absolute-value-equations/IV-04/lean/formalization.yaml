@@ -1,0 +1,41 @@
+version: v0.4
+project:
+  name: 'IV-04: exact solution hulls of tridiagonal interval systems'
+  description: 'Faithful real interval-system and hull interface with rational endpoints plus a kernel-checked corner-coordinate support lemma; complete complexity theorem pending.'
+  authors: ['OpenAI Codex (AI-assisted formalisation)']
+  license: 'No licence grant is made by this metadata.'
+sources:
+  - title: 'IV-04 canonical problem statement'
+    id: 'https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/aa8d010bdd5a/intervals-and-absolute-value-equations/IV-04/README.md'
+    type: web-post
+    relationship: formalizes
+  - title: 'Twenty-problem resolution, IV-04'
+    id: '../../04_twenty_problem_resolutions/main.tex'
+    type: manuscript
+    relationship: formalizes
+status:
+  scope: 'Exact coordinatewise hull with empty and infinite cases, independent tridiagonal intervals, regular bounded reduction, NP-hardness, and exact-output complexity claim.'
+  whole_problem_verified: false
+  main_results:
+    - declaration: 'IV04.IV04Statement'
+      file: 'Challenge.lean'
+      verification_status: 'statement interface elaborates; finite-dimensional complexity obligations are not proved'
+    - declaration: 'IV04.corner_solution_verified'
+      file: 'Solution.lean'
+      verification_status: 'kernel-checked local support lemma'
+      axioms: []
+  blocker: 'Full verification requires formal interval systems, tridiagonal determinant/cofactor identities, PARTITION reduction, NP-hardness, and exact-output complexity formalization.'
+toolchain:
+  lean: leanprover/lean4:v4.33.1
+  mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+  leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
+  trust: kernel
+review:
+  status: 'AI-reviewed; official referee and Comparator pending'
+  notes: 'Three AI review records are in reviews/. LeanCert and Lean Comparator are unavailable locally and were not run.'
+verification:
+  direct_pinned:
+    status: passed
+    log: verification-direct.txt
+  comparator:
+    status: not-run

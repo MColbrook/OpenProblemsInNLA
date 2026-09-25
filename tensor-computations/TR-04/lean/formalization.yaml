@@ -1,0 +1,82 @@
+version: v0.4
+project:
+  name: "TR-04 tensor-train strict pointwise approximation bound"
+  description: >-
+    Lean 4.33.1 formalization workspace for the approved TR-04 theorem. The
+    complete TT-SVD/SVD result is specified independently in Challenge.lean;
+    only the finite candidate-count support lemma is currently proved.
+  authors:
+    - "OpenAI Codex (AI-assisted formalisation and reviews)"
+  license: "No licence grant is made by this metadata."
+sources:
+  - title: "TR-04 resolution and theorem"
+    authors:
+      - "Matthew J. Colbrook"
+    id: "sources/aa8d010bdd5a/tensor-computations/TR-04/README.md"
+    type: article
+    relationship: formalizes
+    location: "Theorem 3 and Sections 2–5 of the recovered resolution"
+    note: >-
+      Full intended result includes d ≥ 3, n_i ≥ 2, positive prescribed
+      ranks, all TT unfolding rank constraints, attained E_*, exact
+      reconstruction at E_*=0, strict error < (d−1)E_* for E_*>0, at most
+      n₁ TT-SVD completions, and no rank increase.
+  - title: "Tensor-Train Decomposition"
+    authors:
+      - "I. V. Oseledets"
+    id: "doi:10.1137/090752286"
+    type: article
+    relationship: related
+    location: "Theorem 2.2 and Corollary 2.4"
+related_formalizations: []
+status:
+  whole_problem_verified: false
+  canonical_status: 'not Lean verified'
+  scope: "User-approved complete TR-04 contract in SPEC.md"
+  stage: "supporting-lemma-only; full-proof-blocked"
+  main_results:
+    - declaration: "tr04Statement"
+      file: "Challenge.lean"
+      verification_status: "statement elaborated with pinned Lean 4.33.1 + Mathlib"
+      comparator_status: pending
+      note: "Challenge specification is independent of Solution.lean."
+  supporting_results:
+    - declaration: "candidate_count_le_first_mode"
+      file: "Solution.lean"
+      verification_status: "ordinary kernel-checked with pinned Lean 4.33.1 + Mathlib"
+      axioms: []
+    - declaration: "cyclic_window_count_le_first_mode"
+      file: "Solution.lean"
+      verification_status: "ordinary kernel-checked with pinned Lean 4.33.1 + Mathlib"
+      axioms: []
+  blocker: >-
+    Pinned Mathlib is now available locally and Challenge.lean/Solution.lean compile
+    with Lean 4.33.1. LeanCert and the Comparator remain unavailable because outbound
+    GitHub access is blocked; no LeanCert kernel check or Comparator run can honestly
+    be reported. The complete theorem still needs a finite-dimensional real SVD and
+    TT-SVD development.
+automation:
+  methods:
+    - method: agent
+      framework: "OpenAI Codex"
+      tool_setup: "Pinned Lean 4.33.1, Mathlib and LeanCert revisions in lakefile.toml"
+      prompting_notes: "Kernel trust requested; no interval arithmetic is needed for TR-04."
+fidelity:
+  divergences: >-
+    Challenge.lean records the complete contract with an abstract unfolding
+    rank field. The abstract field is intentional pending a concrete
+    finite-dimensional matrix/SVD library; it is not presented as a proof of
+    the manuscript theorem. Solution.lean proves only the candidate-count
+    inequality.
+review:
+  status: "AI-reviewed planning checkpoint"
+  reviewers:
+    - "AI statement-fidelity review (Codex)"
+    - "AI proof-correctness review (Codex)"
+    - "AI clarity/reuse review (Codex)"
+  notes: "No human or official Tau Ceti review is claimed; Comparator remains pending."
+
+
+
+
+
