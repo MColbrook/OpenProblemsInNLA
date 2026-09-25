@@ -50,6 +50,14 @@ def tr04Statement : Prop :=
        (optimalError p A = 0 → result.1 = A)) ∧
       result.2 ≤ p.n (firstMode p)
 
+theorem candidate_count_le_first_mode
+    {n₁ t k : Nat} (ht : t ≤ n₁) (hk : k ≤ t) : k ≤ n₁ := by
+  exact Nat.le_trans hk ht
+
+theorem cyclic_window_count_le_first_mode
+    {n₁ t : Nat} (ht : t ≤ n₁) : t ≤ n₁ := by
+  exact ht
+
 #check tr04Statement
 
 

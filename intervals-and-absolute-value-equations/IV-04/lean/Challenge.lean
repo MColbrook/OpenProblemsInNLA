@@ -1,4 +1,5 @@
 import Mathlib
+import Reduction
 
 namespace IV04
 
@@ -39,9 +40,9 @@ def coordinateValues (I : Input) (i : Fin I.n) : Set ℝ :=
 
 inductive HullCase (S : Set ℝ) : Prop where
   | empty (h : S = ∅)
-  | bounded (lo hi : ℚ) (hlo : lo ≤ hi) (h : S = Set.Icc lo hi)
-  | lowerUnbounded (hi : ℚ) (h : S = Set.Iic hi)
-  | upperUnbounded (lo : ℚ) (h : S = Set.Ici lo)
+  | bounded (lo hi : ℚ) (hlo : lo ≤ hi) (h : S = Set.Icc (lo : ℝ) (hi : ℝ))
+  | lowerUnbounded (hi : ℚ) (h : S = Set.Iic (hi : ℝ))
+  | upperUnbounded (lo : ℚ) (h : S = Set.Ici (lo : ℝ))
   | all (h : S = Set.univ)
 
 def unitedSolutionHull (I : Input) : Prop :=
@@ -49,6 +50,13 @@ def unitedSolutionHull (I : Input) : Prop :=
 
 def IV04Statement : Prop :=
   ∀ I : Input, unitedSolutionHull I
+
+theorem corner_solution_verified (M : TwoByTwo) (x₁ x₂ : ℚ)
+    (hb : M.b = 1) (hdet : det M ≠ 0)
+    (h₁ : M.a * x₁ + M.b * x₂ = 0)
+    (h₂ : M.c * x₁ + M.d * x₂ = -1) :
+    x₁ = 1 / det M :=
+  corner_solution M x₁ x₂ hb hdet h₁ h₂
 
 #check IV04Statement
 

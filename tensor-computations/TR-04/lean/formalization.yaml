@@ -19,7 +19,7 @@ sources:
   - I. V. Oseledets
   id: 'doi:10.1137/090752286'
   type: article
-  relationship: related
+  relationship: background
   location: 'Theorem 2.2 and Corollary 2.4'
 related_formalizations: []
 automation:

@@ -15,6 +15,13 @@ axiom full_result
     ProbLimit D (fun j A => (D.n j : ℝ) / D.m j * opNormSq A) 1 ∧
     ProbLimit D (ratioValue theta D) h
 
+theorem l2Sq_zero (n : ℕ) : l2Sq (fun _ : Fin n => (0 : ℝ)) = 0 := by
+  simp [l2Sq]
+
+theorem rowEnergy_empty {m n : ℕ} (A : Matrix m n) (x : Fin n → ℝ) :
+    rowEnergy A ∅ x = 0 := by
+  simp [rowEnergy]
+
 #print axioms full_result
 
 end IE21

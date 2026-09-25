@@ -20,6 +20,12 @@ variable (S : Semantics)
 strong high-probability stable critical-point conclusion. -/
 def CompleteTarget : Prop := MainClaim S ∧ StrongClaim S
 
+theorem stable_event_has_nonsync_critical (n : Nat) (G : S.Graph n)
+    (h : hasStableNonsynchronizedCritical S G) :
+    ∃ θ, S.critical G θ ∧ ¬ S.synchronized G θ := by
+  rcases h with ⟨_, θ, hcrit, hnsync, _, _⟩
+  exact ⟨θ, hcrit, hnsync⟩
+
 #check CompleteTarget S
 
 end MD06
