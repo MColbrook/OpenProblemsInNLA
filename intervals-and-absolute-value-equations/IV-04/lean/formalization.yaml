@@ -4,11 +4,16 @@ project:
   description: 'Statement-first formalization of the complete tridiagonal interval solution-hull complexity target; supporting lemmas only.'
   authors:
   - OpenAI Codex (AI-assisted formalisation)
-  license: Apache-2.0
+  license: 'No licence grant is made by this metadata.'
 sources:
 - title: 'IV-04 canonical problem statement'
-  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/intervals-and-absolute-value-equations/IV-04/README.md
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/aa8d010bdd5a/intervals-and-absolute-value-equations/IV-04/README.md
   type: web-post
+  relationship: formalizes
+  note: 'Canonical source snapshot recorded in SPEC.md.'
+- title: 'Twenty-problem resolution, IV-04'
+  id: '../../04_twenty_problem_resolutions/main.tex'
+  type: manuscript
   relationship: formalizes
 automation:
   methods:

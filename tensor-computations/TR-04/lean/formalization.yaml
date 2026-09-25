@@ -4,12 +4,24 @@ project:
   description: 'Statement-first formalization of the complete tensor-train approximation target; candidate-count lemmas only.'
   authors:
   - OpenAI Codex (AI-assisted formalisation)
-  license: Apache-2.0
+  license: 'No licence grant is made by this metadata.'
 sources:
-- title: 'TR-04 canonical problem statement and resolution'
-  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/tensor-computations/TR-04/README.md
-  type: web-post
+- title: 'TR-04 resolution and theorem'
+  authors:
+  - Matthew J. Colbrook
+  id: 'sources/aa8d010bdd5a/tensor-computations/TR-04/README.md'
+  type: article
   relationship: formalizes
+  location: 'Theorem 3 and Sections 2–5 of the recovered resolution'
+  note: 'Full intended result includes the complete TT-SVD approximation contract; the current Solution file proves only candidate-count support lemmas.'
+- title: 'Tensor-Train Decomposition'
+  authors:
+  - I. V. Oseledets
+  id: 'doi:10.1137/090752286'
+  type: article
+  relationship: related
+  location: 'Theorem 2.2 and Corollary 2.4'
+related_formalizations: []
 automation:
   methods:
   - method: agent
