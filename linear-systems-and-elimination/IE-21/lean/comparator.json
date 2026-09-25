@@ -1,8 +1,14 @@
 {
-  "challenge": "Challenge.lean",
-  "solution": "Solution.lean",
-  "solution_must_not_import": ["Challenge"],
-  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
-  "status": "not-run",
-  "reason": "Lean Comparator and LeanCert were unavailable locally; direct Lean checks are recorded in verification-direct.log."
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "IE21.l2Sq_zero",
+    "IE21.rowEnergy_empty"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
 }

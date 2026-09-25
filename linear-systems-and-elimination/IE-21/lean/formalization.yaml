@@ -1,31 +1,23 @@
 version: v0.4
 project:
-  name: 'IE-21: Sharp row-deletion singular-value limit for spherical random matrices'
-  description: 'Statement-first scaffold preserving the full random spherical-row theorem; complete probabilistic proof pending.'
+  name: 'IE-21 Lean formalization scaffold'
+  description: 'Statement-first formalization of the complete spherical row-deletion target; supporting lemmas only.'
   authors:
   - Matthew J. Colbrook
-  responsible_maintainers:
-  - OpenProblemsInNLA formalization team
   license: Apache-2.0
-repository:
-  role: substantive-development
 sources:
-- title: 'IE-21 problem statement and independently reviewed resolution'
-  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/aa8d010bdd5a/linear-systems-and-elimination/IE-21/README.md
+- title: 'IE-21 canonical problem statement'
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/linear-systems-and-elimination/IE-21/README.md
   type: web-post
   relationship: formalizes
-  note: 'Canonical source snapshot recorded in SPEC.md.'
-- title: 'IE-21/IE-22 resolution manuscript'
-  type: manuscript
-  location: '04_twenty_problem_resolutions/main.tex, sec:rows'
-  relationship: formalizes
-toolchain:
-  lean: leanprover/lean4:v4.33.1
-  mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
-  leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
-  dependency_manifest: lake-manifest.json
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Pinned Lean 4.33.1, Mathlib and LeanCert revisions are recorded in lakefile.toml.
+    prompting_notes: The full Challenge target is isolated from the supporting Solution lemmas.
 status:
-  scope: 'Definitions and full Challenge statement are present; supporting Solution lemmas compile under pinned Lean. Complete theorem is not verified.'
+  scope: 'Challenge.lean records the full random spherical-row theorem; Solution.lean proves only l2Sq_zero and rowEnergy_empty.'
   whole_problem_verified: false
   canonical_status: 'not Lean verified'
   sorry_count: 0
@@ -34,33 +26,19 @@ status:
   - propext
   - Classical.choice
   - Quot.sound
-  challenge_only_axioms:
-  - IE21.full_result
-  solution_custom_axioms: []
   main_results:
-  - declaration: IE21.full_result
-    file: Challenge.lean
-    status: challenge-only
-    note: 'Challenge declaration is an explicit target specification and is not imported by Solution.'
   - declaration: IE21.l2Sq_zero
     file: Solution.lean
-    status: supporting lemma
+    sorry_count: 0
+    axioms: [propext, Classical.choice, Quot.sound]
+    comparator_config: comparator.json
   - declaration: IE21.rowEnergy_empty
     file: Solution.lean
-    status: supporting lemma
+    sorry_count: 0
+    axioms: [propext, Classical.choice, Quot.sound]
+    comparator_config: comparator.json
 fidelity:
-  divergences:
-  - 'SphericalRowLaw is an explicit semantic record with full finite-set independence; its uniform-sphere field still requires the normalized Hausdorff/Haar measure implementation before full verification.'
-  - 'The theorem retains all sequence quantifiers, floor convention, two component limits, and ratio conclusion.'
+  divergences: 'The complete probability infrastructure for uniform sphere laws and varying-dimensional convergence remains an explicit blocker; the full target is retained in Challenge.lean.'
 review:
-  status: statement-reviewed; proof-blocked
-  reviewers:
-  - 'OpenAI Codex agent /root/ie_rows (statement audit)'
-  notes: 'Three AI review records are in reviews/. Independent official referee passes and Comparator are pending completion of the probability infrastructure.'
-  verification_note: 'Direct Lean 4.33.1 checks passed; see verification-direct.log. LeanCert and Comparator were unavailable.'
-automation:
-  methods:
-  - method: agent
-    framework: OpenAI Codex
-    tool_setup: 'Pinned Lean 4.33.1, Mathlib and LeanCert; kernel trust requested.'
-    prompting_notes: 'No manuscript files edited.'
+  status: 'AI statement-reviewed; proof-blocked'
+  notes: 'Independent proof and Comparator verification remain pending.'

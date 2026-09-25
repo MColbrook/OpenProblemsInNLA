@@ -1,8 +1,13 @@
 {
-  "challenge": "Challenge.lean",
-  "solution": "Solution.lean",
-  "solution_must_not_import": ["Challenge"],
-  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
-  "status": "not-run",
-  "reason": "Lean Comparator and LeanCert are unavailable in the local environment."
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "IV04.corner_solution_verified"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
 }

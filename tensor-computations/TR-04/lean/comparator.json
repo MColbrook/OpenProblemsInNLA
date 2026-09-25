@@ -1,8 +1,14 @@
 {
-  "challenge": "Challenge.lean",
-  "solution": "Solution.lean",
-  "solution_must_not_import": ["Challenge"],
-  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
-  "status": "not-run",
-  "reason": "Lean Comparator and LeanCert were unavailable locally; direct pinned checks are recorded in logs/challenge-mathlib-check-20260925.txt and logs/solution-mathlib-check-20260925.txt."
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "candidate_count_le_first_mode",
+    "cyclic_window_count_le_first_mode"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
 }
